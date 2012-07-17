@@ -1,0 +1,78 @@
+<?xml version='1.0'?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version='1.0'>
+<depends_on path='/System/Library/Frameworks/Foundation.framework'/>
+<depends_on path='/System/Library/Frameworks/OpenDirectory.framework/Versions/A/Frameworks/CFOpenDirectory.framework'/>
+<depends_on path='/System/Library/Frameworks/CoreFoundation.framework'/>
+<constant type='@' name='ODFrameworkErrorDomain'/>
+<constant type='@' name='ODSessionProxyAddress'/>
+<constant type='@' name='ODSessionProxyPassword'/>
+<constant type='@' name='ODSessionProxyPort'/>
+<constant type='@' name='ODSessionProxyUsername'/>
+<class name='ODNode'>
+<method selector='setCredentialsUsingKerberosCache:error:'>
+<retval type='B'/>
+</method>
+<method selector='setCredentialsWithRecordType:authenticationType:authenticationItems:continueItems:context:error:'>
+<retval type='B'/>
+</method>
+<method selector='setCredentialsWithRecordType:recordName:password:error:'>
+<retval type='B'/>
+</method>
+</class>
+<class name='ODQuery'>
+<method selector='resultsAllowingPartial:error:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='ODRecord'>
+<method selector='addMemberRecord:error:'>
+<retval type='B'/>
+</method>
+<method selector='addValue:toAttribute:error:'>
+<retval type='B'/>
+</method>
+<method selector='changePassword:toPassword:error:'>
+<retval type='B'/>
+</method>
+<method selector='deleteRecordAndReturnError:'>
+<retval type='B'/>
+</method>
+<method selector='isMemberRecord:error:'>
+<retval type='B'/>
+</method>
+<method selector='removeMemberRecord:error:'>
+<retval type='B'/>
+</method>
+<method selector='removeValue:fromAttribute:error:'>
+<retval type='B'/>
+</method>
+<method selector='removeValuesForAttribute:error:'>
+<retval type='B'/>
+</method>
+<method selector='setNodeCredentials:password:error:'>
+<retval type='B'/>
+</method>
+<method selector='setNodeCredentialsUsingKerberosCache:error:'>
+<retval type='B'/>
+</method>
+<method selector='setNodeCredentialsWithRecordType:authenticationType:authenticationItems:continueItems:context:error:'>
+<retval type='B'/>
+</method>
+<method selector='setValue:forAttribute:error:'>
+<retval type='B'/>
+</method>
+<method selector='synchronizeAndReturnError:'>
+<retval type='B'/>
+</method>
+<method selector='verifyExtendedWithAuthenticationType:authenticationItems:continueItems:context:error:'>
+<retval type='B'/>
+</method>
+<method selector='verifyPassword:error:'>
+<retval type='B'/>
+</method>
+</class>
+<informal_protocol name='ODQueryDelegate'>
+<method selector='query:foundResults:error:' type='v20@0:4@8@12@16' type64='v40@0:8@16@24@32'/>
+</informal_protocol>
+</signatures>

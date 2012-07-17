@@ -1,0 +1,534 @@
+<?xml version='1.0'?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version='1.0'>
+<depends_on path='/System/Library/Frameworks/CoreFoundation.framework'/>
+<depends_on path='/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/HIToolbox.framework'/>
+<depends_on path='/System/Library/Frameworks/ApplicationServices.framework'/>
+<depends_on path='/System/Library/Frameworks/CoreServices.framework'/>
+<struct type='{ICACloseSessionPB=&quot;header&quot;{ICAHeader=&quot;err&quot;s&quot;refcon&quot;L}&quot;sessionID&quot;I}' name='ICACloseSessionPB' type64='{ICACloseSessionPB=&quot;header&quot;{ICAHeader=&quot;err&quot;s&quot;refcon&quot;Q}&quot;sessionID&quot;I}'/>
+<struct type='{ICACopyObjectDataPB=&quot;header&quot;{ICAHeader=&quot;err&quot;s&quot;refcon&quot;L}&quot;object&quot;I&quot;startByte&quot;I&quot;requestedSize&quot;I&quot;data&quot;^^{__CFData}}' name='ICACopyObjectDataPB' type64='{ICACopyObjectDataPB=&quot;header&quot;{ICAHeader=&quot;err&quot;s&quot;refcon&quot;Q}&quot;object&quot;I&quot;startByte&quot;Q&quot;requestedSize&quot;Q&quot;data&quot;^^{__CFData}}'/>
+<struct type='{ICACopyObjectPropertyDictionaryPB=&quot;header&quot;{ICAHeader=&quot;err&quot;s&quot;refcon&quot;L}&quot;object&quot;I&quot;theDict&quot;^^{__CFDictionary}}' name='ICACopyObjectPropertyDictionaryPB' type64='{ICACopyObjectPropertyDictionaryPB=&quot;header&quot;{ICAHeader=&quot;err&quot;s&quot;refcon&quot;Q}&quot;object&quot;I&quot;theDict&quot;^^{__CFDictionary}}'/>
+<struct type='{ICACopyObjectThumbnailPB=&quot;header&quot;{ICAHeader=&quot;err&quot;s&quot;refcon&quot;L}&quot;object&quot;I&quot;thumbnailFormat&quot;I&quot;thumbnailData&quot;^^{__CFData}}' name='ICACopyObjectThumbnailPB' type64='{ICACopyObjectThumbnailPB=&quot;header&quot;{ICAHeader=&quot;err&quot;s&quot;refcon&quot;Q}&quot;object&quot;I&quot;thumbnailFormat&quot;I&quot;thumbnailData&quot;^^{__CFData}}'/>
+<struct type='{ICADownloadFilePB=&quot;header&quot;{ICAHeader=&quot;err&quot;s&quot;refcon&quot;L}&quot;object&quot;I&quot;dirFSRef&quot;^{FSRef}&quot;flags&quot;I&quot;fileType&quot;I&quot;fileCreator&quot;I&quot;rotationAngle&quot;i&quot;fileFSRef&quot;^{FSRef}}' name='ICADownloadFilePB' type64='{ICADownloadFilePB=&quot;header&quot;{ICAHeader=&quot;err&quot;s&quot;refcon&quot;Q}&quot;object&quot;I&quot;dirFSRef&quot;^{FSRef}&quot;flags&quot;I&quot;fileType&quot;I&quot;fileCreator&quot;I&quot;rotationAngle&quot;i&quot;fileFSRef&quot;^{FSRef}}'/>
+<struct type='{ICAGetDeviceListPB=&quot;header&quot;{ICAHeader=&quot;err&quot;s&quot;refcon&quot;L}&quot;object&quot;I}' name='ICAGetDeviceListPB' type64='{ICAGetDeviceListPB=&quot;header&quot;{ICAHeader=&quot;err&quot;s&quot;refcon&quot;Q}&quot;object&quot;I}'/>
+<struct type='{ICAHeader=&quot;err&quot;s&quot;refcon&quot;L}' name='ICAHeader' type64='{ICAHeader=&quot;err&quot;s&quot;refcon&quot;Q}'/>
+<struct type='{ICAImportImagePB=&quot;header&quot;{ICAHeader=&quot;err&quot;s&quot;refcon&quot;L}&quot;deviceObject&quot;I&quot;flags&quot;I&quot;supportedFileTypes&quot;^{__CFArray}&quot;filterProc&quot;^?&quot;importedImages&quot;^^{__CFArray}}' name='ICAImportImagePB' type64='{ICAImportImagePB=&quot;header&quot;{ICAHeader=&quot;err&quot;s&quot;refcon&quot;Q}&quot;deviceObject&quot;I&quot;flags&quot;I&quot;supportedFileTypes&quot;^{__CFArray}&quot;filterProc&quot;^?&quot;importedImages&quot;^^{__CFArray}}'/>
+<struct type='{ICALoadDeviceModulePB=&quot;header&quot;{ICAHeader=&quot;err&quot;s&quot;refcon&quot;L}&quot;paramDictionary&quot;^{__CFDictionary}}' name='ICALoadDeviceModulePB' type64='{ICALoadDeviceModulePB=&quot;header&quot;{ICAHeader=&quot;err&quot;s&quot;refcon&quot;Q}&quot;paramDictionary&quot;^{__CFDictionary}}'/>
+<struct type='{ICAMessage=&quot;messageType&quot;I&quot;startByte&quot;I&quot;dataPtr&quot;^v&quot;dataSize&quot;I&quot;dataType&quot;I}' name='ICAMessage'/>
+<struct type='{ICAObjectInfo=&quot;objectType&quot;I&quot;objectSubtype&quot;I}' name='ICAObjectInfo'/>
+<struct type='{ICAObjectSendMessagePB=&quot;header&quot;{ICAHeader=&quot;err&quot;s&quot;refcon&quot;L}&quot;object&quot;I&quot;message&quot;{ICAMessage=&quot;messageType&quot;I&quot;startByte&quot;I&quot;dataPtr&quot;^v&quot;dataSize&quot;I&quot;dataType&quot;I}&quot;result&quot;I}' name='ICAObjectSendMessagePB' type64='{ICAObjectSendMessagePB=&quot;header&quot;{ICAHeader=&quot;err&quot;s&quot;refcon&quot;Q}&quot;object&quot;I&quot;message&quot;{ICAMessage=&quot;messageType&quot;I&quot;startByte&quot;I&quot;dataPtr&quot;^v&quot;dataSize&quot;I&quot;dataType&quot;I}&quot;result&quot;I}'/>
+<struct type='{ICAOpenSessionPB=&quot;header&quot;{ICAHeader=&quot;err&quot;s&quot;refcon&quot;L}&quot;deviceObject&quot;I&quot;sessionID&quot;I}' name='ICAOpenSessionPB' type64='{ICAOpenSessionPB=&quot;header&quot;{ICAHeader=&quot;err&quot;s&quot;refcon&quot;Q}&quot;deviceObject&quot;I&quot;sessionID&quot;I}'/>
+<struct type='{ICAPTPEventDataset=&quot;dataLength&quot;I&quot;containerType&quot;S&quot;eventCode&quot;S&quot;transactionID&quot;I&quot;params&quot;[3L]}' name='ICAPTPEventDataset' type64='{ICAPTPEventDataset=&quot;dataLength&quot;I&quot;containerType&quot;S&quot;eventCode&quot;S&quot;transactionID&quot;I&quot;params&quot;[3I]}'/>
+<struct type='{ICAPTPPassThroughPB=&quot;commandCode&quot;I&quot;resultCode&quot;I&quot;numOfInputParams&quot;I&quot;numOfOutputParams&quot;I&quot;params&quot;[4L]&quot;dataUsageMode&quot;I&quot;flags&quot;I&quot;dataSize&quot;I&quot;data&quot;[1C]}' name='ICAPTPPassThroughPB' type64='{ICAPTPPassThroughPB=&quot;commandCode&quot;I&quot;resultCode&quot;I&quot;numOfInputParams&quot;I&quot;numOfOutputParams&quot;I&quot;params&quot;[4I]&quot;dataUsageMode&quot;I&quot;flags&quot;I&quot;dataSize&quot;I&quot;data&quot;[1C]}'/>
+<struct type='{ICARegisterForEventNotificationPB=&quot;header&quot;{ICAHeader=&quot;err&quot;s&quot;refcon&quot;L}&quot;objectOfInterest&quot;I&quot;eventsOfInterest&quot;^{__CFArray}&quot;notificationProc&quot;^?&quot;options&quot;^{__CFDictionary}}' name='ICARegisterForEventNotificationPB' type64='{ICARegisterForEventNotificationPB=&quot;header&quot;{ICAHeader=&quot;err&quot;s&quot;refcon&quot;Q}&quot;objectOfInterest&quot;I&quot;eventsOfInterest&quot;^{__CFArray}&quot;notificationProc&quot;^?&quot;options&quot;^{__CFDictionary}}'/>
+<struct type='{ICAScannerCloseSessionPB=&quot;header&quot;{ICAHeader=&quot;err&quot;s&quot;refcon&quot;L}&quot;sessionID&quot;I}' name='ICAScannerCloseSessionPB' type64='{ICAScannerCloseSessionPB=&quot;header&quot;{ICAHeader=&quot;err&quot;s&quot;refcon&quot;Q}&quot;sessionID&quot;I}'/>
+<struct type='{ICAScannerGetParametersPB=&quot;header&quot;{ICAHeader=&quot;err&quot;s&quot;refcon&quot;L}&quot;sessionID&quot;I&quot;theDict&quot;^{__CFDictionary}}' name='ICAScannerGetParametersPB' type64='{ICAScannerGetParametersPB=&quot;header&quot;{ICAHeader=&quot;err&quot;s&quot;refcon&quot;Q}&quot;sessionID&quot;I&quot;theDict&quot;^{__CFDictionary}}'/>
+<struct type='{ICAScannerInitializePB=&quot;header&quot;{ICAHeader=&quot;err&quot;s&quot;refcon&quot;L}&quot;sessionID&quot;I}' name='ICAScannerInitializePB' type64='{ICAScannerInitializePB=&quot;header&quot;{ICAHeader=&quot;err&quot;s&quot;refcon&quot;Q}&quot;sessionID&quot;I}'/>
+<struct type='{ICAScannerOpenSessionPB=&quot;header&quot;{ICAHeader=&quot;err&quot;s&quot;refcon&quot;L}&quot;object&quot;I&quot;sessionID&quot;I}' name='ICAScannerOpenSessionPB' type64='{ICAScannerOpenSessionPB=&quot;header&quot;{ICAHeader=&quot;err&quot;s&quot;refcon&quot;Q}&quot;object&quot;I&quot;sessionID&quot;I}'/>
+<struct type='{ICAScannerSetParametersPB=&quot;header&quot;{ICAHeader=&quot;err&quot;s&quot;refcon&quot;L}&quot;sessionID&quot;I&quot;theDict&quot;^{__CFDictionary}}' name='ICAScannerSetParametersPB' type64='{ICAScannerSetParametersPB=&quot;header&quot;{ICAHeader=&quot;err&quot;s&quot;refcon&quot;Q}&quot;sessionID&quot;I&quot;theDict&quot;^{__CFDictionary}}'/>
+<struct type='{ICAScannerStartPB=&quot;header&quot;{ICAHeader=&quot;err&quot;s&quot;refcon&quot;L}&quot;sessionID&quot;I}' name='ICAScannerStartPB' type64='{ICAScannerStartPB=&quot;header&quot;{ICAHeader=&quot;err&quot;s&quot;refcon&quot;Q}&quot;sessionID&quot;I}'/>
+<struct type='{ICAScannerStatusPB=&quot;header&quot;{ICAHeader=&quot;err&quot;s&quot;refcon&quot;L}&quot;sessionID&quot;I&quot;status&quot;I}' name='ICAScannerStatusPB' type64='{ICAScannerStatusPB=&quot;header&quot;{ICAHeader=&quot;err&quot;s&quot;refcon&quot;Q}&quot;sessionID&quot;I&quot;status&quot;I}'/>
+<struct type='{ICASendNotificationPB=&quot;header&quot;{ICAHeader=&quot;err&quot;s&quot;refcon&quot;L}&quot;notificationDictionary&quot;^{__CFDictionary}&quot;replyCode&quot;I}' name='ICASendNotificationPB' type64='{ICASendNotificationPB=&quot;header&quot;{ICAHeader=&quot;err&quot;s&quot;refcon&quot;Q}&quot;notificationDictionary&quot;^{__CFDictionary}&quot;replyCode&quot;I}'/>
+<struct type='{ICAUnloadDeviceModulePB=&quot;header&quot;{ICAHeader=&quot;err&quot;s&quot;refcon&quot;L}&quot;deviceObject&quot;I}' name='ICAUnloadDeviceModulePB' type64='{ICAUnloadDeviceModulePB=&quot;header&quot;{ICAHeader=&quot;err&quot;s&quot;refcon&quot;Q}&quot;deviceObject&quot;I}'/>
+<struct type='{ICAUploadFilePB=&quot;header&quot;{ICAHeader=&quot;err&quot;s&quot;refcon&quot;L}&quot;parentObject&quot;I&quot;fileFSRef&quot;^{FSRef}&quot;flags&quot;I}' name='ICAUploadFilePB' type64='{ICAUploadFilePB=&quot;header&quot;{ICAHeader=&quot;err&quot;s&quot;refcon&quot;Q}&quot;parentObject&quot;I&quot;fileFSRef&quot;^{FSRef}&quot;flags&quot;I}'/>
+<struct type='{ICDHeader=&quot;err&quot;s&quot;refcon&quot;L}' name='ICDHeader' type64='{ICDHeader=&quot;err&quot;s&quot;refcon&quot;Q}'/>
+<struct type='{ICD_DisposeObjectPB=&quot;header&quot;{ICDHeader=&quot;err&quot;s&quot;refcon&quot;L}&quot;object&quot;I}' name='ICD_DisposeObjectPB' type64='{ICD_DisposeObjectPB=&quot;header&quot;{ICDHeader=&quot;err&quot;s&quot;refcon&quot;Q}&quot;object&quot;I}'/>
+<struct type='{ICD_NewObjectPB=&quot;header&quot;{ICDHeader=&quot;err&quot;s&quot;refcon&quot;L}&quot;parentObject&quot;I&quot;objectInfo&quot;{ICAObjectInfo=&quot;objectType&quot;I&quot;objectSubtype&quot;I}&quot;object&quot;I}' name='ICD_NewObjectPB' type64='{ICD_NewObjectPB=&quot;header&quot;{ICDHeader=&quot;err&quot;s&quot;refcon&quot;Q}&quot;parentObject&quot;I&quot;objectInfo&quot;{ICAObjectInfo=&quot;objectType&quot;I&quot;objectSubtype&quot;I}&quot;object&quot;I}'/>
+<constant type='^{__CFString=}' name='kICABluetoothAddressKey'/>
+<constant type='^{__CFString=}' name='kICABluetoothTransportType'/>
+<constant type='^{__CFString=}' name='kICABonjourServiceNameKey'/>
+<constant type='^{__CFString=}' name='kICABonjourServiceTypeKey'/>
+<constant type='^{__CFString=}' name='kICABonjourTXTRecordKey'/>
+<constant type='^{__CFString=}' name='kICACreationDateStringKey'/>
+<constant type='^{__CFString=}' name='kICADataPropertyKey'/>
+<constant type='^{__CFString=}' name='kICADataSizeKey'/>
+<constant type='^{__CFString=}' name='kICADataTypeKey'/>
+<constant type='^{__CFString=}' name='kICADeviceBrowserDeviceRefKey'/>
+<constant type='^{__CFString=}' name='kICADeviceCapabilitiesKey'/>
+<constant type='^{__CFString=}' name='kICADeviceIconPathKey'/>
+<constant type='^{__CFString=}' name='kICADeviceModulePathKey'/>
+<constant type='^{__CFString=}' name='kICADevicePropArtist'/>
+<constant type='^{__CFString=}' name='kICADevicePropBatteryLevel'/>
+<constant type='^{__CFString=}' name='kICADevicePropBurstInterval'/>
+<constant type='^{__CFString=}' name='kICADevicePropBurstNumber'/>
+<constant type='^{__CFString=}' name='kICADevicePropCaptureDelay'/>
+<constant type='^{__CFString=}' name='kICADevicePropCompressionSetting'/>
+<constant type='^{__CFString=}' name='kICADevicePropContrast'/>
+<constant type='^{__CFString=}' name='kICADevicePropCopyrightInfo'/>
+<constant type='^{__CFString=}' name='kICADevicePropDateTime'/>
+<constant type='^{__CFString=}' name='kICADevicePropDigitalZoom'/>
+<constant type='^{__CFString=}' name='kICADevicePropEffectMode'/>
+<constant type='^{__CFString=}' name='kICADevicePropExposureBiasCompensation'/>
+<constant type='^{__CFString=}' name='kICADevicePropExposureIndex'/>
+<constant type='^{__CFString=}' name='kICADevicePropExposureMeteringMode'/>
+<constant type='^{__CFString=}' name='kICADevicePropExposureProgramMode'/>
+<constant type='^{__CFString=}' name='kICADevicePropExposureTime'/>
+<constant type='^{__CFString=}' name='kICADevicePropFNumber'/>
+<constant type='^{__CFString=}' name='kICADevicePropFlashMode'/>
+<constant type='^{__CFString=}' name='kICADevicePropFocalLength'/>
+<constant type='^{__CFString=}' name='kICADevicePropFocusDistance'/>
+<constant type='^{__CFString=}' name='kICADevicePropFocusMeteringMode'/>
+<constant type='^{__CFString=}' name='kICADevicePropFocusMode'/>
+<constant type='^{__CFString=}' name='kICADevicePropFunctionalMode'/>
+<constant type='^{__CFString=}' name='kICADevicePropImageSize'/>
+<constant type='^{__CFString=}' name='kICADevicePropRGBGain'/>
+<constant type='^{__CFString=}' name='kICADevicePropSharpness'/>
+<constant type='^{__CFString=}' name='kICADevicePropStillCaptureMode'/>
+<constant type='^{__CFString=}' name='kICADevicePropTimelapseInterval'/>
+<constant type='^{__CFString=}' name='kICADevicePropTimelapseNumber'/>
+<constant type='^{__CFString=}' name='kICADevicePropUndefined'/>
+<constant type='^{__CFString=}' name='kICADevicePropUploadURL'/>
+<constant type='^{__CFString=}' name='kICADevicePropWhiteBalance'/>
+<constant type='^{__CFString=}' name='kICADeviceSharedKey'/>
+<constant type='^{__CFString=}' name='kICADeviceTypeCamera'/>
+<constant type='^{__CFString=}' name='kICADeviceTypeKey'/>
+<constant type='^{__CFString=}' name='kICADeviceTypeScanner'/>
+<constant type='^{__CFString=}' name='kICADeviceUsedKey'/>
+<constant type='^{__CFString=}' name='kICADeviceWebSharedKey'/>
+<constant type='^{__CFString=}' name='kICADevicesArrayKey'/>
+<constant type='^{__CFString=}' name='kICAErrorKey'/>
+<constant type='^{__CFString=}' name='kICAExecutableArchitectureKey'/>
+<constant type='^{__CFString=}' name='kICAFireWireGUIDKey'/>
+<constant type='^{__CFString=}' name='kICAFireWireTransportType'/>
+<constant type='^{__CFString=}' name='kICAIOServicePathKey'/>
+<constant type='^{__CFString=}' name='kICAIPAddressKey'/>
+<constant type='^{__CFString=}' name='kICAIPGUIDKey'/>
+<constant type='^{__CFString=}' name='kICAIPNameKey'/>
+<constant type='^{__CFString=}' name='kICAIPPortKey'/>
+<constant type='^{__CFString=}' name='kICALockStatusKey'/>
+<constant type='^{__CFString=}' name='kICAMediaDurationInSecondsKey'/>
+<constant type='^{__CFString=}' name='kICAMediaHeightKey'/>
+<constant type='^{__CFString=}' name='kICAMediaWidthKey'/>
+<constant type='^{__CFString=}' name='kICAModificationDateStringKey'/>
+<constant type='^{__CFString=}' name='kICANotificationClassKey'/>
+<constant type='^{__CFString=}' name='kICANotificationClassPTPStandard'/>
+<constant type='^{__CFString=}' name='kICANotificationClassPTPVendor'/>
+<constant type='^{__CFString=}' name='kICANotificationClassProprietary'/>
+<constant type='^{__CFString=}' name='kICANotificationDataCookieKey'/>
+<constant type='^{__CFString=}' name='kICANotificationDataIsBigEndianKey'/>
+<constant type='^{__CFString=}' name='kICANotificationDataKey'/>
+<constant type='^{__CFString=}' name='kICANotificationDataSizeKey'/>
+<constant type='^{__CFString=}' name='kICANotificationDeviceICAObjectKey'/>
+<constant type='^{__CFString=}' name='kICANotificationDeviceListICAObjectKey'/>
+<constant type='^{__CFString=}' name='kICANotificationICAObjectKey'/>
+<constant type='^{__CFString=}' name='kICANotificationImageBytesPerRowKey'/>
+<constant type='^{__CFString=}' name='kICANotificationImageDataKey'/>
+<constant type='^{__CFString=}' name='kICANotificationImageDataSizeKey'/>
+<constant type='^{__CFString=}' name='kICANotificationImageHeightKey'/>
+<constant type='^{__CFString=}' name='kICANotificationImageKey'/>
+<constant type='^{__CFString=}' name='kICANotificationImageNumberOfRowsKey'/>
+<constant type='^{__CFString=}' name='kICANotificationImageStartRowKey'/>
+<constant type='^{__CFString=}' name='kICANotificationImageWidthKey'/>
+<constant type='^{__CFString=}' name='kICANotificationNumerOfImagesRemainingKey'/>
+<constant type='^{__CFString=}' name='kICANotificationPercentDownloadedKey'/>
+<constant type='^{__CFString=}' name='kICANotificationRawEventKey'/>
+<constant type='^{__CFString=}' name='kICANotificationScannerButtonTypeKey'/>
+<constant type='^{__CFString=}' name='kICANotificationScannerDocumentNameKey'/>
+<constant type='^{__CFString=}' name='kICANotificationSubTypeDocumentLoaded'/>
+<constant type='^{__CFString=}' name='kICANotificationSubTypeDocumentNotLoaded'/>
+<constant type='^{__CFString=}' name='kICANotificationSubTypeKey'/>
+<constant type='^{__CFString=}' name='kICANotificationSubTypePerformOverviewScan'/>
+<constant type='^{__CFString=}' name='kICANotificationSubTypeWarmUpDone'/>
+<constant type='^{__CFString=}' name='kICANotificationSubTypeWarmUpStarted'/>
+<constant type='^{__CFString=}' name='kICANotificationTypeCaptureComplete'/>
+<constant type='^{__CFString=}' name='kICANotificationTypeDeviceAdded'/>
+<constant type='^{__CFString=}' name='kICANotificationTypeDeviceConnectionProgress'/>
+<constant type='^{__CFString=}' name='kICANotificationTypeDeviceInfoChanged'/>
+<constant type='^{__CFString=}' name='kICANotificationTypeDevicePropertyChanged'/>
+<constant type='^{__CFString=}' name='kICANotificationTypeDeviceRemoved'/>
+<constant type='^{__CFString=}' name='kICANotificationTypeDeviceStatusError'/>
+<constant type='^{__CFString=}' name='kICANotificationTypeDeviceStatusInfo'/>
+<constant type='^{__CFString=}' name='kICANotificationTypeDeviceWasReset'/>
+<constant type='^{__CFString=}' name='kICANotificationTypeDownloadProgressStatus'/>
+<constant type='^{__CFString=}' name='kICANotificationTypeKey'/>
+<constant type='^{__CFString=}' name='kICANotificationTypeObjectAdded'/>
+<constant type='^{__CFString=}' name='kICANotificationTypeObjectInfoChanged'/>
+<constant type='^{__CFString=}' name='kICANotificationTypeObjectRemoved'/>
+<constant type='^{__CFString=}' name='kICANotificationTypeProprietary'/>
+<constant type='^{__CFString=}' name='kICANotificationTypeRequestObjectTransfer'/>
+<constant type='^{__CFString=}' name='kICANotificationTypeScanProgressStatus'/>
+<constant type='^{__CFString=}' name='kICANotificationTypeScannerButtonPressed'/>
+<constant type='^{__CFString=}' name='kICANotificationTypeScannerOverviewOverlayAvailable'/>
+<constant type='^{__CFString=}' name='kICANotificationTypeScannerPageDone'/>
+<constant type='^{__CFString=}' name='kICANotificationTypeScannerScanDone'/>
+<constant type='^{__CFString=}' name='kICANotificationTypeScannerSessionClosed'/>
+<constant type='^{__CFString=}' name='kICANotificationTypeStoreAdded'/>
+<constant type='^{__CFString=}' name='kICANotificationTypeStoreFull'/>
+<constant type='^{__CFString=}' name='kICANotificationTypeStoreInfoChanged'/>
+<constant type='^{__CFString=}' name='kICANotificationTypeStoreRemoved'/>
+<constant type='^{__CFString=}' name='kICANotificationTypeTransactionCanceled'/>
+<constant type='^{__CFString=}' name='kICANotificationTypeUnreportedStatus'/>
+<constant type='^{__CFString=}' name='kICANotificationVendorErrorCodeKey'/>
+<constant type='^{__CFString=}' name='kICAObjectKey'/>
+<constant type='^{__CFString=}' name='kICAObjectNameKey'/>
+<constant type='^{__CFString=}' name='kICARawKey'/>
+<constant type='^{__CFString=}' name='kICARefconKey'/>
+<constant type='^{__CFString=}' name='kICARemoteDeviceKey'/>
+<constant type='^{__CFString=}' name='kICASCSITransportType'/>
+<constant type='^{__CFString=}' name='kICATCPIPTransportType'/>
+<constant type='^{__CFString=}' name='kICATWAINDSPathKey'/>
+<constant type='^{__CFString=}' name='kICATWAINTransportType'/>
+<constant type='^{__CFString=}' name='kICAThumbnailPropertyKey'/>
+<constant type='^{__CFString=}' name='kICAThumbnailSizeKey'/>
+<constant type='^{__CFString=}' name='kICATransportTypeKey'/>
+<constant type='^{__CFString=}' name='kICAUSBLocationIDKey'/>
+<constant type='^{__CFString=}' name='kICAUSBProductIDKey'/>
+<constant type='^{__CFString=}' name='kICAUSBTransportType'/>
+<constant type='^{__CFString=}' name='kICAUSBVendorIDKey'/>
+<constant type='^{__CFString=}' name='kICAUserAssignedDeviceNameKey'/>
+<constant type='^{__CFString=}' name='kMetaDataDictionaryKey'/>
+<enum value='4' name='kAddMetaDataToFinderComment'/>
+<enum value='8' name='kAdjustCreationDate'/>
+<enum value='2' name='kCreateCustomIcon'/>
+<enum value='1' name='kDeleteAfterDownload'/>
+<enum value='128' name='kDontEmbedColorSyncProfile'/>
+<enum value='1' name='kICAAccessReadOnly'/>
+<enum value='2' name='kICAAccessReadOnlyWithObjectDeletion'/>
+<enum value='0' name='kICAAccessReadWrite'/>
+<enum value='1' name='kICAAllowMultipleImages'/>
+<enum value='1668247673' name='kICAButtonCopy'/>
+<enum value='1835100524' name='kICAButtonEMail'/>
+<enum value='1935892846' name='kICAButtonScan'/>
+<enum value='2003132960' name='kICAButtonWeb'/>
+<enum value='2' name='kICACameraPassThruNotUsed'/>
+<enum value='1' name='kICACameraPassThruReceive'/>
+<enum value='0' name='kICACameraPassThruSend'/>
+<enum value='-9909' name='kICACannotYieldDevice'/>
+<enum value='1667460713' name='kICACapabilityCanCameraCaptureNewImage'/>
+<enum value='1684368481' name='kICACapabilityCanCameraDeleteAll'/>
+<enum value='1684368433' name='kICACapabilityCanCameraDeleteOne'/>
+<enum value='1935895659' name='kICACapabilityCanCameraSyncClock'/>
+<enum value='1819238756' name='kICACapabilityCanCameraUploadData'/>
+<enum value='1952804208' name='kICACapabilityMayStoreNewImagesInTempStore'/>
+<enum value='-9900' name='kICACommunicationErr'/>
+<enum value='-9910' name='kICADataTypeNotFoundErr'/>
+<enum value='1768121462' name='kICADevice'/>
+<enum value='-9914' name='kICADeviceAlreadyOpenErr'/>
+<enum value='1668117089' name='kICADeviceCamera'/>
+<enum value='-9916' name='kICADeviceGUIDNotFoundErr'/>
+<enum value='-9917' name='kICADeviceIOServicePathNotFoundErr'/>
+<enum value='-9912' name='kICADeviceInternalErr'/>
+<enum value='-9913' name='kICADeviceInvalidParamErr'/>
+<enum value='-9915' name='kICADeviceLocationIDNotFoundErr'/>
+<enum value='1835429920' name='kICADeviceMFP'/>
+<enum value='-9911' name='kICADeviceMemoryAllocationErr'/>
+<enum value='-9901' name='kICADeviceNotFoundErr'/>
+<enum value='-9902' name='kICADeviceNotOpenErr'/>
+<enum value='1685025896' name='kICADeviceOther'/>
+<enum value='1885626656' name='kICADevicePDA'/>
+<enum value='1885892462' name='kICADevicePhone'/>
+<enum value='1935892846' name='kICADeviceScanner'/>
+<enum value='-9918' name='kICADeviceUnsupportedErr'/>
+<enum value='1684632165' name='kICADirectory'/>
+<enum value='2' name='kICADownloadAndReturnPathArray'/>
+<enum value='-9920' name='kICAExtensionInternalErr'/>
+<enum value='1718185061' name='kICAFile'/>
+<enum value='1635083375' name='kICAFileAudio'/>
+<enum value='-9903' name='kICAFileCorruptedErr'/>
+<enum value='1718186605' name='kICAFileFirmware'/>
+<enum value='1768776039' name='kICAFileImage'/>
+<enum value='1836019574' name='kICAFileMovie'/>
+<enum value='1869899877' name='kICAFileOther'/>
+<enum value='3' name='kICAFileystemDCF'/>
+<enum value='1' name='kICAFileystemGenericFlat'/>
+<enum value='2' name='kICAFileystemGenericHierarchical'/>
+<enum value='0' name='kICAFileystemUndefined'/>
+<enum value='2' name='kICAFlagReadAccess'/>
+<enum value='1' name='kICAFlagReadWriteAccess'/>
+<enum value='-9919' name='kICAFrameworkInternalErr'/>
+<enum value='-9904' name='kICAIOPendingErr'/>
+<enum value='-9907' name='kICAIndexOutOfRangeErr'/>
+<enum value='-9905' name='kICAInvalidObjectErr'/>
+<enum value='-9906' name='kICAInvalidPropertyErr'/>
+<enum value='-9921' name='kICAInvalidSessionErr'/>
+<enum value='1868720748' name='kICAList'/>
+<enum value='1667460713' name='kICAMessageCameraCaptureNewImage'/>
+<enum value='1684368481' name='kICAMessageCameraDeleteAll'/>
+<enum value='1684368433' name='kICAMessageCameraDeleteOne'/>
+<enum value='1885434739' name='kICAMessageCameraPassThrough'/>
+<enum value='1919118443' name='kICAMessageCameraReadClock'/>
+<enum value='1935895659' name='kICAMessageCameraSyncClock'/>
+<enum value='1819238756' name='kICAMessageCameraUploadData'/>
+<enum value='1667787620' name='kICAMessageCheckDevice'/>
+<enum value='1869636974' name='kICAMessageConnect'/>
+<enum value='2036950380' name='kICAMessageDeviceYield'/>
+<enum value='1668050803' name='kICAMessageDisconnect'/>
+<enum value='1835492708' name='kICAMessageGetEventData'/>
+<enum value='1651797567' name='kICAMessageGetLastButtonPressed'/>
+<enum value='1919251301' name='kICAMessageReset'/>
+<enum value='1634887009' name='kICAMessageScannerOverviewSelectionChanged'/>
+<enum value='65536' name='kICAPBVersion'/>
+<enum value='1886547824' name='kICAProperty'/>
+<enum value='1633902960' name='kICAPropertyCameraAccessCapability'/>
+<enum value='892350789' name='kICAPropertyCameraArtist'/>
+<enum value='892350513' name='kICAPropertyCameraBatteryLevel'/>
+<enum value='892350777' name='kICAPropertyCameraBurstInterval'/>
+<enum value='892350776' name='kICAPropertyCameraBurstNumber'/>
+<enum value='892350770' name='kICAPropertyCameraCaptureDelay'/>
+<enum value='892350516' name='kICAPropertyCameraCompressionSetting'/>
+<enum value='892350772' name='kICAPropertyCameraContrast'/>
+<enum value='892350790' name='kICAPropertyCameraCopyrightInfo'/>
+<enum value='892350769' name='kICAPropertyCameraDateTime'/>
+<enum value='892350774' name='kICAPropertyCameraDigitalZoom'/>
+<enum value='892350775' name='kICAPropertyCameraEffectMode'/>
+<enum value='892350768' name='kICAPropertyCameraExposureBiasCompensation'/>
+<enum value='892350534' name='kICAPropertyCameraExposureIndex'/>
+<enum value='892350530' name='kICAPropertyCameraExposureMeteringMode'/>
+<enum value='892350533' name='kICAPropertyCameraExposureProgramMode'/>
+<enum value='892350532' name='kICAPropertyCameraExposureTime'/>
+<enum value='892350519' name='kICAPropertyCameraFNumber'/>
+<enum value='1718843763' name='kICAPropertyCameraFilesystemType'/>
+<enum value='892350531' name='kICAPropertyCameraFlashMode'/>
+<enum value='892350520' name='kICAPropertyCameraFocalLength'/>
+<enum value='892350521' name='kICAPropertyCameraFocusDistance'/>
+<enum value='892350787' name='kICAPropertyCameraFocusMeteringMode'/>
+<enum value='892350529' name='kICAPropertyCameraFocusMode'/>
+<enum value='1718773107' name='kICAPropertyCameraFreeSpaceInBytes'/>
+<enum value='1718773097' name='kICAPropertyCameraFreeSpaceInImages'/>
+<enum value='892350514' name='kICAPropertyCameraFunctionalMode'/>
+<enum value='1768124270' name='kICAPropertyCameraIcon'/>
+<enum value='892350515' name='kICAPropertyCameraImageSize'/>
+<enum value='1835104355' name='kICAPropertyCameraMaxCapacity'/>
+<enum value='892350518' name='kICAPropertyCameraRGBGain'/>
+<enum value='892350773' name='kICAPropertyCameraSharpness'/>
+<enum value='892350771' name='kICAPropertyCameraStillCaptureMode'/>
+<enum value='1937010532' name='kICAPropertyCameraStorageDescription'/>
+<enum value='1937010546' name='kICAPropertyCameraStorageType'/>
+<enum value='1836279667' name='kICAPropertyCameraSupportedMessages'/>
+<enum value='892350786' name='kICAPropertyCameraTimelapseInterval'/>
+<enum value='892350785' name='kICAPropertyCameraTimelapseNumber'/>
+<enum value='892350788' name='kICAPropertyCameraUploadURL'/>
+<enum value='1987013740' name='kICAPropertyCameraVolumeLabel'/>
+<enum value='892350517' name='kICAPropertyCameraWhiteBalance'/>
+<enum value='1093677105' name='kICAPropertyColorSpace'/>
+<enum value='1886547814' name='kICAPropertyColorSyncProfile'/>
+<enum value='959590450' name='kICAPropertyImageAperture'/>
+<enum value='808529970' name='kICAPropertyImageBitDepth'/>
+<enum value='808530241' name='kICAPropertyImageDPI'/>
+<enum value='1768186228' name='kICAPropertyImageData'/>
+<enum value='959459380' name='kICAPropertyImageDateDigitized'/>
+<enum value='959459379' name='kICAPropertyImageDateOriginal'/>
+<enum value='942815553' name='kICAPropertyImageExposureTime'/>
+<enum value='942815556' name='kICAPropertyImageFNumber'/>
+<enum value='1768319340' name='kICAPropertyImageFilename'/>
+<enum value='959590457' name='kICAPropertyImageFlash'/>
+<enum value='808529969' name='kICAPropertyImageHeight'/>
+<enum value='959590449' name='kICAPropertyImageShutterSpeed'/>
+<enum value='1769171322' name='kICAPropertyImageSize'/>
+<enum value='1953002861' name='kICAPropertyImageThumbnail'/>
+<enum value='808529968' name='kICAPropertyImageWidth'/>
+<enum value='-9908' name='kICAPropertyTypeNotFoundErr'/>
+<enum value='3' name='kICAStorageFixedRAM'/>
+<enum value='1' name='kICAStorageFixedROM'/>
+<enum value='4' name='kICAStorageRemovableRAM'/>
+<enum value='2' name='kICAStorageRemovableROM'/>
+<enum value='0' name='kICAStorageUndefined'/>
+<enum value='1785750887' name='kICAThumbnailFormatJPEG'/>
+<enum value='1886283552' name='kICAThumbnailFormatPNG'/>
+<enum value='1953064550' name='kICAThumbnailFormatTIFF'/>
+<enum value='1651470188' name='kICATypeBoolean'/>
+<enum value='1684108385' name='kICATypeData'/>
+<enum value='1936289383' name='kICATypeFixed'/>
+<enum value='1718382433' name='kICATypeFloat'/>
+<enum value='1936273718' name='kICATypeSInt16'/>
+<enum value='1936274226' name='kICATypeSInt32'/>
+<enum value='1936274996' name='kICATypeSInt64'/>
+<enum value='1413830740' name='kICATypeString'/>
+<enum value='1953002861' name='kICATypeThumbnail'/>
+<enum value='1969828150' name='kICATypeUInt16'/>
+<enum value='1969828658' name='kICATypeUInt32'/>
+<enum value='1969829428' name='kICATypeUInt64'/>
+<enum value='1969827896' name='kICATypeUInt8'/>
+<enum value='0' name='kICAUploadFileAsIs'/>
+<enum value='1' name='kICAUploadFileScaleToFit'/>
+<enum value='64' name='kRotateImage'/>
+<enum value='16' name='kSetFileTypeAndCreator'/>
+<function name='ICACloseSession'>
+<arg type='^{ICACloseSessionPB={ICAHeader=sL}I}' type64='^{ICACloseSessionPB={ICAHeader=sQ}I}'/>
+<arg function_pointer='true' type='^?'>
+<arg type='^{ICAHeader=sL}' type64='^{ICAHeader=sQ}'/>
+<retval type='v'/>
+</arg>
+<retval type='s'/>
+</function>
+<function name='ICACopyObjectData'>
+<arg type='^{ICACopyObjectDataPB={ICAHeader=sL}III^^{__CFData}}' type64='^{ICACopyObjectDataPB={ICAHeader=sQ}IQQ^^{__CFData}}'/>
+<arg function_pointer='true' type='^?'>
+<arg type='^{ICAHeader=sL}' type64='^{ICAHeader=sQ}'/>
+<retval type='v'/>
+</arg>
+<retval type='s'/>
+</function>
+<function name='ICACopyObjectPropertyDictionary'>
+<arg type='^{ICACopyObjectPropertyDictionaryPB={ICAHeader=sL}I^^{__CFDictionary}}' type64='^{ICACopyObjectPropertyDictionaryPB={ICAHeader=sQ}I^^{__CFDictionary}}'/>
+<arg function_pointer='true' type='^?'>
+<arg type='^{ICAHeader=sL}' type64='^{ICAHeader=sQ}'/>
+<retval type='v'/>
+</arg>
+<retval type='s'/>
+</function>
+<function name='ICACopyObjectThumbnail'>
+<arg type='^{ICACopyObjectThumbnailPB={ICAHeader=sL}II^^{__CFData}}' type64='^{ICACopyObjectThumbnailPB={ICAHeader=sQ}II^^{__CFData}}'/>
+<arg function_pointer='true' type='^?'>
+<arg type='^{ICAHeader=sL}' type64='^{ICAHeader=sQ}'/>
+<retval type='v'/>
+</arg>
+<retval type='s'/>
+</function>
+<function name='ICADownloadFile'>
+<arg type='^{ICADownloadFilePB={ICAHeader=sL}I^{FSRef}IIIi^{FSRef}}' type64='^{ICADownloadFilePB={ICAHeader=sQ}I^{FSRef}IIIi^{FSRef}}'/>
+<arg function_pointer='true' type='^?'>
+<arg type='^{ICAHeader=sL}' type64='^{ICAHeader=sQ}'/>
+<retval type='v'/>
+</arg>
+<retval type='s'/>
+</function>
+<function name='ICAGetDeviceList'>
+<arg type='^{ICAGetDeviceListPB={ICAHeader=sL}I}' type64='^{ICAGetDeviceListPB={ICAHeader=sQ}I}'/>
+<arg function_pointer='true' type='^?'>
+<arg type='^{ICAHeader=sL}' type64='^{ICAHeader=sQ}'/>
+<retval type='v'/>
+</arg>
+<retval type='s'/>
+</function>
+<function name='ICAImportImage'>
+<arg type='^{ICAImportImagePB={ICAHeader=sL}II^{__CFArray}^?^^{__CFArray}}' type64='^{ICAImportImagePB={ICAHeader=sQ}II^{__CFArray}^?^^{__CFArray}}'/>
+<arg function_pointer='true' type='^?'>
+<arg type='^{ICAHeader=sL}' type64='^{ICAHeader=sQ}'/>
+<retval type='v'/>
+</arg>
+<retval type='s'/>
+</function>
+<function name='ICALoadDeviceModule'>
+<arg type='^{ICALoadDeviceModulePB={ICAHeader=sL}^{__CFDictionary}}' type64='^{ICALoadDeviceModulePB={ICAHeader=sQ}^{__CFDictionary}}'/>
+<arg function_pointer='true' type='^?'>
+<arg type='^{ICAHeader=sL}' type64='^{ICAHeader=sQ}'/>
+<retval type='v'/>
+</arg>
+<retval type='s'/>
+</function>
+<function name='ICAObjectSendMessage'>
+<arg type='^{ICAObjectSendMessagePB={ICAHeader=sL}I{ICAMessage=II^vII}I}' type64='^{ICAObjectSendMessagePB={ICAHeader=sQ}I{ICAMessage=II^vII}I}'/>
+<arg function_pointer='true' type='^?'>
+<arg type='^{ICAHeader=sL}' type64='^{ICAHeader=sQ}'/>
+<retval type='v'/>
+</arg>
+<retval type='s'/>
+</function>
+<function name='ICAOpenSession'>
+<arg type='^{ICAOpenSessionPB={ICAHeader=sL}II}' type64='^{ICAOpenSessionPB={ICAHeader=sQ}II}'/>
+<arg function_pointer='true' type='^?'>
+<arg type='^{ICAHeader=sL}' type64='^{ICAHeader=sQ}'/>
+<retval type='v'/>
+</arg>
+<retval type='s'/>
+</function>
+<function name='ICARegisterForEventNotification'>
+<arg type='^{ICARegisterForEventNotificationPB={ICAHeader=sL}I^{__CFArray}^?^{__CFDictionary}}' type64='^{ICARegisterForEventNotificationPB={ICAHeader=sQ}I^{__CFArray}^?^{__CFDictionary}}'/>
+<arg function_pointer='true' type='^?'>
+<arg type='^{ICAHeader=sL}' type64='^{ICAHeader=sQ}'/>
+<retval type='v'/>
+</arg>
+<retval type='s'/>
+</function>
+<function name='ICAScannerCloseSession'>
+<arg type='^{ICAScannerCloseSessionPB={ICAHeader=sL}I}' type64='^{ICAScannerCloseSessionPB={ICAHeader=sQ}I}'/>
+<arg function_pointer='true' type='^?'>
+<arg type='^{ICAHeader=sL}' type64='^{ICAHeader=sQ}'/>
+<retval type='v'/>
+</arg>
+<retval type='s'/>
+</function>
+<function name='ICAScannerGetParameters'>
+<arg type='^{ICAScannerGetParametersPB={ICAHeader=sL}I^{__CFDictionary}}' type64='^{ICAScannerGetParametersPB={ICAHeader=sQ}I^{__CFDictionary}}'/>
+<arg function_pointer='true' type='^?'>
+<arg type='^{ICAHeader=sL}' type64='^{ICAHeader=sQ}'/>
+<retval type='v'/>
+</arg>
+<retval type='s'/>
+</function>
+<function name='ICAScannerInitialize'>
+<arg type='^{ICAScannerInitializePB={ICAHeader=sL}I}' type64='^{ICAScannerInitializePB={ICAHeader=sQ}I}'/>
+<arg function_pointer='true' type='^?'>
+<arg type='^{ICAHeader=sL}' type64='^{ICAHeader=sQ}'/>
+<retval type='v'/>
+</arg>
+<retval type='s'/>
+</function>
+<function name='ICAScannerOpenSession'>
+<arg type='^{ICAScannerOpenSessionPB={ICAHeader=sL}II}' type64='^{ICAScannerOpenSessionPB={ICAHeader=sQ}II}'/>
+<arg function_pointer='true' type='^?'>
+<arg type='^{ICAHeader=sL}' type64='^{ICAHeader=sQ}'/>
+<retval type='v'/>
+</arg>
+<retval type='s'/>
+</function>
+<function name='ICAScannerSetParameters'>
+<arg type='^{ICAScannerSetParametersPB={ICAHeader=sL}I^{__CFDictionary}}' type64='^{ICAScannerSetParametersPB={ICAHeader=sQ}I^{__CFDictionary}}'/>
+<arg function_pointer='true' type='^?'>
+<arg type='^{ICAHeader=sL}' type64='^{ICAHeader=sQ}'/>
+<retval type='v'/>
+</arg>
+<retval type='s'/>
+</function>
+<function name='ICAScannerStart'>
+<arg type='^{ICAScannerStartPB={ICAHeader=sL}I}' type64='^{ICAScannerStartPB={ICAHeader=sQ}I}'/>
+<arg function_pointer='true' type='^?'>
+<arg type='^{ICAHeader=sL}' type64='^{ICAHeader=sQ}'/>
+<retval type='v'/>
+</arg>
+<retval type='s'/>
+</function>
+<function name='ICAScannerStatus'>
+<arg type='^{ICAScannerStatusPB={ICAHeader=sL}II}' type64='^{ICAScannerStatusPB={ICAHeader=sQ}II}'/>
+<arg function_pointer='true' type='^?'>
+<arg type='^{ICAHeader=sL}' type64='^{ICAHeader=sQ}'/>
+<retval type='v'/>
+</arg>
+<retval type='s'/>
+</function>
+<function name='ICASendNotification'>
+<arg type='^{ICASendNotificationPB={ICAHeader=sL}^{__CFDictionary}I}' type64='^{ICASendNotificationPB={ICAHeader=sQ}^{__CFDictionary}I}'/>
+<retval type='s'/>
+</function>
+<function name='ICASendNotificationAndWaitForReply'>
+<arg type='^{ICASendNotificationPB={ICAHeader=sL}^{__CFDictionary}I}' type64='^{ICASendNotificationPB={ICAHeader=sQ}^{__CFDictionary}I}'/>
+<retval type='s'/>
+</function>
+<function name='ICAShowDeviceBrowser'>
+<arg type='^{__CFDictionary=}'/>
+<retval type='s'/>
+</function>
+<function name='ICAUnloadDeviceModule'>
+<arg type='^{ICAUnloadDeviceModulePB={ICAHeader=sL}I}' type64='^{ICAUnloadDeviceModulePB={ICAHeader=sQ}I}'/>
+<arg function_pointer='true' type='^?'>
+<arg type='^{ICAHeader=sL}' type64='^{ICAHeader=sQ}'/>
+<retval type='v'/>
+</arg>
+<retval type='s'/>
+</function>
+<function name='ICAUploadFile'>
+<arg type='^{ICAUploadFilePB={ICAHeader=sL}I^{FSRef}I}' type64='^{ICAUploadFilePB={ICAHeader=sQ}I^{FSRef}I}'/>
+<arg function_pointer='true' type='^?'>
+<arg type='^{ICAHeader=sL}' type64='^{ICAHeader=sQ}'/>
+<retval type='v'/>
+</arg>
+<retval type='s'/>
+</function>
+<function name='ICDDisposeObject'>
+<arg type='^{ICD_DisposeObjectPB={ICDHeader=sL}I}' type64='^{ICD_DisposeObjectPB={ICDHeader=sQ}I}'/>
+<arg function_pointer='true' type='^?'>
+<arg type='^{ICDHeader=sL}' type64='^{ICDHeader=sQ}'/>
+<retval type='v'/>
+</arg>
+<retval type='s'/>
+</function>
+<function name='ICDNewObject'>
+<arg type='^{ICD_NewObjectPB={ICDHeader=sL}I{ICAObjectInfo=II}I}' type64='^{ICD_NewObjectPB={ICDHeader=sQ}I{ICAObjectInfo=II}I}'/>
+<arg function_pointer='true' type='^?'>
+<arg type='^{ICDHeader=sL}' type64='^{ICDHeader=sQ}'/>
+<retval type='v'/>
+</arg>
+<retval type='s'/>
+</function>
+</signatures>

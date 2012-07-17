@@ -1,0 +1,37 @@
+<?xml version='1.0'?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version='1.0'>
+<depends_on path='/System/Library/Frameworks/Cocoa.framework'/>
+<depends_on path='/System/Library/Frameworks/AddressBook.framework'/>
+<depends_on path='/System/Library/Frameworks/SecurityInterface.framework'/>
+<depends_on path='/System/Library/Frameworks/OpenDirectory.framework'/>
+<depends_on path='/System/Library/Frameworks/SystemConfiguration.framework'/>
+<depends_on path='/System/Library/Frameworks/CoreServices.framework'/>
+<depends_on path='/System/Library/Frameworks/CoreFoundation.framework'/>
+<depends_on path='/System/Library/Frameworks/Foundation.framework'/>
+<depends_on path='/System/Library/Frameworks/AppKit.framework'/>
+<class name='CBIdentity'>
+<method selector='isHidden'>
+<retval type='B'/>
+</method>
+<method selector='isMemberOfGroup:'>
+<retval type='B'/>
+</method>
+</class>
+<class name='CBIdentityPicker'>
+<method selector='allowsMultipleSelection'>
+<retval type='B'/>
+</method>
+<method selector='setAllowsMultipleSelection:'>
+<arg index='0' type='B'/>
+</method>
+</class>
+<class name='CBUserIdentity'>
+<method selector='authenticateWithPassword:'>
+<retval type='B'/>
+</method>
+<method selector='isEnabled'>
+<retval type='B'/>
+</method>
+</class>
+</signatures>

@@ -1,0 +1,31 @@
+<?xml version='1.0'?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version='1.0'>
+<depends_on path='/System/Library/Frameworks/Security.framework'/>
+<depends_on path='/System/Library/Frameworks/Foundation.framework'/>
+<depends_on path='/System/Library/Frameworks/SystemConfiguration.framework'/>
+<depends_on path='/System/Library/Frameworks/CoreFoundation.framework'/>
+<class name='SFAuthorization'>
+<method class_method='true' selector='authorizationWithFlags:rights:environment:'>
+<arg index='1' type='^{_AuthorizationRights=I^{?}}'/>
+<arg index='2' type='^{_AuthorizationEnvironment=I^{?}}'/>
+</method>
+<method selector='initWithFlags:rights:environment:'>
+<arg index='1' type='^{_AuthorizationRights=I^{?}}'/>
+<arg index='2' type='^{_AuthorizationEnvironment=I^{?}}'/>
+</method>
+<method selector='obtainWithRight:flags:error:'>
+<retval type='B'/>
+</method>
+<method selector='obtainWithRights:flags:environment:authorizedRights:error:'>
+<arg index='0' type='^{_AuthorizationRights=I^{?}}'/>
+<arg index='2' type='^{_AuthorizationEnvironment=I^{?}}'/>
+<retval type='B'/>
+</method>
+<method selector='permitWithRights:flags:environment:authorizedRights:'>
+<arg index='0' type='^{_AuthorizationRights=I^{?}}'/>
+<arg index='2' type='^{_AuthorizationEnvironment=I^{?}}'/>
+<arg index='3' type='^{_AuthorizationRights=I^{?}}'/>
+</method>
+</class>
+</signatures>

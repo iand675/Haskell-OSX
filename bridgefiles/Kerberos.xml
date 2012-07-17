@@ -1,0 +1,3930 @@
+<?xml version='1.0'?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version='1.0'>
+<depends_on path='/System/Library/Frameworks/Security.framework'/>
+<depends_on path='/System/Library/Frameworks/CoreFoundation.framework'/>
+<struct type='{cc_credentials_v4_compat=&quot;kversion&quot;C&quot;principal&quot;[41c]&quot;principal_instance&quot;[41c]&quot;service&quot;[41c]&quot;service_instance&quot;[41c]&quot;realm&quot;[41c]&quot;session_key&quot;[8C]&quot;kvno&quot;i&quot;str_to_key&quot;i&quot;issue_date&quot;l&quot;lifetime&quot;i&quot;address&quot;I&quot;ticket_sz&quot;i&quot;ticket&quot;[1250C]&quot;oops&quot;L}' type64='{cc_credentials_v4_compat=&quot;kversion&quot;C&quot;principal&quot;[41c]&quot;principal_instance&quot;[41c]&quot;service&quot;[41c]&quot;service_instance&quot;[41c]&quot;realm&quot;[41c]&quot;session_key&quot;[8C]&quot;kvno&quot;i&quot;str_to_key&quot;i&quot;issue_date&quot;q&quot;lifetime&quot;i&quot;address&quot;I&quot;ticket_sz&quot;i&quot;ticket&quot;[1250C]&quot;oops&quot;Q}' name='V4Cred_type'/>
+<struct type='{cc_context_d=&quot;functions&quot;^{cc_context_f}&quot;vector_functions&quot;^{cc_context_f}}' name='apiCB'/>
+<struct type='{apple_gss_krb5_authdata_if_relevant_key=&quot;type&quot;I&quot;length&quot;I&quot;data&quot;^v}' name='apple_gss_krb5_authdata_if_relevant'/>
+<struct type='{apple_gss_krb5_authdata_if_relevant_key=&quot;type&quot;I&quot;length&quot;I&quot;data&quot;^v}' name='apple_gss_krb5_authdata_if_relevant_key'/>
+<struct type='{cc_ccache_d=&quot;functions&quot;^{cc_ccache_f}&quot;vector_functions&quot;^{cc_ccache_f}}' name='cc_ccache_d'/>
+<struct type='{cc_ccache_f=&quot;release&quot;^?&quot;destroy&quot;^?&quot;set_default&quot;^?&quot;get_credentials_version&quot;^?&quot;get_name&quot;^?&quot;get_principal&quot;^?&quot;set_principal&quot;^?&quot;store_credentials&quot;^?&quot;remove_credentials&quot;^?&quot;new_credentials_iterator&quot;^?&quot;move&quot;^?&quot;lock&quot;^?&quot;unlock&quot;^?&quot;get_last_default_time&quot;^?&quot;get_change_time&quot;^?&quot;compare&quot;^?&quot;get_kdc_time_offset&quot;^?&quot;set_kdc_time_offset&quot;^?&quot;clear_kdc_time_offset&quot;^?&quot;wait_for_change&quot;^?}' name='cc_ccache_f'/>
+<struct type='{cc_ccache_iterator_d=&quot;functions&quot;^{cc_ccache_iterator_f}&quot;vector_functions&quot;^{cc_ccache_iterator_f}}' name='cc_ccache_iterator_d'/>
+<struct type='{cc_ccache_iterator_f=&quot;release&quot;^?&quot;next&quot;^?&quot;clone&quot;^?}' name='cc_ccache_iterator_f'/>
+<struct type='{cc_context_d=&quot;functions&quot;^{cc_context_f}&quot;vector_functions&quot;^{cc_context_f}}' name='cc_context_d'/>
+<struct type='{cc_context_f=&quot;release&quot;^?&quot;get_change_time&quot;^?&quot;get_default_ccache_name&quot;^?&quot;open_ccache&quot;^?&quot;open_default_ccache&quot;^?&quot;create_ccache&quot;^?&quot;create_default_ccache&quot;^?&quot;create_new_ccache&quot;^?&quot;new_ccache_iterator&quot;^?&quot;lock&quot;^?&quot;unlock&quot;^?&quot;compare&quot;^?&quot;wait_for_change&quot;^?}' name='cc_context_f'/>
+<struct type='{cc_credentials_d=&quot;data&quot;^{cc_credentials_union}&quot;functions&quot;^{cc_credentials_f}&quot;otherFunctions&quot;^{cc_credentials_f}}' name='cc_credentials_d'/>
+<struct type='{cc_credentials_f=&quot;release&quot;^?&quot;compare&quot;^?}' name='cc_credentials_f'/>
+<struct type='{cc_credentials_iterator_d=&quot;functions&quot;^{cc_credentials_iterator_f}&quot;vector_functions&quot;^{cc_credentials_iterator_f}}' name='cc_credentials_iterator_d'/>
+<struct type='{cc_credentials_iterator_f=&quot;release&quot;^?&quot;next&quot;^?&quot;clone&quot;^?}' name='cc_credentials_iterator_f'/>
+<struct type='{cc_credentials_union=&quot;version&quot;I&quot;credentials&quot;(?=&quot;credentials_v4&quot;^{cc_credentials_v4_t}&quot;credentials_v5&quot;^{cc_credentials_v5_t})}' name='cc_credentials_union'/>
+<struct type='{cc_credentials_v4_compat=&quot;kversion&quot;C&quot;principal&quot;[41c]&quot;principal_instance&quot;[41c]&quot;service&quot;[41c]&quot;service_instance&quot;[41c]&quot;realm&quot;[41c]&quot;session_key&quot;[8C]&quot;kvno&quot;i&quot;str_to_key&quot;i&quot;issue_date&quot;l&quot;lifetime&quot;i&quot;address&quot;I&quot;ticket_sz&quot;i&quot;ticket&quot;[1250C]&quot;oops&quot;L}' type64='{cc_credentials_v4_compat=&quot;kversion&quot;C&quot;principal&quot;[41c]&quot;principal_instance&quot;[41c]&quot;service&quot;[41c]&quot;service_instance&quot;[41c]&quot;realm&quot;[41c]&quot;session_key&quot;[8C]&quot;kvno&quot;i&quot;str_to_key&quot;i&quot;issue_date&quot;q&quot;lifetime&quot;i&quot;address&quot;I&quot;ticket_sz&quot;i&quot;ticket&quot;[1250C]&quot;oops&quot;Q}' name='cc_credentials_v4_compat'/>
+<struct type='{cc_credentials_v4_t=&quot;version&quot;I&quot;principal&quot;[40c]&quot;principal_instance&quot;[40c]&quot;service&quot;[40c]&quot;service_instance&quot;[40c]&quot;realm&quot;[40c]&quot;session_key&quot;[8C]&quot;kvno&quot;i&quot;string_to_key_type&quot;i&quot;issue_date&quot;I&quot;lifetime&quot;i&quot;address&quot;I&quot;ticket_size&quot;i&quot;ticket&quot;[1254C]}' name='cc_credentials_v4_t'/>
+<struct type='{cc_credentials_v5_compat=&quot;client&quot;*&quot;server&quot;*&quot;keyblock&quot;{cc_data=&quot;type&quot;I&quot;length&quot;I&quot;data&quot;^v}&quot;authtime&quot;I&quot;starttime&quot;I&quot;endtime&quot;I&quot;renew_till&quot;I&quot;is_skey&quot;I&quot;ticket_flags&quot;I&quot;addresses&quot;^^{cc_data}&quot;ticket&quot;{cc_data=&quot;type&quot;I&quot;length&quot;I&quot;data&quot;^v}&quot;second_ticket&quot;{cc_data=&quot;type&quot;I&quot;length&quot;I&quot;data&quot;^v}&quot;authdata&quot;^^{cc_data}}' name='cc_credentials_v5_compat'/>
+<struct type='{cc_credentials_v5_t=&quot;client&quot;*&quot;server&quot;*&quot;keyblock&quot;{cc_data=&quot;type&quot;I&quot;length&quot;I&quot;data&quot;^v}&quot;authtime&quot;I&quot;starttime&quot;I&quot;endtime&quot;I&quot;renew_till&quot;I&quot;is_skey&quot;I&quot;ticket_flags&quot;I&quot;addresses&quot;^^{cc_data}&quot;ticket&quot;{cc_data=&quot;type&quot;I&quot;length&quot;I&quot;data&quot;^v}&quot;second_ticket&quot;{cc_data=&quot;type&quot;I&quot;length&quot;I&quot;data&quot;^v}&quot;authdata&quot;^^{cc_data}}' name='cc_credentials_v5_t'/>
+<struct type='{cc_credentials_v5_compat=&quot;client&quot;*&quot;server&quot;*&quot;keyblock&quot;{cc_data=&quot;type&quot;I&quot;length&quot;I&quot;data&quot;^v}&quot;authtime&quot;I&quot;starttime&quot;I&quot;endtime&quot;I&quot;renew_till&quot;I&quot;is_skey&quot;I&quot;ticket_flags&quot;I&quot;addresses&quot;^^{cc_data}&quot;ticket&quot;{cc_data=&quot;type&quot;I&quot;length&quot;I&quot;data&quot;^v}&quot;second_ticket&quot;{cc_data=&quot;type&quot;I&quot;length&quot;I&quot;data&quot;^v}&quot;authdata&quot;^^{cc_data}}' name='cc_creds'/>
+<struct type='{cc_data=&quot;type&quot;I&quot;length&quot;I&quot;data&quot;^v}' name='cc_data'/>
+<struct type='{cc_data=&quot;type&quot;I&quot;length&quot;I&quot;data&quot;^v}' name='cc_data_compat'/>
+<struct type='{cc_string_d=&quot;data&quot;*&quot;functions&quot;^{cc_string_f}&quot;vector_functions&quot;^{cc_string_f}}' name='cc_string_d'/>
+<struct type='{cc_string_f=&quot;release&quot;^?}' name='cc_string_f'/>
+<struct type='{cc_ccache_iterator_d=&quot;functions&quot;^{cc_ccache_iterator_f}&quot;vector_functions&quot;^{cc_ccache_iterator_f}}' name='ccache_cit_ccache'/>
+<struct type='{cc_credentials_iterator_d=&quot;functions&quot;^{cc_credentials_iterator_f}&quot;vector_functions&quot;^{cc_credentials_iterator_f}}' name='ccache_cit_creds'/>
+<struct type='{cc_ccache_d=&quot;functions&quot;^{cc_ccache_f}&quot;vector_functions&quot;^{cc_ccache_f}}' name='ccache_p'/>
+<struct type='{cred_union=&quot;cred_type&quot;i&quot;cred&quot;(cred_ptr_union_compat=&quot;pV4Cred&quot;^{cc_credentials_v4_compat}&quot;pV5Cred&quot;^{cc_credentials_v5_compat})}' name='cred_union'/>
+<struct type='{error_table=&quot;messages&quot;^*&quot;base&quot;i&quot;count&quot;i}' name='error_table'/>
+<struct type='{gss_OID_desc_struct=&quot;length&quot;I&quot;elements&quot;^v}' name='gss_OID'/>
+<struct type='{gss_OID_desc_struct=&quot;length&quot;I&quot;elements&quot;^v}' name='gss_OID_desc'/>
+<struct type='{gss_OID_desc_struct=&quot;length&quot;I&quot;elements&quot;^v}' name='gss_OID_desc_struct'/>
+<struct type='{gss_OID_set_desc_struct=&quot;count&quot;I&quot;elements&quot;^{gss_OID_desc_struct}}' type64='{gss_OID_set_desc_struct=&quot;count&quot;Q&quot;elements&quot;^{gss_OID_desc_struct}}' name='gss_OID_set'/>
+<struct type='{gss_OID_set_desc_struct=&quot;count&quot;I&quot;elements&quot;^{gss_OID_desc_struct}}' type64='{gss_OID_set_desc_struct=&quot;count&quot;Q&quot;elements&quot;^{gss_OID_desc_struct}}' name='gss_OID_set_desc'/>
+<struct type='{gss_OID_set_desc_struct=&quot;count&quot;I&quot;elements&quot;^{gss_OID_desc_struct}}' type64='{gss_OID_set_desc_struct=&quot;count&quot;Q&quot;elements&quot;^{gss_OID_desc_struct}}' name='gss_OID_set_desc_struct'/>
+<struct type='{gss_buffer_desc_struct=&quot;length&quot;I&quot;value&quot;^v}' type64='{gss_buffer_desc_struct=&quot;length&quot;Q&quot;value&quot;^v}' name='gss_buffer_desc'/>
+<struct type='{gss_buffer_desc_struct=&quot;length&quot;I&quot;value&quot;^v}' type64='{gss_buffer_desc_struct=&quot;length&quot;Q&quot;value&quot;^v}' name='gss_buffer_desc_struct'/>
+<struct type='{gss_buffer_desc_struct=&quot;length&quot;I&quot;value&quot;^v}' type64='{gss_buffer_desc_struct=&quot;length&quot;Q&quot;value&quot;^v}' name='gss_buffer_t'/>
+<struct type='{gss_channel_bindings_struct=&quot;initiator_addrtype&quot;I&quot;initiator_address&quot;{gss_buffer_desc_struct=&quot;length&quot;I&quot;value&quot;^v}&quot;acceptor_addrtype&quot;I&quot;acceptor_address&quot;{gss_buffer_desc_struct=&quot;length&quot;I&quot;value&quot;^v}&quot;application_data&quot;{gss_buffer_desc_struct=&quot;length&quot;I&quot;value&quot;^v}}' type64='{gss_channel_bindings_struct=&quot;initiator_addrtype&quot;I&quot;initiator_address&quot;{gss_buffer_desc_struct=&quot;length&quot;Q&quot;value&quot;^v}&quot;acceptor_addrtype&quot;I&quot;acceptor_address&quot;{gss_buffer_desc_struct=&quot;length&quot;Q&quot;value&quot;^v}&quot;application_data&quot;{gss_buffer_desc_struct=&quot;length&quot;Q&quot;value&quot;^v}}' name='gss_channel_bindings_struct'/>
+<struct type='{gss_channel_bindings_struct=&quot;initiator_addrtype&quot;I&quot;initiator_address&quot;{gss_buffer_desc_struct=&quot;length&quot;I&quot;value&quot;^v}&quot;acceptor_addrtype&quot;I&quot;acceptor_address&quot;{gss_buffer_desc_struct=&quot;length&quot;I&quot;value&quot;^v}&quot;application_data&quot;{gss_buffer_desc_struct=&quot;length&quot;I&quot;value&quot;^v}}' type64='{gss_channel_bindings_struct=&quot;initiator_addrtype&quot;I&quot;initiator_address&quot;{gss_buffer_desc_struct=&quot;length&quot;Q&quot;value&quot;^v}&quot;acceptor_addrtype&quot;I&quot;acceptor_address&quot;{gss_buffer_desc_struct=&quot;length&quot;Q&quot;value&quot;^v}&quot;application_data&quot;{gss_buffer_desc_struct=&quot;length&quot;Q&quot;value&quot;^v}}' name='gss_channel_bindings_t'/>
+<struct type='{gss_krb5_cfx_keydata=&quot;have_acceptor_subkey&quot;I&quot;ctx_key&quot;{gss_krb5_lucid_key=&quot;type&quot;I&quot;length&quot;I&quot;data&quot;^v}&quot;acceptor_subkey&quot;{gss_krb5_lucid_key=&quot;type&quot;I&quot;length&quot;I&quot;data&quot;^v}}' name='gss_krb5_cfx_keydata'/>
+<struct type='{gss_krb5_cfx_keydata=&quot;have_acceptor_subkey&quot;I&quot;ctx_key&quot;{gss_krb5_lucid_key=&quot;type&quot;I&quot;length&quot;I&quot;data&quot;^v}&quot;acceptor_subkey&quot;{gss_krb5_lucid_key=&quot;type&quot;I&quot;length&quot;I&quot;data&quot;^v}}' name='gss_krb5_cfx_keydata_t'/>
+<struct type='{gss_krb5_lucid_context_v1=&quot;version&quot;I&quot;initiate&quot;I&quot;endtime&quot;I&quot;send_seq&quot;Q&quot;recv_seq&quot;Q&quot;protocol&quot;I&quot;rfc1964_kd&quot;{gss_krb5_rfc1964_keydata=&quot;sign_alg&quot;I&quot;seal_alg&quot;I&quot;ctx_key&quot;{gss_krb5_lucid_key=&quot;type&quot;I&quot;length&quot;I&quot;data&quot;^v}}&quot;cfx_kd&quot;{gss_krb5_cfx_keydata=&quot;have_acceptor_subkey&quot;I&quot;ctx_key&quot;{gss_krb5_lucid_key=&quot;type&quot;I&quot;length&quot;I&quot;data&quot;^v}&quot;acceptor_subkey&quot;{gss_krb5_lucid_key=&quot;type&quot;I&quot;length&quot;I&quot;data&quot;^v}}}' name='gss_krb5_lucid_context_v1'/>
+<struct type='{gss_krb5_lucid_context_v1=&quot;version&quot;I&quot;initiate&quot;I&quot;endtime&quot;I&quot;send_seq&quot;Q&quot;recv_seq&quot;Q&quot;protocol&quot;I&quot;rfc1964_kd&quot;{gss_krb5_rfc1964_keydata=&quot;sign_alg&quot;I&quot;seal_alg&quot;I&quot;ctx_key&quot;{gss_krb5_lucid_key=&quot;type&quot;I&quot;length&quot;I&quot;data&quot;^v}}&quot;cfx_kd&quot;{gss_krb5_cfx_keydata=&quot;have_acceptor_subkey&quot;I&quot;ctx_key&quot;{gss_krb5_lucid_key=&quot;type&quot;I&quot;length&quot;I&quot;data&quot;^v}&quot;acceptor_subkey&quot;{gss_krb5_lucid_key=&quot;type&quot;I&quot;length&quot;I&quot;data&quot;^v}}}' name='gss_krb5_lucid_context_v1_t'/>
+<struct type='{gss_krb5_lucid_context_version=&quot;version&quot;I}' name='gss_krb5_lucid_context_version'/>
+<struct type='{gss_krb5_lucid_context_version=&quot;version&quot;I}' name='gss_krb5_lucid_context_version_t'/>
+<struct type='{gss_krb5_lucid_key=&quot;type&quot;I&quot;length&quot;I&quot;data&quot;^v}' name='gss_krb5_lucid_key'/>
+<struct type='{gss_krb5_lucid_key=&quot;type&quot;I&quot;length&quot;I&quot;data&quot;^v}' name='gss_krb5_lucid_key_t'/>
+<struct type='{gss_krb5_rfc1964_keydata=&quot;sign_alg&quot;I&quot;seal_alg&quot;I&quot;ctx_key&quot;{gss_krb5_lucid_key=&quot;type&quot;I&quot;length&quot;I&quot;data&quot;^v}}' name='gss_krb5_rfc1964_keydata'/>
+<struct type='{gss_krb5_rfc1964_keydata=&quot;sign_alg&quot;I&quot;seal_alg&quot;I&quot;ctx_key&quot;{gss_krb5_lucid_key=&quot;type&quot;I&quot;length&quot;I&quot;data&quot;^v}}' name='gss_krb5_rfc1964_keydata_t'/>
+<struct type='{infoNC=&quot;name&quot;*&quot;principal&quot;*&quot;vers&quot;i}' name='infoNC'/>
+<struct type='{_krb5_address=&quot;magic&quot;i&quot;addrtype&quot;i&quot;length&quot;I&quot;contents&quot;*}' name='krb5_address'/>
+<struct type='{_krb5_ap_rep=&quot;magic&quot;i&quot;enc_part&quot;{_krb5_enc_data=&quot;magic&quot;i&quot;enctype&quot;i&quot;kvno&quot;I&quot;ciphertext&quot;{_krb5_data=&quot;magic&quot;i&quot;length&quot;I&quot;data&quot;*}}}' name='krb5_ap_rep'/>
+<struct type='{_krb5_ap_rep_enc_part=&quot;magic&quot;i&quot;ctime&quot;i&quot;cusec&quot;i&quot;subkey&quot;^{_krb5_keyblock}&quot;seq_number&quot;I}' name='krb5_ap_rep_enc_part'/>
+<struct type='{_krb5_ap_req=&quot;magic&quot;i&quot;ap_options&quot;i&quot;ticket&quot;^{_krb5_ticket}&quot;authenticator&quot;{_krb5_enc_data=&quot;magic&quot;i&quot;enctype&quot;i&quot;kvno&quot;I&quot;ciphertext&quot;{_krb5_data=&quot;magic&quot;i&quot;length&quot;I&quot;data&quot;*}}}' name='krb5_ap_req'/>
+<struct type='{_krb5_authdata=&quot;magic&quot;i&quot;ad_type&quot;i&quot;length&quot;I&quot;contents&quot;*}' name='krb5_authdata'/>
+<struct type='{_krb5_authenticator=&quot;magic&quot;i&quot;client&quot;^{krb5_principal_data}&quot;checksum&quot;^{_krb5_checksum}&quot;cusec&quot;i&quot;ctime&quot;i&quot;subkey&quot;^{_krb5_keyblock}&quot;seq_number&quot;I&quot;authorization_data&quot;^^{_krb5_authdata}}' name='krb5_authenticator'/>
+<struct type='{_krb5_checksum=&quot;magic&quot;i&quot;checksum_type&quot;i&quot;length&quot;I&quot;contents&quot;*}' name='krb5_checksum'/>
+<struct type='{_krb5_cred=&quot;magic&quot;i&quot;tickets&quot;^^{_krb5_ticket}&quot;enc_part&quot;{_krb5_enc_data=&quot;magic&quot;i&quot;enctype&quot;i&quot;kvno&quot;I&quot;ciphertext&quot;{_krb5_data=&quot;magic&quot;i&quot;length&quot;I&quot;data&quot;*}}&quot;enc_part2&quot;^{_krb5_cred_enc_part}}' name='krb5_cred'/>
+<struct type='{_krb5_cred_enc_part=&quot;magic&quot;i&quot;nonce&quot;i&quot;timestamp&quot;i&quot;usec&quot;i&quot;s_address&quot;^{_krb5_address}&quot;r_address&quot;^{_krb5_address}&quot;ticket_info&quot;^^{_krb5_cred_info}}' name='krb5_cred_enc_part'/>
+<struct type='{_krb5_cred_info=&quot;magic&quot;i&quot;session&quot;^{_krb5_keyblock}&quot;client&quot;^{krb5_principal_data}&quot;server&quot;^{krb5_principal_data}&quot;flags&quot;i&quot;times&quot;{_krb5_ticket_times=&quot;authtime&quot;i&quot;starttime&quot;i&quot;endtime&quot;i&quot;renew_till&quot;i}&quot;caddrs&quot;^^{_krb5_address}}' name='krb5_cred_info'/>
+<struct type='{_krb5_creds=&quot;magic&quot;i&quot;client&quot;^{krb5_principal_data}&quot;server&quot;^{krb5_principal_data}&quot;keyblock&quot;{_krb5_keyblock=&quot;magic&quot;i&quot;enctype&quot;i&quot;length&quot;I&quot;contents&quot;*}&quot;times&quot;{_krb5_ticket_times=&quot;authtime&quot;i&quot;starttime&quot;i&quot;endtime&quot;i&quot;renew_till&quot;i}&quot;is_skey&quot;I&quot;ticket_flags&quot;i&quot;addresses&quot;^^{_krb5_address}&quot;ticket&quot;{_krb5_data=&quot;magic&quot;i&quot;length&quot;I&quot;data&quot;*}&quot;second_ticket&quot;{_krb5_data=&quot;magic&quot;i&quot;length&quot;I&quot;data&quot;*}&quot;authdata&quot;^^{_krb5_authdata}}' name='krb5_creds'/>
+<struct type='{_krb5_data=&quot;magic&quot;i&quot;length&quot;I&quot;data&quot;*}' name='krb5_data'/>
+<struct type='{_krb5_enc_data=&quot;magic&quot;i&quot;enctype&quot;i&quot;kvno&quot;I&quot;ciphertext&quot;{_krb5_data=&quot;magic&quot;i&quot;length&quot;I&quot;data&quot;*}}' name='krb5_enc_data'/>
+<struct type='{_krb5_enc_kdc_rep_part=&quot;magic&quot;i&quot;msg_type&quot;I&quot;session&quot;^{_krb5_keyblock}&quot;last_req&quot;^^{_krb5_last_req_entry}&quot;nonce&quot;i&quot;key_exp&quot;i&quot;flags&quot;i&quot;times&quot;{_krb5_ticket_times=&quot;authtime&quot;i&quot;starttime&quot;i&quot;endtime&quot;i&quot;renew_till&quot;i}&quot;server&quot;^{krb5_principal_data}&quot;caddrs&quot;^^{_krb5_address}}' name='krb5_enc_kdc_rep_part'/>
+<struct type='{_krb5_enc_tkt_part=&quot;magic&quot;i&quot;flags&quot;i&quot;session&quot;^{_krb5_keyblock}&quot;client&quot;^{krb5_principal_data}&quot;transited&quot;{_krb5_transited=&quot;magic&quot;i&quot;tr_type&quot;C&quot;tr_contents&quot;{_krb5_data=&quot;magic&quot;i&quot;length&quot;I&quot;data&quot;*}}&quot;times&quot;{_krb5_ticket_times=&quot;authtime&quot;i&quot;starttime&quot;i&quot;endtime&quot;i&quot;renew_till&quot;i}&quot;caddrs&quot;^^{_krb5_address}&quot;authorization_data&quot;^^{_krb5_authdata}}' name='krb5_enc_tkt_part'/>
+<struct type='{_krb5_encrypt_block=&quot;magic&quot;i&quot;crypto_entry&quot;i&quot;key&quot;^{_krb5_keyblock}}' name='krb5_encrypt_block'/>
+<struct type='{_krb5_error=&quot;magic&quot;i&quot;ctime&quot;i&quot;cusec&quot;i&quot;susec&quot;i&quot;stime&quot;i&quot;error&quot;I&quot;client&quot;^{krb5_principal_data}&quot;server&quot;^{krb5_principal_data}&quot;text&quot;{_krb5_data=&quot;magic&quot;i&quot;length&quot;I&quot;data&quot;*}&quot;e_data&quot;{_krb5_data=&quot;magic&quot;i&quot;length&quot;I&quot;data&quot;*}}' name='krb5_error'/>
+<struct type='{_krb5_get_init_creds_opt=&quot;flags&quot;i&quot;tkt_life&quot;i&quot;renew_life&quot;i&quot;forwardable&quot;i&quot;proxiable&quot;i&quot;etype_list&quot;^i&quot;etype_list_length&quot;i&quot;address_list&quot;^^{_krb5_address}&quot;preauth_list&quot;^i&quot;preauth_list_length&quot;i&quot;salt&quot;^{_krb5_data}}' name='krb5_get_init_creds_opt'/>
+<struct type='{_krb5_gic_opt_pa_data=&quot;attr&quot;*&quot;value&quot;*}' name='krb5_gic_opt_pa_data'/>
+<struct type='{_krb5_kdc_rep=&quot;magic&quot;i&quot;msg_type&quot;I&quot;padata&quot;^^{_krb5_pa_data}&quot;client&quot;^{krb5_principal_data}&quot;ticket&quot;^{_krb5_ticket}&quot;enc_part&quot;{_krb5_enc_data=&quot;magic&quot;i&quot;enctype&quot;i&quot;kvno&quot;I&quot;ciphertext&quot;{_krb5_data=&quot;magic&quot;i&quot;length&quot;I&quot;data&quot;*}}&quot;enc_part2&quot;^{_krb5_enc_kdc_rep_part}}' name='krb5_kdc_rep'/>
+<struct type='{_krb5_kdc_req=&quot;magic&quot;i&quot;msg_type&quot;I&quot;padata&quot;^^{_krb5_pa_data}&quot;kdc_options&quot;i&quot;client&quot;^{krb5_principal_data}&quot;server&quot;^{krb5_principal_data}&quot;from&quot;i&quot;till&quot;i&quot;rtime&quot;i&quot;nonce&quot;i&quot;nktypes&quot;i&quot;ktype&quot;^i&quot;addresses&quot;^^{_krb5_address}&quot;authorization_data&quot;{_krb5_enc_data=&quot;magic&quot;i&quot;enctype&quot;i&quot;kvno&quot;I&quot;ciphertext&quot;{_krb5_data=&quot;magic&quot;i&quot;length&quot;I&quot;data&quot;*}}&quot;unenc_authdata&quot;^^{_krb5_authdata}&quot;second_ticket&quot;^^{_krb5_ticket}}' name='krb5_kdc_req'/>
+<struct type='{_krb5_keyblock=&quot;magic&quot;i&quot;enctype&quot;i&quot;length&quot;I&quot;contents&quot;*}' name='krb5_keyblock'/>
+<struct type='{krb5_keytab_entry_st=&quot;magic&quot;i&quot;principal&quot;^{krb5_principal_data}&quot;timestamp&quot;i&quot;vno&quot;I&quot;key&quot;{_krb5_keyblock=&quot;magic&quot;i&quot;enctype&quot;i&quot;length&quot;I&quot;contents&quot;*}}' name='krb5_keytab_entry'/>
+<struct type='{krb5_keytab_entry_st=&quot;magic&quot;i&quot;principal&quot;^{krb5_principal_data}&quot;timestamp&quot;i&quot;vno&quot;I&quot;key&quot;{_krb5_keyblock=&quot;magic&quot;i&quot;enctype&quot;i&quot;length&quot;I&quot;contents&quot;*}}' name='krb5_keytab_entry_st'/>
+<struct type='{_krb5_last_req_entry=&quot;magic&quot;i&quot;lr_type&quot;i&quot;value&quot;i}' name='krb5_last_req_entry'/>
+<struct type='{_krb5_octet_data=&quot;magic&quot;i&quot;length&quot;I&quot;data&quot;*}' name='krb5_octet_data'/>
+<struct type='{_krb5_pa_data=&quot;magic&quot;i&quot;pa_type&quot;i&quot;length&quot;I&quot;contents&quot;*}' name='krb5_pa_data'/>
+<struct type='{krb5_principal_data=&quot;magic&quot;i&quot;realm&quot;{_krb5_data=&quot;magic&quot;i&quot;length&quot;I&quot;data&quot;*}&quot;data&quot;^{_krb5_data}&quot;length&quot;i&quot;type&quot;i}' name='krb5_principal_data'/>
+<struct type='{_krb5_prompt=&quot;prompt&quot;*&quot;hidden&quot;i&quot;reply&quot;^{_krb5_data}}' name='krb5_prompt'/>
+<struct type='{_krb5_pwd_data=&quot;magic&quot;i&quot;sequence_count&quot;i&quot;element&quot;^^{_passwd_phrase_element}}' name='krb5_pwd_data'/>
+<struct type='{krb5_replay_data=&quot;timestamp&quot;i&quot;usec&quot;i&quot;seq&quot;I}' name='krb5_replay_data'/>
+<struct type='{_krb5_response=&quot;magic&quot;i&quot;message_type&quot;C&quot;response&quot;{_krb5_data=&quot;magic&quot;i&quot;length&quot;I&quot;data&quot;*}&quot;expected_nonce&quot;i&quot;request_time&quot;i}' name='krb5_response'/>
+<struct type='{_krb5_ticket=&quot;magic&quot;i&quot;server&quot;^{krb5_principal_data}&quot;enc_part&quot;{_krb5_enc_data=&quot;magic&quot;i&quot;enctype&quot;i&quot;kvno&quot;I&quot;ciphertext&quot;{_krb5_data=&quot;magic&quot;i&quot;length&quot;I&quot;data&quot;*}}&quot;enc_part2&quot;^{_krb5_enc_tkt_part}}' name='krb5_ticket'/>
+<struct type='{_krb5_ticket_times=&quot;authtime&quot;i&quot;starttime&quot;i&quot;endtime&quot;i&quot;renew_till&quot;i}' name='krb5_ticket_times'/>
+<struct type='{_krb5_tkt_authent=&quot;magic&quot;i&quot;ticket&quot;^{_krb5_ticket}&quot;authenticator&quot;^{_krb5_authenticator}&quot;ap_options&quot;i}' name='krb5_tkt_authent'/>
+<struct type='{_krb5_transited=&quot;magic&quot;i&quot;tr_type&quot;C&quot;tr_contents&quot;{_krb5_data=&quot;magic&quot;i&quot;length&quot;I&quot;data&quot;*}}' name='krb5_transited'/>
+<struct type='{_krb5_verify_init_creds_opt=&quot;flags&quot;i&quot;ap_req_nofail&quot;i}' name='krb5_verify_init_creds_opt'/>
+<struct type='{krb5plugin_preauth_client_ftable_v1=&quot;name&quot;*&quot;pa_type_list&quot;^i&quot;enctype_list&quot;^i&quot;init&quot;^?&quot;fini&quot;^?&quot;flags&quot;^?&quot;request_init&quot;^?&quot;request_fini&quot;^?&quot;process&quot;^?&quot;tryagain&quot;^?&quot;gic_opts&quot;^?}' name='krb5plugin_preauth_client_ftable_v1'/>
+<struct type='{krb5plugin_preauth_server_ftable_v1=&quot;name&quot;*&quot;pa_type_list&quot;^i&quot;init_proc&quot;^?&quot;fini_proc&quot;^?&quot;flags_proc&quot;^?&quot;edata_proc&quot;^?&quot;verify_proc&quot;^?&quot;return_proc&quot;^?&quot;freepa_reqcontext_proc&quot;^?}' name='krb5plugin_preauth_server_ftable_v1'/>
+<struct type='{krb5plugin_service_locate_ftable=&quot;minor_version&quot;i&quot;init&quot;^?&quot;fini&quot;^?&quot;lookup&quot;^?}' name='krb5plugin_service_locate_ftable'/>
+<struct type='{_passwd_phrase_element=&quot;magic&quot;i&quot;passwd&quot;^{_krb5_data}&quot;phrase&quot;^{_krb5_data}}' name='passwd_phrase_element'/>
+<struct type='{_prf_data_t=&quot;magic&quot;i&quot;lock&quot;{_opaque_pthread_mutex_t=&quot;__sig&quot;l&quot;__opaque&quot;[40c]}&quot;root&quot;^{profile_node}&quot;last_stat&quot;i&quot;timestamp&quot;i&quot;frac_ts&quot;L&quot;flags&quot;i&quot;upd_serial&quot;i&quot;comment&quot;*&quot;uid&quot;I&quot;fslen&quot;I&quot;pad&quot;(?=&quot;d&quot;d&quot;p&quot;^v&quot;ll&quot;Q&quot;m&quot;{_opaque_pthread_mutex_t=&quot;__sig&quot;l&quot;__opaque&quot;[40c]})&quot;refcount&quot;i&quot;next&quot;^{_prf_data_t}&quot;filespec&quot;[15c]}' type64='{_prf_data_t=&quot;magic&quot;q&quot;lock&quot;{_opaque_pthread_mutex_t=&quot;__sig&quot;q&quot;__opaque&quot;[56c]}&quot;root&quot;^{profile_node}&quot;last_stat&quot;q&quot;timestamp&quot;q&quot;frac_ts&quot;Q&quot;flags&quot;i&quot;upd_serial&quot;i&quot;comment&quot;*&quot;uid&quot;I&quot;fslen&quot;Q&quot;pad&quot;(?=&quot;d&quot;d&quot;p&quot;^v&quot;ll&quot;Q&quot;m&quot;{_opaque_pthread_mutex_t=&quot;__sig&quot;q&quot;__opaque&quot;[56c]})&quot;refcount&quot;i&quot;next&quot;^{_prf_data_t}&quot;filespec&quot;[15c]}' name='prf_data_t'/>
+<struct type='{_prf_file_t=&quot;magic&quot;i&quot;data&quot;^{_prf_data_t}&quot;next&quot;^{_prf_file_t}}' type64='{_prf_file_t=&quot;magic&quot;q&quot;data&quot;^{_prf_data_t}&quot;next&quot;^{_prf_file_t}}' name='prf_file_t'/>
+<struct type='{_profile_t=&quot;magic&quot;i&quot;first_file&quot;^{_prf_file_t}}' type64='{_profile_t=&quot;magic&quot;q&quot;first_file&quot;^{_prf_file_t}}' name='profile_t'/>
+<opaque type='^{kim_options_opaque=}' name='KLLoginOptions'/>
+<opaque type='^{kim_identity_opaque=}' name='KLPrincipal'/>
+<opaque type='^{ccache_cit=}' name='ccache_cit'/>
+<opaque type='^{gss_cred_id_struct=}' name='gss_cred_id_t'/>
+<opaque type='^{gss_ctx_id_struct=}' name='gss_ctx_id_t'/>
+<opaque type='^{gss_name_struct=}' name='gss_name_t'/>
+<opaque type='^{_krb5_auth_context=}' name='krb5_auth_context'/>
+<opaque type='^{_krb5_cc_ops=}' name='krb5_cc_ops'/>
+<opaque type='^{_krb5_ccache=}' name='krb5_ccache'/>
+<opaque type='^{_krb5_cccol_cursor=}' name='krb5_cccol_cursor'/>
+<opaque type='^{_krb5_context=}' name='krb5_context'/>
+<opaque type='^{_krb5_kt=}' name='krb5_keytab'/>
+<opaque type='^{krb5_rc_st=}' name='krb5_rcache'/>
+<constant type='^{gss_OID_desc_struct=I^v}' name='GSS_C_NT_ANONYMOUS'/>
+<constant type='^{gss_OID_desc_struct=I^v}' name='GSS_C_NT_EXPORT_NAME'/>
+<constant type='^{gss_OID_desc_struct=I^v}' name='GSS_C_NT_HOSTBASED_SERVICE'/>
+<constant type='^{gss_OID_desc_struct=I^v}' name='GSS_C_NT_HOSTBASED_SERVICE_X'/>
+<constant type='^{gss_OID_desc_struct=I^v}' name='GSS_C_NT_MACHINE_UID_NAME'/>
+<constant type='^{gss_OID_desc_struct=I^v}' name='GSS_C_NT_STRING_UID_NAME'/>
+<constant type='^{gss_OID_desc_struct=I^v}' name='GSS_C_NT_USER_NAME'/>
+<constant type='^{gss_OID_desc_struct=I^v}' name='GSS_KRB5_NT_PRINCIPAL_NAME'/>
+<constant type='{error_table=^*ii}' name='et_asn1_error_table'/>
+<constant type='{error_table=^*ii}' name='et_k524_error_table'/>
+<constant type='{error_table=^*ii}' name='et_kdb5_error_table'/>
+<constant type='{error_table=^*ii}' name='et_krb5_error_table'/>
+<constant type='{error_table=^*ii}' name='et_kv5m_error_table'/>
+<constant type='{error_table=^*ii}' name='et_prof_error_table'/>
+<constant type='^{gss_OID_desc_struct=I^v}' name='gss_mech_krb5'/>
+<constant type='^{gss_OID_desc_struct=I^v}' name='gss_mech_krb5_old'/>
+<constant type='^{gss_OID_desc_struct=I^v}' name='gss_mech_krb5_wrong'/>
+<constant type='^{gss_OID_set_desc_struct=I^{gss_OID_desc_struct}}' type64='^{gss_OID_set_desc_struct=Q^{gss_OID_desc_struct}}' name='gss_mech_set_krb5'/>
+<constant type='^{gss_OID_set_desc_struct=I^{gss_OID_desc_struct}}' type64='^{gss_OID_set_desc_struct=Q^{gss_OID_desc_struct}}' name='gss_mech_set_krb5_both'/>
+<constant type='^{gss_OID_set_desc_struct=I^{gss_OID_desc_struct}}' type64='^{gss_OID_set_desc_struct=Q^{gss_OID_desc_struct}}' name='gss_mech_set_krb5_old'/>
+<constant type='^{gss_OID_desc_struct=I^v}' name='gss_nt_exported_name'/>
+<constant type='^{gss_OID_desc_struct=I^v}' name='gss_nt_krb5_name'/>
+<constant type='^{gss_OID_desc_struct=I^v}' name='gss_nt_krb5_principal'/>
+<constant type='^{gss_OID_desc_struct=I^v}' name='gss_nt_machine_uid_name'/>
+<constant type='^{gss_OID_desc_struct=I^v}' name='gss_nt_service_name'/>
+<constant type='^{gss_OID_desc_struct=I^v}' name='gss_nt_service_name_v2'/>
+<constant type='^{gss_OID_desc_struct=I^v}' name='gss_nt_string_uid_name'/>
+<constant type='^{gss_OID_desc_struct=I^v}' name='gss_nt_user_name'/>
+<constant type='^{gss_OID_desc_struct=I^v}' name='krb5_gss_oid_array'/>
+<string_constant value='heim_com_err-1429577728' name='COM_ERR_BINDDOMAIN_prof'/>
+<string_constant value='' name='KRB5_REFERRAL_REALM'/>
+<string_constant value='krbtgt' name='KRB5_TGS_NAME'/>
+<string_constant nsstring='true' value='CCAPICCacheChangedNotification' name='kCCAPICCacheChangedNotification'/>
+<string_constant nsstring='true' value='CCAPICacheCollectionChangedNotification' name='kCCAPICacheCollectionChangedNotification'/>
+<enum value='256' name='ADDRTYPE_ADDRPORT'/>
+<enum value='5' name='ADDRTYPE_CHAOS'/>
+<enum value='16' name='ADDRTYPE_DDP'/>
+<enum value='2' name='ADDRTYPE_INET'/>
+<enum value='24' name='ADDRTYPE_INET6'/>
+<enum value='257' name='ADDRTYPE_IPPORT'/>
+<enum value='7' name='ADDRTYPE_ISO'/>
+<enum value='6' name='ADDRTYPE_XNS'/>
+<enum value='16384' name='AD_TYPE_EXTERNAL'/>
+<enum value='8191' name='AD_TYPE_FIELD_TYPE_MASK'/>
+<enum value='16383' name='AD_TYPE_INTERNAL_MASK'/>
+<enum value='8192' name='AD_TYPE_REGISTERED'/>
+<enum value='32768' name='AD_TYPE_RESERVED'/>
+<enum value='536870912' name='AP_OPTS_MUTUAL_REQUIRED'/>
+<enum value='2147483648' name='AP_OPTS_RESERVED'/>
+<enum value='1073741824' name='AP_OPTS_USE_SESSION_KEY'/>
+<enum value='1' name='AP_OPTS_USE_SUBKEY'/>
+<enum value='4294967280' name='AP_OPTS_WIRE_MASK'/>
+<enum value='1859794440' name='ASN1_BAD_FORMAT'/>
+<enum value='1859794442' name='ASN1_BAD_GMTIME'/>
+<enum value='1859794438' name='ASN1_BAD_ID'/>
+<enum value='1859794439' name='ASN1_BAD_LENGTH'/>
+<enum value='1859794432' name='ASN1_BAD_TIMEFORMAT'/>
+<enum value='1859794443' name='ASN1_MISMATCH_INDEF'/>
+<enum value='1859794434' name='ASN1_MISPLACED_FIELD'/>
+<enum value='1859794444' name='ASN1_MISSING_EOC'/>
+<enum value='1859794433' name='ASN1_MISSING_FIELD'/>
+<enum value='1859794436' name='ASN1_OVERFLOW'/>
+<enum value='1859794437' name='ASN1_OVERRUN'/>
+<enum value='1859794441' name='ASN1_PARSE_ERROR'/>
+<enum value='1859794435' name='ASN1_TYPE_MISMATCH'/>
+<enum value='2' name='CC_API_VER_2'/>
+<enum value='1' name='CC_BADNAME'/>
+<enum value='9' name='CC_BAD_API_VERSION'/>
+<enum value='12' name='CC_BAD_PARM'/>
+<enum value='3' name='CC_CRED_MAX'/>
+<enum value='0' name='CC_CRED_UNKNOWN'/>
+<enum value='1' name='CC_CRED_V4'/>
+<enum value='2' name='CC_CRED_V5'/>
+<enum value='3' name='CC_END'/>
+<enum value='13' name='CC_ERR_CACHE_ATTACH'/>
+<enum value='15' name='CC_ERR_CACHE_FULL'/>
+<enum value='14' name='CC_ERR_CACHE_RELEASE'/>
+<enum value='16' name='CC_ERR_CRED_VERSION'/>
+<enum value='7' name='CC_FORMAT'/>
+<enum value='4' name='CC_IO'/>
+<enum value='8' name='CC_LOCKED'/>
+<enum value='16' name='CC_LOCK_NOBLOCK'/>
+<enum value='2' name='CC_LOCK_READER'/>
+<enum value='1' name='CC_LOCK_UNLOCK'/>
+<enum value='3' name='CC_LOCK_WRITER'/>
+<enum value='0' name='CC_NOERROR'/>
+<enum value='6' name='CC_NOMEM'/>
+<enum value='2' name='CC_NOTFOUND'/>
+<enum value='11' name='CC_NOT_SUPP'/>
+<enum value='10' name='CC_NO_EXIST'/>
+<enum value='5' name='CC_WRITE'/>
+<enum value='1' name='CKSUMTYPE_CRC32'/>
+<enum value='4' name='CKSUMTYPE_DESCBC'/>
+<enum value='-138' name='CKSUMTYPE_HMAC_MD5_ARCFOUR'/>
+<enum value='15' name='CKSUMTYPE_HMAC_SHA1_96_AES128'/>
+<enum value='16' name='CKSUMTYPE_HMAC_SHA1_96_AES256'/>
+<enum value='12' name='CKSUMTYPE_HMAC_SHA1_DES3'/>
+<enum value='9' name='CKSUMTYPE_NIST_SHA'/>
+<enum value='2' name='CKSUMTYPE_RSA_MD4'/>
+<enum value='3' name='CKSUMTYPE_RSA_MD4_DES'/>
+<enum value='7' name='CKSUMTYPE_RSA_MD5'/>
+<enum value='8' name='CKSUMTYPE_RSA_MD5_DES'/>
+<enum value='17' name='ENCTYPE_AES128_CTS_HMAC_SHA1_96'/>
+<enum value='18' name='ENCTYPE_AES256_CTS_HMAC_SHA1_96'/>
+<enum value='23' name='ENCTYPE_ARCFOUR_HMAC'/>
+<enum value='24' name='ENCTYPE_ARCFOUR_HMAC_EXP'/>
+<enum value='15' name='ENCTYPE_DES3_CBC_ENV'/>
+<enum value='6' name='ENCTYPE_DES3_CBC_RAW'/>
+<enum value='5' name='ENCTYPE_DES3_CBC_SHA'/>
+<enum value='16' name='ENCTYPE_DES3_CBC_SHA1'/>
+<enum value='1' name='ENCTYPE_DES_CBC_CRC'/>
+<enum value='2' name='ENCTYPE_DES_CBC_MD4'/>
+<enum value='3' name='ENCTYPE_DES_CBC_MD5'/>
+<enum value='4' name='ENCTYPE_DES_CBC_RAW'/>
+<enum value='8' name='ENCTYPE_DES_HMAC_SHA1'/>
+<enum value='9' name='ENCTYPE_DSA_SHA1_CMS'/>
+<enum value='10' name='ENCTYPE_MD5_RSA_CMS'/>
+<enum value='0' name='ENCTYPE_NULL'/>
+<enum value='12' name='ENCTYPE_RC2_CBC_ENV'/>
+<enum value='13' name='ENCTYPE_RSA_ENV'/>
+<enum value='14' name='ENCTYPE_RSA_ES_OAEP_ENV'/>
+<enum value='11' name='ENCTYPE_SHA1_RSA_CMS'/>
+<enum value='511' name='ENCTYPE_UNKNOWN'/>
+<enum value='1859794432' name='ERROR_TABLE_BASE_asn1'/>
+<enum value='-1750206208' name='ERROR_TABLE_BASE_k524'/>
+<enum value='-1780008448' name='ERROR_TABLE_BASE_kdb5'/>
+<enum value='-1765328384' name='ERROR_TABLE_BASE_krb5'/>
+<enum value='-1760647424' name='ERROR_TABLE_BASE_kv5m'/>
+<enum value='-1429577728' name='ERROR_TABLE_BASE_prof'/>
+<enum value='2' name='GSS_C_ACCEPT'/>
+<enum value='16' name='GSS_C_AF_APPLETALK'/>
+<enum value='17' name='GSS_C_AF_BSC'/>
+<enum value='10' name='GSS_C_AF_CCITT'/>
+<enum value='5' name='GSS_C_AF_CHAOS'/>
+<enum value='9' name='GSS_C_AF_DATAKIT'/>
+<enum value='12' name='GSS_C_AF_DECnet'/>
+<enum value='13' name='GSS_C_AF_DLI'/>
+<enum value='18' name='GSS_C_AF_DSS'/>
+<enum value='8' name='GSS_C_AF_ECMA'/>
+<enum value='15' name='GSS_C_AF_HYLINK'/>
+<enum value='3' name='GSS_C_AF_IMPLINK'/>
+<enum value='2' name='GSS_C_AF_INET'/>
+<enum value='14' name='GSS_C_AF_LAT'/>
+<enum value='1' name='GSS_C_AF_LOCAL'/>
+<enum value='7' name='GSS_C_AF_NBS'/>
+<enum value='6' name='GSS_C_AF_NS'/>
+<enum value='255' name='GSS_C_AF_NULLADDR'/>
+<enum value='19' name='GSS_C_AF_OSI'/>
+<enum value='4' name='GSS_C_AF_PUP'/>
+<enum value='11' name='GSS_C_AF_SNA'/>
+<enum value='0' name='GSS_C_AF_UNSPEC'/>
+<enum value='21' name='GSS_C_AF_X25'/>
+<enum value='64' name='GSS_C_ANON_FLAG'/>
+<enum value='0' name='GSS_C_BOTH'/>
+<enum value='255' name='GSS_C_CALLING_ERROR_MASK'/>
+<enum value='24' name='GSS_C_CALLING_ERROR_OFFSET'/>
+<enum value='16' name='GSS_C_CONF_FLAG'/>
+<enum value='65536' name='GSS_C_CRED_NO_UI'/>
+<enum value='1' name='GSS_C_DELEG_FLAG'/>
+<enum value='32768' name='GSS_C_DELEG_POLICY_FLAG'/>
+<enum value='1' name='GSS_C_GSS_CODE'/>
+<enum value='4294967295' name='GSS_C_INDEFINITE'/>
+<enum value='1' name='GSS_C_INITIATE'/>
+<enum value='32' name='GSS_C_INTEG_FLAG'/>
+<enum value='2' name='GSS_C_MECH_CODE'/>
+<enum value='2' name='GSS_C_MUTUAL_FLAG'/>
+<enum value='2147483648' name='GSS_C_NO_UI_FLAG'/>
+<enum value='65535' name='GSS_C_OPTION_MASK'/>
+<enum value='128' name='GSS_C_PROT_READY_FLAG'/>
+<enum value='0' name='GSS_C_QOP_DEFAULT'/>
+<enum value='4' name='GSS_C_REPLAY_FLAG'/>
+<enum value='255' name='GSS_C_ROUTINE_ERROR_MASK'/>
+<enum value='16' name='GSS_C_ROUTINE_ERROR_OFFSET'/>
+<enum value='8' name='GSS_C_SEQUENCE_FLAG'/>
+<enum value='65535' name='GSS_C_SUPPLEMENTARY_MASK'/>
+<enum value='0' name='GSS_C_SUPPLEMENTARY_OFFSET'/>
+<enum value='256' name='GSS_C_TRANS_FLAG'/>
+<enum value='1' name='GSS_KRB5_UI_ALLOW'/>
+<enum value='2' name='GSS_KRB5_UI_DENY'/>
+<enum value='3' name='GSS_KRB5_UI_PROBE'/>
+<enum value='262144' name='GSS_S_BAD_BINDINGS'/>
+<enum value='65536' name='GSS_S_BAD_MECH'/>
+<enum value='131072' name='GSS_S_BAD_NAME'/>
+<enum value='196608' name='GSS_S_BAD_NAMETYPE'/>
+<enum value='917504' name='GSS_S_BAD_QOP'/>
+<enum value='393216' name='GSS_S_BAD_SIG'/>
+<enum value='327680' name='GSS_S_BAD_STATUS'/>
+<enum value='50331648' name='GSS_S_CALL_BAD_STRUCTURE'/>
+<enum value='16777216' name='GSS_S_CALL_INACCESSIBLE_READ'/>
+<enum value='33554432' name='GSS_S_CALL_INACCESSIBLE_WRITE'/>
+<enum value='0' name='GSS_S_COMPLETE'/>
+<enum value='786432' name='GSS_S_CONTEXT_EXPIRED'/>
+<enum value='1' name='GSS_S_CONTINUE_NEEDED'/>
+<enum value='720896' name='GSS_S_CREDENTIALS_EXPIRED'/>
+<enum value='851968' name='GSS_S_CRED_UNAVAIL'/>
+<enum value='655360' name='GSS_S_DEFECTIVE_CREDENTIAL'/>
+<enum value='589824' name='GSS_S_DEFECTIVE_TOKEN'/>
+<enum value='1114112' name='GSS_S_DUPLICATE_ELEMENT'/>
+<enum value='2' name='GSS_S_DUPLICATE_TOKEN'/>
+<enum value='851968' name='GSS_S_FAILURE'/>
+<enum value='16' name='GSS_S_GAP_TOKEN'/>
+<enum value='1179648' name='GSS_S_NAME_NOT_MN'/>
+<enum value='524288' name='GSS_S_NO_CONTEXT'/>
+<enum value='458752' name='GSS_S_NO_CRED'/>
+<enum value='4' name='GSS_S_OLD_TOKEN'/>
+<enum value='983040' name='GSS_S_UNAUTHORIZED'/>
+<enum value='1048576' name='GSS_S_UNAVAILABLE'/>
+<enum value='8' name='GSS_S_UNSEQ_TOKEN'/>
+<enum value='67108864' name='KDC_OPT_ALLOW_POSTDATE'/>
+<enum value='65536' name='KDC_OPT_CANONICALIZE'/>
+<enum value='32' name='KDC_OPT_DISABLE_TRANSITED_CHECK'/>
+<enum value='8' name='KDC_OPT_ENC_TKT_IN_SKEY'/>
+<enum value='1073741824' name='KDC_OPT_FORWARDABLE'/>
+<enum value='536870912' name='KDC_OPT_FORWARDED'/>
+<enum value='33554432' name='KDC_OPT_POSTDATED'/>
+<enum value='268435456' name='KDC_OPT_PROXIABLE'/>
+<enum value='134217728' name='KDC_OPT_PROXY'/>
+<enum value='2' name='KDC_OPT_RENEW'/>
+<enum value='8388608' name='KDC_OPT_RENEWABLE'/>
+<enum value='16' name='KDC_OPT_RENEWABLE_OK'/>
+<enum value='131072' name='KDC_OPT_REQUEST_ANONYMOUS'/>
+<enum value='1' name='KDC_OPT_VALIDATE'/>
+<enum value='1417674752' name='KDC_TKT_COMMON_MASK'/>
+<enum value='-1750206207' name='KRB524_BADADDR'/>
+<enum value='-1750206208' name='KRB524_BADKEY'/>
+<enum value='-1750206206' name='KRB524_BADPRINC'/>
+<enum value='-1750206205' name='KRB524_BADREALM'/>
+<enum value='-1750206202' name='KRB524_DECEMPTY'/>
+<enum value='-1750206203' name='KRB524_ENCFULL'/>
+<enum value='-1750206200' name='KRB524_KRB4_DISABLED'/>
+<enum value='-1750206201' name='KRB524_NOTRESP'/>
+<enum value='-1750206204' name='KRB524_V4ERR'/>
+<enum value='-1765328198' name='KRB5DES_BAD_KEYPAR'/>
+<enum value='-1765328197' name='KRB5DES_WEAK_KEY'/>
+<enum value='-1765328371' name='KRB5KDC_ERR_BADOPTION'/>
+<enum value='-1765328381' name='KRB5KDC_ERR_BAD_PVNO'/>
+<enum value='-1765328374' name='KRB5KDC_ERR_CANNOT_POSTDATE'/>
+<enum value='-1765328314' name='KRB5KDC_ERR_CANT_VERIFY_CERTIFICATE'/>
+<enum value='-1765328318' name='KRB5KDC_ERR_CERTIFICATE_MISMATCH'/>
+<enum value='-1765328309' name='KRB5KDC_ERR_CLIENT_NAME_MISMATCH'/>
+<enum value='-1765328363' name='KRB5KDC_ERR_CLIENT_NOTYET'/>
+<enum value='-1765328322' name='KRB5KDC_ERR_CLIENT_NOT_TRUSTED'/>
+<enum value='-1765328366' name='KRB5KDC_ERR_CLIENT_REVOKED'/>
+<enum value='-1765328380' name='KRB5KDC_ERR_C_OLD_MAST_KVNO'/>
+<enum value='-1765328378' name='KRB5KDC_ERR_C_PRINCIPAL_UNKNOWN'/>
+<enum value='-1765328319' name='KRB5KDC_ERR_DH_KEY_PARAMETERS_NOT_ACCEPTED'/>
+<enum value='-1765328306' name='KRB5KDC_ERR_DIGEST_IN_CERT_NOT_ACCEPTED'/>
+<enum value='-1765328304' name='KRB5KDC_ERR_DIGEST_IN_SIGNED_DATA_NOT_ACCEPTED'/>
+<enum value='-1765328370' name='KRB5KDC_ERR_ETYPE_NOSUPP'/>
+<enum value='-1765328307' name='KRB5KDC_ERR_INCONSISTENT_KEY_PURPOSE'/>
+<enum value='-1765328313' name='KRB5KDC_ERR_INVALID_CERTIFICATE'/>
+<enum value='-1765328320' name='KRB5KDC_ERR_INVALID_SIG'/>
+<enum value='-1765328308' name='KRB5KDC_ERR_KDC_NAME_MISMATCH'/>
+<enum value='-1765328321' name='KRB5KDC_ERR_KDC_NOT_TRUSTED'/>
+<enum value='-1765328361' name='KRB5KDC_ERR_KEY_EXP'/>
+<enum value='-1765328357' name='KRB5KDC_ERR_MUST_USE_USER2USER'/>
+<enum value='-1765328383' name='KRB5KDC_ERR_NAME_EXP'/>
+<enum value='-1765328373' name='KRB5KDC_ERR_NEVER_VALID'/>
+<enum value='-1765328384' name='KRB5KDC_ERR_NONE'/>
+<enum value='-1765328375' name='KRB5KDC_ERR_NULL_KEY'/>
+<enum value='-1765328368' name='KRB5KDC_ERR_PADATA_TYPE_NOSUPP'/>
+<enum value='-1765328356' name='KRB5KDC_ERR_PATH_NOT_ACCEPTED'/>
+<enum value='-1765328305' name='KRB5KDC_ERR_PA_CHECKSUM_MUST_BE_INCLUDED'/>
+<enum value='-1765328372' name='KRB5KDC_ERR_POLICY'/>
+<enum value='-1765328360' name='KRB5KDC_ERR_PREAUTH_FAILED'/>
+<enum value='-1765328359' name='KRB5KDC_ERR_PREAUTH_REQUIRED'/>
+<enum value='-1765328376' name='KRB5KDC_ERR_PRINCIPAL_NOT_UNIQUE'/>
+<enum value='-1765328303' name='KRB5KDC_ERR_PUBLIC_KEY_ENCRYPTION_NOT_SUPPORTED'/>
+<enum value='-1765328310' name='KRB5KDC_ERR_REVOCATION_STATUS_UNAVAILABLE'/>
+<enum value='-1765328311' name='KRB5KDC_ERR_REVOCATION_STATUS_UNKNOWN'/>
+<enum value='-1765328312' name='KRB5KDC_ERR_REVOKED_CERTIFICATE'/>
+<enum value='-1765328358' name='KRB5KDC_ERR_SERVER_NOMATCH'/>
+<enum value='-1765328382' name='KRB5KDC_ERR_SERVICE_EXP'/>
+<enum value='-1765328362' name='KRB5KDC_ERR_SERVICE_NOTYET'/>
+<enum value='-1765328365' name='KRB5KDC_ERR_SERVICE_REVOKED'/>
+<enum value='-1765328369' name='KRB5KDC_ERR_SUMTYPE_NOSUPP'/>
+<enum value='-1765328355' name='KRB5KDC_ERR_SVC_UNAVAILABLE'/>
+<enum value='-1765328379' name='KRB5KDC_ERR_S_OLD_MAST_KVNO'/>
+<enum value='-1765328377' name='KRB5KDC_ERR_S_PRINCIPAL_UNKNOWN'/>
+<enum value='-1765328364' name='KRB5KDC_ERR_TGT_REVOKED'/>
+<enum value='-1765328367' name='KRB5KDC_ERR_TRTYPE_NOSUPP'/>
+<enum value='-1765328316' name='KRB5KDC_ERR_WRONG_REALM'/>
+<enum value='-1765328346' name='KRB5KRB_AP_ERR_BADADDR'/>
+<enum value='-1765328337' name='KRB5KRB_AP_ERR_BADDIRECTION'/>
+<enum value='-1765328340' name='KRB5KRB_AP_ERR_BADKEYVER'/>
+<enum value='-1765328348' name='KRB5KRB_AP_ERR_BADMATCH'/>
+<enum value='-1765328342' name='KRB5KRB_AP_ERR_BADORDER'/>
+<enum value='-1765328335' name='KRB5KRB_AP_ERR_BADSEQ'/>
+<enum value='-1765328345' name='KRB5KRB_AP_ERR_BADVERSION'/>
+<enum value='-1765328353' name='KRB5KRB_AP_ERR_BAD_INTEGRITY'/>
+<enum value='-1765328341' name='KRB5KRB_AP_ERR_ILL_CR_TKT'/>
+<enum value='-1765328334' name='KRB5KRB_AP_ERR_INAPP_CKSUM'/>
+<enum value='-1765328336' name='KRB5KRB_AP_ERR_METHOD'/>
+<enum value='-1765328343' name='KRB5KRB_AP_ERR_MODIFIED'/>
+<enum value='-1765328344' name='KRB5KRB_AP_ERR_MSG_TYPE'/>
+<enum value='-1765328338' name='KRB5KRB_AP_ERR_MUT_FAIL'/>
+<enum value='-1765328339' name='KRB5KRB_AP_ERR_NOKEY'/>
+<enum value='-1765328349' name='KRB5KRB_AP_ERR_NOT_US'/>
+<enum value='-1765328317' name='KRB5KRB_AP_ERR_NO_TGT'/>
+<enum value='-1765328350' name='KRB5KRB_AP_ERR_REPEAT'/>
+<enum value='-1765328347' name='KRB5KRB_AP_ERR_SKEW'/>
+<enum value='-1765328352' name='KRB5KRB_AP_ERR_TKT_EXPIRED'/>
+<enum value='-1765328239' name='KRB5KRB_AP_ERR_TKT_INVALID'/>
+<enum value='-1765328351' name='KRB5KRB_AP_ERR_TKT_NYV'/>
+<enum value='-1765328315' name='KRB5KRB_AP_ERR_USER_TO_USER_REQUIRED'/>
+<enum value='-1765328165' name='KRB5KRB_AP_ERR_V4_REPLY'/>
+<enum value='-1765328333' name='KRB5KRB_AP_PATH_NOT_ACCEPTED'/>
+<enum value='-1765328240' name='KRB5KRB_AP_WRONG_PRINC'/>
+<enum value='-1765328323' name='KRB5KRB_ERR_FIELD_TOOLONG'/>
+<enum value='-1765328324' name='KRB5KRB_ERR_GENERIC'/>
+<enum value='-1765328332' name='KRB5KRB_ERR_RESPONSE_TOO_BIG'/>
+<enum value='-1765328284' name='KRB5PLACEHOLD_100'/>
+<enum value='-1765328283' name='KRB5PLACEHOLD_101'/>
+<enum value='-1765328282' name='KRB5PLACEHOLD_102'/>
+<enum value='-1765328281' name='KRB5PLACEHOLD_103'/>
+<enum value='-1765328280' name='KRB5PLACEHOLD_104'/>
+<enum value='-1765328279' name='KRB5PLACEHOLD_105'/>
+<enum value='-1765328278' name='KRB5PLACEHOLD_106'/>
+<enum value='-1765328277' name='KRB5PLACEHOLD_107'/>
+<enum value='-1765328276' name='KRB5PLACEHOLD_108'/>
+<enum value='-1765328275' name='KRB5PLACEHOLD_109'/>
+<enum value='-1765328274' name='KRB5PLACEHOLD_110'/>
+<enum value='-1765328273' name='KRB5PLACEHOLD_111'/>
+<enum value='-1765328272' name='KRB5PLACEHOLD_112'/>
+<enum value='-1765328271' name='KRB5PLACEHOLD_113'/>
+<enum value='-1765328270' name='KRB5PLACEHOLD_114'/>
+<enum value='-1765328269' name='KRB5PLACEHOLD_115'/>
+<enum value='-1765328268' name='KRB5PLACEHOLD_116'/>
+<enum value='-1765328267' name='KRB5PLACEHOLD_117'/>
+<enum value='-1765328266' name='KRB5PLACEHOLD_118'/>
+<enum value='-1765328265' name='KRB5PLACEHOLD_119'/>
+<enum value='-1765328264' name='KRB5PLACEHOLD_120'/>
+<enum value='-1765328263' name='KRB5PLACEHOLD_121'/>
+<enum value='-1765328262' name='KRB5PLACEHOLD_122'/>
+<enum value='-1765328261' name='KRB5PLACEHOLD_123'/>
+<enum value='-1765328260' name='KRB5PLACEHOLD_124'/>
+<enum value='-1765328259' name='KRB5PLACEHOLD_125'/>
+<enum value='-1765328258' name='KRB5PLACEHOLD_126'/>
+<enum value='-1765328257' name='KRB5PLACEHOLD_127'/>
+<enum value='-1765328354' name='KRB5PLACEHOLD_30'/>
+<enum value='-1765328331' name='KRB5PLACEHOLD_53'/>
+<enum value='-1765328330' name='KRB5PLACEHOLD_54'/>
+<enum value='-1765328329' name='KRB5PLACEHOLD_55'/>
+<enum value='-1765328328' name='KRB5PLACEHOLD_56'/>
+<enum value='-1765328327' name='KRB5PLACEHOLD_57'/>
+<enum value='-1765328326' name='KRB5PLACEHOLD_58'/>
+<enum value='-1765328325' name='KRB5PLACEHOLD_59'/>
+<enum value='-1765328302' name='KRB5PLACEHOLD_82'/>
+<enum value='-1765328301' name='KRB5PLACEHOLD_83'/>
+<enum value='-1765328300' name='KRB5PLACEHOLD_84'/>
+<enum value='-1765328299' name='KRB5PLACEHOLD_85'/>
+<enum value='-1765328298' name='KRB5PLACEHOLD_86'/>
+<enum value='-1765328297' name='KRB5PLACEHOLD_87'/>
+<enum value='-1765328296' name='KRB5PLACEHOLD_88'/>
+<enum value='-1765328295' name='KRB5PLACEHOLD_89'/>
+<enum value='-1765328294' name='KRB5PLACEHOLD_90'/>
+<enum value='-1765328293' name='KRB5PLACEHOLD_91'/>
+<enum value='-1765328292' name='KRB5PLACEHOLD_92'/>
+<enum value='-1765328291' name='KRB5PLACEHOLD_93'/>
+<enum value='-1765328290' name='KRB5PLACEHOLD_94'/>
+<enum value='-1765328289' name='KRB5PLACEHOLD_95'/>
+<enum value='-1765328288' name='KRB5PLACEHOLD_96'/>
+<enum value='-1765328287' name='KRB5PLACEHOLD_97'/>
+<enum value='-1765328286' name='KRB5PLACEHOLD_98'/>
+<enum value='-1765328285' name='KRB5PLACEHOLD_99'/>
+<enum value='64' name='KRB5_ALTAUTH_ATT_CHALLENGE_RESPONSE'/>
+<enum value='-1765328153' name='KRB5_APPL_EXPIRED'/>
+<enum value='15' name='KRB5_AP_REP'/>
+<enum value='14' name='KRB5_AP_REQ'/>
+<enum value='11' name='KRB5_AS_REP'/>
+<enum value='10' name='KRB5_AS_REQ'/>
+<enum value='5' name='KRB5_AUTHDATA_AND_OR'/>
+<enum value='1' name='KRB5_AUTHDATA_IF_RELEVANT'/>
+<enum value='9' name='KRB5_AUTHDATA_INITIAL_VERIFIED_CAS'/>
+<enum value='4' name='KRB5_AUTHDATA_KDC_ISSUED'/>
+<enum value='8' name='KRB5_AUTHDATA_MANDATORY_FOR_KDC'/>
+<enum value='64' name='KRB5_AUTHDATA_OSF_DCE'/>
+<enum value='65' name='KRB5_AUTHDATA_SESAME'/>
+<enum value='4' name='KRB5_AUTH_CONTEXT_DO_SEQUENCE'/>
+<enum value='1' name='KRB5_AUTH_CONTEXT_DO_TIME'/>
+<enum value='1' name='KRB5_AUTH_CONTEXT_GENERATE_LOCAL_ADDR'/>
+<enum value='4' name='KRB5_AUTH_CONTEXT_GENERATE_LOCAL_FULL_ADDR'/>
+<enum value='2' name='KRB5_AUTH_CONTEXT_GENERATE_REMOTE_ADDR'/>
+<enum value='8' name='KRB5_AUTH_CONTEXT_GENERATE_REMOTE_FULL_ADDR'/>
+<enum value='16' name='KRB5_AUTH_CONTEXT_PERMIT_ALL'/>
+<enum value='8' name='KRB5_AUTH_CONTEXT_RET_SEQUENCE'/>
+<enum value='2' name='KRB5_AUTH_CONTEXT_RET_TIME'/>
+<enum value='32' name='KRB5_AUTH_CONTEXT_USE_SUBKEY'/>
+<enum value='-1765328246' name='KRB5_BADMSGTYPE'/>
+<enum value='-1765328196' name='KRB5_BAD_ENCTYPE'/>
+<enum value='-1765328195' name='KRB5_BAD_KEYSIZE'/>
+<enum value='-1765328194' name='KRB5_BAD_MSIZE'/>
+<enum value='-1765328172' name='KRB5_CCACHE_BADVNO'/>
+<enum value='-1765328245' name='KRB5_CC_BADNAME'/>
+<enum value='-1765328242' name='KRB5_CC_END'/>
+<enum value='-1765328185' name='KRB5_CC_FORMAT'/>
+<enum value='-1765328191' name='KRB5_CC_IO'/>
+<enum value='-1765328186' name='KRB5_CC_NOMEM'/>
+<enum value='-1765328137' name='KRB5_CC_NOSUPP'/>
+<enum value='-1765328243' name='KRB5_CC_NOTFOUND'/>
+<enum value='-1765328184' name='KRB5_CC_NOT_KTYPE'/>
+<enum value='-1765328138' name='KRB5_CC_READONLY'/>
+<enum value='-1765328193' name='KRB5_CC_TYPE_EXISTS'/>
+<enum value='-1765328244' name='KRB5_CC_UNKNOWN_TYPE'/>
+<enum value='-1765328187' name='KRB5_CC_WRITE'/>
+<enum value='-1765328150' name='KRB5_CHPW_FAIL'/>
+<enum value='-1765328151' name='KRB5_CHPW_PWDNULL'/>
+<enum value='-1765328248' name='KRB5_CONFIG_BADFORMAT'/>
+<enum value='-1765328249' name='KRB5_CONFIG_CANTOPEN'/>
+<enum value='-1765328147' name='KRB5_CONFIG_ETYPE_NOSUPP'/>
+<enum value='-1765328160' name='KRB5_CONFIG_NODEFREALM'/>
+<enum value='-1765328247' name='KRB5_CONFIG_NOTENUFSPACE'/>
+<enum value='22' name='KRB5_CRED'/>
+<enum value='-1765328206' name='KRB5_CRYPTO_INTERNAL'/>
+<enum value='9' name='KRB5_CYBERSAFE_SECUREID'/>
+<enum value='4' name='KRB5_C_RANDSOURCE_EXTERNAL_PROTOCOL'/>
+<enum value='5' name='KRB5_C_RANDSOURCE_MAX'/>
+<enum value='0' name='KRB5_C_RANDSOURCE_OLDAPI'/>
+<enum value='1' name='KRB5_C_RANDSOURCE_OSRAND'/>
+<enum value='3' name='KRB5_C_RANDSOURCE_TIMING'/>
+<enum value='2' name='KRB5_C_RANDSOURCE_TRUSTEDPARTY'/>
+<enum value='-1765328136' name='KRB5_DELTAT_BADFORMAT'/>
+<enum value='0' name='KRB5_DEPRECATED'/>
+<enum value='1' name='KRB5_DOMAIN_X500_COMPRESS'/>
+<enum value='-1765328145' name='KRB5_EAI_FAIL'/>
+<enum value='-1765328144' name='KRB5_EAI_NODATA'/>
+<enum value='-1765328143' name='KRB5_EAI_NONAME'/>
+<enum value='-1765328142' name='KRB5_EAI_SERVICE'/>
+<enum value='30' name='KRB5_ERROR'/>
+<enum value='-1765328168' name='KRB5_ERR_BAD_HOSTNAME'/>
+<enum value='-1765328140' name='KRB5_ERR_BAD_S2K_PARAMS'/>
+<enum value='-1765328167' name='KRB5_ERR_HOST_REALM_UNKNOWN'/>
+<enum value='-1765328139' name='KRB5_ERR_NO_SERVICE'/>
+<enum value='-1765328141' name='KRB5_ERR_NUMERIC_REALM'/>
+<enum value='-1765328256' name='KRB5_ERR_RCSID'/>
+<enum value='-1765328188' name='KRB5_FCC_INTERNAL'/>
+<enum value='-1765328189' name='KRB5_FCC_NOFILE'/>
+<enum value='-1765328190' name='KRB5_FCC_PERM'/>
+<enum value='-1765328162' name='KRB5_FWD_BAD_PRINCIPAL'/>
+<enum value='2' name='KRB5_GC_CACHED'/>
+<enum value='1' name='KRB5_GC_USER_USER'/>
+<enum value='32' name='KRB5_GET_INIT_CREDS_OPT_ADDRESS_LIST'/>
+<enum value='512' name='KRB5_GET_INIT_CREDS_OPT_CANONICALIZE'/>
+<enum value='256' name='KRB5_GET_INIT_CREDS_OPT_CHG_PWD_PRMPT'/>
+<enum value='16' name='KRB5_GET_INIT_CREDS_OPT_ETYPE_LIST'/>
+<enum value='4' name='KRB5_GET_INIT_CREDS_OPT_FORWARDABLE'/>
+<enum value='64' name='KRB5_GET_INIT_CREDS_OPT_PREAUTH_LIST'/>
+<enum value='8' name='KRB5_GET_INIT_CREDS_OPT_PROXIABLE'/>
+<enum value='2' name='KRB5_GET_INIT_CREDS_OPT_RENEW_LIFE'/>
+<enum value='128' name='KRB5_GET_INIT_CREDS_OPT_SALT'/>
+<enum value='1' name='KRB5_GET_INIT_CREDS_OPT_TKT_LIFE'/>
+<enum value='-1765328161' name='KRB5_GET_IN_TKT_LOOP'/>
+<enum value='65535' name='KRB5_INT16_MAX'/>
+<enum value='-65536' name='KRB5_INT16_MIN'/>
+<enum value='2147483647' name='KRB5_INT32_MAX'/>
+<enum value='-2147483648' name='KRB5_INT32_MIN'/>
+<enum value='-1765328183' name='KRB5_INVALID_FLAGS'/>
+<enum value='-1765328235' name='KRB5_IN_TKT_REALM_MISMATCH'/>
+<enum value='-1780008415' name='KRB5_KDB_ACCESS_ERROR'/>
+<enum value='-1780008436' name='KRB5_KDB_BADLOCKMODE'/>
+<enum value='-1780008431' name='KRB5_KDB_BADMASTERKEY'/>
+<enum value='-1780008428' name='KRB5_KDB_BADSTORED_MKEY'/>
+<enum value='-1780008422' name='KRB5_KDB_BAD_CREATEFLAGS'/>
+<enum value='-1780008423' name='KRB5_KDB_BAD_ENCTYPE'/>
+<enum value='-1780008424' name='KRB5_KDB_BAD_SALTTYPE'/>
+<enum value='-1780008425' name='KRB5_KDB_BAD_VERSION'/>
+<enum value='-1780008427' name='KRB5_KDB_CANTLOCK_DB'/>
+<enum value='-1780008429' name='KRB5_KDB_CANTREAD_STORED'/>
+<enum value='-1780008413' name='KRB5_KDB_CONSTRAINT_VIOLATION'/>
+<enum value='-1780008434' name='KRB5_KDB_DBINITED'/>
+<enum value='-1780008435' name='KRB5_KDB_DBNOTINITED'/>
+<enum value='-1780008417' name='KRB5_KDB_DBTYPE_INIT'/>
+<enum value='-1780008418' name='KRB5_KDB_DBTYPE_NOSUP'/>
+<enum value='-1780008419' name='KRB5_KDB_DBTYPE_NOTFOUND'/>
+<enum value='-1780008440' name='KRB5_KDB_DB_CHANGED'/>
+<enum value='-1780008426' name='KRB5_KDB_DB_CORRUPT'/>
+<enum value='-1780008441' name='KRB5_KDB_DB_INUSE'/>
+<enum value='-1780008433' name='KRB5_KDB_ILLDIRECTION'/>
+<enum value='-1780008442' name='KRB5_KDB_ILL_WILDCARD'/>
+<enum value='-1780008414' name='KRB5_KDB_INTERNAL_ERROR'/>
+<enum value='-1780008447' name='KRB5_KDB_INUSE'/>
+<enum value='-1780008430' name='KRB5_KDB_INVALIDKEYSIZE'/>
+<enum value='-1780008443' name='KRB5_KDB_NOENTRY'/>
+<enum value='-1780008432' name='KRB5_KDB_NOMASTERKEY'/>
+<enum value='-1780008437' name='KRB5_KDB_NOTLOCKED'/>
+<enum value='-1780008420' name='KRB5_KDB_NO_MATCHING_KEY'/>
+<enum value='-1780008421' name='KRB5_KDB_NO_PERMITTED_KEY'/>
+<enum value='-1780008448' name='KRB5_KDB_RCSID'/>
+<enum value='-1780008438' name='KRB5_KDB_RECURSIVELOCK'/>
+<enum value='-1780008416' name='KRB5_KDB_SERVER_INTERNAL_ERR'/>
+<enum value='-1780008439' name='KRB5_KDB_TRUNCATED_RECORD'/>
+<enum value='-1780008445' name='KRB5_KDB_UK_RERROR'/>
+<enum value='-1780008446' name='KRB5_KDB_UK_SERROR'/>
+<enum value='-1780008444' name='KRB5_KDB_UNAUTH'/>
+<enum value='-1765328237' name='KRB5_KDCREP_MODIFIED'/>
+<enum value='-1765328236' name='KRB5_KDCREP_SKEW'/>
+<enum value='-1765328228' name='KRB5_KDC_UNREACH'/>
+<enum value='-1765328171' name='KRB5_KEYTAB_BADVNO'/>
+<enum value='21' name='KRB5_KEYUSAGE_AD_ITE'/>
+<enum value='19' name='KRB5_KEYUSAGE_AD_KDCISSUED_CKSUM'/>
+<enum value='20' name='KRB5_KEYUSAGE_AD_MTE'/>
+<enum value='17' name='KRB5_KEYUSAGE_APP_DATA_CKSUM'/>
+<enum value='16' name='KRB5_KEYUSAGE_APP_DATA_ENCRYPT'/>
+<enum value='12' name='KRB5_KEYUSAGE_AP_REP_ENCPART'/>
+<enum value='11' name='KRB5_KEYUSAGE_AP_REQ_AUTH'/>
+<enum value='10' name='KRB5_KEYUSAGE_AP_REQ_AUTH_CKSUM'/>
+<enum value='3' name='KRB5_KEYUSAGE_AS_REP_ENCPART'/>
+<enum value='1' name='KRB5_KEYUSAGE_AS_REQ_PA_ENC_TS'/>
+<enum value='22' name='KRB5_KEYUSAGE_GSS_TOK_MIC'/>
+<enum value='23' name='KRB5_KEYUSAGE_GSS_TOK_WRAP_INTEG'/>
+<enum value='24' name='KRB5_KEYUSAGE_GSS_TOK_WRAP_PRIV'/>
+<enum value='2' name='KRB5_KEYUSAGE_KDC_REP_TICKET'/>
+<enum value='14' name='KRB5_KEYUSAGE_KRB_CRED_ENCPART'/>
+<enum value='18' name='KRB5_KEYUSAGE_KRB_ERROR_CKSUM'/>
+<enum value='13' name='KRB5_KEYUSAGE_KRB_PRIV_ENCPART'/>
+<enum value='15' name='KRB5_KEYUSAGE_KRB_SAFE_CKSUM'/>
+<enum value='26' name='KRB5_KEYUSAGE_PA_REFERRAL'/>
+<enum value='25' name='KRB5_KEYUSAGE_PA_SAM_CHALLENGE_CKSUM'/>
+<enum value='26' name='KRB5_KEYUSAGE_PA_SAM_CHALLENGE_TRACKID'/>
+<enum value='27' name='KRB5_KEYUSAGE_PA_SAM_RESPONSE'/>
+<enum value='8' name='KRB5_KEYUSAGE_TGS_REP_ENCPART_SESSKEY'/>
+<enum value='9' name='KRB5_KEYUSAGE_TGS_REP_ENCPART_SUBKEY'/>
+<enum value='4' name='KRB5_KEYUSAGE_TGS_REQ_AD_SESSKEY'/>
+<enum value='5' name='KRB5_KEYUSAGE_TGS_REQ_AD_SUBKEY'/>
+<enum value='7' name='KRB5_KEYUSAGE_TGS_REQ_AUTH'/>
+<enum value='6' name='KRB5_KEYUSAGE_TGS_REQ_AUTH_CKSUM'/>
+<enum value='5' name='KRB5_KPASSWD_ACCESSDENIED'/>
+<enum value='3' name='KRB5_KPASSWD_AUTHERROR'/>
+<enum value='6' name='KRB5_KPASSWD_BAD_VERSION'/>
+<enum value='2' name='KRB5_KPASSWD_HARDERROR'/>
+<enum value='7' name='KRB5_KPASSWD_INITIAL_FLAG_NEEDED'/>
+<enum value='1' name='KRB5_KPASSWD_MALFORMED'/>
+<enum value='4' name='KRB5_KPASSWD_SOFTERROR'/>
+<enum value='0' name='KRB5_KPASSWD_SUCCESS'/>
+<enum value='-1765328205' name='KRB5_KT_BADNAME'/>
+<enum value='-1765328202' name='KRB5_KT_END'/>
+<enum value='-1765328149' name='KRB5_KT_FORMAT'/>
+<enum value='-1765328200' name='KRB5_KT_IOERR'/>
+<enum value='-1765328154' name='KRB5_KT_KVNONOTFOUND'/>
+<enum value='-1765328155' name='KRB5_KT_NAME_TOOLONG'/>
+<enum value='-1765328203' name='KRB5_KT_NOTFOUND'/>
+<enum value='-1765328201' name='KRB5_KT_NOWRITE'/>
+<enum value='-1765328192' name='KRB5_KT_TYPE_EXISTS'/>
+<enum value='-1765328204' name='KRB5_KT_UNKNOWN_TYPE'/>
+<enum value='-1765328255' name='KRB5_LIBOS_BADLOCKFLAG'/>
+<enum value='-1765328253' name='KRB5_LIBOS_BADPWDMATCH'/>
+<enum value='-1765328254' name='KRB5_LIBOS_CANTREADPWD'/>
+<enum value='-1765328252' name='KRB5_LIBOS_PWDINTR'/>
+<enum value='-1765328152' name='KRB5_LIB_EXPIRED'/>
+<enum value='-1765328207' name='KRB5_LNAME_BADFORMAT'/>
+<enum value='-1765328209' name='KRB5_LNAME_CANTOPEN'/>
+<enum value='-1765328208' name='KRB5_LNAME_NOTRANS'/>
+<enum value='-1780008412' name='KRB5_LOG_CONV'/>
+<enum value='-1780008410' name='KRB5_LOG_CORRUPT'/>
+<enum value='-1780008409' name='KRB5_LOG_ERROR'/>
+<enum value='-1780008411' name='KRB5_LOG_UNSTABLE'/>
+<enum value='2' name='KRB5_LRQ_ALL_LAST_INITIAL'/>
+<enum value='4' name='KRB5_LRQ_ALL_LAST_RENEWAL'/>
+<enum value='5' name='KRB5_LRQ_ALL_LAST_REQ'/>
+<enum value='1' name='KRB5_LRQ_ALL_LAST_TGT'/>
+<enum value='3' name='KRB5_LRQ_ALL_LAST_TGT_ISSUED'/>
+<enum value='6' name='KRB5_LRQ_ALL_PW_EXPTIME'/>
+<enum value='0' name='KRB5_LRQ_NONE'/>
+<enum value='-2' name='KRB5_LRQ_ONE_LAST_INITIAL'/>
+<enum value='-4' name='KRB5_LRQ_ONE_LAST_RENEWAL'/>
+<enum value='-5' name='KRB5_LRQ_ONE_LAST_REQ'/>
+<enum value='-1' name='KRB5_LRQ_ONE_LAST_TGT'/>
+<enum value='-3' name='KRB5_LRQ_ONE_LAST_TGT_ISSUED'/>
+<enum value='-6' name='KRB5_LRQ_ONE_PW_EXPTIME'/>
+<enum value='-1765328226' name='KRB5_MUTUAL_FAILED'/>
+<enum value='-1765328181' name='KRB5_NOCREDS_SUPPLIED'/>
+<enum value='-1765328148' name='KRB5_NOPERM_ETYPE'/>
+<enum value='-1765328182' name='KRB5_NO_2ND_TKT'/>
+<enum value='-1765328227' name='KRB5_NO_LOCALNAME'/>
+<enum value='-1765328199' name='KRB5_NO_TKT_IN_RLM'/>
+<enum value='-1765328241' name='KRB5_NO_TKT_SUPPLIED'/>
+<enum value='10' name='KRB5_NT_ENTERPRISE_PRINCIPAL'/>
+<enum value='-130' name='KRB5_NT_ENT_PRINCIPAL_AND_ID'/>
+<enum value='-128' name='KRB5_NT_MS_PRINCIPAL'/>
+<enum value='-129' name='KRB5_NT_MS_PRINCIPAL_AND_ID'/>
+<enum value='1' name='KRB5_NT_PRINCIPAL'/>
+<enum value='7' name='KRB5_NT_SMTP_NAME'/>
+<enum value='3' name='KRB5_NT_SRV_HST'/>
+<enum value='2' name='KRB5_NT_SRV_INST'/>
+<enum value='4' name='KRB5_NT_SRV_XHST'/>
+<enum value='5' name='KRB5_NT_UID'/>
+<enum value='0' name='KRB5_NT_UNKNOWN'/>
+<enum value='6' name='KRB5_NT_X500_PRINCIPAL'/>
+<enum value='-1765328146' name='KRB5_OBSOLETE_FN'/>
+<enum value='10' name='KRB5_PADATA_AFS3_SALT'/>
+<enum value='1' name='KRB5_PADATA_AP_REQ'/>
+<enum value='16' name='KRB5_PADATA_DASS'/>
+<enum value='6' name='KRB5_PADATA_ENC_SANDIA_SECURID'/>
+<enum value='2' name='KRB5_PADATA_ENC_TIMESTAMP'/>
+<enum value='5' name='KRB5_PADATA_ENC_UNIX_TIME'/>
+<enum value='11' name='KRB5_PADATA_ETYPE_INFO'/>
+<enum value='19' name='KRB5_PADATA_ETYPE_INFO2'/>
+<enum value='22' name='KRB5_PADATA_GET_FROM_TYPED_DATA'/>
+<enum value='0' name='KRB5_PADATA_NONE'/>
+<enum value='8' name='KRB5_PADATA_OSF_DCE'/>
+<enum value='132' name='KRB5_PADATA_PK_AS_09_BINDING'/>
+<enum value='17' name='KRB5_PADATA_PK_AS_REP'/>
+<enum value='15' name='KRB5_PADATA_PK_AS_REP_OLD'/>
+<enum value='16' name='KRB5_PADATA_PK_AS_REQ'/>
+<enum value='14' name='KRB5_PADATA_PK_AS_REQ_OLD'/>
+<enum value='3' name='KRB5_PADATA_PW_SALT'/>
+<enum value='25' name='KRB5_PADATA_REFERRAL'/>
+<enum value='12' name='KRB5_PADATA_SAM_CHALLENGE'/>
+<enum value='30' name='KRB5_PADATA_SAM_CHALLENGE_2'/>
+<enum value='21' name='KRB5_PADATA_SAM_REDIRECT'/>
+<enum value='13' name='KRB5_PADATA_SAM_RESPONSE'/>
+<enum value='31' name='KRB5_PADATA_SAM_RESPONSE_2'/>
+<enum value='7' name='KRB5_PADATA_SESAME'/>
+<enum value='1' name='KRB5_PADATA_TGS_REQ'/>
+<enum value='20' name='KRB5_PADATA_USE_SPECIFIED_KVNO'/>
+<enum value='-1765328251' name='KRB5_PARSE_ILLCHAR'/>
+<enum value='-1765328250' name='KRB5_PARSE_MALFORMED'/>
+<enum value='-1765328135' name='KRB5_PLUGIN_NO_HANDLE'/>
+<enum value='-1765328134' name='KRB5_PLUGIN_OP_NOTSUPP'/>
+<enum value='-1765328176' name='KRB5_PREAUTH_BAD_TYPE'/>
+<enum value='-1765328174' name='KRB5_PREAUTH_FAILED'/>
+<enum value='-1765328175' name='KRB5_PREAUTH_NO_KEY'/>
+<enum value='4' name='KRB5_PRINCIPAL_PARSE_ENTERPRISE'/>
+<enum value='1' name='KRB5_PRINCIPAL_PARSE_NO_REALM'/>
+<enum value='2' name='KRB5_PRINCIPAL_PARSE_REQUIRE_REALM'/>
+<enum value='4' name='KRB5_PRINCIPAL_UNPARSE_DISPLAY'/>
+<enum value='2' name='KRB5_PRINCIPAL_UNPARSE_NO_REALM'/>
+<enum value='1' name='KRB5_PRINCIPAL_UNPARSE_SHORT'/>
+<enum value='-1765328238' name='KRB5_PRINC_NOMATCH'/>
+<enum value='21' name='KRB5_PRIV'/>
+<enum value='-1765328170' name='KRB5_PROG_ATYPE_NOSUPP'/>
+<enum value='-1765328234' name='KRB5_PROG_ETYPE_NOSUPP'/>
+<enum value='-1765328233' name='KRB5_PROG_KEYTYPE_NOSUPP'/>
+<enum value='-1765328231' name='KRB5_PROG_SUMTYPE_NOSUPP'/>
+<enum value='2' name='KRB5_PROMPT_TYPE_NEW_PASSWORD'/>
+<enum value='3' name='KRB5_PROMPT_TYPE_NEW_PASSWORD_AGAIN'/>
+<enum value='1' name='KRB5_PROMPT_TYPE_PASSWORD'/>
+<enum value='4' name='KRB5_PROMPT_TYPE_PREAUTH'/>
+<enum value='5' name='KRB5_PVNO'/>
+<enum value='-1765328173' name='KRB5_RCACHE_BADVNO'/>
+<enum value='-1765328220' name='KRB5_RC_IO'/>
+<enum value='-1765328217' name='KRB5_RC_IO_EOF'/>
+<enum value='-1765328214' name='KRB5_RC_IO_IO'/>
+<enum value='-1765328216' name='KRB5_RC_IO_MALLOC'/>
+<enum value='-1765328215' name='KRB5_RC_IO_PERM'/>
+<enum value='-1765328212' name='KRB5_RC_IO_SPACE'/>
+<enum value='-1765328213' name='KRB5_RC_IO_UNKNOWN'/>
+<enum value='-1765328224' name='KRB5_RC_MALLOC'/>
+<enum value='-1765328219' name='KRB5_RC_NOIO'/>
+<enum value='-1765328218' name='KRB5_RC_PARSE'/>
+<enum value='-1765328221' name='KRB5_RC_REPLAY'/>
+<enum value='-1765328169' name='KRB5_RC_REQUIRED'/>
+<enum value='-1765328225' name='KRB5_RC_TYPE_EXISTS'/>
+<enum value='-1765328223' name='KRB5_RC_TYPE_NOTFOUND'/>
+<enum value='-1765328222' name='KRB5_RC_UNKNOWN'/>
+<enum value='46' name='KRB5_REALM_BRANCH_CHAR'/>
+<enum value='-1765328164' name='KRB5_REALM_CANT_RESOLVE'/>
+<enum value='-1765328230' name='KRB5_REALM_UNKNOWN'/>
+<enum value='2' name='KRB5_RECVAUTH_BADAUTHVERS'/>
+<enum value='1' name='KRB5_RECVAUTH_SKIP_VERSION'/>
+<enum value='20' name='KRB5_SAFE'/>
+<enum value='-1765328156' name='KRB5_SAM_BAD_CHECKSUM'/>
+<enum value='-1765328158' name='KRB5_SAM_INVALID_ETYPE'/>
+<enum value='536870912' name='KRB5_SAM_MUST_PK_ENCRYPT_SAD'/>
+<enum value='-1765328157' name='KRB5_SAM_NO_CHECKSUM'/>
+<enum value='1073741824' name='KRB5_SAM_SEND_ENCRYPTED_SAD'/>
+<enum value='-1765328159' name='KRB5_SAM_UNSUPPORTED'/>
+<enum value='2147483648' name='KRB5_SAM_USE_SAD_AS_KEY'/>
+<enum value='-1765328179' name='KRB5_SENDAUTH_BADAPPLVERS'/>
+<enum value='-1765328180' name='KRB5_SENDAUTH_BADAUTHVERS'/>
+<enum value='-1765328178' name='KRB5_SENDAUTH_BADRESPONSE'/>
+<enum value='-1765328177' name='KRB5_SENDAUTH_REJECTED'/>
+<enum value='-1765328229' name='KRB5_SERVICE_UNKNOWN'/>
+<enum value='-1765328166' name='KRB5_SNAME_UNSUPP_NAMETYPE'/>
+<enum value='128' name='KRB5_TC_MATCH_2ND_TKT'/>
+<enum value='32' name='KRB5_TC_MATCH_AUTHDATA'/>
+<enum value='4' name='KRB5_TC_MATCH_FLAGS'/>
+<enum value='16' name='KRB5_TC_MATCH_FLAGS_EXACT'/>
+<enum value='2' name='KRB5_TC_MATCH_IS_SKEY'/>
+<enum value='256' name='KRB5_TC_MATCH_KTYPE'/>
+<enum value='64' name='KRB5_TC_MATCH_SRV_NAMEONLY'/>
+<enum value='1' name='KRB5_TC_MATCH_TIMES'/>
+<enum value='8' name='KRB5_TC_MATCH_TIMES_EXACT'/>
+<enum value='2' name='KRB5_TC_NOTICKET'/>
+<enum value='1' name='KRB5_TC_OPENCLOSE'/>
+<enum value='512' name='KRB5_TC_SUPPORTED_KTYPES'/>
+<enum value='6' name='KRB5_TGS_NAME_SIZE'/>
+<enum value='13' name='KRB5_TGS_REP'/>
+<enum value='12' name='KRB5_TGS_REQ'/>
+<enum value='-1765328163' name='KRB5_TKT_NOT_FORWARDABLE'/>
+<enum value='-1765328210' name='KRB5_TRANS_BADFORMAT'/>
+<enum value='-1765328211' name='KRB5_TRANS_CANTOPEN'/>
+<enum value='1' name='KRB5_VERIFY_INIT_CREDS_OPT_AP_REQ_NOFAIL'/>
+<enum value='-1765328232' name='KRB5_WRONG_ETYPE'/>
+<enum value='40' name='KRB_INSTANCE_SZ'/>
+<enum value='40' name='KRB_NAME_SZ'/>
+<enum value='40' name='KRB_REALM_SZ'/>
+<enum value='-1760647390' name='KV5M_ADDRESS'/>
+<enum value='-1760647386' name='KV5M_ALT_METHOD'/>
+<enum value='-1760647400' name='KV5M_AP_REP'/>
+<enum value='-1760647399' name='KV5M_AP_REP_ENC_PART'/>
+<enum value='-1760647401' name='KV5M_AP_REQ'/>
+<enum value='-1760647414' name='KV5M_AUTHDATA'/>
+<enum value='-1760647410' name='KV5M_AUTHENTICATOR'/>
+<enum value='-1760647383' name='KV5M_AUTH_CONTEXT'/>
+<enum value='-1760647380' name='KV5M_CCACHE'/>
+<enum value='-1760647420' name='KV5M_CHECKSUM'/>
+<enum value='-1760647415' name='KV5M_CHECKSUM_ENTRY'/>
+<enum value='-1760647388' name='KV5M_CONTEXT'/>
+<enum value='-1760647394' name='KV5M_CRED'/>
+<enum value='-1760647408' name='KV5M_CREDS'/>
+<enum value='-1760647392' name='KV5M_CRED_ENC_PART'/>
+<enum value='-1760647393' name='KV5M_CRED_INFO'/>
+<enum value='-1760647417' name='KV5M_CRYPTOSYSTEM_ENTRY'/>
+<enum value='-1760647416' name='KV5M_CS_TABLE_ENTRY'/>
+<enum value='-1760647422' name='KV5M_DATA'/>
+<enum value='-1760647384' name='KV5M_DB_CONTEXT'/>
+<enum value='-1760647419' name='KV5M_ENCRYPT_BLOCK'/>
+<enum value='-1760647418' name='KV5M_ENC_DATA'/>
+<enum value='-1760647404' name='KV5M_ENC_KDC_REP_PART'/>
+<enum value='-1760647375' name='KV5M_ENC_SAM_RESPONSE_ENC'/>
+<enum value='-1760647374' name='KV5M_ENC_SAM_RESPONSE_ENC_2'/>
+<enum value='-1760647412' name='KV5M_ENC_TKT_PART'/>
+<enum value='-1760647402' name='KV5M_ERROR'/>
+<enum value='-1760647385' name='KV5M_ETYPE_INFO_ENTRY'/>
+<enum value='-1760647369' name='KV5M_GSS_OID'/>
+<enum value='-1760647368' name='KV5M_GSS_QUEUE'/>
+<enum value='-1760647403' name='KV5M_KDC_REP'/>
+<enum value='-1760647405' name='KV5M_KDC_REQ'/>
+<enum value='-1760647421' name='KV5M_KEYBLOCK'/>
+<enum value='-1760647382' name='KV5M_KEYTAB'/>
+<enum value='-1760647389' name='KV5M_KEYTAB_ENTRY'/>
+<enum value='-1760647407' name='KV5M_LAST_REQ_ENTRY'/>
+<enum value='-1760647424' name='KV5M_NONE'/>
+<enum value='-1760647387' name='KV5M_OS_CONTEXT'/>
+<enum value='-1760647370' name='KV5M_PASSWD_PHRASE_ELEMENT'/>
+<enum value='-1760647406' name='KV5M_PA_DATA'/>
+<enum value='-1760647379' name='KV5M_PREAUTH_OPS'/>
+<enum value='-1760647371' name='KV5M_PREDICTED_SAM_RESPONSE'/>
+<enum value='-1760647423' name='KV5M_PRINCIPAL'/>
+<enum value='-1760647396' name='KV5M_PRIV'/>
+<enum value='-1760647395' name='KV5M_PRIV_ENC_PART'/>
+<enum value='-1760647391' name='KV5M_PWD_DATA'/>
+<enum value='-1760647381' name='KV5M_RCACHE'/>
+<enum value='-1760647398' name='KV5M_RESPONSE'/>
+<enum value='-1760647397' name='KV5M_SAFE'/>
+<enum value='-1760647378' name='KV5M_SAM_CHALLENGE'/>
+<enum value='-1760647377' name='KV5M_SAM_CHALLENGE_2'/>
+<enum value='-1760647376' name='KV5M_SAM_KEY'/>
+<enum value='-1760647373' name='KV5M_SAM_RESPONSE'/>
+<enum value='-1760647372' name='KV5M_SAM_RESPONSE_2'/>
+<enum value='-1760647411' name='KV5M_TICKET'/>
+<enum value='-1760647409' name='KV5M_TKT_AUTHENT'/>
+<enum value='-1760647413' name='KV5M_TRANSITED'/>
+<enum value='32767' name='LR_TYPE_INTERPRETATION_MASK'/>
+<enum value='32768' name='LR_TYPE_THIS_SERVER_ONLY'/>
+<enum value='1100' name='MAX_KEYTAB_NAME_LEN'/>
+<enum value='1250' name='MAX_V4_CRED_LEN'/>
+<enum value='32768' name='MSEC_DIRBIT'/>
+<enum value='32767' name='MSEC_VAL_MASK'/>
+<enum value='4' name='PA_HARDWARE'/>
+<enum value='2' name='PA_INFO'/>
+<enum value='128' name='PA_PSEUDO'/>
+<enum value='1' name='PA_REAL'/>
+<enum value='32' name='PA_REPLACES_KEY'/>
+<enum value='8' name='PA_REQUIRED'/>
+<enum value='16' name='PA_SUFFICIENT'/>
+<enum value='1' name='PROFILE_FILE_DEPRECATED_RW'/>
+<enum value='2' name='PROFILE_FILE_DIRTY'/>
+<enum value='16' name='PROFILE_FILE_HAVE_DATA'/>
+<enum value='8' name='PROFILE_FILE_INVALID'/>
+<enum value='4' name='PROFILE_FILE_SHARED'/>
+<enum value='256' name='PROFILE_ITER_FINAL_SEEN'/>
+<enum value='1' name='PROFILE_ITER_LIST_SECTION'/>
+<enum value='4' name='PROFILE_ITER_RELATIONS_ONLY'/>
+<enum value='2' name='PROFILE_ITER_SECTIONS_ONLY'/>
+<enum value='-1429577724' name='PROF_ADD_NOT_SECTION'/>
+<enum value='-1429577700' name='PROF_BAD_BOOLEAN'/>
+<enum value='-1429577721' name='PROF_BAD_GROUP_LVL'/>
+<enum value='-1429577699' name='PROF_BAD_INTEGER'/>
+<enum value='-1429577722' name='PROF_BAD_LINK_LIST'/>
+<enum value='-1429577705' name='PROF_BAD_NAMESET'/>
+<enum value='-1429577720' name='PROF_BAD_PARENT_PTR'/>
+<enum value='-1429577717' name='PROF_EINVAL'/>
+<enum value='-1429577706' name='PROF_END_OF_SECTIONS'/>
+<enum value='-1429577701' name='PROF_EXISTS'/>
+<enum value='-1429577712' name='PROF_EXTRA_CBRACE'/>
+<enum value='-1429577702' name='PROF_FAIL_OPEN'/>
+<enum value='-1429577707' name='PROF_INVALID_SECTION'/>
+<enum value='-1429577703' name='PROF_MAGIC_FILE'/>
+<enum value='-1429577698' name='PROF_MAGIC_FILE_DATA'/>
+<enum value='-1429577719' name='PROF_MAGIC_ITERATOR'/>
+<enum value='-1429577727' name='PROF_MAGIC_NODE'/>
+<enum value='-1429577710' name='PROF_MAGIC_PROFILE'/>
+<enum value='-1429577709' name='PROF_MAGIC_SECTION'/>
+<enum value='-1429577711' name='PROF_MISSING_OBRACE'/>
+<enum value='-1429577704' name='PROF_NO_PROFILE'/>
+<enum value='-1429577725' name='PROF_NO_RELATION'/>
+<enum value='-1429577726' name='PROF_NO_SECTION'/>
+<enum value='-1429577716' name='PROF_READ_ONLY'/>
+<enum value='-1429577713' name='PROF_RELATION_SYNTAX'/>
+<enum value='-1429577715' name='PROF_SECTION_NOTOP'/>
+<enum value='-1429577714' name='PROF_SECTION_SYNTAX'/>
+<enum value='-1429577723' name='PROF_SECTION_WITH_VALUE'/>
+<enum value='-1429577718' name='PROF_SET_SECTION_VALUE'/>
+<enum value='-1429577708' name='PROF_TOPSECTION_ITER_NOSUPP'/>
+<enum value='-1429577728' name='PROF_VERSION'/>
+<enum value='4294967295' name='SALT_TYPE_AFS_LENGTH'/>
+<enum value='4294967295' name='SALT_TYPE_NO_LENGTH'/>
+<enum value='131072' name='TKT_FLG_ANONYMOUS'/>
+<enum value='1073741824' name='TKT_FLG_FORWARDABLE'/>
+<enum value='536870912' name='TKT_FLG_FORWARDED'/>
+<enum value='1048576' name='TKT_FLG_HW_AUTH'/>
+<enum value='4194304' name='TKT_FLG_INITIAL'/>
+<enum value='16777216' name='TKT_FLG_INVALID'/>
+<enum value='67108864' name='TKT_FLG_MAY_POSTDATE'/>
+<enum value='262144' name='TKT_FLG_OK_AS_DELEGATE'/>
+<enum value='33554432' name='TKT_FLG_POSTDATED'/>
+<enum value='2097152' name='TKT_FLG_PRE_AUTH'/>
+<enum value='268435456' name='TKT_FLG_PROXIABLE'/>
+<enum value='134217728' name='TKT_FLG_PROXY'/>
+<enum value='8388608' name='TKT_FLG_RENEWABLE'/>
+<enum value='524288' name='TKT_FLG_TRANSIT_POLICY_CHECKED'/>
+<enum value='2147483647' name='VALID_INT_BITS'/>
+<enum value='4294967295' name='VALID_UINT_BITS'/>
+<enum value='1859794432' name='asn1_err_base'/>
+<enum value='213' name='ccErrBadAPIVersion'/>
+<enum value='212' name='ccErrBadCredentialsVersion'/>
+<enum value='227' name='ccErrBadInternalMessage'/>
+<enum value='218' name='ccErrBadLockType'/>
+<enum value='211' name='ccErrBadName'/>
+<enum value='202' name='ccErrBadParam'/>
+<enum value='216' name='ccErrCCacheLocked'/>
+<enum value='221' name='ccErrCCacheNotFound'/>
+<enum value='217' name='ccErrCCacheUnlocked'/>
+<enum value='229' name='ccErrClientNotFound'/>
+<enum value='214' name='ccErrContextLocked'/>
+<enum value='222' name='ccErrContextNotFound'/>
+<enum value='215' name='ccErrContextUnlocked'/>
+<enum value='220' name='ccErrCredentialsNotFound'/>
+<enum value='205' name='ccErrInvalidCCache'/>
+<enum value='208' name='ccErrInvalidCCacheIterator'/>
+<enum value='204' name='ccErrInvalidContext'/>
+<enum value='207' name='ccErrInvalidCredentials'/>
+<enum value='209' name='ccErrInvalidCredentialsIterator'/>
+<enum value='210' name='ccErrInvalidLock'/>
+<enum value='206' name='ccErrInvalidString'/>
+<enum value='219' name='ccErrNeverDefault'/>
+<enum value='203' name='ccErrNoMem'/>
+<enum value='228' name='ccErrNotImplemented'/>
+<enum value='225' name='ccErrServerCantBecomeUID'/>
+<enum value='224' name='ccErrServerInsecure'/>
+<enum value='223' name='ccErrServerUnavailable'/>
+<enum value='226' name='ccErrTimeOffsetNotSet'/>
+<enum value='201' name='ccIteratorEnd'/>
+<enum value='0' name='ccNoError'/>
+<enum value='1' name='cc_credentials_v4'/>
+<enum value='3' name='cc_credentials_v4_v5'/>
+<enum value='2' name='cc_credentials_v5'/>
+<enum value='1' name='cc_lock_block'/>
+<enum value='3' name='cc_lock_downgrade'/>
+<enum value='0' name='cc_lock_noblock'/>
+<enum value='0' name='cc_lock_read'/>
+<enum value='2' name='cc_lock_upgrade'/>
+<enum value='1' name='cc_lock_write'/>
+<enum value='40' name='cc_v4_instance_size'/>
+<enum value='8' name='cc_v4_key_size'/>
+<enum value='40' name='cc_v4_name_size'/>
+<enum value='40' name='cc_v4_realm_size'/>
+<enum value='0' name='cc_v4_stk_afs'/>
+<enum value='2' name='cc_v4_stk_columbia_special'/>
+<enum value='1' name='cc_v4_stk_des'/>
+<enum value='3' name='cc_v4_stk_krb5'/>
+<enum value='4' name='cc_v4_stk_unknown'/>
+<enum value='1254' name='cc_v4_ticket_size'/>
+<enum value='2' name='ccapi_version_2'/>
+<enum value='3' name='ccapi_version_3'/>
+<enum value='4' name='ccapi_version_4'/>
+<enum value='5' name='ccapi_version_5'/>
+<enum value='6' name='ccapi_version_6'/>
+<enum value='7' name='ccapi_version_7'/>
+<enum value='7' name='ccapi_version_max'/>
+<enum value='-1750206208' name='k524_err_base'/>
+<enum value='-1780008448' name='kdb5_err_base'/>
+<enum value='4294967295' name='kerberosVersion_All'/>
+<enum value='0' name='kerberosVersion_Any'/>
+<enum value='1' name='kerberosVersion_V4'/>
+<enum value='2' name='kerberosVersion_V5'/>
+<enum value='19279' name='klBadLoginOptionsErr'/>
+<enum value='19379' name='klBadOptionValueErr'/>
+<enum value='19278' name='klBadPasswordErr'/>
+<enum value='19277' name='klBadPrincipalErr'/>
+<enum value='19282' name='klBadV5ContextErr'/>
+<enum value='19377' name='klBufferTooLargeErr'/>
+<enum value='19376' name='klBufferTooSmallErr'/>
+<enum value='19488' name='klCacheDoesNotExistErr'/>
+<enum value='19776' name='klCantContactServerErr'/>
+<enum value='19777' name='klCantDisplayUIErr'/>
+<enum value='19281' name='klCapsLockErr'/>
+<enum value='19487' name='klCredentialsBadAddressErr'/>
+<enum value='19483' name='klCredentialsExpiredErr'/>
+<enum value='19490' name='klCredentialsNeedValidationErr'/>
+<enum value='19276' name='klFirstError'/>
+<enum value='19577' name='klInsecurePasswordErr'/>
+<enum value='19378' name='klInvalidOptionErr'/>
+<enum value='19280' name='klInvalidVersionErr'/>
+<enum value='19876' name='klLastError'/>
+<enum value='19477' name='klMemFullErr'/>
+<enum value='19486' name='klNoCredentialsErr'/>
+<enum value='0' name='klNoErr'/>
+<enum value='19489' name='klNoHostnameErr'/>
+<enum value='19484' name='klNoRealmsErr'/>
+<enum value='19276' name='klParameterErr'/>
+<enum value='19578' name='klPasswordChangeFailedErr'/>
+<enum value='19576' name='klPasswordMismatchErr'/>
+<enum value='19478' name='klPreferencesReadErr'/>
+<enum value='19479' name='klPreferencesWriteErr'/>
+<enum value='19481' name='klPrincipalDoesNotExistErr'/>
+<enum value='19485' name='klRealmDoesNotExistErr'/>
+<enum value='19778' name='klServerInsecureErr'/>
+<enum value='19482' name='klSystemDefaultDoesNotExistErr'/>
+<enum value='19476' name='klUserCanceledErr'/>
+<enum value='19480' name='klV5InitializationFailedErr'/>
+<enum value='-1765328384' name='krb5_err_base'/>
+<enum value='2' name='krb5plugin_preauth_client_free_etype'/>
+<enum value='1' name='krb5plugin_preauth_client_get_etype'/>
+<enum value='2' name='krb5plugin_preauth_entry_max_time_skew'/>
+<enum value='1' name='krb5plugin_preauth_entry_request_certificate'/>
+<enum value='3' name='krb5plugin_preauth_keys'/>
+<enum value='4' name='krb5plugin_preauth_request_body'/>
+<enum value='-1760647424' name='kv5m_err_base'/>
+<enum value='3' name='locate_service_kadmin'/>
+<enum value='1' name='locate_service_kdc'/>
+<enum value='5' name='locate_service_kpasswd'/>
+<enum value='4' name='locate_service_krb524'/>
+<enum value='2' name='locate_service_master_kdc'/>
+<enum value='2' name='loginLibrary_ChangePasswordDialog'/>
+<enum value='0' name='loginLibrary_LoginDialog'/>
+<enum value='1' name='loginLibrary_OptionsDialog'/>
+<enum value='3' name='loginLibrary_ProgressDialog'/>
+<enum value='4' name='loginLibrary_PrompterDialog'/>
+<enum value='-1' name='loginLibrary_UnknownDialog'/>
+<enum value='811689074' name='loginOption_DefaultAddresslessTicket'/>
+<enum value='812021604' name='loginOption_DefaultForwardableTicket'/>
+<enum value='812675704' name='loginOption_DefaultProxiableTicket'/>
+<enum value='812805222' name='loginOption_DefaultRenewableLifetime'/>
+<enum value='812807288' name='loginOption_DefaultRenewableTicket'/>
+<enum value='812411238' name='loginOption_DefaultTicketLifetime'/>
+<enum value='1768846196' name='loginOption_LoginInstance'/>
+<enum value='1851878757' name='loginOption_LoginName'/>
+<enum value='728919142' name='loginOption_MaximalRenewableLifetime'/>
+<enum value='728525158' name='loginOption_MaximalTicketLifetime'/>
+<enum value='762473574' name='loginOption_MinimalRenewableLifetime'/>
+<enum value='762079590' name='loginOption_MinimalTicketLifetime'/>
+<enum value='1702392946' name='loginOption_RememberExtras'/>
+<enum value='1886546286' name='loginOption_RememberPrincipal'/>
+<enum value='-1429577728' name='prof_err_base'/>
+<enum value='65535' name='realmList_End'/>
+<enum value='0' name='realmList_Start'/>
+<function name='KLAcquireInitialTickets'>
+<arg type='^{kim_identity_opaque=}'/>
+<arg type='^{kim_options_opaque=}'/>
+<arg type='^^{kim_identity_opaque}'/>
+<arg type='^*'/>
+<retval type='i'/>
+</function>
+<function name='KLAcquireInitialTicketsWithPassword'>
+<arg type='^{kim_identity_opaque=}'/>
+<arg type='^{kim_options_opaque=}'/>
+<arg type='*'/>
+<arg type='^*'/>
+<retval type='i'/>
+</function>
+<function name='KLAcquireNewInitialTicketCredentialsWithPassword'>
+<arg type='^{kim_identity_opaque=}'/>
+<arg type='^{kim_options_opaque=}'/>
+<arg type='*'/>
+<arg type='^{_krb5_context=}'/>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='^v'/>
+<arg type='^{_krb5_creds=i^{krb5_principal_data}^{krb5_principal_data}{_krb5_keyblock=iiI*}{_krb5_ticket_times=iiii}Ii^^{_krb5_address}{_krb5_data=iI*}{_krb5_data=iI*}^^{_krb5_authdata}}'/>
+<retval type='i'/>
+</function>
+<function name='KLAcquireNewInitialTickets'>
+<arg type='^{kim_identity_opaque=}'/>
+<arg type='^{kim_options_opaque=}'/>
+<arg type='^^{kim_identity_opaque}'/>
+<arg type='^*'/>
+<retval type='i'/>
+</function>
+<function name='KLAcquireNewInitialTicketsWithKeytab'>
+<arg type='^{kim_identity_opaque=}'/>
+<arg type='^{kim_options_opaque=}'/>
+<arg type='*'/>
+<arg type='^*'/>
+<retval type='i'/>
+</function>
+<function name='KLAcquireNewInitialTicketsWithPassword'>
+<arg type='^{kim_identity_opaque=}'/>
+<arg type='^{kim_options_opaque=}'/>
+<arg type='*'/>
+<arg type='^*'/>
+<retval type='i'/>
+</function>
+<function name='KLAcquireNewTickets'>
+<arg type='^{kim_identity_opaque=}'/>
+<arg type='^^{kim_identity_opaque}'/>
+<arg type='^*'/>
+<retval type='i'/>
+</function>
+<function name='KLAcquireNewTicketsWithPassword'>
+<arg type='^{kim_identity_opaque=}'/>
+<arg type='^{kim_options_opaque=}'/>
+<arg type='*'/>
+<arg type='^*'/>
+<retval type='i'/>
+</function>
+<function name='KLAcquireTickets'>
+<arg type='^{kim_identity_opaque=}'/>
+<arg type='^^{kim_identity_opaque}'/>
+<arg type='^*'/>
+<retval type='i'/>
+</function>
+<function name='KLAcquireTicketsWithPassword'>
+<arg type='^{kim_identity_opaque=}'/>
+<arg type='^{kim_options_opaque=}'/>
+<arg type='*'/>
+<arg type='^*'/>
+<retval type='i'/>
+</function>
+<function name='KLCacheHasValidTickets'>
+<arg type='^{kim_identity_opaque=}'/>
+<arg type='I'/>
+<arg type='*'/>
+<arg type='^^{kim_identity_opaque}'/>
+<arg type='^*'/>
+<retval type='i'/>
+</function>
+<function name='KLCancelAllDialogs'>
+<retval type='i'/>
+</function>
+<function name='KLChangePassword'>
+<arg type='^{kim_identity_opaque=}'/>
+<retval type='i'/>
+</function>
+<function name='KLChangePasswordWithPasswords'>
+<arg type='^{kim_identity_opaque=}'/>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='^*'/>
+<arg type='^*'/>
+<retval type='i'/>
+</function>
+<function name='KLComparePrincipal'>
+<arg type='^{kim_identity_opaque=}'/>
+<arg type='^{kim_identity_opaque=}'/>
+<arg type='*'/>
+<retval type='i'/>
+</function>
+<function name='KLCountKerberosRealms'>
+<retval type='I'/>
+</function>
+<function name='KLCreateLoginOptions'>
+<arg type='^^{kim_options_opaque}'/>
+<retval type='i'/>
+</function>
+<function name='KLCreatePrincipalFromKerberos5Principal'>
+<arg type='^{krb5_principal_data=i{_krb5_data=iI*}^{_krb5_data}ii}'/>
+<arg type='^^{kim_identity_opaque}'/>
+<retval type='i'/>
+</function>
+<function name='KLCreatePrincipalFromPrincipal'>
+<arg type='^{kim_identity_opaque=}'/>
+<arg type='^^{kim_identity_opaque}'/>
+<retval type='i'/>
+</function>
+<function name='KLCreatePrincipalFromString'>
+<arg type='*'/>
+<arg type='I'/>
+<arg type='^^{kim_identity_opaque}'/>
+<retval type='i'/>
+</function>
+<function name='KLCreatePrincipalFromTriplet'>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='^^{kim_identity_opaque}'/>
+<retval type='i'/>
+</function>
+<function name='KLDestroyTickets'>
+<arg type='^{kim_identity_opaque=}'/>
+<retval type='i'/>
+</function>
+<function name='KLDisposeLoginOptions'>
+<arg type='^{kim_options_opaque=}'/>
+<retval type='i'/>
+</function>
+<function name='KLDisposePrincipal'>
+<arg type='^{kim_identity_opaque=}'/>
+<retval type='i'/>
+</function>
+<function name='KLDisposeString'>
+<arg type='*'/>
+<retval type='i'/>
+</function>
+<function name='KLFindKerberosRealmByName'>
+<arg type='*'/>
+<arg type='^I'/>
+<retval type='i'/>
+</function>
+<function name='KLGetApplicationOptions'>
+<arg type='^v'/>
+<retval type='i'/>
+</function>
+<function name='KLGetDefaultLoginOption'>
+<arg type='I'/>
+<arg type='^v'/>
+<arg type='^I'/>
+<retval type='i'/>
+</function>
+<function name='KLGetDisplayStringFromPrincipal'>
+<arg type='^{kim_identity_opaque=}'/>
+<arg type='I'/>
+<arg type='^*'/>
+<retval type='i'/>
+</function>
+<function name='KLGetErrorString'>
+<arg type='i'/>
+<arg type='^*'/>
+<retval type='i'/>
+</function>
+<function name='KLGetIdleCallback'>
+<arg type='^^?'/>
+<arg type='^I'/>
+<retval type='i'/>
+</function>
+<function name='KLGetKerberosDefaultRealm'>
+<arg type='^I'/>
+<retval type='i'/>
+</function>
+<function name='KLGetKerberosDefaultRealmByName'>
+<arg type='^*'/>
+<retval type='i'/>
+</function>
+<function name='KLGetKerberosRealm'>
+<arg type='I'/>
+<arg type='^*'/>
+<retval type='i'/>
+</function>
+<function name='KLGetStringFromPrincipal'>
+<arg type='^{kim_identity_opaque=}'/>
+<arg type='I'/>
+<arg type='^*'/>
+<retval type='i'/>
+</function>
+<function name='KLGetTripletFromPrincipal'>
+<arg type='^{kim_identity_opaque=}'/>
+<arg type='^*'/>
+<arg type='^*'/>
+<arg type='^*'/>
+<retval type='i'/>
+</function>
+<function name='KLHandleError'>
+<arg type='i'/>
+<arg type='I'/>
+<arg type='c'/>
+<retval type='i'/>
+</function>
+<function name='KLInsertKerberosRealm'>
+<arg type='I'/>
+<arg type='*'/>
+<retval type='i'/>
+</function>
+<function name='KLLastChangedTime'>
+<arg type='^I'/>
+<retval type='i'/>
+</function>
+<function name='KLLoginOptionsSetAddressless'>
+<arg type='^{kim_options_opaque=}'/>
+<arg type='c'/>
+<retval type='i'/>
+</function>
+<function name='KLLoginOptionsSetForwardable'>
+<arg type='^{kim_options_opaque=}'/>
+<arg type='c'/>
+<retval type='i'/>
+</function>
+<function name='KLLoginOptionsSetProxiable'>
+<arg type='^{kim_options_opaque=}'/>
+<arg type='c'/>
+<retval type='i'/>
+</function>
+<function name='KLLoginOptionsSetRenewableLifetime'>
+<arg type='^{kim_options_opaque=}'/>
+<arg type='I'/>
+<retval type='i'/>
+</function>
+<function name='KLLoginOptionsSetServiceName'>
+<arg type='^{kim_options_opaque=}'/>
+<arg type='*'/>
+<retval type='i'/>
+</function>
+<function name='KLLoginOptionsSetTicketLifetime'>
+<arg type='^{kim_options_opaque=}'/>
+<arg type='I'/>
+<retval type='i'/>
+</function>
+<function name='KLLoginOptionsSetTicketStartTime'>
+<arg type='^{kim_options_opaque=}'/>
+<arg type='I'/>
+<retval type='i'/>
+</function>
+<function name='KLRemoveAllKerberosRealms'>
+<retval type='i'/>
+</function>
+<function name='KLRemoveKerberosRealm'>
+<arg type='I'/>
+<retval type='i'/>
+</function>
+<function name='KLRenewInitialTickets'>
+<arg type='^{kim_identity_opaque=}'/>
+<arg type='^{kim_options_opaque=}'/>
+<arg type='^^{kim_identity_opaque}'/>
+<arg type='^*'/>
+<retval type='i'/>
+</function>
+<function name='KLSetApplicationOptions'>
+<arg type='^v'/>
+<retval type='i'/>
+</function>
+<function name='KLSetDefaultLoginOption'>
+<arg type='I'/>
+<arg type='^v'/>
+<arg type='I'/>
+<retval type='i'/>
+</function>
+<function name='KLSetIdleCallback'>
+<arg function_pointer='true' type='^?'>
+<arg type='I'/>
+<retval type='v'/>
+</arg>
+<arg type='I'/>
+<retval type='i'/>
+</function>
+<function name='KLSetKerberosDefaultRealm'>
+<arg type='I'/>
+<retval type='i'/>
+</function>
+<function name='KLSetKerberosDefaultRealmByName'>
+<arg type='*'/>
+<retval type='i'/>
+</function>
+<function name='KLSetKerberosRealm'>
+<arg type='I'/>
+<arg type='*'/>
+<retval type='i'/>
+</function>
+<function name='KLSetSystemDefaultCache'>
+<arg type='^{kim_identity_opaque=}'/>
+<retval type='i'/>
+</function>
+<function name='KLStoreNewInitialTicketCredentials'>
+<arg type='^{kim_identity_opaque=}'/>
+<arg type='^{_krb5_context=}'/>
+<arg type='^v'/>
+<arg type='^{_krb5_creds=i^{krb5_principal_data}^{krb5_principal_data}{_krb5_keyblock=iiI*}{_krb5_ticket_times=iiii}Ii^^{_krb5_address}{_krb5_data=iI*}{_krb5_data=iI*}^^{_krb5_authdata}}'/>
+<arg type='^*'/>
+<retval type='i'/>
+</function>
+<function name='KLTicketExpirationTime'>
+<arg type='^{kim_identity_opaque=}'/>
+<arg type='I'/>
+<arg type='^I'/>
+<retval type='i'/>
+</function>
+<function name='KLTicketStartTime'>
+<arg type='^{kim_identity_opaque=}'/>
+<arg type='I'/>
+<arg type='^I'/>
+<retval type='i'/>
+</function>
+<function name='KLValidateInitialTickets'>
+<arg type='^{kim_identity_opaque=}'/>
+<arg type='^{kim_options_opaque=}'/>
+<arg type='^*'/>
+<retval type='i'/>
+</function>
+<function name='KLVerifyInitialTicketCredentials'>
+<arg type='^v'/>
+<arg type='^{_krb5_creds=i^{krb5_principal_data}^{krb5_principal_data}{_krb5_keyblock=iiI*}{_krb5_ticket_times=iiii}Ii^^{_krb5_address}{_krb5_data=iI*}{_krb5_data=iI*}^^{_krb5_authdata}}'/>
+<arg type='c'/>
+<retval type='i'/>
+</function>
+<function name='KLVerifyInitialTickets'>
+<arg type='^{kim_identity_opaque=}'/>
+<arg type='c'/>
+<arg type='^*'/>
+<retval type='i'/>
+</function>
+<function name='add_error_table'>
+<arg type='^{error_table=^*ii}'/>
+<retval type='l' type64='q'/>
+</function>
+<function name='apple_gss_krb5_export_authdata_if_relevant_context'>
+<arg type='^I'/>
+<arg type='^^{gss_ctx_id_struct}'/>
+<arg type='I'/>
+<arg type='^^v'/>
+<retval type='I'/>
+</function>
+<function name='apple_gss_krb5_free_authdata_if_relevant'>
+<arg type='^I'/>
+<arg type='^v'/>
+<retval type='I'/>
+</function>
+<function name='cc_close'>
+<arg type='^{cc_context_d=^{cc_context_f}^{cc_context_f}}'/>
+<arg type='^^{cc_ccache_d}'/>
+<retval type='i'/>
+</function>
+<function name='cc_create'>
+<arg type='^{cc_context_d=^{cc_context_f}^{cc_context_f}}'/>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='i'/>
+<arg type='I'/>
+<arg type='^^{cc_ccache_d}'/>
+<retval type='i'/>
+</function>
+<function name='cc_destroy'>
+<arg type='^{cc_context_d=^{cc_context_f}^{cc_context_f}}'/>
+<arg type='^^{cc_ccache_d}'/>
+<retval type='i'/>
+</function>
+<function name='cc_free_NC_info'>
+<arg type='^{cc_context_d=^{cc_context_f}^{cc_context_f}}'/>
+<arg type='^^^{infoNC}'/>
+<retval type='i'/>
+</function>
+<function name='cc_free_creds'>
+<arg type='^{cc_context_d=^{cc_context_f}^{cc_context_f}}'/>
+<arg type='^^{cred_union}'/>
+<retval type='i'/>
+</function>
+<function name='cc_free_name'>
+<arg type='^{cc_context_d=^{cc_context_f}^{cc_context_f}}'/>
+<arg type='^*'/>
+<retval type='i'/>
+</function>
+<function name='cc_free_principal'>
+<arg type='^{cc_context_d=^{cc_context_f}^{cc_context_f}}'/>
+<arg type='^*'/>
+<retval type='i'/>
+</function>
+<function name='cc_get_NC_info'>
+<arg type='^{cc_context_d=^{cc_context_f}^{cc_context_f}}'/>
+<arg type='^^^{infoNC}'/>
+<retval type='i'/>
+</function>
+<function name='cc_get_change_time'>
+<arg type='^{cc_context_d=^{cc_context_f}^{cc_context_f}}'/>
+<arg type='^I'/>
+<retval type='i'/>
+</function>
+<function name='cc_get_cred_version'>
+<arg type='^{cc_context_d=^{cc_context_f}^{cc_context_f}}'/>
+<arg type='^{cc_ccache_d=^{cc_ccache_f}^{cc_ccache_f}}'/>
+<arg type='^i'/>
+<retval type='i'/>
+</function>
+<function name='cc_get_name'>
+<arg type='^{cc_context_d=^{cc_context_f}^{cc_context_f}}'/>
+<arg type='^{cc_ccache_d=^{cc_ccache_f}^{cc_ccache_f}}'/>
+<arg type='^*'/>
+<retval type='i'/>
+</function>
+<function name='cc_get_principal'>
+<arg type='^{cc_context_d=^{cc_context_f}^{cc_context_f}}'/>
+<arg type='^{cc_ccache_d=^{cc_ccache_f}^{cc_ccache_f}}'/>
+<arg type='^*'/>
+<retval type='i'/>
+</function>
+<function name='cc_initialize'>
+<arg type='^^{cc_context_d}'/>
+<arg type='i'/>
+<arg type='^i'/>
+<arg type='^*'/>
+<retval type='i'/>
+</function>
+<function name='cc_lock_request'>
+<arg type='^{cc_context_d=^{cc_context_f}^{cc_context_f}}'/>
+<arg type='^{cc_ccache_d=^{cc_ccache_f}^{cc_ccache_f}}'/>
+<arg type='i'/>
+<retval type='i'/>
+</function>
+<function name='cc_open'>
+<arg type='^{cc_context_d=^{cc_context_f}^{cc_context_f}}'/>
+<arg type='*'/>
+<arg type='i'/>
+<arg type='I'/>
+<arg type='^^{cc_ccache_d}'/>
+<retval type='i'/>
+</function>
+<function name='cc_remove_cred'>
+<arg type='^{cc_context_d=^{cc_context_f}^{cc_context_f}}'/>
+<arg type='^{cc_ccache_d=^{cc_ccache_f}^{cc_ccache_f}}'/>
+<arg type='{cred_union=i(cred_ptr_union_compat=^{cc_credentials_v4_compat}^{cc_credentials_v5_compat})}'/>
+<retval type='i'/>
+</function>
+<function name='cc_seq_fetch_NCs_begin'>
+<arg type='^{cc_context_d=^{cc_context_f}^{cc_context_f}}'/>
+<arg type='^^{ccache_cit}'/>
+<retval type='i'/>
+</function>
+<function name='cc_seq_fetch_NCs_end'>
+<arg type='^{cc_context_d=^{cc_context_f}^{cc_context_f}}'/>
+<arg type='^^{ccache_cit}'/>
+<retval type='i'/>
+</function>
+<function name='cc_seq_fetch_NCs_next'>
+<arg type='^{cc_context_d=^{cc_context_f}^{cc_context_f}}'/>
+<arg type='^^{cc_ccache_d}'/>
+<arg type='^{ccache_cit=}'/>
+<retval type='i'/>
+</function>
+<function name='cc_seq_fetch_creds_begin'>
+<arg type='^{cc_context_d=^{cc_context_f}^{cc_context_f}}'/>
+<arg type='^{cc_ccache_d=^{cc_ccache_f}^{cc_ccache_f}}'/>
+<arg type='^^{ccache_cit}'/>
+<retval type='i'/>
+</function>
+<function name='cc_seq_fetch_creds_end'>
+<arg type='^{cc_context_d=^{cc_context_f}^{cc_context_f}}'/>
+<arg type='^^{ccache_cit}'/>
+<retval type='i'/>
+</function>
+<function name='cc_seq_fetch_creds_next'>
+<arg type='^{cc_context_d=^{cc_context_f}^{cc_context_f}}'/>
+<arg type='^^{cred_union}'/>
+<arg type='^{ccache_cit=}'/>
+<retval type='i'/>
+</function>
+<function name='cc_set_principal'>
+<arg type='^{cc_context_d=^{cc_context_f}^{cc_context_f}}'/>
+<arg type='^{cc_ccache_d=^{cc_ccache_f}^{cc_ccache_f}}'/>
+<arg type='i'/>
+<arg type='*'/>
+<retval type='i'/>
+</function>
+<function name='cc_shutdown'>
+<arg type='^^{cc_context_d}'/>
+<retval type='i'/>
+</function>
+<function name='cc_store'>
+<arg type='^{cc_context_d=^{cc_context_f}^{cc_context_f}}'/>
+<arg type='^{cc_ccache_d=^{cc_ccache_f}^{cc_ccache_f}}'/>
+<arg type='{cred_union=i(cred_ptr_union_compat=^{cc_credentials_v4_compat}^{cc_credentials_v5_compat})}'/>
+<retval type='i'/>
+</function>
+<function variadic='true' name='com_err'>
+<arg type='*'/>
+<arg type='l' type64='q'/>
+<arg type='*'/>
+</function>
+<function name='com_err_va'>
+<arg type='*'/>
+<arg type='l' type64='q'/>
+<arg type='*'/>
+<arg type='*' type64='^{__va_list_tag=II^v^v}'/>
+</function>
+<function name='error_manager'>
+<arg type='l' type64='q'/>
+<retval type='*'/>
+</function>
+<function name='error_message'>
+<arg type='l' type64='q'/>
+<retval type='*'/>
+</function>
+<function name='gss_accept_sec_context'>
+<arg type='^I'/>
+<arg type='^^{gss_ctx_id_struct}'/>
+<arg type='^{gss_cred_id_struct=}'/>
+<arg type='^{gss_buffer_desc_struct=I^v}' type64='^{gss_buffer_desc_struct=Q^v}'/>
+<arg type='^{gss_channel_bindings_struct=I{gss_buffer_desc_struct=I^v}I{gss_buffer_desc_struct=I^v}{gss_buffer_desc_struct=I^v}}' type64='^{gss_channel_bindings_struct=I{gss_buffer_desc_struct=Q^v}I{gss_buffer_desc_struct=Q^v}{gss_buffer_desc_struct=Q^v}}'/>
+<arg type='^^{gss_name_struct}'/>
+<arg type='^^{gss_OID_desc_struct}'/>
+<arg type='^{gss_buffer_desc_struct=I^v}' type64='^{gss_buffer_desc_struct=Q^v}'/>
+<arg type='^I'/>
+<arg type='^I'/>
+<arg type='^^{gss_cred_id_struct}'/>
+<retval type='I'/>
+</function>
+<function name='gss_acquire_cred'>
+<arg type='^I'/>
+<arg type='^{gss_name_struct=}'/>
+<arg type='I'/>
+<arg type='^{gss_OID_set_desc_struct=I^{gss_OID_desc_struct}}' type64='^{gss_OID_set_desc_struct=Q^{gss_OID_desc_struct}}'/>
+<arg type='i'/>
+<arg type='^^{gss_cred_id_struct}'/>
+<arg type='^^{gss_OID_set_desc_struct}'/>
+<arg type='^I'/>
+<retval type='I'/>
+</function>
+<function name='gss_add_cred'>
+<arg type='^I'/>
+<arg type='^{gss_cred_id_struct=}'/>
+<arg type='^{gss_name_struct=}'/>
+<arg type='^{gss_OID_desc_struct=I^v}'/>
+<arg type='i'/>
+<arg type='I'/>
+<arg type='I'/>
+<arg type='^^{gss_cred_id_struct}'/>
+<arg type='^^{gss_OID_set_desc_struct}'/>
+<arg type='^I'/>
+<arg type='^I'/>
+<retval type='I'/>
+</function>
+<function name='gss_add_oid_set_member'>
+<arg type='^I'/>
+<arg type='^{gss_OID_desc_struct=I^v}'/>
+<arg type='^^{gss_OID_set_desc_struct}'/>
+<retval type='I'/>
+</function>
+<function name='gss_canonicalize_name'>
+<arg type='^I'/>
+<arg type='^{gss_name_struct=}'/>
+<arg type='^{gss_OID_desc_struct=I^v}'/>
+<arg type='^^{gss_name_struct}'/>
+<retval type='I'/>
+</function>
+<function name='gss_compare_name'>
+<arg type='^I'/>
+<arg type='^{gss_name_struct=}'/>
+<arg type='^{gss_name_struct=}'/>
+<arg type='^i'/>
+<retval type='I'/>
+</function>
+<function name='gss_context_time'>
+<arg type='^I'/>
+<arg type='^{gss_ctx_id_struct=}'/>
+<arg type='^I'/>
+<retval type='I'/>
+</function>
+<function name='gss_create_empty_oid_set'>
+<arg type='^I'/>
+<arg type='^^{gss_OID_set_desc_struct}'/>
+<retval type='I'/>
+</function>
+<function name='gss_delete_sec_context'>
+<arg type='^I'/>
+<arg type='^^{gss_ctx_id_struct}'/>
+<arg type='^{gss_buffer_desc_struct=I^v}' type64='^{gss_buffer_desc_struct=Q^v}'/>
+<retval type='I'/>
+</function>
+<function name='gss_display_name'>
+<arg type='^I'/>
+<arg type='^{gss_name_struct=}'/>
+<arg type='^{gss_buffer_desc_struct=I^v}' type64='^{gss_buffer_desc_struct=Q^v}'/>
+<arg type='^^{gss_OID_desc_struct}'/>
+<retval type='I'/>
+</function>
+<function name='gss_display_status'>
+<arg type='^I'/>
+<arg type='I'/>
+<arg type='i'/>
+<arg type='^{gss_OID_desc_struct=I^v}'/>
+<arg type='^I'/>
+<arg type='^{gss_buffer_desc_struct=I^v}' type64='^{gss_buffer_desc_struct=Q^v}'/>
+<retval type='I'/>
+</function>
+<function name='gss_duplicate_name'>
+<arg type='^I'/>
+<arg type='^{gss_name_struct=}'/>
+<arg type='^^{gss_name_struct}'/>
+<retval type='I'/>
+</function>
+<function name='gss_export_name'>
+<arg type='^I'/>
+<arg type='^{gss_name_struct=}'/>
+<arg type='^{gss_buffer_desc_struct=I^v}' type64='^{gss_buffer_desc_struct=Q^v}'/>
+<retval type='I'/>
+</function>
+<function name='gss_export_name_object'>
+<arg type='^I'/>
+<arg type='^{gss_name_struct=}'/>
+<arg type='^{gss_OID_desc_struct=I^v}'/>
+<arg type='^^v'/>
+<retval type='I'/>
+</function>
+<function name='gss_export_sec_context'>
+<arg type='^I'/>
+<arg type='^^{gss_ctx_id_struct}'/>
+<arg type='^{gss_buffer_desc_struct=I^v}' type64='^{gss_buffer_desc_struct=Q^v}'/>
+<retval type='I'/>
+</function>
+<function name='gss_get_mic'>
+<arg type='^I'/>
+<arg type='^{gss_ctx_id_struct=}'/>
+<arg type='I'/>
+<arg type='^{gss_buffer_desc_struct=I^v}' type64='^{gss_buffer_desc_struct=Q^v}'/>
+<arg type='^{gss_buffer_desc_struct=I^v}' type64='^{gss_buffer_desc_struct=Q^v}'/>
+<retval type='I'/>
+</function>
+<function name='gss_import_name'>
+<arg type='^I'/>
+<arg type='^{gss_buffer_desc_struct=I^v}' type64='^{gss_buffer_desc_struct=Q^v}'/>
+<arg type='^{gss_OID_desc_struct=I^v}'/>
+<arg type='^^{gss_name_struct}'/>
+<retval type='I'/>
+</function>
+<function name='gss_import_name_object'>
+<arg type='^I'/>
+<arg type='^v'/>
+<arg type='^{gss_OID_desc_struct=I^v}'/>
+<arg type='^^{gss_name_struct}'/>
+<retval type='I'/>
+</function>
+<function name='gss_import_sec_context'>
+<arg type='^I'/>
+<arg type='^{gss_buffer_desc_struct=I^v}' type64='^{gss_buffer_desc_struct=Q^v}'/>
+<arg type='^^{gss_ctx_id_struct}'/>
+<retval type='I'/>
+</function>
+<function name='gss_indicate_mechs'>
+<arg type='^I'/>
+<arg type='^^{gss_OID_set_desc_struct}'/>
+<retval type='I'/>
+</function>
+<function name='gss_init_sec_context'>
+<arg type='^I'/>
+<arg type='^{gss_cred_id_struct=}'/>
+<arg type='^^{gss_ctx_id_struct}'/>
+<arg type='^{gss_name_struct=}'/>
+<arg type='^{gss_OID_desc_struct=I^v}'/>
+<arg type='I'/>
+<arg type='I'/>
+<arg type='^{gss_channel_bindings_struct=I{gss_buffer_desc_struct=I^v}I{gss_buffer_desc_struct=I^v}{gss_buffer_desc_struct=I^v}}' type64='^{gss_channel_bindings_struct=I{gss_buffer_desc_struct=Q^v}I{gss_buffer_desc_struct=Q^v}{gss_buffer_desc_struct=Q^v}}'/>
+<arg type='^{gss_buffer_desc_struct=I^v}' type64='^{gss_buffer_desc_struct=Q^v}'/>
+<arg type='^^{gss_OID_desc_struct}'/>
+<arg type='^{gss_buffer_desc_struct=I^v}' type64='^{gss_buffer_desc_struct=Q^v}'/>
+<arg type='^I'/>
+<arg type='^I'/>
+<retval type='I'/>
+</function>
+<function name='gss_inquire_context'>
+<arg type='^I'/>
+<arg type='^{gss_ctx_id_struct=}'/>
+<arg type='^^{gss_name_struct}'/>
+<arg type='^^{gss_name_struct}'/>
+<arg type='^I'/>
+<arg type='^^{gss_OID_desc_struct}'/>
+<arg type='^I'/>
+<arg type='^i'/>
+<arg type='^i'/>
+<retval type='I'/>
+</function>
+<function name='gss_inquire_cred'>
+<arg type='^I'/>
+<arg type='^{gss_cred_id_struct=}'/>
+<arg type='^^{gss_name_struct}'/>
+<arg type='^I'/>
+<arg type='^i'/>
+<arg type='^^{gss_OID_set_desc_struct}'/>
+<retval type='I'/>
+</function>
+<function name='gss_inquire_cred_by_mech'>
+<arg type='^I'/>
+<arg type='^{gss_cred_id_struct=}'/>
+<arg type='^{gss_OID_desc_struct=I^v}'/>
+<arg type='^^{gss_name_struct}'/>
+<arg type='^I'/>
+<arg type='^I'/>
+<arg type='^i'/>
+<retval type='I'/>
+</function>
+<function name='gss_inquire_mechs_for_name'>
+<arg type='^I'/>
+<arg type='^{gss_name_struct=}'/>
+<arg type='^^{gss_OID_set_desc_struct}'/>
+<retval type='I'/>
+</function>
+<function name='gss_inquire_names_for_mech'>
+<arg type='^I'/>
+<arg type='^{gss_OID_desc_struct=I^v}'/>
+<arg type='^^{gss_OID_set_desc_struct}'/>
+<retval type='I'/>
+</function>
+<function name='gss_krb5_ccache_name'>
+<arg type='^I'/>
+<arg type='*'/>
+<arg type='^*'/>
+<retval type='I'/>
+</function>
+<function name='gss_krb5_copy_ccache'>
+<arg type='^I'/>
+<arg type='^{gss_cred_id_struct=}'/>
+<arg type='^{_krb5_ccache=}'/>
+<retval type='I'/>
+</function>
+<function name='gss_krb5_export_lucid_sec_context'>
+<arg type='^I'/>
+<arg type='^^{gss_ctx_id_struct}'/>
+<arg type='I'/>
+<arg type='^^v'/>
+<retval type='I'/>
+</function>
+<function name='gss_krb5_free_lucid_sec_context'>
+<arg type='^I'/>
+<arg type='^v'/>
+<retval type='I'/>
+</function>
+<function name='gss_krb5_get_tkt_flags'>
+<arg type='^I'/>
+<arg type='^{gss_ctx_id_struct=}'/>
+<arg type='^i'/>
+<retval type='I'/>
+</function>
+<function name='gss_krb5_set_allowable_enctypes'>
+<arg type='^I'/>
+<arg type='^{gss_cred_id_struct=}'/>
+<arg type='I'/>
+<arg type='^i'/>
+<retval type='I'/>
+</function>
+<function name='gss_krb5_ui'>
+<arg type='^I'/>
+<arg type='I'/>
+<retval type='I'/>
+</function>
+<function name='gss_oid_to_str'>
+<arg type='^I'/>
+<arg type='^{gss_OID_desc_struct=I^v}'/>
+<arg type='^{gss_buffer_desc_struct=I^v}' type64='^{gss_buffer_desc_struct=Q^v}'/>
+<retval type='I'/>
+</function>
+<function name='gss_process_context_token'>
+<arg type='^I'/>
+<arg type='^{gss_ctx_id_struct=}'/>
+<arg type='^{gss_buffer_desc_struct=I^v}' type64='^{gss_buffer_desc_struct=Q^v}'/>
+<retval type='I'/>
+</function>
+<function name='gss_release_buffer'>
+<arg type='^I'/>
+<arg type='^{gss_buffer_desc_struct=I^v}' type64='^{gss_buffer_desc_struct=Q^v}'/>
+<retval type='I'/>
+</function>
+<function name='gss_release_cred'>
+<arg type='^I'/>
+<arg type='^^{gss_cred_id_struct}'/>
+<retval type='I'/>
+</function>
+<function name='gss_release_name'>
+<arg type='^I'/>
+<arg type='^^{gss_name_struct}'/>
+<retval type='I'/>
+</function>
+<function name='gss_release_oid'>
+<arg type='^I'/>
+<arg type='^^{gss_OID_desc_struct}'/>
+<retval type='I'/>
+</function>
+<function name='gss_release_oid_set'>
+<arg type='^I'/>
+<arg type='^^{gss_OID_set_desc_struct}'/>
+<retval type='I'/>
+</function>
+<function name='gss_seal'>
+<arg type='^I'/>
+<arg type='^{gss_ctx_id_struct=}'/>
+<arg type='i'/>
+<arg type='i'/>
+<arg type='^{gss_buffer_desc_struct=I^v}' type64='^{gss_buffer_desc_struct=Q^v}'/>
+<arg type='^i'/>
+<arg type='^{gss_buffer_desc_struct=I^v}' type64='^{gss_buffer_desc_struct=Q^v}'/>
+<retval type='I'/>
+</function>
+<function name='gss_sign'>
+<arg type='^I'/>
+<arg type='^{gss_ctx_id_struct=}'/>
+<arg type='i'/>
+<arg type='^{gss_buffer_desc_struct=I^v}' type64='^{gss_buffer_desc_struct=Q^v}'/>
+<arg type='^{gss_buffer_desc_struct=I^v}' type64='^{gss_buffer_desc_struct=Q^v}'/>
+<retval type='I'/>
+</function>
+<function name='gss_str_to_oid'>
+<arg type='^I'/>
+<arg type='^{gss_buffer_desc_struct=I^v}' type64='^{gss_buffer_desc_struct=Q^v}'/>
+<arg type='^^{gss_OID_desc_struct}'/>
+<retval type='I'/>
+</function>
+<function name='gss_test_oid_set_member'>
+<arg type='^I'/>
+<arg type='^{gss_OID_desc_struct=I^v}'/>
+<arg type='^{gss_OID_set_desc_struct=I^{gss_OID_desc_struct}}' type64='^{gss_OID_set_desc_struct=Q^{gss_OID_desc_struct}}'/>
+<arg type='^i'/>
+<retval type='I'/>
+</function>
+<function name='gss_unseal'>
+<arg type='^I'/>
+<arg type='^{gss_ctx_id_struct=}'/>
+<arg type='^{gss_buffer_desc_struct=I^v}' type64='^{gss_buffer_desc_struct=Q^v}'/>
+<arg type='^{gss_buffer_desc_struct=I^v}' type64='^{gss_buffer_desc_struct=Q^v}'/>
+<arg type='^i'/>
+<arg type='^i'/>
+<retval type='I'/>
+</function>
+<function name='gss_unwrap'>
+<arg type='^I'/>
+<arg type='^{gss_ctx_id_struct=}'/>
+<arg type='^{gss_buffer_desc_struct=I^v}' type64='^{gss_buffer_desc_struct=Q^v}'/>
+<arg type='^{gss_buffer_desc_struct=I^v}' type64='^{gss_buffer_desc_struct=Q^v}'/>
+<arg type='^i'/>
+<arg type='^I'/>
+<retval type='I'/>
+</function>
+<function name='gss_verify'>
+<arg type='^I'/>
+<arg type='^{gss_ctx_id_struct=}'/>
+<arg type='^{gss_buffer_desc_struct=I^v}' type64='^{gss_buffer_desc_struct=Q^v}'/>
+<arg type='^{gss_buffer_desc_struct=I^v}' type64='^{gss_buffer_desc_struct=Q^v}'/>
+<arg type='^i'/>
+<retval type='I'/>
+</function>
+<function name='gss_verify_mic'>
+<arg type='^I'/>
+<arg type='^{gss_ctx_id_struct=}'/>
+<arg type='^{gss_buffer_desc_struct=I^v}' type64='^{gss_buffer_desc_struct=Q^v}'/>
+<arg type='^{gss_buffer_desc_struct=I^v}' type64='^{gss_buffer_desc_struct=Q^v}'/>
+<arg type='^I'/>
+<retval type='I'/>
+</function>
+<function name='gss_wrap'>
+<arg type='^I'/>
+<arg type='^{gss_ctx_id_struct=}'/>
+<arg type='i'/>
+<arg type='I'/>
+<arg type='^{gss_buffer_desc_struct=I^v}' type64='^{gss_buffer_desc_struct=Q^v}'/>
+<arg type='^i'/>
+<arg type='^{gss_buffer_desc_struct=I^v}' type64='^{gss_buffer_desc_struct=Q^v}'/>
+<retval type='I'/>
+</function>
+<function name='gss_wrap_size_limit'>
+<arg type='^I'/>
+<arg type='^{gss_ctx_id_struct=}'/>
+<arg type='i'/>
+<arg type='I'/>
+<arg type='I'/>
+<arg type='^I'/>
+<retval type='I'/>
+</function>
+<function name='initialize_asn1_error_table'/>
+<function name='initialize_k524_error_table'/>
+<function name='initialize_kdb5_error_table'/>
+<function name='initialize_krb5_error_table'/>
+<function name='initialize_kv5m_error_table'/>
+<function name='initialize_prof_error_table'/>
+<function name='initialize_prof_error_table_r'>
+<arg type='^^{et_list}'/>
+</function>
+<function name='krb5_425_conv_principal'>
+<arg type='^{_krb5_context=}'/>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='^^{krb5_principal_data}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_524_conv_principal'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{krb5_principal_data=i{_krb5_data=iI*}^{_krb5_data}ii}'/>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='*'/>
+<retval type='i'/>
+</function>
+<function name='krb5_524_convert_creds'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_creds=i^{krb5_principal_data}^{krb5_principal_data}{_krb5_keyblock=iiI*}{_krb5_ticket_times=iiii}Ii^^{_krb5_address}{_krb5_data=iI*}{_krb5_data=iI*}^^{_krb5_authdata}}'/>
+<arg type='^{credentials=}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_address_compare'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_address=iiI*}'/>
+<arg type='^{_krb5_address=iiI*}'/>
+<retval type='I'/>
+</function>
+<function name='krb5_address_order'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_address=iiI*}'/>
+<arg type='^{_krb5_address=iiI*}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_address_search'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_address=iiI*}'/>
+<arg type='^^{_krb5_address}'/>
+<retval type='I'/>
+</function>
+<function name='krb5_aname_to_localname'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{krb5_principal_data=i{_krb5_data=iI*}^{_krb5_data}ii}'/>
+<arg type='i'/>
+<arg type='*'/>
+<retval type='i'/>
+</function>
+<function name='krb5_appdefault_boolean'>
+<arg type='^{_krb5_context=}'/>
+<arg type='*'/>
+<arg type='^{_krb5_data=iI*}'/>
+<arg type='*'/>
+<arg type='i'/>
+<arg type='^i'/>
+</function>
+<function name='krb5_appdefault_string'>
+<arg type='^{_krb5_context=}'/>
+<arg type='*'/>
+<arg type='^{_krb5_data=iI*}'/>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='^*'/>
+</function>
+<function name='krb5_auth_con_free'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_auth_context=}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_auth_con_genaddrs'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_auth_context=}'/>
+<arg type='i'/>
+<arg type='i'/>
+<retval type='i'/>
+</function>
+<function name='krb5_auth_con_get_checksum_func'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_auth_context=}'/>
+<arg type='^^?'/>
+<arg type='^^v'/>
+<retval type='i'/>
+</function>
+<function name='krb5_auth_con_getaddrs'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_auth_context=}'/>
+<arg type='^^{_krb5_address}'/>
+<arg type='^^{_krb5_address}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_auth_con_getauthenticator'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_auth_context=}'/>
+<arg type='^^{_krb5_authenticator}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_auth_con_getflags'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_auth_context=}'/>
+<arg type='^i'/>
+<retval type='i'/>
+</function>
+<function name='krb5_auth_con_getkey'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_auth_context=}'/>
+<arg type='^^{_krb5_keyblock}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_auth_con_getlocalseqnumber'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_auth_context=}'/>
+<arg type='^i'/>
+<retval type='i'/>
+</function>
+<function name='krb5_auth_con_getrcache'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_auth_context=}'/>
+<arg type='^^{krb5_rc_st}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_auth_con_getrecvsubkey'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_auth_context=}'/>
+<arg type='^^{_krb5_keyblock}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_auth_con_getremoteseqnumber'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_auth_context=}'/>
+<arg type='^i'/>
+<retval type='i'/>
+</function>
+<function name='krb5_auth_con_getsendsubkey'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_auth_context=}'/>
+<arg type='^^{_krb5_keyblock}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_auth_con_init'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^^{_krb5_auth_context}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_auth_con_set_checksum_func'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_auth_context=}'/>
+<arg function_pointer='true' type='^?'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_auth_context=}'/>
+<arg type='^v'/>
+<arg type='^^{_krb5_data}'/>
+<retval type='i'/>
+</arg>
+<arg type='^v'/>
+<retval type='i'/>
+</function>
+<function name='krb5_auth_con_setaddrs'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_auth_context=}'/>
+<arg type='^{_krb5_address=iiI*}'/>
+<arg type='^{_krb5_address=iiI*}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_auth_con_setflags'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_auth_context=}'/>
+<arg type='i'/>
+<retval type='i'/>
+</function>
+<function name='krb5_auth_con_setports'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_auth_context=}'/>
+<arg type='^{_krb5_address=iiI*}'/>
+<arg type='^{_krb5_address=iiI*}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_auth_con_setrcache'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_auth_context=}'/>
+<arg type='^{krb5_rc_st=}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_auth_con_setrecvsubkey'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_auth_context=}'/>
+<arg type='^{_krb5_keyblock=iiI*}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_auth_con_setsendsubkey'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_auth_context=}'/>
+<arg type='^{_krb5_keyblock=iiI*}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_auth_con_setuseruserkey'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_auth_context=}'/>
+<arg type='^{_krb5_keyblock=iiI*}'/>
+<retval type='i'/>
+</function>
+<function sentinel='0' variadic='true' name='krb5_build_principal'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^^{krb5_principal_data}'/>
+<arg type='I'/>
+<arg type='*'/>
+<retval type='i'/>
+</function>
+<function name='krb5_build_principal_alloc_va'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^^{krb5_principal_data}'/>
+<arg type='I'/>
+<arg type='*'/>
+<arg type='*' type64='^{__va_list_tag=II^v^v}'/>
+<retval type='i'/>
+</function>
+<function variadic='true' name='krb5_build_principal_ext'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^^{krb5_principal_data}'/>
+<arg type='I'/>
+<arg type='*'/>
+<retval type='i'/>
+</function>
+<function name='krb5_c_block_size'>
+<arg type='^{_krb5_context=}'/>
+<arg type='i'/>
+<arg type='^I' type64='^Q'/>
+<retval type='i'/>
+</function>
+<function name='krb5_c_checksum_length'>
+<arg type='^{_krb5_context=}'/>
+<arg type='i'/>
+<arg type='^I' type64='^Q'/>
+<retval type='i'/>
+</function>
+<function name='krb5_c_decrypt'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_keyblock=iiI*}'/>
+<arg type='i'/>
+<arg type='^{_krb5_data=iI*}'/>
+<arg type='^{_krb5_enc_data=iiI{_krb5_data=iI*}}'/>
+<arg type='^{_krb5_data=iI*}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_c_encrypt'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_keyblock=iiI*}'/>
+<arg type='i'/>
+<arg type='^{_krb5_data=iI*}'/>
+<arg type='^{_krb5_data=iI*}'/>
+<arg type='^{_krb5_enc_data=iiI{_krb5_data=iI*}}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_c_encrypt_length'>
+<arg type='^{_krb5_context=}'/>
+<arg type='i'/>
+<arg type='L' type64='Q'/>
+<arg type='^I' type64='^Q'/>
+<retval type='i'/>
+</function>
+<function name='krb5_c_enctype_compare'>
+<arg type='^{_krb5_context=}'/>
+<arg type='i'/>
+<arg type='i'/>
+<arg type='^I'/>
+<retval type='i'/>
+</function>
+<function name='krb5_c_free_state'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_keyblock=iiI*}'/>
+<arg type='^{_krb5_data=iI*}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_c_init_state'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_keyblock=iiI*}'/>
+<arg type='i'/>
+<arg type='^{_krb5_data=iI*}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_c_is_coll_proof_cksum'>
+<arg type='i'/>
+<retval type='I'/>
+</function>
+<function name='krb5_c_is_keyed_cksum'>
+<arg type='i'/>
+<retval type='I'/>
+</function>
+<function name='krb5_c_keyed_checksum_types'>
+<arg type='^{_krb5_context=}'/>
+<arg type='i'/>
+<arg type='^I'/>
+<arg type='^^i'/>
+<retval type='i'/>
+</function>
+<function name='krb5_c_keylengths'>
+<arg type='^{_krb5_context=}'/>
+<arg type='i'/>
+<arg type='^I' type64='^Q'/>
+<arg type='^I' type64='^Q'/>
+<retval type='i'/>
+</function>
+<function name='krb5_c_make_checksum'>
+<arg type='^{_krb5_context=}'/>
+<arg type='i'/>
+<arg type='^{_krb5_keyblock=iiI*}'/>
+<arg type='i'/>
+<arg type='^{_krb5_data=iI*}'/>
+<arg type='^{_krb5_checksum=iiI*}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_c_make_random_key'>
+<arg type='^{_krb5_context=}'/>
+<arg type='i'/>
+<arg type='^{_krb5_keyblock=iiI*}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_c_prf'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_keyblock=iiI*}'/>
+<arg type='^{_krb5_data=iI*}'/>
+<arg type='^{_krb5_data=iI*}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_c_prf_length'>
+<arg type='^{_krb5_context=}'/>
+<arg type='i'/>
+<arg type='^I' type64='^Q'/>
+<retval type='i'/>
+</function>
+<function name='krb5_c_random_add_entropy'>
+<arg type='^{_krb5_context=}'/>
+<arg type='I'/>
+<arg type='^{_krb5_data=iI*}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_c_random_make_octets'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_data=iI*}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_c_random_os_entropy'>
+<arg type='^{_krb5_context=}'/>
+<arg type='i'/>
+<arg type='^i'/>
+<retval type='i'/>
+</function>
+<function name='krb5_c_random_seed'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_data=iI*}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_c_random_to_key'>
+<arg type='^{_krb5_context=}'/>
+<arg type='i'/>
+<arg type='^{_krb5_data=iI*}'/>
+<arg type='^{_krb5_keyblock=iiI*}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_c_string_to_key'>
+<arg type='^{_krb5_context=}'/>
+<arg type='i'/>
+<arg type='^{_krb5_data=iI*}'/>
+<arg type='^{_krb5_data=iI*}'/>
+<arg type='^{_krb5_keyblock=iiI*}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_c_string_to_key_with_params'>
+<arg type='^{_krb5_context=}'/>
+<arg type='i'/>
+<arg type='^{_krb5_data=iI*}'/>
+<arg type='^{_krb5_data=iI*}'/>
+<arg type='^{_krb5_data=iI*}'/>
+<arg type='^{_krb5_keyblock=iiI*}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_c_valid_cksumtype'>
+<arg type='i'/>
+<retval type='I'/>
+</function>
+<function name='krb5_c_valid_enctype'>
+<arg type='i'/>
+<retval type='I'/>
+</function>
+<function name='krb5_c_verify_checksum'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_keyblock=iiI*}'/>
+<arg type='i'/>
+<arg type='^{_krb5_data=iI*}'/>
+<arg type='^{_krb5_checksum=iiI*}'/>
+<arg type='^I'/>
+<retval type='i'/>
+</function>
+<function name='krb5_calculate_checksum'>
+<arg type='^{_krb5_context=}'/>
+<arg type='i'/>
+<arg type='^v'/>
+<arg type='L' type64='Q'/>
+<arg type='^v'/>
+<arg type='L' type64='Q'/>
+<arg type='^{_krb5_checksum=iiI*}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_cc_cache_match'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{krb5_principal_data=i{_krb5_data=iI*}^{_krb5_data}ii}'/>
+<arg type='^^{_krb5_ccache}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_cc_close'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_ccache=}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_cc_copy_creds'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_ccache=}'/>
+<arg type='^{_krb5_ccache=}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_cc_default'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^^{_krb5_ccache}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_cc_default_name'>
+<arg type='^{_krb5_context=}'/>
+<retval type='*'/>
+</function>
+<function name='krb5_cc_destroy'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_ccache=}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_cc_end_seq_get'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_ccache=}'/>
+<arg type='^^v'/>
+<retval type='i'/>
+</function>
+<function name='krb5_cc_gen_new'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^^{_krb5_ccache}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_cc_get_config'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_ccache=}'/>
+<arg type='^{krb5_principal_data=i{_krb5_data=iI*}^{_krb5_data}ii}'/>
+<arg type='*'/>
+<arg type='^{_krb5_data=iI*}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_cc_get_flags'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_ccache=}'/>
+<arg type='^i'/>
+<retval type='i'/>
+</function>
+<function name='krb5_cc_get_name'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_ccache=}'/>
+<retval type='*'/>
+</function>
+<function name='krb5_cc_get_principal'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_ccache=}'/>
+<arg type='^^{krb5_principal_data}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_cc_get_type'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_ccache=}'/>
+<retval type='*'/>
+</function>
+<function name='krb5_cc_initialize'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_ccache=}'/>
+<arg type='^{krb5_principal_data=i{_krb5_data=iI*}^{_krb5_data}ii}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_cc_last_change_time'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_ccache=}'/>
+<arg type='^i'/>
+<retval type='i'/>
+</function>
+<function name='krb5_cc_lock'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_ccache=}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_cc_move'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_ccache=}'/>
+<arg type='^{_krb5_ccache=}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_cc_new_unique'>
+<arg type='^{_krb5_context=}'/>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='^^{_krb5_ccache}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_cc_next_cred'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_ccache=}'/>
+<arg type='^^v'/>
+<arg type='^{_krb5_creds=i^{krb5_principal_data}^{krb5_principal_data}{_krb5_keyblock=iiI*}{_krb5_ticket_times=iiii}Ii^^{_krb5_address}{_krb5_data=iI*}{_krb5_data=iI*}^^{_krb5_authdata}}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_cc_remove_cred'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_ccache=}'/>
+<arg type='i'/>
+<arg type='^{_krb5_creds=i^{krb5_principal_data}^{krb5_principal_data}{_krb5_keyblock=iiI*}{_krb5_ticket_times=iiii}Ii^^{_krb5_address}{_krb5_data=iI*}{_krb5_data=iI*}^^{_krb5_authdata}}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_cc_resolve'>
+<arg type='^{_krb5_context=}'/>
+<arg type='*'/>
+<arg type='^^{_krb5_ccache}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_cc_retrieve_cred'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_ccache=}'/>
+<arg type='i'/>
+<arg type='^{_krb5_creds=i^{krb5_principal_data}^{krb5_principal_data}{_krb5_keyblock=iiI*}{_krb5_ticket_times=iiii}Ii^^{_krb5_address}{_krb5_data=iI*}{_krb5_data=iI*}^^{_krb5_authdata}}'/>
+<arg type='^{_krb5_creds=i^{krb5_principal_data}^{krb5_principal_data}{_krb5_keyblock=iiI*}{_krb5_ticket_times=iiii}Ii^^{_krb5_address}{_krb5_data=iI*}{_krb5_data=iI*}^^{_krb5_authdata}}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_cc_set_config'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_ccache=}'/>
+<arg type='^{krb5_principal_data=i{_krb5_data=iI*}^{_krb5_data}ii}'/>
+<arg type='*'/>
+<arg type='^{_krb5_data=iI*}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_cc_set_default_name'>
+<arg type='^{_krb5_context=}'/>
+<arg type='*'/>
+<retval type='i'/>
+</function>
+<function name='krb5_cc_set_flags'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_ccache=}'/>
+<arg type='i'/>
+<retval type='i'/>
+</function>
+<function name='krb5_cc_start_seq_get'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_ccache=}'/>
+<arg type='^^v'/>
+<retval type='i'/>
+</function>
+<function name='krb5_cc_store_cred'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_ccache=}'/>
+<arg type='^{_krb5_creds=i^{krb5_principal_data}^{krb5_principal_data}{_krb5_keyblock=iiI*}{_krb5_ticket_times=iiii}Ii^^{_krb5_address}{_krb5_data=iI*}{_krb5_data=iI*}^^{_krb5_authdata}}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_cc_unlock'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_ccache=}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_cccol_cursor_free'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^^{_krb5_cccol_cursor}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_cccol_cursor_new'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^^{_krb5_cccol_cursor}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_cccol_cursor_next'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_cccol_cursor=}'/>
+<arg type='^^{_krb5_ccache}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_cccol_last_change_time'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^i'/>
+<retval type='i'/>
+</function>
+<function name='krb5_cccol_lock'>
+<arg type='^{_krb5_context=}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_cccol_unlock'>
+<arg type='^{_krb5_context=}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_change_password'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_creds=i^{krb5_principal_data}^{krb5_principal_data}{_krb5_keyblock=iiI*}{_krb5_ticket_times=iiii}Ii^^{_krb5_address}{_krb5_data=iI*}{_krb5_data=iI*}^^{_krb5_authdata}}'/>
+<arg type='*'/>
+<arg type='^i'/>
+<arg type='^{_krb5_data=iI*}'/>
+<arg type='^{_krb5_data=iI*}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_checksum_size'>
+<arg type='^{_krb5_context=}'/>
+<arg type='i'/>
+<retval type='L' type64='Q'/>
+</function>
+<function name='krb5_cksumtype_to_string'>
+<arg type='i'/>
+<arg type='*'/>
+<arg type='L' type64='Q'/>
+<retval type='i'/>
+</function>
+<function name='krb5_clear_error_message'>
+<arg type='^{_krb5_context=}'/>
+</function>
+<function name='krb5_copy_addresses'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^^{_krb5_address}'/>
+<arg type='^^^{_krb5_address}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_copy_authdata'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^^{_krb5_authdata}'/>
+<arg type='^^^{_krb5_authdata}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_copy_authenticator'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_authenticator=i^{krb5_principal_data}^{_krb5_checksum}ii^{_krb5_keyblock}I^^{_krb5_authdata}}'/>
+<arg type='^^{_krb5_authenticator}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_copy_checksum'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_checksum=iiI*}'/>
+<arg type='^^{_krb5_checksum}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_copy_context'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^^{_krb5_context}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_copy_creds'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_creds=i^{krb5_principal_data}^{krb5_principal_data}{_krb5_keyblock=iiI*}{_krb5_ticket_times=iiii}Ii^^{_krb5_address}{_krb5_data=iI*}{_krb5_data=iI*}^^{_krb5_authdata}}'/>
+<arg type='^^{_krb5_creds}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_copy_data'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_data=iI*}'/>
+<arg type='^^{_krb5_data}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_copy_keyblock'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_keyblock=iiI*}'/>
+<arg type='^^{_krb5_keyblock}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_copy_keyblock_contents'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_keyblock=iiI*}'/>
+<arg type='^{_krb5_keyblock=iiI*}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_copy_principal'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{krb5_principal_data=i{_krb5_data=iI*}^{_krb5_data}ii}'/>
+<arg type='^^{krb5_principal_data}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_copy_ticket'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_ticket=i^{krb5_principal_data}{_krb5_enc_data=iiI{_krb5_data=iI*}}^{_krb5_enc_tkt_part}}'/>
+<arg type='^^{_krb5_ticket}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_decode_ticket'>
+<arg type='^{_krb5_data=iI*}'/>
+<arg type='^^{_krb5_ticket}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_decrypt'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^v'/>
+<arg type='^v'/>
+<arg type='L' type64='Q'/>
+<arg type='^{_krb5_encrypt_block=ii^{_krb5_keyblock}}'/>
+<arg type='^v'/>
+<retval type='i'/>
+</function>
+<function name='krb5_deltat_to_string'>
+<arg type='i'/>
+<arg type='*'/>
+<arg type='L' type64='Q'/>
+<retval type='i'/>
+</function>
+<function name='krb5_eblock_enctype'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_encrypt_block=ii^{_krb5_keyblock}}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_encrypt'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^v'/>
+<arg type='^v'/>
+<arg type='L' type64='Q'/>
+<arg type='^{_krb5_encrypt_block=ii^{_krb5_keyblock}}'/>
+<arg type='^v'/>
+<retval type='i'/>
+</function>
+<function name='krb5_encrypt_size'>
+<arg type='L' type64='Q'/>
+<arg type='i'/>
+<retval type='L' type64='Q'/>
+</function>
+<function name='krb5_enctype_to_string'>
+<arg type='i'/>
+<arg type='*'/>
+<arg type='L' type64='Q'/>
+<retval type='i'/>
+</function>
+<function name='krb5_finish_key'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_encrypt_block=ii^{_krb5_keyblock}}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_finish_random_key'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_encrypt_block=ii^{_krb5_keyblock}}'/>
+<arg type='^^v'/>
+<retval type='i'/>
+</function>
+<function name='krb5_free_addresses'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^^{_krb5_address}'/>
+</function>
+<function name='krb5_free_ap_rep_enc_part'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_ap_rep_enc_part=iii^{_krb5_keyblock}I}'/>
+</function>
+<function name='krb5_free_authdata'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^^{_krb5_authdata}'/>
+</function>
+<function name='krb5_free_authenticator'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_authenticator=i^{krb5_principal_data}^{_krb5_checksum}ii^{_krb5_keyblock}I^^{_krb5_authdata}}'/>
+</function>
+<function name='krb5_free_checksum'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_checksum=iiI*}'/>
+</function>
+<function name='krb5_free_checksum_contents'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_checksum=iiI*}'/>
+</function>
+<function name='krb5_free_cksumtypes'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^i'/>
+</function>
+<function name='krb5_free_context'>
+<arg type='^{_krb5_context=}'/>
+</function>
+<function name='krb5_free_cred_contents'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_creds=i^{krb5_principal_data}^{krb5_principal_data}{_krb5_keyblock=iiI*}{_krb5_ticket_times=iiii}Ii^^{_krb5_address}{_krb5_data=iI*}{_krb5_data=iI*}^^{_krb5_authdata}}'/>
+</function>
+<function name='krb5_free_creds'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_creds=i^{krb5_principal_data}^{krb5_principal_data}{_krb5_keyblock=iiI*}{_krb5_ticket_times=iiii}Ii^^{_krb5_address}{_krb5_data=iI*}{_krb5_data=iI*}^^{_krb5_authdata}}'/>
+</function>
+<function name='krb5_free_data'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_data=iI*}'/>
+</function>
+<function name='krb5_free_data_contents'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_data=iI*}'/>
+</function>
+<function name='krb5_free_default_realm'>
+<arg type='^{_krb5_context=}'/>
+<arg type='*'/>
+</function>
+<function name='krb5_free_error'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_error=iiiiiI^{krb5_principal_data}^{krb5_principal_data}{_krb5_data=iI*}{_krb5_data=iI*}}'/>
+</function>
+<function name='krb5_free_error_message'>
+<arg type='^{_krb5_context=}'/>
+<arg type='*'/>
+</function>
+<function name='krb5_free_host_realm'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^*'/>
+<retval type='i'/>
+</function>
+<function name='krb5_free_keyblock'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_keyblock=iiI*}'/>
+</function>
+<function name='krb5_free_keyblock_contents'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_keyblock=iiI*}'/>
+</function>
+<function name='krb5_free_keytab_entry_contents'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{krb5_keytab_entry_st=i^{krb5_principal_data}iI{_krb5_keyblock=iiI*}}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_free_principal'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{krb5_principal_data=i{_krb5_data=iI*}^{_krb5_data}ii}'/>
+</function>
+<function name='krb5_free_tgt_creds'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^^{_krb5_creds}'/>
+</function>
+<function name='krb5_free_ticket'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_ticket=i^{krb5_principal_data}{_krb5_enc_data=iiI{_krb5_data=iI*}}^{_krb5_enc_tkt_part}}'/>
+</function>
+<function name='krb5_free_unparsed_name'>
+<arg type='^{_krb5_context=}'/>
+<arg type='*'/>
+</function>
+<function name='krb5_fwd_tgt_creds'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_auth_context=}'/>
+<arg type='*'/>
+<arg type='^{krb5_principal_data=i{_krb5_data=iI*}^{_krb5_data}ii}'/>
+<arg type='^{krb5_principal_data=i{_krb5_data=iI*}^{_krb5_data}ii}'/>
+<arg type='^{_krb5_ccache=}'/>
+<arg type='i'/>
+<arg type='^{_krb5_data=iI*}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_get_credentials'>
+<arg type='^{_krb5_context=}'/>
+<arg type='i'/>
+<arg type='^{_krb5_ccache=}'/>
+<arg type='^{_krb5_creds=i^{krb5_principal_data}^{krb5_principal_data}{_krb5_keyblock=iiI*}{_krb5_ticket_times=iiii}Ii^^{_krb5_address}{_krb5_data=iI*}{_krb5_data=iI*}^^{_krb5_authdata}}'/>
+<arg type='^^{_krb5_creds}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_get_credentials_renew'>
+<arg type='^{_krb5_context=}'/>
+<arg type='i'/>
+<arg type='^{_krb5_ccache=}'/>
+<arg type='^{_krb5_creds=i^{krb5_principal_data}^{krb5_principal_data}{_krb5_keyblock=iiI*}{_krb5_ticket_times=iiii}Ii^^{_krb5_address}{_krb5_data=iI*}{_krb5_data=iI*}^^{_krb5_authdata}}'/>
+<arg type='^^{_krb5_creds}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_get_credentials_validate'>
+<arg type='^{_krb5_context=}'/>
+<arg type='i'/>
+<arg type='^{_krb5_ccache=}'/>
+<arg type='^{_krb5_creds=i^{krb5_principal_data}^{krb5_principal_data}{_krb5_keyblock=iiI*}{_krb5_ticket_times=iiii}Ii^^{_krb5_address}{_krb5_data=iI*}{_krb5_data=iI*}^^{_krb5_authdata}}'/>
+<arg type='^^{_krb5_creds}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_get_default_realm'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^*'/>
+<retval type='i'/>
+</function>
+<function name='krb5_get_error_message'>
+<arg type='^{_krb5_context=}'/>
+<arg type='i'/>
+<retval type='*'/>
+</function>
+<function name='krb5_get_fallback_host_realm'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_data=iI*}'/>
+<arg type='^^*'/>
+<retval type='i'/>
+</function>
+<function name='krb5_get_host_realm'>
+<arg type='^{_krb5_context=}'/>
+<arg type='*'/>
+<arg type='^^*'/>
+<retval type='i'/>
+</function>
+<function name='krb5_get_init_creds_keytab'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_creds=i^{krb5_principal_data}^{krb5_principal_data}{_krb5_keyblock=iiI*}{_krb5_ticket_times=iiii}Ii^^{_krb5_address}{_krb5_data=iI*}{_krb5_data=iI*}^^{_krb5_authdata}}'/>
+<arg type='^{krb5_principal_data=i{_krb5_data=iI*}^{_krb5_data}ii}'/>
+<arg type='^{_krb5_kt=}'/>
+<arg type='i'/>
+<arg type='*'/>
+<arg type='^{_krb5_get_init_creds_opt=iiiii^ii^^{_krb5_address}^ii^{_krb5_data}}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_get_init_creds_opt_alloc'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^^{_krb5_get_init_creds_opt}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_get_init_creds_opt_free'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_get_init_creds_opt=iiiii^ii^^{_krb5_address}^ii^{_krb5_data}}'/>
+</function>
+<function name='krb5_get_init_creds_opt_free_pa'>
+<arg type='^{_krb5_context=}'/>
+<arg type='i'/>
+<arg type='^{_krb5_gic_opt_pa_data=**}'/>
+</function>
+<function name='krb5_get_init_creds_opt_get_pa'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_get_init_creds_opt=iiiii^ii^^{_krb5_address}^ii^{_krb5_data}}'/>
+<arg type='^i'/>
+<arg type='^^{_krb5_gic_opt_pa_data}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_get_init_creds_opt_init'>
+<arg type='^{_krb5_get_init_creds_opt=iiiii^ii^^{_krb5_address}^ii^{_krb5_data}}'/>
+</function>
+<function name='krb5_get_init_creds_opt_set_address_list'>
+<arg type='^{_krb5_get_init_creds_opt=iiiii^ii^^{_krb5_address}^ii^{_krb5_data}}'/>
+<arg type='^^{_krb5_address}'/>
+</function>
+<function name='krb5_get_init_creds_opt_set_canonicalize'>
+<arg type='^{_krb5_get_init_creds_opt=iiiii^ii^^{_krb5_address}^ii^{_krb5_data}}'/>
+<arg type='i'/>
+</function>
+<function name='krb5_get_init_creds_opt_set_change_password_prompt'>
+<arg type='^{_krb5_get_init_creds_opt=iiiii^ii^^{_krb5_address}^ii^{_krb5_data}}'/>
+<arg type='i'/>
+</function>
+<function name='krb5_get_init_creds_opt_set_etype_list'>
+<arg type='^{_krb5_get_init_creds_opt=iiiii^ii^^{_krb5_address}^ii^{_krb5_data}}'/>
+<arg type='^i'/>
+<arg type='i'/>
+</function>
+<function name='krb5_get_init_creds_opt_set_forwardable'>
+<arg type='^{_krb5_get_init_creds_opt=iiiii^ii^^{_krb5_address}^ii^{_krb5_data}}'/>
+<arg type='i'/>
+</function>
+<function name='krb5_get_init_creds_opt_set_pa'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_get_init_creds_opt=iiiii^ii^^{_krb5_address}^ii^{_krb5_data}}'/>
+<arg type='*'/>
+<arg type='*'/>
+<retval type='i'/>
+</function>
+<function name='krb5_get_init_creds_opt_set_preauth_list'>
+<arg type='^{_krb5_get_init_creds_opt=iiiii^ii^^{_krb5_address}^ii^{_krb5_data}}'/>
+<arg type='^i'/>
+<arg type='i'/>
+</function>
+<function name='krb5_get_init_creds_opt_set_process_last_req'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_get_init_creds_opt=iiiii^ii^^{_krb5_address}^ii^{_krb5_data}}'/>
+<arg function_pointer='true' type='^?'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^^{_krb5_last_req_entry}'/>
+<arg type='^v'/>
+<retval type='i'/>
+</arg>
+<arg type='^v'/>
+<retval type='i'/>
+</function>
+<function name='krb5_get_init_creds_opt_set_proxiable'>
+<arg type='^{_krb5_get_init_creds_opt=iiiii^ii^^{_krb5_address}^ii^{_krb5_data}}'/>
+<arg type='i'/>
+</function>
+<function name='krb5_get_init_creds_opt_set_renew_life'>
+<arg type='^{_krb5_get_init_creds_opt=iiiii^ii^^{_krb5_address}^ii^{_krb5_data}}'/>
+<arg type='i'/>
+</function>
+<function name='krb5_get_init_creds_opt_set_salt'>
+<arg type='^{_krb5_get_init_creds_opt=iiiii^ii^^{_krb5_address}^ii^{_krb5_data}}'/>
+<arg type='^{_krb5_data=iI*}'/>
+</function>
+<function name='krb5_get_init_creds_opt_set_tkt_life'>
+<arg type='^{_krb5_get_init_creds_opt=iiiii^ii^^{_krb5_address}^ii^{_krb5_data}}'/>
+<arg type='i'/>
+</function>
+<function name='krb5_get_init_creds_password'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_creds=i^{krb5_principal_data}^{krb5_principal_data}{_krb5_keyblock=iiI*}{_krb5_ticket_times=iiii}Ii^^{_krb5_address}{_krb5_data=iI*}{_krb5_data=iI*}^^{_krb5_authdata}}'/>
+<arg type='^{krb5_principal_data=i{_krb5_data=iI*}^{_krb5_data}ii}'/>
+<arg type='*'/>
+<arg function_pointer='true' type='^?'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^v'/>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='i'/>
+<arg type='^{_krb5_prompt=*i^{_krb5_data}}'/>
+<retval type='i'/>
+</arg>
+<arg type='^v'/>
+<arg type='i'/>
+<arg type='*'/>
+<arg type='^{_krb5_get_init_creds_opt=iiiii^ii^^{_krb5_address}^ii^{_krb5_data}}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_get_permitted_enctypes'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^^i'/>
+<retval type='i'/>
+</function>
+<function name='krb5_get_profile'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^^{_profile_t}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_get_prompt_types'>
+<arg type='^{_krb5_context=}'/>
+<retval type='^i'/>
+</function>
+<function name='krb5_get_renewed_creds'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_creds=i^{krb5_principal_data}^{krb5_principal_data}{_krb5_keyblock=iiI*}{_krb5_ticket_times=iiii}Ii^^{_krb5_address}{_krb5_data=iI*}{_krb5_data=iI*}^^{_krb5_authdata}}'/>
+<arg type='^{krb5_principal_data=i{_krb5_data=iI*}^{_krb5_data}ii}'/>
+<arg type='^{_krb5_ccache=}'/>
+<arg type='*'/>
+<retval type='i'/>
+</function>
+<function name='krb5_get_server_rcache'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_data=iI*}'/>
+<arg type='^^{krb5_rc_st}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_get_time_offsets'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^i'/>
+<arg type='^i'/>
+<retval type='i'/>
+</function>
+<function name='krb5_get_validated_creds'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_creds=i^{krb5_principal_data}^{krb5_principal_data}{_krb5_keyblock=iiI*}{_krb5_ticket_times=iiii}Ii^^{_krb5_address}{_krb5_data=iI*}{_krb5_data=iI*}^^{_krb5_authdata}}'/>
+<arg type='^{krb5_principal_data=i{_krb5_data=iI*}^{_krb5_data}ii}'/>
+<arg type='^{_krb5_ccache=}'/>
+<arg type='*'/>
+<retval type='i'/>
+</function>
+<function name='krb5_gss_register_acceptor_identity'>
+<arg type='*'/>
+<retval type='I'/>
+</function>
+<function name='krb5_init_context'>
+<arg type='^^{_krb5_context}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_init_keyblock'>
+<arg type='^{_krb5_context=}'/>
+<arg type='i'/>
+<arg type='L' type64='Q'/>
+<arg type='^^{_krb5_keyblock}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_init_random_key'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_encrypt_block=ii^{_krb5_keyblock}}'/>
+<arg type='^{_krb5_keyblock=iiI*}'/>
+<arg type='^^v'/>
+<retval type='i'/>
+</function>
+<function name='krb5_init_secure_context'>
+<arg type='^^{_krb5_context}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_is_config_principal'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{krb5_principal_data=i{_krb5_data=iI*}^{_krb5_data}ii}'/>
+<retval type='I'/>
+</function>
+<function name='krb5_is_referral_realm'>
+<arg type='^{_krb5_data=iI*}'/>
+<retval type='I'/>
+</function>
+<function name='krb5_is_thread_safe'>
+<retval type='I'/>
+</function>
+<function name='krb5_kt_add_entry'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_kt=}'/>
+<arg type='^{krb5_keytab_entry_st=i^{krb5_principal_data}iI{_krb5_keyblock=iiI*}}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_kt_close'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_kt=}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_kt_default'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^^{_krb5_kt}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_kt_default_name'>
+<arg type='^{_krb5_context=}'/>
+<arg type='*'/>
+<arg type='i'/>
+<retval type='i'/>
+</function>
+<function name='krb5_kt_end_seq_get'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_kt=}'/>
+<arg type='^^v'/>
+<retval type='i'/>
+</function>
+<function name='krb5_kt_get_entry'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_kt=}'/>
+<arg type='^{krb5_principal_data=i{_krb5_data=iI*}^{_krb5_data}ii}'/>
+<arg type='I'/>
+<arg type='i'/>
+<arg type='^{krb5_keytab_entry_st=i^{krb5_principal_data}iI{_krb5_keyblock=iiI*}}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_kt_get_name'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_kt=}'/>
+<arg type='*'/>
+<arg type='I'/>
+<retval type='i'/>
+</function>
+<function name='krb5_kt_get_type'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_kt=}'/>
+<retval type='*'/>
+</function>
+<function name='krb5_kt_next_entry'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_kt=}'/>
+<arg type='^{krb5_keytab_entry_st=i^{krb5_principal_data}iI{_krb5_keyblock=iiI*}}'/>
+<arg type='^^v'/>
+<retval type='i'/>
+</function>
+<function name='krb5_kt_read_service_key'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^v'/>
+<arg type='^{krb5_principal_data=i{_krb5_data=iI*}^{_krb5_data}ii}'/>
+<arg type='I'/>
+<arg type='i'/>
+<arg type='^^{_krb5_keyblock}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_kt_remove_entry'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_kt=}'/>
+<arg type='^{krb5_keytab_entry_st=i^{krb5_principal_data}iI{_krb5_keyblock=iiI*}}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_kt_resolve'>
+<arg type='^{_krb5_context=}'/>
+<arg type='*'/>
+<arg type='^^{_krb5_kt}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_kt_start_seq_get'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_kt=}'/>
+<arg type='^^v'/>
+<retval type='i'/>
+</function>
+<function name='krb5_kuserok'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{krb5_principal_data=i{_krb5_data=iI*}^{_krb5_data}ii}'/>
+<arg type='*'/>
+<retval type='I'/>
+</function>
+<function name='krb5_mk_1cred'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_auth_context=}'/>
+<arg type='^{_krb5_creds=i^{krb5_principal_data}^{krb5_principal_data}{_krb5_keyblock=iiI*}{_krb5_ticket_times=iiii}Ii^^{_krb5_address}{_krb5_data=iI*}{_krb5_data=iI*}^^{_krb5_authdata}}'/>
+<arg type='^^{_krb5_data}'/>
+<arg type='^{krb5_replay_data=iiI}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_mk_error'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_error=iiiiiI^{krb5_principal_data}^{krb5_principal_data}{_krb5_data=iI*}{_krb5_data=iI*}}'/>
+<arg type='^{_krb5_data=iI*}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_mk_ncred'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_auth_context=}'/>
+<arg type='^^{_krb5_creds}'/>
+<arg type='^^{_krb5_data}'/>
+<arg type='^{krb5_replay_data=iiI}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_mk_priv'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_auth_context=}'/>
+<arg type='^{_krb5_data=iI*}'/>
+<arg type='^{_krb5_data=iI*}'/>
+<arg type='^{krb5_replay_data=iiI}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_mk_rep'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_auth_context=}'/>
+<arg type='^{_krb5_data=iI*}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_mk_req'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^^{_krb5_auth_context}'/>
+<arg type='i'/>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='^{_krb5_data=iI*}'/>
+<arg type='^{_krb5_ccache=}'/>
+<arg type='^{_krb5_data=iI*}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_mk_req_extended'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^^{_krb5_auth_context}'/>
+<arg type='i'/>
+<arg type='^{_krb5_data=iI*}'/>
+<arg type='^{_krb5_creds=i^{krb5_principal_data}^{krb5_principal_data}{_krb5_keyblock=iiI*}{_krb5_ticket_times=iiii}Ii^^{_krb5_address}{_krb5_data=iI*}{_krb5_data=iI*}^^{_krb5_authdata}}'/>
+<arg type='^{_krb5_data=iI*}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_mk_safe'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_auth_context=}'/>
+<arg type='^{_krb5_data=iI*}'/>
+<arg type='^{_krb5_data=iI*}'/>
+<arg type='^{krb5_replay_data=iiI}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_os_localaddr'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^^^{_krb5_address}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_parse_name'>
+<arg type='^{_krb5_context=}'/>
+<arg type='*'/>
+<arg type='^^{krb5_principal_data}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_parse_name_flags'>
+<arg type='^{_krb5_context=}'/>
+<arg type='*'/>
+<arg type='i'/>
+<arg type='^^{krb5_principal_data}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_principal2salt'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{krb5_principal_data=i{_krb5_data=iI*}^{_krb5_data}ii}'/>
+<arg type='^{_krb5_data=iI*}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_principal_compare'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{krb5_principal_data=i{_krb5_data=iI*}^{_krb5_data}ii}'/>
+<arg type='^{krb5_principal_data=i{_krb5_data=iI*}^{_krb5_data}ii}'/>
+<retval type='I'/>
+</function>
+<function name='krb5_process_key'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_encrypt_block=ii^{_krb5_keyblock}}'/>
+<arg type='^{_krb5_keyblock=iiI*}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_prompter_posix'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^v'/>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='i'/>
+<arg type='^{_krb5_prompt=*i^{_krb5_data}}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_random_key'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_encrypt_block=ii^{_krb5_keyblock}}'/>
+<arg type='^v'/>
+<arg type='^^{_krb5_keyblock}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_rd_cred'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_auth_context=}'/>
+<arg type='^{_krb5_data=iI*}'/>
+<arg type='^^^{_krb5_creds}'/>
+<arg type='^{krb5_replay_data=iiI}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_rd_error'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_data=iI*}'/>
+<arg type='^^{_krb5_error}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_rd_priv'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_auth_context=}'/>
+<arg type='^{_krb5_data=iI*}'/>
+<arg type='^{_krb5_data=iI*}'/>
+<arg type='^{krb5_replay_data=iiI}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_rd_rep'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_auth_context=}'/>
+<arg type='^{_krb5_data=iI*}'/>
+<arg type='^^{_krb5_ap_rep_enc_part}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_rd_req'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^^{_krb5_auth_context}'/>
+<arg type='^{_krb5_data=iI*}'/>
+<arg type='^{krb5_principal_data=i{_krb5_data=iI*}^{_krb5_data}ii}'/>
+<arg type='^{_krb5_kt=}'/>
+<arg type='^i'/>
+<arg type='^^{_krb5_ticket}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_rd_safe'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_auth_context=}'/>
+<arg type='^{_krb5_data=iI*}'/>
+<arg type='^{_krb5_data=iI*}'/>
+<arg type='^{krb5_replay_data=iiI}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_read_password'>
+<arg type='^{_krb5_context=}'/>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='^I'/>
+<retval type='i'/>
+</function>
+<function name='krb5_realm_compare'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{krb5_principal_data=i{_krb5_data=iI*}^{_krb5_data}ii}'/>
+<arg type='^{krb5_principal_data=i{_krb5_data=iI*}^{_krb5_data}ii}'/>
+<retval type='I'/>
+</function>
+<function name='krb5_recvauth'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^^{_krb5_auth_context}'/>
+<arg type='^v'/>
+<arg type='*'/>
+<arg type='^{krb5_principal_data=i{_krb5_data=iI*}^{_krb5_data}ii}'/>
+<arg type='i'/>
+<arg type='^{_krb5_kt=}'/>
+<arg type='^^{_krb5_ticket}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_recvauth_version'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^^{_krb5_auth_context}'/>
+<arg type='^v'/>
+<arg type='^{krb5_principal_data=i{_krb5_data=iI*}^{_krb5_data}ii}'/>
+<arg type='i'/>
+<arg type='^{_krb5_kt=}'/>
+<arg type='^^{_krb5_ticket}'/>
+<arg type='^{_krb5_data=iI*}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_salttype_to_string'>
+<arg type='i'/>
+<arg type='*'/>
+<arg type='L' type64='Q'/>
+<retval type='i'/>
+</function>
+<function name='krb5_sendauth'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^^{_krb5_auth_context}'/>
+<arg type='^v'/>
+<arg type='*'/>
+<arg type='^{krb5_principal_data=i{_krb5_data=iI*}^{_krb5_data}ii}'/>
+<arg type='^{krb5_principal_data=i{_krb5_data=iI*}^{_krb5_data}ii}'/>
+<arg type='i'/>
+<arg type='^{_krb5_data=iI*}'/>
+<arg type='^{_krb5_creds=i^{krb5_principal_data}^{krb5_principal_data}{_krb5_keyblock=iiI*}{_krb5_ticket_times=iiii}Ii^^{_krb5_address}{_krb5_data=iI*}{_krb5_data=iI*}^^{_krb5_authdata}}'/>
+<arg type='^{_krb5_ccache=}'/>
+<arg type='^^{_krb5_error}'/>
+<arg type='^^{_krb5_ap_rep_enc_part}'/>
+<arg type='^^{_krb5_creds}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_server_decrypt_ticket_keytab'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_kt=}'/>
+<arg type='^{_krb5_ticket=i^{krb5_principal_data}{_krb5_enc_data=iiI{_krb5_data=iI*}}^{_krb5_enc_tkt_part}}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_set_default_realm'>
+<arg type='^{_krb5_context=}'/>
+<arg type='*'/>
+<retval type='i'/>
+</function>
+<function name='krb5_set_default_tgs_enctypes'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^i'/>
+<retval type='i'/>
+</function>
+<function variadic='true' name='krb5_set_error_message'>
+<arg type='^{_krb5_context=}'/>
+<arg type='i'/>
+<arg printf_format='true' type='*'/>
+</function>
+<function name='krb5_set_password'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_creds=i^{krb5_principal_data}^{krb5_principal_data}{_krb5_keyblock=iiI*}{_krb5_ticket_times=iiii}Ii^^{_krb5_address}{_krb5_data=iI*}{_krb5_data=iI*}^^{_krb5_authdata}}'/>
+<arg type='*'/>
+<arg type='^{krb5_principal_data=i{_krb5_data=iI*}^{_krb5_data}ii}'/>
+<arg type='^i'/>
+<arg type='^{_krb5_data=iI*}'/>
+<arg type='^{_krb5_data=iI*}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_set_password_using_ccache'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_ccache=}'/>
+<arg type='*'/>
+<arg type='^{krb5_principal_data=i{_krb5_data=iI*}^{_krb5_data}ii}'/>
+<arg type='^i'/>
+<arg type='^{_krb5_data=iI*}'/>
+<arg type='^{_krb5_data=iI*}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_set_principal_realm'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{krb5_principal_data=i{_krb5_data=iI*}^{_krb5_data}ii}'/>
+<arg type='*'/>
+<retval type='i'/>
+</function>
+<function name='krb5_set_real_time'>
+<arg type='^{_krb5_context=}'/>
+<arg type='i'/>
+<arg type='i'/>
+<retval type='i'/>
+</function>
+<function name='krb5_sname_to_principal'>
+<arg type='^{_krb5_context=}'/>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='i'/>
+<arg type='^^{krb5_principal_data}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_string_to_cksumtype'>
+<arg type='*'/>
+<arg type='^i'/>
+<retval type='i'/>
+</function>
+<function name='krb5_string_to_deltat'>
+<arg type='*'/>
+<arg type='^i'/>
+<retval type='i'/>
+</function>
+<function name='krb5_string_to_enctype'>
+<arg type='*'/>
+<arg type='^i'/>
+<retval type='i'/>
+</function>
+<function name='krb5_string_to_key'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_encrypt_block=ii^{_krb5_keyblock}}'/>
+<arg type='^{_krb5_keyblock=iiI*}'/>
+<arg type='^{_krb5_data=iI*}'/>
+<arg type='^{_krb5_data=iI*}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_string_to_salttype'>
+<arg type='*'/>
+<arg type='^i'/>
+<retval type='i'/>
+</function>
+<function name='krb5_string_to_timestamp'>
+<arg type='*'/>
+<arg type='^i'/>
+<retval type='i'/>
+</function>
+<function name='krb5_timeofday'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^i'/>
+<retval type='i'/>
+</function>
+<function name='krb5_timestamp_to_sfstring'>
+<arg type='i'/>
+<arg type='*'/>
+<arg type='L' type64='Q'/>
+<arg type='*'/>
+<retval type='i'/>
+</function>
+<function name='krb5_timestamp_to_string'>
+<arg type='i'/>
+<arg type='*'/>
+<arg type='L' type64='Q'/>
+<retval type='i'/>
+</function>
+<function name='krb5_unparse_name'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{krb5_principal_data=i{_krb5_data=iI*}^{_krb5_data}ii}'/>
+<arg type='^*'/>
+<retval type='i'/>
+</function>
+<function name='krb5_unparse_name_ext'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{krb5_principal_data=i{_krb5_data=iI*}^{_krb5_data}ii}'/>
+<arg type='^*'/>
+<arg type='^I'/>
+<retval type='i'/>
+</function>
+<function name='krb5_unparse_name_flags'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{krb5_principal_data=i{_krb5_data=iI*}^{_krb5_data}ii}'/>
+<arg type='i'/>
+<arg type='^*'/>
+<retval type='i'/>
+</function>
+<function name='krb5_unparse_name_flags_ext'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{krb5_principal_data=i{_krb5_data=iI*}^{_krb5_data}ii}'/>
+<arg type='i'/>
+<arg type='^*'/>
+<arg type='^I'/>
+<retval type='i'/>
+</function>
+<function name='krb5_us_timeofday'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^i'/>
+<arg type='^i'/>
+<retval type='i'/>
+</function>
+<function name='krb5_use_enctype'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_encrypt_block=ii^{_krb5_keyblock}}'/>
+<arg type='i'/>
+<retval type='i'/>
+</function>
+<function name='krb5_verify_checksum'>
+<arg type='^{_krb5_context=}'/>
+<arg type='i'/>
+<arg type='^{_krb5_checksum=iiI*}'/>
+<arg type='^v'/>
+<arg type='L' type64='Q'/>
+<arg type='^v'/>
+<arg type='L' type64='Q'/>
+<retval type='i'/>
+</function>
+<function name='krb5_verify_init_creds'>
+<arg type='^{_krb5_context=}'/>
+<arg type='^{_krb5_creds=i^{krb5_principal_data}^{krb5_principal_data}{_krb5_keyblock=iiI*}{_krb5_ticket_times=iiii}Ii^^{_krb5_address}{_krb5_data=iI*}{_krb5_data=iI*}^^{_krb5_authdata}}'/>
+<arg type='^{krb5_principal_data=i{_krb5_data=iI*}^{_krb5_data}ii}'/>
+<arg type='^{_krb5_kt=}'/>
+<arg type='^^{_krb5_ccache}'/>
+<arg type='^{_krb5_verify_init_creds_opt=ii}'/>
+<retval type='i'/>
+</function>
+<function name='krb5_verify_init_creds_opt_init'>
+<arg type='^{_krb5_verify_init_creds_opt=ii}'/>
+</function>
+<function name='krb5_verify_init_creds_opt_set_ap_req_nofail'>
+<arg type='^{_krb5_verify_init_creds_opt=ii}'/>
+<arg type='i'/>
+</function>
+<function name='krb5_vset_error_message'>
+<arg type='^{_krb5_context=}'/>
+<arg type='i'/>
+<arg printf_format='true' type='*'/>
+<arg type='*' type64='^{__va_list_tag=II^v^v}'/>
+</function>
+<function name='profile_abandon'>
+<arg type='^{_profile_t=i^{_prf_file_t}}' type64='^{_profile_t=q^{_prf_file_t}}'/>
+</function>
+<function name='profile_add_node'>
+<arg type='^{profile_node=}'/>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='^^{profile_node}'/>
+<retval type='l' type64='q'/>
+</function>
+<function name='profile_add_relation'>
+<arg type='^{_profile_t=i^{_prf_file_t}}' type64='^{_profile_t=q^{_prf_file_t}}'/>
+<arg type='^*'/>
+<arg type='*'/>
+<retval type='l' type64='q'/>
+</function>
+<function name='profile_clear_relation'>
+<arg type='^{_profile_t=i^{_prf_file_t}}' type64='^{_profile_t=q^{_prf_file_t}}'/>
+<arg type='^*'/>
+<retval type='l' type64='q'/>
+</function>
+<function name='profile_close_file'>
+<arg type='^{_prf_file_t=i^{_prf_data_t}^{_prf_file_t}}' type64='^{_prf_file_t=q^{_prf_data_t}^{_prf_file_t}}'/>
+<retval type='l' type64='q'/>
+</function>
+<function name='profile_configuration_updated'/>
+<function name='profile_copy'>
+<arg type='^{_profile_t=i^{_prf_file_t}}' type64='^{_profile_t=q^{_prf_file_t}}'/>
+<arg type='^^{_profile_t}'/>
+<retval type='l' type64='q'/>
+</function>
+<function name='profile_create_node'>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='^^{profile_node}'/>
+<retval type='l' type64='q'/>
+</function>
+<function name='profile_delete_node_relation'>
+<arg type='^{profile_node=}'/>
+<arg type='*'/>
+<retval type='l' type64='q'/>
+</function>
+<function name='profile_dereference_data'>
+<arg type='^{_prf_data_t=i{_opaque_pthread_mutex_t=l[40c]}^{profile_node}iiLii*II(?=d^vQ{_opaque_pthread_mutex_t=l[40c]})i^{_prf_data_t}[15c]}' type64='^{_prf_data_t=q{_opaque_pthread_mutex_t=q[56c]}^{profile_node}qqQii*IQ(?=d^vQ{_opaque_pthread_mutex_t=q[56c]})i^{_prf_data_t}[15c]}'/>
+</function>
+<function name='profile_dereference_data_locked'>
+<arg type='^{_prf_data_t=i{_opaque_pthread_mutex_t=l[40c]}^{profile_node}iiLii*II(?=d^vQ{_opaque_pthread_mutex_t=l[40c]})i^{_prf_data_t}[15c]}' type64='^{_prf_data_t=q{_opaque_pthread_mutex_t=q[56c]}^{profile_node}qqQii*IQ(?=d^vQ{_opaque_pthread_mutex_t=q[56c]})i^{_prf_data_t}[15c]}'/>
+</function>
+<function name='profile_file_is_writable'>
+<arg type='^{_prf_file_t=i^{_prf_data_t}^{_prf_file_t}}' type64='^{_prf_file_t=q^{_prf_data_t}^{_prf_file_t}}'/>
+<retval type='i'/>
+</function>
+<function name='profile_find_node'>
+<arg type='^{profile_node=}'/>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='i'/>
+<arg type='^^v'/>
+<arg type='^^{profile_node}'/>
+<retval type='l' type64='q'/>
+</function>
+<function name='profile_find_node_name'>
+<arg type='^{profile_node=}'/>
+<arg type='^^v'/>
+<arg type='^*'/>
+<retval type='l' type64='q'/>
+</function>
+<function name='profile_find_node_relation'>
+<arg type='^{profile_node=}'/>
+<arg type='*'/>
+<arg type='^^v'/>
+<arg type='^*'/>
+<arg type='^*'/>
+<retval type='l' type64='q'/>
+</function>
+<function name='profile_find_node_subsection'>
+<arg type='^{profile_node=}'/>
+<arg type='*'/>
+<arg type='^^v'/>
+<arg type='^*'/>
+<arg type='^^{profile_node}'/>
+<retval type='l' type64='q'/>
+</function>
+<function name='profile_flush'>
+<arg type='^{_profile_t=i^{_prf_file_t}}' type64='^{_profile_t=q^{_prf_file_t}}'/>
+<retval type='l' type64='q'/>
+</function>
+<function name='profile_flush_file_data'>
+<arg type='^{_prf_data_t=i{_opaque_pthread_mutex_t=l[40c]}^{profile_node}iiLii*II(?=d^vQ{_opaque_pthread_mutex_t=l[40c]})i^{_prf_data_t}[15c]}' type64='^{_prf_data_t=q{_opaque_pthread_mutex_t=q[56c]}^{profile_node}qqQii*IQ(?=d^vQ{_opaque_pthread_mutex_t=q[56c]})i^{_prf_data_t}[15c]}'/>
+<retval type='l' type64='q'/>
+</function>
+<function name='profile_flush_file_data_to_buffer'>
+<arg type='^{_prf_data_t=i{_opaque_pthread_mutex_t=l[40c]}^{profile_node}iiLii*II(?=d^vQ{_opaque_pthread_mutex_t=l[40c]})i^{_prf_data_t}[15c]}' type64='^{_prf_data_t=q{_opaque_pthread_mutex_t=q[56c]}^{profile_node}qqQii*IQ(?=d^vQ{_opaque_pthread_mutex_t=q[56c]})i^{_prf_data_t}[15c]}'/>
+<arg type='^*'/>
+<retval type='l' type64='q'/>
+</function>
+<function name='profile_flush_file_data_to_file'>
+<arg type='^{_prf_data_t=i{_opaque_pthread_mutex_t=l[40c]}^{profile_node}iiLii*II(?=d^vQ{_opaque_pthread_mutex_t=l[40c]})i^{_prf_data_t}[15c]}' type64='^{_prf_data_t=q{_opaque_pthread_mutex_t=q[56c]}^{profile_node}qqQii*IQ(?=d^vQ{_opaque_pthread_mutex_t=q[56c]})i^{_prf_data_t}[15c]}'/>
+<arg type='*'/>
+<retval type='l' type64='q'/>
+</function>
+<function name='profile_flush_to_buffer'>
+<arg type='^{_profile_t=i^{_prf_file_t}}' type64='^{_profile_t=q^{_prf_file_t}}'/>
+<arg type='^*'/>
+<retval type='l' type64='q'/>
+</function>
+<function name='profile_flush_to_file'>
+<arg type='^{_profile_t=i^{_prf_file_t}}' type64='^{_profile_t=q^{_prf_file_t}}'/>
+<arg type='*'/>
+<retval type='l' type64='q'/>
+</function>
+<function name='profile_free_buffer'>
+<arg type='^{_profile_t=i^{_prf_file_t}}' type64='^{_profile_t=q^{_prf_file_t}}'/>
+<arg type='*'/>
+</function>
+<function name='profile_free_file'>
+<arg type='^{_prf_file_t=i^{_prf_data_t}^{_prf_file_t}}' type64='^{_prf_file_t=q^{_prf_data_t}^{_prf_file_t}}'/>
+</function>
+<function name='profile_free_list'>
+<arg type='^*'/>
+</function>
+<function name='profile_free_node'>
+<arg type='^{profile_node=}'/>
+</function>
+<function name='profile_get_boolean'>
+<arg type='^{_profile_t=i^{_prf_file_t}}' type64='^{_profile_t=q^{_prf_file_t}}'/>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='i'/>
+<arg type='^i'/>
+<retval type='l' type64='q'/>
+</function>
+<function name='profile_get_integer'>
+<arg type='^{_profile_t=i^{_prf_file_t}}' type64='^{_profile_t=q^{_prf_file_t}}'/>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='i'/>
+<arg type='^i'/>
+<retval type='l' type64='q'/>
+</function>
+<function name='profile_get_node_name'>
+<arg type='^{profile_node=}'/>
+<retval type='*'/>
+</function>
+<function name='profile_get_node_parent'>
+<arg type='^{profile_node=}'/>
+<arg type='^^{profile_node}'/>
+<retval type='l' type64='q'/>
+</function>
+<function name='profile_get_node_value'>
+<arg type='^{profile_node=}'/>
+<retval type='*'/>
+</function>
+<function name='profile_get_relation_names'>
+<arg type='^{_profile_t=i^{_prf_file_t}}' type64='^{_profile_t=q^{_prf_file_t}}'/>
+<arg type='^*'/>
+<arg type='^^*'/>
+<retval type='l' type64='q'/>
+</function>
+<function name='profile_get_string'>
+<arg type='^{_profile_t=i^{_prf_file_t}}' type64='^{_profile_t=q^{_prf_file_t}}'/>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='^*'/>
+<retval type='l' type64='q'/>
+</function>
+<function name='profile_get_subsection_names'>
+<arg type='^{_profile_t=i^{_prf_file_t}}' type64='^{_profile_t=q^{_prf_file_t}}'/>
+<arg type='^*'/>
+<arg type='^^*'/>
+<retval type='l' type64='q'/>
+</function>
+<function name='profile_get_value'>
+<arg type='^{_profile_t=i^{_prf_file_t}}' type64='^{_profile_t=q^{_prf_file_t}}'/>
+<arg type='^*'/>
+<arg type='^*'/>
+<retval type='l' type64='q'/>
+</function>
+<function name='profile_get_values'>
+<arg type='^{_profile_t=i^{_prf_file_t}}' type64='^{_profile_t=q^{_prf_file_t}}'/>
+<arg type='^*'/>
+<arg type='^^*'/>
+<retval type='l' type64='q'/>
+</function>
+<function name='profile_init'>
+<arg type='^*'/>
+<arg type='^^{_profile_t}'/>
+<retval type='l' type64='q'/>
+</function>
+<function name='profile_init_path'>
+<arg type='*'/>
+<arg type='^^{_profile_t}'/>
+<retval type='l' type64='q'/>
+</function>
+<function name='profile_is_modified'>
+<arg type='^{_profile_t=i^{_prf_file_t}}' type64='^{_profile_t=q^{_prf_file_t}}'/>
+<arg type='^i'/>
+<retval type='l' type64='q'/>
+</function>
+<function name='profile_is_node_final'>
+<arg type='^{profile_node=}'/>
+<retval type='i'/>
+</function>
+<function name='profile_is_writable'>
+<arg type='^{_profile_t=i^{_prf_file_t}}' type64='^{_profile_t=q^{_prf_file_t}}'/>
+<arg type='^i'/>
+<retval type='l' type64='q'/>
+</function>
+<function name='profile_iterator'>
+<arg type='^^v'/>
+<arg type='^*'/>
+<arg type='^*'/>
+<retval type='l' type64='q'/>
+</function>
+<function name='profile_iterator_create'>
+<arg type='^{_profile_t=i^{_prf_file_t}}' type64='^{_profile_t=q^{_prf_file_t}}'/>
+<arg type='^*'/>
+<arg type='i'/>
+<arg type='^^v'/>
+<retval type='l' type64='q'/>
+</function>
+<function name='profile_iterator_free'>
+<arg type='^^v'/>
+</function>
+<function name='profile_lock_global'>
+<retval type='i'/>
+</function>
+<function name='profile_make_node_final'>
+<arg type='^{profile_node=}'/>
+<retval type='l' type64='q'/>
+</function>
+<function name='profile_make_prf_data'>
+<arg type='*'/>
+<retval type='^{_prf_data_t=i{_opaque_pthread_mutex_t=l[40c]}^{profile_node}iiLii*II(?=d^vQ{_opaque_pthread_mutex_t=l[40c]})i^{_prf_data_t}[15c]}' type64='^{_prf_data_t=q{_opaque_pthread_mutex_t=q[56c]}^{profile_node}qqQii*IQ(?=d^vQ{_opaque_pthread_mutex_t=q[56c]})i^{_prf_data_t}[15c]}'/>
+</function>
+<function name='profile_node_iterator'>
+<arg type='^^v'/>
+<arg type='^^{profile_node}'/>
+<arg type='^*'/>
+<arg type='^*'/>
+<retval type='l' type64='q'/>
+</function>
+<function name='profile_node_iterator_create'>
+<arg type='^{_profile_t=i^{_prf_file_t}}' type64='^{_profile_t=q^{_prf_file_t}}'/>
+<arg type='^*'/>
+<arg type='i'/>
+<arg type='^^v'/>
+<retval type='l' type64='q'/>
+</function>
+<function name='profile_node_iterator_free'>
+<arg type='^^v'/>
+</function>
+<function name='profile_open_file'>
+<arg type='*'/>
+<arg type='^^{_prf_file_t}'/>
+<retval type='l' type64='q'/>
+</function>
+<function name='profile_parse_file'>
+<arg type='^{__sFILE=*iiss{__sbuf=*i}i^v^?^?^?^?{__sbuf=*i}^{__sFILEX}i[3C][1C]{__sbuf=*i}iq}'/>
+<arg type='^^{profile_node}'/>
+<retval type='l' type64='q'/>
+</function>
+<function name='profile_release'>
+<arg type='^{_profile_t=i^{_prf_file_t}}' type64='^{_profile_t=q^{_prf_file_t}}'/>
+</function>
+<function name='profile_release_string'>
+<arg type='*'/>
+</function>
+<function name='profile_remove_node'>
+<arg type='^{profile_node=}'/>
+<retval type='l' type64='q'/>
+</function>
+<function name='profile_rename_node'>
+<arg type='^{profile_node=}'/>
+<arg type='*'/>
+<retval type='l' type64='q'/>
+</function>
+<function name='profile_rename_section'>
+<arg type='^{_profile_t=i^{_prf_file_t}}' type64='^{_profile_t=q^{_prf_file_t}}'/>
+<arg type='^*'/>
+<arg type='*'/>
+<retval type='l' type64='q'/>
+</function>
+<function name='profile_ser_externalize'>
+<arg type='*'/>
+<arg type='^{_profile_t=i^{_prf_file_t}}' type64='^{_profile_t=q^{_prf_file_t}}'/>
+<arg type='^*'/>
+<arg type='^I' type64='^Q'/>
+<retval type='l' type64='q'/>
+</function>
+<function name='profile_ser_internalize'>
+<arg type='*'/>
+<arg type='^^{_profile_t}'/>
+<arg type='^*'/>
+<arg type='^I' type64='^Q'/>
+<retval type='l' type64='q'/>
+</function>
+<function name='profile_ser_size'>
+<arg type='*'/>
+<arg type='^{_profile_t=i^{_prf_file_t}}' type64='^{_profile_t=q^{_prf_file_t}}'/>
+<arg type='^I' type64='^Q'/>
+<retval type='l' type64='q'/>
+</function>
+<function name='profile_set_relation_value'>
+<arg type='^{profile_node=}'/>
+<arg type='*'/>
+<retval type='l' type64='q'/>
+</function>
+<function name='profile_unlock_global'>
+<retval type='i'/>
+</function>
+<function name='profile_update_file_data'>
+<arg type='^{_prf_data_t=i{_opaque_pthread_mutex_t=l[40c]}^{profile_node}iiLii*II(?=d^vQ{_opaque_pthread_mutex_t=l[40c]})i^{_prf_data_t}[15c]}' type64='^{_prf_data_t=q{_opaque_pthread_mutex_t=q[56c]}^{profile_node}qqQii*IQ(?=d^vQ{_opaque_pthread_mutex_t=q[56c]})i^{_prf_data_t}[15c]}'/>
+<retval type='l' type64='q'/>
+</function>
+<function name='profile_update_relation'>
+<arg type='^{_profile_t=i^{_prf_file_t}}' type64='^{_profile_t=q^{_prf_file_t}}'/>
+<arg type='^*'/>
+<arg type='*'/>
+<arg type='*'/>
+<retval type='l' type64='q'/>
+</function>
+<function name='profile_verify_node'>
+<arg type='^{profile_node=}'/>
+<retval type='l' type64='q'/>
+</function>
+<function name='profile_write_tree_file'>
+<arg type='^{profile_node=}'/>
+<arg type='^{__sFILE=*iiss{__sbuf=*i}i^v^?^?^?^?{__sbuf=*i}^{__sFILEX}i[3C][1C]{__sbuf=*i}iq}'/>
+<retval type='l' type64='q'/>
+</function>
+<function name='profile_write_tree_to_buffer'>
+<arg type='^{profile_node=}'/>
+<arg type='^*'/>
+<retval type='l' type64='q'/>
+</function>
+<function name='remove_error_table'>
+<arg type='^{error_table=^*ii}'/>
+<retval type='l' type64='q'/>
+</function>
+<function name='reset_com_err_hook'>
+<retval function_pointer='true' type='^?'>
+<arg type='*'/>
+<arg type='l' type64='q'/>
+<arg type='*'/>
+<arg type='*' type64='^{__va_list_tag=II^v^v}'/>
+<retval type='v'/>
+</retval>
+</function>
+<function name='set_com_err_hook'>
+<arg function_pointer='true' type='^?'>
+<arg type='*'/>
+<arg type='l' type64='q'/>
+<arg type='*'/>
+<arg type='*' type64='^{__va_list_tag=II^v^v}'/>
+<retval type='v'/>
+</arg>
+<retval function_pointer='true' type='^?'>
+<arg type='*'/>
+<arg type='l' type64='q'/>
+<arg type='*'/>
+<arg type='*' type64='^{__va_list_tag=II^v^v}'/>
+<retval type='v'/>
+</retval>
+</function>
+<function_alias original='krb5_gss_register_acceptor_identity' name='gsskrb5_register_acceptor_identity'/>
+<function_alias original='initialize_asn1_error_table' name='init_asn1_err_tbl'/>
+<function_alias original='initialize_k524_error_table' name='init_k524_err_tbl'/>
+<function_alias original='initialize_kdb5_error_table' name='init_kdb5_err_tbl'/>
+<function_alias original='initialize_krb5_error_table' name='init_krb5_err_tbl'/>
+<function_alias original='initialize_kv5m_error_table' name='init_kv5m_err_tbl'/>
+<function_alias original='initialize_prof_error_table' name='init_prof_err_tbl'/>
+</signatures>

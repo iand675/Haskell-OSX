@@ -1,0 +1,81 @@
+<?xml version='1.0'?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version='1.0'>
+<depends_on path='/System/Library/Frameworks/IOBluetooth.framework'/>
+<depends_on path='/System/Library/Frameworks/Cocoa.framework'/>
+<depends_on path='/System/Library/Frameworks/CoreServices.framework'/>
+<depends_on path='/System/Library/Frameworks/CoreFoundation.framework'/>
+<depends_on path='/System/Library/Frameworks/ApplicationServices.framework'/>
+<depends_on path='/System/Library/Frameworks/Foundation.framework'/>
+<depends_on path='/System/Library/Frameworks/AppKit.framework'/>
+<cftype name='IOBluetoothDeviceSelectorControllerRef' type='^{OpaqueIOBluetoothObjectRef=}'/>
+<cftype name='IOBluetoothPairingControllerRef' type='^{OpaqueIOBluetoothObjectRef=}'/>
+<cftype name='IOBluetoothServiceBrowserControllerRef' type='^{OpaqueIOBluetoothObjectRef=}'/>
+<enum name='kBluetoothKeyboardANSIReturn' value='0'/>
+<enum name='kBluetoothKeyboardISOReturn' value='1'/>
+<enum name='kBluetoothKeyboardJISReturn' value='2'/>
+<enum name='kIOBluetoothServiceBrowserControllerOptionsAutoStartInquiry' value='1'/>
+<enum name='kIOBluetoothServiceBrowserControllerOptionsDisconnectWhenDone' value='2'/>
+<enum name='kIOBluetoothServiceBrowserControllerOptionsNone' value='0'/>
+<enum name='kIOBluetoothUISuccess' value='-1000'/>
+<enum name='kIOBluetoothUIUserCanceledErr' value='-1001'/>
+<function name='IOBluetoothDeviceSelectorRunPanelWithAttributes'>
+<arg type='^{OpaqueIOBluetoothObjectRef=}'/>
+<arg type='^{IOBluetoothDeviceSearchAttributes=III^{IOBluetoothDeviceSearchDeviceAttributes}}'/>
+<retval type='^{__CFArray=}'/>
+</function>
+<function name='IOBluetoothGetDeviceSelectorController'>
+<retval type='^{OpaqueIOBluetoothObjectRef=}'/>
+</function>
+<function name='IOBluetoothGetPairingController'>
+<retval type='^{OpaqueIOBluetoothObjectRef=}'/>
+</function>
+<function name='IOBluetoothPairingControllerRunPanelWithAttributes'>
+<arg type='^{OpaqueIOBluetoothObjectRef=}'/>
+<arg type='^{IOBluetoothDeviceSearchAttributes=III^{IOBluetoothDeviceSearchDeviceAttributes}}'/>
+</function>
+<function name='IOBluetoothServiceBrowserControllerBrowseDevices'>
+<arg type='^^{OpaqueIOBluetoothObjectRef}'/>
+<arg type='I'/>
+<retval type='i'/>
+</function>
+<function name='IOBluetoothServiceBrowserControllerCreate'>
+<arg type='I'/>
+<retval already_retained='true' type='^{OpaqueIOBluetoothObjectRef=}'/>
+</function>
+<function name='IOBluetoothServiceBrowserControllerDiscover'>
+<arg type='^{OpaqueIOBluetoothObjectRef=}'/>
+<arg type='^^{OpaqueIOBluetoothObjectRef}'/>
+<retval type='i'/>
+</function>
+<function name='IOBluetoothServiceBrowserControllerDiscoverWithDeviceAttributes'>
+<arg type='^{OpaqueIOBluetoothObjectRef=}'/>
+<arg type='^^{OpaqueIOBluetoothObjectRef}'/>
+<arg type='^{IOBluetoothDeviceSearchAttributes=III^{IOBluetoothDeviceSearchDeviceAttributes}}'/>
+<arg type='^{__CFArray=}'/>
+<retval type='i'/>
+</function>
+<function name='IOBluetoothServiceBrowserControllerSetOptions'>
+<arg type='^{OpaqueIOBluetoothObjectRef=}'/>
+<arg type='I'/>
+</function>
+<function name='IOBluetoothValidateHardware'>
+<arg type='^{__CFString=}'/>
+<retval type='i'/>
+</function>
+<function name='IOBluetoothValidateHardwareWithDescription'>
+<arg type='^{__CFString=}'/>
+<arg type='^{__CFString=}'/>
+<retval type='i'/>
+</function>
+<class name='IOBluetoothObjectPushUIController'>
+<method selector='isTransferInProgress'>
+<retval type='B'/>
+</method>
+</class>
+<class name='IOBluetoothPasskeyDisplay'>
+<method selector='setPasskeyIndicatorEnabled:'>
+<arg index='0' type='B'/>
+</method>
+</class>
+</signatures>

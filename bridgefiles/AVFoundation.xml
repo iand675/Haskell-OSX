@@ -1,0 +1,1338 @@
+<?xml version='1.0'?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version='1.0'>
+<depends_on path='/System/Library/Frameworks/CoreVideo.framework'/>
+<depends_on path='/System/Library/Frameworks/AudioToolbox.framework'/>
+<depends_on path='/System/Library/Frameworks/Foundation.framework'/>
+<depends_on path='/System/Library/Frameworks/CoreMedia.framework'/>
+<depends_on path='/System/Library/Frameworks/CoreFoundation.framework'/>
+<depends_on path='/System/Library/Frameworks/ApplicationServices.framework'/>
+<depends_on path='/System/Library/Frameworks/QuartzCore.framework'/>
+<depends_on path='/System/Library/Frameworks/CoreMediaIO.framework'/>
+<depends_on path='/System/Library/Frameworks/CoreAudio.framework'/>
+<depends_on path='/System/Library/Frameworks/Security.framework'/>
+<depends_on path='/System/Library/Frameworks/CoreServices.framework'/>
+<constant type='@' name='AVAssetExportPreset1280x720'/>
+<constant type='@' name='AVAssetExportPreset1920x1080'/>
+<constant type='@' name='AVAssetExportPreset640x480'/>
+<constant type='@' name='AVAssetExportPreset960x540'/>
+<constant type='@' name='AVAssetExportPresetAppleM4A'/>
+<constant type='@' name='AVAssetExportPresetAppleM4V480pSD'/>
+<constant type='@' name='AVAssetExportPresetAppleM4V720pHD'/>
+<constant type='@' name='AVAssetExportPresetAppleM4VAppleTV'/>
+<constant type='@' name='AVAssetExportPresetAppleM4VCellular'/>
+<constant type='@' name='AVAssetExportPresetAppleM4VWiFi'/>
+<constant type='@' name='AVAssetExportPresetAppleM4ViPod'/>
+<constant type='@' name='AVAssetExportPresetAppleProRes422LPCM'/>
+<constant type='@' name='AVAssetExportPresetPassthrough'/>
+<constant type='@' name='AVAssetImageGeneratorApertureModeCleanAperture'/>
+<constant type='@' name='AVAssetImageGeneratorApertureModeEncodedPixels'/>
+<constant type='@' name='AVAssetImageGeneratorApertureModeProductionAperture'/>
+<constant type='@' name='AVCaptureDeviceWasConnectedNotification'/>
+<constant type='@' name='AVCaptureDeviceWasDisconnectedNotification'/>
+<constant type='@' name='AVCaptureInputPortFormatDescriptionDidChangeNotification'/>
+<constant type='@' name='AVCaptureSessionDidStartRunningNotification'/>
+<constant type='@' name='AVCaptureSessionDidStopRunningNotification'/>
+<constant type='@' name='AVCaptureSessionErrorKey'/>
+<constant type='@' name='AVCaptureSessionPreset1280x720'/>
+<constant type='@' name='AVCaptureSessionPreset320x240'/>
+<constant type='@' name='AVCaptureSessionPreset352x288'/>
+<constant type='@' name='AVCaptureSessionPreset640x480'/>
+<constant type='@' name='AVCaptureSessionPreset960x540'/>
+<constant type='@' name='AVCaptureSessionPresetHigh'/>
+<constant type='@' name='AVCaptureSessionPresetLow'/>
+<constant type='@' name='AVCaptureSessionPresetMedium'/>
+<constant type='@' name='AVCaptureSessionPresetPhoto'/>
+<constant type='@' name='AVCaptureSessionRuntimeErrorNotification'/>
+<constant type='@' name='AVChannelLayoutKey'/>
+<constant type='d' name='AVCoreAnimationBeginTimeAtZero'/>
+<constant type='@' name='AVEncoderAudioQualityKey'/>
+<constant type='@' name='AVEncoderBitDepthHintKey'/>
+<constant type='@' name='AVEncoderBitRateKey'/>
+<constant type='@' name='AVEncoderBitRatePerChannelKey'/>
+<constant type='@' name='AVErrorDeviceKey'/>
+<constant type='@' name='AVErrorDiscontinuityFlagsKey'/>
+<constant type='@' name='AVErrorFileSizeKey'/>
+<constant type='@' name='AVErrorMediaSubTypeKey'/>
+<constant type='@' name='AVErrorMediaTypeKey'/>
+<constant type='@' name='AVErrorPIDKey'/>
+<constant type='@' name='AVErrorRecordingSuccessfullyFinishedKey'/>
+<constant type='@' name='AVErrorTimeKey'/>
+<constant type='@' name='AVFileTypeAIFC'/>
+<constant type='@' name='AVFileTypeAIFF'/>
+<constant type='@' name='AVFileTypeAMR'/>
+<constant type='@' name='AVFileTypeAppleM4A'/>
+<constant type='@' name='AVFileTypeAppleM4V'/>
+<constant type='@' name='AVFileTypeCoreAudioFormat'/>
+<constant type='@' name='AVFileTypeMPEG4'/>
+<constant type='@' name='AVFileTypeQuickTimeMovie'/>
+<constant type='@' name='AVFileTypeWAVE'/>
+<constant type='@' name='AVFormatIDKey'/>
+<constant type='@' name='AVFoundationErrorDomain'/>
+<constant type='@' name='AVLayerVideoGravityResize'/>
+<constant type='@' name='AVLayerVideoGravityResizeAspect'/>
+<constant type='@' name='AVLayerVideoGravityResizeAspectFill'/>
+<constant type='@' name='AVLinearPCMBitDepthKey'/>
+<constant type='@' name='AVLinearPCMIsBigEndianKey'/>
+<constant type='@' name='AVLinearPCMIsFloatKey'/>
+<constant type='@' name='AVLinearPCMIsNonInterleaved'/>
+<constant type='@' name='AVMediaCharacteristicAudible'/>
+<constant type='@' name='AVMediaCharacteristicFrameBased'/>
+<constant type='@' name='AVMediaCharacteristicLegible'/>
+<constant type='@' name='AVMediaCharacteristicVisual'/>
+<constant type='@' name='AVMediaTypeAudio'/>
+<constant type='@' name='AVMediaTypeClosedCaption'/>
+<constant type='@' name='AVMediaTypeMuxed'/>
+<constant type='@' name='AVMediaTypeSubtitle'/>
+<constant type='@' name='AVMediaTypeText'/>
+<constant type='@' name='AVMediaTypeTimecode'/>
+<constant type='@' name='AVMediaTypeTimedMetadata'/>
+<constant type='@' name='AVMediaTypeVideo'/>
+<constant type='@' name='AVMetadata3GPUserDataKeyAuthor'/>
+<constant type='@' name='AVMetadata3GPUserDataKeyCopyright'/>
+<constant type='@' name='AVMetadata3GPUserDataKeyDescription'/>
+<constant type='@' name='AVMetadata3GPUserDataKeyGenre'/>
+<constant type='@' name='AVMetadata3GPUserDataKeyLocation'/>
+<constant type='@' name='AVMetadata3GPUserDataKeyPerformer'/>
+<constant type='@' name='AVMetadata3GPUserDataKeyRecordingYear'/>
+<constant type='@' name='AVMetadata3GPUserDataKeyTitle'/>
+<constant type='@' name='AVMetadataCommonKeyAlbumName'/>
+<constant type='@' name='AVMetadataCommonKeyArtist'/>
+<constant type='@' name='AVMetadataCommonKeyArtwork'/>
+<constant type='@' name='AVMetadataCommonKeyAuthor'/>
+<constant type='@' name='AVMetadataCommonKeyContributor'/>
+<constant type='@' name='AVMetadataCommonKeyCopyrights'/>
+<constant type='@' name='AVMetadataCommonKeyCreationDate'/>
+<constant type='@' name='AVMetadataCommonKeyCreator'/>
+<constant type='@' name='AVMetadataCommonKeyDescription'/>
+<constant type='@' name='AVMetadataCommonKeyFormat'/>
+<constant type='@' name='AVMetadataCommonKeyIdentifier'/>
+<constant type='@' name='AVMetadataCommonKeyLanguage'/>
+<constant type='@' name='AVMetadataCommonKeyLastModifiedDate'/>
+<constant type='@' name='AVMetadataCommonKeyLocation'/>
+<constant type='@' name='AVMetadataCommonKeyMake'/>
+<constant type='@' name='AVMetadataCommonKeyModel'/>
+<constant type='@' name='AVMetadataCommonKeyPublisher'/>
+<constant type='@' name='AVMetadataCommonKeyRelation'/>
+<constant type='@' name='AVMetadataCommonKeySoftware'/>
+<constant type='@' name='AVMetadataCommonKeySource'/>
+<constant type='@' name='AVMetadataCommonKeySubject'/>
+<constant type='@' name='AVMetadataCommonKeyTitle'/>
+<constant type='@' name='AVMetadataCommonKeyType'/>
+<constant type='@' name='AVMetadataFormatID3Metadata'/>
+<constant type='@' name='AVMetadataFormatQuickTimeMetadata'/>
+<constant type='@' name='AVMetadataFormatQuickTimeUserData'/>
+<constant type='@' name='AVMetadataFormatiTunesMetadata'/>
+<constant type='@' name='AVMetadataID3MetadataKeyAlbumSortOrder'/>
+<constant type='@' name='AVMetadataID3MetadataKeyAlbumTitle'/>
+<constant type='@' name='AVMetadataID3MetadataKeyAttachedPicture'/>
+<constant type='@' name='AVMetadataID3MetadataKeyAudioEncryption'/>
+<constant type='@' name='AVMetadataID3MetadataKeyAudioSeekPointIndex'/>
+<constant type='@' name='AVMetadataID3MetadataKeyBand'/>
+<constant type='@' name='AVMetadataID3MetadataKeyBeatsPerMinute'/>
+<constant type='@' name='AVMetadataID3MetadataKeyComments'/>
+<constant type='@' name='AVMetadataID3MetadataKeyCommercialInformation'/>
+<constant type='@' name='AVMetadataID3MetadataKeyCommerical'/>
+<constant type='@' name='AVMetadataID3MetadataKeyComposer'/>
+<constant type='@' name='AVMetadataID3MetadataKeyConductor'/>
+<constant type='@' name='AVMetadataID3MetadataKeyContentGroupDescription'/>
+<constant type='@' name='AVMetadataID3MetadataKeyContentType'/>
+<constant type='@' name='AVMetadataID3MetadataKeyCopyright'/>
+<constant type='@' name='AVMetadataID3MetadataKeyCopyrightInformation'/>
+<constant type='@' name='AVMetadataID3MetadataKeyDate'/>
+<constant type='@' name='AVMetadataID3MetadataKeyEncodedBy'/>
+<constant type='@' name='AVMetadataID3MetadataKeyEncodedWith'/>
+<constant type='@' name='AVMetadataID3MetadataKeyEncodingTime'/>
+<constant type='@' name='AVMetadataID3MetadataKeyEncryption'/>
+<constant type='@' name='AVMetadataID3MetadataKeyEqualization'/>
+<constant type='@' name='AVMetadataID3MetadataKeyEqualization2'/>
+<constant type='@' name='AVMetadataID3MetadataKeyEventTimingCodes'/>
+<constant type='@' name='AVMetadataID3MetadataKeyFileOwner'/>
+<constant type='@' name='AVMetadataID3MetadataKeyFileType'/>
+<constant type='@' name='AVMetadataID3MetadataKeyGeneralEncapsulatedObject'/>
+<constant type='@' name='AVMetadataID3MetadataKeyGroupIdentifier'/>
+<constant type='@' name='AVMetadataID3MetadataKeyInitialKey'/>
+<constant type='@' name='AVMetadataID3MetadataKeyInternationalStandardRecordingCode'/>
+<constant type='@' name='AVMetadataID3MetadataKeyInternetRadioStationName'/>
+<constant type='@' name='AVMetadataID3MetadataKeyInternetRadioStationOwner'/>
+<constant type='@' name='AVMetadataID3MetadataKeyInvolvedPeopleList_v23'/>
+<constant type='@' name='AVMetadataID3MetadataKeyInvolvedPeopleList_v24'/>
+<constant type='@' name='AVMetadataID3MetadataKeyLanguage'/>
+<constant type='@' name='AVMetadataID3MetadataKeyLeadPerformer'/>
+<constant type='@' name='AVMetadataID3MetadataKeyLength'/>
+<constant type='@' name='AVMetadataID3MetadataKeyLink'/>
+<constant type='@' name='AVMetadataID3MetadataKeyLyricist'/>
+<constant type='@' name='AVMetadataID3MetadataKeyMPEGLocationLookupTable'/>
+<constant type='@' name='AVMetadataID3MetadataKeyMediaType'/>
+<constant type='@' name='AVMetadataID3MetadataKeyModifiedBy'/>
+<constant type='@' name='AVMetadataID3MetadataKeyMood'/>
+<constant type='@' name='AVMetadataID3MetadataKeyMusicCDIdentifier'/>
+<constant type='@' name='AVMetadataID3MetadataKeyMusicianCreditsList'/>
+<constant type='@' name='AVMetadataID3MetadataKeyOfficialArtistWebpage'/>
+<constant type='@' name='AVMetadataID3MetadataKeyOfficialAudioFileWebpage'/>
+<constant type='@' name='AVMetadataID3MetadataKeyOfficialAudioSourceWebpage'/>
+<constant type='@' name='AVMetadataID3MetadataKeyOfficialInternetRadioStationHomepage'/>
+<constant type='@' name='AVMetadataID3MetadataKeyOfficialPublisherWebpage'/>
+<constant type='@' name='AVMetadataID3MetadataKeyOriginalAlbumTitle'/>
+<constant type='@' name='AVMetadataID3MetadataKeyOriginalArtist'/>
+<constant type='@' name='AVMetadataID3MetadataKeyOriginalFilename'/>
+<constant type='@' name='AVMetadataID3MetadataKeyOriginalLyricist'/>
+<constant type='@' name='AVMetadataID3MetadataKeyOriginalReleaseTime'/>
+<constant type='@' name='AVMetadataID3MetadataKeyOriginalReleaseYear'/>
+<constant type='@' name='AVMetadataID3MetadataKeyOwnership'/>
+<constant type='@' name='AVMetadataID3MetadataKeyPartOfASet'/>
+<constant type='@' name='AVMetadataID3MetadataKeyPayment'/>
+<constant type='@' name='AVMetadataID3MetadataKeyPerformerSortOrder'/>
+<constant type='@' name='AVMetadataID3MetadataKeyPlayCounter'/>
+<constant type='@' name='AVMetadataID3MetadataKeyPlaylistDelay'/>
+<constant type='@' name='AVMetadataID3MetadataKeyPopularimeter'/>
+<constant type='@' name='AVMetadataID3MetadataKeyPositionSynchronization'/>
+<constant type='@' name='AVMetadataID3MetadataKeyPrivate'/>
+<constant type='@' name='AVMetadataID3MetadataKeyProducedNotice'/>
+<constant type='@' name='AVMetadataID3MetadataKeyPublisher'/>
+<constant type='@' name='AVMetadataID3MetadataKeyRecommendedBufferSize'/>
+<constant type='@' name='AVMetadataID3MetadataKeyRecordingDates'/>
+<constant type='@' name='AVMetadataID3MetadataKeyRecordingTime'/>
+<constant type='@' name='AVMetadataID3MetadataKeyRelativeVolumeAdjustment'/>
+<constant type='@' name='AVMetadataID3MetadataKeyRelativeVolumeAdjustment2'/>
+<constant type='@' name='AVMetadataID3MetadataKeyReleaseTime'/>
+<constant type='@' name='AVMetadataID3MetadataKeyReverb'/>
+<constant type='@' name='AVMetadataID3MetadataKeySeek'/>
+<constant type='@' name='AVMetadataID3MetadataKeySetSubtitle'/>
+<constant type='@' name='AVMetadataID3MetadataKeySignature'/>
+<constant type='@' name='AVMetadataID3MetadataKeySize'/>
+<constant type='@' name='AVMetadataID3MetadataKeySubTitle'/>
+<constant type='@' name='AVMetadataID3MetadataKeySynchronizedLyric'/>
+<constant type='@' name='AVMetadataID3MetadataKeySynchronizedTempoCodes'/>
+<constant type='@' name='AVMetadataID3MetadataKeyTaggingTime'/>
+<constant type='@' name='AVMetadataID3MetadataKeyTermsOfUse'/>
+<constant type='@' name='AVMetadataID3MetadataKeyTime'/>
+<constant type='@' name='AVMetadataID3MetadataKeyTitleDescription'/>
+<constant type='@' name='AVMetadataID3MetadataKeyTitleSortOrder'/>
+<constant type='@' name='AVMetadataID3MetadataKeyTrackNumber'/>
+<constant type='@' name='AVMetadataID3MetadataKeyUniqueFileIdentifier'/>
+<constant type='@' name='AVMetadataID3MetadataKeyUnsynchronizedLyric'/>
+<constant type='@' name='AVMetadataID3MetadataKeyUserText'/>
+<constant type='@' name='AVMetadataID3MetadataKeyUserURL'/>
+<constant type='@' name='AVMetadataID3MetadataKeyYear'/>
+<constant type='@' name='AVMetadataISOUserDataKeyCopyright'/>
+<constant type='@' name='AVMetadataKeySpaceCommon'/>
+<constant type='@' name='AVMetadataKeySpaceID3'/>
+<constant type='@' name='AVMetadataKeySpaceQuickTimeMetadata'/>
+<constant type='@' name='AVMetadataKeySpaceQuickTimeUserData'/>
+<constant type='@' name='AVMetadataKeySpaceiTunes'/>
+<constant type='@' name='AVMetadataQuickTimeMetadataKeyAlbum'/>
+<constant type='@' name='AVMetadataQuickTimeMetadataKeyArranger'/>
+<constant type='@' name='AVMetadataQuickTimeMetadataKeyArtist'/>
+<constant type='@' name='AVMetadataQuickTimeMetadataKeyArtwork'/>
+<constant type='@' name='AVMetadataQuickTimeMetadataKeyAuthor'/>
+<constant type='@' name='AVMetadataQuickTimeMetadataKeyCameraFrameReadoutTime'/>
+<constant type='@' name='AVMetadataQuickTimeMetadataKeyCameraIdentifier'/>
+<constant type='@' name='AVMetadataQuickTimeMetadataKeyCollectionUser'/>
+<constant type='@' name='AVMetadataQuickTimeMetadataKeyComment'/>
+<constant type='@' name='AVMetadataQuickTimeMetadataKeyComposer'/>
+<constant type='@' name='AVMetadataQuickTimeMetadataKeyCopyright'/>
+<constant type='@' name='AVMetadataQuickTimeMetadataKeyCreationDate'/>
+<constant type='@' name='AVMetadataQuickTimeMetadataKeyCredits'/>
+<constant type='@' name='AVMetadataQuickTimeMetadataKeyDescription'/>
+<constant type='@' name='AVMetadataQuickTimeMetadataKeyDirectionFacing'/>
+<constant type='@' name='AVMetadataQuickTimeMetadataKeyDirectionMotion'/>
+<constant type='@' name='AVMetadataQuickTimeMetadataKeyDirector'/>
+<constant type='@' name='AVMetadataQuickTimeMetadataKeyDisplayName'/>
+<constant type='@' name='AVMetadataQuickTimeMetadataKeyEncodedBy'/>
+<constant type='@' name='AVMetadataQuickTimeMetadataKeyGenre'/>
+<constant type='@' name='AVMetadataQuickTimeMetadataKeyInformation'/>
+<constant type='@' name='AVMetadataQuickTimeMetadataKeyKeywords'/>
+<constant type='@' name='AVMetadataQuickTimeMetadataKeyLocationBody'/>
+<constant type='@' name='AVMetadataQuickTimeMetadataKeyLocationDate'/>
+<constant type='@' name='AVMetadataQuickTimeMetadataKeyLocationISO6709'/>
+<constant type='@' name='AVMetadataQuickTimeMetadataKeyLocationName'/>
+<constant type='@' name='AVMetadataQuickTimeMetadataKeyLocationNote'/>
+<constant type='@' name='AVMetadataQuickTimeMetadataKeyLocationRole'/>
+<constant type='@' name='AVMetadataQuickTimeMetadataKeyMake'/>
+<constant type='@' name='AVMetadataQuickTimeMetadataKeyModel'/>
+<constant type='@' name='AVMetadataQuickTimeMetadataKeyOriginalArtist'/>
+<constant type='@' name='AVMetadataQuickTimeMetadataKeyPerformer'/>
+<constant type='@' name='AVMetadataQuickTimeMetadataKeyPhonogramRights'/>
+<constant type='@' name='AVMetadataQuickTimeMetadataKeyProducer'/>
+<constant type='@' name='AVMetadataQuickTimeMetadataKeyPublisher'/>
+<constant type='@' name='AVMetadataQuickTimeMetadataKeyRatingUser'/>
+<constant type='@' name='AVMetadataQuickTimeMetadataKeySoftware'/>
+<constant type='@' name='AVMetadataQuickTimeMetadataKeyTitle'/>
+<constant type='@' name='AVMetadataQuickTimeMetadataKeyYear'/>
+<constant type='@' name='AVMetadataQuickTimeMetadataKeyiXML'/>
+<constant type='@' name='AVMetadataQuickTimeUserDataKeyAlbum'/>
+<constant type='@' name='AVMetadataQuickTimeUserDataKeyArranger'/>
+<constant type='@' name='AVMetadataQuickTimeUserDataKeyArtist'/>
+<constant type='@' name='AVMetadataQuickTimeUserDataKeyAuthor'/>
+<constant type='@' name='AVMetadataQuickTimeUserDataKeyChapter'/>
+<constant type='@' name='AVMetadataQuickTimeUserDataKeyComment'/>
+<constant type='@' name='AVMetadataQuickTimeUserDataKeyComposer'/>
+<constant type='@' name='AVMetadataQuickTimeUserDataKeyCopyright'/>
+<constant type='@' name='AVMetadataQuickTimeUserDataKeyCreationDate'/>
+<constant type='@' name='AVMetadataQuickTimeUserDataKeyCredits'/>
+<constant type='@' name='AVMetadataQuickTimeUserDataKeyDescription'/>
+<constant type='@' name='AVMetadataQuickTimeUserDataKeyDirector'/>
+<constant type='@' name='AVMetadataQuickTimeUserDataKeyDisclaimer'/>
+<constant type='@' name='AVMetadataQuickTimeUserDataKeyEncodedBy'/>
+<constant type='@' name='AVMetadataQuickTimeUserDataKeyFullName'/>
+<constant type='@' name='AVMetadataQuickTimeUserDataKeyGenre'/>
+<constant type='@' name='AVMetadataQuickTimeUserDataKeyHostComputer'/>
+<constant type='@' name='AVMetadataQuickTimeUserDataKeyInformation'/>
+<constant type='@' name='AVMetadataQuickTimeUserDataKeyKeywords'/>
+<constant type='@' name='AVMetadataQuickTimeUserDataKeyLocationISO6709'/>
+<constant type='@' name='AVMetadataQuickTimeUserDataKeyMake'/>
+<constant type='@' name='AVMetadataQuickTimeUserDataKeyModel'/>
+<constant type='@' name='AVMetadataQuickTimeUserDataKeyOriginalArtist'/>
+<constant type='@' name='AVMetadataQuickTimeUserDataKeyOriginalFormat'/>
+<constant type='@' name='AVMetadataQuickTimeUserDataKeyOriginalSource'/>
+<constant type='@' name='AVMetadataQuickTimeUserDataKeyPerformers'/>
+<constant type='@' name='AVMetadataQuickTimeUserDataKeyPhonogramRights'/>
+<constant type='@' name='AVMetadataQuickTimeUserDataKeyProducer'/>
+<constant type='@' name='AVMetadataQuickTimeUserDataKeyProduct'/>
+<constant type='@' name='AVMetadataQuickTimeUserDataKeyPublisher'/>
+<constant type='@' name='AVMetadataQuickTimeUserDataKeySoftware'/>
+<constant type='@' name='AVMetadataQuickTimeUserDataKeySpecialPlaybackRequirements'/>
+<constant type='@' name='AVMetadataQuickTimeUserDataKeyTrack'/>
+<constant type='@' name='AVMetadataQuickTimeUserDataKeyTrackName'/>
+<constant type='@' name='AVMetadataQuickTimeUserDataKeyURLLink'/>
+<constant type='@' name='AVMetadataQuickTimeUserDataKeyWarning'/>
+<constant type='@' name='AVMetadataQuickTimeUserDataKeyWriter'/>
+<constant type='@' name='AVMetadataiTunesMetadataKeyAccountKind'/>
+<constant type='@' name='AVMetadataiTunesMetadataKeyAcknowledgement'/>
+<constant type='@' name='AVMetadataiTunesMetadataKeyAlbum'/>
+<constant type='@' name='AVMetadataiTunesMetadataKeyAlbumArtist'/>
+<constant type='@' name='AVMetadataiTunesMetadataKeyAppleID'/>
+<constant type='@' name='AVMetadataiTunesMetadataKeyArranger'/>
+<constant type='@' name='AVMetadataiTunesMetadataKeyArtDirector'/>
+<constant type='@' name='AVMetadataiTunesMetadataKeyArtist'/>
+<constant type='@' name='AVMetadataiTunesMetadataKeyArtistID'/>
+<constant type='@' name='AVMetadataiTunesMetadataKeyAuthor'/>
+<constant type='@' name='AVMetadataiTunesMetadataKeyBeatsPerMin'/>
+<constant type='@' name='AVMetadataiTunesMetadataKeyComposer'/>
+<constant type='@' name='AVMetadataiTunesMetadataKeyConductor'/>
+<constant type='@' name='AVMetadataiTunesMetadataKeyContentRating'/>
+<constant type='@' name='AVMetadataiTunesMetadataKeyCopyright'/>
+<constant type='@' name='AVMetadataiTunesMetadataKeyCoverArt'/>
+<constant type='@' name='AVMetadataiTunesMetadataKeyCredits'/>
+<constant type='@' name='AVMetadataiTunesMetadataKeyDescription'/>
+<constant type='@' name='AVMetadataiTunesMetadataKeyDirector'/>
+<constant type='@' name='AVMetadataiTunesMetadataKeyDiscCompilation'/>
+<constant type='@' name='AVMetadataiTunesMetadataKeyDiscNumber'/>
+<constant type='@' name='AVMetadataiTunesMetadataKeyEQ'/>
+<constant type='@' name='AVMetadataiTunesMetadataKeyEncodedBy'/>
+<constant type='@' name='AVMetadataiTunesMetadataKeyEncodingTool'/>
+<constant type='@' name='AVMetadataiTunesMetadataKeyExecProducer'/>
+<constant type='@' name='AVMetadataiTunesMetadataKeyGenreID'/>
+<constant type='@' name='AVMetadataiTunesMetadataKeyGrouping'/>
+<constant type='@' name='AVMetadataiTunesMetadataKeyLinerNotes'/>
+<constant type='@' name='AVMetadataiTunesMetadataKeyLyrics'/>
+<constant type='@' name='AVMetadataiTunesMetadataKeyOnlineExtras'/>
+<constant type='@' name='AVMetadataiTunesMetadataKeyOriginalArtist'/>
+<constant type='@' name='AVMetadataiTunesMetadataKeyPerformer'/>
+<constant type='@' name='AVMetadataiTunesMetadataKeyPhonogramRights'/>
+<constant type='@' name='AVMetadataiTunesMetadataKeyPlaylistID'/>
+<constant type='@' name='AVMetadataiTunesMetadataKeyPredefinedGenre'/>
+<constant type='@' name='AVMetadataiTunesMetadataKeyProducer'/>
+<constant type='@' name='AVMetadataiTunesMetadataKeyPublisher'/>
+<constant type='@' name='AVMetadataiTunesMetadataKeyRecordCompany'/>
+<constant type='@' name='AVMetadataiTunesMetadataKeyReleaseDate'/>
+<constant type='@' name='AVMetadataiTunesMetadataKeySoloist'/>
+<constant type='@' name='AVMetadataiTunesMetadataKeySongID'/>
+<constant type='@' name='AVMetadataiTunesMetadataKeySongName'/>
+<constant type='@' name='AVMetadataiTunesMetadataKeySoundEngineer'/>
+<constant type='@' name='AVMetadataiTunesMetadataKeyThanks'/>
+<constant type='@' name='AVMetadataiTunesMetadataKeyTrackNumber'/>
+<constant type='@' name='AVMetadataiTunesMetadataKeyTrackSubTitle'/>
+<constant type='@' name='AVMetadataiTunesMetadataKeyUserComment'/>
+<constant type='@' name='AVMetadataiTunesMetadataKeyUserGenre'/>
+<constant type='@' name='AVNumberOfChannelsKey'/>
+<constant type='@' name='AVPlayerItemDidPlayToEndTimeNotification'/>
+<constant type='@' name='AVPlayerItemFailedToPlayToEndTimeErrorKey'/>
+<constant type='@' name='AVPlayerItemFailedToPlayToEndTimeNotification'/>
+<constant type='@' name='AVPlayerItemTimeJumpedNotification'/>
+<constant type='@' name='AVSampleRateConverterAudioQualityKey'/>
+<constant type='@' name='AVSampleRateKey'/>
+<constant type='@' name='AVURLAssetPreferPreciseDurationAndTimingKey'/>
+<constant type='@' name='AVURLAssetReferenceRestrictionsKey'/>
+<constant type='@' name='AVVideoAverageBitRateKey'/>
+<constant type='@' name='AVVideoCleanApertureHeightKey'/>
+<constant type='@' name='AVVideoCleanApertureHorizontalOffsetKey'/>
+<constant type='@' name='AVVideoCleanApertureKey'/>
+<constant type='@' name='AVVideoCleanApertureVerticalOffsetKey'/>
+<constant type='@' name='AVVideoCleanApertureWidthKey'/>
+<constant type='@' name='AVVideoCodecAppleProRes422'/>
+<constant type='@' name='AVVideoCodecAppleProRes4444'/>
+<constant type='@' name='AVVideoCodecH264'/>
+<constant type='@' name='AVVideoCodecJPEG'/>
+<constant type='@' name='AVVideoCodecKey'/>
+<constant type='@' name='AVVideoColorPrimariesKey'/>
+<constant type='@' name='AVVideoColorPrimaries_EBU_3213'/>
+<constant type='@' name='AVVideoColorPrimaries_ITU_R_709_2'/>
+<constant type='@' name='AVVideoColorPrimaries_SMPTE_C'/>
+<constant type='@' name='AVVideoColorPropertiesKey'/>
+<constant type='@' name='AVVideoCompressionPropertiesKey'/>
+<constant type='@' name='AVVideoHeightKey'/>
+<constant type='@' name='AVVideoMaxKeyFrameIntervalKey'/>
+<constant type='@' name='AVVideoPixelAspectRatioHorizontalSpacingKey'/>
+<constant type='@' name='AVVideoPixelAspectRatioKey'/>
+<constant type='@' name='AVVideoPixelAspectRatioVerticalSpacingKey'/>
+<constant type='@' name='AVVideoQualityKey'/>
+<constant type='@' name='AVVideoScalingModeFit'/>
+<constant type='@' name='AVVideoScalingModeKey'/>
+<constant type='@' name='AVVideoScalingModeResize'/>
+<constant type='@' name='AVVideoScalingModeResizeAspect'/>
+<constant type='@' name='AVVideoScalingModeResizeAspectFill'/>
+<constant type='@' name='AVVideoTransferFunctionKey'/>
+<constant type='@' name='AVVideoTransferFunction_ITU_R_709_2'/>
+<constant type='@' name='AVVideoTransferFunction_SMPTE_240M_1995'/>
+<constant type='@' name='AVVideoWidthKey'/>
+<constant type='@' name='AVVideoYCbCrMatrixKey'/>
+<constant type='@' name='AVVideoYCbCrMatrix_ITU_R_601_4'/>
+<constant type='@' name='AVVideoYCbCrMatrix_ITU_R_709_2'/>
+<constant type='@' name='AVVideoYCbCrMatrix_SMPTE_240M_1995'/>
+<enum value='5' name='AVAssetExportSessionStatusCancelled'/>
+<enum value='3' name='AVAssetExportSessionStatusCompleted'/>
+<enum value='2' name='AVAssetExportSessionStatusExporting'/>
+<enum value='4' name='AVAssetExportSessionStatusFailed'/>
+<enum value='0' name='AVAssetExportSessionStatusUnknown'/>
+<enum value='1' name='AVAssetExportSessionStatusWaiting'/>
+<enum value='2' name='AVAssetImageGeneratorCancelled'/>
+<enum value='1' name='AVAssetImageGeneratorFailed'/>
+<enum value='0' name='AVAssetImageGeneratorSucceeded'/>
+<enum value='4' name='AVAssetReaderStatusCancelled'/>
+<enum value='2' name='AVAssetReaderStatusCompleted'/>
+<enum value='3' name='AVAssetReaderStatusFailed'/>
+<enum value='1' name='AVAssetReaderStatusReading'/>
+<enum value='0' name='AVAssetReaderStatusUnknown'/>
+<enum value='65535' name='AVAssetReferenceRestrictionForbidAll'/>
+<enum value='4' name='AVAssetReferenceRestrictionForbidCrossSiteReference'/>
+<enum value='8' name='AVAssetReferenceRestrictionForbidLocalReferenceToLocal'/>
+<enum value='2' name='AVAssetReferenceRestrictionForbidLocalReferenceToRemote'/>
+<enum value='0' name='AVAssetReferenceRestrictionForbidNone'/>
+<enum value='1' name='AVAssetReferenceRestrictionForbidRemoteReferenceToLocal'/>
+<enum value='4' name='AVAssetWriterStatusCancelled'/>
+<enum value='2' name='AVAssetWriterStatusCompleted'/>
+<enum value='3' name='AVAssetWriterStatusFailed'/>
+<enum value='0' name='AVAssetWriterStatusUnknown'/>
+<enum value='1' name='AVAssetWriterStatusWriting'/>
+<enum value='96' name='AVAudioQualityHigh'/>
+<enum value='32' name='AVAudioQualityLow'/>
+<enum value='127' name='AVAudioQualityMax'/>
+<enum value='64' name='AVAudioQualityMedium'/>
+<enum value='0' name='AVAudioQualityMin'/>
+<enum value='1' name='AVCaptureDevicePositionBack'/>
+<enum value='2' name='AVCaptureDevicePositionFront'/>
+<enum value='0' name='AVCaptureDevicePositionUnspecified'/>
+<enum value='0' name='AVCaptureDeviceTransportControlsNotPlayingMode'/>
+<enum value='1' name='AVCaptureDeviceTransportControlsPlayingMode'/>
+<enum value='1' name='AVCaptureExposureModeAutoExpose'/>
+<enum value='2' name='AVCaptureExposureModeContinuousAutoExposure'/>
+<enum value='0' name='AVCaptureExposureModeLocked'/>
+<enum value='2' name='AVCaptureFlashModeAuto'/>
+<enum value='0' name='AVCaptureFlashModeOff'/>
+<enum value='1' name='AVCaptureFlashModeOn'/>
+<enum value='1' name='AVCaptureFocusModeAutoFocus'/>
+<enum value='2' name='AVCaptureFocusModeContinuousAutoFocus'/>
+<enum value='0' name='AVCaptureFocusModeLocked'/>
+<enum value='2' name='AVCaptureTorchModeAuto'/>
+<enum value='0' name='AVCaptureTorchModeOff'/>
+<enum value='1' name='AVCaptureTorchModeOn'/>
+<enum value='4' name='AVCaptureVideoOrientationLandscapeLeft'/>
+<enum value='3' name='AVCaptureVideoOrientationLandscapeRight'/>
+<enum value='1' name='AVCaptureVideoOrientationPortrait'/>
+<enum value='2' name='AVCaptureVideoOrientationPortraitUpsideDown'/>
+<enum value='1' name='AVCaptureWhiteBalanceModeAutoWhiteBalance'/>
+<enum value='2' name='AVCaptureWhiteBalanceModeContinuousAutoWhiteBalance'/>
+<enum value='0' name='AVCaptureWhiteBalanceModeLocked'/>
+<enum value='4' name='AVContentAuthorizationBusy'/>
+<enum value='2' name='AVContentAuthorizationCancelled'/>
+<enum value='1' name='AVContentAuthorizationCompleted'/>
+<enum value='5' name='AVContentAuthorizationNotAvailable'/>
+<enum value='6' name='AVContentAuthorizationNotPossible'/>
+<enum value='3' name='AVContentAuthorizationTimedOut'/>
+<enum value='0' name='AVContentAuthorizationUnknown'/>
+<enum value='-11836' name='AVErrorApplicationIsNotAuthorized'/>
+<enum value='-11824' name='AVErrorCompositionTrackSegmentsNotContiguous'/>
+<enum value='-11835' name='AVErrorContentIsNotAuthorized'/>
+<enum value='-11831' name='AVErrorContentIsProtected'/>
+<enum value='-11821' name='AVErrorDecodeFailed'/>
+<enum value='-11833' name='AVErrorDecoderNotFound'/>
+<enum value='-11839' name='AVErrorDecoderTemporarilyUnavailable'/>
+<enum value='-11804' name='AVErrorDeviceAlreadyUsedByAnotherSession'/>
+<enum value='-11815' name='AVErrorDeviceInUseByAnotherApplication'/>
+<enum value='-11817' name='AVErrorDeviceLockedForConfigurationByAnotherProcess'/>
+<enum value='-11814' name='AVErrorDeviceNotConnected'/>
+<enum value='-11808' name='AVErrorDeviceWasDisconnected'/>
+<enum value='-11807' name='AVErrorDiskFull'/>
+<enum value='-11834' name='AVErrorEncoderNotFound'/>
+<enum value='-11820' name='AVErrorExportFailed'/>
+<enum value='-11823' name='AVErrorFileAlreadyExists'/>
+<enum value='-11829' name='AVErrorFileFailedToParse'/>
+<enum value='-11828' name='AVErrorFileFormatNotRecognized'/>
+<enum value='-11825' name='AVErrorInvalidCompositionTrackSegmentDuration'/>
+<enum value='-11827' name='AVErrorInvalidCompositionTrackSegmentSourceDuration'/>
+<enum value='-11826' name='AVErrorInvalidCompositionTrackSegmentSourceStartTime'/>
+<enum value='-11822' name='AVErrorInvalidSourceMedia'/>
+<enum value='-11810' name='AVErrorMaximumDurationReached'/>
+<enum value='-11811' name='AVErrorMaximumFileSizeReached'/>
+<enum value='-11813' name='AVErrorMaximumNumberOfSamplesForFileFormatReached'/>
+<enum value='-11830' name='AVErrorMaximumStillImageCaptureRequestsExceeded'/>
+<enum value='-11809' name='AVErrorMediaChanged'/>
+<enum value='-11812' name='AVErrorMediaDiscontinuity'/>
+<enum value='-11805' name='AVErrorNoDataCaptured'/>
+<enum value='-11832' name='AVErrorNoImageAtTime'/>
+<enum value='-11838' name='AVErrorOperationNotSupportedForAsset'/>
+<enum value='-11801' name='AVErrorOutOfMemory'/>
+<enum value='-11806' name='AVErrorSessionConfigurationChanged'/>
+<enum value='-11803' name='AVErrorSessionNotRunning'/>
+<enum value='-11800' name='AVErrorUnknown'/>
+<enum value='4' name='AVKeyValueStatusCancelled'/>
+<enum value='3' name='AVKeyValueStatusFailed'/>
+<enum value='2' name='AVKeyValueStatusLoaded'/>
+<enum value='1' name='AVKeyValueStatusLoading'/>
+<enum value='0' name='AVKeyValueStatusUnknown'/>
+<enum value='0' name='AVPlayerActionAtItemEndAdvance'/>
+<enum value='2' name='AVPlayerActionAtItemEndNone'/>
+<enum value='1' name='AVPlayerActionAtItemEndPause'/>
+<enum value='2' name='AVPlayerItemStatusFailed'/>
+<enum value='1' name='AVPlayerItemStatusReadyToPlay'/>
+<enum value='0' name='AVPlayerItemStatusUnknown'/>
+<enum value='2' name='AVPlayerStatusFailed'/>
+<enum value='1' name='AVPlayerStatusReadyToPlay'/>
+<enum value='0' name='AVPlayerStatusUnknown'/>
+<enum value='0' name='AVVideoFieldModeBoth'/>
+<enum value='2' name='AVVideoFieldModeBottomOnly'/>
+<enum value='3' name='AVVideoFieldModeDeinterlace'/>
+<enum value='1' name='AVVideoFieldModeTopOnly'/>
+<function name='AVMakeRectWithAspectRatioInsideRect'>
+<arg type64='{CGSize=dd}' type='{CGSize=ff}'/>
+<arg type64='{CGRect={CGPoint=dd}{CGSize=dd}}' type='{CGRect={CGPoint=ff}{CGSize=ff}}'/>
+<retval type64='{CGRect={CGPoint=dd}{CGSize=dd}}' type='{CGRect={CGPoint=ff}{CGSize=ff}}'/>
+</function>
+<class name='AVAsset'>
+<method selector='duration'>
+<retval type='{_CMTime=qiIq}'/>
+</method>
+<method selector='hasProtectedContent'>
+<retval type='B'/>
+</method>
+<method selector='isComposable'>
+<retval type='B'/>
+</method>
+<method selector='isExportable'>
+<retval type='B'/>
+</method>
+<method selector='isPlayable'>
+<retval type='B'/>
+</method>
+<method selector='isReadable'>
+<retval type='B'/>
+</method>
+<method selector='providesPreciseDurationAndTiming'>
+<retval type='B'/>
+</method>
+</class>
+<class name='AVAssetExportSession'>
+<method selector='exportAsynchronouslyWithCompletionHandler:'>
+<arg function_pointer='true' type='@?' index='0'>
+<retval type='v'/>
+</arg>
+</method>
+<method selector='setShouldOptimizeForNetworkUse:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setTimeRange:'>
+<arg type='{_CMTimeRange={?=qiIq}{?=qiIq}}' index='0'/>
+</method>
+<method selector='shouldOptimizeForNetworkUse'>
+<retval type='B'/>
+</method>
+<method selector='timeRange'>
+<retval type='{_CMTimeRange={?=qiIq}{?=qiIq}}'/>
+</method>
+</class>
+<class name='AVAssetImageGenerator'>
+<method selector='appliesPreferredTrackTransform'>
+<retval type='B'/>
+</method>
+<method selector='copyCGImageAtTime:actualTime:error:'>
+<arg type='{_CMTime=qiIq}' index='0'/>
+<arg type='^{_CMTime=qiIq}' index='1'/>
+</method>
+<method selector='generateCGImagesAsynchronouslyForTimes:completionHandler:'>
+<arg function_pointer='true' type='@?' index='1'>
+<arg type='{_CMTime=qiIq}'/>
+<arg type='^{CGImage=}'/>
+<arg type='{_CMTime=qiIq}'/>
+<arg type64='q' type='i'/>
+<arg type='@'/>
+<retval type='v'/>
+</arg>
+</method>
+<method selector='requestedTimeToleranceAfter'>
+<retval type='{_CMTime=qiIq}'/>
+</method>
+<method selector='requestedTimeToleranceBefore'>
+<retval type='{_CMTime=qiIq}'/>
+</method>
+<method selector='setAppliesPreferredTrackTransform:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setRequestedTimeToleranceAfter:'>
+<arg type='{_CMTime=qiIq}' index='0'/>
+</method>
+<method selector='setRequestedTimeToleranceBefore:'>
+<arg type='{_CMTime=qiIq}' index='0'/>
+</method>
+</class>
+<class name='AVAssetReader'>
+<method selector='canAddOutput:'>
+<retval type='B'/>
+</method>
+<method selector='setTimeRange:'>
+<arg type='{_CMTimeRange={?=qiIq}{?=qiIq}}' index='0'/>
+</method>
+<method selector='startReading'>
+<retval type='B'/>
+</method>
+<method selector='timeRange'>
+<retval type='{_CMTimeRange={?=qiIq}{?=qiIq}}'/>
+</method>
+</class>
+<class name='AVAssetTrack'>
+<method selector='hasMediaCharacteristic:'>
+<retval type='B'/>
+</method>
+<method selector='isEnabled'>
+<retval type='B'/>
+</method>
+<method selector='isSelfContained'>
+<retval type='B'/>
+</method>
+<method selector='samplePresentationTimeForTrackTime:'>
+<arg type='{_CMTime=qiIq}' index='0'/>
+<retval type='{_CMTime=qiIq}'/>
+</method>
+<method selector='segmentForTrackTime:'>
+<arg type='{_CMTime=qiIq}' index='0'/>
+</method>
+<method selector='timeRange'>
+<retval type='{_CMTimeRange={?=qiIq}{?=qiIq}}'/>
+</method>
+</class>
+<class name='AVAssetTrackSegment'>
+<method selector='isEmpty'>
+<retval type='B'/>
+</method>
+<method selector='timeMapping'>
+<retval type='{_CMTimeMapping={?={?=qiIq}{?=qiIq}}{?={?=qiIq}{?=qiIq}}}'/>
+</method>
+</class>
+<class name='AVAssetWriter'>
+<method selector='canAddInput:'>
+<retval type='B'/>
+</method>
+<method selector='canApplyOutputSettings:forMediaType:'>
+<retval type='B'/>
+</method>
+<method selector='endSessionAtSourceTime:'>
+<arg type='{_CMTime=qiIq}' index='0'/>
+</method>
+<method selector='finishWriting'>
+<retval type='B'/>
+</method>
+<method selector='movieFragmentInterval'>
+<retval type='{_CMTime=qiIq}'/>
+</method>
+<method selector='setMovieFragmentInterval:'>
+<arg type='{_CMTime=qiIq}' index='0'/>
+</method>
+<method selector='setShouldOptimizeForNetworkUse:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='shouldOptimizeForNetworkUse'>
+<retval type='B'/>
+</method>
+<method selector='startSessionAtSourceTime:'>
+<arg type='{_CMTime=qiIq}' index='0'/>
+</method>
+<method selector='startWriting'>
+<retval type='B'/>
+</method>
+</class>
+<class name='AVAssetWriterInput'>
+<method selector='appendSampleBuffer:'>
+<retval type='B'/>
+</method>
+<method selector='expectsMediaDataInRealTime'>
+<retval type='B'/>
+</method>
+<method selector='isReadyForMoreMediaData'>
+<retval type='B'/>
+</method>
+<method selector='requestMediaDataWhenReadyOnQueue:usingBlock:'>
+<arg function_pointer='true' type='@?' index='1'>
+<retval type='v'/>
+</arg>
+</method>
+<method selector='setExpectsMediaDataInRealTime:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='AVAssetWriterInputPixelBufferAdaptor'>
+<method selector='appendPixelBuffer:withPresentationTime:'>
+<arg type='{_CMTime=qiIq}' index='1'/>
+<retval type='B'/>
+</method>
+</class>
+<class name='AVAudioMixInputParameters'>
+<method selector='getVolumeRampForTime:startVolume:endVolume:timeRange:'>
+<arg type='{_CMTime=qiIq}' index='0'/>
+<arg type='^{_CMTimeRange={?=qiIq}{?=qiIq}}' index='3'/>
+<retval type='B'/>
+</method>
+</class>
+<class name='AVAudioPlayer'>
+<method selector='isMeteringEnabled'>
+<retval type='B'/>
+</method>
+<method selector='isPlaying'>
+<retval type='B'/>
+</method>
+<method selector='play'>
+<retval type='B'/>
+</method>
+<method selector='playAtTime:'>
+<retval type='B'/>
+</method>
+<method selector='prepareToPlay'>
+<retval type='B'/>
+</method>
+<method selector='setMeteringEnabled:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='AVAudioRecorder'>
+<method selector='deleteRecording'>
+<retval type='B'/>
+</method>
+<method selector='isMeteringEnabled'>
+<retval type='B'/>
+</method>
+<method selector='isRecording'>
+<retval type='B'/>
+</method>
+<method selector='prepareToRecord'>
+<retval type='B'/>
+</method>
+<method selector='record'>
+<retval type='B'/>
+</method>
+<method selector='recordForDuration:'>
+<retval type='B'/>
+</method>
+<method selector='setMeteringEnabled:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='AVCaptureAudioChannel'>
+<method selector='isEnabled'>
+<retval type='B'/>
+</method>
+<method selector='setEnabled:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='AVCaptureConnection'>
+<method selector='automaticallyAdjustsVideoMirroring'>
+<retval type='B'/>
+</method>
+<method selector='isActive'>
+<retval type='B'/>
+</method>
+<method selector='isEnabled'>
+<retval type='B'/>
+</method>
+<method selector='isVideoFieldModeSupported'>
+<retval type='B'/>
+</method>
+<method selector='isVideoMinFrameDurationSupported'>
+<retval type='B'/>
+</method>
+<method selector='isVideoMirrored'>
+<retval type='B'/>
+</method>
+<method selector='isVideoMirroringSupported'>
+<retval type='B'/>
+</method>
+<method selector='isVideoOrientationSupported'>
+<retval type='B'/>
+</method>
+<method selector='setAutomaticallyAdjustsVideoMirroring:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setEnabled:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setVideoMinFrameDuration:'>
+<arg type='{_CMTime=qiIq}' index='0'/>
+</method>
+<method selector='setVideoMirrored:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='videoMinFrameDuration'>
+<retval type='{_CMTime=qiIq}'/>
+</method>
+</class>
+<class name='AVCaptureDevice'>
+<method selector='activeVideoMinFrameDuration'>
+<retval type='{_CMTime=qiIq}'/>
+</method>
+<method selector='hasFlash'>
+<retval type='B'/>
+</method>
+<method selector='hasMediaType:'>
+<retval type='B'/>
+</method>
+<method selector='hasTorch'>
+<retval type='B'/>
+</method>
+<method selector='isAdjustingExposure'>
+<retval type='B'/>
+</method>
+<method selector='isAdjustingFocus'>
+<retval type='B'/>
+</method>
+<method selector='isAdjustingWhiteBalance'>
+<retval type='B'/>
+</method>
+<method selector='isConnected'>
+<retval type='B'/>
+</method>
+<method selector='isExposureModeSupported:'>
+<retval type='B'/>
+</method>
+<method selector='isExposurePointOfInterestSupported'>
+<retval type='B'/>
+</method>
+<method selector='isFlashModeSupported:'>
+<retval type='B'/>
+</method>
+<method selector='isFocusModeSupported:'>
+<retval type='B'/>
+</method>
+<method selector='isFocusPointOfInterestSupported'>
+<retval type='B'/>
+</method>
+<method selector='isInUseByAnotherApplication'>
+<retval type='B'/>
+</method>
+<method selector='isSuspended'>
+<retval type='B'/>
+</method>
+<method selector='isTorchModeSupported:'>
+<retval type='B'/>
+</method>
+<method selector='isWhiteBalanceModeSupported:'>
+<retval type='B'/>
+</method>
+<method selector='lockForConfiguration:'>
+<retval type='B'/>
+</method>
+<method selector='setActiveVideoMinFrameDuration:'>
+<arg type='{_CMTime=qiIq}' index='0'/>
+</method>
+<method selector='supportsAVCaptureSessionPreset:'>
+<retval type='B'/>
+</method>
+<method selector='transportControlsSupported'>
+<retval type='B'/>
+</method>
+</class>
+<class name='AVCaptureFileOutput'>
+<method selector='isRecording'>
+<retval type='B'/>
+</method>
+<method selector='isRecordingPaused'>
+<retval type='B'/>
+</method>
+<method selector='maxRecordedDuration'>
+<retval type='{_CMTime=qiIq}'/>
+</method>
+<method selector='recordedDuration'>
+<retval type='{_CMTime=qiIq}'/>
+</method>
+<method selector='setMaxRecordedDuration:'>
+<arg type='{_CMTime=qiIq}' index='0'/>
+</method>
+</class>
+<class name='AVCaptureInputPort'>
+<method selector='isEnabled'>
+<retval type='B'/>
+</method>
+<method selector='setEnabled:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='AVCaptureMovieFileOutput'>
+<method selector='movieFragmentInterval'>
+<retval type='{_CMTime=qiIq}'/>
+</method>
+<method selector='setMovieFragmentInterval:'>
+<arg type='{_CMTime=qiIq}' index='0'/>
+</method>
+</class>
+<class name='AVCaptureScreenInput'>
+<method selector='capturesMouseClicks'>
+<retval type='B'/>
+</method>
+<method selector='minFrameDuration'>
+<retval type='{_CMTime=qiIq}'/>
+</method>
+<method selector='setCapturesMouseClicks:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setMinFrameDuration:'>
+<arg type='{_CMTime=qiIq}' index='0'/>
+</method>
+</class>
+<class name='AVCaptureSession'>
+<method selector='canAddConnection:'>
+<retval type='B'/>
+</method>
+<method selector='canAddInput:'>
+<retval type='B'/>
+</method>
+<method selector='canAddOutput:'>
+<retval type='B'/>
+</method>
+<method selector='canSetSessionPreset:'>
+<retval type='B'/>
+</method>
+<method selector='isRunning'>
+<retval type='B'/>
+</method>
+</class>
+<class name='AVCaptureStillImageOutput'>
+<method selector='captureStillImageAsynchronouslyFromConnection:completionHandler:'>
+<arg function_pointer='true' type='@?' index='1'>
+<arg type='^{opaqueCMSampleBuffer=}'/>
+<arg type='@'/>
+<retval type='v'/>
+</arg>
+</method>
+</class>
+<class name='AVCaptureVideoDataOutput'>
+<method selector='alwaysDiscardsLateVideoFrames'>
+<retval type='B'/>
+</method>
+<method selector='setAlwaysDiscardsLateVideoFrames:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='AVCompositionTrackSegment'>
+<method class_method='true' selector='compositionTrackSegmentWithTimeRange:'>
+<arg type='{_CMTimeRange={?=qiIq}{?=qiIq}}' index='0'/>
+</method>
+<method class_method='true' selector='compositionTrackSegmentWithURL:trackID:sourceTimeRange:targetTimeRange:'>
+<arg type='{_CMTimeRange={?=qiIq}{?=qiIq}}' index='2'/>
+<arg type='{_CMTimeRange={?=qiIq}{?=qiIq}}' index='3'/>
+</method>
+<method selector='initWithTimeRange:'>
+<arg type='{_CMTimeRange={?=qiIq}{?=qiIq}}' index='0'/>
+</method>
+<method selector='initWithURL:trackID:sourceTimeRange:targetTimeRange:'>
+<arg type='{_CMTimeRange={?=qiIq}{?=qiIq}}' index='2'/>
+<arg type='{_CMTimeRange={?=qiIq}{?=qiIq}}' index='3'/>
+</method>
+<method selector='isEmpty'>
+<retval type='B'/>
+</method>
+</class>
+<class name='AVFrameRateRange'>
+<method selector='maxFrameDuration'>
+<retval type='{_CMTime=qiIq}'/>
+</method>
+<method selector='minFrameDuration'>
+<retval type='{_CMTime=qiIq}'/>
+</method>
+</class>
+<class name='AVMetadataItem'>
+<method selector='duration'>
+<retval type='{_CMTime=qiIq}'/>
+</method>
+<method selector='loadValuesAsynchronouslyForKeys:completionHandler:'>
+<arg function_pointer='true' type='@?' index='1'>
+<retval type='v'/>
+</arg>
+</method>
+<method selector='time'>
+<retval type='{_CMTime=qiIq}'/>
+</method>
+</class>
+<class name='AVMutableAudioMixInputParameters'>
+<method selector='setVolume:atTime:'>
+<arg type='{_CMTime=qiIq}' index='1'/>
+</method>
+<method selector='setVolumeRampFromStartVolume:toEndVolume:timeRange:'>
+<arg type='{_CMTimeRange={?=qiIq}{?=qiIq}}' index='2'/>
+</method>
+</class>
+<class name='AVMutableComposition'>
+<method selector='insertEmptyTimeRange:'>
+<arg type='{_CMTimeRange={?=qiIq}{?=qiIq}}' index='0'/>
+</method>
+<method selector='insertTimeRange:ofAsset:atTime:error:'>
+<arg type='{_CMTimeRange={?=qiIq}{?=qiIq}}' index='0'/>
+<arg type='{_CMTime=qiIq}' index='2'/>
+<retval type='B'/>
+</method>
+<method selector='removeTimeRange:'>
+<arg type='{_CMTimeRange={?=qiIq}{?=qiIq}}' index='0'/>
+</method>
+<method selector='scaleTimeRange:toDuration:'>
+<arg type='{_CMTimeRange={?=qiIq}{?=qiIq}}' index='0'/>
+<arg type='{_CMTime=qiIq}' index='1'/>
+</method>
+</class>
+<class name='AVMutableCompositionTrack'>
+<method selector='insertEmptyTimeRange:'>
+<arg type='{_CMTimeRange={?=qiIq}{?=qiIq}}' index='0'/>
+</method>
+<method selector='insertTimeRange:ofTrack:atTime:error:'>
+<arg type='{_CMTimeRange={?=qiIq}{?=qiIq}}' index='0'/>
+<arg type='{_CMTime=qiIq}' index='2'/>
+<retval type='B'/>
+</method>
+<method selector='removeTimeRange:'>
+<arg type='{_CMTimeRange={?=qiIq}{?=qiIq}}' index='0'/>
+</method>
+<method selector='scaleTimeRange:toDuration:'>
+<arg type='{_CMTimeRange={?=qiIq}{?=qiIq}}' index='0'/>
+<arg type='{_CMTime=qiIq}' index='1'/>
+</method>
+<method selector='validateTrackSegments:error:'>
+<retval type='B'/>
+</method>
+</class>
+<class name='AVMutableMetadataItem'>
+<method selector='duration'>
+<retval type='{_CMTime=qiIq}'/>
+</method>
+<method selector='setDuration:'>
+<arg type='{_CMTime=qiIq}' index='0'/>
+</method>
+<method selector='setTime:'>
+<arg type='{_CMTime=qiIq}' index='0'/>
+</method>
+<method selector='time'>
+<retval type='{_CMTime=qiIq}'/>
+</method>
+</class>
+<class name='AVMutableTimedMetadataGroup'>
+<method selector='setTimeRange:'>
+<arg type='{_CMTimeRange={?=qiIq}{?=qiIq}}' index='0'/>
+</method>
+<method selector='timeRange'>
+<retval type='{_CMTimeRange={?=qiIq}{?=qiIq}}'/>
+</method>
+</class>
+<class name='AVMutableVideoComposition'>
+<method selector='frameDuration'>
+<retval type='{_CMTime=qiIq}'/>
+</method>
+<method selector='setFrameDuration:'>
+<arg type='{_CMTime=qiIq}' index='0'/>
+</method>
+</class>
+<class name='AVMutableVideoCompositionInstruction'>
+<method selector='enablePostProcessing'>
+<retval type='B'/>
+</method>
+<method selector='setEnablePostProcessing:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setTimeRange:'>
+<arg type='{_CMTimeRange={?=qiIq}{?=qiIq}}' index='0'/>
+</method>
+<method selector='timeRange'>
+<retval type='{_CMTimeRange={?=qiIq}{?=qiIq}}'/>
+</method>
+</class>
+<class name='AVMutableVideoCompositionLayerInstruction'>
+<method selector='setOpacity:atTime:'>
+<arg type='{_CMTime=qiIq}' index='1'/>
+</method>
+<method selector='setOpacityRampFromStartOpacity:toEndOpacity:timeRange:'>
+<arg type='{_CMTimeRange={?=qiIq}{?=qiIq}}' index='2'/>
+</method>
+<method selector='setTransform:atTime:'>
+<arg type='{_CMTime=qiIq}' index='1'/>
+</method>
+<method selector='setTransformRampFromStartTransform:toEndTransform:timeRange:'>
+<arg type='{_CMTimeRange={?=qiIq}{?=qiIq}}' index='2'/>
+</method>
+</class>
+<class name='AVPlayer'>
+<method selector='addBoundaryTimeObserverForTimes:queue:usingBlock:'>
+<arg function_pointer='true' type='@?' index='2'>
+<retval type='v'/>
+</arg>
+</method>
+<method selector='addPeriodicTimeObserverForInterval:queue:usingBlock:'>
+<arg type='{_CMTime=qiIq}' index='0'/>
+<arg function_pointer='true' type='@?' index='2'>
+<arg type='{_CMTime=qiIq}'/>
+<retval type='v'/>
+</arg>
+</method>
+<method selector='currentTime'>
+<retval type='{_CMTime=qiIq}'/>
+</method>
+<method selector='isClosedCaptionDisplayEnabled'>
+<retval type='B'/>
+</method>
+<method selector='isMuted'>
+<retval type='B'/>
+</method>
+<method selector='seekToTime:'>
+<arg type='{_CMTime=qiIq}' index='0'/>
+</method>
+<method selector='seekToTime:completionHandler:'>
+<arg type='{_CMTime=qiIq}' index='0'/>
+<arg function_pointer='true' type='@?' index='1'>
+<arg type='B'/>
+<retval type='v'/>
+</arg>
+</method>
+<method selector='seekToTime:toleranceBefore:toleranceAfter:'>
+<arg type='{_CMTime=qiIq}' index='0'/>
+<arg type='{_CMTime=qiIq}' index='1'/>
+<arg type='{_CMTime=qiIq}' index='2'/>
+</method>
+<method selector='seekToTime:toleranceBefore:toleranceAfter:completionHandler:'>
+<arg type='{_CMTime=qiIq}' index='0'/>
+<arg type='{_CMTime=qiIq}' index='1'/>
+<arg type='{_CMTime=qiIq}' index='2'/>
+<arg function_pointer='true' type='@?' index='3'>
+<arg type='B'/>
+<retval type='v'/>
+</arg>
+</method>
+<method selector='setClosedCaptionDisplayEnabled:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setMuted:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='AVPlayerItem'>
+<method selector='currentTime'>
+<retval type='{_CMTime=qiIq}'/>
+</method>
+<method selector='duration'>
+<retval type='{_CMTime=qiIq}'/>
+</method>
+<method selector='forwardPlaybackEndTime'>
+<retval type='{_CMTime=qiIq}'/>
+</method>
+<method selector='isApplicationAuthorizedForPlayback'>
+<retval type='B'/>
+</method>
+<method selector='isAuthorizationRequiredForPlayback'>
+<retval type='B'/>
+</method>
+<method selector='isContentAuthorizedForPlayback'>
+<retval type='B'/>
+</method>
+<method selector='isPlaybackBufferEmpty'>
+<retval type='B'/>
+</method>
+<method selector='isPlaybackBufferFull'>
+<retval type='B'/>
+</method>
+<method selector='isPlaybackLikelyToKeepUp'>
+<retval type='B'/>
+</method>
+<method selector='requestContentAuthorizationAsynchronouslyWithTimeoutInterval:completionHandler:'>
+<arg function_pointer='true' type='@?' index='1'>
+<retval type='v'/>
+</arg>
+</method>
+<method selector='reversePlaybackEndTime'>
+<retval type='{_CMTime=qiIq}'/>
+</method>
+<method selector='seekToDate:'>
+<retval type='B'/>
+</method>
+<method selector='seekToTime:'>
+<arg type='{_CMTime=qiIq}' index='0'/>
+</method>
+<method selector='seekToTime:completionHandler:'>
+<arg type='{_CMTime=qiIq}' index='0'/>
+<arg function_pointer='true' type='@?' index='1'>
+<arg type='B'/>
+<retval type='v'/>
+</arg>
+</method>
+<method selector='seekToTime:toleranceBefore:toleranceAfter:'>
+<arg type='{_CMTime=qiIq}' index='0'/>
+<arg type='{_CMTime=qiIq}' index='1'/>
+<arg type='{_CMTime=qiIq}' index='2'/>
+</method>
+<method selector='seekToTime:toleranceBefore:toleranceAfter:completionHandler:'>
+<arg type='{_CMTime=qiIq}' index='0'/>
+<arg type='{_CMTime=qiIq}' index='1'/>
+<arg type='{_CMTime=qiIq}' index='2'/>
+<arg function_pointer='true' type='@?' index='3'>
+<arg type='B'/>
+<retval type='v'/>
+</arg>
+</method>
+<method selector='setForwardPlaybackEndTime:'>
+<arg type='{_CMTime=qiIq}' index='0'/>
+</method>
+<method selector='setReversePlaybackEndTime:'>
+<arg type='{_CMTime=qiIq}' index='0'/>
+</method>
+</class>
+<class name='AVPlayerItemTrack'>
+<method selector='isEnabled'>
+<retval type='B'/>
+</method>
+<method selector='setEnabled:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='AVPlayerLayer'>
+<method selector='isReadyForDisplay'>
+<retval type='B'/>
+</method>
+</class>
+<class name='AVQueuePlayer'>
+<method selector='canInsertItem:afterItem:'>
+<retval type='B'/>
+</method>
+</class>
+<class name='AVTimedMetadataGroup'>
+<method selector='initWithItems:timeRange:'>
+<arg type='{_CMTimeRange={?=qiIq}{?=qiIq}}' index='1'/>
+</method>
+<method selector='timeRange'>
+<retval type='{_CMTimeRange={?=qiIq}{?=qiIq}}'/>
+</method>
+</class>
+<class name='AVURLAsset'>
+<method class_method='true' selector='isPlayableExtendedMIMEType:'>
+<retval type='B'/>
+</method>
+</class>
+<class name='AVVideoComposition'>
+<method selector='frameDuration'>
+<retval type='{_CMTime=qiIq}'/>
+</method>
+</class>
+<class name='AVVideoCompositionInstruction'>
+<method selector='enablePostProcessing'>
+<retval type='B'/>
+</method>
+<method selector='timeRange'>
+<retval type='{_CMTimeRange={?=qiIq}{?=qiIq}}'/>
+</method>
+</class>
+<class name='AVVideoCompositionLayerInstruction'>
+<method selector='getOpacityRampForTime:startOpacity:endOpacity:timeRange:'>
+<arg type='{_CMTime=qiIq}' index='0'/>
+<arg type='^{_CMTimeRange={?=qiIq}{?=qiIq}}' index='3'/>
+<retval type='B'/>
+</method>
+<method selector='getTransformRampForTime:startTransform:endTransform:timeRange:'>
+<arg type='{_CMTime=qiIq}' index='0'/>
+<arg type='^{_CMTimeRange={?=qiIq}{?=qiIq}}' index='3'/>
+<retval type='B'/>
+</method>
+</class>
+<class name='NSCoder'>
+<method selector='decodeCMTimeForKey:'>
+<retval type='{_CMTime=qiIq}'/>
+</method>
+<method selector='decodeCMTimeMappingForKey:'>
+<retval type='{_CMTimeMapping={?={?=qiIq}{?=qiIq}}{?={?=qiIq}{?=qiIq}}}'/>
+</method>
+<method selector='decodeCMTimeRangeForKey:'>
+<retval type='{_CMTimeRange={?=qiIq}{?=qiIq}}'/>
+</method>
+<method selector='encodeCMTime:forKey:'>
+<arg type='{_CMTime=qiIq}' index='0'/>
+</method>
+<method selector='encodeCMTimeMapping:forKey:'>
+<arg type='{_CMTimeMapping={?={?=qiIq}{?=qiIq}}{?={?=qiIq}{?=qiIq}}}' index='0'/>
+</method>
+<method selector='encodeCMTimeRange:forKey:'>
+<arg type='{_CMTimeRange={?=qiIq}{?=qiIq}}' index='0'/>
+</method>
+</class>
+<class name='NSObject'>
+<method selector='audioPlayerDidFinishPlaying:successfully:'>
+<arg type='B' index='1'/>
+</method>
+<method selector='audioRecorderDidFinishRecording:successfully:'>
+<arg type='B' index='1'/>
+</method>
+<method selector='loadValuesAsynchronouslyForKeys:completionHandler:'>
+<arg function_pointer='true' type='@?' index='1'>
+<retval type='v'/>
+</arg>
+</method>
+</class>
+<class name='NSValue'>
+<method selector='CMTimeMappingValue'>
+<retval type='{_CMTimeMapping={?={?=qiIq}{?=qiIq}}{?={?=qiIq}{?=qiIq}}}'/>
+</method>
+<method selector='CMTimeRangeValue'>
+<retval type='{_CMTimeRange={?=qiIq}{?=qiIq}}'/>
+</method>
+<method selector='CMTimeValue'>
+<retval type='{_CMTime=qiIq}'/>
+</method>
+<method class_method='true' selector='valueWithCMTime:'>
+<arg type='{_CMTime=qiIq}' index='0'/>
+</method>
+<method class_method='true' selector='valueWithCMTimeMapping:'>
+<arg type='{_CMTimeMapping={?={?=qiIq}{?=qiIq}}{?={?=qiIq}{?=qiIq}}}' index='0'/>
+</method>
+<method class_method='true' selector='valueWithCMTimeRange:'>
+<arg type='{_CMTimeRange={?=qiIq}{?=qiIq}}' index='0'/>
+</method>
+</class>
+<informal_protocol name='AVAsynchronousKeyValueLoading'>
+<method type64='v32@0:8@16@?24' selector='loadValuesAsynchronouslyForKeys:completionHandler:' type='v16@0:4@8@?12'/>
+<method type64='q32@0:8@16^@24' selector='statusOfValueForKey:error:' type='i16@0:4@8^@12'/>
+</informal_protocol>
+<informal_protocol name='AVAudioPlayerDelegate'>
+<method type64='v32@0:8@16@24' selector='audioPlayerDecodeErrorDidOccur:error:' type='v16@0:4@8@12'/>
+<method type64='v28@0:8@16B24' selector='audioPlayerDidFinishPlaying:successfully:' type='v16@0:4@8B12'/>
+</informal_protocol>
+<informal_protocol name='AVAudioRecorderDelegate'>
+<method type64='v28@0:8@16B24' selector='audioRecorderDidFinishRecording:successfully:' type='v16@0:4@8B12'/>
+<method type64='v32@0:8@16@24' selector='audioRecorderEncodeErrorDidOccur:error:' type='v16@0:4@8@12'/>
+</informal_protocol>
+<informal_protocol name='AVCaptureAudioDataOutputSampleBufferDelegate'>
+<method type64='v40@0:8@16^{opaqueCMSampleBuffer=}24@32' selector='captureOutput:didOutputSampleBuffer:fromConnection:' type='v20@0:4@8^{opaqueCMSampleBuffer=}12@16'/>
+</informal_protocol>
+<informal_protocol name='AVCaptureFileOutputDelegate'>
+<method type64='v40@0:8@16^{opaqueCMSampleBuffer=}24@32' selector='captureOutput:didOutputSampleBuffer:fromConnection:' type='v20@0:4@8^{opaqueCMSampleBuffer=}12@16'/>
+</informal_protocol>
+<informal_protocol name='AVCaptureFileOutputRecordingDelegate'>
+<method type64='v48@0:8@16@24@32@40' selector='captureOutput:didFinishRecordingToOutputFileAtURL:fromConnections:error:' type='v24@0:4@8@12@16@20'/>
+<method type64='v40@0:8@16@24@32' selector='captureOutput:didPauseRecordingToOutputFileAtURL:fromConnections:' type='v20@0:4@8@12@16'/>
+<method type64='v40@0:8@16@24@32' selector='captureOutput:didResumeRecordingToOutputFileAtURL:fromConnections:' type='v20@0:4@8@12@16'/>
+<method type64='v40@0:8@16@24@32' selector='captureOutput:didStartRecordingToOutputFileAtURL:fromConnections:' type='v20@0:4@8@12@16'/>
+<method type64='v48@0:8@16@24@32@40' selector='captureOutput:willFinishRecordingToOutputFileAtURL:fromConnections:error:' type='v24@0:4@8@12@16@20'/>
+</informal_protocol>
+<informal_protocol name='AVCaptureVideoDataOutputSampleBufferDelegate'>
+<method type64='v40@0:8@16^{opaqueCMSampleBuffer=}24@32' selector='captureOutput:didDropSampleBuffer:fromConnection:' type='v20@0:4@8^{opaqueCMSampleBuffer=}12@16'/>
+<method type64='v40@0:8@16^{opaqueCMSampleBuffer=}24@32' selector='captureOutput:didOutputSampleBuffer:fromConnection:' type='v20@0:4@8^{opaqueCMSampleBuffer=}12@16'/>
+</informal_protocol>
+</signatures>

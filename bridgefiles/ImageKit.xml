@@ -1,0 +1,427 @@
+<?xml version='1.0'?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version='1.0'>
+<depends_on path='/System/Library/Frameworks/QuickLook.framework'/>
+<depends_on path='/System/Library/Frameworks/Quartz.framework/Versions/A/Frameworks/QuickLookUI.framework'/>
+<depends_on path='/System/Library/Frameworks/ImageCaptureCore.framework'/>
+<depends_on path='/System/Library/Frameworks/IOKit.framework'/>
+<depends_on path='/System/Library/Frameworks/QTKit.framework'/>
+<depends_on path='/System/Library/Frameworks/Quartz.framework/Versions/A/Frameworks/PDFKit.framework'/>
+<depends_on path='/System/Library/Frameworks/Quartz.framework/Versions/A/Frameworks/QuartzComposer.framework'/>
+<depends_on path='/System/Library/Frameworks/Quartz.framework/Versions/A/Frameworks/QuartzFilters.framework'/>
+<depends_on path='/System/Library/Frameworks/Accelerate.framework'/>
+<depends_on path='/System/Library/Frameworks/Cocoa.framework'/>
+<depends_on path='/System/Library/Frameworks/ApplicationServices.framework'/>
+<depends_on path='/System/Library/Frameworks/OpenGL.framework'/>
+<depends_on path='/System/Library/Frameworks/QuartzCore.framework'/>
+<depends_on path='/System/Library/Frameworks/OpenDirectory.framework'/>
+<depends_on path='/System/Library/Frameworks/CoreServices.framework'/>
+<depends_on path='/System/Library/Frameworks/CoreFoundation.framework'/>
+<depends_on path='/System/Library/Frameworks/Foundation.framework'/>
+<depends_on path='/System/Library/Frameworks/CoreVideo.framework'/>
+<depends_on path='/System/Library/Frameworks/AppKit.framework'/>
+<constant type='@' name='IKFilterBrowserDefaultInputImage'/>
+<constant type='@' name='IKFilterBrowserExcludeCategories'/>
+<constant type='@' name='IKFilterBrowserExcludeFilters'/>
+<constant type='@' name='IKFilterBrowserFilterDoubleClickNotification'/>
+<constant type='@' name='IKFilterBrowserFilterSelectedNotification'/>
+<constant type='@' name='IKFilterBrowserShowCategories'/>
+<constant type='@' name='IKFilterBrowserShowPreview'/>
+<constant type='@' name='IKFilterBrowserWillPreviewFilterNotification'/>
+<constant type='@' name='IKImageBrowserBackgroundColorKey'/>
+<constant type='@' name='IKImageBrowserCGImageRepresentationType'/>
+<constant type='@' name='IKImageBrowserCGImageSourceRepresentationType'/>
+<constant type='@' name='IKImageBrowserCellBackgroundLayer'/>
+<constant type='@' name='IKImageBrowserCellForegroundLayer'/>
+<constant type='@' name='IKImageBrowserCellPlaceHolderLayer'/>
+<constant type='@' name='IKImageBrowserCellSelectionLayer'/>
+<constant type='@' name='IKImageBrowserCellsHighlightedTitleAttributesKey'/>
+<constant type='@' name='IKImageBrowserCellsOutlineColorKey'/>
+<constant type='@' name='IKImageBrowserCellsSubtitleAttributesKey'/>
+<constant type='@' name='IKImageBrowserCellsTitleAttributesKey'/>
+<constant type='@' name='IKImageBrowserGroupBackgroundColorKey'/>
+<constant type='@' name='IKImageBrowserGroupFooterLayer'/>
+<constant type='@' name='IKImageBrowserGroupHeaderLayer'/>
+<constant type='@' name='IKImageBrowserGroupRangeKey'/>
+<constant type='@' name='IKImageBrowserGroupStyleKey'/>
+<constant type='@' name='IKImageBrowserGroupTitleKey'/>
+<constant type='@' name='IKImageBrowserIconRefPathRepresentationType'/>
+<constant type='@' name='IKImageBrowserIconRefRepresentationType'/>
+<constant type='@' name='IKImageBrowserNSBitmapImageRepresentationType'/>
+<constant type='@' name='IKImageBrowserNSDataRepresentationType'/>
+<constant type='@' name='IKImageBrowserNSImageRepresentationType'/>
+<constant type='@' name='IKImageBrowserNSURLRepresentationType'/>
+<constant type='@' name='IKImageBrowserPDFPageRepresentationType'/>
+<constant type='@' name='IKImageBrowserPathRepresentationType'/>
+<constant type='@' name='IKImageBrowserQCCompositionPathRepresentationType'/>
+<constant type='@' name='IKImageBrowserQCCompositionRepresentationType'/>
+<constant type='@' name='IKImageBrowserQTMoviePathRepresentationType'/>
+<constant type='@' name='IKImageBrowserQTMovieRepresentationType'/>
+<constant type='@' name='IKImageBrowserQuickLookPathRepresentationType'/>
+<constant type='@' name='IKImageBrowserSelectionColorKey'/>
+<constant type='@' name='IKOverlayTypeBackground'/>
+<constant type='@' name='IKOverlayTypeImage'/>
+<constant type='@' name='IKPictureTakerAllowsEditingKey'/>
+<constant type='@' name='IKPictureTakerAllowsFileChoosingKey'/>
+<constant type='@' name='IKPictureTakerAllowsVideoCaptureKey'/>
+<constant type='@' name='IKPictureTakerCropAreaSizeKey'/>
+<constant type='@' name='IKPictureTakerImageTransformsKey'/>
+<constant type='@' name='IKPictureTakerInformationalTextKey'/>
+<constant type='@' name='IKPictureTakerOutputImageMaxSizeKey'/>
+<constant type='@' name='IKPictureTakerRemainOpenAfterValidateKey'/>
+<constant type='@' name='IKPictureTakerShowAddressBookPicture'/>
+<constant type='@' name='IKPictureTakerShowAddressBookPictureKey'/>
+<constant type='@' name='IKPictureTakerShowEffectsKey'/>
+<constant type='@' name='IKPictureTakerShowEmptyPicture'/>
+<constant type='@' name='IKPictureTakerShowEmptyPictureKey'/>
+<constant type='@' name='IKPictureTakerShowRecentPictureKey'/>
+<constant type='@' name='IKPictureTakerUpdateRecentPictureKey'/>
+<constant type='@' name='IKSlideshowAudioFile'/>
+<constant type='@' name='IKSlideshowModeImages'/>
+<constant type='@' name='IKSlideshowModeOther'/>
+<constant type='@' name='IKSlideshowModePDF'/>
+<constant type='@' name='IKSlideshowPDFDisplayBox'/>
+<constant type='@' name='IKSlideshowPDFDisplayMode'/>
+<constant type='@' name='IKSlideshowPDFDisplaysAsBook'/>
+<constant type='@' name='IKSlideshowScreen'/>
+<constant type='@' name='IKSlideshowStartIndex'/>
+<constant type='@' name='IKSlideshowStartPaused'/>
+<constant type='@' name='IKSlideshowWrapAround'/>
+<constant type='@' name='IKToolModeAnnotate'/>
+<constant type='@' name='IKToolModeCrop'/>
+<constant type='@' name='IKToolModeMove'/>
+<constant type='@' name='IKToolModeNone'/>
+<constant type='@' name='IKToolModeRotate'/>
+<constant type='@' name='IKToolModeSelect'/>
+<constant type='@' name='IKToolModeSelectEllipse'/>
+<constant type='@' name='IKToolModeSelectLasso'/>
+<constant type='@' name='IKToolModeSelectRect'/>
+<constant type='@' name='IKUIFlavorAllowFallback'/>
+<constant type='@' name='IKUISizeFlavor'/>
+<constant type='@' name='IKUISizeMini'/>
+<constant type='@' name='IKUISizeRegular'/>
+<constant type='@' name='IKUISizeSmall'/>
+<constant type='@' name='IKUImaxSize'/>
+<constant type='@' name='IK_ApertureBundleIdentifier'/>
+<constant type='@' name='IK_MailBundleIdentifier'/>
+<constant type='@' name='IK_iPhotoBundleIdentifier'/>
+<enum name='IKCameraDeviceViewDisplayModeIcon' value='1'/>
+<enum name='IKCameraDeviceViewDisplayModeTable' value='0'/>
+<enum name='IKCameraDeviceViewTransferModeFileBased' value='0'/>
+<enum name='IKCameraDeviceViewTransferModeMemoryBased' value='1'/>
+<enum name='IKCellsStyleNone' value='0'/>
+<enum name='IKCellsStyleOutlined' value='2'/>
+<enum name='IKCellsStyleShadowed' value='1'/>
+<enum name='IKCellsStyleSubtitled' value='8'/>
+<enum name='IKCellsStyleTitled' value='4'/>
+<enum name='IKDeviceBrowserViewDisplayModeIcon' value='2'/>
+<enum name='IKDeviceBrowserViewDisplayModeOutline' value='1'/>
+<enum name='IKDeviceBrowserViewDisplayModeTable' value='0'/>
+<enum name='IKGroupBezelStyle' value='0'/>
+<enum name='IKGroupDisclosureStyle' value='1'/>
+<enum name='IKImageBrowserDropBefore' value='1'/>
+<enum name='IKImageBrowserDropOn' value='0'/>
+<enum name='IKImageStateInvalid' value='1'/>
+<enum name='IKImageStateNoImage' value='0'/>
+<enum name='IKImageStateReady' value='2'/>
+<enum name='IKScannerDeviceViewDisplayModeAdvanced' value='1'/>
+<enum name='IKScannerDeviceViewDisplayModeSimple' value='0'/>
+<enum name='IKScannerDeviceViewTransferModeFileBased' value='0'/>
+<enum name='IKScannerDeviceViewTransferModeMemoryBased' value='1'/>
+<class name='IKCameraDeviceView'>
+<method selector='canDeleteSelectedItems'>
+<retval type='B'/>
+</method>
+<method selector='canDownloadSelectedItems'>
+<retval type='B'/>
+</method>
+<method selector='canRotateSelectedItemsLeft'>
+<retval type='B'/>
+</method>
+<method selector='canRotateSelectedItemsRight'>
+<retval type='B'/>
+</method>
+<method selector='displaysDownloadsDirectoryControl'>
+<retval type='B'/>
+</method>
+<method selector='displaysPostProcessApplicationControl'>
+<retval type='B'/>
+</method>
+<method selector='hasDisplayModeIcon'>
+<retval type='B'/>
+</method>
+<method selector='hasDisplayModeTable'>
+<retval type='B'/>
+</method>
+<method selector='selectIndexes:byExtendingSelection:'>
+<arg type='B' index='1'/>
+</method>
+<method selector='setDisplaysDownloadsDirectoryControl:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setDisplaysPostProcessApplicationControl:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setHasDisplayModeIcon:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setHasDisplayModeTable:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='IKDeviceBrowserView'>
+<method selector='displaysLocalCameras'>
+<retval type='B'/>
+</method>
+<method selector='displaysLocalScanners'>
+<retval type='B'/>
+</method>
+<method selector='displaysNetworkCameras'>
+<retval type='B'/>
+</method>
+<method selector='displaysNetworkScanners'>
+<retval type='B'/>
+</method>
+<method selector='setDisplaysLocalCameras:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setDisplaysLocalScanners:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setDisplaysNetworkCameras:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setDisplaysNetworkScanners:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='IKFilterBrowserView'>
+<method selector='setPreviewState:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='IKImageBrowserCell'>
+<method selector='isSelected'>
+<retval type='B'/>
+</method>
+</class>
+<class name='IKImageBrowserView'>
+<method selector='allowsDroppingOnItems'>
+<retval type='B'/>
+</method>
+<method selector='allowsEmptySelection'>
+<retval type='B'/>
+</method>
+<method selector='allowsMultipleSelection'>
+<retval type='B'/>
+</method>
+<method selector='allowsReordering'>
+<retval type='B'/>
+</method>
+<method selector='animates'>
+<retval type='B'/>
+</method>
+<method selector='canControlQuickLookPanel'>
+<retval type='B'/>
+</method>
+<method selector='constrainsToOriginalSize'>
+<retval type='B'/>
+</method>
+<method selector='isGroupExpandedAtIndex:'>
+<retval type='B'/>
+</method>
+<method selector='setAllowsDroppingOnItems:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setAllowsEmptySelection:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setAllowsMultipleSelection:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setAllowsReordering:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setAnimates:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setCanControlQuickLookPanel:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setConstrainsToOriginalSize:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setSelectionIndexes:byExtendingSelection:'>
+<arg type='B' index='1'/>
+</method>
+</class>
+<class name='IKImageView'>
+<method selector='autohidesScrollers'>
+<retval type='B'/>
+</method>
+<method selector='autoresizes'>
+<retval type='B'/>
+</method>
+<method selector='doubleClickOpensImageEditPanel'>
+<retval type='B'/>
+</method>
+<method selector='editable'>
+<retval type='B'/>
+</method>
+<method selector='hasHorizontalScroller'>
+<retval type='B'/>
+</method>
+<method selector='hasVerticalScroller'>
+<retval type='B'/>
+</method>
+<method selector='setAutohidesScrollers:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setAutoresizes:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setDoubleClickOpensImageEditPanel:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setEditable:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setHasHorizontalScroller:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setHasVerticalScroller:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setSupportsDragAndDrop:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='supportsDragAndDrop'>
+<retval type='B'/>
+</method>
+</class>
+<class name='IKPictureTaker'>
+<method selector='mirroring'>
+<retval type='B'/>
+</method>
+<method selector='setMirroring:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='IKScannerDeviceView'>
+<method selector='displaysDownloadsDirectoryControl'>
+<retval type='B'/>
+</method>
+<method selector='displaysPostProcessApplicationControl'>
+<retval type='B'/>
+</method>
+<method selector='hasDisplayModeAdvanced'>
+<retval type='B'/>
+</method>
+<method selector='hasDisplayModeSimple'>
+<retval type='B'/>
+</method>
+<method selector='setDisplaysDownloadsDirectoryControl:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setDisplaysPostProcessApplicationControl:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setHasDisplayModeAdvanced:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setHasDisplayModeSimple:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='IKSlideshow'>
+<method class_method='true' selector='canExportToApplication:'>
+<retval type='B'/>
+</method>
+</class>
+<class name='NSObject'>
+<method selector='canExportSlideshowItemAtIndex:toApplication:'>
+<retval type='B'/>
+</method>
+<method selector='hasAdjustMode'>
+<retval type='B'/>
+</method>
+<method selector='hasDetailsMode'>
+<retval type='B'/>
+</method>
+<method selector='hasEffectsMode'>
+<retval type='B'/>
+</method>
+<method selector='imageBrowser:moveItemsAtIndexes:toIndex:'>
+<retval type='B'/>
+</method>
+<method selector='isSelectable'>
+<retval type='B'/>
+</method>
+<method selector='saveOptions:shouldShowUTType:'>
+<retval type='B'/>
+</method>
+</class>
+<informal_protocol name='IKCameraDeviceViewDelegate'>
+<method type='v28@0:4@8@12@16@20@24' selector='cameraDeviceView:didDownloadFile:location:fileData:error:' type64='v56@0:8@16@24@32@40@48'/>
+<method type='v16@0:4@8@12' selector='cameraDeviceView:didEncounterError:' type64='v32@0:8@16@24'/>
+<method type='v12@0:4@8' selector='cameraDeviceViewSelectionDidChange:' type64='v24@0:8@16'/>
+</informal_protocol>
+<informal_protocol name='IKDeviceBrowserViewDelegate'>
+<method type='v16@0:4@8@12' selector='deviceBrowserView:didEncounterError:' type64='v32@0:8@16@24'/>
+<method type='v16@0:4@8@12' selector='deviceBrowserView:selectionDidChange:' type64='v32@0:8@16@24'/>
+</informal_protocol>
+<informal_protocol name='IKFilterCustomUIProvider'>
+<method type='@16@0:4@8@12' selector='provideViewForUIConfiguration:excludedKeys:' type64='@32@0:8@16@24'/>
+</informal_protocol>
+<informal_protocol name='IKImageBrowserDataSource'>
+<method type='@16@0:4@8I12' selector='imageBrowser:groupAtIndex:' type64='@32@0:8@16Q24'/>
+<method type='@16@0:4@8I12' selector='imageBrowser:itemAtIndex:' type64='@32@0:8@16Q24'/>
+<method type='B20@0:4@8@12I16' selector='imageBrowser:moveItemsAtIndexes:toIndex:' type64='B40@0:8@16@24Q32'/>
+<method type='v16@0:4@8@12' selector='imageBrowser:removeItemsAtIndexes:' type64='v32@0:8@16@24'/>
+<method type='I20@0:4@8@12@16' selector='imageBrowser:writeItemsAtIndexes:toPasteboard:' type64='Q40@0:8@16@24@32'/>
+<method type='I12@0:4@8' selector='numberOfGroupsInImageBrowser:' type64='Q24@0:8@16'/>
+<method type='I12@0:4@8' selector='numberOfItemsInImageBrowser:' type64='Q24@0:8@16'/>
+</informal_protocol>
+<informal_protocol name='IKImageBrowserDelegate'>
+<method type='v16@0:4@8@12' selector='imageBrowser:backgroundWasRightClickedWithEvent:' type64='v32@0:8@16@24'/>
+<method type='v16@0:4@8I12' selector='imageBrowser:cellWasDoubleClickedAtIndex:' type64='v32@0:8@16Q24'/>
+<method type='v20@0:4@8I12@16' selector='imageBrowser:cellWasRightClickedAtIndex:withEvent:' type64='v40@0:8@16Q24@32'/>
+<method type='v12@0:4@8' selector='imageBrowserSelectionDidChange:' type64='v24@0:8@16'/>
+</informal_protocol>
+<informal_protocol name='IKImageBrowserItem'>
+<method type='@8@0:4' selector='imageRepresentation' type64='@16@0:8'/>
+<method type='@8@0:4' selector='imageRepresentationType' type64='@16@0:8'/>
+<method type='@8@0:4' selector='imageSubtitle' type64='@16@0:8'/>
+<method type='@8@0:4' selector='imageTitle' type64='@16@0:8'/>
+<method type='@8@0:4' selector='imageUID' type64='@16@0:8'/>
+<method type='I8@0:4' selector='imageVersion' type64='Q16@0:8'/>
+<method type='B8@0:4' selector='isSelectable' type64='B16@0:8'/>
+</informal_protocol>
+<informal_protocol name='IKImageEditPanelDataSource'>
+<method type='B8@0:4' selector='hasAdjustMode' type64='B16@0:8'/>
+<method type='B8@0:4' selector='hasDetailsMode' type64='B16@0:8'/>
+<method type='B8@0:4' selector='hasEffectsMode' type64='B16@0:8'/>
+<method type='^{CGImage=}8@0:4' selector='image' type64='^{CGImage=}16@0:8'/>
+<method type='@8@0:4' selector='imageProperties' type64='@16@0:8'/>
+<method type='v16@0:4^{CGImage=}8@12' selector='setImage:imageProperties:' type64='v32@0:8^{CGImage=}16@24'/>
+<method type='^{CGImage=}16@0:4{_NSSize=ff}8' selector='thumbnailWithMaximumSize:' type64='^{CGImage=}32@0:8{CGSize=dd}16'/>
+</informal_protocol>
+<informal_protocol name='IKSaveOptionsDelegate'>
+<method type='B16@0:4@8@12' selector='saveOptions:shouldShowUTType:' type64='B32@0:8@16@24'/>
+</informal_protocol>
+<informal_protocol name='IKScannerDeviceViewDelegate'>
+<method type='v16@0:4@8@12' selector='scannerDeviceView:didEncounterError:' type64='v32@0:8@16@24'/>
+<method type='v24@0:4@8@12@16@20' selector='scannerDeviceView:didScanToBandData:scanInfo:error:' type64='v48@0:8@16@24@32@40'/>
+<method type='v20@0:4@8@12@16' selector='scannerDeviceView:didScanToURL:error:' type64='v40@0:8@16@24@32'/>
+<method type='v24@0:4@8@12@16@20' selector='scannerDeviceView:didScanToURL:fileData:error:' type64='v48@0:8@16@24@32@40'/>
+</informal_protocol>
+<informal_protocol name='IKSlideshowDataSource'>
+<method type='B16@0:4I8@12' selector='canExportSlideshowItemAtIndex:toApplication:' type64='B32@0:8Q16@24'/>
+<method type='@12@0:4I8' selector='nameOfSlideshowItemAtIndex:' type64='@24@0:8Q16'/>
+<method type='I8@0:4' selector='numberOfSlideshowItems' type64='Q16@0:8'/>
+<method type='v12@0:4I8' selector='slideshowDidChangeCurrentIndex:' type64='v24@0:8Q16'/>
+<method type='v8@0:4' selector='slideshowDidStop' type64='v16@0:8'/>
+<method type='@12@0:4I8' selector='slideshowItemAtIndex:' type64='@24@0:8Q16'/>
+<method type='v8@0:4' selector='slideshowWillStart' type64='v16@0:8'/>
+</informal_protocol>
+</signatures>

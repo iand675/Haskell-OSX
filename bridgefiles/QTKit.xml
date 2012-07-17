@@ -1,0 +1,1159 @@
+<?xml version='1.0'?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version='1.0'>
+<depends_on path='/System/Library/Frameworks/IOSurface.framework'/>
+<depends_on path='/System/Library/Frameworks/AudioToolbox.framework'/>
+<depends_on path='/System/Library/Frameworks/CoreMedia.framework'/>
+<depends_on path='/System/Library/Frameworks/Foundation.framework'/>
+<depends_on path='/System/Library/Frameworks/AppKit.framework'/>
+<depends_on path='/System/Library/Frameworks/IOKit.framework'/>
+<depends_on path='/System/Library/Frameworks/CoreAudio.framework'/>
+<depends_on path='/System/Library/Frameworks/OpenGL.framework'/>
+<depends_on path='/System/Library/Frameworks/QuartzCore.framework'/>
+<depends_on path='/System/Library/Frameworks/Carbon.framework'/>
+<depends_on path='/System/Library/Frameworks/CoreMediaIO.framework'/>
+<depends_on path='/System/Library/Frameworks/CoreServices.framework'/>
+<depends_on path='/System/Library/Frameworks/CoreFoundation.framework'/>
+<depends_on path='/System/Library/Frameworks/ApplicationServices.framework'/>
+<depends_on path='/System/Library/Frameworks/CoreVideo.framework'/>
+<struct type='{_QTTime=&quot;timeValue&quot;q&quot;timeScale&quot;l&quot;flags&quot;l}' type64='{_QTTime=&quot;timeValue&quot;q&quot;timeScale&quot;q&quot;flags&quot;q}' name='QTTime'/>
+<struct type='{_QTTimeRange=&quot;time&quot;{_QTTime=&quot;timeValue&quot;q&quot;timeScale&quot;l&quot;flags&quot;l}&quot;duration&quot;{_QTTime=&quot;timeValue&quot;q&quot;timeScale&quot;l&quot;flags&quot;l}}' type64='{_QTTimeRange=&quot;time&quot;{_QTTime=&quot;timeValue&quot;q&quot;timeScale&quot;q&quot;flags&quot;q}&quot;duration&quot;{_QTTime=&quot;timeValue&quot;q&quot;timeScale&quot;q&quot;flags&quot;q}}' name='QTTimeRange'/>
+<constant type='@' name='QTAddImageCodecQuality'/>
+<constant type='@' name='QTAddImageCodecType'/>
+<constant type='@' name='QTCaptureConnectionAttributeDidChangeNotification'/>
+<constant type='@' name='QTCaptureConnectionAttributeWillChangeNotification'/>
+<constant type='@' name='QTCaptureConnectionAudioAveragePowerLevelsAttribute'/>
+<constant type='@' name='QTCaptureConnectionAudioMasterVolumeAttribute'/>
+<constant type='@' name='QTCaptureConnectionAudioPeakHoldLevelsAttribute'/>
+<constant type='@' name='QTCaptureConnectionAudioVolumesAttribute'/>
+<constant type='@' name='QTCaptureConnectionChangedAttributeKey'/>
+<constant type='@' name='QTCaptureConnectionEnabledAudioChannelsAttribute'/>
+<constant type='@' name='QTCaptureConnectionFormatDescriptionDidChangeNotification'/>
+<constant type='@' name='QTCaptureConnectionFormatDescriptionWillChangeNotification'/>
+<constant type='@' name='QTCaptureDeviceAVCTransportControlsAttribute'/>
+<constant type='@' name='QTCaptureDeviceAVCTransportControlsPlaybackModeKey'/>
+<constant type='@' name='QTCaptureDeviceAVCTransportControlsSpeedKey'/>
+<constant type='@' name='QTCaptureDeviceAttributeDidChangeNotification'/>
+<constant type='@' name='QTCaptureDeviceAttributeWillChangeNotification'/>
+<constant type='@' name='QTCaptureDeviceAvailableInputSourcesAttribute'/>
+<constant type='@' name='QTCaptureDeviceChangedAttributeKey'/>
+<constant type='@' name='QTCaptureDeviceFormatDescriptionsDidChangeNotification'/>
+<constant type='@' name='QTCaptureDeviceFormatDescriptionsWillChangeNotification'/>
+<constant type='@' name='QTCaptureDeviceInputSourceIdentifierAttribute'/>
+<constant type='@' name='QTCaptureDeviceInputSourceIdentifierKey'/>
+<constant type='@' name='QTCaptureDeviceInputSourceLocalizedDisplayNameKey'/>
+<constant type='@' name='QTCaptureDeviceLinkedDevicesAttribute'/>
+<constant type='@' name='QTCaptureDeviceSuspendedAttribute'/>
+<constant type='@' name='QTCaptureDeviceWasConnectedNotification'/>
+<constant type='@' name='QTCaptureDeviceWasDisconnectedNotification'/>
+<constant type='@' name='QTCaptureSessionErrorKey'/>
+<constant type='@' name='QTCaptureSessionRuntimeErrorNotification'/>
+<constant type='@' name='QTDataReferenceTypeFile'/>
+<constant type='@' name='QTDataReferenceTypeHandle'/>
+<constant type='@' name='QTDataReferenceTypePointer'/>
+<constant type='@' name='QTDataReferenceTypeResource'/>
+<constant type='@' name='QTDataReferenceTypeURL'/>
+<constant type='@' name='QTDisallowedForInitializationPurposeException'/>
+<constant type='@' name='QTErrorCaptureInputKey'/>
+<constant type='@' name='QTErrorCaptureOutputKey'/>
+<constant type='@' name='QTErrorDeviceKey'/>
+<constant type='@' name='QTErrorExcludingDeviceKey'/>
+<constant type='@' name='QTErrorFileSizeKey'/>
+<constant type='@' name='QTErrorRecordingSuccesfullyFinishedKey'/>
+<constant type='@' name='QTErrorRecordingSuccessfullyFinishedKey'/>
+<constant type='@' name='QTErrorTimeKey'/>
+<constant type='@' name='QTExportOptionsAppleM4A'/>
+<constant type='@' name='QTExportOptionsAppleM4V480pSD'/>
+<constant type='@' name='QTExportOptionsAppleM4V720pHD'/>
+<constant type='@' name='QTExportOptionsAppleM4VAppleTV'/>
+<constant type='@' name='QTExportOptionsAppleM4VCellular'/>
+<constant type='@' name='QTExportOptionsAppleM4VWiFi'/>
+<constant type='@' name='QTExportOptionsAppleM4ViPod'/>
+<constant type='@' name='QTExportOptionsQuickTimeMovie1080p'/>
+<constant type='@' name='QTExportOptionsQuickTimeMovie480p'/>
+<constant type='@' name='QTExportOptionsQuickTimeMovie720p'/>
+<constant type='@' name='QTFormatDescriptionAudioChannelLayoutAttribute'/>
+<constant type='@' name='QTFormatDescriptionAudioMagicCookieAttribute'/>
+<constant type='@' name='QTFormatDescriptionAudioStreamBasicDescriptionAttribute'/>
+<constant type='@' name='QTFormatDescriptionVideoCleanApertureDisplaySizeAttribute'/>
+<constant type='@' name='QTFormatDescriptionVideoEncodedPixelsSizeAttribute'/>
+<constant type='@' name='QTFormatDescriptionVideoProductionApertureDisplaySizeAttribute'/>
+<constant type='{_QTTime=qll}' type64='{_QTTime=qqq}' name='QTIndefiniteTime'/>
+<constant type='@' name='QTKitErrorDomain'/>
+<constant type='@' name='QTMediaCharacteristicAudio'/>
+<constant type='@' name='QTMediaCharacteristicCanSendVideo'/>
+<constant type='@' name='QTMediaCharacteristicCanStep'/>
+<constant type='@' name='QTMediaCharacteristicHasNoDuration'/>
+<constant type='@' name='QTMediaCharacteristicHasSkinData'/>
+<constant type='@' name='QTMediaCharacteristicHasVideoFrameRate'/>
+<constant type='@' name='QTMediaCharacteristicNonLinear'/>
+<constant type='@' name='QTMediaCharacteristicProvidesActions'/>
+<constant type='@' name='QTMediaCharacteristicProvidesKeyFocus'/>
+<constant type='@' name='QTMediaCharacteristicVisual'/>
+<constant type='@' name='QTMediaCreationTimeAttribute'/>
+<constant type='@' name='QTMediaDurationAttribute'/>
+<constant type='@' name='QTMediaModificationTimeAttribute'/>
+<constant type='@' name='QTMediaQualityAttribute'/>
+<constant type='@' name='QTMediaSampleCountAttribute'/>
+<constant type='@' name='QTMediaTimeScaleAttribute'/>
+<constant type='@' name='QTMediaType3D'/>
+<constant type='@' name='QTMediaTypeAttribute'/>
+<constant type='@' name='QTMediaTypeBase'/>
+<constant type='@' name='QTMediaTypeClosedCaption'/>
+<constant type='@' name='QTMediaTypeFlash'/>
+<constant type='@' name='QTMediaTypeHint'/>
+<constant type='@' name='QTMediaTypeMPEG'/>
+<constant type='@' name='QTMediaTypeMovie'/>
+<constant type='@' name='QTMediaTypeMusic'/>
+<constant type='@' name='QTMediaTypeMuxed'/>
+<constant type='@' name='QTMediaTypeQTVR'/>
+<constant type='@' name='QTMediaTypeQuartzComposer'/>
+<constant type='@' name='QTMediaTypeSkin'/>
+<constant type='@' name='QTMediaTypeSound'/>
+<constant type='@' name='QTMediaTypeSprite'/>
+<constant type='@' name='QTMediaTypeStream'/>
+<constant type='@' name='QTMediaTypeSubtitle'/>
+<constant type='@' name='QTMediaTypeText'/>
+<constant type='@' name='QTMediaTypeTimeCode'/>
+<constant type='@' name='QTMediaTypeTween'/>
+<constant type='@' name='QTMediaTypeVideo'/>
+<constant type='@' name='QTMetadata3GPUserDataKeyAuthor'/>
+<constant type='@' name='QTMetadata3GPUserDataKeyCopyright'/>
+<constant type='@' name='QTMetadata3GPUserDataKeyDescription'/>
+<constant type='@' name='QTMetadata3GPUserDataKeyGenre'/>
+<constant type='@' name='QTMetadata3GPUserDataKeyLocation'/>
+<constant type='@' name='QTMetadata3GPUserDataKeyPerformer'/>
+<constant type='@' name='QTMetadata3GPUserDataKeyRecordingYear'/>
+<constant type='@' name='QTMetadata3GPUserDataKeyTitle'/>
+<constant type='@' name='QTMetadataCommonKeyAlbumName'/>
+<constant type='@' name='QTMetadataCommonKeyArtist'/>
+<constant type='@' name='QTMetadataCommonKeyArtwork'/>
+<constant type='@' name='QTMetadataCommonKeyAuthor'/>
+<constant type='@' name='QTMetadataCommonKeyComment'/>
+<constant type='@' name='QTMetadataCommonKeyContributor'/>
+<constant type='@' name='QTMetadataCommonKeyCopyrights'/>
+<constant type='@' name='QTMetadataCommonKeyCreationDate'/>
+<constant type='@' name='QTMetadataCommonKeyCreator'/>
+<constant type='@' name='QTMetadataCommonKeyDescription'/>
+<constant type='@' name='QTMetadataCommonKeyFormat'/>
+<constant type='@' name='QTMetadataCommonKeyIdentifier'/>
+<constant type='@' name='QTMetadataCommonKeyLanguage'/>
+<constant type='@' name='QTMetadataCommonKeyLastModifiedDate'/>
+<constant type='@' name='QTMetadataCommonKeyLocation'/>
+<constant type='@' name='QTMetadataCommonKeyMake'/>
+<constant type='@' name='QTMetadataCommonKeyModel'/>
+<constant type='@' name='QTMetadataCommonKeyPublisher'/>
+<constant type='@' name='QTMetadataCommonKeyRelation'/>
+<constant type='@' name='QTMetadataCommonKeySoftware'/>
+<constant type='@' name='QTMetadataCommonKeySource'/>
+<constant type='@' name='QTMetadataCommonKeySubject'/>
+<constant type='@' name='QTMetadataCommonKeyTitle'/>
+<constant type='@' name='QTMetadataCommonKeyType'/>
+<constant type='@' name='QTMetadataFormatID3Metadata'/>
+<constant type='@' name='QTMetadataFormatQuickTimeMetadata'/>
+<constant type='@' name='QTMetadataFormatQuickTimeUserData'/>
+<constant type='@' name='QTMetadataFormatiTunesMetadata'/>
+<constant type='@' name='QTMetadataID3MetadataKeyAlbumSortOrder'/>
+<constant type='@' name='QTMetadataID3MetadataKeyAlbumTitle'/>
+<constant type='@' name='QTMetadataID3MetadataKeyAttachedPicture'/>
+<constant type='@' name='QTMetadataID3MetadataKeyAudioEncryption'/>
+<constant type='@' name='QTMetadataID3MetadataKeyAudioSeekPointIndex'/>
+<constant type='@' name='QTMetadataID3MetadataKeyBand'/>
+<constant type='@' name='QTMetadataID3MetadataKeyBeatsPerMinute'/>
+<constant type='@' name='QTMetadataID3MetadataKeyComments'/>
+<constant type='@' name='QTMetadataID3MetadataKeyCommercialInformation'/>
+<constant type='@' name='QTMetadataID3MetadataKeyCommerical'/>
+<constant type='@' name='QTMetadataID3MetadataKeyComposer'/>
+<constant type='@' name='QTMetadataID3MetadataKeyConductor'/>
+<constant type='@' name='QTMetadataID3MetadataKeyContentGroupDescription'/>
+<constant type='@' name='QTMetadataID3MetadataKeyContentType'/>
+<constant type='@' name='QTMetadataID3MetadataKeyCopyright'/>
+<constant type='@' name='QTMetadataID3MetadataKeyCopyrightInformation'/>
+<constant type='@' name='QTMetadataID3MetadataKeyDate'/>
+<constant type='@' name='QTMetadataID3MetadataKeyEncodedBy'/>
+<constant type='@' name='QTMetadataID3MetadataKeyEncodedWith'/>
+<constant type='@' name='QTMetadataID3MetadataKeyEncodingTime'/>
+<constant type='@' name='QTMetadataID3MetadataKeyEncryption'/>
+<constant type='@' name='QTMetadataID3MetadataKeyEqualization'/>
+<constant type='@' name='QTMetadataID3MetadataKeyEqualization2'/>
+<constant type='@' name='QTMetadataID3MetadataKeyEventTimingCodes'/>
+<constant type='@' name='QTMetadataID3MetadataKeyFileOwner'/>
+<constant type='@' name='QTMetadataID3MetadataKeyFileType'/>
+<constant type='@' name='QTMetadataID3MetadataKeyGeneralEncapsulatedObject'/>
+<constant type='@' name='QTMetadataID3MetadataKeyGroupIdentifier'/>
+<constant type='@' name='QTMetadataID3MetadataKeyInitialKey'/>
+<constant type='@' name='QTMetadataID3MetadataKeyInternationalStandardRecordingCode'/>
+<constant type='@' name='QTMetadataID3MetadataKeyInternetRadioStationName'/>
+<constant type='@' name='QTMetadataID3MetadataKeyInternetRadioStationOwner'/>
+<constant type='@' name='QTMetadataID3MetadataKeyInvolvedPeopleList_v23'/>
+<constant type='@' name='QTMetadataID3MetadataKeyInvolvedPeopleList_v24'/>
+<constant type='@' name='QTMetadataID3MetadataKeyLanguage'/>
+<constant type='@' name='QTMetadataID3MetadataKeyLeadPerformer'/>
+<constant type='@' name='QTMetadataID3MetadataKeyLength'/>
+<constant type='@' name='QTMetadataID3MetadataKeyLink'/>
+<constant type='@' name='QTMetadataID3MetadataKeyLyricist'/>
+<constant type='@' name='QTMetadataID3MetadataKeyMPEGLocationLookupTable'/>
+<constant type='@' name='QTMetadataID3MetadataKeyMediaType'/>
+<constant type='@' name='QTMetadataID3MetadataKeyModifiedBy'/>
+<constant type='@' name='QTMetadataID3MetadataKeyMood'/>
+<constant type='@' name='QTMetadataID3MetadataKeyMusicCDIdentifier'/>
+<constant type='@' name='QTMetadataID3MetadataKeyMusicianCreditsList'/>
+<constant type='@' name='QTMetadataID3MetadataKeyOfficialArtistWebpage'/>
+<constant type='@' name='QTMetadataID3MetadataKeyOfficialAudioFileWebpage'/>
+<constant type='@' name='QTMetadataID3MetadataKeyOfficialAudioSourceWebpage'/>
+<constant type='@' name='QTMetadataID3MetadataKeyOfficialInternetRadioStationHomepage'/>
+<constant type='@' name='QTMetadataID3MetadataKeyOfficialPublisherWebpage'/>
+<constant type='@' name='QTMetadataID3MetadataKeyOriginalAlbumTitle'/>
+<constant type='@' name='QTMetadataID3MetadataKeyOriginalArtist'/>
+<constant type='@' name='QTMetadataID3MetadataKeyOriginalFilename'/>
+<constant type='@' name='QTMetadataID3MetadataKeyOriginalLyricist'/>
+<constant type='@' name='QTMetadataID3MetadataKeyOriginalReleaseTime'/>
+<constant type='@' name='QTMetadataID3MetadataKeyOriginalReleaseYear'/>
+<constant type='@' name='QTMetadataID3MetadataKeyOwnership'/>
+<constant type='@' name='QTMetadataID3MetadataKeyPartOfASet'/>
+<constant type='@' name='QTMetadataID3MetadataKeyPayment'/>
+<constant type='@' name='QTMetadataID3MetadataKeyPerformerSortOrder'/>
+<constant type='@' name='QTMetadataID3MetadataKeyPlayCounter'/>
+<constant type='@' name='QTMetadataID3MetadataKeyPlaylistDelay'/>
+<constant type='@' name='QTMetadataID3MetadataKeyPopularimeter'/>
+<constant type='@' name='QTMetadataID3MetadataKeyPositionSynchronization'/>
+<constant type='@' name='QTMetadataID3MetadataKeyPrivate'/>
+<constant type='@' name='QTMetadataID3MetadataKeyProducedNotice'/>
+<constant type='@' name='QTMetadataID3MetadataKeyPublisher'/>
+<constant type='@' name='QTMetadataID3MetadataKeyRecommendedBufferSize'/>
+<constant type='@' name='QTMetadataID3MetadataKeyRecordingDates'/>
+<constant type='@' name='QTMetadataID3MetadataKeyRecordingTime'/>
+<constant type='@' name='QTMetadataID3MetadataKeyRelativeVolumeAdjustment'/>
+<constant type='@' name='QTMetadataID3MetadataKeyRelativeVolumeAdjustment2'/>
+<constant type='@' name='QTMetadataID3MetadataKeyReleaseTime'/>
+<constant type='@' name='QTMetadataID3MetadataKeyReverb'/>
+<constant type='@' name='QTMetadataID3MetadataKeySeek'/>
+<constant type='@' name='QTMetadataID3MetadataKeySetSubtitle'/>
+<constant type='@' name='QTMetadataID3MetadataKeySignature'/>
+<constant type='@' name='QTMetadataID3MetadataKeySize'/>
+<constant type='@' name='QTMetadataID3MetadataKeySubTitle'/>
+<constant type='@' name='QTMetadataID3MetadataKeySynchronizedLyric'/>
+<constant type='@' name='QTMetadataID3MetadataKeySynchronizedTempoCodes'/>
+<constant type='@' name='QTMetadataID3MetadataKeyTaggingTime'/>
+<constant type='@' name='QTMetadataID3MetadataKeyTermsOfUse'/>
+<constant type='@' name='QTMetadataID3MetadataKeyTime'/>
+<constant type='@' name='QTMetadataID3MetadataKeyTitleDescription'/>
+<constant type='@' name='QTMetadataID3MetadataKeyTitleSortOrder'/>
+<constant type='@' name='QTMetadataID3MetadataKeyTrackNumber'/>
+<constant type='@' name='QTMetadataID3MetadataKeyUniqueFileIdentifier'/>
+<constant type='@' name='QTMetadataID3MetadataKeyUnsynchronizedLyric'/>
+<constant type='@' name='QTMetadataID3MetadataKeyUserText'/>
+<constant type='@' name='QTMetadataID3MetadataKeyUserURL'/>
+<constant type='@' name='QTMetadataID3MetadataKeyYear'/>
+<constant type='@' name='QTMetadataISOUserDataKeyCopyright'/>
+<constant type='@' name='QTMetadataKeySpaceCommon'/>
+<constant type='@' name='QTMetadataKeySpaceID3'/>
+<constant type='@' name='QTMetadataKeySpaceQuickTimeMetadata'/>
+<constant type='@' name='QTMetadataKeySpaceQuickTimeUserData'/>
+<constant type='@' name='QTMetadataKeySpaceiTunes'/>
+<constant type='@' name='QTMetadataQuickTimeMetadataKeyAlbum'/>
+<constant type='@' name='QTMetadataQuickTimeMetadataKeyArranger'/>
+<constant type='@' name='QTMetadataQuickTimeMetadataKeyArtist'/>
+<constant type='@' name='QTMetadataQuickTimeMetadataKeyArtwork'/>
+<constant type='@' name='QTMetadataQuickTimeMetadataKeyAuthor'/>
+<constant type='@' name='QTMetadataQuickTimeMetadataKeyComment'/>
+<constant type='@' name='QTMetadataQuickTimeMetadataKeyComposer'/>
+<constant type='@' name='QTMetadataQuickTimeMetadataKeyCopyright'/>
+<constant type='@' name='QTMetadataQuickTimeMetadataKeyCreationDate'/>
+<constant type='@' name='QTMetadataQuickTimeMetadataKeyCredits'/>
+<constant type='@' name='QTMetadataQuickTimeMetadataKeyDescription'/>
+<constant type='@' name='QTMetadataQuickTimeMetadataKeyDirector'/>
+<constant type='@' name='QTMetadataQuickTimeMetadataKeyDisplayName'/>
+<constant type='@' name='QTMetadataQuickTimeMetadataKeyEncodedBy'/>
+<constant type='@' name='QTMetadataQuickTimeMetadataKeyGenre'/>
+<constant type='@' name='QTMetadataQuickTimeMetadataKeyInformation'/>
+<constant type='@' name='QTMetadataQuickTimeMetadataKeyKeywords'/>
+<constant type='@' name='QTMetadataQuickTimeMetadataKeyLocationISO6709'/>
+<constant type='@' name='QTMetadataQuickTimeMetadataKeyMake'/>
+<constant type='@' name='QTMetadataQuickTimeMetadataKeyModel'/>
+<constant type='@' name='QTMetadataQuickTimeMetadataKeyOriginalArtist'/>
+<constant type='@' name='QTMetadataQuickTimeMetadataKeyPerformer'/>
+<constant type='@' name='QTMetadataQuickTimeMetadataKeyPhonogramRights'/>
+<constant type='@' name='QTMetadataQuickTimeMetadataKeyProducer'/>
+<constant type='@' name='QTMetadataQuickTimeMetadataKeyPublisher'/>
+<constant type='@' name='QTMetadataQuickTimeMetadataKeySoftware'/>
+<constant type='@' name='QTMetadataQuickTimeMetadataKeyYear'/>
+<constant type='@' name='QTMetadataQuickTimeMetadataKeyiXML'/>
+<constant type='@' name='QTMetadataQuickTimeUserDataKeyAlbum'/>
+<constant type='@' name='QTMetadataQuickTimeUserDataKeyArranger'/>
+<constant type='@' name='QTMetadataQuickTimeUserDataKeyArtist'/>
+<constant type='@' name='QTMetadataQuickTimeUserDataKeyAuthor'/>
+<constant type='@' name='QTMetadataQuickTimeUserDataKeyChapter'/>
+<constant type='@' name='QTMetadataQuickTimeUserDataKeyComment'/>
+<constant type='@' name='QTMetadataQuickTimeUserDataKeyComposer'/>
+<constant type='@' name='QTMetadataQuickTimeUserDataKeyCopyright'/>
+<constant type='@' name='QTMetadataQuickTimeUserDataKeyCreationDate'/>
+<constant type='@' name='QTMetadataQuickTimeUserDataKeyCredits'/>
+<constant type='@' name='QTMetadataQuickTimeUserDataKeyDescription'/>
+<constant type='@' name='QTMetadataQuickTimeUserDataKeyDirector'/>
+<constant type='@' name='QTMetadataQuickTimeUserDataKeyDisclaimer'/>
+<constant type='@' name='QTMetadataQuickTimeUserDataKeyEncodedBy'/>
+<constant type='@' name='QTMetadataQuickTimeUserDataKeyFullName'/>
+<constant type='@' name='QTMetadataQuickTimeUserDataKeyGenre'/>
+<constant type='@' name='QTMetadataQuickTimeUserDataKeyHostComputer'/>
+<constant type='@' name='QTMetadataQuickTimeUserDataKeyInformation'/>
+<constant type='@' name='QTMetadataQuickTimeUserDataKeyKeywords'/>
+<constant type='@' name='QTMetadataQuickTimeUserDataKeyLocationISO6709'/>
+<constant type='@' name='QTMetadataQuickTimeUserDataKeyMake'/>
+<constant type='@' name='QTMetadataQuickTimeUserDataKeyModel'/>
+<constant type='@' name='QTMetadataQuickTimeUserDataKeyOriginalArtist'/>
+<constant type='@' name='QTMetadataQuickTimeUserDataKeyOriginalFormat'/>
+<constant type='@' name='QTMetadataQuickTimeUserDataKeyOriginalSource'/>
+<constant type='@' name='QTMetadataQuickTimeUserDataKeyPerformers'/>
+<constant type='@' name='QTMetadataQuickTimeUserDataKeyPhonogramRights'/>
+<constant type='@' name='QTMetadataQuickTimeUserDataKeyProducer'/>
+<constant type='@' name='QTMetadataQuickTimeUserDataKeyProduct'/>
+<constant type='@' name='QTMetadataQuickTimeUserDataKeyPublisher'/>
+<constant type='@' name='QTMetadataQuickTimeUserDataKeySoftware'/>
+<constant type='@' name='QTMetadataQuickTimeUserDataKeySpecialPlaybackRequirements'/>
+<constant type='@' name='QTMetadataQuickTimeUserDataKeyTrack'/>
+<constant type='@' name='QTMetadataQuickTimeUserDataKeyTrackName'/>
+<constant type='@' name='QTMetadataQuickTimeUserDataKeyURLLink'/>
+<constant type='@' name='QTMetadataQuickTimeUserDataKeyWarning'/>
+<constant type='@' name='QTMetadataQuickTimeUserDataKeyWriter'/>
+<constant type='@' name='QTMetadataiTunesMetadataKeyAccountKind'/>
+<constant type='@' name='QTMetadataiTunesMetadataKeyAcknowledgement'/>
+<constant type='@' name='QTMetadataiTunesMetadataKeyAlbum'/>
+<constant type='@' name='QTMetadataiTunesMetadataKeyAlbumArtist'/>
+<constant type='@' name='QTMetadataiTunesMetadataKeyAppleID'/>
+<constant type='@' name='QTMetadataiTunesMetadataKeyArranger'/>
+<constant type='@' name='QTMetadataiTunesMetadataKeyArtDirector'/>
+<constant type='@' name='QTMetadataiTunesMetadataKeyArtist'/>
+<constant type='@' name='QTMetadataiTunesMetadataKeyArtistID'/>
+<constant type='@' name='QTMetadataiTunesMetadataKeyAuthor'/>
+<constant type='@' name='QTMetadataiTunesMetadataKeyBeatsPerMin'/>
+<constant type='@' name='QTMetadataiTunesMetadataKeyComposer'/>
+<constant type='@' name='QTMetadataiTunesMetadataKeyConductor'/>
+<constant type='@' name='QTMetadataiTunesMetadataKeyContentRating'/>
+<constant type='@' name='QTMetadataiTunesMetadataKeyCopyright'/>
+<constant type='@' name='QTMetadataiTunesMetadataKeyCoverArt'/>
+<constant type='@' name='QTMetadataiTunesMetadataKeyCredits'/>
+<constant type='@' name='QTMetadataiTunesMetadataKeyDescription'/>
+<constant type='@' name='QTMetadataiTunesMetadataKeyDirector'/>
+<constant type='@' name='QTMetadataiTunesMetadataKeyDiscCompilation'/>
+<constant type='@' name='QTMetadataiTunesMetadataKeyDiscNumber'/>
+<constant type='@' name='QTMetadataiTunesMetadataKeyEQ'/>
+<constant type='@' name='QTMetadataiTunesMetadataKeyEncodedBy'/>
+<constant type='@' name='QTMetadataiTunesMetadataKeyEncodingTool'/>
+<constant type='@' name='QTMetadataiTunesMetadataKeyExecProducer'/>
+<constant type='@' name='QTMetadataiTunesMetadataKeyGenreID'/>
+<constant type='@' name='QTMetadataiTunesMetadataKeyGrouping'/>
+<constant type='@' name='QTMetadataiTunesMetadataKeyLinerNotes'/>
+<constant type='@' name='QTMetadataiTunesMetadataKeyLyrics'/>
+<constant type='@' name='QTMetadataiTunesMetadataKeyOnlineExtras'/>
+<constant type='@' name='QTMetadataiTunesMetadataKeyOriginalArtist'/>
+<constant type='@' name='QTMetadataiTunesMetadataKeyPerformer'/>
+<constant type='@' name='QTMetadataiTunesMetadataKeyPhonogramRights'/>
+<constant type='@' name='QTMetadataiTunesMetadataKeyPlaylistID'/>
+<constant type='@' name='QTMetadataiTunesMetadataKeyPredefinedGenre'/>
+<constant type='@' name='QTMetadataiTunesMetadataKeyProducer'/>
+<constant type='@' name='QTMetadataiTunesMetadataKeyPublisher'/>
+<constant type='@' name='QTMetadataiTunesMetadataKeyRecordCompany'/>
+<constant type='@' name='QTMetadataiTunesMetadataKeyReleaseDate'/>
+<constant type='@' name='QTMetadataiTunesMetadataKeySoloist'/>
+<constant type='@' name='QTMetadataiTunesMetadataKeySongID'/>
+<constant type='@' name='QTMetadataiTunesMetadataKeySongName'/>
+<constant type='@' name='QTMetadataiTunesMetadataKeySoundEngineer'/>
+<constant type='@' name='QTMetadataiTunesMetadataKeyThanks'/>
+<constant type='@' name='QTMetadataiTunesMetadataKeyTrackNumber'/>
+<constant type='@' name='QTMetadataiTunesMetadataKeyTrackSubTitle'/>
+<constant type='@' name='QTMetadataiTunesMetadataKeyUserComment'/>
+<constant type='@' name='QTMetadataiTunesMetadataKeyUserGenre'/>
+<constant type='@' name='QTMovieActiveSegmentAttribute'/>
+<constant type='@' name='QTMovieApertureModeAttribute'/>
+<constant type='@' name='QTMovieApertureModeClassic'/>
+<constant type='@' name='QTMovieApertureModeClean'/>
+<constant type='@' name='QTMovieApertureModeDidChangeNotification'/>
+<constant type='@' name='QTMovieApertureModeEncodedPixels'/>
+<constant type='@' name='QTMovieApertureModeProduction'/>
+<constant type='@' name='QTMovieAskUnresolvedDataRefsAttribute'/>
+<constant type='@' name='QTMovieAutoAlternatesAttribute'/>
+<constant type='@' name='QTMovieChapterDidChangeNotification'/>
+<constant type='@' name='QTMovieChapterListDidChangeNotification'/>
+<constant type='@' name='QTMovieChapterName'/>
+<constant type='@' name='QTMovieChapterStartTime'/>
+<constant type='@' name='QTMovieChapterTargetTrackAttribute'/>
+<constant type='@' name='QTMovieCloseWindowRequestNotification'/>
+<constant type='@' name='QTMovieCopyrightAttribute'/>
+<constant type='@' name='QTMovieCreationTimeAttribute'/>
+<constant type='@' name='QTMovieCurrentSizeAttribute'/>
+<constant type='@' name='QTMovieCurrentTimeAttribute'/>
+<constant type='@' name='QTMovieDataAttribute'/>
+<constant type='@' name='QTMovieDataReferenceAttribute'/>
+<constant type='@' name='QTMovieDataSizeAttribute'/>
+<constant type='@' name='QTMovieDelegateAttribute'/>
+<constant type='@' name='QTMovieDidEndNotification'/>
+<constant type='@' name='QTMovieDisplayNameAttribute'/>
+<constant type='@' name='QTMovieDontInteractWithUserAttribute'/>
+<constant type='@' name='QTMovieDurationAttribute'/>
+<constant type='@' name='QTMovieEditabilityDidChangeNotification'/>
+<constant type='@' name='QTMovieEditableAttribute'/>
+<constant type='@' name='QTMovieEditedNotification'/>
+<constant type='@' name='QTMovieEnterFullScreenRequestNotification'/>
+<constant type='@' name='QTMovieExitFullScreenRequestNotification'/>
+<constant type='@' name='QTMovieExport'/>
+<constant type='@' name='QTMovieExportManufacturer'/>
+<constant type='@' name='QTMovieExportSettings'/>
+<constant type='@' name='QTMovieExportType'/>
+<constant type='@' name='QTMovieFileNameAttribute'/>
+<constant type='@' name='QTMovieFileOffsetAttribute'/>
+<constant type='@' name='QTMovieFlatten'/>
+<constant type='@' name='QTMovieFrameImageDeinterlaceFields'/>
+<constant type='@' name='QTMovieFrameImageHighQuality'/>
+<constant type='@' name='QTMovieFrameImageOpenGLContext'/>
+<constant type='@' name='QTMovieFrameImagePixelFormat'/>
+<constant type='@' name='QTMovieFrameImageRepresentationsType'/>
+<constant type='@' name='QTMovieFrameImageSessionMode'/>
+<constant type='@' name='QTMovieFrameImageSingleField'/>
+<constant type='@' name='QTMovieFrameImageSize'/>
+<constant type='@' name='QTMovieFrameImageType'/>
+<constant type='@' name='QTMovieFrameImageTypeCGImageRef'/>
+<constant type='@' name='QTMovieFrameImageTypeCIImage'/>
+<constant type='@' name='QTMovieFrameImageTypeCVOpenGLTextureRef'/>
+<constant type='@' name='QTMovieFrameImageTypeCVPixelBufferRef'/>
+<constant type='@' name='QTMovieFrameImageTypeNSImage'/>
+<constant type='@' name='QTMovieHasApertureModeDimensionsAttribute'/>
+<constant type='@' name='QTMovieHasAudioAttribute'/>
+<constant type='@' name='QTMovieHasDurationAttribute'/>
+<constant type='@' name='QTMovieHasVideoAttribute'/>
+<constant type='@' name='QTMovieIsActiveAttribute'/>
+<constant type='@' name='QTMovieIsInteractiveAttribute'/>
+<constant type='@' name='QTMovieIsLinearAttribute'/>
+<constant type='@' name='QTMovieIsSteppableAttribute'/>
+<constant type='@' name='QTMovieLoadStateAttribute'/>
+<constant type='@' name='QTMovieLoadStateDidChangeNotification'/>
+<constant type='@' name='QTMovieLoadStateErrorAttribute'/>
+<constant type='@' name='QTMovieLoopModeDidChangeNotification'/>
+<constant type='@' name='QTMovieLoopsAttribute'/>
+<constant type='@' name='QTMovieLoopsBackAndForthAttribute'/>
+<constant type='@' name='QTMovieMessageNotificationParameter'/>
+<constant type='@' name='QTMovieMessageStringPostedNotification'/>
+<constant type='@' name='QTMovieModificationTimeAttribute'/>
+<constant type='@' name='QTMovieMutedAttribute'/>
+<constant type='@' name='QTMovieNaturalSizeAttribute'/>
+<constant type='@' name='QTMovieNaturalSizeDidChangeNotification'/>
+<constant type='@' name='QTMovieOpenAsyncOKAttribute'/>
+<constant type='@' name='QTMovieOpenAsyncRequiredAttribute'/>
+<constant type='@' name='QTMovieOpenForPlaybackAttribute'/>
+<constant type='@' name='QTMoviePasteboardAttribute'/>
+<constant type='@' name='QTMoviePasteboardType'/>
+<constant type='@' name='QTMoviePlaysAllFramesAttribute'/>
+<constant type='@' name='QTMoviePlaysSelectionOnlyAttribute'/>
+<constant type='@' name='QTMoviePosterTimeAttribute'/>
+<constant type='@' name='QTMoviePreferredMutedAttribute'/>
+<constant type='@' name='QTMoviePreferredRateAttribute'/>
+<constant type='@' name='QTMoviePreferredVolumeAttribute'/>
+<constant type='@' name='QTMoviePreviewModeAttribute'/>
+<constant type='@' name='QTMoviePreviewRangeAttribute'/>
+<constant type='@' name='QTMovieRateAttribute'/>
+<constant type='@' name='QTMovieRateChangesPreservePitchAttribute'/>
+<constant type='@' name='QTMovieRateDidChangeNotification'/>
+<constant type='@' name='QTMovieRateDidChangeNotificationParameter'/>
+<constant type='@' name='QTMovieResolveDataRefsAttribute'/>
+<constant type='@' name='QTMovieSelectionAttribute'/>
+<constant type='@' name='QTMovieSelectionDidChangeNotification'/>
+<constant type='@' name='QTMovieSizeDidChangeNotification'/>
+<constant type='@' name='QTMovieStatusCodeNotificationParameter'/>
+<constant type='@' name='QTMovieStatusFlagsNotificationParameter'/>
+<constant type='@' name='QTMovieStatusStringNotificationParameter'/>
+<constant type='@' name='QTMovieStatusStringPostedNotification'/>
+<constant type='@' name='QTMovieTargetIDNotificationParameter'/>
+<constant type='@' name='QTMovieTargetNameNotificationParameter'/>
+<constant type='@' name='QTMovieTimeDidChangeNotification'/>
+<constant type='@' name='QTMovieTimeScaleAttribute'/>
+<constant type='@' name='QTMovieURLAttribute'/>
+<constant type='@' name='QTMovieUneditableException'/>
+<constant type='@' name='QTMovieViewControllerVisibleBinding'/>
+<constant type='@' name='QTMovieViewFillColorBinding'/>
+<constant type='@' name='QTMovieViewMovieBinding'/>
+<constant type='@' name='QTMovieViewPreservesAspectRatioBinding'/>
+<constant type='@' name='QTMovieVolumeAttribute'/>
+<constant type='@' name='QTMovieVolumeDidChangeNotification'/>
+<constant type='@' name='QTSampleBufferDateRecordedAttribute'/>
+<constant type='@' name='QTSampleBufferExplicitSceneChange'/>
+<constant type='@' name='QTSampleBufferHostTimeAttribute'/>
+<constant type='@' name='QTSampleBufferSMPTETimeAttribute'/>
+<constant type='@' name='QTSampleBufferSceneChangeTypeAttribute'/>
+<constant type='@' name='QTSampleBufferTimeStampDiscontinuitySceneChange'/>
+<constant type='@' name='QTTrackBoundsAttribute'/>
+<constant type='@' name='QTTrackCreationTimeAttribute'/>
+<constant type='@' name='QTTrackDimensionsAttribute'/>
+<constant type='@' name='QTTrackDisplayNameAttribute'/>
+<constant type='@' name='QTTrackEnabledAttribute'/>
+<constant type='@' name='QTTrackFormatSummaryAttribute'/>
+<constant type='@' name='QTTrackHasApertureModeDimensionsAttribute'/>
+<constant type='@' name='QTTrackIDAttribute'/>
+<constant type='@' name='QTTrackIsChapterTrackAttribute'/>
+<constant type='@' name='QTTrackLayerAttribute'/>
+<constant type='@' name='QTTrackMediaTypeAttribute'/>
+<constant type='@' name='QTTrackModificationTimeAttribute'/>
+<constant type='@' name='QTTrackRangeAttribute'/>
+<constant type='@' name='QTTrackTimeScaleAttribute'/>
+<constant type='@' name='QTTrackUsageInMovieAttribute'/>
+<constant type='@' name='QTTrackUsageInPosterAttribute'/>
+<constant type='@' name='QTTrackUsageInPreviewAttribute'/>
+<constant type='@' name='QTTrackVolumeAttribute'/>
+<constant type='{_QTTime=qll}' type64='{_QTTime=qqq}' name='QTZeroTime'/>
+<enum value='1040' name='MAC_OS_X_VERSION_10_4'/>
+<enum value='1050' name='MAC_OS_X_VERSION_10_5'/>
+<enum value='1060' name='MAC_OS_X_VERSION_10_6'/>
+<enum value='1070' name='MAC_OS_X_VERSION_10_7'/>
+<enum value='13000' name='QTCaptureDeviceAVCTransportControlsFastForwardSpeed'/>
+<enum value='-13000' name='QTCaptureDeviceAVCTransportControlsFastReverseSpeed'/>
+<enum value='19000' name='QTCaptureDeviceAVCTransportControlsFastestForwardSpeed'/>
+<enum value='-19000' name='QTCaptureDeviceAVCTransportControlsFastestReverseSpeed'/>
+<enum value='10000' name='QTCaptureDeviceAVCTransportControlsNormalForwardSpeed'/>
+<enum value='-10000' name='QTCaptureDeviceAVCTransportControlsNormalReverseSpeed'/>
+<enum value='0' name='QTCaptureDeviceAVCTransportControlsNotPlayingMode'/>
+<enum value='1' name='QTCaptureDeviceAVCTransportControlsPlayingMode'/>
+<enum value='7000' name='QTCaptureDeviceAVCTransportControlsSlowForwardSpeed'/>
+<enum value='-7000' name='QTCaptureDeviceAVCTransportControlsSlowReverseSpeed'/>
+<enum value='1000' name='QTCaptureDeviceAVCTransportControlsSlowestForwardSpeed'/>
+<enum value='-1000' name='QTCaptureDeviceAVCTransportControlsSlowestReverseSpeed'/>
+<enum value='0' name='QTCaptureDeviceAVCTransportControlsStoppedSpeed'/>
+<enum value='16000' name='QTCaptureDeviceAVCTransportControlsVeryFastForwardSpeed'/>
+<enum value='-16000' name='QTCaptureDeviceAVCTransportControlsVeryFastReverseSpeed'/>
+<enum value='4000' name='QTCaptureDeviceAVCTransportControlsVerySlowForwardSpeed'/>
+<enum value='-4000' name='QTCaptureDeviceAVCTransportControlsVerySlowReverseSpeed'/>
+<enum value='1' name='QTCaptureFileOutputBufferDestinationNewFile'/>
+<enum value='2' name='QTCaptureFileOutputBufferDestinationOldFile'/>
+<enum value='1101' name='QTErrorDeviceAlreadyUsedbyAnotherSession'/>
+<enum value='1302' name='QTErrorDeviceExcludedByAnotherDevice'/>
+<enum value='1301' name='QTErrorDeviceInUseByAnotherApplication'/>
+<enum value='1300' name='QTErrorDeviceNotConnected'/>
+<enum value='1203' name='QTErrorDeviceWasDisconnected'/>
+<enum value='1202' name='QTErrorDiskFull'/>
+<enum value='1503' name='QTErrorExportExecutionFailed'/>
+<enum value='1506' name='QTErrorExportIOError'/>
+<enum value='1504' name='QTErrorExportInsufficientSpaceOnDevice'/>
+<enum value='1505' name='QTErrorExportNoSuchDirectoryOrFile'/>
+<enum value='1002' name='QTErrorIncompatibleInput'/>
+<enum value='1003' name='QTErrorIncompatibleOutput'/>
+<enum value='1501' name='QTErrorInvalidDestinationFileTypeForExport'/>
+<enum value='1100' name='QTErrorInvalidInputsOrOutputs'/>
+<enum value='1502' name='QTErrorInvalidSourceFileTypeForExport'/>
+<enum value='1205' name='QTErrorMaximumDurationReached'/>
+<enum value='1206' name='QTErrorMaximumFileSizeReached'/>
+<enum value='1208' name='QTErrorMaximumNumberOfSamplesForFileFormatReached'/>
+<enum value='1204' name='QTErrorMediaChanged'/>
+<enum value='1207' name='QTErrorMediaDiscontinuity'/>
+<enum value='1200' name='QTErrorNoDataCaptured'/>
+<enum value='1201' name='QTErrorSessionConfigurationChanged'/>
+<enum value='-1' name='QTErrorUnknown'/>
+<enum value='4' name='QTIncludeAggressiveTypes'/>
+<enum value='65535' name='QTIncludeAllTypes'/>
+<enum value='0' name='QTIncludeCommonTypes'/>
+<enum value='8' name='QTIncludeDynamicTypes'/>
+<enum value='1' name='QTIncludeStillImageTypes'/>
+<enum value='2' name='QTIncludeTranslatableTypes'/>
+<enum value='70000' name='QTKIT_VERSION_7_0'/>
+<enum value='70200' name='QTKIT_VERSION_7_2'/>
+<enum value='70603' name='QTKIT_VERSION_7_6_3'/>
+<enum value='70606' name='QTKIT_VERSION_7_6_6'/>
+<enum value='70700' name='QTKIT_VERSION_7_7'/>
+<enum value='70700' name='QTKIT_VERSION_MAX_ALLOWED'/>
+<enum value='70700' name='QTKIT_VERSION_MIN_REQUIRED'/>
+<enum value='100000' name='QTMovieLoadStateComplete'/>
+<enum value='-1' name='QTMovieLoadStateError'/>
+<enum value='2000' name='QTMovieLoadStateLoaded'/>
+<enum value='1000' name='QTMovieLoadStateLoading'/>
+<enum value='10000' name='QTMovieLoadStatePlayable'/>
+<enum value='20000' name='QTMovieLoadStatePlaythroughOK'/>
+<enum value='0' name='QTMovieOperationBeginPhase'/>
+<enum value='2' name='QTMovieOperationEndPhase'/>
+<enum value='1' name='QTMovieOperationUpdatePercentPhase'/>
+<enum value='1' name='QTSampleBufferAudioBufferListOptionAssure16ByteAlignment'/>
+<enum value64='768' name='codecHighQuality'/>
+<enum value64='1024' name='codecLosslessQuality'/>
+<enum value64='256' name='codecLowQuality'/>
+<enum value64='1023' name='codecMaxQuality'/>
+<enum value64='0' name='codecMinQuality'/>
+<enum value64='512' name='codecNormalQuality'/>
+<enum value64='259' name='graphicsModeComposition'/>
+<enum value64='272' name='graphicsModePerComponentAlpha'/>
+<enum value64='258' name='graphicsModePreBlackAlpha'/>
+<enum value64='261' name='graphicsModePreMulColorAlpha'/>
+<enum value64='257' name='graphicsModePreWhiteAlpha'/>
+<enum value64='256' name='graphicsModeStraightAlpha'/>
+<enum value64='260' name='graphicsModeStraightAlphaBlend'/>
+<enum value64='860114246' name='kQTFileType3DMF'/>
+<enum value64='862416946' name='kQTFileType3GP2'/>
+<enum value64='862417008' name='kQTFileType3GPP'/>
+<enum value64='1095321155' name='kQTFileTypeAIFC'/>
+<enum value64='1095321158' name='kQTFileTypeAIFF'/>
+<enum value64='1634558752' name='kQTFileTypeAMC'/>
+<enum value64='1634562592' name='kQTFileTypeAMR'/>
+<enum value64='1449547552' name='kQTFileTypeAVI'/>
+<enum value64='1953653099' name='kQTFileTypeAudioCDTrack'/>
+<enum value64='1112363110' name='kQTFileTypeBMP'/>
+<enum value64='1685480225' name='kQTFileTypeDVC'/>
+<enum value64='1179403040' name='kQTFileTypeFLC'/>
+<enum value64='1398228556' name='kQTFileTypeFlash'/>
+<enum value64='1179675000' name='kQTFileTypeFlashPix'/>
+<enum value64='1195984486' name='kQTFileTypeGIF'/>
+<enum value64='1246774599' name='kQTFileTypeJFIF'/>
+<enum value64='1246774599' name='kQTFileTypeJPEG'/>
+<enum value64='1785737760' name='kQTFileTypeJPEG2000'/>
+<enum value64='1298752617' name='kQTFileTypeMIDI'/>
+<enum value64='1836082996' name='kQTFileTypeMP4'/>
+<enum value64='1347310663' name='kQTFileTypeMacPaint'/>
+<enum value64='1299148630' name='kQTFileTypeMovie'/>
+<enum value64='1431060823' name='kQTFileTypeMuLaw'/>
+<enum value64='1346651680' name='kQTFileTypePDF'/>
+<enum value64='1346978643' name='kQTFileTypePICS'/>
+<enum value64='1347307366' name='kQTFileTypePNG'/>
+<enum value64='943870035' name='kQTFileTypePhotoShop'/>
+<enum value64='1346978644' name='kQTFileTypePicture'/>
+<enum value64='1902405496' name='kQTFileTypeQuickDrawGXPicture'/>
+<enum value64='1903454566' name='kQTFileTypeQuickTimeImage'/>
+<enum value64='1935963680' name='kQTFileTypeSDV'/>
+<enum value64='777209673' name='kQTFileTypeSGIImage'/>
+<enum value64='1399075430' name='kQTFileTypeSoundDesignerII'/>
+<enum value64='1936091500' name='kQTFileTypeSystemSevenSound'/>
+<enum value64='1414088262' name='kQTFileTypeTIFF'/>
+<enum value64='1414547779' name='kQTFileTypeTargaImage'/>
+<enum value64='1413830740' name='kQTFileTypeText'/>
+<enum value64='1463899717' name='kQTFileTypeWave'/>
+<enum value='1' name='kQTTimeIsIndefinite'/>
+<function name='QTEqualTimeRanges'>
+<arg type='{_QTTimeRange={_QTTime=qll}{_QTTime=qll}}' type64='{_QTTimeRange={_QTTime=qqq}{_QTTime=qqq}}'/>
+<arg type='{_QTTimeRange={_QTTime=qll}{_QTTime=qll}}' type64='{_QTTimeRange={_QTTime=qqq}{_QTTime=qqq}}'/>
+<retval type='B'/>
+</function>
+<function name='QTGetTimeInterval'>
+<arg type='{_QTTime=qll}' type64='{_QTTime=qqq}'/>
+<arg type='^d'/>
+<retval type='B'/>
+</function>
+<function name='QTGetTimeRecord'>
+<arg type='{_QTTime=qll}' type64='{_QTTime=qqq}'/>
+<arg type='^{TimeRecord={wide=Ii}i^{TimeBaseRecord}}'/>
+<retval type='B'/>
+</function>
+<function name='QTIntersectionTimeRange'>
+<arg type='{_QTTimeRange={_QTTime=qll}{_QTTime=qll}}' type64='{_QTTimeRange={_QTTime=qqq}{_QTTime=qqq}}'/>
+<arg type='{_QTTimeRange={_QTTime=qll}{_QTTime=qll}}' type64='{_QTTimeRange={_QTTime=qqq}{_QTTime=qqq}}'/>
+<retval type='{_QTTimeRange={_QTTime=qll}{_QTTime=qll}}' type64='{_QTTimeRange={_QTTime=qqq}{_QTTime=qqq}}'/>
+</function>
+<function name='QTMakeTime'>
+<arg type='q'/>
+<arg type='l' type64='q'/>
+<retval type='{_QTTime=qll}' type64='{_QTTime=qqq}'/>
+</function>
+<function name='QTMakeTimeRange'>
+<arg type='{_QTTime=qll}' type64='{_QTTime=qqq}'/>
+<arg type='{_QTTime=qll}' type64='{_QTTime=qqq}'/>
+<retval type='{_QTTimeRange={_QTTime=qll}{_QTTime=qll}}' type64='{_QTTimeRange={_QTTime=qqq}{_QTTime=qqq}}'/>
+</function>
+<function name='QTMakeTimeScaled'>
+<arg type='{_QTTime=qll}' type64='{_QTTime=qqq}'/>
+<arg type='l' type64='q'/>
+<retval type='{_QTTime=qll}' type64='{_QTTime=qqq}'/>
+</function>
+<function name='QTMakeTimeWithTimeInterval'>
+<arg type='d'/>
+<retval type='{_QTTime=qll}' type64='{_QTTime=qqq}'/>
+</function>
+<function name='QTMakeTimeWithTimeRecord'>
+<arg type='{TimeRecord={wide=Ii}i^{TimeBaseRecord}}'/>
+<retval type='{_QTTime=qll}' type64='{_QTTime=qqq}'/>
+</function>
+<function name='QTOSTypeForString'>
+<arg type='@'/>
+<retval type='L' type64='I'/>
+</function>
+<function name='QTStringForOSType'>
+<arg type='L' type64='I'/>
+<retval type='@'/>
+</function>
+<function name='QTStringFromSMPTETime'>
+<arg type='{SMPTETime=ssIIIssss}'/>
+<retval type='@'/>
+</function>
+<function name='QTStringFromTime'>
+<arg type='{_QTTime=qll}' type64='{_QTTime=qqq}'/>
+<retval type='@'/>
+</function>
+<function name='QTStringFromTimeRange'>
+<arg type='{_QTTimeRange={_QTTime=qll}{_QTTime=qll}}' type64='{_QTTimeRange={_QTTime=qqq}{_QTTime=qqq}}'/>
+<retval type='@'/>
+</function>
+<function name='QTTimeCompare'>
+<arg type='{_QTTime=qll}' type64='{_QTTime=qqq}'/>
+<arg type='{_QTTime=qll}' type64='{_QTTime=qqq}'/>
+<retval type='i' type64='q'/>
+</function>
+<function name='QTTimeDecrement'>
+<arg type='{_QTTime=qll}' type64='{_QTTime=qqq}'/>
+<arg type='{_QTTime=qll}' type64='{_QTTime=qqq}'/>
+<retval type='{_QTTime=qll}' type64='{_QTTime=qqq}'/>
+</function>
+<function name='QTTimeFromString'>
+<arg type='@'/>
+<retval type='{_QTTime=qll}' type64='{_QTTime=qqq}'/>
+</function>
+<function name='QTTimeInTimeRange'>
+<arg type='{_QTTime=qll}' type64='{_QTTime=qqq}'/>
+<arg type='{_QTTimeRange={_QTTime=qll}{_QTTime=qll}}' type64='{_QTTimeRange={_QTTime=qqq}{_QTTime=qqq}}'/>
+<retval type='B'/>
+</function>
+<function name='QTTimeIncrement'>
+<arg type='{_QTTime=qll}' type64='{_QTTime=qqq}'/>
+<arg type='{_QTTime=qll}' type64='{_QTTime=qqq}'/>
+<retval type='{_QTTime=qll}' type64='{_QTTime=qqq}'/>
+</function>
+<function name='QTTimeIsIndefinite'>
+<arg type='{_QTTime=qll}' type64='{_QTTime=qqq}'/>
+<retval type='B'/>
+</function>
+<function name='QTTimeRangeEnd'>
+<arg type='{_QTTimeRange={_QTTime=qll}{_QTTime=qll}}' type64='{_QTTimeRange={_QTTime=qqq}{_QTTime=qqq}}'/>
+<retval type='{_QTTime=qll}' type64='{_QTTime=qqq}'/>
+</function>
+<function name='QTTimeRangeFromString'>
+<arg type='@'/>
+<retval type='{_QTTimeRange={_QTTime=qll}{_QTTime=qll}}' type64='{_QTTimeRange={_QTTime=qqq}{_QTTime=qqq}}'/>
+</function>
+<function name='QTUnionTimeRange'>
+<arg type='{_QTTimeRange={_QTTime=qll}{_QTTime=qll}}' type64='{_QTTimeRange={_QTTime=qqq}{_QTTime=qqq}}'/>
+<arg type='{_QTTimeRange={_QTTime=qll}{_QTTime=qll}}' type64='{_QTTimeRange={_QTTime=qqq}{_QTTime=qqq}}'/>
+<retval type='{_QTTimeRange={_QTTime=qll}{_QTTime=qll}}' type64='{_QTTimeRange={_QTTime=qqq}{_QTTime=qqq}}'/>
+</function>
+<class name='NSCoder'>
+<method selector='decodeQTTimeForKey:'>
+<retval type='{_QTTime=qll}' type64='{_QTTime=qqq}'/>
+</method>
+<method selector='decodeQTTimeRangeForKey:'>
+<retval type='{_QTTimeRange={_QTTime=qll}{_QTTime=qll}}' type64='{_QTTimeRange={_QTTime=qqq}{_QTTime=qqq}}'/>
+</method>
+<method selector='encodeQTTime:forKey:'>
+<arg type='{_QTTime=qll}' type64='{_QTTime=qqq}' index='0'/>
+</method>
+<method selector='encodeQTTimeRange:forKey:'>
+<arg type='{_QTTimeRange={_QTTime=qll}{_QTTime=qll}}' type64='{_QTTimeRange={_QTTime=qqq}{_QTTime=qqq}}' index='0'/>
+</method>
+</class>
+<class name='NSObject'>
+<method selector='captureOutput:shouldChangeOutputFileAtURL:forConnections:dueToError:'>
+<retval type='B'/>
+</method>
+<method selector='movie:linkToURL:'>
+<retval type='B'/>
+</method>
+<method selector='movie:shouldContinueOperation:withPhase:atPercent:withAttributes:'>
+<retval type='B'/>
+</method>
+<method selector='movieShouldLoadData:'>
+<retval type='B'/>
+</method>
+<method selector='movieShouldTask:'>
+<retval type='B'/>
+</method>
+</class>
+<class name='NSValue'>
+<method selector='QTTimeRangeValue'>
+<retval type='{_QTTimeRange={_QTTime=qll}{_QTTime=qll}}' type64='{_QTTimeRange={_QTTime=qqq}{_QTTime=qqq}}'/>
+</method>
+<method selector='QTTimeValue'>
+<retval type='{_QTTime=qll}' type64='{_QTTime=qqq}'/>
+</method>
+<method selector='valueWithQTTime:' class_method='true'>
+<arg type='{_QTTime=qll}' type64='{_QTTime=qqq}' index='0'/>
+</method>
+<method selector='valueWithQTTimeRange:' class_method='true'>
+<arg type='{_QTTimeRange={_QTTime=qll}{_QTTime=qll}}' type64='{_QTTimeRange={_QTTime=qqq}{_QTTime=qqq}}' index='0'/>
+</method>
+</class>
+<class name='QTCaptureConnection'>
+<method selector='attributeIsReadOnly:'>
+<retval type='B'/>
+</method>
+<method selector='isEnabled'>
+<retval type='B'/>
+</method>
+<method selector='setEnabled:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='QTCaptureDecompressedVideoOutput'>
+<method selector='automaticallyDropsLateVideoFrames'>
+<retval type='B'/>
+</method>
+<method selector='setAutomaticallyDropsLateVideoFrames:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='QTCaptureDevice'>
+<method selector='attributeIsReadOnly:'>
+<retval type='B'/>
+</method>
+<method selector='hasMediaType:'>
+<retval type='B'/>
+</method>
+<method selector='isConnected'>
+<retval type='B'/>
+</method>
+<method selector='isInUseByAnotherApplication'>
+<retval type='B'/>
+</method>
+<method selector='isOpen'>
+<retval type='B'/>
+</method>
+<method selector='open:'>
+<retval type='B'/>
+</method>
+</class>
+<class name='QTCaptureFileOutput'>
+<method selector='isRecordingPaused'>
+<retval type='B'/>
+</method>
+<method selector='maximumRecordedDuration'>
+<retval type='{_QTTime=qll}' type64='{_QTTime=qqq}'/>
+</method>
+<method selector='recordedDuration'>
+<retval type='{_QTTime=qll}' type64='{_QTTime=qqq}'/>
+</method>
+<method selector='setMaximumRecordedDuration:'>
+<arg type='{_QTTime=qll}' type64='{_QTTime=qqq}' index='0'/>
+</method>
+</class>
+<class name='QTCaptureSession'>
+<method selector='addInput:error:'>
+<retval type='B'/>
+</method>
+<method selector='addOutput:error:'>
+<retval type='B'/>
+</method>
+<method selector='isRunning'>
+<retval type='B'/>
+</method>
+</class>
+<class name='QTCaptureView'>
+<method selector='preservesAspectRatio'>
+<retval type='B'/>
+</method>
+<method selector='setPreservesAspectRatio:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='QTCompressionOptions'>
+<method selector='isEqualToCompressionOptions:'>
+<retval type='B'/>
+</method>
+</class>
+<class name='QTExportSession'>
+<method selector='isCancelled'>
+<retval type='B'/>
+</method>
+<method selector='isFinished'>
+<retval type='B'/>
+</method>
+<method selector='isRunning'>
+<retval type='B'/>
+</method>
+<method selector='waitUntilFinished:'>
+<retval type='B'/>
+</method>
+</class>
+<class name='QTFormatDescription'>
+<method selector='isEqualToFormatDescription:'>
+<retval type='B'/>
+</method>
+</class>
+<class name='QTMedia'>
+<method selector='hasCharacteristic:'>
+<retval type='B'/>
+</method>
+</class>
+<class name='QTMetadataItem'>
+<method selector='time'>
+<retval type='{_QTTime=qll}' type64='{_QTTime=qqq}'/>
+</method>
+</class>
+<class name='QTMovie'>
+<method selector='addImage:forDuration:withAttributes:'>
+<arg type='{_QTTime=qll}' type64='{_QTTime=qqq}' index='1'/>
+</method>
+<method selector='attachToCurrentThread'>
+<retval type='B'/>
+</method>
+<method selector='canInitWithDataReference:' class_method='true'>
+<retval type='B'/>
+</method>
+<method selector='canInitWithFile:' class_method='true'>
+<retval type='B'/>
+</method>
+<method selector='canInitWithPasteboard:' class_method='true'>
+<retval type='B'/>
+</method>
+<method selector='canInitWithURL:' class_method='true'>
+<retval type='B'/>
+</method>
+<method selector='canUpdateMovieFile'>
+<retval type='B'/>
+</method>
+<method selector='chapterIndexForTime:'>
+<arg type='{_QTTime=qll}' type64='{_QTTime=qqq}' index='0'/>
+</method>
+<method selector='currentTime'>
+<retval type='{_QTTime=qll}' type64='{_QTTime=qqq}'/>
+</method>
+<method selector='deleteSegment:'>
+<arg type='{_QTTimeRange={_QTTime=qll}{_QTTime=qll}}' type64='{_QTTimeRange={_QTTime=qqq}{_QTTime=qqq}}' index='0'/>
+</method>
+<method selector='detachFromCurrentThread'>
+<retval type='B'/>
+</method>
+<method selector='duration'>
+<retval type='{_QTTime=qll}' type64='{_QTTime=qqq}'/>
+</method>
+<method selector='frameImageAtTime:'>
+<arg type='{_QTTime=qll}' type64='{_QTTime=qqq}' index='0'/>
+</method>
+<method selector='frameImageAtTime:withAttributes:error:'>
+<arg type='{_QTTime=qll}' type64='{_QTTime=qqq}' index='0'/>
+</method>
+<method selector='hasChapters'>
+<retval type='B'/>
+</method>
+<method selector='initWithMovie:timeRange:error:'>
+<arg type='{_QTTimeRange={_QTTime=qll}{_QTTime=qll}}' type64='{_QTTimeRange={_QTTime=qqq}{_QTTime=qqq}}' index='1'/>
+</method>
+<method selector='initWithQuickTimeMovie:disposeWhenDone:error:'>
+<arg type='B' index='1'/>
+</method>
+<method selector='insertEmptySegmentAt:'>
+<arg type='{_QTTimeRange={_QTTime=qll}{_QTTime=qll}}' type64='{_QTTimeRange={_QTTime=qqq}{_QTTime=qqq}}' index='0'/>
+</method>
+<method selector='insertSegmentOfMovie:fromRange:scaledToRange:'>
+<arg type='{_QTTimeRange={_QTTime=qll}{_QTTime=qll}}' type64='{_QTTimeRange={_QTTime=qqq}{_QTTime=qqq}}' index='1'/>
+<arg type='{_QTTimeRange={_QTTime=qll}{_QTTime=qll}}' type64='{_QTTimeRange={_QTTime=qqq}{_QTTime=qqq}}' index='2'/>
+</method>
+<method selector='insertSegmentOfMovie:timeRange:atTime:'>
+<arg type='{_QTTimeRange={_QTTime=qll}{_QTTime=qll}}' type64='{_QTTimeRange={_QTTime=qqq}{_QTTime=qqq}}' index='1'/>
+<arg type='{_QTTime=qll}' type64='{_QTTime=qqq}' index='2'/>
+</method>
+<method selector='insertSegmentOfTrack:fromRange:scaledToRange:'>
+<arg type='{_QTTimeRange={_QTTime=qll}{_QTTime=qll}}' type64='{_QTTimeRange={_QTTime=qqq}{_QTTime=qqq}}' index='1'/>
+<arg type='{_QTTimeRange={_QTTime=qll}{_QTTime=qll}}' type64='{_QTTimeRange={_QTTime=qqq}{_QTTime=qqq}}' index='2'/>
+</method>
+<method selector='insertSegmentOfTrack:timeRange:atTime:'>
+<arg type='{_QTTimeRange={_QTTime=qll}{_QTTime=qll}}' type64='{_QTTimeRange={_QTTime=qqq}{_QTTime=qqq}}' index='1'/>
+<arg type='{_QTTime=qll}' type64='{_QTTime=qqq}' index='2'/>
+</method>
+<method selector='isIdling'>
+<retval type='B'/>
+</method>
+<method selector='movieWithQuickTimeMovie:disposeWhenDone:error:' class_method='true'>
+<arg type='B' index='1'/>
+</method>
+<method selector='movieWithTimeRange:error:'>
+<arg type='{_QTTimeRange={_QTTime=qll}{_QTTime=qll}}' type64='{_QTTimeRange={_QTTime=qqq}{_QTTime=qqq}}' index='0'/>
+</method>
+<method selector='muted'>
+<retval type='B'/>
+</method>
+<method selector='removeChapters'>
+<retval type='B'/>
+</method>
+<method selector='scaleSegment:newDuration:'>
+<arg type='{_QTTimeRange={_QTTime=qll}{_QTTime=qll}}' type64='{_QTTimeRange={_QTTime=qqq}{_QTTime=qqq}}' index='0'/>
+<arg type='{_QTTime=qll}' type64='{_QTTime=qqq}' index='1'/>
+</method>
+<method selector='selectionDuration'>
+<retval type='{_QTTime=qll}' type64='{_QTTime=qqq}'/>
+</method>
+<method selector='selectionEnd'>
+<retval type='{_QTTime=qll}' type64='{_QTTime=qqq}'/>
+</method>
+<method selector='selectionStart'>
+<retval type='{_QTTime=qll}' type64='{_QTTime=qqq}'/>
+</method>
+<method selector='setCurrentTime:'>
+<arg type='{_QTTime=qll}' type64='{_QTTime=qqq}' index='0'/>
+</method>
+<method selector='setIdling:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setMuted:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setSelection:'>
+<arg type='{_QTTimeRange={_QTTime=qll}{_QTTime=qll}}' type64='{_QTTimeRange={_QTTime=qqq}{_QTTime=qqq}}' index='0'/>
+</method>
+<method selector='startTimeOfChapter:'>
+<retval type='{_QTTime=qll}' type64='{_QTTime=qqq}'/>
+</method>
+<method selector='trackByInsertingSegmentOfTrack:fromRange:scaledToRange:'>
+<arg type='{_QTTimeRange={_QTTime=qll}{_QTTime=qll}}' type64='{_QTTimeRange={_QTTime=qqq}{_QTTime=qqq}}' index='1'/>
+<arg type='{_QTTimeRange={_QTTime=qll}{_QTTime=qll}}' type64='{_QTTimeRange={_QTTime=qqq}{_QTTime=qqq}}' index='2'/>
+</method>
+<method selector='trackByInsertingSegmentOfTrack:timeRange:atTime:'>
+<arg type='{_QTTimeRange={_QTTime=qll}{_QTTime=qll}}' type64='{_QTTimeRange={_QTTime=qqq}{_QTTime=qqq}}' index='1'/>
+<arg type='{_QTTime=qll}' type64='{_QTTime=qqq}' index='2'/>
+</method>
+<method selector='updateMovieFile'>
+<retval type='B'/>
+</method>
+<method selector='writeToFile:withAttributes:'>
+<retval type='B'/>
+</method>
+<method selector='writeToFile:withAttributes:error:'>
+<retval type='B'/>
+</method>
+</class>
+<class name='QTMovieView'>
+<method selector='areStepButtonsVisible'>
+<retval type='B'/>
+</method>
+<method selector='areZoomButtonsVisible'>
+<retval type='B'/>
+</method>
+<method selector='isBackButtonVisible'>
+<retval type='B'/>
+</method>
+<method selector='isControllerVisible'>
+<retval type='B'/>
+</method>
+<method selector='isCustomButtonVisible'>
+<retval type='B'/>
+</method>
+<method selector='isEditable'>
+<retval type='B'/>
+</method>
+<method selector='isHotSpotButtonVisible'>
+<retval type='B'/>
+</method>
+<method selector='isTranslateButtonVisible'>
+<retval type='B'/>
+</method>
+<method selector='isVolumeButtonVisible'>
+<retval type='B'/>
+</method>
+<method selector='preservesAspectRatio'>
+<retval type='B'/>
+</method>
+<method selector='setBackButtonVisible:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setControllerVisible:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setCustomButtonVisible:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setEditable:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setHotSpotButtonVisible:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setPreservesAspectRatio:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setShowsResizeIndicator:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setStepButtonsVisible:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setTranslateButtonVisible:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setVolumeButtonVisible:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setZoomButtonsVisible:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='QTSampleBuffer'>
+<method selector='decodeTime'>
+<retval type='{_QTTime=qll}' type64='{_QTTime=qqq}'/>
+</method>
+<method selector='duration'>
+<retval type='{_QTTime=qll}' type64='{_QTTime=qqq}'/>
+</method>
+<method selector='getAudioStreamPacketDescriptions:inRange:'>
+<retval type='B'/>
+</method>
+<method selector='presentationTime'>
+<retval type='{_QTTime=qll}' type64='{_QTTime=qqq}'/>
+</method>
+</class>
+<class name='QTTrack'>
+<method selector='addImage:forDuration:withAttributes:'>
+<arg type='{_QTTime=qll}' type64='{_QTTime=qqq}' index='1'/>
+</method>
+<method selector='deleteSegment:'>
+<arg type='{_QTTimeRange={_QTTime=qll}{_QTTime=qll}}' type64='{_QTTimeRange={_QTTime=qqq}{_QTTime=qqq}}' index='0'/>
+</method>
+<method selector='insertEmptySegmentAt:'>
+<arg type='{_QTTimeRange={_QTTime=qll}{_QTTime=qll}}' type64='{_QTTimeRange={_QTTime=qqq}{_QTTime=qqq}}' index='0'/>
+</method>
+<method selector='insertSegmentOfTrack:fromRange:scaledToRange:'>
+<arg type='{_QTTimeRange={_QTTime=qll}{_QTTime=qll}}' type64='{_QTTimeRange={_QTTime=qqq}{_QTTime=qqq}}' index='1'/>
+<arg type='{_QTTimeRange={_QTTime=qll}{_QTTime=qll}}' type64='{_QTTimeRange={_QTTime=qqq}{_QTTime=qqq}}' index='2'/>
+</method>
+<method selector='insertSegmentOfTrack:timeRange:atTime:'>
+<arg type='{_QTTimeRange={_QTTime=qll}{_QTTime=qll}}' type64='{_QTTimeRange={_QTTime=qqq}{_QTTime=qqq}}' index='1'/>
+<arg type='{_QTTime=qll}' type64='{_QTTime=qqq}' index='2'/>
+</method>
+<method selector='isEnabled'>
+<retval type='B'/>
+</method>
+<method selector='scaleSegment:newDuration:'>
+<arg type='{_QTTimeRange={_QTTime=qll}{_QTTime=qll}}' type64='{_QTTimeRange={_QTTime=qqq}{_QTTime=qqq}}' index='0'/>
+<arg type='{_QTTime=qll}' type64='{_QTTime=qqq}' index='1'/>
+</method>
+<method selector='setEnabled:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<informal_protocol name='QTCaptureDecompressedAudioOutput_Delegate'>
+<method type='v20@0:4@8@12@16' selector='captureOutput:didOutputAudioSampleBuffer:fromConnection:' type64='v40@0:8@16@24@32'/>
+</informal_protocol>
+<informal_protocol name='QTCaptureDecompressedVideoOutput_Delegate'>
+<method type='v20@0:4@8@12@16' selector='captureOutput:didDropVideoFrameWithSampleBuffer:fromConnection:' type64='v40@0:8@16@24@32'/>
+<method type='v24@0:4@8^{__CVBuffer=}12@16@20' selector='captureOutput:didOutputVideoFrame:withSampleBuffer:fromConnection:' type64='v48@0:8@16^{__CVBuffer=}24@32@40'/>
+</informal_protocol>
+<informal_protocol name='QTCaptureFileOutput_Delegate'>
+<method type='v24@0:4@8@12@16@20' selector='captureOutput:didFinishRecordingToOutputFileAtURL:forConnections:dueToError:' type64='v48@0:8@16@24@32@40'/>
+<method type='v20@0:4@8@12@16' selector='captureOutput:didOutputSampleBuffer:fromConnection:' type64='v40@0:8@16@24@32'/>
+<method type='v20@0:4@8@12@16' selector='captureOutput:didPauseRecordingToOutputFileAtURL:forConnections:' type64='v40@0:8@16@24@32'/>
+<method type='v20@0:4@8@12@16' selector='captureOutput:didResumeRecordingToOutputFileAtURL:forConnections:' type64='v40@0:8@16@24@32'/>
+<method type='v20@0:4@8@12@16' selector='captureOutput:didStartRecordingToOutputFileAtURL:forConnections:' type64='v40@0:8@16@24@32'/>
+<method type='v24@0:4@8@12@16@20' selector='captureOutput:mustChangeOutputFileAtURL:forConnections:dueToError:' type64='v48@0:8@16@24@32@40'/>
+<method type='B24@0:4@8@12@16@20' selector='captureOutput:shouldChangeOutputFileAtURL:forConnections:dueToError:' type64='B48@0:8@16@24@32@40'/>
+<method type='v24@0:4@8@12@16@20' selector='captureOutput:willFinishRecordingToOutputFileAtURL:forConnections:dueToError:' type64='v48@0:8@16@24@32@40'/>
+<method type='v20@0:4@8@12@16' selector='captureOutput:willStartRecordingToOutputFileAtURL:forConnections:' type64='v40@0:8@16@24@32'/>
+</informal_protocol>
+<informal_protocol name='QTCaptureVideoPreviewOutput_Delegate'>
+<method type='v24@0:4@8^{__CVBuffer=}12@16@20' selector='captureOutput:didOutputVideoFrame:withSampleBuffer:fromConnection:' type64='v48@0:8@16^{__CVBuffer=}24@32@40'/>
+</informal_protocol>
+<informal_protocol name='QTCaptureView_Delegate'>
+<method type='@16@0:4@8@12' selector='view:willDisplayImage:' type64='@32@0:8@16@24'/>
+</informal_protocol>
+<informal_protocol name='QTExportSessionDelegate'>
+<method type='v16@0:4@8@12' selector='exportSession:didFailWithError:' type64='v32@0:8@16@24'/>
+<method type='v20@0:4@8d12' selector='exportSession:didReachProgress:' type64='v32@0:8@16d24'/>
+<method type='v12@0:4@8' selector='exportSessionDidSucceed:' type64='v24@0:8@16'/>
+<method type='v12@0:4@8' selector='exportSessionWasCancelled:' type64='v24@0:8@16'/>
+</informal_protocol>
+<informal_protocol name='QTMovieView_Delegate'>
+<method type='@12@0:4@8' selector='menuForEventDelegate:' type64='@24@0:8@16'/>
+<method type='@16@0:4@8@12' selector='view:willDisplayImage:' type64='@32@0:8@16@24'/>
+</informal_protocol>
+<informal_protocol name='QTMovie_Delegate'>
+<method type='@12@0:4@8' selector='externalMovie:' type64='@24@0:8@16'/>
+<method type='B16@0:4@8@12' selector='movie:linkToURL:' type64='B32@0:8@16@24'/>
+<method type='B28@0:4@8@12i16@20@24' selector='movie:shouldContinueOperation:withPhase:atPercent:withAttributes:' type64='B52@0:8@16@24i32@36@44'/>
+<method type='B12@0:4@8' selector='movieShouldLoadData:' type64='B24@0:8@16'/>
+<method type='B12@0:4@8' selector='movieShouldTask:' type64='B24@0:8@16'/>
+</informal_protocol>
+</signatures>

@@ -3,6 +3,11 @@ import           Data.Text (Text)
 import qualified Data.Text as T
 import           Filesystem
 import           Filesystem.Path.CurrentOS
+import           Foreign.Ptr
+import           Language.Haskell.TH
+import           System.Cmd
+import           System.IO.Unsafe
+import           System.Posix.DynamicLinker
 import           Prelude hiding (FilePath)
 
 namespace :: Text -> Maybe Text -> Text -> Text -> Text
@@ -21,13 +26,19 @@ baseFramework = namespace "System.OSX" Nothing "Primitive"
 subFramework base = namespace "System.OSX" (Just base) "Primitive"
 
 makeFrameworkDirs f = do
-  let packageDirs = map (\d -> "framework" </> fromText d </> "src") $ packages f
+  let packageDirs = map (\d -> "frameworks" </> fromText d </> "src") $ packages f
       fwDirs = map fromText $ frameworkDirs f
       fullPaths = zipWith (</>) packageDirs fwDirs
   return fullPaths
 
-
 data Framework = Framework Text [Text]
+
+frameworkPaths :: Framework -> [FilePath]
+frameworkPaths (Framework name subs) = mainFramework : map subFrameworkPath subs
+  where mainFramework = "/System/Library/Frameworks" </> fromText name <.> "framework"
+        subFrameworkPath subName = mainFramework </> "Frameworks" </> fromText subName <.> "framework"
+
+generateBridgeMetadata fp = rawSystem "gen_bridge_metadata" ["-f", encodeString fp, "-o", encodeString ("bridgefiles" </> basename fp <.> "xml")]
 
 systemFrameworks = [ Framework "Accelerate" ["VecLib", "VImage"]
                    , Framework "AddressBook" []
@@ -115,3 +126,17 @@ systemFrameworks = [ Framework "Accelerate" ["VecLib", "VImage"]
                    ]
 
 makeFrameworkList = concatMap (\(Framework base subs) -> baseFramework base : map (subFramework base) subs) systemFrameworks
+
+makeConstant :: String -> String -> Q [Dec]
+makeConstant constName foreignName = do
+  tyVar <- newName "a"
+  return [ SigD constNameAsName (ForallT [PlainTV tyVar] [] (AppT (ConT ''Ptr) (VarT tyVar)))
+         , PragmaD (InlineP constNameAsName (InlineSpec False False Nothing))
+         , ValD (VarP constNameAsName) (NormalB (InfixE (Just (VarE 'castFunPtrToPtr)) (VarE '($)) 
+           (Just (InfixE (Just (VarE 'unsafePerformIO)) (VarE '($))
+             (Just (AppE (AppE (VarE 'dlsym) (ConE 'Default)) (LitE (StringL foreignName)))))))) []
+         ]
+
+  where
+    constNameAsName = mkName constName
+

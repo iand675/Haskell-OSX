@@ -1,0 +1,229 @@
+<?xml version='1.0'?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version='1.0'>
+<depends_on path='/System/Library/Frameworks/ApplicationServices.framework'/>
+<depends_on path='/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/HIToolbox.framework'/>
+<depends_on path='/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/SecurityHI.framework'/>
+<depends_on path='/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/CarbonSound.framework'/>
+<depends_on path='/System/Library/Frameworks/CoreFoundation.framework'/>
+<depends_on path='/System/Library/Frameworks/CoreServices.framework'/>
+<struct type='{NavCBRec=&quot;version&quot;S&quot;context&quot;^{__NavDialog}&quot;window&quot;^{OpaqueWindowPtr}&quot;customRect&quot;{Rect=&quot;top&quot;s&quot;left&quot;s&quot;bottom&quot;s&quot;right&quot;s}&quot;previewRect&quot;{Rect=&quot;top&quot;s&quot;left&quot;s&quot;bottom&quot;s&quot;right&quot;s}&quot;eventData&quot;{NavEventData=&quot;eventDataParms&quot;(NavEventDataInfo=&quot;event&quot;^{EventRecord}&quot;param&quot;^v)&quot;itemHit&quot;s}&quot;userAction&quot;I&quot;reserved&quot;[218c]}' name='NavCBRec'/>
+<struct type='{NavDialogCreationOptions=&quot;version&quot;S&quot;optionFlags&quot;I&quot;location&quot;{Point=&quot;v&quot;s&quot;h&quot;s}&quot;clientName&quot;^{__CFString}&quot;windowTitle&quot;^{__CFString}&quot;actionButtonLabel&quot;^{__CFString}&quot;cancelButtonLabel&quot;^{__CFString}&quot;saveFileName&quot;^{__CFString}&quot;message&quot;^{__CFString}&quot;preferenceKey&quot;I&quot;popupExtension&quot;^{__CFArray}&quot;modality&quot;I&quot;parentWindow&quot;^{OpaqueWindowPtr}&quot;reserved&quot;[16c]}' name='NavDialogCreationOptions'/>
+<struct type='{NavDialogOptions=&quot;version&quot;S&quot;dialogOptionFlags&quot;I&quot;location&quot;{Point=&quot;v&quot;s&quot;h&quot;s}&quot;clientName&quot;[256C]&quot;windowTitle&quot;[256C]&quot;actionButtonLabel&quot;[256C]&quot;cancelButtonLabel&quot;[256C]&quot;savedFileName&quot;[256C]&quot;message&quot;[256C]&quot;preferenceKey&quot;I&quot;popupExtension&quot;^^{NavMenuItemSpec}&quot;reserved&quot;[494c]}' name='NavDialogOptions'/>
+<struct type='{NavEventData=&quot;eventDataParms&quot;(NavEventDataInfo=&quot;event&quot;^{EventRecord}&quot;param&quot;^v)&quot;itemHit&quot;s}' name='NavEventData'/>
+<struct type64='{NavFileOrFolderInfo=&quot;version&quot;S&quot;isFolder&quot;B&quot;visible&quot;B&quot;creationDate&quot;I&quot;modificationDate&quot;I&quot;fileAndFolder&quot;(?=&quot;fileInfo&quot;{?=&quot;locked&quot;B&quot;resourceOpen&quot;B&quot;dataOpen&quot;B&quot;reserved1&quot;B&quot;dataSize&quot;Q&quot;resourceSize&quot;Q&quot;finderInfo&quot;{FInfo=&quot;fdType&quot;I&quot;fdCreator&quot;I&quot;fdFlags&quot;S&quot;fdLocation&quot;{Point=&quot;v&quot;s&quot;h&quot;s}&quot;fdFldr&quot;s}&quot;finderXInfo&quot;{FXInfo=&quot;fdIconID&quot;s&quot;fdReserved&quot;[3s]&quot;fdScript&quot;c&quot;fdXFlags&quot;c&quot;fdComment&quot;s&quot;fdPutAway&quot;i}}&quot;folderInfo&quot;{?=&quot;shareable&quot;B&quot;sharePoint&quot;B&quot;mounted&quot;B&quot;readable&quot;B&quot;writeable&quot;B&quot;reserved2&quot;B&quot;numberOfFiles&quot;Q&quot;finderDInfo&quot;{DInfo=&quot;frRect&quot;{Rect=&quot;top&quot;s&quot;left&quot;s&quot;bottom&quot;s&quot;right&quot;s}&quot;frFlags&quot;S&quot;frLocation&quot;{Point=&quot;v&quot;s&quot;h&quot;s}&quot;frView&quot;s}&quot;finderDXInfo&quot;{DXInfo=&quot;frScroll&quot;{Point=&quot;v&quot;s&quot;h&quot;s}&quot;frOpenChain&quot;i&quot;frScript&quot;c&quot;frXFlags&quot;c&quot;frComment&quot;s&quot;frPutAway&quot;i}&quot;folderType&quot;I&quot;folderCreator&quot;I&quot;reserved3&quot;[206c]})}' type='{NavFileOrFolderInfo=&quot;version&quot;S&quot;isFolder&quot;B&quot;visible&quot;B&quot;creationDate&quot;I&quot;modificationDate&quot;I&quot;fileAndFolder&quot;(?=&quot;fileInfo&quot;{?=&quot;locked&quot;B&quot;resourceOpen&quot;B&quot;dataOpen&quot;B&quot;reserved1&quot;B&quot;dataSize&quot;I&quot;resourceSize&quot;I&quot;finderInfo&quot;{FInfo=&quot;fdType&quot;I&quot;fdCreator&quot;I&quot;fdFlags&quot;S&quot;fdLocation&quot;{Point=&quot;v&quot;s&quot;h&quot;s}&quot;fdFldr&quot;s}&quot;finderXInfo&quot;{FXInfo=&quot;fdIconID&quot;s&quot;fdReserved&quot;[3s]&quot;fdScript&quot;c&quot;fdXFlags&quot;c&quot;fdComment&quot;s&quot;fdPutAway&quot;i}}&quot;folderInfo&quot;{?=&quot;shareable&quot;B&quot;sharePoint&quot;B&quot;mounted&quot;B&quot;readable&quot;B&quot;writeable&quot;B&quot;reserved2&quot;B&quot;numberOfFiles&quot;I&quot;finderDInfo&quot;{DInfo=&quot;frRect&quot;{Rect=&quot;top&quot;s&quot;left&quot;s&quot;bottom&quot;s&quot;right&quot;s}&quot;frFlags&quot;S&quot;frLocation&quot;{Point=&quot;v&quot;s&quot;h&quot;s}&quot;frView&quot;s}&quot;finderDXInfo&quot;{DXInfo=&quot;frScroll&quot;{Point=&quot;v&quot;s&quot;h&quot;s}&quot;frOpenChain&quot;i&quot;frScript&quot;c&quot;frXFlags&quot;c&quot;frComment&quot;s&quot;frPutAway&quot;i}&quot;folderType&quot;I&quot;folderCreator&quot;I&quot;reserved3&quot;[206c]})}' name='NavFileOrFolderInfo'/>
+<struct type='{NavMenuItemSpec=&quot;version&quot;S&quot;menuCreator&quot;I&quot;menuType&quot;I&quot;menuItemName&quot;[256C]&quot;reserved&quot;[245c]}' name='NavMenuItemSpec'/>
+<struct type='{NavReplyRecord=&quot;version&quot;S&quot;validRecord&quot;B&quot;replacing&quot;B&quot;isStationery&quot;B&quot;translationNeeded&quot;B&quot;selection&quot;{AEDesc=&quot;descriptorType&quot;I&quot;dataHandle&quot;^^{OpaqueAEDataStorageType}}&quot;keyScript&quot;s&quot;fileTranslation&quot;^^{FileTranslationSpec}&quot;reserved1&quot;I&quot;saveFileName&quot;^{__CFString}&quot;saveFileExtensionHidden&quot;B&quot;reserved2&quot;C&quot;reserved&quot;[225c]}' name='NavReplyRecord'/>
+<struct type64='{NavTypeList=&quot;componentSignature&quot;I&quot;reserved&quot;s&quot;osTypeCount&quot;s&quot;osType&quot;[1I]}' type='{NavTypeList=&quot;componentSignature&quot;I&quot;reserved&quot;s&quot;osTypeCount&quot;s&quot;osType&quot;[1L]}' name='NavTypeList'/>
+<cftype type='^{__NavDialog=}' name='NavDialogRef'/>
+<enum value='2' name='kNavAllFiles'/>
+<enum value='16' name='kNavAllFilesInPopup'/>
+<enum value='0' name='kNavAllKnownFiles'/>
+<enum value='1' name='kNavAllReadableFiles'/>
+<enum value='256' name='kNavAllowInvisibleFiles'/>
+<enum value='128' name='kNavAllowMultipleFiles'/>
+<enum value='8192' name='kNavAllowOpenPackages'/>
+<enum value='64' name='kNavAllowPreviews'/>
+<enum value='32' name='kNavAllowStationery'/>
+<enum value='1' name='kNavAskDiscardChanges'/>
+<enum value='2' name='kNavAskDiscardChangesCancel'/>
+<enum value='2' name='kNavAskSaveChangesCancel'/>
+<enum value='3' name='kNavAskSaveChangesDontSave'/>
+<enum value='1' name='kNavAskSaveChangesSave'/>
+<enum value='9' name='kNavCBAccept'/>
+<enum value='11' name='kNavCBAdjustPreview'/>
+<enum value='4' name='kNavCBAdjustRect'/>
+<enum value='10' name='kNavCBCancel'/>
+<enum value='1' name='kNavCBCustomize'/>
+<enum value='0' name='kNavCBEvent'/>
+<enum value='5' name='kNavCBNewLocation'/>
+<enum value='-2147483648' name='kNavCBOpenSelection'/>
+<enum value='8' name='kNavCBPopupMenuSelect'/>
+<enum value='1' name='kNavCBRecVersion'/>
+<enum value='7' name='kNavCBSelectEntry'/>
+<enum value='6' name='kNavCBShowDesktop'/>
+<enum value='2' name='kNavCBStart'/>
+<enum value='3' name='kNavCBTerminate'/>
+<enum value='12' name='kNavCBUserAction'/>
+<enum value='1702392942' name='kNavClientPopupExtensionTag'/>
+<enum value='16' name='kNavCtlAccept'/>
+<enum value='18' name='kNavCtlAddControl'/>
+<enum value='19' name='kNavCtlAddControlList'/>
+<enum value='29' name='kNavCtlBrowserRedraw'/>
+<enum value='26' name='kNavCtlBrowserSelectAll'/>
+<enum value='15' name='kNavCtlCancel'/>
+<enum value='13' name='kNavCtlEjectVolume'/>
+<enum value='23' name='kNavCtlGetEditFileName'/>
+<enum value='20' name='kNavCtlGetFirstControlID'/>
+<enum value='7' name='kNavCtlGetLocation'/>
+<enum value='9' name='kNavCtlGetSelection'/>
+<enum value='27' name='kNavCtlGotoParent'/>
+<enum value='17' name='kNavCtlIsPreviewShowing'/>
+<enum value='14' name='kNavCtlNewFolder'/>
+<enum value='12' name='kNavCtlOpenSelection'/>
+<enum value='6' name='kNavCtlPageDown'/>
+<enum value='5' name='kNavCtlPageUp'/>
+<enum value='4' name='kNavCtlScrollEnd'/>
+<enum value='3' name='kNavCtlScrollHome'/>
+<enum value='22' name='kNavCtlSelectAllType'/>
+<enum value='21' name='kNavCtlSelectCustomType'/>
+<enum value='25' name='kNavCtlSelectEditFileName'/>
+<enum value='28' name='kNavCtlSetActionState'/>
+<enum value='24' name='kNavCtlSetEditFileName'/>
+<enum value='8' name='kNavCtlSetLocation'/>
+<enum value='10' name='kNavCtlSetSelection'/>
+<enum value='0' name='kNavCtlShowDesktop'/>
+<enum value='11' name='kNavCtlShowSelection'/>
+<enum value='1' name='kNavCtlSortBy'/>
+<enum value='2' name='kNavCtlSortOrder'/>
+<enum value='30' name='kNavCtlTerminate'/>
+<enum value='228' name='kNavDefaultNavDlogOptions'/>
+<enum value='0' name='kNavDialogCreationOptionsVersion'/>
+<enum value='0' name='kNavDialogOptionsVersion'/>
+<enum value='16384' name='kNavDontAddRecents'/>
+<enum value='4' name='kNavDontAddTranslateItems'/>
+<enum value='2' name='kNavDontAutoTranslate'/>
+<enum value='4' name='kNavDontChooseState'/>
+<enum value='65536' name='kNavDontConfirmReplacement'/>
+<enum value='16' name='kNavDontNewFolderState'/>
+<enum value='1' name='kNavDontOpenState'/>
+<enum value='512' name='kNavDontResolveAliases'/>
+<enum value='2' name='kNavDontSaveState'/>
+<enum value='32768' name='kNavDontUseCustomFrame'/>
+<enum value='1' name='kNavFileOrFolderVersion'/>
+<enum value='0' name='kNavFilteringBrowserList'/>
+<enum value='1' name='kNavFilteringFavorites'/>
+<enum value='4' name='kNavFilteringLocationPopup'/>
+<enum value='2' name='kNavFilteringRecents'/>
+<enum value='3' name='kNavFilteringShortCutVolumes'/>
+<enum value='707406378' name='kNavGenericSignature'/>
+<enum value='0' name='kNavMenuItemSpecVersion'/>
+<enum value='1' name='kNavNoTypePopup'/>
+<enum value='0' name='kNavNormalState'/>
+<enum value='131072' name='kNavPreserveSaveFileExtension'/>
+<enum value='2' name='kNavReplyRecordVersion'/>
+<enum value='1' name='kNavSaveChangesClosingDocument'/>
+<enum value='0' name='kNavSaveChangesOther'/>
+<enum value='2' name='kNavSaveChangesQuittingApplication'/>
+<enum value='2048' name='kNavSelectAllReadableItem'/>
+<enum value='1024' name='kNavSelectDefaultLocation'/>
+<enum value='0' name='kNavSortAscending'/>
+<enum value='1' name='kNavSortDateField'/>
+<enum value='1' name='kNavSortDescending'/>
+<enum value='0' name='kNavSortNameField'/>
+<enum value='4096' name='kNavSupportPackages'/>
+<enum value='1' name='kNavTranslateCopy'/>
+<enum value='0' name='kNavTranslateInPlace'/>
+<enum value='1' name='kNavUserActionCancel'/>
+<enum value='4' name='kNavUserActionChoose'/>
+<enum value='8' name='kNavUserActionDiscardChanges'/>
+<enum value='10' name='kNavUserActionDiscardDocuments'/>
+<enum value='7' name='kNavUserActionDontSaveChanges'/>
+<enum value='5' name='kNavUserActionNewFolder'/>
+<enum value='0' name='kNavUserActionNone'/>
+<enum value='2' name='kNavUserActionOpen'/>
+<enum value='9' name='kNavUserActionReviewDocuments'/>
+<enum value='3' name='kNavUserActionSaveAs'/>
+<enum value='6' name='kNavUserActionSaveChanges'/>
+<function name='DisposeNavEventUPP'>
+<arg type='^?' function_pointer='true'>
+<arg type64='i' type='l'/>
+<arg type='^{NavCBRec=S^{__NavDialog}^{OpaqueWindowPtr}{Rect=ssss}{Rect=ssss}{NavEventData=(NavEventDataInfo=^{EventRecord}^v)s}I[218c]}'/>
+<arg type='^v'/>
+<retval type='v'/>
+</arg>
+</function>
+<function name='DisposeNavObjectFilterUPP'>
+<arg type='^?' function_pointer='true'>
+<arg type='^{AEDesc=I^^{OpaqueAEDataStorageType}}'/>
+<arg type='^v'/>
+<arg type='^v'/>
+<arg type='s'/>
+<retval type='B'/>
+</arg>
+</function>
+<function name='DisposeNavPreviewUPP'>
+<arg type='^?' function_pointer='true'>
+<arg type='^{NavCBRec=S^{__NavDialog}^{OpaqueWindowPtr}{Rect=ssss}{Rect=ssss}{NavEventData=(NavEventDataInfo=^{EventRecord}^v)s}I[218c]}'/>
+<arg type='^v'/>
+<retval type='B'/>
+</arg>
+</function>
+<function name='InvokeNavEventUPP'>
+<arg type64='i' type='l'/>
+<arg type='^{NavCBRec=S^{__NavDialog}^{OpaqueWindowPtr}{Rect=ssss}{Rect=ssss}{NavEventData=(NavEventDataInfo=^{EventRecord}^v)s}I[218c]}'/>
+<arg type='^v'/>
+<arg type='^?' function_pointer='true'>
+<arg type64='i' type='l'/>
+<arg type='^{NavCBRec=S^{__NavDialog}^{OpaqueWindowPtr}{Rect=ssss}{Rect=ssss}{NavEventData=(NavEventDataInfo=^{EventRecord}^v)s}I[218c]}'/>
+<arg type='^v'/>
+<retval type='v'/>
+</arg>
+</function>
+<function name='InvokeNavObjectFilterUPP'>
+<arg type='^{AEDesc=I^^{OpaqueAEDataStorageType}}'/>
+<arg type='^v'/>
+<arg type='^v'/>
+<arg type='s'/>
+<arg type='^?' function_pointer='true'>
+<arg type='^{AEDesc=I^^{OpaqueAEDataStorageType}}'/>
+<arg type='^v'/>
+<arg type='^v'/>
+<arg type='s'/>
+<retval type='B'/>
+</arg>
+<retval type='B'/>
+</function>
+<function name='InvokeNavPreviewUPP'>
+<arg type='^{NavCBRec=S^{__NavDialog}^{OpaqueWindowPtr}{Rect=ssss}{Rect=ssss}{NavEventData=(NavEventDataInfo=^{EventRecord}^v)s}I[218c]}'/>
+<arg type='^v'/>
+<arg type='^?' function_pointer='true'>
+<arg type='^{NavCBRec=S^{__NavDialog}^{OpaqueWindowPtr}{Rect=ssss}{Rect=ssss}{NavEventData=(NavEventDataInfo=^{EventRecord}^v)s}I[218c]}'/>
+<arg type='^v'/>
+<retval type='B'/>
+</arg>
+<retval type='B'/>
+</function>
+<function name='NewNavEventUPP'>
+<arg type='^?' function_pointer='true'>
+<arg type64='i' type='l'/>
+<arg type='^{NavCBRec=S^{__NavDialog}^{OpaqueWindowPtr}{Rect=ssss}{Rect=ssss}{NavEventData=(NavEventDataInfo=^{EventRecord}^v)s}I[218c]}'/>
+<arg type='^v'/>
+<retval type='v'/>
+</arg>
+<retval type='^?' function_pointer='true'>
+<arg type64='i' type='l'/>
+<arg type='^{NavCBRec=S^{__NavDialog}^{OpaqueWindowPtr}{Rect=ssss}{Rect=ssss}{NavEventData=(NavEventDataInfo=^{EventRecord}^v)s}I[218c]}'/>
+<arg type='^v'/>
+<retval type='v'/>
+</retval>
+</function>
+<function name='NewNavObjectFilterUPP'>
+<arg type='^?' function_pointer='true'>
+<arg type='^{AEDesc=I^^{OpaqueAEDataStorageType}}'/>
+<arg type='^v'/>
+<arg type='^v'/>
+<arg type='s'/>
+<retval type='B'/>
+</arg>
+<retval type='^?' function_pointer='true'>
+<arg type='^{AEDesc=I^^{OpaqueAEDataStorageType}}'/>
+<arg type='^v'/>
+<arg type='^v'/>
+<arg type='s'/>
+<retval type='B'/>
+</retval>
+</function>
+<function name='NewNavPreviewUPP'>
+<arg type='^?' function_pointer='true'>
+<arg type='^{NavCBRec=S^{__NavDialog}^{OpaqueWindowPtr}{Rect=ssss}{Rect=ssss}{NavEventData=(NavEventDataInfo=^{EventRecord}^v)s}I[218c]}'/>
+<arg type='^v'/>
+<retval type='B'/>
+</arg>
+<retval type='^?' function_pointer='true'>
+<arg type='^{NavCBRec=S^{__NavDialog}^{OpaqueWindowPtr}{Rect=ssss}{Rect=ssss}{NavEventData=(NavEventDataInfo=^{EventRecord}^v)s}I[218c]}'/>
+<arg type='^v'/>
+<retval type='B'/>
+</retval>
+</function>
+</signatures>

@@ -1,0 +1,110 @@
+<?xml version='1.0'?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version='1.0'>
+<depends_on path='/System/Library/Frameworks/AddressBook.framework'/>
+<depends_on path='/System/Library/Frameworks/Security.framework'/>
+<depends_on path='/System/Library/Frameworks/Foundation.framework'/>
+<depends_on path='/System/Library/Frameworks/SyncServices.framework'/>
+<depends_on path='/System/Library/Frameworks/AppKit.framework'/>
+<depends_on path='/System/Library/Frameworks/CoreData.framework'/>
+<depends_on path='/System/Library/Frameworks/SystemConfiguration.framework'/>
+<depends_on path='/System/Library/Frameworks/ServerNotification.framework'/>
+<depends_on path='/System/Library/Frameworks/CoreServices.framework'/>
+<depends_on path='/System/Library/Frameworks/CoreFoundation.framework'/>
+<constant type='@' name='CalAlarmActionDisplay'/>
+<constant type='@' name='CalAlarmActionEmail'/>
+<constant type='@' name='CalAlarmActionProcedure'/>
+<constant type='@' name='CalAlarmActionSound'/>
+<constant type='@' name='CalAttendeeStatusAccepted'/>
+<constant type='@' name='CalAttendeeStatusDeclined'/>
+<constant type='@' name='CalAttendeeStatusNeedsAction'/>
+<constant type='@' name='CalAttendeeStatusTentative'/>
+<constant type='@' name='CalCalendarStoreErrorDomain'/>
+<constant type='@' name='CalCalendarTypeBirthday'/>
+<constant type='@' name='CalCalendarTypeCalDAV'/>
+<constant type='@' name='CalCalendarTypeExchange'/>
+<constant type='@' name='CalCalendarTypeIMAP'/>
+<constant type='@' name='CalCalendarTypeLocal'/>
+<constant type='@' name='CalCalendarTypeSubscription'/>
+<constant type='@' name='CalCalendarsChangedExternallyNotification'/>
+<constant type='@' name='CalCalendarsChangedNotification'/>
+<constant type='I' name='CalDefaultRecurrenceInterval' type64='Q'/>
+<constant type='@' name='CalDeletedRecordsKey'/>
+<constant type='@' name='CalEventsChangedExternallyNotification'/>
+<constant type='@' name='CalEventsChangedNotification'/>
+<constant type='@' name='CalInsertedRecordsKey'/>
+<constant type='@' name='CalSenderProcessIDKey'/>
+<constant type='@' name='CalTasksChangedExternallyNotification'/>
+<constant type='@' name='CalTasksChangedNotification'/>
+<constant type='@' name='CalUpdatedRecordsKey'/>
+<constant type='@' name='CalUserUIDKey'/>
+<enum value='1025' name='CalCalendarNotEditableError'/>
+<enum value='1027' name='CalCalendarNotInRepository'/>
+<enum value='1028' name='CalCalendarTitleNotUniqueError'/>
+<enum value='1026' name='CalDateInvalidError'/>
+<enum value='1' name='CalPriorityHigh'/>
+<enum value='9' name='CalPriorityLow'/>
+<enum value='5' name='CalPriorityMedium'/>
+<enum value='0' name='CalPriorityNone'/>
+<enum value='0' name='CalRecurrenceDaily'/>
+<enum value='2' name='CalRecurrenceMonthly'/>
+<enum value='1' name='CalRecurrenceWeekly'/>
+<enum value='3' name='CalRecurrenceYearly'/>
+<enum value='2' name='CalSpanAllEvents'/>
+<enum value='1' name='CalSpanFutureEvents'/>
+<enum value='0' name='CalSpanThisEvent'/>
+<class name='CalCalendar'>
+<method selector='isEditable'>
+<retval type='B'/>
+</method>
+</class>
+<class name='CalCalendarItem'>
+<method selector='hasAlarm'>
+<retval type='B'/>
+</method>
+</class>
+<class name='CalCalendarStore'>
+<method selector='removeCalendar:error:'>
+<retval type='B'/>
+</method>
+<method selector='removeEvent:span:error:'>
+<retval type='B'/>
+</method>
+<method selector='removeTask:error:'>
+<retval type='B'/>
+</method>
+<method selector='saveCalendar:error:'>
+<retval type='B'/>
+</method>
+<method selector='saveEvent:span:error:'>
+<retval type='B'/>
+</method>
+<method selector='saveTask:error:'>
+<retval type='B'/>
+</method>
+</class>
+<class name='CalEvent'>
+<method selector='isAllDay'>
+<retval type='B'/>
+</method>
+<method selector='isDetached'>
+<retval type='B'/>
+</method>
+<method selector='setIsAllDay:'>
+<arg index='0' type='B'/>
+</method>
+</class>
+<class name='CalRecurrenceEnd'>
+<method selector='usesEndDate'>
+<retval type='B'/>
+</method>
+</class>
+<class name='CalTask'>
+<method selector='isCompleted'>
+<retval type='B'/>
+</method>
+<method selector='setIsCompleted:'>
+<arg index='0' type='B'/>
+</method>
+</class>
+</signatures>

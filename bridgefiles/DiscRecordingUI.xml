@@ -1,0 +1,158 @@
+<?xml version='1.0'?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version='1.0'>
+<depends_on path='/System/Library/Frameworks/AppKit.framework'/>
+<depends_on path='/System/Library/Frameworks/Foundation.framework'/>
+<depends_on path='/System/Library/Frameworks/Carbon.framework'/>
+<depends_on path='/System/Library/Frameworks/ApplicationServices.framework'/>
+<depends_on path='/System/Library/Frameworks/DiscRecording.framework'/>
+<depends_on path='/System/Library/Frameworks/AudioToolbox.framework'/>
+<depends_on path='/System/Library/Frameworks/CoreServices.framework'/>
+<depends_on path='/System/Library/Frameworks/CoreFoundation.framework'/>
+<struct name='DRBurnSessionProgressCallbacks' type='{DRBurnSessionProgressCallbacks=&quot;version&quot;I&quot;progressWillBegin&quot;^?&quot;progressDidFinish&quot;^?&quot;burnDidFinish&quot;^?}'/>
+<struct name='DRBurnSessionProgressDialogOptions' type='{DRBurnSessionProgressDialogOptions=&quot;version&quot;I&quot;dialogOptionFlags&quot;I&quot;description&quot;^{__CFString}}'/>
+<struct name='DRBurnSessionSetupCallbacks' type='{DRBurnSessionSetupCallbacks=&quot;version&quot;I&quot;deviceShouldBeTarget&quot;^?&quot;containsSuitableMedia&quot;^?&quot;deviceSelectionChanged&quot;^?}'/>
+<struct name='DRBurnSessionSetupDialogOptions' type='{DRBurnSessionSetupDialogOptions=&quot;version&quot;I&quot;dialogOptionFlags&quot;I&quot;defaultButtonTitle&quot;^{__CFString}}'/>
+<struct name='DREraseSessionProgressCallbacks' type='{DREraseSessionProgressCallbacks=&quot;version&quot;I&quot;progressWillBegin&quot;^?&quot;progressDidFinish&quot;^?&quot;eraseDidFinish&quot;^?}'/>
+<struct name='DREraseSessionProgressDialogOptions' type='{DREraseSessionProgressDialogOptions=&quot;version&quot;I&quot;dialogOptionFlags&quot;I&quot;description&quot;^{__CFString}}'/>
+<struct name='DREraseSessionSetupCallbacks' type='{DREraseSessionSetupCallbacks=&quot;version&quot;I&quot;deviceShouldBeTarget&quot;^?&quot;containsSuitableMedia&quot;^?&quot;deviceSelectionChanged&quot;^?}'/>
+<struct name='DREraseSessionSetupDialogOptions' type='{DREraseSessionSetupDialogOptions=&quot;version&quot;I&quot;dialogOptionFlags&quot;I}'/>
+<cftype name='DRBurnSessionRef' gettypeid_func='DRBurnSessionGetTypeID' type='^{__DRBurnSession=}'/>
+<cftype name='DREraseSessionRef' gettypeid_func='DREraseSessionGetTypeID' type='^{__DREraseSession=}'/>
+<constant name='DRBurnIcon' type='@'/>
+<constant name='DRBurnProgressPanelDidFinishNotification' type='@'/>
+<constant name='DRBurnProgressPanelWillBeginNotification' type='@'/>
+<constant name='DRBurnSetupPanelDefaultButtonDefaultTitle' type='@'/>
+<constant name='DREraseIcon' type='@'/>
+<constant name='DREraseProgressPanelDidFinishNotification' type='@'/>
+<constant name='DREraseProgressPanelWillBeginNotification' type='@'/>
+<constant name='DRSetupPanelDeviceSelectionChangedNotification' type='@'/>
+<constant name='DRSetupPanelSelectedDeviceKey' type='@'/>
+<enum name='kBurnSessionProgressDialogDefaultOptions' value='0'/>
+<enum name='kBurnSessionProgressDialogDisplayVerboseProgress' value='1'/>
+<enum name='kBurnSessionProgressDialogOptionsCurrentVersion' value='1'/>
+<enum name='kBurnSessionSetupDialogAllowTestBurns' value='2147483652'/>
+<enum name='kBurnSessionSetupDialogDefaultOptions' value='0'/>
+<enum name='kBurnSessionSetupDialogDontHandleReservations' value='2'/>
+<enum name='kBurnSessionSetupDialogForceClosedDiscs' value='1'/>
+<enum name='kBurnSessionSetupDialogOptionsCurrentVersion' value='1'/>
+<enum name='kDRBurnProgressSetupCallbacksCurrentVersion' value='1'/>
+<enum name='kDRBurnSessionCancel' value='0'/>
+<enum name='kDRBurnSessionOK' value='1'/>
+<enum name='kDRBurnSessionSetupCallbacksCurrentVersion' value='1'/>
+<enum name='kDREraseProgressSetupCallbacksCurrentVersion' value='1'/>
+<enum name='kDREraseSessionCancel' value='0'/>
+<enum name='kDREraseSessionOK' value='1'/>
+<enum name='kDREraseSessionSetupCallbacksCurrentVersion' value='1'/>
+<enum name='kEraseSessionProgressDialogDefaultOptions' value='0'/>
+<enum name='kEraseSessionProgressDialogOptionsCurrentVersion' value='1'/>
+<enum name='kEraseSessionSetupDialogDefaultOptions' value='0'/>
+<enum name='kEraseSessionSetupDialogDontHandleReservations' value='1'/>
+<enum name='kEraseSessionSetupDialogOptionsCurrentVersion' value='1'/>
+<function name='DRBurnSessionBeginProgressDialog'>
+<arg type='^{__DRBurnSession=}'/>
+<arg type='@'/>
+<arg type='^{DRBurnSessionProgressDialogOptions=II^{__CFString}}'/>
+<arg type='^{DRBurnSessionProgressCallbacks=I^?^?^?}'/>
+</function>
+<function name='DRBurnSessionCreate'>
+<retval type='^{__DRBurnSession=}' already_retained='true'/>
+</function>
+<function name='DRBurnSessionGetBurn'>
+<arg type='^{__DRBurnSession=}'/>
+<retval type='^{__DRBurn=}'/>
+</function>
+<function name='DRBurnSessionGetTypeID'>
+<retval type='L' type64='Q'/>
+</function>
+<function name='DRBurnSessionSetBurn'>
+<arg type='^{__DRBurnSession=}'/>
+<arg type='^{__DRBurn=}'/>
+</function>
+<function name='DRBurnSessionSetupDialog'>
+<arg type='^{__DRBurnSession=}'/>
+<arg type='^{DRBurnSessionSetupDialogOptions=II^{__CFString}}'/>
+<arg type='^{DRBurnSessionSetupCallbacks=I^?^?^?}'/>
+<retval type='c'/>
+</function>
+<function name='DREraseSessionBeginProgressDialog'>
+<arg type='^{__DREraseSession=}'/>
+<arg type='^{DREraseSessionProgressDialogOptions=II^{__CFString}}'/>
+<arg type='^{DREraseSessionProgressCallbacks=I^?^?^?}'/>
+</function>
+<function name='DREraseSessionCreate'>
+<retval type='^{__DREraseSession=}' already_retained='true'/>
+</function>
+<function name='DREraseSessionGetErase'>
+<arg type='^{__DREraseSession=}'/>
+<retval type='^{__DRErase=}'/>
+</function>
+<function name='DREraseSessionGetTypeID'>
+<retval type='L' type64='Q'/>
+</function>
+<function name='DREraseSessionSetErase'>
+<arg type='^{__DREraseSession=}'/>
+<arg type='^{__DRErase=}'/>
+</function>
+<function name='DREraseSessionSetupDialog'>
+<arg type='^{__DREraseSession=}'/>
+<arg type='^{DREraseSessionSetupDialogOptions=II}'/>
+<arg type='^{DREraseSessionSetupCallbacks=I^?^?^?}'/>
+<retval type='c'/>
+</function>
+<class name='DRBurnProgressPanel'>
+<method selector='setVerboseProgressStatus:'>
+<arg index='0' type='B'/>
+</method>
+<method selector='verboseProgressStatus'>
+<retval type='B'/>
+</method>
+</class>
+<class name='DRBurnSetupPanel'>
+<method selector='setCanSelectAppendableMedia:'>
+<arg index='0' type='B'/>
+</method>
+<method selector='setCanSelectTestBurn:'>
+<arg index='0' type='B'/>
+</method>
+</class>
+<class name='DRSetupPanel'>
+<method selector='mediaStateChanged:'>
+<retval type='B'/>
+</method>
+</class>
+<class name='NSObject'>
+<method selector='burnProgressPanel:burnDidFinish:'>
+<retval type='B'/>
+</method>
+<method selector='eraseProgressPanel:eraseDidFinish:'>
+<retval type='B'/>
+</method>
+<method selector='setupPanel:deviceContainsSuitableMedia:promptString:'>
+<retval type='B'/>
+</method>
+<method selector='setupPanel:deviceCouldBeTarget:'>
+<retval type='B'/>
+</method>
+<method selector='setupPanelShouldHandleMediaReservations:'>
+<retval type='B'/>
+</method>
+</class>
+<informal_protocol name='DRBurnProgressPanelDelegateMethods'>
+<method type='B16@0:4@8@12' type64='B32@0:8@16@24' selector='burnProgressPanel:burnDidFinish:'/>
+<method type='v12@0:4@8' type64='v24@0:8@16' selector='burnProgressPanelDidFinish:'/>
+<method type='v12@0:4@8' type64='v24@0:8@16' selector='burnProgressPanelWillBegin:'/>
+</informal_protocol>
+<informal_protocol name='DREraseProgressPanelDelegateMethods'>
+<method type='B16@0:4@8@12' type64='B32@0:8@16@24' selector='eraseProgressPanel:eraseDidFinish:'/>
+<method type='v12@0:4@8' type64='v24@0:8@16' selector='eraseProgressPanelDidFinish:'/>
+<method type='v12@0:4@8' type64='v24@0:8@16' selector='eraseProgressPanelWillBegin:'/>
+</informal_protocol>
+<informal_protocol name='DRSetupPanelDelegate'>
+<method type='@20@0:4@8@12@16' type64='@40@0:8@16@24@32' selector='setupPanel:determineBestDeviceOfA:orB:'/>
+<method type='B20@0:4@8@12^@16' type64='B40@0:8@16@24^@32' selector='setupPanel:deviceContainsSuitableMedia:promptString:'/>
+<method type='B16@0:4@8@12' type64='B32@0:8@16@24' selector='setupPanel:deviceCouldBeTarget:'/>
+<method type='v12@0:4@8' type64='v24@0:8@16' selector='setupPanelDeviceSelectionChanged:'/>
+<method type='B12@0:4@8' type64='B24@0:8@16' selector='setupPanelShouldHandleMediaReservations:'/>
+</informal_protocol>
+</signatures>

@@ -1,0 +1,1618 @@
+<?xml version='1.0'?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version='1.0'>
+<depends_on path='/System/Library/Frameworks/CoreServices.framework'/>
+<depends_on path='/System/Library/Frameworks/CoreFoundation.framework'/>
+<depends_on path='/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/CoreGraphics.framework'/>
+<depends_on path='/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/QD.framework'/>
+<depends_on path='/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ATS.framework'/>
+<depends_on path='/System/Library/Frameworks/SystemConfiguration.framework'/>
+<depends_on path='/System/Library/Frameworks/IOKit.framework'/>
+<depends_on path='/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ColorSync.framework'/>
+<depends_on path='/System/Library/Frameworks/Accelerate.framework'/>
+<depends_on path='/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ImageIO.framework'/>
+<depends_on path='/System/Library/Frameworks/Foundation.framework'/>
+<struct name='AppParameters' type='{AppParameters=&quot;theMsgEvent&quot;{?=&quot;what&quot;S&quot;message&quot;I&quot;when&quot;I&quot;where&quot;{Point=&quot;v&quot;s&quot;h&quot;s}&quot;modifiers&quot;S}&quot;eventRefCon&quot;I&quot;messageLength&quot;I}'/>
+<struct name='ICAppSpec' type='{ICAppSpec=&quot;fCreator&quot;I&quot;name&quot;[64C]}'/>
+<struct name='ICAppSpecList' type='{ICAppSpecList=&quot;numberOfItems&quot;s&quot;appSpecs&quot;[1{ICAppSpec=&quot;fCreator&quot;I&quot;name&quot;[64C]}]}'/>
+<struct name='ICCharTable' type='{ICCharTable=&quot;netToMac&quot;[256C]&quot;macToNet&quot;[256C]}'/>
+<struct name='ICFileSpec' type='{ICFileSpec=&quot;volName&quot;[32C]&quot;volCreationDate&quot;i&quot;fss&quot;{FSSpec=&quot;vRefNum&quot;s&quot;parID&quot;i&quot;name&quot;[64C]}&quot;alias&quot;{AliasRecord=&quot;hidden&quot;[6C]}}' type64='{ICFileSpec=&quot;volName&quot;[32C]&quot;volCreationDate&quot;i&quot;fss&quot;{FSSpec=&quot;hidden&quot;[70C]}&quot;alias&quot;{AliasRecord=&quot;hidden&quot;[6C]}}'/>
+<struct name='ICFontRecord' type='{ICFontRecord=&quot;size&quot;s&quot;face&quot;C&quot;pad&quot;c&quot;font&quot;[256C]}'/>
+<struct name='ICMapEntry' type='{ICMapEntry=&quot;totalLength&quot;s&quot;fixedLength&quot;s&quot;version&quot;s&quot;fileType&quot;I&quot;fileCreator&quot;I&quot;postCreator&quot;I&quot;flags&quot;i&quot;extension&quot;[256C]&quot;creatorAppName&quot;[256C]&quot;postAppName&quot;[256C]&quot;MIMEType&quot;[256C]&quot;entryName&quot;[256C]}'/>
+<struct name='ICServiceEntry' type='{ICServiceEntry=&quot;name&quot;[256C]&quot;port&quot;s&quot;flags&quot;s}'/>
+<struct name='ICServices' type='{ICServices=&quot;count&quot;s&quot;services&quot;[1{ICServiceEntry=&quot;name&quot;[256C]&quot;port&quot;s&quot;flags&quot;s}]}'/>
+<struct name='LaunchParamBlockRec' type='{LaunchParamBlockRec=&quot;reserved1&quot;I&quot;reserved2&quot;S&quot;launchBlockID&quot;S&quot;launchEPBLength&quot;I&quot;launchFileFlags&quot;S&quot;launchControlFlags&quot;S&quot;launchAppSpec&quot;^{FSSpec}&quot;launchProcessSN&quot;{ProcessSerialNumber=&quot;highLongOfPSN&quot;I&quot;lowLongOfPSN&quot;I}&quot;launchPreferredSize&quot;I&quot;launchMinimumSize&quot;I&quot;launchAvailableSize&quot;I&quot;launchAppParameters&quot;^{AppParameters}}' type64='{LaunchParamBlockRec=&quot;reserved1&quot;I&quot;reserved2&quot;S&quot;launchBlockID&quot;S&quot;launchEPBLength&quot;I&quot;launchFileFlags&quot;S&quot;launchControlFlags&quot;S&quot;launchAppRef&quot;^{FSRef}&quot;launchProcessSN&quot;{ProcessSerialNumber=&quot;highLongOfPSN&quot;I&quot;lowLongOfPSN&quot;I}&quot;launchPreferredSize&quot;I&quot;launchMinimumSize&quot;I&quot;launchAvailableSize&quot;I&quot;launchAppParameters&quot;^{AppParameters}}'/>
+<struct name='ProcessInfoExtendedRec' type='{ProcessInfoExtendedRec=&quot;processInfoLength&quot;I&quot;processName&quot;*&quot;processNumber&quot;{ProcessSerialNumber=&quot;highLongOfPSN&quot;I&quot;lowLongOfPSN&quot;I}&quot;processType&quot;I&quot;processSignature&quot;I&quot;processMode&quot;I&quot;processLocation&quot;*&quot;processSize&quot;I&quot;processFreeMem&quot;I&quot;processLauncher&quot;{ProcessSerialNumber=&quot;highLongOfPSN&quot;I&quot;lowLongOfPSN&quot;I}&quot;processLaunchDate&quot;I&quot;processActiveTime&quot;I&quot;processAppSpec&quot;^{FSSpec}&quot;processTempMemTotal&quot;I&quot;processPurgeableTempMemTotal&quot;I}' type64='{ProcessInfoExtendedRec=&quot;processInfoLength&quot;I&quot;processName&quot;*&quot;processNumber&quot;{ProcessSerialNumber=&quot;highLongOfPSN&quot;I&quot;lowLongOfPSN&quot;I}&quot;processType&quot;I&quot;processSignature&quot;I&quot;processMode&quot;I&quot;processLocation&quot;*&quot;processSize&quot;I&quot;processFreeMem&quot;I&quot;processLauncher&quot;{ProcessSerialNumber=&quot;highLongOfPSN&quot;I&quot;lowLongOfPSN&quot;I}&quot;processLaunchDate&quot;I&quot;processActiveTime&quot;I&quot;processAppRef&quot;^{FSRef}&quot;processTempMemTotal&quot;I&quot;processPurgeableTempMemTotal&quot;I}'/>
+<struct name='ProcessInfoRec' type='{ProcessInfoRec=&quot;processInfoLength&quot;I&quot;processName&quot;*&quot;processNumber&quot;{ProcessSerialNumber=&quot;highLongOfPSN&quot;I&quot;lowLongOfPSN&quot;I}&quot;processType&quot;I&quot;processSignature&quot;I&quot;processMode&quot;I&quot;processLocation&quot;*&quot;processSize&quot;I&quot;processFreeMem&quot;I&quot;processLauncher&quot;{ProcessSerialNumber=&quot;highLongOfPSN&quot;I&quot;lowLongOfPSN&quot;I}&quot;processLaunchDate&quot;I&quot;processActiveTime&quot;I&quot;processAppSpec&quot;^{FSSpec}}' type64='{ProcessInfoRec=&quot;processInfoLength&quot;I&quot;processName&quot;*&quot;processNumber&quot;{ProcessSerialNumber=&quot;highLongOfPSN&quot;I&quot;lowLongOfPSN&quot;I}&quot;processType&quot;I&quot;processSignature&quot;I&quot;processMode&quot;I&quot;processLocation&quot;*&quot;processSize&quot;I&quot;processFreeMem&quot;I&quot;processLauncher&quot;{ProcessSerialNumber=&quot;highLongOfPSN&quot;I&quot;lowLongOfPSN&quot;I}&quot;processLaunchDate&quot;I&quot;processActiveTime&quot;I&quot;processAppRef&quot;^{FSRef}}'/>
+<struct name='SizeResourceRec' type='{SizeResourceRec=&quot;flags&quot;S&quot;preferredHeapSize&quot;I&quot;minimumHeapSize&quot;I}'/>
+<cftype tollfree='__NSCFType' name='AXObserverRef' type='^{__AXObserver=}' gettypeid_func='AXObserverGetTypeID'/>
+<cftype tollfree='__NSCFType' name='AXUIElementRef' type='^{__AXUIElement=}' gettypeid_func='AXUIElementGetTypeID'/>
+<cftype tollfree='__NSCFType' name='AXValueRef' type='^{__AXValue=}' gettypeid_func='AXValueGetTypeID'/>
+<cftype tollfree='__NSCFType' name='HIMutableShapeRef' type='^{__HIShape=}' gettypeid_func='HIShapeGetTypeID'/>
+<cftype tollfree='__NSCFType' name='HIShapeRef' type='^{__HIShape=}' gettypeid_func='HIShapeGetTypeID'/>
+<cftype tollfree='__NSCFType' name='PasteboardRef' type='^{OpaquePasteboardRef=}' gettypeid_func='PasteboardGetTypeID'/>
+<cftype tollfree='__NSCFType' name='TranslationRef' type='^{OpaqueTranslationRef=}' gettypeid_func='TranslationGetTypeID'/>
+<opaque name='ICInstance' type='^{OpaqueICInstance=}'/>
+<constant name='kAXAttachmentTextAttribute' type='^{__CFString=}'/>
+<constant name='kAXAutocorrectedTextAttribute' type='^{__CFString=}'/>
+<constant name='kAXBackgroundColorTextAttribute' type='^{__CFString=}'/>
+<constant name='kAXFontFamilyKey' type='^{__CFString=}'/>
+<constant name='kAXFontNameKey' type='^{__CFString=}'/>
+<constant name='kAXFontSizeKey' type='^{__CFString=}'/>
+<constant name='kAXFontTextAttribute' type='^{__CFString=}'/>
+<constant name='kAXForegoundColorTextAttribute' type='^{__CFString=}'/>
+<constant name='kAXForegroundColorTextAttribute' type='^{__CFString=}'/>
+<constant name='kAXLinkTextAttribute' type='^{__CFString=}'/>
+<constant name='kAXMisspelledTextAttribute' type='^{__CFString=}'/>
+<constant name='kAXNaturalLanguageTextAttribute' type='^{__CFString=}'/>
+<constant name='kAXReplacementStringTextAttribute' type='^{__CFString=}'/>
+<constant name='kAXShadowTextAttribute' type='^{__CFString=}'/>
+<constant name='kAXStrikethroughColorTextAttribute' type='^{__CFString=}'/>
+<constant name='kAXStrikethroughTextAttribute' type='^{__CFString=}'/>
+<constant name='kAXSuperscriptTextAttribute' type='^{__CFString=}'/>
+<constant name='kAXUnderlineColorTextAttribute' type='^{__CFString=}'/>
+<constant name='kAXUnderlineTextAttribute' type='^{__CFString=}'/>
+<constant name='kAXVisibleNameKey' type='^{__CFString=}'/>
+<string_constant name='kAXAMPMFieldAttribute' value='AXAMPMField' nsstring='true'/>
+<string_constant name='kAXAllowedValuesAttribute' value='AXAllowedValues' nsstring='true'/>
+<string_constant name='kAXApplicationActivatedNotification' value='AXApplicationActivated' nsstring='true'/>
+<string_constant name='kAXApplicationDeactivatedNotification' value='AXApplicationDeactivated' nsstring='true'/>
+<string_constant name='kAXApplicationDockItemSubrole' value='AXApplicationDockItem' nsstring='true'/>
+<string_constant name='kAXApplicationHiddenNotification' value='AXApplicationHidden' nsstring='true'/>
+<string_constant name='kAXApplicationRole' value='AXApplication' nsstring='true'/>
+<string_constant name='kAXApplicationShownNotification' value='AXApplicationShown' nsstring='true'/>
+<string_constant name='kAXAscendingSortDirectionValue' value='AXAscendingSortDirection' nsstring='true'/>
+<string_constant name='kAXAttributedStringForRangeParameterizedAttribute' value='AXAttributedStringForRange' nsstring='true'/>
+<string_constant name='kAXBoundsForRangeParameterizedAttribute' value='AXBoundsForRange' nsstring='true'/>
+<string_constant name='kAXBrowserRole' value='AXBrowser' nsstring='true'/>
+<string_constant name='kAXBusyIndicatorRole' value='AXBusyIndicator' nsstring='true'/>
+<string_constant name='kAXButtonRole' value='AXButton' nsstring='true'/>
+<string_constant name='kAXCancelAction' value='AXCancel' nsstring='true'/>
+<string_constant name='kAXCancelButtonAttribute' value='AXCancelButton' nsstring='true'/>
+<string_constant name='kAXCellForColumnAndRowParameterizedAttribute' value='AXCellForColumnAndRow' nsstring='true'/>
+<string_constant name='kAXCellRole' value='AXCell' nsstring='true'/>
+<string_constant name='kAXCheckBoxRole' value='AXCheckBox' nsstring='true'/>
+<string_constant name='kAXChildrenAttribute' value='AXChildren' nsstring='true'/>
+<string_constant name='kAXClearButtonAttribute' value='AXClearButton' nsstring='true'/>
+<string_constant name='kAXCloseButtonAttribute' value='AXCloseButton' nsstring='true'/>
+<string_constant name='kAXCloseButtonSubrole' value='AXCloseButton' nsstring='true'/>
+<string_constant name='kAXColorWellRole' value='AXColorWell' nsstring='true'/>
+<string_constant name='kAXColumnCountAttribute' value='AXColumnCount' nsstring='true'/>
+<string_constant name='kAXColumnHeaderUIElementsAttribute' value='AXColumnHeaderUIElements' nsstring='true'/>
+<string_constant name='kAXColumnIndexRangeAttribute' value='AXColumnIndexRange' nsstring='true'/>
+<string_constant name='kAXColumnRole' value='AXColumn' nsstring='true'/>
+<string_constant name='kAXColumnTitleAttribute' value='AXColumnTitles' nsstring='true'/>
+<string_constant name='kAXColumnTitlesAttribute' value='AXColumnTitles' nsstring='true'/>
+<string_constant name='kAXColumnsAttribute' value='AXColumns' nsstring='true'/>
+<string_constant name='kAXComboBoxRole' value='AXComboBox' nsstring='true'/>
+<string_constant name='kAXConfirmAction' value='AXConfirm' nsstring='true'/>
+<string_constant name='kAXContentListSubrole' value='AXContentList' nsstring='true'/>
+<string_constant name='kAXContentsAttribute' value='AXContents' nsstring='true'/>
+<string_constant name='kAXCreatedNotification' value='AXCreated' nsstring='true'/>
+<string_constant name='kAXCriticalValueAttribute' value='AXCriticalValue' nsstring='true'/>
+<string_constant name='kAXDateFieldRole' value='AXDateField' nsstring='true'/>
+<string_constant name='kAXDayFieldAttribute' value='AXDayField' nsstring='true'/>
+<string_constant name='kAXDecrementAction' value='AXDecrement' nsstring='true'/>
+<string_constant name='kAXDecrementArrowSubrole' value='AXDecrementArrow' nsstring='true'/>
+<string_constant name='kAXDecrementButtonAttribute' value='AXDecrementButton' nsstring='true'/>
+<string_constant name='kAXDecrementPageSubrole' value='AXDecrementPage' nsstring='true'/>
+<string_constant name='kAXDefaultButtonAttribute' value='AXDefaultButton' nsstring='true'/>
+<string_constant name='kAXDefinitionListSubrole' value='AXDefinitionList' nsstring='true'/>
+<string_constant name='kAXDescendingSortDirectionValue' value='AXDescendingSortDirection' nsstring='true'/>
+<string_constant name='kAXDescription' value='AXDescription' nsstring='true'/>
+<string_constant name='kAXDescriptionAttribute' value='AXDescription' nsstring='true'/>
+<string_constant name='kAXDialogSubrole' value='AXDialog' nsstring='true'/>
+<string_constant name='kAXDisclosedByRowAttribute' value='AXDisclosedByRow' nsstring='true'/>
+<string_constant name='kAXDisclosedRowsAttribute' value='AXDisclosedRows' nsstring='true'/>
+<string_constant name='kAXDisclosingAttribute' value='AXDisclosing' nsstring='true'/>
+<string_constant name='kAXDisclosureLevelAttribute' value='AXDisclosureLevel' nsstring='true'/>
+<string_constant name='kAXDisclosureTriangleRole' value='AXDisclosureTriangle' nsstring='true'/>
+<string_constant name='kAXDockExtraDockItemSubrole' value='AXDockExtraDockItem' nsstring='true'/>
+<string_constant name='kAXDockItemRole' value='AXDockItem' nsstring='true'/>
+<string_constant name='kAXDocumentAttribute' value='AXDocument' nsstring='true'/>
+<string_constant name='kAXDocumentDockItemSubrole' value='AXDocumentDockItem' nsstring='true'/>
+<string_constant name='kAXDrawerCreatedNotification' value='AXDrawerCreated' nsstring='true'/>
+<string_constant name='kAXDrawerRole' value='AXDrawer' nsstring='true'/>
+<string_constant name='kAXEditedAttribute' value='AXEdited' nsstring='true'/>
+<string_constant name='kAXEnabledAttribute' value='AXEnabled' nsstring='true'/>
+<string_constant name='kAXExpandedAttribute' value='AXExpanded' nsstring='true'/>
+<string_constant name='kAXFilenameAttribute' value='AXFilename' nsstring='true'/>
+<string_constant name='kAXFloatingWindowSubrole' value='AXFloatingWindow' nsstring='true'/>
+<string_constant name='kAXFocusedApplicationAttribute' value='AXFocusedApplication' nsstring='true'/>
+<string_constant name='kAXFocusedAttribute' value='AXFocused' nsstring='true'/>
+<string_constant name='kAXFocusedUIElementAttribute' value='AXFocusedUIElement' nsstring='true'/>
+<string_constant name='kAXFocusedUIElementChangedNotification' value='AXFocusedUIElementChanged' nsstring='true'/>
+<string_constant name='kAXFocusedWindowAttribute' value='AXFocusedWindow' nsstring='true'/>
+<string_constant name='kAXFocusedWindowChangedNotification' value='AXFocusedWindowChanged' nsstring='true'/>
+<string_constant name='kAXFolderDockItemSubrole' value='AXFolderDockItem' nsstring='true'/>
+<string_constant name='kAXFrontmostAttribute' value='AXFrontmost' nsstring='true'/>
+<string_constant name='kAXFullScreenButtonAttribute' value='AXFullScreenButton' nsstring='true'/>
+<string_constant name='kAXFullScreenButtonSubrole' value='AXFullScreenButton' nsstring='true'/>
+<string_constant name='kAXGridRole' value='AXGrid' nsstring='true'/>
+<string_constant name='kAXGroupRole' value='AXGroup' nsstring='true'/>
+<string_constant name='kAXGrowAreaAttribute' value='AXGrowArea' nsstring='true'/>
+<string_constant name='kAXGrowAreaRole' value='AXGrowArea' nsstring='true'/>
+<string_constant name='kAXHandleRole' value='AXHandle' nsstring='true'/>
+<string_constant name='kAXHandlesAttribute' value='AXHandles' nsstring='true'/>
+<string_constant name='kAXHeaderAttribute' value='AXHeader' nsstring='true'/>
+<string_constant name='kAXHelpAttribute' value='AXHelp' nsstring='true'/>
+<string_constant name='kAXHelpTagCreatedNotification' value='AXHelpTagCreated' nsstring='true'/>
+<string_constant name='kAXHelpTagRole' value='AXHelpTag' nsstring='true'/>
+<string_constant name='kAXHiddenAttribute' value='AXHidden' nsstring='true'/>
+<string_constant name='kAXHorizontalOrientationValue' value='AXHorizontalOrientation' nsstring='true'/>
+<string_constant name='kAXHorizontalScrollBarAttribute' value='AXHorizontalScrollBar' nsstring='true'/>
+<string_constant name='kAXHorizontalUnitDescriptionAttribute' value='AXHorizontalUnitDescription' nsstring='true'/>
+<string_constant name='kAXHorizontalUnitsAttribute' value='AXHorizontalUnits' nsstring='true'/>
+<string_constant name='kAXHourFieldAttribute' value='AXHourField' nsstring='true'/>
+<string_constant name='kAXIdentifierAttribute' value='AXIdentifier' nsstring='true'/>
+<string_constant name='kAXImageRole' value='AXImage' nsstring='true'/>
+<string_constant name='kAXIncrementAction' value='AXIncrement' nsstring='true'/>
+<string_constant name='kAXIncrementArrowSubrole' value='AXIncrementArrow' nsstring='true'/>
+<string_constant name='kAXIncrementButtonAttribute' value='AXIncrementButton' nsstring='true'/>
+<string_constant name='kAXIncrementPageSubrole' value='AXIncrementPage' nsstring='true'/>
+<string_constant name='kAXIncrementorAttribute' value='AXIncrementor' nsstring='true'/>
+<string_constant name='kAXIncrementorRole' value='AXIncrementor' nsstring='true'/>
+<string_constant name='kAXIndexAttribute' value='AXIndex' nsstring='true'/>
+<string_constant name='kAXInsertionPointLineNumberAttribute' value='AXInsertionPointLineNumber' nsstring='true'/>
+<string_constant name='kAXIsApplicationRunningAttribute' value='AXIsApplicationRunning' nsstring='true'/>
+<string_constant name='kAXIsEditableAttribute' value='AXIsEditable' nsstring='true'/>
+<string_constant name='kAXLabelUIElementsAttribute' value='AXLabelUIElements' nsstring='true'/>
+<string_constant name='kAXLabelValueAttribute' value='AXLabelValue' nsstring='true'/>
+<string_constant name='kAXLayoutAreaRole' value='AXLayoutArea' nsstring='true'/>
+<string_constant name='kAXLayoutItemRole' value='AXLayoutItem' nsstring='true'/>
+<string_constant name='kAXLayoutPointForScreenPointParameterizedAttribute' value='AXLayoutPointForScreenPoint' nsstring='true'/>
+<string_constant name='kAXLayoutSizeForScreenSizeParameterizedAttribute' value='AXLayoutSizeForScreenSize' nsstring='true'/>
+<string_constant name='kAXLevelIndicatorRole' value='AXLevelIndicator' nsstring='true'/>
+<string_constant name='kAXLineForIndexParameterizedAttribute' value='AXLineForIndex' nsstring='true'/>
+<string_constant name='kAXLinkedUIElementsAttribute' value='AXLinkedUIElements' nsstring='true'/>
+<string_constant name='kAXListRole' value='AXList' nsstring='true'/>
+<string_constant name='kAXMainAttribute' value='AXMain' nsstring='true'/>
+<string_constant name='kAXMainWindowAttribute' value='AXMainWindow' nsstring='true'/>
+<string_constant name='kAXMainWindowChangedNotification' value='AXMainWindowChanged' nsstring='true'/>
+<string_constant name='kAXMarkerTypeAttribute' value='AXMarkerType' nsstring='true'/>
+<string_constant name='kAXMarkerTypeDescriptionAttribute' value='AXMarkerTypeDescription' nsstring='true'/>
+<string_constant name='kAXMarkerUIElementsAttribute' value='AXMarkerUIElements' nsstring='true'/>
+<string_constant name='kAXMatteContentUIElementAttribute' value='AXMatteContentUIElement' nsstring='true'/>
+<string_constant name='kAXMatteHoleAttribute' value='AXMatteHole' nsstring='true'/>
+<string_constant name='kAXMatteRole' value='AXMatteRole' nsstring='true'/>
+<string_constant name='kAXMaxValueAttribute' value='AXMaxValue' nsstring='true'/>
+<string_constant name='kAXMenuBarAttribute' value='AXMenuBar' nsstring='true'/>
+<string_constant name='kAXMenuBarItemRole' value='AXMenuBarItem' nsstring='true'/>
+<string_constant name='kAXMenuBarRole' value='AXMenuBar' nsstring='true'/>
+<string_constant name='kAXMenuButtonRole' value='AXMenuButton' nsstring='true'/>
+<string_constant name='kAXMenuClosedNotification' value='AXMenuClosed' nsstring='true'/>
+<string_constant name='kAXMenuItemCmdCharAttribute' value='AXMenuItemCmdChar' nsstring='true'/>
+<string_constant name='kAXMenuItemCmdGlyphAttribute' value='AXMenuItemCmdGlyph' nsstring='true'/>
+<string_constant name='kAXMenuItemCmdModifiersAttribute' value='AXMenuItemCmdModifiers' nsstring='true'/>
+<string_constant name='kAXMenuItemCmdVirtualKeyAttribute' value='AXMenuItemCmdVirtualKey' nsstring='true'/>
+<string_constant name='kAXMenuItemMarkCharAttribute' value='AXMenuItemMarkChar' nsstring='true'/>
+<string_constant name='kAXMenuItemPrimaryUIElementAttribute' value='AXMenuItemPrimaryUIElement' nsstring='true'/>
+<string_constant name='kAXMenuItemRole' value='AXMenuItem' nsstring='true'/>
+<string_constant name='kAXMenuItemSelectedNotification' value='AXMenuItemSelected' nsstring='true'/>
+<string_constant name='kAXMenuOpenedNotification' value='AXMenuOpened' nsstring='true'/>
+<string_constant name='kAXMenuRole' value='AXMenu' nsstring='true'/>
+<string_constant name='kAXMinValueAttribute' value='AXMinValue' nsstring='true'/>
+<string_constant name='kAXMinimizeButtonAttribute' value='AXMinimizeButton' nsstring='true'/>
+<string_constant name='kAXMinimizeButtonSubrole' value='AXMinimizeButton' nsstring='true'/>
+<string_constant name='kAXMinimizedAttribute' value='AXMinimized' nsstring='true'/>
+<string_constant name='kAXMinimizedWindowDockItemSubrole' value='AXMinimizedWindowDockItem' nsstring='true'/>
+<string_constant name='kAXMinuteFieldAttribute' value='AXMinuteField' nsstring='true'/>
+<string_constant name='kAXModalAttribute' value='AXModal' nsstring='true'/>
+<string_constant name='kAXMonthFieldAttribute' value='AXMonthField' nsstring='true'/>
+<string_constant name='kAXMovedNotification' value='AXMoved' nsstring='true'/>
+<string_constant name='kAXNextContentsAttribute' value='AXNextContents' nsstring='true'/>
+<string_constant name='kAXNumberOfCharactersAttribute' value='AXNumberOfCharacters' nsstring='true'/>
+<string_constant name='kAXOrderedByRowAttribute' value='AXOrderedByRow' nsstring='true'/>
+<string_constant name='kAXOrientationAttribute' value='AXOrientation' nsstring='true'/>
+<string_constant name='kAXOutlineRole' value='AXOutline' nsstring='true'/>
+<string_constant name='kAXOutlineRowSubrole' value='AXOutlineRow' nsstring='true'/>
+<string_constant name='kAXOverflowButtonAttribute' value='AXOverflowButton' nsstring='true'/>
+<string_constant name='kAXParentAttribute' value='AXParent' nsstring='true'/>
+<string_constant name='kAXPickAction' value='AXPick' nsstring='true'/>
+<string_constant name='kAXPlaceholderValueAttribute' value='AXPlaceholderValue' nsstring='true'/>
+<string_constant name='kAXPopUpButtonRole' value='AXPopUpButton' nsstring='true'/>
+<string_constant name='kAXPopoverRole' value='AXPopover' nsstring='true'/>
+<string_constant name='kAXPositionAttribute' value='AXPosition' nsstring='true'/>
+<string_constant name='kAXPressAction' value='AXPress' nsstring='true'/>
+<string_constant name='kAXPreviousContentsAttribute' value='AXPreviousContents' nsstring='true'/>
+<string_constant name='kAXProcessSwitcherListSubrole' value='AXProcessSwitcherList' nsstring='true'/>
+<string_constant name='kAXProgressIndicatorRole' value='AXProgressIndicator' nsstring='true'/>
+<string_constant name='kAXProxyAttribute' value='AXProxy' nsstring='true'/>
+<string_constant name='kAXRTFForRangeParameterizedAttribute' value='AXRTFForRange' nsstring='true'/>
+<string_constant name='kAXRadioButtonRole' value='AXRadioButton' nsstring='true'/>
+<string_constant name='kAXRadioGroupRole' value='AXRadioGroup' nsstring='true'/>
+<string_constant name='kAXRaiseAction' value='AXRaise' nsstring='true'/>
+<string_constant name='kAXRangeForIndexParameterizedAttribute' value='AXRangeForIndex' nsstring='true'/>
+<string_constant name='kAXRangeForLineParameterizedAttribute' value='AXRangeForLine' nsstring='true'/>
+<string_constant name='kAXRangeForPositionParameterizedAttribute' value='AXRangeForPosition' nsstring='true'/>
+<string_constant name='kAXRatingIndicatorSubrole' value='AXRatingIndicator' nsstring='true'/>
+<string_constant name='kAXRelevanceIndicatorRole' value='AXRelevanceIndicator' nsstring='true'/>
+<string_constant name='kAXResizedNotification' value='AXResized' nsstring='true'/>
+<string_constant name='kAXRoleAttribute' value='AXRole' nsstring='true'/>
+<string_constant name='kAXRoleDescriptionAttribute' value='AXRoleDescription' nsstring='true'/>
+<string_constant name='kAXRowCollapsedNotification' value='AXRowCollapsed' nsstring='true'/>
+<string_constant name='kAXRowCountAttribute' value='AXRowCount' nsstring='true'/>
+<string_constant name='kAXRowCountChangedNotification' value='AXRowCountChanged' nsstring='true'/>
+<string_constant name='kAXRowExpandedNotification' value='AXRowExpanded' nsstring='true'/>
+<string_constant name='kAXRowHeaderUIElementsAttribute' value='AXRowHeaderUIElements' nsstring='true'/>
+<string_constant name='kAXRowIndexRangeAttribute' value='AXRowIndexRange' nsstring='true'/>
+<string_constant name='kAXRowRole' value='AXRow' nsstring='true'/>
+<string_constant name='kAXRowsAttribute' value='AXRows' nsstring='true'/>
+<string_constant name='kAXRulerMarkerRole' value='AXRulerMarker' nsstring='true'/>
+<string_constant name='kAXRulerRole' value='AXRuler' nsstring='true'/>
+<string_constant name='kAXScreenPointForLayoutPointParameterizedAttribute' value='AXScreenPointForLayoutPoint' nsstring='true'/>
+<string_constant name='kAXScreenSizeForLayoutSizeParameterizedAttribute' value='AXScreenSizeForLayoutSize' nsstring='true'/>
+<string_constant name='kAXScrollAreaRole' value='AXScrollArea' nsstring='true'/>
+<string_constant name='kAXScrollBarRole' value='AXScrollBar' nsstring='true'/>
+<string_constant name='kAXSearchButtonAttribute' value='AXSearchButton' nsstring='true'/>
+<string_constant name='kAXSearchFieldSubrole' value='AXSearchField' nsstring='true'/>
+<string_constant name='kAXSecondFieldAttribute' value='AXSecondField' nsstring='true'/>
+<string_constant name='kAXSecureTextFieldSubrole' value='AXSecureTextField' nsstring='true'/>
+<string_constant name='kAXSelectedAttribute' value='AXSelected' nsstring='true'/>
+<string_constant name='kAXSelectedCellsAttribute' value='AXSelectedCells' nsstring='true'/>
+<string_constant name='kAXSelectedCellsChangedNotification' value='AXSelectedCellsChanged' nsstring='true'/>
+<string_constant name='kAXSelectedChildrenAttribute' value='AXSelectedChildren' nsstring='true'/>
+<string_constant name='kAXSelectedChildrenChangedNotification' value='AXSelectedChildrenChanged' nsstring='true'/>
+<string_constant name='kAXSelectedChildrenMovedNotification' value='AXSelectedChildrenMoved' nsstring='true'/>
+<string_constant name='kAXSelectedColumnsAttribute' value='AXSelectedColumns' nsstring='true'/>
+<string_constant name='kAXSelectedColumnsChangedNotification' value='AXSelectedColumnsChanged' nsstring='true'/>
+<string_constant name='kAXSelectedRowsAttribute' value='AXSelectedRows' nsstring='true'/>
+<string_constant name='kAXSelectedRowsChangedNotification' value='AXSelectedRowsChanged' nsstring='true'/>
+<string_constant name='kAXSelectedTextAttribute' value='AXSelectedText' nsstring='true'/>
+<string_constant name='kAXSelectedTextChangedNotification' value='AXSelectedTextChanged' nsstring='true'/>
+<string_constant name='kAXSelectedTextRangeAttribute' value='AXSelectedTextRange' nsstring='true'/>
+<string_constant name='kAXSelectedTextRangesAttribute' value='AXSelectedTextRanges' nsstring='true'/>
+<string_constant name='kAXSeparatorDockItemSubrole' value='AXSeparatorDockItem' nsstring='true'/>
+<string_constant name='kAXServesAsTitleForUIElementsAttribute' value='AXServesAsTitleForUIElements' nsstring='true'/>
+<string_constant name='kAXSharedCharacterRangeAttribute' value='AXSharedCharacterRange' nsstring='true'/>
+<string_constant name='kAXSharedTextUIElementsAttribute' value='AXSharedTextUIElements' nsstring='true'/>
+<string_constant name='kAXSheetCreatedNotification' value='AXSheetCreated' nsstring='true'/>
+<string_constant name='kAXSheetRole' value='AXSheet' nsstring='true'/>
+<string_constant name='kAXShowMenuAction' value='AXShowMenu' nsstring='true'/>
+<string_constant name='kAXShownMenuUIElementAttribute' value='AXShownMenuUIElement' nsstring='true'/>
+<string_constant name='kAXSizeAttribute' value='AXSize' nsstring='true'/>
+<string_constant name='kAXSliderRole' value='AXSlider' nsstring='true'/>
+<string_constant name='kAXSortButtonSubrole' value='AXSortButton' nsstring='true'/>
+<string_constant name='kAXSortDirectionAttribute' value='AXSortDirection' nsstring='true'/>
+<string_constant name='kAXSplitGroupRole' value='AXSplitGroup' nsstring='true'/>
+<string_constant name='kAXSplitterRole' value='AXSplitter' nsstring='true'/>
+<string_constant name='kAXSplittersAttribute' value='AXSplitters' nsstring='true'/>
+<string_constant name='kAXStandardWindowSubrole' value='AXStandardWindow' nsstring='true'/>
+<string_constant name='kAXStaticTextRole' value='AXStaticText' nsstring='true'/>
+<string_constant name='kAXStringForRangeParameterizedAttribute' value='AXStringForRange' nsstring='true'/>
+<string_constant name='kAXStyleRangeForIndexParameterizedAttribute' value='AXStyleRangeForIndex' nsstring='true'/>
+<string_constant name='kAXSubroleAttribute' value='AXSubrole' nsstring='true'/>
+<string_constant name='kAXSystemDialogSubrole' value='AXSystemDialog' nsstring='true'/>
+<string_constant name='kAXSystemFloatingWindowSubrole' value='AXSystemFloatingWindow' nsstring='true'/>
+<string_constant name='kAXSystemWideRole' value='AXSystemWide' nsstring='true'/>
+<string_constant name='kAXTabGroupRole' value='AXTabGroup' nsstring='true'/>
+<string_constant name='kAXTableRole' value='AXTable' nsstring='true'/>
+<string_constant name='kAXTableRowSubrole' value='AXTableRow' nsstring='true'/>
+<string_constant name='kAXTabsAttribute' value='AXTabs' nsstring='true'/>
+<string_constant name='kAXTextAreaRole' value='AXTextArea' nsstring='true'/>
+<string_constant name='kAXTextAttribute' value='AXText' nsstring='true'/>
+<string_constant name='kAXTextFieldRole' value='AXTextField' nsstring='true'/>
+<string_constant name='kAXTimeFieldRole' value='AXTimeField' nsstring='true'/>
+<string_constant name='kAXTimelineSubrole' value='AXTimeline' nsstring='true'/>
+<string_constant name='kAXTitleAttribute' value='AXTitle' nsstring='true'/>
+<string_constant name='kAXTitleChangedNotification' value='AXTitleChanged' nsstring='true'/>
+<string_constant name='kAXTitleUIElementAttribute' value='AXTitleUIElement' nsstring='true'/>
+<string_constant name='kAXToolbarButtonAttribute' value='AXToolbarButton' nsstring='true'/>
+<string_constant name='kAXToolbarButtonSubrole' value='AXToolbarButton' nsstring='true'/>
+<string_constant name='kAXToolbarRole' value='AXToolbar' nsstring='true'/>
+<string_constant name='kAXTopLevelUIElementAttribute' value='AXTopLevelUIElement' nsstring='true'/>
+<string_constant name='kAXTrashDockItemSubrole' value='AXTrashDockItem' nsstring='true'/>
+<string_constant name='kAXUIElementDestroyedNotification' value='AXUIElementDestroyed' nsstring='true'/>
+<string_constant name='kAXURLAttribute' value='AXURL' nsstring='true'/>
+<string_constant name='kAXURLDockItemSubrole' value='AXURLDockItem' nsstring='true'/>
+<string_constant name='kAXUnitDescriptionAttribute' value='AXUnitDescription' nsstring='true'/>
+<string_constant name='kAXUnitsAttribute' value='AXUnits' nsstring='true'/>
+<string_constant name='kAXUnitsChangedNotification' value='AXUnitsChanged' nsstring='true'/>
+<string_constant name='kAXUnknownOrientationValue' value='AXUnknownOrientation' nsstring='true'/>
+<string_constant name='kAXUnknownRole' value='AXUnknown' nsstring='true'/>
+<string_constant name='kAXUnknownSortDirectionValue' value='AXUnknownSortDirection' nsstring='true'/>
+<string_constant name='kAXUnknownSubrole' value='AXUnknown' nsstring='true'/>
+<string_constant name='kAXValueAttribute' value='AXValue' nsstring='true'/>
+<string_constant name='kAXValueChangedNotification' value='AXValueChanged' nsstring='true'/>
+<string_constant name='kAXValueDescriptionAttribute' value='AXValueDescription' nsstring='true'/>
+<string_constant name='kAXValueIncrementAttribute' value='AXValueIncrement' nsstring='true'/>
+<string_constant name='kAXValueIndicatorRole' value='AXValueIndicator' nsstring='true'/>
+<string_constant name='kAXValueWrapsAttribute' value='AXValueWraps' nsstring='true'/>
+<string_constant name='kAXVerticalOrientationValue' value='AXVerticalOrientation' nsstring='true'/>
+<string_constant name='kAXVerticalScrollBarAttribute' value='AXVerticalScrollBar' nsstring='true'/>
+<string_constant name='kAXVerticalUnitDescriptionAttribute' value='AXVerticalUnitDescription' nsstring='true'/>
+<string_constant name='kAXVerticalUnitsAttribute' value='AXVerticalUnits' nsstring='true'/>
+<string_constant name='kAXVisibleCellsAttribute' value='AXVisibleCells' nsstring='true'/>
+<string_constant name='kAXVisibleCharacterRangeAttribute' value='AXVisibleCharacterRange' nsstring='true'/>
+<string_constant name='kAXVisibleChildrenAttribute' value='AXVisibleChildren' nsstring='true'/>
+<string_constant name='kAXVisibleColumnsAttribute' value='AXVisibleColumns' nsstring='true'/>
+<string_constant name='kAXVisibleRowsAttribute' value='AXVisibleRows' nsstring='true'/>
+<string_constant name='kAXVisibleTextAttribute' value='AXVisibleText' nsstring='true'/>
+<string_constant name='kAXWarningValueAttribute' value='AXWarningValue' nsstring='true'/>
+<string_constant name='kAXWindowAttribute' value='AXWindow' nsstring='true'/>
+<string_constant name='kAXWindowCreatedNotification' value='AXWindowCreated' nsstring='true'/>
+<string_constant name='kAXWindowDeminiaturizedNotification' value='AXWindowDeminiaturized' nsstring='true'/>
+<string_constant name='kAXWindowMiniaturizedNotification' value='AXWindowMiniaturized' nsstring='true'/>
+<string_constant name='kAXWindowMovedNotification' value='AXWindowMoved' nsstring='true'/>
+<string_constant name='kAXWindowResizedNotification' value='AXWindowResized' nsstring='true'/>
+<string_constant name='kAXWindowRole' value='AXWindow' nsstring='true'/>
+<string_constant name='kAXWindowsAttribute' value='AXWindows' nsstring='true'/>
+<string_constant name='kAXYearFieldAttribute' value='AXYearField' nsstring='true'/>
+<string_constant name='kAXZoomButtonAttribute' value='AXZoomButton' nsstring='true'/>
+<string_constant name='kAXZoomButtonSubrole' value='AXZoomButton' nsstring='true'/>
+<string_constant name='kICArchieAll' value='pArchieAll'/>
+<string_constant name='kICArchiePreferred' value='pArchiePreferred'/>
+<string_constant name='kICCharacterSet' value='pCharacterSet'/>
+<string_constant name='kICDocumentFont' value='pDocumentFont'/>
+<string_constant name='kICDownloadFolder' value='pDownloadFolder'/>
+<string_constant name='kICEmail' value='pEmail'/>
+<string_constant name='kICFTPHost' value='pFTPHost'/>
+<string_constant name='kICFTPProxyAccount' value='pFTPProxyAccount'/>
+<string_constant name='kICFTPProxyHost' value='pFTPProxyHost'/>
+<string_constant name='kICFTPProxyPassword' value='pFTPProxyPassword'/>
+<string_constant name='kICFTPProxyUser' value='pFTPProxyUser'/>
+<string_constant name='kICFingerHost' value='pFingerHost'/>
+<string_constant name='kICGopherHost' value='pGopherHost'/>
+<string_constant name='kICGopherProxy' value='pGopherProxy'/>
+<string_constant name='kICHTTPProxyHost' value='pHTTPProxyHost'/>
+<string_constant name='kICHelper' value='pHelper•'/>
+<string_constant name='kICHelperDesc' value='pHelperDesc•'/>
+<string_constant name='kICHelperList' value='pHelperList•'/>
+<string_constant name='kICIRCHost' value='pIRCHost'/>
+<string_constant name='kICInfoMacAll' value='pInfoMacAll'/>
+<string_constant name='kICInfoMacPreferred' value='pInfoMacPreferred'/>
+<string_constant name='kICLDAPSearchbase' value='pLDAPSearchbase'/>
+<string_constant name='kICLDAPServer' value='pLDAPServer'/>
+<string_constant name='kICListFont' value='pListFont'/>
+<string_constant name='kICMacSearchHost' value='pMacSearchHost'/>
+<string_constant name='kICMailAccount' value='pMailAccount'/>
+<string_constant name='kICMailHeaders' value='pMailHeaders'/>
+<string_constant name='kICMailPassword' value='pMailPassword'/>
+<string_constant name='kICMapping' value='pMapping'/>
+<string_constant name='kICNNTPHost' value='pNNTPHost'/>
+<string_constant name='kICNTPHost' value='pNTPHost'/>
+<string_constant name='kICNewMailDialog' value='pNewMailDialog'/>
+<string_constant name='kICNewMailFlashIcon' value='pNewMailFlashIcon'/>
+<string_constant name='kICNewMailPlaySound' value='pNewMailPlaySound'/>
+<string_constant name='kICNewMailSoundName' value='pNewMailSoundName'/>
+<string_constant name='kICNewsAuthPassword' value='pNewsAuthPassword'/>
+<string_constant name='kICNewsAuthUsername' value='pNewsAuthUsername'/>
+<string_constant name='kICNewsHeaders' value='pNewsHeaders'/>
+<string_constant name='kICNoProxyDomains' value='pNoProxyDomains'/>
+<string_constant name='kICOrganization' value='pOrganization'/>
+<string_constant name='kICPhHost' value='pPhHost'/>
+<string_constant name='kICPlan' value='pPlan'/>
+<string_constant name='kICPrinterFont' value='pPrinterFont'/>
+<string_constant name='kICQuotingString' value='pQuotingString'/>
+<string_constant name='kICRTSPProxyHost' value='pRTSPProxyHost'/>
+<string_constant name='kICRealName' value='pRealName'/>
+<string_constant name='kICReservedKey' value='pkICReservedKey'/>
+<string_constant name='kICSMTPHost' value='pSMTPHost'/>
+<string_constant name='kICScreenFont' value='pScreenFont'/>
+<string_constant name='kICServices' value='pServices'/>
+<string_constant name='kICSignature' value='pSignature'/>
+<string_constant name='kICSnailMailAddress' value='pSnailMailAddress'/>
+<string_constant name='kICSocksHost' value='pSocksHost'/>
+<string_constant name='kICTelnetHost' value='pTelnetHost'/>
+<string_constant name='kICUMichAll' value='pUMichAll'/>
+<string_constant name='kICUMichPreferred' value='pUMichPreferred'/>
+<string_constant name='kICUseFTPProxy' value='pUseFTPProxy'/>
+<string_constant name='kICUseGopherProxy' value='pUseGopherProxy'/>
+<string_constant name='kICUseHTTPProxy' value='pUseHTTPProxy'/>
+<string_constant name='kICUsePassiveFTP' value='pUsePassiveFTP'/>
+<string_constant name='kICUseRTSPProxy' value='pUseRTSPProxy'/>
+<string_constant name='kICUseSocks' value='pUseSocks'/>
+<string_constant name='kICWAISGateway' value='pWAISGateway'/>
+<string_constant name='kICWWWHomePage' value='pWWWHomePage'/>
+<string_constant name='kICWebBackgroundColour' value='pWebBackgroundColour'/>
+<string_constant name='kICWebReadColor' value='p646F6777•WebReadColor'/>
+<string_constant name='kICWebSearchPagePrefs' value='pWebSearchPagePrefs'/>
+<string_constant name='kICWebTextColor' value='pWebTextColor'/>
+<string_constant name='kICWebUnderlineLinks' value='p646F6777•WebUnderlineLinks'/>
+<string_constant name='kICWebUnreadColor' value='p646F6777•WebUnreadColor'/>
+<string_constant name='kICWhoisHost' value='pWhoisHost'/>
+<string_constant name='kPasteboardClipboard' value='com.apple.pasteboard.clipboard' nsstring='true'/>
+<string_constant name='kPasteboardFind' value='com.apple.pasteboard.find' nsstring='true'/>
+<string_constant name='kPasteboardTypeFilePromiseContent' value='com.apple.pasteboard.promised-file-content-type' nsstring='true'/>
+<string_constant name='kPasteboardTypeFileURLPromise' value='com.apple.pasteboard.promised-file-url' nsstring='true'/>
+<enum name='activDev' value='5'/>
+<enum name='atAbsoluteCenter' value='5'/>
+<enum name='atBottom' value='3'/>
+<enum name='atBottomLeft' value='11'/>
+<enum name='atBottomRight' value='15'/>
+<enum name='atCenterBottom' value='7'/>
+<enum name='atCenterLeft' value='9'/>
+<enum name='atCenterRight' value='13'/>
+<enum name='atCenterTop' value='6'/>
+<enum name='atHorizontalCenter' value='4'/>
+<enum name='atLeft' value='8'/>
+<enum name='atNone' value='0'/>
+<enum name='atRight' value='12'/>
+<enum name='atTop' value='2'/>
+<enum name='atTopLeft' value='10'/>
+<enum name='atTopRight' value='14'/>
+<enum name='atVerticalCenter' value='1'/>
+<enum name='badPasteboardFlavorErr' value='-25133'/>
+<enum name='badPasteboardIndexErr' value='-25131'/>
+<enum name='badPasteboardItemErr' value='-25132'/>
+<enum name='badPasteboardSyncErr' value='-25130'/>
+<enum name='badTranslationRefErr' value='-3031'/>
+<enum name='cdevGenErr' value='-1'/>
+<enum name='cdevMemErr' value='0'/>
+<enum name='cdevResErr' value='1'/>
+<enum name='cdevUnset' value='3'/>
+<enum name='clearDev' value='13'/>
+<enum name='closeDev' value='2'/>
+<enum name='copyDev' value='11'/>
+<enum name='cursorDev' value='14'/>
+<enum name='cutDev' value='10'/>
+<enum name='deactivDev' value='6'/>
+<enum name='duplicatePasteboardFlavorErr' value='-25134'/>
+<enum name='extendedBlock' value='19523'/>
+<enum value64='40' name='extendedBlockLen' value='32'/>
+<enum name='hitDev' value='1'/>
+<enum name='icConfigInappropriateErr' value='-675'/>
+<enum name='icConfigNotFoundErr' value='-674'/>
+<enum name='icInternalErr' value='-669'/>
+<enum name='icNoMoreWritersErr' value='-671'/>
+<enum name='icNoPerm' value='0'/>
+<enum name='icNoURLErr' value='-673'/>
+<enum name='icNothingToOverrideErr' value='-672'/>
+<enum name='icPermErr' value='-667'/>
+<enum name='icPrefDataErr' value='-668'/>
+<enum name='icPrefNotFoundErr' value='-666'/>
+<enum name='icProfileNotFoundErr' value='-676'/>
+<enum name='icReadOnlyPerm' value='1'/>
+<enum name='icReadWritePerm' value='2'/>
+<enum name='icTooManyProfilesErr' value='-677'/>
+<enum name='icTruncatedErr' value='-670'/>
+<enum name='initDev' value='0'/>
+<enum name='kAEFetchURL' value='1179996748'/>
+<enum name='kAEGetURL' value='1196773964'/>
+<enum name='kAXCopyMultipleAttributeOptionStopOnError' value='1'/>
+<enum name='kAXErrorAPIDisabled' value='-25211'/>
+<enum name='kAXErrorActionUnsupported' value='-25206'/>
+<enum name='kAXErrorAttributeUnsupported' value='-25205'/>
+<enum name='kAXErrorCannotComplete' value='-25204'/>
+<enum name='kAXErrorFailure' value='-25200'/>
+<enum name='kAXErrorIllegalArgument' value='-25201'/>
+<enum name='kAXErrorInvalidUIElement' value='-25202'/>
+<enum name='kAXErrorInvalidUIElementObserver' value='-25203'/>
+<enum name='kAXErrorNoValue' value='-25212'/>
+<enum name='kAXErrorNotEnoughPrecision' value='-25214'/>
+<enum name='kAXErrorNotImplemented' value='-25208'/>
+<enum name='kAXErrorNotificationAlreadyRegistered' value='-25209'/>
+<enum name='kAXErrorNotificationNotRegistered' value='-25210'/>
+<enum name='kAXErrorNotificationUnsupported' value='-25207'/>
+<enum name='kAXErrorParameterizedAttributeUnsupported' value='-25213'/>
+<enum name='kAXErrorSuccess' value='0'/>
+<enum name='kAXUnderlineStyleDouble' value='9'/>
+<enum name='kAXUnderlineStyleNone' value='0'/>
+<enum name='kAXUnderlineStyleSingle' value='1'/>
+<enum name='kAXUnderlineStyleThick' value='2'/>
+<enum name='kAXValueAXErrorType' value='5'/>
+<enum name='kAXValueCFRangeType' value='4'/>
+<enum name='kAXValueCGPointType' value='1'/>
+<enum name='kAXValueCGRectType' value='3'/>
+<enum name='kAXValueCGSizeType' value='2'/>
+<enum name='kAXValueIllegalType' value='0'/>
+<enum name='kAlignAbsoluteCenter' value='5'/>
+<enum name='kAlignBottom' value='3'/>
+<enum name='kAlignBottomLeft' value='11'/>
+<enum name='kAlignBottomRight' value='15'/>
+<enum name='kAlignCenterBottom' value='7'/>
+<enum name='kAlignCenterLeft' value='9'/>
+<enum name='kAlignCenterRight' value='13'/>
+<enum name='kAlignCenterTop' value='6'/>
+<enum name='kAlignHorizontalCenter' value='4'/>
+<enum name='kAlignLeft' value='8'/>
+<enum name='kAlignNone' value='0'/>
+<enum name='kAlignRight' value='12'/>
+<enum name='kAlignTop' value='2'/>
+<enum name='kAlignTopLeft' value='10'/>
+<enum name='kAlignTopRight' value='14'/>
+<enum name='kAlignVerticalCenter' value='1'/>
+<enum name='kCurrentProcess' value='2'/>
+<enum name='kHIShapeEnumerateInit' value='1'/>
+<enum name='kHIShapeEnumerateRect' value='2'/>
+<enum name='kHIShapeEnumerateTerminate' value='3'/>
+<enum name='kHIShapeParseFromBottom' value='1'/>
+<enum name='kHIShapeParseFromBottomRight' value='3'/>
+<enum name='kHIShapeParseFromLeft' value='0'/>
+<enum name='kHIShapeParseFromRight' value='2'/>
+<enum name='kHIShapeParseFromTop' value='0'/>
+<enum name='kHIShapeParseFromTopLeft' value='0'/>
+<enum name='kICAttrLockedBit' value='0'/>
+<enum name='kICAttrLockedMask' value='1'/>
+<enum name='kICAttrNoChange' value='4294967295'/>
+<enum name='kICAttrVolatileBit' value='1'/>
+<enum name='kICAttrVolatileMask' value='2'/>
+<enum name='kICComponentInterfaceVersion' value='262144'/>
+<enum name='kICComponentInterfaceVersion0' value='0'/>
+<enum name='kICComponentInterfaceVersion1' value='65536'/>
+<enum name='kICComponentInterfaceVersion2' value='131072'/>
+<enum name='kICComponentInterfaceVersion3' value='196608'/>
+<enum name='kICComponentInterfaceVersion4' value='262144'/>
+<enum name='kICComponentVersion' value='0'/>
+<enum name='kICCreator' value='1229144432'/>
+<enum name='kICEditPreferenceEvent' value='1229144432'/>
+<enum name='kICEditPreferenceEventClass' value='1229144432'/>
+<enum name='kICFileSpecHeaderSize' value='106'/>
+<enum name='kICFileType' value='1229144432'/>
+<enum name='kICMapBinaryBit' value='0'/>
+<enum name='kICMapBinaryMask' value='1'/>
+<enum name='kICMapDataForkBit' value='2'/>
+<enum name='kICMapDataForkMask' value='4'/>
+<enum name='kICMapFixedLength' value='22'/>
+<enum name='kICMapNotIncomingBit' value='4'/>
+<enum name='kICMapNotIncomingMask' value='16'/>
+<enum name='kICMapNotOutgoingBit' value='5'/>
+<enum name='kICMapNotOutgoingMask' value='32'/>
+<enum name='kICMapPostBit' value='3'/>
+<enum name='kICMapPostMask' value='8'/>
+<enum name='kICMapResourceForkBit' value='1'/>
+<enum name='kICMapResourceForkMask' value='2'/>
+<enum name='kICNilProfileID' value='0'/>
+<enum name='kICNoUserInteractionBit' value='0'/>
+<enum name='kICNoUserInteractionMask' value='1'/>
+<enum name='kICNumVersion' value='1'/>
+<enum name='kICServicesTCPBit' value='0'/>
+<enum name='kICServicesTCPMask' value='1'/>
+<enum name='kICServicesUDPBit' value='1'/>
+<enum name='kICServicesUDPMask' value='2'/>
+<enum name='kInternetEventClass' value='1196773964'/>
+<enum name='kNoProcess' value='0'/>
+<enum name='kPasteboardClientIsOwner' value='2'/>
+<enum name='kPasteboardFlavorNoFlags' value='0'/>
+<enum name='kPasteboardFlavorNotSaved' value='4'/>
+<enum name='kPasteboardFlavorPromised' value='512'/>
+<enum name='kPasteboardFlavorRequestOnly' value='8'/>
+<enum name='kPasteboardFlavorSenderOnly' value='1'/>
+<enum name='kPasteboardFlavorSenderTranslated' value='2'/>
+<enum name='kPasteboardFlavorSystemTranslated' value='256'/>
+<enum name='kPasteboardModified' value='1'/>
+<enum name='kPasteboardStandardLocationTrash' value='1953657704'/>
+<enum name='kPasteboardStandardLocationUnknown' value='1970170734'/>
+<enum name='kPlotIconRefNoImage' value='2'/>
+<enum name='kPlotIconRefNoMask' value='4'/>
+<enum name='kPlotIconRefNormalFlags' value='0'/>
+<enum name='kProcessDictionaryIncludeAllInformationMask' value='-1'/>
+<enum name='kProcessTransformToBackgroundApplication' value='2'/>
+<enum name='kProcessTransformToForegroundApplication' value='1'/>
+<enum name='kProcessTransformToUIElementApplication' value='4'/>
+<enum name='kQuitAtNormalTimeMask' value='2'/>
+<enum name='kQuitBeforeFBAsQuitMask' value='4'/>
+<enum name='kQuitBeforeNormalTimeMask' value='1'/>
+<enum name='kQuitBeforeShellQuitsMask' value='8'/>
+<enum name='kQuitBeforeTerminatorAppQuitsMask' value='16'/>
+<enum name='kQuitNeverMask' value='32'/>
+<enum name='kQuitNotQuitDuringInstallMask' value='256'/>
+<enum name='kQuitNotQuitDuringLogoutMask' value='512'/>
+<enum name='kQuitOptionsMask' value='127'/>
+<enum name='kSelectorAll1BitData' value='16843009'/>
+<enum name='kSelectorAll32BitData' value='134219784'/>
+<enum name='kSelectorAll4BitData' value='33686018'/>
+<enum name='kSelectorAll8BitData' value='67372036'/>
+<enum name='kSelectorAllAvailableData' value='4294967295'/>
+<enum name='kSelectorAllHugeData' value='4278190080'/>
+<enum name='kSelectorAllLargeData' value='255'/>
+<enum name='kSelectorAllMiniData' value='16711680'/>
+<enum name='kSelectorAllSmallData' value='65280'/>
+<enum name='kSelectorHuge1Bit' value='16777216'/>
+<enum name='kSelectorHuge32Bit' value='134217728'/>
+<enum name='kSelectorHuge4Bit' value='33554432'/>
+<enum name='kSelectorHuge8Bit' value='67108864'/>
+<enum name='kSelectorHuge8BitMask' value='268435456'/>
+<enum name='kSelectorLarge1Bit' value='1'/>
+<enum name='kSelectorLarge32Bit' value='8'/>
+<enum name='kSelectorLarge4Bit' value='2'/>
+<enum name='kSelectorLarge8Bit' value='4'/>
+<enum name='kSelectorLarge8BitMask' value='16'/>
+<enum name='kSelectorMini1Bit' value='65536'/>
+<enum name='kSelectorMini4Bit' value='131072'/>
+<enum name='kSelectorMini8Bit' value='262144'/>
+<enum name='kSelectorSmall1Bit' value='256'/>
+<enum name='kSelectorSmall32Bit' value='2048'/>
+<enum name='kSelectorSmall4Bit' value='512'/>
+<enum name='kSelectorSmall8Bit' value='1024'/>
+<enum name='kSelectorSmall8BitMask' value='4096'/>
+<enum name='kSetFrontProcessCausedByUser' value='2'/>
+<enum name='kSetFrontProcessFrontWindowOnly' value='1'/>
+<enum name='kSystemProcess' value='1'/>
+<enum name='kTransformDisabled' value='1'/>
+<enum name='kTransformLabel1' value='256'/>
+<enum name='kTransformLabel2' value='512'/>
+<enum name='kTransformLabel3' value='768'/>
+<enum name='kTransformLabel4' value='1024'/>
+<enum name='kTransformLabel5' value='1280'/>
+<enum name='kTransformLabel6' value='1536'/>
+<enum name='kTransformLabel7' value='1792'/>
+<enum name='kTransformNone' value='0'/>
+<enum name='kTransformOffline' value='2'/>
+<enum name='kTransformOpen' value='3'/>
+<enum name='kTransformSelected' value='16384'/>
+<enum name='kTransformSelectedDisabled' value='16385'/>
+<enum name='kTransformSelectedOffline' value='16386'/>
+<enum name='kTransformSelectedOpen' value='16387'/>
+<enum name='kTranslationDataTranslation' value='1'/>
+<enum name='kTranslationFileTranslation' value='2'/>
+<enum name='kUAZoomFocusTypeInsertionPoint' value='1'/>
+<enum name='kUAZoomFocusTypeOther' value='0'/>
+<enum name='keyAEAttaching' value='1098146664'/>
+<enum name='keyEvtDev' value='7'/>
+<enum name='keyICEditPreferenceDestination' value='1684370292'/>
+<enum name='launchAllow24Bit' value='256'/>
+<enum name='launchContinue' value='16384'/>
+<enum name='launchDontSwitch' value='512'/>
+<enum name='launchInhibitDaemon' value='128'/>
+<enum name='launchNoFileFlags' value='2048'/>
+<enum name='launchUseMinimum' value='1024'/>
+<enum name='macDev' value='8'/>
+<enum name='mode32BitCompatible' value='128'/>
+<enum name='modeCanBackground' value='4096'/>
+<enum name='modeControlPanel' value='524288'/>
+<enum name='modeDeskAccessory' value='131072'/>
+<enum name='modeDisplayManagerAware' value='4'/>
+<enum name='modeDoesActivateOnFGSwitch' value='2048'/>
+<enum name='modeGetAppDiedMsg' value='256'/>
+<enum name='modeGetFrontClicks' value='512'/>
+<enum name='modeHighLevelEventAware' value='64'/>
+<enum name='modeLaunchDontSwitch' value='262144'/>
+<enum name='modeLocalAndRemoteHLEvents' value='32'/>
+<enum name='modeMultiLaunch' value='65536'/>
+<enum name='modeNeedSuspendResume' value='16384'/>
+<enum name='modeOnlyBackground' value='1024'/>
+<enum name='modeReserved' value='16777216'/>
+<enum name='modeStationeryAware' value='16'/>
+<enum name='modeUseTextEditServices' value='8'/>
+<enum name='noPasteboardPromiseKeeperErr' value='-25136'/>
+<enum name='notPasteboardOwnerErr' value='-25135'/>
+<enum name='nulDev' value='3'/>
+<enum name='pasteDev' value='12'/>
+<enum name='svAll1BitData' value='16843009'/>
+<enum name='svAll4BitData' value='33686018'/>
+<enum name='svAll8BitData' value='67372036'/>
+<enum name='svAllAvailableData' value='4294967295'/>
+<enum name='svAllLargeData' value='255'/>
+<enum name='svAllMiniData' value='16711680'/>
+<enum name='svAllSmallData' value='65280'/>
+<enum name='svLarge1Bit' value='1'/>
+<enum name='svLarge4Bit' value='2'/>
+<enum name='svLarge8Bit' value='4'/>
+<enum name='svMini1Bit' value='65536'/>
+<enum name='svMini4Bit' value='131072'/>
+<enum name='svMini8Bit' value='262144'/>
+<enum name='svSmall1Bit' value='256'/>
+<enum name='svSmall4Bit' value='512'/>
+<enum name='svSmall8Bit' value='1024'/>
+<enum name='ttDisabled' value='1'/>
+<enum name='ttLabel1' value='256'/>
+<enum name='ttLabel2' value='512'/>
+<enum name='ttLabel3' value='768'/>
+<enum name='ttLabel4' value='1024'/>
+<enum name='ttLabel5' value='1280'/>
+<enum name='ttLabel6' value='1536'/>
+<enum name='ttLabel7' value='1792'/>
+<enum name='ttNone' value='0'/>
+<enum name='ttOffline' value='2'/>
+<enum name='ttOpen' value='3'/>
+<enum name='ttSelected' value='16384'/>
+<enum name='ttSelectedDisabled' value='16385'/>
+<enum name='ttSelectedOffline' value='16386'/>
+<enum name='ttSelectedOpen' value='16387'/>
+<enum name='undoDev' value='9'/>
+<enum name='updateDev' value='4'/>
+<function name='AXAPIEnabled'>
+<retval type='B'/>
+</function>
+<function name='AXIsProcessTrusted'>
+<retval type='B'/>
+</function>
+<function name='AXMakeProcessTrusted'>
+<arg type='^{__CFString=}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='AXObserverAddNotification'>
+<arg type='^{__AXObserver=}'/>
+<arg type='^{__AXUIElement=}'/>
+<arg type='^{__CFString=}'/>
+<arg type='^v'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='AXObserverCreate'>
+<arg type='i'/>
+<arg function_pointer='true' type='^?'>
+<arg type='^{__AXObserver=}'/>
+<arg type='^{__AXUIElement=}'/>
+<arg type='^{__CFString=}'/>
+<arg type='^v'/>
+<retval type='v'/>
+</arg>
+<arg type='^^{__AXObserver}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='AXObserverGetRunLoopSource'>
+<arg type='^{__AXObserver=}'/>
+<retval type='^{__CFRunLoopSource=}'/>
+</function>
+<function name='AXObserverGetTypeID'>
+<retval type='L' type64='Q'/>
+</function>
+<function name='AXObserverRemoveNotification'>
+<arg type='^{__AXObserver=}'/>
+<arg type='^{__AXUIElement=}'/>
+<arg type='^{__CFString=}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='AXUIElementCopyActionDescription'>
+<arg type='^{__AXUIElement=}'/>
+<arg type='^{__CFString=}'/>
+<arg type='^^{__CFString}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='AXUIElementCopyActionNames'>
+<arg type='^{__AXUIElement=}'/>
+<arg type='^^{__CFArray}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='AXUIElementCopyAttributeNames'>
+<arg type='^{__AXUIElement=}'/>
+<arg type='^^{__CFArray}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='AXUIElementCopyAttributeValue'>
+<arg type='^{__AXUIElement=}'/>
+<arg type='^{__CFString=}'/>
+<arg type='^^v'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='AXUIElementCopyAttributeValues'>
+<arg type='^{__AXUIElement=}'/>
+<arg type='^{__CFString=}'/>
+<arg type='l' type64='q'/>
+<arg type='l' type64='q'/>
+<arg type='^^{__CFArray}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='AXUIElementCopyElementAtPosition'>
+<arg type='^{__AXUIElement=}'/>
+<arg type='f'/>
+<arg type='f'/>
+<arg type='^^{__AXUIElement}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='AXUIElementCopyMultipleAttributeValues'>
+<arg type='^{__AXUIElement=}'/>
+<arg type='^{__CFArray=}'/>
+<arg type='L' type64='I'/>
+<arg type='^^{__CFArray}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='AXUIElementCopyParameterizedAttributeNames'>
+<arg type='^{__AXUIElement=}'/>
+<arg type='^^{__CFArray}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='AXUIElementCopyParameterizedAttributeValue'>
+<arg type='^{__AXUIElement=}'/>
+<arg type='^{__CFString=}'/>
+<arg type='@'/>
+<arg type='^^v'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='AXUIElementCreateApplication'>
+<arg type='i'/>
+<retval type='^{__AXUIElement=}' already_retained='true'/>
+</function>
+<function name='AXUIElementCreateSystemWide'>
+<retval type='^{__AXUIElement=}' already_retained='true'/>
+</function>
+<function name='AXUIElementGetAttributeValueCount'>
+<arg type='^{__AXUIElement=}'/>
+<arg type='^{__CFString=}'/>
+<arg type='^i' type64='^q'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='AXUIElementGetPid'>
+<arg type='^{__AXUIElement=}'/>
+<arg type='^i'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='AXUIElementGetTypeID'>
+<retval type='L' type64='Q'/>
+</function>
+<function name='AXUIElementIsAttributeSettable'>
+<arg type='^{__AXUIElement=}'/>
+<arg type='^{__CFString=}'/>
+<arg type='^B'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='AXUIElementPerformAction'>
+<arg type='^{__AXUIElement=}'/>
+<arg type='^{__CFString=}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='AXUIElementPostKeyboardEvent'>
+<arg type='^{__AXUIElement=}'/>
+<arg type='S'/>
+<arg type='S'/>
+<arg type='B'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='AXUIElementSetAttributeValue'>
+<arg type='^{__AXUIElement=}'/>
+<arg type='^{__CFString=}'/>
+<arg type='@'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='AXUIElementSetMessagingTimeout'>
+<arg type='^{__AXUIElement=}'/>
+<arg type='f'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='AXValueCreate'>
+<arg type='i'/>
+<arg type='^v'/>
+<retval type='^{__AXValue=}' already_retained='true'/>
+</function>
+<function name='AXValueGetType'>
+<arg type='^{__AXValue=}'/>
+<retval type='i'/>
+</function>
+<function name='AXValueGetTypeID'>
+<retval type='L' type64='Q'/>
+</function>
+<function name='AXValueGetValue'>
+<arg type='^{__AXValue=}'/>
+<arg type='i'/>
+<arg type='^v'/>
+<retval type='B'/>
+</function>
+<function name='CopyProcessName'>
+<arg type='^{ProcessSerialNumber=II}'/>
+<arg type='^^{__CFString}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='DisposeIconActionUPP'>
+<arg function_pointer='true' type='^?'>
+<arg type='L' type64='I'/>
+<arg type='^^*'/>
+<arg type='^v'/>
+<retval type='s'/>
+</arg>
+</function>
+<function name='DisposeIconGetterUPP'>
+<arg function_pointer='true' type='^?'>
+<arg type='L' type64='I'/>
+<arg type='^v'/>
+<retval type='^*'/>
+</arg>
+</function>
+<function name='ExitToShell'/>
+<function name='GetFrontProcess'>
+<arg type='^{ProcessSerialNumber=II}'/>
+<retval type='s'/>
+</function>
+<function name='GetIconFamilyData'>
+<arg type='^^{IconFamilyResource}'/>
+<arg type='L' type64='I'/>
+<arg type='^*'/>
+<retval type='s'/>
+</function>
+<function name='GetIconRefVariant'>
+<arg type='^{OpaqueIconRef=}'/>
+<arg type='L' type64='I'/>
+<arg type='^s'/>
+<retval type='^{OpaqueIconRef=}'/>
+</function>
+<function name='GetNextProcess'>
+<arg type='^{ProcessSerialNumber=II}'/>
+<retval type='s'/>
+</function>
+<function name='GetProcessBundleLocation'>
+<arg type='^{ProcessSerialNumber=II}'/>
+<arg type='^{FSRef=[80C]}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='GetProcessForPID'>
+<arg type='i'/>
+<arg type='^{ProcessSerialNumber=II}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='GetProcessInformation'>
+<arg type='^{ProcessSerialNumber=II}'/>
+<arg type='^{ProcessInfoRec=I*{ProcessSerialNumber=II}III*II{ProcessSerialNumber=II}II^{FSSpec}}' type64='^{ProcessInfoRec=I*{ProcessSerialNumber=II}III*II{ProcessSerialNumber=II}II^{FSRef}}'/>
+<retval type='s'/>
+</function>
+<function name='GetProcessPID'>
+<arg type='^{ProcessSerialNumber=II}'/>
+<arg type='^i'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='HIShapeContainsPoint'>
+<arg type='^{__HIShape=}'/>
+<arg type='^{CGPoint=ff}' type64='^{CGPoint=dd}'/>
+<retval type='B'/>
+</function>
+<function name='HIShapeCreateCopy'>
+<arg type='^{__HIShape=}'/>
+<retval type='^{__HIShape=}' already_retained='true'/>
+</function>
+<function name='HIShapeCreateDifference'>
+<arg type='^{__HIShape=}'/>
+<arg type='^{__HIShape=}'/>
+<retval type='^{__HIShape=}' already_retained='true'/>
+</function>
+<function name='HIShapeCreateEmpty'>
+<retval type='^{__HIShape=}' already_retained='true'/>
+</function>
+<function name='HIShapeCreateIntersection'>
+<arg type='^{__HIShape=}'/>
+<arg type='^{__HIShape=}'/>
+<retval type='^{__HIShape=}' already_retained='true'/>
+</function>
+<function name='HIShapeCreateMutable'>
+<retval type='^{__HIShape=}' already_retained='true'/>
+</function>
+<function name='HIShapeCreateMutableCopy'>
+<arg type='^{__HIShape=}'/>
+<retval type='^{__HIShape=}' already_retained='true'/>
+</function>
+<function name='HIShapeCreateMutableWithRect'>
+<arg type='^{CGRect={CGPoint=ff}{CGSize=ff}}' type64='^{CGRect={CGPoint=dd}{CGSize=dd}}'/>
+<retval type='^{__HIShape=}' already_retained='true'/>
+</function>
+<function name='HIShapeCreateUnion'>
+<arg type='^{__HIShape=}'/>
+<arg type='^{__HIShape=}'/>
+<retval type='^{__HIShape=}' already_retained='true'/>
+</function>
+<function name='HIShapeCreateWithQDRgn'>
+<arg type='^{OpaqueRgnHandle=}'/>
+<retval type='^{__HIShape=}' already_retained='true'/>
+</function>
+<function name='HIShapeCreateWithRect'>
+<arg type='^{CGRect={CGPoint=ff}{CGSize=ff}}' type64='^{CGRect={CGPoint=dd}{CGSize=dd}}'/>
+<retval type='^{__HIShape=}' already_retained='true'/>
+</function>
+<function name='HIShapeCreateXor'>
+<arg type='^{__HIShape=}'/>
+<arg type='^{__HIShape=}'/>
+<retval type='^{__HIShape=}' already_retained='true'/>
+</function>
+<function name='HIShapeDifference'>
+<arg type='^{__HIShape=}'/>
+<arg type='^{__HIShape=}'/>
+<arg type='^{__HIShape=}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='HIShapeEnumerate'>
+<arg type='^{__HIShape=}'/>
+<arg type='L' type64='I'/>
+<arg function_pointer='true' type='^?'>
+<arg type='i'/>
+<arg type='^{__HIShape=}'/>
+<arg type='^{CGRect={CGPoint=ff}{CGSize=ff}}' type64='^{CGRect={CGPoint=dd}{CGSize=dd}}'/>
+<arg type='^v'/>
+<retval type='l' type64='i'/>
+</arg>
+<arg type='^v'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='HIShapeGetAsQDRgn'>
+<arg type='^{__HIShape=}'/>
+<arg type='^{OpaqueRgnHandle=}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='HIShapeGetBounds'>
+<arg type='^{__HIShape=}'/>
+<arg type='^{CGRect={CGPoint=ff}{CGSize=ff}}' type64='^{CGRect={CGPoint=dd}{CGSize=dd}}'/>
+<retval type='^{CGRect={CGPoint=ff}{CGSize=ff}}' type64='^{CGRect={CGPoint=dd}{CGSize=dd}}'/>
+</function>
+<function name='HIShapeGetTypeID'>
+<retval type='L' type64='Q'/>
+</function>
+<function name='HIShapeInset'>
+<arg type='^{__HIShape=}'/>
+<arg type='f' type64='d'/>
+<arg type='f' type64='d'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='HIShapeIntersect'>
+<arg type='^{__HIShape=}'/>
+<arg type='^{__HIShape=}'/>
+<arg type='^{__HIShape=}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='HIShapeIntersectsRect'>
+<arg type='^{__HIShape=}'/>
+<arg type='^{CGRect={CGPoint=ff}{CGSize=ff}}' type64='^{CGRect={CGPoint=dd}{CGSize=dd}}'/>
+<retval type='B'/>
+</function>
+<function name='HIShapeIsEmpty'>
+<arg type='^{__HIShape=}'/>
+<retval type='B'/>
+</function>
+<function name='HIShapeIsRectangular'>
+<arg type='^{__HIShape=}'/>
+<retval type='B'/>
+</function>
+<function name='HIShapeOffset'>
+<arg type='^{__HIShape=}'/>
+<arg type='f' type64='d'/>
+<arg type='f' type64='d'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='HIShapeReplacePathInCGContext'>
+<arg type='^{__HIShape=}'/>
+<arg type='^{CGContext=}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='HIShapeSetEmpty'>
+<arg type='^{__HIShape=}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='HIShapeSetWithShape'>
+<arg type='^{__HIShape=}'/>
+<arg type='^{__HIShape=}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='HIShapeUnion'>
+<arg type='^{__HIShape=}'/>
+<arg type='^{__HIShape=}'/>
+<arg type='^{__HIShape=}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='HIShapeUnionWithRect'>
+<arg type='^{__HIShape=}'/>
+<arg type='^{CGRect={CGPoint=ff}{CGSize=ff}}' type64='^{CGRect={CGPoint=dd}{CGSize=dd}}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='HIShapeXor'>
+<arg type='^{__HIShape=}'/>
+<arg type='^{__HIShape=}'/>
+<arg type='^{__HIShape=}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='ICAddMapEntry'>
+<arg type='^{OpaqueICInstance=}'/>
+<arg type='^*'/>
+<arg type='^{ICMapEntry=sssIIIi[256C][256C][256C][256C][256C]}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='ICAddProfile'>
+<arg type='^{OpaqueICInstance=}'/>
+<arg type='l' type64='i'/>
+<arg type='^i'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='ICBegin'>
+<arg type='^{OpaqueICInstance=}'/>
+<arg type='C'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='ICCountMapEntries'>
+<arg type='^{OpaqueICInstance=}'/>
+<arg type='^*'/>
+<arg type='^l' type64='^q'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='ICCountPref'>
+<arg type='^{OpaqueICInstance=}'/>
+<arg type='^l' type64='^q'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='ICCountProfiles'>
+<arg type='^{OpaqueICInstance=}'/>
+<arg type='^l' type64='^q'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='ICCreateGURLEvent'>
+<arg type='^{OpaqueICInstance=}'/>
+<arg type='L' type64='I'/>
+<arg type='^*'/>
+<arg type='^{AEDesc=I^^{OpaqueAEDataStorageType}}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='ICDeleteMapEntry'>
+<arg type='^{OpaqueICInstance=}'/>
+<arg type='^*'/>
+<arg type='l' type64='q'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='ICDeletePref'>
+<arg type='^{OpaqueICInstance=}'/>
+<arg type='*'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='ICDeleteProfile'>
+<arg type='^{OpaqueICInstance=}'/>
+<arg type='l' type64='i'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='ICEditPreferences'>
+<arg type='^{OpaqueICInstance=}'/>
+<arg type='*'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='ICEnd'>
+<arg type='^{OpaqueICInstance=}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='ICFindPrefHandle'>
+<arg type='^{OpaqueICInstance=}'/>
+<arg type='*'/>
+<arg type='^I'/>
+<arg type='^*'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='ICGetConfigName'>
+<arg type='^{OpaqueICInstance=}'/>
+<arg type='B'/>
+<arg type='*'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='ICGetCurrentProfile'>
+<arg type='^{OpaqueICInstance=}'/>
+<arg type='^i'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='ICGetDefaultPref'>
+<arg type='^{OpaqueICInstance=}'/>
+<arg type='*'/>
+<arg type='^*'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='ICGetIndMapEntry'>
+<arg type='^{OpaqueICInstance=}'/>
+<arg type='^*'/>
+<arg type='l' type64='q'/>
+<arg type='^l' type64='^q'/>
+<arg type='^{ICMapEntry=sssIIIi[256C][256C][256C][256C][256C]}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='ICGetIndPref'>
+<arg type='^{OpaqueICInstance=}'/>
+<arg type='l' type64='q'/>
+<arg type='*'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='ICGetIndProfile'>
+<arg type='^{OpaqueICInstance=}'/>
+<arg type='l' type64='q'/>
+<arg type='^i'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='ICGetMapEntry'>
+<arg type='^{OpaqueICInstance=}'/>
+<arg type='^*'/>
+<arg type='l' type64='q'/>
+<arg type='^{ICMapEntry=sssIIIi[256C][256C][256C][256C][256C]}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='ICGetPerm'>
+<arg type='^{OpaqueICInstance=}'/>
+<arg type='*'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='ICGetPref'>
+<arg type='^{OpaqueICInstance=}'/>
+<arg type='*'/>
+<arg type='^I'/>
+<arg type='^v'/>
+<arg type='^l' type64='^q'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='ICGetPrefHandle'>
+<arg type='^{OpaqueICInstance=}'/>
+<arg type='*'/>
+<arg type='^I'/>
+<arg type='^^*'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='ICGetProfileName'>
+<arg type='^{OpaqueICInstance=}'/>
+<arg type='l' type64='i'/>
+<arg type='*'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='ICGetSeed'>
+<arg type='^{OpaqueICInstance=}'/>
+<arg type='^l' type64='^q'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='ICGetVersion'>
+<arg type='^{OpaqueICInstance=}'/>
+<arg type='l' type64='q'/>
+<arg type='^I'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='ICLaunchURL'>
+<arg type='^{OpaqueICInstance=}'/>
+<arg type='*'/>
+<arg type='^v'/>
+<arg type='l' type64='q'/>
+<arg type='^l' type64='^q'/>
+<arg type='^l' type64='^q'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='ICMapEntriesFilename'>
+<arg type='^{OpaqueICInstance=}'/>
+<arg type='^*'/>
+<arg type='*'/>
+<arg type='^{ICMapEntry=sssIIIi[256C][256C][256C][256C][256C]}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='ICMapEntriesTypeCreator'>
+<arg type='^{OpaqueICInstance=}'/>
+<arg type='^*'/>
+<arg type='L' type64='I'/>
+<arg type='L' type64='I'/>
+<arg type='*'/>
+<arg type='^{ICMapEntry=sssIIIi[256C][256C][256C][256C][256C]}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='ICMapFilename'>
+<arg type='^{OpaqueICInstance=}'/>
+<arg type='*'/>
+<arg type='^{ICMapEntry=sssIIIi[256C][256C][256C][256C][256C]}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='ICMapTypeCreator'>
+<arg type='^{OpaqueICInstance=}'/>
+<arg type='L' type64='I'/>
+<arg type='L' type64='I'/>
+<arg type='*'/>
+<arg type='^{ICMapEntry=sssIIIi[256C][256C][256C][256C][256C]}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='ICParseURL'>
+<arg type='^{OpaqueICInstance=}'/>
+<arg type='*'/>
+<arg type='^v'/>
+<arg type='l' type64='q'/>
+<arg type='^l' type64='^q'/>
+<arg type='^l' type64='^q'/>
+<arg type='^*'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='ICSendGURLEvent'>
+<arg type='^{OpaqueICInstance=}'/>
+<arg type='^{AEDesc=I^^{OpaqueAEDataStorageType}}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='ICSetCurrentProfile'>
+<arg type='^{OpaqueICInstance=}'/>
+<arg type='l' type64='i'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='ICSetMapEntry'>
+<arg type='^{OpaqueICInstance=}'/>
+<arg type='^*'/>
+<arg type='l' type64='q'/>
+<arg type='^{ICMapEntry=sssIIIi[256C][256C][256C][256C][256C]}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='ICSetPref'>
+<arg type='^{OpaqueICInstance=}'/>
+<arg type='*'/>
+<arg type='L' type64='I'/>
+<arg type='^v'/>
+<arg type='l' type64='q'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='ICSetPrefHandle'>
+<arg type='^{OpaqueICInstance=}'/>
+<arg type='*'/>
+<arg type='L' type64='I'/>
+<arg type='^*'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='ICSetProfileName'>
+<arg type='^{OpaqueICInstance=}'/>
+<arg type='l' type64='i'/>
+<arg type='*'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='ICStart'>
+<arg type='^^{OpaqueICInstance}'/>
+<arg type='L' type64='I'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='ICStop'>
+<arg type='^{OpaqueICInstance=}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='IconRefContainsCGPoint'>
+<arg type='^{CGPoint=ff}' type64='^{CGPoint=dd}'/>
+<arg type='^{CGRect={CGPoint=ff}{CGSize=ff}}' type64='^{CGRect={CGPoint=dd}{CGSize=dd}}'/>
+<arg type='s'/>
+<arg type='L' type64='I'/>
+<arg type='^{OpaqueIconRef=}'/>
+<retval type='B'/>
+</function>
+<function name='IconRefIntersectsCGRect'>
+<arg type='^{CGRect={CGPoint=ff}{CGSize=ff}}' type64='^{CGRect={CGPoint=dd}{CGSize=dd}}'/>
+<arg type='^{CGRect={CGPoint=ff}{CGSize=ff}}' type64='^{CGRect={CGPoint=dd}{CGSize=dd}}'/>
+<arg type='s'/>
+<arg type='L' type64='I'/>
+<arg type='^{OpaqueIconRef=}'/>
+<retval type='B'/>
+</function>
+<function name='IconRefToHIShape'>
+<arg type='^{CGRect={CGPoint=ff}{CGSize=ff}}' type64='^{CGRect={CGPoint=dd}{CGSize=dd}}'/>
+<arg type='s'/>
+<arg type='L' type64='I'/>
+<arg type='^{OpaqueIconRef=}'/>
+<retval type='^{__HIShape=}'/>
+</function>
+<function name='IconRefToIconFamily'>
+<arg type='^{OpaqueIconRef=}'/>
+<arg type='L' type64='I'/>
+<arg type='^^^{IconFamilyResource}'/>
+<retval type='s'/>
+</function>
+<function name='InvokeIconActionUPP'>
+<arg type='L' type64='I'/>
+<arg type='^^*'/>
+<arg type='^v'/>
+<arg function_pointer='true' type='^?'>
+<arg type='L' type64='I'/>
+<arg type='^^*'/>
+<arg type='^v'/>
+<retval type='s'/>
+</arg>
+<retval type='s'/>
+</function>
+<function name='InvokeIconGetterUPP'>
+<arg type='L' type64='I'/>
+<arg type='^v'/>
+<arg function_pointer='true' type='^?'>
+<arg type='L' type64='I'/>
+<arg type='^v'/>
+<retval type='^*'/>
+</arg>
+<retval type='^*'/>
+</function>
+<function name='IsIconRefMaskEmpty'>
+<arg type='^{OpaqueIconRef=}'/>
+<retval type='B'/>
+</function>
+<function name='IsProcessVisible'>
+<arg type='^{ProcessSerialNumber=II}'/>
+<retval type='B'/>
+</function>
+<function name='KillProcess'>
+<arg type='^{ProcessSerialNumber=II}'/>
+<retval type='s'/>
+</function>
+<function name='LaunchApplication'>
+<arg type='^{LaunchParamBlockRec=ISSISS^{FSSpec}{ProcessSerialNumber=II}III^{AppParameters}}' type64='^{LaunchParamBlockRec=ISSISS^{FSRef}{ProcessSerialNumber=II}III^{AppParameters}}'/>
+<retval type='s'/>
+</function>
+<function name='NewIconActionUPP'>
+<arg function_pointer='true' type='^?'>
+<arg type='L' type64='I'/>
+<arg type='^^*'/>
+<arg type='^v'/>
+<retval type='s'/>
+</arg>
+<retval function_pointer='true' type='^?'>
+<arg type='L' type64='I'/>
+<arg type='^^*'/>
+<arg type='^v'/>
+<retval type='s'/>
+</retval>
+</function>
+<function name='NewIconGetterUPP'>
+<arg function_pointer='true' type='^?'>
+<arg type='L' type64='I'/>
+<arg type='^v'/>
+<retval type='^*'/>
+</arg>
+<retval function_pointer='true' type='^?'>
+<arg type='L' type64='I'/>
+<arg type='^v'/>
+<retval type='^*'/>
+</retval>
+</function>
+<function name='PasteboardClear'>
+<arg type='^{OpaquePasteboardRef=}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='PasteboardCopyItemFlavorData'>
+<arg type='^{OpaquePasteboardRef=}'/>
+<arg type='^v'/>
+<arg type='^{__CFString=}'/>
+<arg type='^^{__CFData}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='PasteboardCopyItemFlavors'>
+<arg type='^{OpaquePasteboardRef=}'/>
+<arg type='^v'/>
+<arg type='^^{__CFArray}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='PasteboardCopyName'>
+<arg type='^{OpaquePasteboardRef=}'/>
+<arg type='^^{__CFString}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='PasteboardCopyPasteLocation'>
+<arg type='^{OpaquePasteboardRef=}'/>
+<arg type='^^{__CFURL}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='PasteboardCreate'>
+<arg type='^{__CFString=}'/>
+<arg type='^^{OpaquePasteboardRef}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='PasteboardGetItemCount'>
+<arg type='^{OpaquePasteboardRef=}'/>
+<arg type='^I' type64='^Q'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='PasteboardGetItemFlavorFlags'>
+<arg type='^{OpaquePasteboardRef=}'/>
+<arg type='^v'/>
+<arg type='^{__CFString=}'/>
+<arg type='^I'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='PasteboardGetItemIdentifier'>
+<arg type='^{OpaquePasteboardRef=}'/>
+<arg type='l' type64='q'/>
+<arg type='^^v'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='PasteboardGetTypeID'>
+<retval type='L' type64='Q'/>
+</function>
+<function name='PasteboardPutItemFlavor'>
+<arg type='^{OpaquePasteboardRef=}'/>
+<arg type='^v'/>
+<arg type='^{__CFString=}'/>
+<arg type='^{__CFData=}'/>
+<arg type='L' type64='I'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='PasteboardResolvePromises'>
+<arg type='^{OpaquePasteboardRef=}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='PasteboardSetPasteLocation'>
+<arg type='^{OpaquePasteboardRef=}'/>
+<arg type='^{__CFURL=}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='PasteboardSetPromiseKeeper'>
+<arg type='^{OpaquePasteboardRef=}'/>
+<arg function_pointer='true' type='^?'>
+<arg type='^{OpaquePasteboardRef=}'/>
+<arg type='^v'/>
+<arg type='^{__CFString=}'/>
+<arg type='^v'/>
+<retval type='l' type64='i'/>
+</arg>
+<arg type='^v'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='PasteboardSynchronize'>
+<arg type='^{OpaquePasteboardRef=}'/>
+<retval type='L' type64='I'/>
+</function>
+<function name='PlotIconRefInContext'>
+<arg type='^{CGContext=}'/>
+<arg type='^{CGRect={CGPoint=ff}{CGSize=ff}}' type64='^{CGRect={CGPoint=dd}{CGSize=dd}}'/>
+<arg type='s'/>
+<arg type='s'/>
+<arg type='^{RGBColor=SSS}'/>
+<arg type='L' type64='I'/>
+<arg type='^{OpaqueIconRef=}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='ProcessInformationCopyDictionary'>
+<arg type='^{ProcessSerialNumber=II}'/>
+<arg type='L' type64='I'/>
+<retval type='^{__CFDictionary=}' already_retained='true'/>
+</function>
+<function name='SameProcess'>
+<arg type='^{ProcessSerialNumber=II}'/>
+<arg type='^{ProcessSerialNumber=II}'/>
+<arg type='^B'/>
+<retval type='s'/>
+</function>
+<function name='SetFrontProcess'>
+<arg type='^{ProcessSerialNumber=II}'/>
+<retval type='s'/>
+</function>
+<function name='SetFrontProcessWithOptions'>
+<arg type='^{ProcessSerialNumber=II}'/>
+<arg type='L' type64='I'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='SetIconFamilyData'>
+<arg type='^^{IconFamilyResource}'/>
+<arg type='L' type64='I'/>
+<arg type='^*'/>
+<retval type='s'/>
+</function>
+<function name='ShowHideProcess'>
+<arg type='^{ProcessSerialNumber=II}'/>
+<arg type='B'/>
+<retval type='s'/>
+</function>
+<function name='TransformProcessType'>
+<arg type='^{ProcessSerialNumber=II}'/>
+<arg type='L' type64='I'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='TranslationCopyDestinationType'>
+<arg type='^{OpaqueTranslationRef=}'/>
+<arg type='^^{__CFString}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='TranslationCopySourceType'>
+<arg type='^{OpaqueTranslationRef=}'/>
+<arg type='^^{__CFString}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='TranslationCreate'>
+<arg type='^{__CFString=}'/>
+<arg type='^{__CFString=}'/>
+<arg type='L' type64='I'/>
+<arg type='^^{OpaqueTranslationRef}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='TranslationCreateWithSourceArray'>
+<arg type='^{__CFArray=}'/>
+<arg type='L' type64='I'/>
+<arg type='^^{__CFArray}'/>
+<arg type='^^{__CFDictionary}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='TranslationGetTranslationFlags'>
+<arg type='^{OpaqueTranslationRef=}'/>
+<arg type='^I'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='TranslationGetTypeID'>
+<retval type='L' type64='Q'/>
+</function>
+<function name='TranslationPerformForData'>
+<arg type='^{OpaqueTranslationRef=}'/>
+<arg type='^{__CFData=}'/>
+<arg type='^^{__CFData}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='TranslationPerformForFile'>
+<arg type='^{OpaqueTranslationRef=}'/>
+<arg type='^{FSRef=[80C]}'/>
+<arg type='^{FSRef=[80C]}'/>
+<arg type='^{__CFString=}'/>
+<arg type='^{FSRef=[80C]}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='TranslationPerformForURL'>
+<arg type='^{OpaqueTranslationRef=}'/>
+<arg type='^{__CFURL=}'/>
+<arg type='^{__CFURL=}'/>
+<arg type='^^{__CFURL}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='UAZoomChangeFocus'>
+<arg type='^{CGRect={CGPoint=ff}{CGSize=ff}}' type64='^{CGRect={CGPoint=dd}{CGSize=dd}}'/>
+<arg type='^{CGRect={CGPoint=ff}{CGSize=ff}}' type64='^{CGRect={CGPoint=dd}{CGSize=dd}}'/>
+<arg type='L' type64='I'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='UAZoomEnabled'>
+<retval type='B'/>
+</function>
+<function name='WakeUpProcess'>
+<arg type='^{ProcessSerialNumber=II}'/>
+<retval type='s'/>
+</function>
+<function_alias name='MacGetCurrentProcess' original='GetCurrentProcess'/>
+</signatures>

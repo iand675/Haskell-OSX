@@ -1,0 +1,148 @@
+<?xml version='1.0'?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version='1.0'>
+<depends_on path='/System/Library/Frameworks/Security.framework'/>
+<depends_on path='/System/Library/Frameworks/SecurityFoundation.framework'/>
+<depends_on path='/System/Library/Frameworks/AppKit.framework'/>
+<depends_on path='/System/Library/Frameworks/CoreAudio.framework'/>
+<depends_on path='/System/Library/Frameworks/CoreServices.framework'/>
+<depends_on path='/System/Library/Frameworks/CoreFoundation.framework'/>
+<depends_on path='/System/Library/Frameworks/ApplicationServices.framework'/>
+<depends_on path='/System/Library/Frameworks/Foundation.framework'/>
+<constant type='@' name='SFAuthorizationPluginViewUserNameKey'/>
+<constant type='@' name='SFAuthorizationPluginViewUserShortNameKey'/>
+<constant type='@' name='SFCertificateViewDisclosureStateDidChange'/>
+<constant type='@' name='SFDisplayViewException'/>
+<enum value='0' name='SFAuthorizationStartupState'/>
+<enum value='2' name='SFAuthorizationViewInProgressState'/>
+<enum value='1' name='SFAuthorizationViewLockedState'/>
+<enum value='3' name='SFAuthorizationViewUnlockedState'/>
+<enum value='0' name='SFButtonTypeBack'/>
+<enum value='0' name='SFButtonTypeCancel'/>
+<enum value='1' name='SFButtonTypeLogin'/>
+<enum value='1' name='SFButtonTypeOK'/>
+<enum value='1' name='SFViewTypeCredentials'/>
+<enum value='0' name='SFViewTypeIdentityAndCredentials'/>
+<class name='NSObject'>
+<method selector='authorizationViewShouldDeauthorize:'>
+<retval type='B'/>
+</method>
+<method selector='certificatePanelShowHelp:'>
+<retval type='B'/>
+</method>
+<method selector='chooseIdentityPanelShowHelp:'>
+<retval type='B'/>
+</method>
+</class>
+<class name='SFAuthorizationPluginView'>
+<method selector='setButton:enabled:'>
+<arg type='B' index='1'/>
+</method>
+<method selector='setEnabled:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='SFAuthorizationView'>
+<method selector='authorizationRights'>
+<retval type='^{_AuthorizationRights=I^{?}}'/>
+</method>
+<method selector='authorize:'>
+<retval type='B'/>
+</method>
+<method selector='deauthorize:'>
+<retval type='B'/>
+</method>
+<method selector='isEnabled'>
+<retval type='B'/>
+</method>
+<method selector='setAuthorizationRights:'>
+<arg type='^{_AuthorizationRights=I^{?}}' index='0'/>
+</method>
+<method selector='setAutoupdate:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setAutoupdate:interval:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setEnabled:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='updateStatus:'>
+<retval type='B'/>
+</method>
+</class>
+<class name='SFCertificatePanel'>
+<method selector='beginSheetForWindow:modalDelegate:didEndSelector:contextInfo:certificates:showGroup:'>
+<arg type='B' index='5'/>
+</method>
+<method selector='beginSheetForWindow:modalDelegate:didEndSelector:contextInfo:trust:showGroup:'>
+<arg type='B' index='5'/>
+</method>
+<method selector='runModalForCertificates:showGroup:'>
+<arg type='B' index='1'/>
+</method>
+<method selector='runModalForTrust:showGroup:'>
+<arg type='B' index='1'/>
+</method>
+<method selector='setShowsHelp:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='showsHelp'>
+<retval type='B'/>
+</method>
+</class>
+<class name='SFCertificateView'>
+<method selector='detailsDisclosed'>
+<retval type='B'/>
+</method>
+<method selector='detailsDisplayed'>
+<retval type='B'/>
+</method>
+<method selector='isEditable'>
+<retval type='B'/>
+</method>
+<method selector='isTrustDisplayed'>
+<retval type='B'/>
+</method>
+<method selector='policiesDisclosed'>
+<retval type='B'/>
+</method>
+<method selector='setDetailsDisclosed:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setDisplayDetails:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setDisplayTrust:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setEditableTrust:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setPoliciesDisclosed:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='SFChooseIdentityPanel'>
+<method selector='setShowsHelp:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='showsHelp'>
+<retval type='B'/>
+</method>
+</class>
+<informal_protocol name='SFAuthorizationViewDelegate'>
+<method type='v12@0:4@8' selector='authorizationViewCreatedAuthorization:' type64='v24@0:8@16'/>
+<method type='v12@0:4@8' selector='authorizationViewDidAuthorize:' type64='v24@0:8@16'/>
+<method type='v12@0:4@8' selector='authorizationViewDidDeauthorize:' type64='v24@0:8@16'/>
+<method type='v12@0:4@8' selector='authorizationViewDidHide:' type64='v24@0:8@16'/>
+<method type='v12@0:4@8' selector='authorizationViewReleasedAuthorization:' type64='v24@0:8@16'/>
+<method type='B12@0:4@8' selector='authorizationViewShouldDeauthorize:' type64='B24@0:8@16'/>
+</informal_protocol>
+<informal_protocol name='SFCertificatePanelDelegate'>
+<method type='B12@0:4@8' selector='certificatePanelShowHelp:' type64='B24@0:8@16'/>
+</informal_protocol>
+<informal_protocol name='SFChooseIdentityPanelDelegate'>
+<method type='B12@0:4@8' selector='chooseIdentityPanelShowHelp:' type64='B24@0:8@16'/>
+</informal_protocol>
+</signatures>

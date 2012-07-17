@@ -1,0 +1,337 @@
+<?xml version='1.0'?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version='1.0'>
+<depends_on path='/System/Library/Frameworks/ApplicationServices.framework'/>
+<depends_on path='/System/Library/Frameworks/CoreServices.framework'/>
+<depends_on path='/System/Library/Frameworks/CoreFoundation.framework'/>
+<struct type='{SRCallBackParam=&quot;callBack&quot;^?&quot;refCon&quot;i}' name='SRCallBackParam' type64='{SRCallBackParam=&quot;callBack&quot;^?&quot;refCon&quot;^v}'/>
+<struct type='{SRCallBackStruct=&quot;what&quot;I&quot;message&quot;l&quot;instance&quot;^{OpaqueSRSpeechObject}&quot;status&quot;s&quot;flags&quot;s&quot;refCon&quot;i}' name='SRCallBackStruct' type64='{SRCallBackStruct=&quot;what&quot;I&quot;message&quot;q&quot;instance&quot;^{OpaqueSRSpeechObject}&quot;status&quot;s&quot;flags&quot;s&quot;refCon&quot;^v}'/>
+<opaque type='^{OpaqueSRSpeechObject=}' name='SRSpeechObject'/>
+<enum value='1936876132' name='kAESpeechDetected'/>
+<enum value='1936880484' name='kAESpeechDone'/>
+<enum value='1936749155' name='kAESpeechSuite'/>
+<enum value='-5126' name='kSRAlreadyFinished'/>
+<enum value='-5114' name='kSRAlreadyListening'/>
+<enum value='-5125' name='kSRAlreadyReleased'/>
+<enum value='1634101614' name='kSRAutoFinishingParam'/>
+<enum value='-5105' name='kSRBadParameter'/>
+<enum value='-5107' name='kSRBadSelector'/>
+<enum value='1651270247' name='kSRBlockBackground'/>
+<enum value='1651273060' name='kSRBlockModally'/>
+<enum value='-5108' name='kSRBufferTooSmall'/>
+<enum value='1667329132' name='kSRCallBackParam'/>
+<enum value='1667330927' name='kSRCancelOnSoundOut'/>
+<enum value='1667314226' name='kSRCanned22kHzSpeechSource'/>
+<enum value='-5131' name='kSRCantAdd'/>
+<enum value='-5112' name='kSRCantGetProperty'/>
+<enum value='-5133' name='kSRCantReadLanguageObject'/>
+<enum value='-5113' name='kSRCantSetDuringRecognition'/>
+<enum value='-5111' name='kSRCantSetProperty'/>
+<enum value='1668052336' name='kSRCleanupOnClientExit'/>
+<enum value='-5102' name='kSRComponentNotFound'/>
+<enum value='0' name='kSRDefaultRecognitionSystemID'/>
+<enum value='50' name='kSRDefaultRejectionLevel'/>
+<enum value='0' name='kSRDefaultSpeechSource'/>
+<enum value='1701732972' name='kSREnabled'/>
+<enum value='-5129' name='kSRExpansionTooDeep'/>
+<enum value='1717729134' name='kSRFeedbackAndListeningModes'/>
+<enum value='-5110' name='kSRFeedbackNotAvail'/>
+<enum value='1718054766' name='kSRForegroundOnly'/>
+<enum value='1' name='kSRHasFeedbackHasListenModes'/>
+<enum value='-5122' name='kSRHasNoSubItems'/>
+<enum value='1' name='kSRIdleRecognizer'/>
+<enum value='-5101' name='kSRInternalError'/>
+<enum value='1801812080' name='kSRKeyExpected'/>
+<enum value='1802990180' name='kSRKeyWord'/>
+<enum value='1819112560' name='kSRLMObjType'/>
+<enum value='1819108973' name='kSRLanguageModelFormat'/>
+<enum value='-5124' name='kSRLanguageModelTooBig'/>
+<enum value='1819111266' name='kSRLanguageModelType'/>
+<enum value='1818977657' name='kSRListenKeyCombo'/>
+<enum value='1818979684' name='kSRListenKeyMode'/>
+<enum value='1819173229' name='kSRListenKeyName'/>
+<enum value='1684761718' name='kSRLiveDesktopSpeechSource'/>
+<enum value='-5116' name='kSRModelMismatch'/>
+<enum value='8' name='kSRMustCancelSearch'/>
+<enum value='-5117' name='kSRNoClientLanguageModel'/>
+<enum value='2' name='kSRNoFeedbackHasListenModes'/>
+<enum value='0' name='kSRNoFeedbackNoListenModes'/>
+<enum value='-5118' name='kSRNoPendingUtterances'/>
+<enum value='-5109' name='kSRNotARecSystem'/>
+<enum value='-5104' name='kSRNotASpeechObject'/>
+<enum value='-5100' name='kSRNotAvailable'/>
+<enum value='-5128' name='kSRNotFinishedWithRejection'/>
+<enum value='-5199' name='kSRNotImplementedYet'/>
+<enum value='-5115' name='kSRNotListeningState'/>
+<enum value='1852798057' name='kSRNotificationParam'/>
+<enum value='1' name='kSRNotifyRecognitionBeginning'/>
+<enum value='2' name='kSRNotifyRecognitionDone'/>
+<enum value='1869640812' name='kSROptional'/>
+<enum value='-5121' name='kSROtherRecAlreadyModal'/>
+<enum value='-5103' name='kSROutOfMemory'/>
+<enum value='-5106' name='kSRParamOutOfRange'/>
+<enum value='1819111540' name='kSRPathFormat'/>
+<enum value='1885434984' name='kSRPathType'/>
+<enum value='16' name='kSRPendingSearch'/>
+<enum value='1819111528' name='kSRPhraseFormat'/>
+<enum value='1885893217' name='kSRPhraseType'/>
+<enum value='1635086948' name='kSRReadAudioFSSpec'/>
+<enum value='1635086956' name='kSRReadAudioURL'/>
+<enum value='-5119' name='kSRRecognitionCanceled'/>
+<enum value='-5120' name='kSRRecognitionDone'/>
+<enum value='1919247971' name='kSRRefCon'/>
+<enum value='1919574636' name='kSRRejectable'/>
+<enum value='1919249009' name='kSRRejectedWord'/>
+<enum value='1919574900' name='kSRRejectionLevel'/>
+<enum value='1919972450' name='kSRRepeatable'/>
+<enum value='2' name='kSRSearchInProgress'/>
+<enum value='1937006964' name='kSRSearchStatusParam'/>
+<enum value='4' name='kSRSearchWaitForAllClients'/>
+<enum value='-5132' name='kSRSndInSourceDisconnected'/>
+<enum value='1987013749' name='kSRSoundInVolume'/>
+<enum value='1936745828' name='kSRSpeedVsAccuracyParam'/>
+<enum value='1936745836' name='kSRSpelling'/>
+<enum value='-5123' name='kSRSubItemNotFound'/>
+<enum value='1413830740' name='kSRTEXTFormat'/>
+<enum value='-5130' name='kSRTooManyElements'/>
+<enum value='1' name='kSRUsePushToTalk'/>
+<enum value='0' name='kSRUseToggleListen'/>
+<enum value='1684431474' name='kSRWantsAutoFBGestures'/>
+<enum value='1954047586' name='kSRWantsResultTextDrawn'/>
+<enum value='-5127' name='kSRWordNotFound'/>
+<enum value='2003792484' name='kSRWordType'/>
+<enum value='1802659171' name='keySRRecognizer'/>
+<enum value='1802727538' name='keySRSpeechResult'/>
+<enum value='1802728308' name='keySRSpeechStatus'/>
+<enum value='1953654115' name='typeSRRecognizer'/>
+<enum value='1953722482' name='typeSRSpeechResult'/>
+<function name='DisposeSRCallBackUPP'>
+<arg function_pointer='true' type='^?'>
+<arg type='^{SRCallBackStruct=Il^{OpaqueSRSpeechObject}ssi}' type64='^{SRCallBackStruct=Iq^{OpaqueSRSpeechObject}ss^v}'/>
+<retval type='v'/>
+</arg>
+</function>
+<function name='InvokeSRCallBackUPP'>
+<arg type='^{SRCallBackStruct=Il^{OpaqueSRSpeechObject}ssi}' type64='^{SRCallBackStruct=Iq^{OpaqueSRSpeechObject}ss^v}'/>
+<arg function_pointer='true' type='^?'>
+<arg type='^{SRCallBackStruct=Il^{OpaqueSRSpeechObject}ssi}' type64='^{SRCallBackStruct=Iq^{OpaqueSRSpeechObject}ss^v}'/>
+<retval type='v'/>
+</arg>
+</function>
+<function name='NewSRCallBackUPP'>
+<arg function_pointer='true' type='^?'>
+<arg type='^{SRCallBackStruct=Il^{OpaqueSRSpeechObject}ssi}' type64='^{SRCallBackStruct=Iq^{OpaqueSRSpeechObject}ss^v}'/>
+<retval type='v'/>
+</arg>
+<retval function_pointer='true' type='^?'>
+<arg type='^{SRCallBackStruct=Il^{OpaqueSRSpeechObject}ssi}' type64='^{SRCallBackStruct=Iq^{OpaqueSRSpeechObject}ss^v}'/>
+<retval type='v'/>
+</retval>
+</function>
+<function name='SRAddLanguageObject'>
+<arg type='^{OpaqueSRSpeechObject=}'/>
+<arg type='^{OpaqueSRSpeechObject=}'/>
+<retval type='s'/>
+</function>
+<function name='SRAddText'>
+<arg type='^{OpaqueSRSpeechObject=}'/>
+<arg type='^v'/>
+<arg type='l' type64='i'/>
+<arg type='l' type64='^v'/>
+<retval type='s'/>
+</function>
+<function name='SRCancelRecognition'>
+<arg type='^{OpaqueSRSpeechObject=}'/>
+<retval type='s'/>
+</function>
+<function name='SRChangeLanguageObject'>
+<arg type='^{OpaqueSRSpeechObject=}'/>
+<arg type='^v'/>
+<arg type='l' type64='i'/>
+<retval type='s'/>
+</function>
+<function name='SRCloseRecognitionSystem'>
+<arg type='^{OpaqueSRSpeechObject=}'/>
+<retval type='s'/>
+</function>
+<function name='SRContinueRecognition'>
+<arg type='^{OpaqueSRSpeechObject=}'/>
+<retval type='s'/>
+</function>
+<function name='SRCountItems'>
+<arg type='^{OpaqueSRSpeechObject=}'/>
+<arg type='^l' type64='^q'/>
+<retval type='s'/>
+</function>
+<function name='SRDrawRecognizedText'>
+<arg type='^{OpaqueSRSpeechObject=}'/>
+<arg type='^v'/>
+<arg type='l' type64='i'/>
+<retval type='s'/>
+</function>
+<function name='SRDrawText'>
+<arg type='^{OpaqueSRSpeechObject=}'/>
+<arg type='^v'/>
+<arg type='l' type64='i'/>
+<retval type='s'/>
+</function>
+<function name='SREmptyLanguageObject'>
+<arg type='^{OpaqueSRSpeechObject=}'/>
+<retval type='s'/>
+</function>
+<function name='SRGetIndexedItem'>
+<arg type='^{OpaqueSRSpeechObject=}'/>
+<arg type='^^{OpaqueSRSpeechObject}'/>
+<arg type='l' type64='q'/>
+<retval type='s'/>
+</function>
+<function name='SRGetLanguageModel'>
+<arg type='^{OpaqueSRSpeechObject=}'/>
+<arg type='^^{OpaqueSRSpeechObject}'/>
+<retval type='s'/>
+</function>
+<function name='SRGetProperty'>
+<arg type='^{OpaqueSRSpeechObject=}'/>
+<arg type='L' type64='I'/>
+<arg type='^v'/>
+<arg type='^i' type64='^q'/>
+<retval type='s'/>
+</function>
+<function name='SRGetReference'>
+<arg type='^{OpaqueSRSpeechObject=}'/>
+<arg type='^^{OpaqueSRSpeechObject}'/>
+<retval type='s'/>
+</function>
+<function name='SRIdle'>
+<retval type='s'/>
+</function>
+<function name='SRNewLanguageModel'>
+<arg type='^{OpaqueSRSpeechObject=}'/>
+<arg type='^^{OpaqueSRSpeechObject}'/>
+<arg type='^v'/>
+<arg type='l' type64='i'/>
+<retval type='s'/>
+</function>
+<function name='SRNewLanguageObjectFromDataFile'>
+<arg type='^{OpaqueSRSpeechObject=}'/>
+<arg type='^^{OpaqueSRSpeechObject}'/>
+<arg type='s'/>
+<retval type='s'/>
+</function>
+<function name='SRNewLanguageObjectFromHandle'>
+<arg type='^{OpaqueSRSpeechObject=}'/>
+<arg type='^^{OpaqueSRSpeechObject}'/>
+<arg type='^*'/>
+<retval type='s'/>
+</function>
+<function name='SRNewPath'>
+<arg type='^{OpaqueSRSpeechObject=}'/>
+<arg type='^^{OpaqueSRSpeechObject}'/>
+<retval type='s'/>
+</function>
+<function name='SRNewPhrase'>
+<arg type='^{OpaqueSRSpeechObject=}'/>
+<arg type='^^{OpaqueSRSpeechObject}'/>
+<arg type='^v'/>
+<arg type='l' type64='i'/>
+<retval type='s'/>
+</function>
+<function name='SRNewRecognizer'>
+<arg type='^{OpaqueSRSpeechObject=}'/>
+<arg type='^^{OpaqueSRSpeechObject}'/>
+<arg type='L' type64='I'/>
+<retval type='s'/>
+</function>
+<function name='SRNewWord'>
+<arg type='^{OpaqueSRSpeechObject=}'/>
+<arg type='^^{OpaqueSRSpeechObject}'/>
+<arg type='^v'/>
+<arg type='l' type64='i'/>
+<retval type='s'/>
+</function>
+<function name='SROpenRecognitionSystem'>
+<arg type='^^{OpaqueSRSpeechObject}'/>
+<arg type='L' type64='I'/>
+<retval type='s'/>
+</function>
+<function name='SRProcessBegin'>
+<arg type='^{OpaqueSRSpeechObject=}'/>
+<arg type='B'/>
+<retval type='s'/>
+</function>
+<function name='SRProcessEnd'>
+<arg type='^{OpaqueSRSpeechObject=}'/>
+<arg type='B'/>
+<retval type='s'/>
+</function>
+<function name='SRPutLanguageObjectIntoDataFile'>
+<arg type='^{OpaqueSRSpeechObject=}'/>
+<arg type='s'/>
+<retval type='s'/>
+</function>
+<function name='SRPutLanguageObjectIntoHandle'>
+<arg type='^{OpaqueSRSpeechObject=}'/>
+<arg type='^*'/>
+<retval type='s'/>
+</function>
+<function name='SRReleaseObject'>
+<arg type='^{OpaqueSRSpeechObject=}'/>
+<retval type='s'/>
+</function>
+<function name='SRRemoveIndexedItem'>
+<arg type='^{OpaqueSRSpeechObject=}'/>
+<arg type='l' type64='q'/>
+<retval type='s'/>
+</function>
+<function name='SRRemoveLanguageObject'>
+<arg type='^{OpaqueSRSpeechObject=}'/>
+<arg type='^{OpaqueSRSpeechObject=}'/>
+<retval type='s'/>
+</function>
+<function name='SRSetIndexedItem'>
+<arg type='^{OpaqueSRSpeechObject=}'/>
+<arg type='^{OpaqueSRSpeechObject=}'/>
+<arg type='l' type64='q'/>
+<retval type='s'/>
+</function>
+<function name='SRSetLanguageModel'>
+<arg type='^{OpaqueSRSpeechObject=}'/>
+<arg type='^{OpaqueSRSpeechObject=}'/>
+<retval type='s'/>
+</function>
+<function name='SRSetProperty'>
+<arg type='^{OpaqueSRSpeechObject=}'/>
+<arg type='L' type64='I'/>
+<arg type='^v'/>
+<arg type='l' type64='q'/>
+<retval type='s'/>
+</function>
+<function name='SRSpeakAndDrawText'>
+<arg type='^{OpaqueSRSpeechObject=}'/>
+<arg type='^v'/>
+<arg type='l' type64='i'/>
+<retval type='s'/>
+</function>
+<function name='SRSpeakText'>
+<arg type='^{OpaqueSRSpeechObject=}'/>
+<arg type='^v'/>
+<arg type='l' type64='i'/>
+<retval type='s'/>
+</function>
+<function name='SRSpeechBusy'>
+<arg type='^{OpaqueSRSpeechObject=}'/>
+<retval type='B'/>
+</function>
+<function name='SRStartListening'>
+<arg type='^{OpaqueSRSpeechObject=}'/>
+<retval type='s'/>
+</function>
+<function name='SRStopListening'>
+<arg type='^{OpaqueSRSpeechObject=}'/>
+<retval type='s'/>
+</function>
+<function name='SRStopSpeech'>
+<arg type='^{OpaqueSRSpeechObject=}'/>
+<retval type='s'/>
+</function>
+</signatures>

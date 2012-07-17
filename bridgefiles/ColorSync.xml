@@ -1,0 +1,1648 @@
+<?xml version='1.0'?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version='1.0'>
+<depends_on path='/System/Library/Frameworks/CoreServices.framework'/>
+<depends_on path='/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/CoreGraphics.framework'/>
+<depends_on path='/System/Library/Frameworks/CoreFoundation.framework'/>
+<depends_on path='/System/Library/Frameworks/IOKit.framework'/>
+<struct type='{CM2Header=&quot;size&quot;I&quot;CMMType&quot;I&quot;profileVersion&quot;I&quot;profileClass&quot;I&quot;dataColorSpace&quot;I&quot;profileConnectionSpace&quot;I&quot;dateTime&quot;{CMDateTime=&quot;year&quot;S&quot;month&quot;S&quot;dayOfTheMonth&quot;S&quot;hours&quot;S&quot;minutes&quot;S&quot;seconds&quot;S}&quot;CS2profileSignature&quot;I&quot;platform&quot;I&quot;flags&quot;I&quot;deviceManufacturer&quot;I&quot;deviceModel&quot;I&quot;deviceAttributes&quot;[2L]&quot;renderingIntent&quot;I&quot;white&quot;{CMFixedXYZColor=&quot;X&quot;i&quot;Y&quot;i&quot;Z&quot;i}&quot;creator&quot;I&quot;reserved&quot;[44c]}' name='CM2Header' type64='{CM2Header=&quot;size&quot;I&quot;CMMType&quot;I&quot;profileVersion&quot;I&quot;profileClass&quot;I&quot;dataColorSpace&quot;I&quot;profileConnectionSpace&quot;I&quot;dateTime&quot;{CMDateTime=&quot;year&quot;S&quot;month&quot;S&quot;dayOfTheMonth&quot;S&quot;hours&quot;S&quot;minutes&quot;S&quot;seconds&quot;S}&quot;CS2profileSignature&quot;I&quot;platform&quot;I&quot;flags&quot;I&quot;deviceManufacturer&quot;I&quot;deviceModel&quot;I&quot;deviceAttributes&quot;[2I]&quot;renderingIntent&quot;I&quot;white&quot;{CMFixedXYZColor=&quot;X&quot;i&quot;Y&quot;i&quot;Z&quot;i}&quot;creator&quot;I&quot;reserved&quot;[44c]}'/>
+<struct type='{CM2Profile=&quot;header&quot;{CM2Header=&quot;size&quot;I&quot;CMMType&quot;I&quot;profileVersion&quot;I&quot;profileClass&quot;I&quot;dataColorSpace&quot;I&quot;profileConnectionSpace&quot;I&quot;dateTime&quot;{CMDateTime=&quot;year&quot;S&quot;month&quot;S&quot;dayOfTheMonth&quot;S&quot;hours&quot;S&quot;minutes&quot;S&quot;seconds&quot;S}&quot;CS2profileSignature&quot;I&quot;platform&quot;I&quot;flags&quot;I&quot;deviceManufacturer&quot;I&quot;deviceModel&quot;I&quot;deviceAttributes&quot;[2L]&quot;renderingIntent&quot;I&quot;white&quot;{CMFixedXYZColor=&quot;X&quot;i&quot;Y&quot;i&quot;Z&quot;i}&quot;creator&quot;I&quot;reserved&quot;[44c]}&quot;tagTable&quot;{CMTagElemTable=&quot;count&quot;I&quot;tagList&quot;[1{CMTagRecord=&quot;tag&quot;I&quot;elementOffset&quot;I&quot;elementSize&quot;I}]}&quot;elemData&quot;[1c]}' name='CM2Profile' type64='{CM2Profile=&quot;header&quot;{CM2Header=&quot;size&quot;I&quot;CMMType&quot;I&quot;profileVersion&quot;I&quot;profileClass&quot;I&quot;dataColorSpace&quot;I&quot;profileConnectionSpace&quot;I&quot;dateTime&quot;{CMDateTime=&quot;year&quot;S&quot;month&quot;S&quot;dayOfTheMonth&quot;S&quot;hours&quot;S&quot;minutes&quot;S&quot;seconds&quot;S}&quot;CS2profileSignature&quot;I&quot;platform&quot;I&quot;flags&quot;I&quot;deviceManufacturer&quot;I&quot;deviceModel&quot;I&quot;deviceAttributes&quot;[2I]&quot;renderingIntent&quot;I&quot;white&quot;{CMFixedXYZColor=&quot;X&quot;i&quot;Y&quot;i&quot;Z&quot;i}&quot;creator&quot;I&quot;reserved&quot;[44c]}&quot;tagTable&quot;{CMTagElemTable=&quot;count&quot;I&quot;tagList&quot;[1{CMTagRecord=&quot;tag&quot;I&quot;elementOffset&quot;I&quot;elementSize&quot;I}]}&quot;elemData&quot;[1c]}'/>
+<struct type='{CM2Profile=&quot;header&quot;{CM2Header=&quot;size&quot;I&quot;CMMType&quot;I&quot;profileVersion&quot;I&quot;profileClass&quot;I&quot;dataColorSpace&quot;I&quot;profileConnectionSpace&quot;I&quot;dateTime&quot;{CMDateTime=&quot;year&quot;S&quot;month&quot;S&quot;dayOfTheMonth&quot;S&quot;hours&quot;S&quot;minutes&quot;S&quot;seconds&quot;S}&quot;CS2profileSignature&quot;I&quot;platform&quot;I&quot;flags&quot;I&quot;deviceManufacturer&quot;I&quot;deviceModel&quot;I&quot;deviceAttributes&quot;[2L]&quot;renderingIntent&quot;I&quot;white&quot;{CMFixedXYZColor=&quot;X&quot;i&quot;Y&quot;i&quot;Z&quot;i}&quot;creator&quot;I&quot;reserved&quot;[44c]}&quot;tagTable&quot;{CMTagElemTable=&quot;count&quot;I&quot;tagList&quot;[1{CMTagRecord=&quot;tag&quot;I&quot;elementOffset&quot;I&quot;elementSize&quot;I}]}&quot;elemData&quot;[1c]}' name='CM2ProfilePtr' type64='{CM2Profile=&quot;header&quot;{CM2Header=&quot;size&quot;I&quot;CMMType&quot;I&quot;profileVersion&quot;I&quot;profileClass&quot;I&quot;dataColorSpace&quot;I&quot;profileConnectionSpace&quot;I&quot;dateTime&quot;{CMDateTime=&quot;year&quot;S&quot;month&quot;S&quot;dayOfTheMonth&quot;S&quot;hours&quot;S&quot;minutes&quot;S&quot;seconds&quot;S}&quot;CS2profileSignature&quot;I&quot;platform&quot;I&quot;flags&quot;I&quot;deviceManufacturer&quot;I&quot;deviceModel&quot;I&quot;deviceAttributes&quot;[2I]&quot;renderingIntent&quot;I&quot;white&quot;{CMFixedXYZColor=&quot;X&quot;i&quot;Y&quot;i&quot;Z&quot;i}&quot;creator&quot;I&quot;reserved&quot;[44c]}&quot;tagTable&quot;{CMTagElemTable=&quot;count&quot;I&quot;tagList&quot;[1{CMTagRecord=&quot;tag&quot;I&quot;elementOffset&quot;I&quot;elementSize&quot;I}]}&quot;elemData&quot;[1c]}'/>
+<struct type='{CM4Header=&quot;size&quot;I&quot;CMMType&quot;I&quot;profileVersion&quot;I&quot;profileClass&quot;I&quot;dataColorSpace&quot;I&quot;profileConnectionSpace&quot;I&quot;dateTime&quot;{CMDateTime=&quot;year&quot;S&quot;month&quot;S&quot;dayOfTheMonth&quot;S&quot;hours&quot;S&quot;minutes&quot;S&quot;seconds&quot;S}&quot;CS2profileSignature&quot;I&quot;platform&quot;I&quot;flags&quot;I&quot;deviceManufacturer&quot;I&quot;deviceModel&quot;I&quot;deviceAttributes&quot;[2L]&quot;renderingIntent&quot;I&quot;white&quot;{CMFixedXYZColor=&quot;X&quot;i&quot;Y&quot;i&quot;Z&quot;i}&quot;creator&quot;I&quot;digest&quot;[16C]&quot;reserved&quot;[28c]}' name='CM4Header' type64='{CM4Header=&quot;size&quot;I&quot;CMMType&quot;I&quot;profileVersion&quot;I&quot;profileClass&quot;I&quot;dataColorSpace&quot;I&quot;profileConnectionSpace&quot;I&quot;dateTime&quot;{CMDateTime=&quot;year&quot;S&quot;month&quot;S&quot;dayOfTheMonth&quot;S&quot;hours&quot;S&quot;minutes&quot;S&quot;seconds&quot;S}&quot;CS2profileSignature&quot;I&quot;platform&quot;I&quot;flags&quot;I&quot;deviceManufacturer&quot;I&quot;deviceModel&quot;I&quot;deviceAttributes&quot;[2I]&quot;renderingIntent&quot;I&quot;white&quot;{CMFixedXYZColor=&quot;X&quot;i&quot;Y&quot;i&quot;Z&quot;i}&quot;creator&quot;I&quot;digest&quot;[16C]&quot;reserved&quot;[28c]}'/>
+<struct type='{CMAdaptationMatrixType=&quot;typeDescriptor&quot;I&quot;reserved&quot;I&quot;adaptationMatrix&quot;[9l]}' name='CMAdaptationMatrixType' type64='{CMAdaptationMatrixType=&quot;typeDescriptor&quot;I&quot;reserved&quot;I&quot;adaptationMatrix&quot;[9i]}'/>
+<struct type='{CMBitmap=&quot;image&quot;*&quot;width&quot;I&quot;height&quot;I&quot;rowBytes&quot;I&quot;pixelSize&quot;I&quot;space&quot;I&quot;user1&quot;I&quot;user2&quot;I}' name='CMBitmap' type64='{CMBitmap=&quot;image&quot;*&quot;width&quot;Q&quot;height&quot;Q&quot;rowBytes&quot;Q&quot;pixelSize&quot;Q&quot;space&quot;I&quot;user1&quot;I&quot;user2&quot;I}'/>
+<struct type='{CMBufferLocation=&quot;buffer&quot;^v&quot;size&quot;I}' name='CMBufferLocation'/>
+<struct type='{CMCMYColor=&quot;cyan&quot;S&quot;magenta&quot;S&quot;yellow&quot;S}' name='CMCMYColor'/>
+<struct type='{CMCMYKColor=&quot;cyan&quot;S&quot;magenta&quot;S&quot;yellow&quot;S&quot;black&quot;S}' name='CMCMYKColor'/>
+<struct type='{CMConcatProfileSet=&quot;keyIndex&quot;S&quot;count&quot;S&quot;profileSet&quot;[1^{OpaqueCMProfileRef}]}' name='CMConcatProfileSet'/>
+<struct type='{CMCurveType=&quot;typeDescriptor&quot;I&quot;reserved&quot;I&quot;countValue&quot;I&quot;data&quot;[1S]}' name='CMCurveType'/>
+<struct type='{CMDataType=&quot;typeDescriptor&quot;I&quot;reserved&quot;I&quot;dataFlag&quot;I&quot;data&quot;[1c]}' name='CMDataType'/>
+<struct type='{CMDateTime=&quot;year&quot;S&quot;month&quot;S&quot;dayOfTheMonth&quot;S&quot;hours&quot;S&quot;minutes&quot;S&quot;seconds&quot;S}' name='CMDateTime'/>
+<struct type='{CMDateTimeType=&quot;typeDescriptor&quot;I&quot;reserved&quot;I&quot;dateTime&quot;{CMDateTime=&quot;year&quot;S&quot;month&quot;S&quot;dayOfTheMonth&quot;S&quot;hours&quot;S&quot;minutes&quot;S&quot;seconds&quot;S}}' name='CMDateTimeType'/>
+<struct type='{CMDeviceInfo=&quot;dataVersion&quot;I&quot;deviceClass&quot;I&quot;deviceID&quot;I&quot;deviceScope&quot;{CMDeviceScope=&quot;deviceUser&quot;^{__CFString}&quot;deviceHost&quot;^{__CFString}}&quot;deviceState&quot;I&quot;defaultProfileID&quot;I&quot;deviceName&quot;^^{__CFDictionary}&quot;profileCount&quot;I&quot;reserved&quot;I}' name='CMDeviceInfo'/>
+<struct type='{CMDeviceInfo=&quot;dataVersion&quot;I&quot;deviceClass&quot;I&quot;deviceID&quot;I&quot;deviceScope&quot;{CMDeviceScope=&quot;deviceUser&quot;^{__CFString}&quot;deviceHost&quot;^{__CFString}}&quot;deviceState&quot;I&quot;defaultProfileID&quot;I&quot;deviceName&quot;^^{__CFDictionary}&quot;profileCount&quot;I&quot;reserved&quot;I}' name='CMDeviceInfoPtr'/>
+<struct type='{CMDeviceProfileArray=&quot;profileCount&quot;I&quot;profiles&quot;[1{CMDeviceProfileInfo=&quot;dataVersion&quot;I&quot;profileID&quot;I&quot;profileLoc&quot;{CMProfileLocation=&quot;locType&quot;s&quot;u&quot;(CMProfLoc=&quot;fileLoc&quot;{CMFileLocation=&quot;spec&quot;{FSSpec=&quot;vRefNum&quot;s&quot;parID&quot;i&quot;name&quot;[64C]}}&quot;handleLoc&quot;{CMHandleLocation=&quot;h&quot;^*}&quot;ptrLoc&quot;{CMPtrLocation=&quot;p&quot;*}&quot;procLoc&quot;{CMProcedureLocation=&quot;proc&quot;^?&quot;refCon&quot;^v}&quot;pathLoc&quot;{CMPathLocation=&quot;path&quot;[256c]}&quot;bufferLoc&quot;{CMBufferLocation=&quot;buffer&quot;^v&quot;size&quot;I})}&quot;profileName&quot;^{__CFDictionary}&quot;reserved&quot;I}]}' name='CMDeviceProfileArray' type64='{CMDeviceProfileArray=&quot;profileCount&quot;I&quot;profiles&quot;[1{CMDeviceProfileInfo=&quot;dataVersion&quot;I&quot;profileID&quot;I&quot;profileLoc&quot;{CMProfileLocation=&quot;locType&quot;s&quot;u&quot;(CMProfLoc=&quot;handleLoc&quot;{CMHandleLocation=&quot;h&quot;^*}&quot;pathLoc&quot;{CMPathLocation=&quot;path&quot;[1024c]}&quot;bufferLoc&quot;{CMBufferLocation=&quot;buffer&quot;^v&quot;size&quot;I})}&quot;profileName&quot;^{__CFDictionary}&quot;reserved&quot;I}]}'/>
+<struct type='{CMDeviceProfileArray=&quot;profileCount&quot;I&quot;profiles&quot;[1{CMDeviceProfileInfo=&quot;dataVersion&quot;I&quot;profileID&quot;I&quot;profileLoc&quot;{CMProfileLocation=&quot;locType&quot;s&quot;u&quot;(CMProfLoc=&quot;fileLoc&quot;{CMFileLocation=&quot;spec&quot;{FSSpec=&quot;vRefNum&quot;s&quot;parID&quot;i&quot;name&quot;[64C]}}&quot;handleLoc&quot;{CMHandleLocation=&quot;h&quot;^*}&quot;ptrLoc&quot;{CMPtrLocation=&quot;p&quot;*}&quot;procLoc&quot;{CMProcedureLocation=&quot;proc&quot;^?&quot;refCon&quot;^v}&quot;pathLoc&quot;{CMPathLocation=&quot;path&quot;[256c]}&quot;bufferLoc&quot;{CMBufferLocation=&quot;buffer&quot;^v&quot;size&quot;I})}&quot;profileName&quot;^{__CFDictionary}&quot;reserved&quot;I}]}' name='CMDeviceProfileArrayPtr' type64='{CMDeviceProfileArray=&quot;profileCount&quot;I&quot;profiles&quot;[1{CMDeviceProfileInfo=&quot;dataVersion&quot;I&quot;profileID&quot;I&quot;profileLoc&quot;{CMProfileLocation=&quot;locType&quot;s&quot;u&quot;(CMProfLoc=&quot;handleLoc&quot;{CMHandleLocation=&quot;h&quot;^*}&quot;pathLoc&quot;{CMPathLocation=&quot;path&quot;[1024c]}&quot;bufferLoc&quot;{CMBufferLocation=&quot;buffer&quot;^v&quot;size&quot;I})}&quot;profileName&quot;^{__CFDictionary}&quot;reserved&quot;I}]}'/>
+<struct type='{CMDeviceProfileInfo=&quot;dataVersion&quot;I&quot;profileID&quot;I&quot;profileLoc&quot;{CMProfileLocation=&quot;locType&quot;s&quot;u&quot;(CMProfLoc=&quot;fileLoc&quot;{CMFileLocation=&quot;spec&quot;{FSSpec=&quot;vRefNum&quot;s&quot;parID&quot;i&quot;name&quot;[64C]}}&quot;handleLoc&quot;{CMHandleLocation=&quot;h&quot;^*}&quot;ptrLoc&quot;{CMPtrLocation=&quot;p&quot;*}&quot;procLoc&quot;{CMProcedureLocation=&quot;proc&quot;^?&quot;refCon&quot;^v}&quot;pathLoc&quot;{CMPathLocation=&quot;path&quot;[256c]}&quot;bufferLoc&quot;{CMBufferLocation=&quot;buffer&quot;^v&quot;size&quot;I})}&quot;profileName&quot;^{__CFDictionary}&quot;reserved&quot;I}' name='CMDeviceProfileInfo' type64='{CMDeviceProfileInfo=&quot;dataVersion&quot;I&quot;profileID&quot;I&quot;profileLoc&quot;{CMProfileLocation=&quot;locType&quot;s&quot;u&quot;(CMProfLoc=&quot;handleLoc&quot;{CMHandleLocation=&quot;h&quot;^*}&quot;pathLoc&quot;{CMPathLocation=&quot;path&quot;[1024c]}&quot;bufferLoc&quot;{CMBufferLocation=&quot;buffer&quot;^v&quot;size&quot;I})}&quot;profileName&quot;^{__CFDictionary}&quot;reserved&quot;I}'/>
+<struct type='{CMDeviceScope=&quot;deviceUser&quot;^{__CFString}&quot;deviceHost&quot;^{__CFString}}' name='CMDeviceProfileScope'/>
+<struct type='{CMDeviceScope=&quot;deviceUser&quot;^{__CFString}&quot;deviceHost&quot;^{__CFString}}' name='CMDeviceScope'/>
+<struct type='{CMFixedXYColor=&quot;x&quot;i&quot;y&quot;i}' name='CMFixedXYColor'/>
+<struct type='{CMFixedXYZColor=&quot;X&quot;i&quot;Y&quot;i&quot;Z&quot;i}' name='CMFixedXYZColor'/>
+<struct type='{CMFloatBitmap=&quot;version&quot;L&quot;buffers&quot;[16^f]&quot;height&quot;I&quot;width&quot;I&quot;rowStride&quot;i&quot;colStride&quot;i&quot;space&quot;I&quot;flags&quot;i}' name='CMFloatBitmap' type64='{CMFloatBitmap=&quot;version&quot;Q&quot;buffers&quot;[16^f]&quot;height&quot;Q&quot;width&quot;Q&quot;rowStride&quot;q&quot;colStride&quot;q&quot;space&quot;I&quot;flags&quot;i}'/>
+<struct type='{CMGrayColor=&quot;gray&quot;S}' name='CMGrayColor'/>
+<struct type='{CMHLSColor=&quot;hue&quot;S&quot;lightness&quot;S&quot;saturation&quot;S}' name='CMHLSColor'/>
+<struct type='{CMHSVColor=&quot;hue&quot;S&quot;saturation&quot;S&quot;value&quot;S}' name='CMHSVColor'/>
+<struct type='{CMHandleLocation=&quot;h&quot;^*}' name='CMHandleLocation'/>
+<struct type='{CMIntentCRDVMSize=&quot;renderingIntent&quot;I&quot;VMSize&quot;I}' name='CMIntentCRDVMSize'/>
+<struct type='{CMLabColor=&quot;L&quot;S&quot;a&quot;S&quot;b&quot;S}' name='CMLabColor'/>
+<struct type='{CMLut16Type=&quot;typeDescriptor&quot;I&quot;reserved&quot;I&quot;inputChannels&quot;C&quot;outputChannels&quot;C&quot;gridPoints&quot;C&quot;reserved2&quot;C&quot;matrix&quot;[3[3l]]&quot;inputTableEntries&quot;S&quot;outputTableEntries&quot;S&quot;inputTable&quot;[1S]}' name='CMLut16Type' type64='{CMLut16Type=&quot;typeDescriptor&quot;I&quot;reserved&quot;I&quot;inputChannels&quot;C&quot;outputChannels&quot;C&quot;gridPoints&quot;C&quot;reserved2&quot;C&quot;matrix&quot;[3[3i]]&quot;inputTableEntries&quot;S&quot;outputTableEntries&quot;S&quot;inputTable&quot;[1S]}'/>
+<struct type='{CMLut8Type=&quot;typeDescriptor&quot;I&quot;reserved&quot;I&quot;inputChannels&quot;C&quot;outputChannels&quot;C&quot;gridPoints&quot;C&quot;reserved2&quot;C&quot;matrix&quot;[3[3l]]&quot;inputTable&quot;[1C]}' name='CMLut8Type' type64='{CMLut8Type=&quot;typeDescriptor&quot;I&quot;reserved&quot;I&quot;inputChannels&quot;C&quot;outputChannels&quot;C&quot;gridPoints&quot;C&quot;reserved2&quot;C&quot;matrix&quot;[3[3i]]&quot;inputTable&quot;[1C]}'/>
+<struct type='{CMLuvColor=&quot;L&quot;S&quot;u&quot;S&quot;v&quot;S}' name='CMLuvColor'/>
+<struct type='{CMMInfo=&quot;dataSize&quot;I&quot;CMMType&quot;I&quot;CMMMfr&quot;I&quot;CMMVersion&quot;I&quot;ASCIIName&quot;[32C]&quot;ASCIIDesc&quot;[256C]&quot;UniCodeNameCount&quot;I&quot;UniCodeName&quot;[32S]&quot;UniCodeDescCount&quot;I&quot;UniCodeDesc&quot;[256S]}' name='CMMInfo' type64='{CMMInfo=&quot;dataSize&quot;Q&quot;CMMType&quot;I&quot;CMMMfr&quot;I&quot;CMMVersion&quot;I&quot;ASCIIName&quot;[32C]&quot;ASCIIDesc&quot;[256C]&quot;UniCodeNameCount&quot;Q&quot;UniCodeName&quot;[32S]&quot;UniCodeDescCount&quot;Q&quot;UniCodeDesc&quot;[256S]}'/>
+<struct type='{CMMakeAndModel=&quot;manufacturer&quot;I&quot;model&quot;I&quot;serialNumber&quot;I&quot;manufactureDate&quot;I&quot;reserved1&quot;I&quot;reserved2&quot;I&quot;reserved3&quot;I&quot;reserved4&quot;I}' name='CMMakeAndModel'/>
+<struct type='{CMMakeAndModelType=&quot;typeDescriptor&quot;I&quot;reserved&quot;I&quot;makeAndModel&quot;{CMMakeAndModel=&quot;manufacturer&quot;I&quot;model&quot;I&quot;serialNumber&quot;I&quot;manufactureDate&quot;I&quot;reserved1&quot;I&quot;reserved2&quot;I&quot;reserved3&quot;I&quot;reserved4&quot;I}}' name='CMMakeAndModelType'/>
+<struct type='{CMMeasurementType=&quot;typeDescriptor&quot;I&quot;reserved&quot;I&quot;standardObserver&quot;I&quot;backingXYZ&quot;{CMFixedXYZColor=&quot;X&quot;i&quot;Y&quot;i&quot;Z&quot;i}&quot;geometry&quot;I&quot;flare&quot;I&quot;illuminant&quot;I}' name='CMMeasurementType'/>
+<struct type='{CMMultiFunctCLUTType=&quot;gridPoints&quot;[16C]&quot;entrySize&quot;C&quot;reserved&quot;[3C]&quot;data&quot;[2C]}' name='CMMultiFunctCLUTType'/>
+<struct type='{CMMultiFunctLutType=&quot;typeDescriptor&quot;I&quot;reserved&quot;I&quot;inputChannels&quot;C&quot;outputChannels&quot;C&quot;reserved2&quot;S&quot;offsetBcurves&quot;I&quot;offsetMatrix&quot;I&quot;offsetMcurves&quot;I&quot;offsetCLUT&quot;I&quot;offsetAcurves&quot;I&quot;data&quot;[1C]}' name='CMMultiFunctLutA2BType'/>
+<struct type='{CMMultiFunctLutType=&quot;typeDescriptor&quot;I&quot;reserved&quot;I&quot;inputChannels&quot;C&quot;outputChannels&quot;C&quot;reserved2&quot;S&quot;offsetBcurves&quot;I&quot;offsetMatrix&quot;I&quot;offsetMcurves&quot;I&quot;offsetCLUT&quot;I&quot;offsetAcurves&quot;I&quot;data&quot;[1C]}' name='CMMultiFunctLutB2AType'/>
+<struct type='{CMMultiFunctLutType=&quot;typeDescriptor&quot;I&quot;reserved&quot;I&quot;inputChannels&quot;C&quot;outputChannels&quot;C&quot;reserved2&quot;S&quot;offsetBcurves&quot;I&quot;offsetMatrix&quot;I&quot;offsetMcurves&quot;I&quot;offsetCLUT&quot;I&quot;offsetAcurves&quot;I&quot;data&quot;[1C]}' name='CMMultiFunctLutType'/>
+<struct type='{CMMultiLocalizedUniCodeEntryRec=&quot;languageCode&quot;[2c]&quot;regionCode&quot;[2c]&quot;textLength&quot;I&quot;textOffset&quot;I}' name='CMMultiLocalizedUniCodeEntryRec'/>
+<struct type='{CMMultiLocalizedUniCodeType=&quot;typeDescriptor&quot;I&quot;reserved&quot;I&quot;entryCount&quot;I&quot;entrySize&quot;I}' name='CMMultiLocalizedUniCodeType'/>
+<struct type='{CMMultichannel5Color=&quot;components&quot;[5C]}' name='CMMultichannel5Color'/>
+<struct type='{CMMultichannel6Color=&quot;components&quot;[6C]}' name='CMMultichannel6Color'/>
+<struct type='{CMMultichannel7Color=&quot;components&quot;[7C]}' name='CMMultichannel7Color'/>
+<struct type='{CMMultichannel8Color=&quot;components&quot;[8C]}' name='CMMultichannel8Color'/>
+<struct type='{CMNamedColor=&quot;namedColorIndex&quot;I}' name='CMNamedColor'/>
+<struct type='{CMNamedColor2EntryType=&quot;rootName&quot;[32C]&quot;PCSColorCoords&quot;[3S]&quot;DeviceColorCoords&quot;[1S]}' name='CMNamedColor2EntryType'/>
+<struct type='{CMNamedColor2Type=&quot;typeDescriptor&quot;I&quot;reserved&quot;I&quot;vendorFlag&quot;I&quot;count&quot;I&quot;deviceChannelCount&quot;I&quot;prefixName&quot;[32C]&quot;suffixName&quot;[32C]&quot;data&quot;[1c]}' name='CMNamedColor2Type'/>
+<struct type='{CMNamedColorType=&quot;typeDescriptor&quot;I&quot;reserved&quot;I&quot;vendorFlag&quot;I&quot;count&quot;I&quot;prefixName&quot;[1C]}' name='CMNamedColorType'/>
+<struct type='{CMNativeDisplayInfo=&quot;dataSize&quot;I&quot;redPhosphor&quot;{CMFixedXYColor=&quot;x&quot;i&quot;y&quot;i}&quot;greenPhosphor&quot;{CMFixedXYColor=&quot;x&quot;i&quot;y&quot;i}&quot;bluePhosphor&quot;{CMFixedXYColor=&quot;x&quot;i&quot;y&quot;i}&quot;whitePoint&quot;{CMFixedXYColor=&quot;x&quot;i&quot;y&quot;i}&quot;redGammaValue&quot;i&quot;greenGammaValue&quot;i&quot;blueGammaValue&quot;i&quot;gammaChannels&quot;S&quot;gammaEntryCount&quot;S&quot;gammaEntrySize&quot;S&quot;gammaData&quot;[1c]}' name='CMNativeDisplayInfo'/>
+<struct type='{CMNativeDisplayInfoType=&quot;typeDescriptor&quot;I&quot;reserved&quot;I&quot;nativeDisplayInfo&quot;{CMNativeDisplayInfo=&quot;dataSize&quot;I&quot;redPhosphor&quot;{CMFixedXYColor=&quot;x&quot;i&quot;y&quot;i}&quot;greenPhosphor&quot;{CMFixedXYColor=&quot;x&quot;i&quot;y&quot;i}&quot;bluePhosphor&quot;{CMFixedXYColor=&quot;x&quot;i&quot;y&quot;i}&quot;whitePoint&quot;{CMFixedXYColor=&quot;x&quot;i&quot;y&quot;i}&quot;redGammaValue&quot;i&quot;greenGammaValue&quot;i&quot;blueGammaValue&quot;i&quot;gammaChannels&quot;S&quot;gammaEntryCount&quot;S&quot;gammaEntrySize&quot;S&quot;gammaData&quot;[1c]}}' name='CMNativeDisplayInfoType'/>
+<struct type='{CMPS2CRDVMSizeType=&quot;typeDescriptor&quot;I&quot;reserved&quot;I&quot;count&quot;I&quot;intentCRD&quot;[1{CMIntentCRDVMSize=&quot;renderingIntent&quot;I&quot;VMSize&quot;I}]}' name='CMPS2CRDVMSizeType'/>
+<struct type='{CMParametricCurveType=&quot;typeDescriptor&quot;I&quot;reserved&quot;I&quot;functionType&quot;S&quot;reserved2&quot;S&quot;value&quot;[1l]}' name='CMParametricCurveType' type64='{CMParametricCurveType=&quot;typeDescriptor&quot;I&quot;reserved&quot;I&quot;functionType&quot;S&quot;reserved2&quot;S&quot;value&quot;[1i]}'/>
+<struct type='{CMPathLocation=&quot;path&quot;[256c]}' name='CMPathLocation' type64='{CMPathLocation=&quot;path&quot;[1024c]}'/>
+<struct type='{CMProfileIterateData=&quot;dataVersion&quot;I&quot;header&quot;{CM2Header=&quot;size&quot;I&quot;CMMType&quot;I&quot;profileVersion&quot;I&quot;profileClass&quot;I&quot;dataColorSpace&quot;I&quot;profileConnectionSpace&quot;I&quot;dateTime&quot;{CMDateTime=&quot;year&quot;S&quot;month&quot;S&quot;dayOfTheMonth&quot;S&quot;hours&quot;S&quot;minutes&quot;S&quot;seconds&quot;S}&quot;CS2profileSignature&quot;I&quot;platform&quot;I&quot;flags&quot;I&quot;deviceManufacturer&quot;I&quot;deviceModel&quot;I&quot;deviceAttributes&quot;[2L]&quot;renderingIntent&quot;I&quot;white&quot;{CMFixedXYZColor=&quot;X&quot;i&quot;Y&quot;i&quot;Z&quot;i}&quot;creator&quot;I&quot;reserved&quot;[44c]}&quot;code&quot;s&quot;name&quot;[256C]&quot;location&quot;{CMProfileLocation=&quot;locType&quot;s&quot;u&quot;(CMProfLoc=&quot;fileLoc&quot;{CMFileLocation=&quot;spec&quot;{FSSpec=&quot;vRefNum&quot;s&quot;parID&quot;i&quot;name&quot;[64C]}}&quot;handleLoc&quot;{CMHandleLocation=&quot;h&quot;^*}&quot;ptrLoc&quot;{CMPtrLocation=&quot;p&quot;*}&quot;procLoc&quot;{CMProcedureLocation=&quot;proc&quot;^?&quot;refCon&quot;^v}&quot;pathLoc&quot;{CMPathLocation=&quot;path&quot;[256c]}&quot;bufferLoc&quot;{CMBufferLocation=&quot;buffer&quot;^v&quot;size&quot;I})}&quot;uniCodeNameCount&quot;I&quot;uniCodeName&quot;^S&quot;asciiName&quot;*&quot;makeAndModel&quot;^{CMMakeAndModel}&quot;digest&quot;^[16C]}' name='CMProfileIterateData' type64='{CMProfileIterateData=&quot;dataVersion&quot;I&quot;header&quot;{CM2Header=&quot;size&quot;I&quot;CMMType&quot;I&quot;profileVersion&quot;I&quot;profileClass&quot;I&quot;dataColorSpace&quot;I&quot;profileConnectionSpace&quot;I&quot;dateTime&quot;{CMDateTime=&quot;year&quot;S&quot;month&quot;S&quot;dayOfTheMonth&quot;S&quot;hours&quot;S&quot;minutes&quot;S&quot;seconds&quot;S}&quot;CS2profileSignature&quot;I&quot;platform&quot;I&quot;flags&quot;I&quot;deviceManufacturer&quot;I&quot;deviceModel&quot;I&quot;deviceAttributes&quot;[2I]&quot;renderingIntent&quot;I&quot;white&quot;{CMFixedXYZColor=&quot;X&quot;i&quot;Y&quot;i&quot;Z&quot;i}&quot;creator&quot;I&quot;reserved&quot;[44c]}&quot;code&quot;s&quot;name&quot;[256C]&quot;location&quot;{CMProfileLocation=&quot;locType&quot;s&quot;u&quot;(CMProfLoc=&quot;handleLoc&quot;{CMHandleLocation=&quot;h&quot;^*}&quot;pathLoc&quot;{CMPathLocation=&quot;path&quot;[1024c]}&quot;bufferLoc&quot;{CMBufferLocation=&quot;buffer&quot;^v&quot;size&quot;I})}&quot;uniCodeNameCount&quot;Q&quot;uniCodeName&quot;^S&quot;asciiName&quot;*&quot;makeAndModel&quot;^{CMMakeAndModel}&quot;digest&quot;^[16C]}'/>
+<struct type='{CMProfileLocation=&quot;locType&quot;s&quot;u&quot;(CMProfLoc=&quot;fileLoc&quot;{CMFileLocation=&quot;spec&quot;{FSSpec=&quot;vRefNum&quot;s&quot;parID&quot;i&quot;name&quot;[64C]}}&quot;handleLoc&quot;{CMHandleLocation=&quot;h&quot;^*}&quot;ptrLoc&quot;{CMPtrLocation=&quot;p&quot;*}&quot;procLoc&quot;{CMProcedureLocation=&quot;proc&quot;^?&quot;refCon&quot;^v}&quot;pathLoc&quot;{CMPathLocation=&quot;path&quot;[256c]}&quot;bufferLoc&quot;{CMBufferLocation=&quot;buffer&quot;^v&quot;size&quot;I})}' name='CMProfileLocation' type64='{CMProfileLocation=&quot;locType&quot;s&quot;u&quot;(CMProfLoc=&quot;handleLoc&quot;{CMHandleLocation=&quot;h&quot;^*}&quot;pathLoc&quot;{CMPathLocation=&quot;path&quot;[1024c]}&quot;bufferLoc&quot;{CMBufferLocation=&quot;buffer&quot;^v&quot;size&quot;I})}'/>
+<struct type='{CMProfileSequenceDescType=&quot;typeDescriptor&quot;I&quot;reserved&quot;I&quot;count&quot;I&quot;data&quot;[1c]}' name='CMProfileSequenceDescType'/>
+<struct type='{CMRGBColor=&quot;red&quot;S&quot;green&quot;S&quot;blue&quot;S}' name='CMRGBColor'/>
+<struct type='{CMS15Fixed16ArrayType=&quot;typeDescriptor&quot;I&quot;reserved&quot;I&quot;value&quot;[1l]}' name='CMS15Fixed16ArrayType' type64='{CMS15Fixed16ArrayType=&quot;typeDescriptor&quot;I&quot;reserved&quot;I&quot;value&quot;[1i]}'/>
+<struct type='{CMScreeningChannelRec=&quot;frequency&quot;i&quot;angle&quot;i&quot;spotFunction&quot;I}' name='CMScreeningChannelRec'/>
+<struct type='{CMScreeningType=&quot;typeDescriptor&quot;I&quot;reserved&quot;I&quot;screeningFlag&quot;I&quot;channelCount&quot;I&quot;channelInfo&quot;[1{CMScreeningChannelRec=&quot;frequency&quot;i&quot;angle&quot;i&quot;spotFunction&quot;I}]}' name='CMScreeningType'/>
+<struct type='{CMSignatureType=&quot;typeDescriptor&quot;I&quot;reserved&quot;I&quot;signature&quot;I}' name='CMSignatureType'/>
+<struct type='{CMTagElemTable=&quot;count&quot;I&quot;tagList&quot;[1{CMTagRecord=&quot;tag&quot;I&quot;elementOffset&quot;I&quot;elementSize&quot;I}]}' name='CMTagElemTable'/>
+<struct type='{CMTagRecord=&quot;tag&quot;I&quot;elementOffset&quot;I&quot;elementSize&quot;I}' name='CMTagRecord'/>
+<struct type='{CMTextDescriptionType=&quot;typeDescriptor&quot;I&quot;reserved&quot;I&quot;ASCIICount&quot;I&quot;ASCIIName&quot;[2C]}' name='CMTextDescriptionType'/>
+<struct type='{CMTextType=&quot;typeDescriptor&quot;I&quot;reserved&quot;I&quot;text&quot;[1C]}' name='CMTextType'/>
+<struct type='{CMU16Fixed16ArrayType=&quot;typeDescriptor&quot;I&quot;reserved&quot;I&quot;value&quot;[1L]}' name='CMU16Fixed16ArrayType' type64='{CMU16Fixed16ArrayType=&quot;typeDescriptor&quot;I&quot;reserved&quot;I&quot;value&quot;[1I]}'/>
+<struct type='{CMUInt16ArrayType=&quot;typeDescriptor&quot;I&quot;reserved&quot;I&quot;value&quot;[1S]}' name='CMUInt16ArrayType'/>
+<struct type='{CMUInt32ArrayType=&quot;typeDescriptor&quot;I&quot;reserved&quot;I&quot;value&quot;[1L]}' name='CMUInt32ArrayType' type64='{CMUInt32ArrayType=&quot;typeDescriptor&quot;I&quot;reserved&quot;I&quot;value&quot;[1I]}'/>
+<struct type='{CMUInt64ArrayType=&quot;typeDescriptor&quot;I&quot;reserved&quot;I&quot;value&quot;[1L]}' name='CMUInt64ArrayType' type64='{CMUInt64ArrayType=&quot;typeDescriptor&quot;I&quot;reserved&quot;I&quot;value&quot;[1I]}'/>
+<struct type='{CMUInt8ArrayType=&quot;typeDescriptor&quot;I&quot;reserved&quot;I&quot;value&quot;[1C]}' name='CMUInt8ArrayType'/>
+<struct type='{CMUcrBgType=&quot;typeDescriptor&quot;I&quot;reserved&quot;I&quot;ucrCount&quot;I&quot;ucrValues&quot;[1S]}' name='CMUcrBgType'/>
+<struct type='{CMUnicodeTextType=&quot;typeDescriptor&quot;I&quot;reserved&quot;I&quot;text&quot;[1S]}' name='CMUnicodeTextType'/>
+<struct type='{CMVideoCardGamma=&quot;tagType&quot;I&quot;u&quot;(?=&quot;table&quot;{CMVideoCardGammaTable=&quot;channels&quot;S&quot;entryCount&quot;S&quot;entrySize&quot;S&quot;data&quot;[1c]}&quot;formula&quot;{CMVideoCardGammaFormula=&quot;redGamma&quot;i&quot;redMin&quot;i&quot;redMax&quot;i&quot;greenGamma&quot;i&quot;greenMin&quot;i&quot;greenMax&quot;i&quot;blueGamma&quot;i&quot;blueMin&quot;i&quot;blueMax&quot;i})}' name='CMVideoCardGamma'/>
+<struct type='{CMVideoCardGammaFormula=&quot;redGamma&quot;i&quot;redMin&quot;i&quot;redMax&quot;i&quot;greenGamma&quot;i&quot;greenMin&quot;i&quot;greenMax&quot;i&quot;blueGamma&quot;i&quot;blueMin&quot;i&quot;blueMax&quot;i}' name='CMVideoCardGammaFormula'/>
+<struct type='{CMVideoCardGammaTable=&quot;channels&quot;S&quot;entryCount&quot;S&quot;entrySize&quot;S&quot;data&quot;[1c]}' name='CMVideoCardGammaTable'/>
+<struct type='{CMVideoCardGammaType=&quot;typeDescriptor&quot;I&quot;reserved&quot;I&quot;gamma&quot;{CMVideoCardGamma=&quot;tagType&quot;I&quot;u&quot;(?=&quot;table&quot;{CMVideoCardGammaTable=&quot;channels&quot;S&quot;entryCount&quot;S&quot;entrySize&quot;S&quot;data&quot;[1c]}&quot;formula&quot;{CMVideoCardGammaFormula=&quot;redGamma&quot;i&quot;redMin&quot;i&quot;redMax&quot;i&quot;greenGamma&quot;i&quot;greenMin&quot;i&quot;greenMax&quot;i&quot;blueGamma&quot;i&quot;blueMin&quot;i&quot;blueMax&quot;i})}}' name='CMVideoCardGammaType'/>
+<struct type='{CMViewingConditionsType=&quot;typeDescriptor&quot;I&quot;reserved&quot;I&quot;illuminant&quot;{CMFixedXYZColor=&quot;X&quot;i&quot;Y&quot;i&quot;Z&quot;i}&quot;surround&quot;{CMFixedXYZColor=&quot;X&quot;i&quot;Y&quot;i&quot;Z&quot;i}&quot;stdIlluminant&quot;I}' name='CMViewingConditionsType'/>
+<struct type='{CMXYZColor=&quot;X&quot;S&quot;Y&quot;S&quot;Z&quot;S}' name='CMXYZColor'/>
+<struct type='{CMXYZType=&quot;typeDescriptor&quot;I&quot;reserved&quot;I&quot;XYZ&quot;[1{CMFixedXYZColor=&quot;X&quot;i&quot;Y&quot;i&quot;Z&quot;i}]}' name='CMXYZType'/>
+<struct type='{CMYxyColor=&quot;capY&quot;S&quot;x&quot;S&quot;y&quot;S}' name='CMYxyColor'/>
+<struct type='{_ColorSyncMD5=&quot;digest&quot;[16C]}' name='ColorSyncMD5'/>
+<struct type='{NCMConcatProfileSet=&quot;cmm&quot;I&quot;flags&quot;I&quot;flagsMask&quot;I&quot;profileCount&quot;I&quot;profileSpecs&quot;[1{NCMConcatProfileSpec=&quot;renderingIntent&quot;I&quot;transformTag&quot;I&quot;profile&quot;^{OpaqueCMProfileRef}}]}' name='NCMConcatProfileSet'/>
+<struct type='{NCMConcatProfileSpec=&quot;renderingIntent&quot;I&quot;transformTag&quot;I&quot;profile&quot;^{OpaqueCMProfileRef}}' name='NCMConcatProfileSpec'/>
+<struct type='{NCMDeviceProfileInfo=&quot;dataVersion&quot;I&quot;profileID&quot;I&quot;profileLoc&quot;{CMProfileLocation=&quot;locType&quot;s&quot;u&quot;(CMProfLoc=&quot;fileLoc&quot;{CMFileLocation=&quot;spec&quot;{FSSpec=&quot;vRefNum&quot;s&quot;parID&quot;i&quot;name&quot;[64C]}}&quot;handleLoc&quot;{CMHandleLocation=&quot;h&quot;^*}&quot;ptrLoc&quot;{CMPtrLocation=&quot;p&quot;*}&quot;procLoc&quot;{CMProcedureLocation=&quot;proc&quot;^?&quot;refCon&quot;^v}&quot;pathLoc&quot;{CMPathLocation=&quot;path&quot;[256c]}&quot;bufferLoc&quot;{CMBufferLocation=&quot;buffer&quot;^v&quot;size&quot;I})}&quot;profileName&quot;^{__CFDictionary}&quot;profileScope&quot;{CMDeviceScope=&quot;deviceUser&quot;^{__CFString}&quot;deviceHost&quot;^{__CFString}}&quot;reserved&quot;I}' name='NCMDeviceProfileInfo' type64='{NCMDeviceProfileInfo=&quot;dataVersion&quot;I&quot;profileID&quot;I&quot;profileLoc&quot;{CMProfileLocation=&quot;locType&quot;s&quot;u&quot;(CMProfLoc=&quot;handleLoc&quot;{CMHandleLocation=&quot;h&quot;^*}&quot;pathLoc&quot;{CMPathLocation=&quot;path&quot;[1024c]}&quot;bufferLoc&quot;{CMBufferLocation=&quot;buffer&quot;^v&quot;size&quot;I})}&quot;profileName&quot;^{__CFDictionary}&quot;profileScope&quot;{CMDeviceScope=&quot;deviceUser&quot;^{__CFString}&quot;deviceHost&quot;^{__CFString}}&quot;reserved&quot;I}'/>
+<cftype type='^{OpaqueCMProfileRef=}' name='CMProfileRef'/>
+<cftype type='^{OpaqueCMWorldRef=}' name='CMWorldRef'/>
+<cftype type='^{ColorSyncCMM=}' gettypeid_func='ColorSyncCMMGetTypeID' name='ColorSyncCMMRef' tollfree='__NSCFType'/>
+<cftype type='^{ColorSyncProfile=}' gettypeid_func='ColorSyncProfileGetTypeID' name='ColorSyncMutableProfileRef' tollfree='__NSCFType'/>
+<cftype type='^{ColorSyncProfile=}' gettypeid_func='ColorSyncProfileGetTypeID' name='ColorSyncProfileRef' tollfree='__NSCFType'/>
+<cftype type='^{ColorSyncTransform=}' gettypeid_func='ColorSyncTransformGetTypeID' name='ColorSyncTransformRef' tollfree='__NSCFType'/>
+<constant type='[3f]' name='kCMIlluminantD50'/>
+<constant type='[3f]' name='kCMIlluminantD65'/>
+<constant type='^{__CFString=}' name='kCMMApplyTransformProcName'/>
+<constant type='^{__CFString=}' name='kCMMCreateTransformPropertyProcName'/>
+<constant type='^{__CFString=}' name='kCMMInitializeLinkProfileProcName'/>
+<constant type='^{__CFString=}' name='kCMMInitializeTransformProcName'/>
+<constant type='^{__CFString=}' name='kColorSyncAdobeRGB1998Profile'/>
+<constant type='^{__CFString=}' name='kColorSyncBestQuality'/>
+<constant type='^{__CFString=}' name='kColorSyncBlackPointCompensation'/>
+<constant type='^{__CFString=}' name='kColorSyncCameraDeviceClass'/>
+<constant type='^{__CFString=}' name='kColorSyncConversion1DLut'/>
+<constant type='^{__CFString=}' name='kColorSyncConversion3DLut'/>
+<constant type='^{__CFString=}' name='kColorSyncConversionBPC'/>
+<constant type='^{__CFString=}' name='kColorSyncConversionChannelID'/>
+<constant type='^{__CFString=}' name='kColorSyncConversionGridPoints'/>
+<constant type='^{__CFString=}' name='kColorSyncConversionInpChan'/>
+<constant type='^{__CFString=}' name='kColorSyncConversionMatrix'/>
+<constant type='^{__CFString=}' name='kColorSyncConversionOutChan'/>
+<constant type='^{__CFString=}' name='kColorSyncConversionParamCurve0'/>
+<constant type='^{__CFString=}' name='kColorSyncConversionParamCurve1'/>
+<constant type='^{__CFString=}' name='kColorSyncConversionParamCurve2'/>
+<constant type='^{__CFString=}' name='kColorSyncConversionParamCurve3'/>
+<constant type='^{__CFString=}' name='kColorSyncConversionParamCurve4'/>
+<constant type='^{__CFString=}' name='kColorSyncConvertQuality'/>
+<constant type='^{__CFString=}' name='kColorSyncConvertThreadCount'/>
+<constant type='^{__CFString=}' name='kColorSyncCustomProfiles'/>
+<constant type='^{__CFString=}' name='kColorSyncDeviceClass'/>
+<constant type='^{__CFString=}' name='kColorSyncDeviceDefaultProfileID'/>
+<constant type='^{__CFString=}' name='kColorSyncDeviceDescription'/>
+<constant type='^{__CFString=}' name='kColorSyncDeviceDescriptions'/>
+<constant type='^{__CFString=}' name='kColorSyncDeviceHostScope'/>
+<constant type='^{__CFString=}' name='kColorSyncDeviceID'/>
+<constant type='^{__CFString=}' name='kColorSyncDeviceModeDescription'/>
+<constant type='^{__CFString=}' name='kColorSyncDeviceModeDescriptions'/>
+<constant type='^{__CFString=}' name='kColorSyncDeviceProfileID'/>
+<constant type='^{__CFString=}' name='kColorSyncDeviceProfileIsCurrent'/>
+<constant type='^{__CFString=}' name='kColorSyncDeviceProfileIsDefault'/>
+<constant type='^{__CFString=}' name='kColorSyncDeviceProfileIsFactory'/>
+<constant type='^{__CFString=}' name='kColorSyncDeviceProfileURL'/>
+<constant type='^{__CFString=}' name='kColorSyncDeviceProfilesNotification'/>
+<constant type='^{__CFString=}' name='kColorSyncDeviceRegisteredNotification'/>
+<constant type='^{__CFString=}' name='kColorSyncDeviceUnregisteredNotification'/>
+<constant type='^{__CFString=}' name='kColorSyncDeviceUserScope'/>
+<constant type='^{__CFString=}' name='kColorSyncDisplayDeviceClass'/>
+<constant type='^{__CFString=}' name='kColorSyncDisplayDeviceProfilesNotification'/>
+<constant type='^{__CFString=}' name='kColorSyncDraftQuality'/>
+<constant type='^{__CFString=}' name='kColorSyncFactoryProfiles'/>
+<constant type='^{__CFString=}' name='kColorSyncGenericCMYKProfile'/>
+<constant type='^{__CFString=}' name='kColorSyncGenericGrayGamma22Profile'/>
+<constant type='^{__CFString=}' name='kColorSyncGenericGrayProfile'/>
+<constant type='^{__CFString=}' name='kColorSyncGenericLabProfile'/>
+<constant type='^{__CFString=}' name='kColorSyncGenericRGBProfile'/>
+<constant type='^{__CFString=}' name='kColorSyncGenericXYZProfile'/>
+<constant type='^{__CFString=}' name='kColorSyncNormalQuality'/>
+<constant type='^{__CFString=}' name='kColorSyncPreferredCMM'/>
+<constant type='^{__CFString=}' name='kColorSyncPrinterDeviceClass'/>
+<constant type='^{__CFString=}' name='kColorSyncProfile'/>
+<constant type='^{__CFString=}' name='kColorSyncProfileClass'/>
+<constant type='^{__CFString=}' name='kColorSyncProfileColorSpace'/>
+<constant type='^{__CFString=}' name='kColorSyncProfileDescription'/>
+<constant type='^{__CFString=}' name='kColorSyncProfileHeader'/>
+<constant type='^{__CFString=}' name='kColorSyncProfileHostScope'/>
+<constant type='^{__CFString=}' name='kColorSyncProfileMD5Digest'/>
+<constant type='^{__CFString=}' name='kColorSyncProfilePCS'/>
+<constant type='^{__CFString=}' name='kColorSyncProfileURL'/>
+<constant type='^{__CFString=}' name='kColorSyncProfileUserScope'/>
+<constant type='^{__CFString=}' name='kColorSyncRenderingIntent'/>
+<constant type='^{__CFString=}' name='kColorSyncRenderingIntentAbsolute'/>
+<constant type='^{__CFString=}' name='kColorSyncRenderingIntentPerceptual'/>
+<constant type='^{__CFString=}' name='kColorSyncRenderingIntentRelative'/>
+<constant type='^{__CFString=}' name='kColorSyncRenderingIntentSaturation'/>
+<constant type='^{__CFString=}' name='kColorSyncRenderingIntentUseProfileHeader'/>
+<constant type='^{__CFString=}' name='kColorSyncSRGBProfile'/>
+<constant type='^{__CFString=}' name='kColorSyncScannerDeviceClass'/>
+<constant type='^{__CFString=}' name='kColorSyncTranformInfo'/>
+<constant type='^{__CFString=}' name='kColorSyncTransformCreator'/>
+<constant type='^{__CFString=}' name='kColorSyncTransformDeviceToDevice'/>
+<constant type='^{__CFString=}' name='kColorSyncTransformDeviceToPCS'/>
+<constant type='^{__CFString=}' name='kColorSyncTransformDstSpace'/>
+<constant type='^{__CFString=}' name='kColorSyncTransformFullConversionData'/>
+<constant type='^{__CFString=}' name='kColorSyncTransformGamutCheck'/>
+<constant type='^{__CFString=}' name='kColorSyncTransformPCSToDevice'/>
+<constant type='^{__CFString=}' name='kColorSyncTransformPCSToPCS'/>
+<constant type='^{__CFString=}' name='kColorSyncTransformParametricConversionData'/>
+<constant type='^{__CFString=}' name='kColorSyncTransformSimplifiedConversionData'/>
+<constant type='^{__CFString=}' name='kColorSyncTransformSrcSpace'/>
+<constant type='^{__CFString=}' name='kColorSyncTransformTag'/>
+<string_constant nsstring='true' name='kCMDefaultDeviceNotification' value='CMDefaultDeviceNotification'/>
+<string_constant nsstring='true' name='kCMDefaultDeviceProfileNotification' value='CMDefaultDeviceProfileNotification'/>
+<string_constant nsstring='true' name='kCMDeviceOfflineNotification' value='CMDeviceOfflineNotification'/>
+<string_constant nsstring='true' name='kCMDeviceOnlineNotification' value='CMDeviceOnlineNotification'/>
+<string_constant nsstring='true' name='kCMDeviceProfilesNotification' value='CMDeviceProfilesNotification'/>
+<string_constant nsstring='true' name='kCMDeviceRegisteredNotification' value='CMDeviceRegisteredNotification'/>
+<string_constant nsstring='true' name='kCMDeviceStateNotification' value='CMDeviceStateNotification'/>
+<string_constant nsstring='true' name='kCMDeviceUnregisteredNotification' value='CMDeviceUnregisteredNotification'/>
+<string_constant nsstring='true' name='kCMDisplayDeviceProfilesNotification' value='CMDisplayDeviceProfilesNotification'/>
+<string_constant nsstring='true' name='kCMPrefsChangedNotification' value='AppleColorSyncPreferencesChangedNotification'/>
+<enum name='CMBITMAPCALLBACKPROCPTR_DEFINED' value='1'/>
+<enum name='COLORSYNC_MD5_LENGTH' value='16'/>
+<enum value64='1024' name='CS_MAX_PATH' value='256'/>
+<enum name='cm10CLRData' value='1094929490'/>
+<enum name='cm11CLRData' value='1111706706'/>
+<enum name='cm12CLRData' value='1128483922'/>
+<enum name='cm13CLRData' value='1145261138'/>
+<enum name='cm14CLRData' value='1162038354'/>
+<enum name='cm15CLRData' value='1178815570'/>
+<enum name='cm16_8ColorPacking' value='8192'/>
+<enum name='cm24_8ColorPacking' value='8448'/>
+<enum name='cm32_16ColorPacking' value='9728'/>
+<enum name='cm32_32ColorPacking' value='9984'/>
+<enum name='cm32_8ColorPacking' value='2048'/>
+<enum name='cm3CLRData' value='860048466'/>
+<enum name='cm40_8ColorPacking' value='8704'/>
+<enum name='cm48_16ColorPacking' value='10496'/>
+<enum name='cm48_8ColorPacking' value='8960'/>
+<enum name='cm4CLRData' value='876825682'/>
+<enum name='cm56_8ColorPacking' value='9216'/>
+<enum name='cm5CLRData' value='893602898'/>
+<enum name='cm64_16ColorPacking' value='10752'/>
+<enum name='cm64_8ColorPacking' value='9472'/>
+<enum name='cm6CLRData' value='910380114'/>
+<enum name='cm7CLRData' value='927157330'/>
+<enum name='cm8CLRData' value='943934546'/>
+<enum name='cm8_8ColorPacking' value='10240'/>
+<enum name='cm9CLRData' value='960711762'/>
+<enum name='cmARGB32PmulSpace' value='6337'/>
+<enum name='cmARGB32Space' value='6273'/>
+<enum name='cmARGB64LPmulSpace' value='31425'/>
+<enum name='cmARGB64LSpace' value='31361'/>
+<enum name='cmARGB64PmulSpace' value='15041'/>
+<enum name='cmARGB64Space' value='14977'/>
+<enum name='cmAToB0Tag' value='1093812784'/>
+<enum name='cmAToB1Tag' value='1093812785'/>
+<enum name='cmAToB2Tag' value='1093812786'/>
+<enum name='cmAbortWriteAccess' value='7'/>
+<enum name='cmAbsoluteColorimetric' value='3'/>
+<enum name='cmAbstractClass' value='1633842036'/>
+<enum name='cmAlphaFirstPacking' value='4096'/>
+<enum name='cmAlphaLastPacking' value='0'/>
+<enum name='cmAlphaPmulSpace' value='64'/>
+<enum name='cmAlphaSpace' value='128'/>
+<enum name='cmAsciiData' value='0'/>
+<enum name='cmBToA0Tag' value='1110589744'/>
+<enum name='cmBToA1Tag' value='1110589745'/>
+<enum name='cmBToA2Tag' value='1110589746'/>
+<enum name='cmBeginAccess' value='8'/>
+<enum name='cmBestMode' value='2'/>
+<enum name='cmBinaryData' value='1'/>
+<enum name='cmBlackPointCompensation' value='1'/>
+<enum name='cmBlackPointCompensationMask' value='4'/>
+<enum name='cmBlueColorantTag' value='1649957210'/>
+<enum name='cmBlueTRCTag' value='1649693251'/>
+<enum name='cmBradfordChromaticAdaptation' value='3'/>
+<enum name='cmBufferBasedProfile' value='6'/>
+<enum name='cmCMSReservedFlagsMask' value='-65536'/>
+<enum name='cmCMYData' value='1129142560'/>
+<enum name='cmCMYK32Space' value='2050'/>
+<enum name='cmCMYK64LSpace' value='27138'/>
+<enum name='cmCMYK64Space' value='10754'/>
+<enum name='cmCMYKData' value='1129142603'/>
+<enum name='cmCMYKSpace' value='2'/>
+<enum name='cmCS1ChromTag' value='1667789421'/>
+<enum name='cmCS1CustTag' value='1668641652'/>
+<enum name='cmCS1NameTag' value='1851878757'/>
+<enum name='cmCS1ProfileVersion' value='256'/>
+<enum name='cmCS1TRCTag' value='1953653536'/>
+<enum name='cmCS2ProfileVersion' value='33554432'/>
+<enum name='cmCalibrationDateTimeTag' value='1667329140'/>
+<enum name='cmCameraDeviceClass' value='1668117089'/>
+<enum name='cmCharTargetTag' value='1952543335'/>
+<enum name='cmChromaticAdaptationTag' value='1667785060'/>
+<enum name='cmCloseAccess' value='5'/>
+<enum name='cmCloseSpool' value='5'/>
+<enum name='cmColorSpaceAlphaMask' value='128'/>
+<enum name='cmColorSpaceClass' value='1936744803'/>
+<enum name='cmColorSpaceEncodingMask' value='983040'/>
+<enum name='cmColorSpacePackingMask' value='65280'/>
+<enum name='cmColorSpacePremulAlphaMask' value='64'/>
+<enum name='cmColorSpaceReservedMask' value='-1048576'/>
+<enum name='cmColorSpaceSpaceAndAlphaMask' value='255'/>
+<enum name='cmColorSpaceSpaceMask' value='63'/>
+<enum name='cmCopyrightTag' value='1668313716'/>
+<enum name='cmCreateNewAccess' value='6'/>
+<enum name='cmCurrentDeviceInfoVersion' value='65536'/>
+<enum name='cmCurrentProfileInfoVersion' value='65536'/>
+<enum value64='1032' name='cmCurrentProfileLocationSize' value='258'/>
+<enum name='cmCurrentProfileMajorVersion' value='33554432'/>
+<enum name='cmDefaultDeviceID' value='0'/>
+<enum name='cmDefaultProfileID' value='0'/>
+<enum name='cmDeviceAlreadyRegistered' value='-4228'/>
+<enum name='cmDeviceDBNotFoundErr' value='-4227'/>
+<enum name='cmDeviceInfoVersion1' value='65536'/>
+<enum name='cmDeviceMfgDescTag' value='1684893284'/>
+<enum name='cmDeviceModelDescTag' value='1684890724'/>
+<enum name='cmDeviceNotRegistered' value='-4229'/>
+<enum name='cmDeviceProfileInfoVersion1' value='65536'/>
+<enum name='cmDeviceProfileInfoVersion2' value='131072'/>
+<enum name='cmDeviceProfilesNotFound' value='-4230'/>
+<enum name='cmDeviceStateAppleRsvdBits' value='-16711681'/>
+<enum name='cmDeviceStateBusy' value='2'/>
+<enum name='cmDeviceStateDefault' value='0'/>
+<enum name='cmDeviceStateDeviceRsvdBits' value='16711680'/>
+<enum name='cmDeviceStateForceNotify' value='-2147483648'/>
+<enum name='cmDeviceStateOffline' value='1'/>
+<enum name='cmDisplayClass' value='1835955314'/>
+<enum name='cmDisplayDeviceClass' value='1835955314'/>
+<enum name='cmDisplayUse' value='1685089401'/>
+<enum name='cmDraftMode' value='1'/>
+<enum name='cmEmbeddedMask' value='1'/>
+<enum name='cmEmbeddedProfile' value='0'/>
+<enum name='cmEmbeddedUse' value='1'/>
+<enum name='cmEmbeddedUseMask' value='2'/>
+<enum name='cmEndAccess' value='9'/>
+<enum name='cmFlare0' value='0'/>
+<enum name='cmFlare100' value='1'/>
+<enum name='cmGamutCheckingMask' value='524288'/>
+<enum name='cmGamutResult1Space' value='2828'/>
+<enum name='cmGamutResultSpace' value='12'/>
+<enum name='cmGamutTag' value='1734438260'/>
+<enum name='cmGeometry045or450' value='1'/>
+<enum name='cmGeometry0dord0' value='2'/>
+<enum name='cmGeometryUnknown' value='0'/>
+<enum name='cmGlossy' value='1'/>
+<enum name='cmGlossyMatteMask' value='2'/>
+<enum name='cmGray16LSpace' value='16394'/>
+<enum name='cmGray16Space' value='10'/>
+<enum name='cmGray8Space' value='10250'/>
+<enum name='cmGrayA16PmulSpace' value='8394'/>
+<enum name='cmGrayA16Space' value='8330'/>
+<enum name='cmGrayA32LPmulSpace' value='16586'/>
+<enum name='cmGrayA32LSpace' value='16522'/>
+<enum name='cmGrayA32PmulSpace' value='202'/>
+<enum name='cmGrayA32Space' value='138'/>
+<enum name='cmGrayAPmulSpace' value='202'/>
+<enum name='cmGrayASpace' value='138'/>
+<enum name='cmGrayData' value='1196573017'/>
+<enum name='cmGraySpace' value='10'/>
+<enum name='cmGrayTRCTag' value='1800688195'/>
+<enum name='cmGreenColorantTag' value='1733843290'/>
+<enum name='cmGreenTRCTag' value='1733579331'/>
+<enum name='cmHLS32Space' value='2564'/>
+<enum name='cmHLSData' value='1212961568'/>
+<enum name='cmHLSSpace' value='4'/>
+<enum name='cmHSV32Space' value='2563'/>
+<enum name='cmHSVData' value='1213421088'/>
+<enum name='cmHSVSpace' value='3'/>
+<enum name='cmICCProfileVersion2' value='33554432'/>
+<enum name='cmICCProfileVersion21' value='34603008'/>
+<enum name='cmICCProfileVersion4' value='67108864'/>
+<enum name='cmICCReservedFlagsMask' value='65535'/>
+<enum name='cmIlluminantA' value='6'/>
+<enum name='cmIlluminantD50' value='1'/>
+<enum name='cmIlluminantD55' value='5'/>
+<enum name='cmIlluminantD65' value='2'/>
+<enum name='cmIlluminantD93' value='3'/>
+<enum name='cmIlluminantEquiPower' value='7'/>
+<enum name='cmIlluminantF2' value='4'/>
+<enum name='cmIlluminantF8' value='8'/>
+<enum name='cmIlluminantUnknown' value='0'/>
+<enum name='cmInputClass' value='1935896178'/>
+<enum name='cmInputUse' value='1768845428'/>
+<enum name='cmInternalCFErr' value='-4231'/>
+<enum name='cmInterpolationMask' value='262144'/>
+<enum name='cmIterateAllDeviceProfiles' value='4'/>
+<enum name='cmIterateCurrentDeviceProfiles' value='3'/>
+<enum name='cmIterateCustomDeviceProfiles' value='2'/>
+<enum name='cmIterateDeviceProfilesMask' value='15'/>
+<enum name='cmIterateFactoryDeviceProfiles' value='1'/>
+<enum name='cmLAB24Space' value='8456'/>
+<enum name='cmLAB32Space' value='2568'/>
+<enum name='cmLAB48LSpace' value='26888'/>
+<enum name='cmLAB48Space' value='10504'/>
+<enum name='cmLABSpace' value='8'/>
+<enum name='cmLUV32Space' value='2567'/>
+<enum name='cmLUVSpace' value='7'/>
+<enum name='cmLabData' value='1281450528'/>
+<enum name='cmLinearChromaticAdaptation' value='1'/>
+<enum name='cmLinesPer' value='1'/>
+<enum name='cmLinkClass' value='1818848875'/>
+<enum name='cmLittleEndianPacking' value='16384'/>
+<enum name='cmLong10ColorPacking' value='2560'/>
+<enum name='cmLong8ColorPacking' value='2048'/>
+<enum name='cmLuminanceTag' value='1819635049'/>
+<enum name='cmLuvData' value='1282766368'/>
+<enum name='cmMCEight8Space' value='9492'/>
+<enum name='cmMCEightSpace' value='20'/>
+<enum name='cmMCFive8Space' value='8721'/>
+<enum name='cmMCFiveSpace' value='17'/>
+<enum name='cmMCH5Data' value='1296255029'/>
+<enum name='cmMCH6Data' value='1296255030'/>
+<enum name='cmMCH7Data' value='1296255031'/>
+<enum name='cmMCH8Data' value='1296255032'/>
+<enum name='cmMCSeven8Space' value='9235'/>
+<enum name='cmMCSevenSpace' value='19'/>
+<enum name='cmMCSix8Space' value='8978'/>
+<enum name='cmMCSixSpace' value='18'/>
+<enum name='cmMacintosh' value='1095782476'/>
+<enum name='cmMagicNumber' value='1633907568'/>
+<enum name='cmMakeAndModelTag' value='1835888484'/>
+<enum name='cmMeasurementTag' value='1835360627'/>
+<enum name='cmMediaBlackPointTag' value='1651208308'/>
+<enum name='cmMediaWhitePointTag' value='2004119668'/>
+<enum name='cmMicrosoft' value='1297303124'/>
+<enum name='cmNamedColor2Tag' value='1852009522'/>
+<enum name='cmNamedColorClass' value='1852662636'/>
+<enum name='cmNamedColorTag' value='1852010348'/>
+<enum name='cmNamedData' value='1312902469'/>
+<enum name='cmNamedIndexed32LSpace' value='26384'/>
+<enum name='cmNamedIndexed32Space' value='10000'/>
+<enum name='cmNamedIndexedSpace' value='16'/>
+<enum name='cmNativeDisplayInfoTag' value='1852074350'/>
+<enum name='cmNoColorPacking' value='0'/>
+<enum name='cmNoProfileBase' value='0'/>
+<enum name='cmNoSpace' value='0'/>
+<enum name='cmNormalMode' value='0'/>
+<enum name='cmNumHeaderElements' value='10'/>
+<enum name='cmOneBitDirectPacking' value='2816'/>
+<enum name='cmOpenReadAccess' value='1'/>
+<enum name='cmOpenReadSpool' value='1'/>
+<enum name='cmOpenWriteAccess' value='2'/>
+<enum name='cmOpenWriteSpool' value='2'/>
+<enum name='cmOriginalProfileLocationSize' value='72'/>
+<enum name='cmOutputClass' value='1886549106'/>
+<enum name='cmOutputUse' value='1869968496'/>
+<enum name='cmPS2CRD0Tag' value='1886610480'/>
+<enum name='cmPS2CRD1Tag' value='1886610481'/>
+<enum name='cmPS2CRD2Tag' value='1886610482'/>
+<enum name='cmPS2CRD3Tag' value='1886610483'/>
+<enum name='cmPS2CRDVMSizeTag' value='1886615149'/>
+<enum name='cmPS2CSATag' value='1886597747'/>
+<enum name='cmPS2RenderingIntentTag' value='1886597737'/>
+<enum name='cmPS7bit' value='1'/>
+<enum name='cmPS8bit' value='2'/>
+<enum name='cmParametricType0' value='0'/>
+<enum name='cmParametricType1' value='1'/>
+<enum name='cmParametricType2' value='2'/>
+<enum name='cmParametricType3' value='3'/>
+<enum name='cmParametricType4' value='4'/>
+<enum name='cmPathBasedProfile' value='5'/>
+<enum name='cmPerceptual' value='0'/>
+<enum name='cmPrefsSynchError' value='-4232'/>
+<enum name='cmPreview0Tag' value='1886545200'/>
+<enum name='cmPreview1Tag' value='1886545201'/>
+<enum name='cmPreview2Tag' value='1886545202'/>
+<enum name='cmPrinterDeviceClass' value='1886549106'/>
+<enum name='cmProfileDescriptionMLTag' value='1685283693'/>
+<enum name='cmProfileDescriptionTag' value='1684370275'/>
+<enum name='cmProfileIterateDataVersion1' value='65536'/>
+<enum name='cmProfileIterateDataVersion2' value='131072'/>
+<enum name='cmProfileIterateDataVersion3' value='196608'/>
+<enum name='cmProfileIterateDataVersion4' value='262144'/>
+<enum name='cmProfileMajorVersionMask' value='-16777216'/>
+<enum name='cmProfileSequenceDescTag' value='1886610801'/>
+<enum name='cmProofDeviceClass' value='1886549350'/>
+<enum name='cmProofUse' value='1886549350'/>
+<enum name='cmPrtrDefaultScreens' value='0'/>
+<enum name='cmQualityMask' value='196608'/>
+<enum name='cmRGB16LSpace' value='17665'/>
+<enum name='cmRGB16Space' value='1281'/>
+<enum name='cmRGB24Space' value='8449'/>
+<enum name='cmRGB32Space' value='2049'/>
+<enum name='cmRGB48LSpace' value='26881'/>
+<enum name='cmRGB48Space' value='10497'/>
+<enum name='cmRGB565LSpace' value='17921'/>
+<enum name='cmRGB565Space' value='1537'/>
+<enum name='cmRGBA32PmulSpace' value='2241'/>
+<enum name='cmRGBA32Space' value='2177'/>
+<enum name='cmRGBA64LPmulSpace' value='27329'/>
+<enum name='cmRGBA64LSpace' value='27265'/>
+<enum name='cmRGBA64PmulSpace' value='10945'/>
+<enum name='cmRGBA64Space' value='10881'/>
+<enum name='cmRGBAPmulSpace' value='193'/>
+<enum name='cmRGBASpace' value='129'/>
+<enum name='cmRGBData' value='1380401696'/>
+<enum name='cmRGBSpace' value='1'/>
+<enum name='cmReadAccess' value='3'/>
+<enum name='cmReadSpool' value='3'/>
+<enum name='cmRedColorantTag' value='1918392666'/>
+<enum name='cmRedTRCTag' value='1918128707'/>
+<enum name='cmReflective' value='0'/>
+<enum name='cmReflectiveTransparentMask' value='1'/>
+<enum name='cmRelativeColorimetric' value='1'/>
+<enum name='cmReservedSpace1' value='9'/>
+<enum name='cmReservedSpace2' value='11'/>
+<enum name='cmReverseChannelPacking' value='32768'/>
+<enum name='cmSRGB16ChannelEncoding' value='65536'/>
+<enum name='cmSRGBData' value='1934772034'/>
+<enum name='cmSaturation' value='2'/>
+<enum name='cmScannerDeviceClass' value='1935896178'/>
+<enum name='cmScreeningDescTag' value='1935897188'/>
+<enum name='cmScreeningTag' value='1935897198'/>
+<enum name='cmSigCrdInfoType' value='1668441193'/>
+<enum name='cmSigCurveType' value='1668641398'/>
+<enum name='cmSigDataType' value='1684108385'/>
+<enum name='cmSigDateTimeType' value='1685350765'/>
+<enum name='cmSigLut16Type' value='1835430962'/>
+<enum name='cmSigLut8Type' value='1835430961'/>
+<enum name='cmSigMakeAndModelType' value='1835888484'/>
+<enum name='cmSigMeasurementType' value='1835360627'/>
+<enum name='cmSigMultiFunctA2BType' value='1832993312'/>
+<enum name='cmSigMultiFunctB2AType' value='1833058592'/>
+<enum name='cmSigMultiLocalizedUniCodeType' value='1835824483'/>
+<enum name='cmSigNamedColor2Type' value='1852009522'/>
+<enum name='cmSigNamedColorType' value='1852010348'/>
+<enum name='cmSigNativeDisplayInfoType' value='1852074350'/>
+<enum name='cmSigPS2CRDVMSizeType' value='1886615149'/>
+<enum name='cmSigParametricCurveType' value='1885434465'/>
+<enum name='cmSigProfileDescriptionType' value='1684370275'/>
+<enum name='cmSigProfileSequenceDescType' value='1886610801'/>
+<enum name='cmSigS15Fixed16Type' value='1936077618'/>
+<enum name='cmSigScreeningType' value='1935897198'/>
+<enum name='cmSigSignatureType' value='1936287520'/>
+<enum name='cmSigTextType' value='1952807028'/>
+<enum name='cmSigU16Fixed16Type' value='1969632050'/>
+<enum name='cmSigU1Fixed15Type' value='1969631542'/>
+<enum name='cmSigUInt16Type' value='1969828150'/>
+<enum name='cmSigUInt32Type' value='1969828658'/>
+<enum name='cmSigUInt64Type' value='1969829428'/>
+<enum name='cmSigUInt8Type' value='1969827896'/>
+<enum name='cmSigUcrBgType' value='1650877472'/>
+<enum name='cmSigUnicodeTextType' value='1970567284'/>
+<enum name='cmSigVideoCardGammaType' value='1986226036'/>
+<enum name='cmSigViewingConditionsType' value='1986618743'/>
+<enum name='cmSigXYZType' value='1482250784'/>
+<enum name='cmSiliconGraphics' value='1397180704'/>
+<enum name='cmSolaris' value='1398099543'/>
+<enum name='cmSpotFunctionCross' value='7'/>
+<enum name='cmSpotFunctionDefault' value='1'/>
+<enum name='cmSpotFunctionDiamond' value='3'/>
+<enum name='cmSpotFunctionEllipse' value='4'/>
+<enum name='cmSpotFunctionLine' value='5'/>
+<enum name='cmSpotFunctionRound' value='2'/>
+<enum name='cmSpotFunctionSquare' value='6'/>
+<enum name='cmSpotFunctionUnknown' value='0'/>
+<enum name='cmStdobs1931TwoDegrees' value='1'/>
+<enum name='cmStdobs1964TenDegrees' value='2'/>
+<enum name='cmStdobsUnknown' value='0'/>
+<enum name='cmTaligent' value='1413959252'/>
+<enum name='cmTechnologyAMDisplay' value='1095582752'/>
+<enum name='cmTechnologyCRTDisplay' value='1129468960'/>
+<enum name='cmTechnologyDigitalCamera' value='1684234605'/>
+<enum name='cmTechnologyDyeSublimationPrinter' value='1685288290'/>
+<enum name='cmTechnologyElectrophotographicPrinter' value='1701865583'/>
+<enum name='cmTechnologyElectrostaticPrinter' value='1702065249'/>
+<enum name='cmTechnologyFilmScanner' value='1718838126'/>
+<enum name='cmTechnologyFilmWriter' value='1718645358'/>
+<enum name='cmTechnologyFlexography' value='1718379896'/>
+<enum name='cmTechnologyGravure' value='1735549302'/>
+<enum name='cmTechnologyInkJetPrinter' value='1768580468'/>
+<enum name='cmTechnologyOffsetLithography' value='1868981875'/>
+<enum name='cmTechnologyPMDisplay' value='1347240992'/>
+<enum name='cmTechnologyPhotoCD' value='1263551300'/>
+<enum name='cmTechnologyPhotoImageSetter' value='1768777587'/>
+<enum name='cmTechnologyPhotographicPaperPrinter' value='1919969391'/>
+<enum name='cmTechnologyProjectionTelevision' value='1886024822'/>
+<enum name='cmTechnologyReflectiveScanner' value='1920164718'/>
+<enum name='cmTechnologySilkscreen' value='1936288875'/>
+<enum name='cmTechnologyTag' value='1952801640'/>
+<enum name='cmTechnologyThermalWaxPrinter' value='1953980792'/>
+<enum name='cmTechnologyVideoCamera' value='1986618467'/>
+<enum name='cmTechnologyVideoMonitor' value='1986618477'/>
+<enum name='cmTextureRGBtoRGBX16' value='1'/>
+<enum name='cmTextureRGBtoRGBX8' value='0'/>
+<enum name='cmTextureRGBtoRGBXFloat32' value='2'/>
+<enum name='cmUcrBgTag' value='1650877472'/>
+<enum name='cmUseDefaultChromaticAdaptation' value='0'/>
+<enum name='cmVideoCardGammaFormulaType' value='1'/>
+<enum name='cmVideoCardGammaTableType' value='0'/>
+<enum name='cmVideoCardGammaTag' value='1986226036'/>
+<enum name='cmViewingConditionsDescTag' value='1987405156'/>
+<enum name='cmViewingConditionsTag' value='1986618743'/>
+<enum name='cmVonKriesChromaticAdaptation' value='2'/>
+<enum name='cmWord565ColorPacking' value='1536'/>
+<enum name='cmWord5ColorPacking' value='1280'/>
+<enum name='cmWriteAccess' value='4'/>
+<enum name='cmWriteSpool' value='4'/>
+<enum name='cmXYZ24Space' value='8454'/>
+<enum name='cmXYZ32Space' value='2566'/>
+<enum name='cmXYZ48LSpace' value='26886'/>
+<enum name='cmXYZ48Space' value='10502'/>
+<enum name='cmXYZData' value='1482250784'/>
+<enum name='cmXYZSpace' value='6'/>
+<enum name='cmYCbCrData' value='1497588338'/>
+<enum name='cmYXY32Space' value='2565'/>
+<enum name='cmYXYSpace' value='5'/>
+<enum name='cmYxyData' value='1501067552'/>
+<enum name='kCMFloatBitmapFlagsAlpha' value='1'/>
+<enum name='kCMFloatBitmapFlagsAlphaPremul' value='2'/>
+<enum name='kCMFloatBitmapFlagsNone' value='0'/>
+<enum name='kCMFloatBitmapFlagsRangeClipped' value='4'/>
+<enum name='kColorSync16BitFloat' value='4'/>
+<enum name='kColorSync16BitInteger' value='3'/>
+<enum name='kColorSync1BitGamut' value='1'/>
+<enum name='kColorSync32BitFloat' value='7'/>
+<enum name='kColorSync32BitInteger' value='5'/>
+<enum name='kColorSync32BitNamedColorIndex' value='6'/>
+<enum name='kColorSync8BitInteger' value='2'/>
+<enum name='kColorSyncAlphaFirst' value='4'/>
+<enum name='kColorSyncAlphaInfoMask' value='31'/>
+<enum name='kColorSyncAlphaLast' value='3'/>
+<enum name='kColorSyncAlphaNone' value='0'/>
+<enum name='kColorSyncAlphaNoneSkipFirst' value='6'/>
+<enum name='kColorSyncAlphaNoneSkipLast' value='5'/>
+<enum name='kColorSyncAlphaPremultipliedFirst' value='2'/>
+<enum name='kColorSyncAlphaPremultipliedLast' value='1'/>
+<enum name='kColorSyncByteOrder16Big' value='12288'/>
+<enum name='kColorSyncByteOrder16Little' value='4096'/>
+<enum name='kColorSyncByteOrder32Big' value='16384'/>
+<enum name='kColorSyncByteOrder32Little' value='8192'/>
+<enum name='kColorSyncByteOrderDefault' value='0'/>
+<enum name='kColorSyncByteOrderMask' value='28672'/>
+<enum name='kDefaultCMMSignature' value='1634758764'/>
+<enum name='kDeviceToPCS' value='1'/>
+<enum name='kNoTransform' value='0'/>
+<enum name='kPCSToDevice' value='2'/>
+<enum name='kPCSToPCS' value='3'/>
+<enum name='kUseAtoB' value='1'/>
+<enum name='kUseBtoA' value='2'/>
+<enum name='kUseBtoB' value='3'/>
+<enum name='kUseProfileIntent' value='-1'/>
+<function name='CGDisplayCreateUUIDFromDisplayID'>
+<arg type='I'/>
+<retval type='^{__CFUUID=}' already_retained='true'/>
+</function>
+<function name='CGDisplayGetDisplayIDFromUUID'>
+<arg type='^{__CFUUID=}'/>
+<retval type='I'/>
+</function>
+<function name='CMCloneProfileRef'>
+<arg type='^{OpaqueCMProfileRef=}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMCloseProfile'>
+<arg type='^{OpaqueCMProfileRef=}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMConvertRGBFloatBitmap'>
+<arg type='^{CMFloatBitmap=L[16^f]IIiiIi}' type64='^{CMFloatBitmap=Q[16^f]QQqqIi}'/>
+<arg type='^{CMFloatBitmap=L[16^f]IIiiIi}' type64='^{CMFloatBitmap=Q[16^f]QQqqIi}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMConvertXYZFloatBitmap'>
+<arg type='^{CMFloatBitmap=L[16^f]IIiiIi}' type64='^{CMFloatBitmap=Q[16^f]QQqqIi}'/>
+<arg type='^f'/>
+<arg type='^{CMFloatBitmap=L[16^f]IIiiIi}' type64='^{CMFloatBitmap=Q[16^f]QQqqIi}'/>
+<arg type='^f'/>
+<arg type='L' type64='I'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMCopyProfile'>
+<arg type='^^{OpaqueCMProfileRef}'/>
+<arg type='^{CMProfileLocation=s(CMProfLoc={CMFileLocation={FSSpec=si[64C]}}{CMHandleLocation=^*}{CMPtrLocation=*}{CMProcedureLocation=^?^v}{CMPathLocation=[256c]}{CMBufferLocation=^vI})}' type64='^{CMProfileLocation=s(CMProfLoc={CMHandleLocation=^*}{CMPathLocation=[1024c]}{CMBufferLocation=^vI})}'/>
+<arg type='^{OpaqueCMProfileRef=}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMCopyProfileDescriptionString'>
+<arg type='^{OpaqueCMProfileRef=}'/>
+<arg type='^^{__CFString}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMCopyProfileLocalizedString'>
+<arg type='^{OpaqueCMProfileRef=}'/>
+<arg type='L' type64='I'/>
+<arg type='^{__CFString=}'/>
+<arg type='^^{__CFString}'/>
+<arg type='^^{__CFString}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMCopyProfileLocalizedStringDictionary'>
+<arg type='^{OpaqueCMProfileRef=}'/>
+<arg type='L' type64='I'/>
+<arg type='^^{__CFDictionary}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMCountProfileElements'>
+<arg type='^{OpaqueCMProfileRef=}'/>
+<arg type='^I'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMFloatBitmapMakeChunky'>
+<arg type='^f'/>
+<arg type='L' type64='Q'/>
+<arg type='L' type64='Q'/>
+<arg type='L' type64='I'/>
+<retval type='{CMFloatBitmap=L[16^f]IIiiIi}' type64='{CMFloatBitmap=Q[16^f]QQqqIi}'/>
+</function>
+<function name='CMGetColorSyncVersion'>
+<arg type='^I'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMGetDefaultDevice'>
+<arg type='L' type64='I'/>
+<arg type='^I'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMGetDefaultProfileBySpace'>
+<arg type='L' type64='I'/>
+<arg type='^^{OpaqueCMProfileRef}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMGetDefaultProfileByUse'>
+<arg type='L' type64='I'/>
+<arg type='^^{OpaqueCMProfileRef}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMGetDeviceDefaultProfileID'>
+<arg type='L' type64='I'/>
+<arg type='L' type64='I'/>
+<arg type='^I'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMGetDeviceFactoryProfiles'>
+<arg type='L' type64='I'/>
+<arg type='L' type64='I'/>
+<arg type='^I'/>
+<arg type='^I'/>
+<arg type='^{CMDeviceProfileArray=I[1{CMDeviceProfileInfo=II{CMProfileLocation=s(CMProfLoc={CMFileLocation={FSSpec=si[64C]}}{CMHandleLocation=^*}{CMPtrLocation=*}{CMProcedureLocation=^?^v}{CMPathLocation=[256c]}{CMBufferLocation=^vI})}^{__CFDictionary}I}]}' type64='^{CMDeviceProfileArray=I[1{CMDeviceProfileInfo=II{CMProfileLocation=s(CMProfLoc={CMHandleLocation=^*}{CMPathLocation=[1024c]}{CMBufferLocation=^vI})}^{__CFDictionary}I}]}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMGetDeviceInfo'>
+<arg type='L' type64='I'/>
+<arg type='L' type64='I'/>
+<arg type='^{CMDeviceInfo=III{CMDeviceScope=^{__CFString}^{__CFString}}II^^{__CFDictionary}II}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMGetDeviceProfile'>
+<arg type='L' type64='I'/>
+<arg type='L' type64='I'/>
+<arg type='L' type64='I'/>
+<arg type='^{CMProfileLocation=s(CMProfLoc={CMFileLocation={FSSpec=si[64C]}}{CMHandleLocation=^*}{CMPtrLocation=*}{CMProcedureLocation=^?^v}{CMPathLocation=[256c]}{CMBufferLocation=^vI})}' type64='^{CMProfileLocation=s(CMProfLoc={CMHandleLocation=^*}{CMPathLocation=[1024c]}{CMBufferLocation=^vI})}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMGetDeviceState'>
+<arg type='L' type64='I'/>
+<arg type='L' type64='I'/>
+<arg type='^I'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMGetGammaByAVID'>
+<arg type='L' type64='I'/>
+<arg type='^{CMVideoCardGamma=I(?={CMVideoCardGammaTable=SSS[1c]}{CMVideoCardGammaFormula=iiiiiiiii})}'/>
+<arg type='^I'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMGetIndNamedColorValue'>
+<arg type='^{OpaqueCMProfileRef=}'/>
+<arg type='L' type64='I'/>
+<arg type='^(CMColor={CMRGBColor=SSS}{CMHSVColor=SSS}{CMHLSColor=SSS}{CMXYZColor=SSS}{CMLabColor=SSS}{CMLuvColor=SSS}{CMYxyColor=SSS}{CMCMYKColor=SSSS}{CMCMYColor=SSS}{CMGrayColor=S}{CMMultichannel5Color=[5C]}{CMMultichannel6Color=[6C]}{CMMultichannel7Color=[7C]}{CMMultichannel8Color=[8C]}{CMNamedColor=I})'/>
+<arg type='^(CMColor={CMRGBColor=SSS}{CMHSVColor=SSS}{CMHLSColor=SSS}{CMXYZColor=SSS}{CMLabColor=SSS}{CMLuvColor=SSS}{CMYxyColor=SSS}{CMCMYKColor=SSSS}{CMCMYColor=SSS}{CMGrayColor=S}{CMMultichannel5Color=[5C]}{CMMultichannel6Color=[6C]}{CMMultichannel7Color=[7C]}{CMMultichannel8Color=[8C]}{CMNamedColor=I})'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMGetIndProfileElement'>
+<arg type='^{OpaqueCMProfileRef=}'/>
+<arg type='L' type64='I'/>
+<arg type='^I'/>
+<arg type='^v'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMGetIndProfileElementInfo'>
+<arg type='^{OpaqueCMProfileRef=}'/>
+<arg type='L' type64='I'/>
+<arg type='^I'/>
+<arg type='^I'/>
+<arg type='^B'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMGetNamedColorIndex'>
+<arg type='^{OpaqueCMProfileRef=}'/>
+<arg type='*'/>
+<arg type='^I'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMGetNamedColorInfo'>
+<arg type='^{OpaqueCMProfileRef=}'/>
+<arg type='^I'/>
+<arg type='^I'/>
+<arg type='^I'/>
+<arg type='^I'/>
+<arg type='*'/>
+<arg type='*'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMGetNamedColorName'>
+<arg type='^{OpaqueCMProfileRef=}'/>
+<arg type='L' type64='I'/>
+<arg type='*'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMGetNamedColorValue'>
+<arg type='^{OpaqueCMProfileRef=}'/>
+<arg type='*'/>
+<arg type='^(CMColor={CMRGBColor=SSS}{CMHSVColor=SSS}{CMHLSColor=SSS}{CMXYZColor=SSS}{CMLabColor=SSS}{CMLuvColor=SSS}{CMYxyColor=SSS}{CMCMYKColor=SSSS}{CMCMYColor=SSS}{CMGrayColor=S}{CMMultichannel5Color=[5C]}{CMMultichannel6Color=[6C]}{CMMultichannel7Color=[7C]}{CMMultichannel8Color=[8C]}{CMNamedColor=I})'/>
+<arg type='^(CMColor={CMRGBColor=SSS}{CMHSVColor=SSS}{CMHLSColor=SSS}{CMXYZColor=SSS}{CMLabColor=SSS}{CMLuvColor=SSS}{CMYxyColor=SSS}{CMCMYKColor=SSSS}{CMCMYColor=SSS}{CMGrayColor=S}{CMMultichannel5Color=[5C]}{CMMultichannel6Color=[6C]}{CMMultichannel7Color=[7C]}{CMMultichannel8Color=[8C]}{CMNamedColor=I})'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMGetPS2ColorRendering'>
+<arg type='^{OpaqueCMProfileRef=}'/>
+<arg type='^{OpaqueCMProfileRef=}'/>
+<arg type='L' type64='I'/>
+<arg function_pointer='true' type='^?'>
+<arg type='l' type64='i'/>
+<arg type='^l' type64='^q'/>
+<arg type='^v'/>
+<arg type='^v'/>
+<retval type='s'/>
+</arg>
+<arg type='^v'/>
+<arg type='^B'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMGetPS2ColorRenderingIntent'>
+<arg type='^{OpaqueCMProfileRef=}'/>
+<arg type='L' type64='I'/>
+<arg function_pointer='true' type='^?'>
+<arg type='l' type64='i'/>
+<arg type='^l' type64='^q'/>
+<arg type='^v'/>
+<arg type='^v'/>
+<retval type='s'/>
+</arg>
+<arg type='^v'/>
+<arg type='^B'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMGetPS2ColorRenderingVMSize'>
+<arg type='^{OpaqueCMProfileRef=}'/>
+<arg type='^{OpaqueCMProfileRef=}'/>
+<arg type='^I'/>
+<arg type='^B'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMGetPS2ColorSpace'>
+<arg type='^{OpaqueCMProfileRef=}'/>
+<arg type='L' type64='I'/>
+<arg function_pointer='true' type='^?'>
+<arg type='l' type64='i'/>
+<arg type='^l' type64='^q'/>
+<arg type='^v'/>
+<arg type='^v'/>
+<retval type='s'/>
+</arg>
+<arg type='^v'/>
+<arg type='^B'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMGetPartialProfileElement'>
+<arg type='^{OpaqueCMProfileRef=}'/>
+<arg type='L' type64='I'/>
+<arg type='L' type64='I'/>
+<arg type='^I'/>
+<arg type='^v'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMGetProfileByAVID'>
+<arg type='L' type64='I'/>
+<arg type='^^{OpaqueCMProfileRef}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMGetProfileDescriptions'>
+<arg type='^{OpaqueCMProfileRef=}'/>
+<arg type='*'/>
+<arg type='^I'/>
+<arg type='*'/>
+<arg type='^s'/>
+<arg type='^S'/>
+<arg type='^I' type64='^Q'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMGetProfileElement'>
+<arg type='^{OpaqueCMProfileRef=}'/>
+<arg type='L' type64='I'/>
+<arg type='^I'/>
+<arg type='^v'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMGetProfileHeader'>
+<arg type='^{OpaqueCMProfileRef=}'/>
+<arg type='^(CMAppleProfileHeader={CMHeader=IIIIIII[2L]IIII{CMXYZColor=SSS}{CMXYZColor=SSS}}{CM2Header=IIIIII{CMDateTime=SSSSSS}IIIII[2L]I{CMFixedXYZColor=iii}I[44c]}{CM4Header=IIIIII{CMDateTime=SSSSSS}IIIII[2L]I{CMFixedXYZColor=iii}I[16C][28c]})' type64='^(CMAppleProfileHeader={CM2Header=IIIIII{CMDateTime=SSSSSS}IIIII[2I]I{CMFixedXYZColor=iii}I[44c]}{CM4Header=IIIIII{CMDateTime=SSSSSS}IIIII[2I]I{CMFixedXYZColor=iii}I[16C][28c]})'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMGetProfileMD5'>
+<arg type='^{OpaqueCMProfileRef=}'/>
+<arg type='*'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMGetProfileRefCount'>
+<arg type='^{OpaqueCMProfileRef=}'/>
+<arg type='^l' type64='^q'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMGetSystemProfile'>
+<arg type='^^{OpaqueCMProfileRef}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMIterateCMMInfo'>
+<arg function_pointer='true' type='^?'>
+<arg type='^{CMMInfo=IIII[32C][256C]I[32S]I[256S]}' type64='^{CMMInfo=QIII[32C][256C]Q[32S]Q[256S]}'/>
+<arg type='^v'/>
+<retval type='s'/>
+</arg>
+<arg type='^I'/>
+<arg type='^v'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMIterateColorDevices'>
+<arg function_pointer='true' type='^?'>
+<arg type='^{CMDeviceInfo=III{CMDeviceScope=^{__CFString}^{__CFString}}II^^{__CFDictionary}II}'/>
+<arg type='^v'/>
+<retval type='s'/>
+</arg>
+<arg type='^I'/>
+<arg type='^I'/>
+<arg type='^v'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMIterateColorSyncFolder'>
+<arg function_pointer='true' type='^?'>
+<arg type='^{CMProfileIterateData=I{CM2Header=IIIIII{CMDateTime=SSSSSS}IIIII[2L]I{CMFixedXYZColor=iii}I[44c]}s[256C]{CMProfileLocation=s(CMProfLoc={CMFileLocation={FSSpec=si[64C]}}{CMHandleLocation=^*}{CMPtrLocation=*}{CMProcedureLocation=^?^v}{CMPathLocation=[256c]}{CMBufferLocation=^vI})}I^S*^{CMMakeAndModel}^[16C]}' type64='^{CMProfileIterateData=I{CM2Header=IIIIII{CMDateTime=SSSSSS}IIIII[2I]I{CMFixedXYZColor=iii}I[44c]}s[256C]{CMProfileLocation=s(CMProfLoc={CMHandleLocation=^*}{CMPathLocation=[1024c]}{CMBufferLocation=^vI})}Q^S*^{CMMakeAndModel}^[16C]}'/>
+<arg type='^v'/>
+<retval type='s'/>
+</arg>
+<arg type='^I'/>
+<arg type='^I'/>
+<arg type='^v'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMIterateDeviceProfiles'>
+<arg function_pointer='true' type='^?'>
+<arg type='^{CMDeviceInfo=III{CMDeviceScope=^{__CFString}^{__CFString}}II^^{__CFDictionary}II}'/>
+<arg type='^{NCMDeviceProfileInfo=II{CMProfileLocation=s(CMProfLoc={CMFileLocation={FSSpec=si[64C]}}{CMHandleLocation=^*}{CMPtrLocation=*}{CMProcedureLocation=^?^v}{CMPathLocation=[256c]}{CMBufferLocation=^vI})}^{__CFDictionary}{CMDeviceScope=^{__CFString}^{__CFString}}I}' type64='^{NCMDeviceProfileInfo=II{CMProfileLocation=s(CMProfLoc={CMHandleLocation=^*}{CMPathLocation=[1024c]}{CMBufferLocation=^vI})}^{__CFDictionary}{CMDeviceScope=^{__CFString}^{__CFString}}I}'/>
+<arg type='^v'/>
+<retval type='s'/>
+</arg>
+<arg type='^I'/>
+<arg type='^I'/>
+<arg type='L' type64='I'/>
+<arg type='^v'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMLaunchControlPanel'>
+<arg type='L' type64='I'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMM_CheckBitmap'>
+<arg type='^{OpaqueCMWorldRef=}'/>
+<arg type='^{CMBitmap=*IIIIIII}' type64='^{CMBitmap=*QQQQIII}'/>
+<arg function_pointer='true' type='^?'>
+<arg type='l' type64='i'/>
+<arg type='^v'/>
+<retval type='B'/>
+</arg>
+<arg type='^v'/>
+<arg type='^{CMBitmap=*IIIIIII}' type64='^{CMBitmap=*QQQQIII}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMM_CheckColors'>
+<arg type='^{OpaqueCMWorldRef=}'/>
+<arg type='^(CMColor={CMRGBColor=SSS}{CMHSVColor=SSS}{CMHLSColor=SSS}{CMXYZColor=SSS}{CMLabColor=SSS}{CMLuvColor=SSS}{CMYxyColor=SSS}{CMCMYKColor=SSSS}{CMCMYColor=SSS}{CMGrayColor=S}{CMMultichannel5Color=[5C]}{CMMultichannel6Color=[6C]}{CMMultichannel7Color=[7C]}{CMMultichannel8Color=[8C]}{CMNamedColor=I})'/>
+<arg type='L' type64='I'/>
+<arg type='*'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMM_ConcatColorWorld'>
+<arg type='^{OpaqueCMWorldRef=}'/>
+<arg type='^{NCMConcatProfileSet=IIII[1{NCMConcatProfileSpec=II^{OpaqueCMProfileRef}}]}'/>
+<arg function_pointer='true' type='^?'>
+<arg type='l' type64='i'/>
+<arg type='^v'/>
+<retval type='B'/>
+</arg>
+<arg type='^v'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMM_CreateLinkProfile'>
+<arg type='^{OpaqueCMProfileRef=}'/>
+<arg type='^{NCMConcatProfileSet=IIII[1{NCMConcatProfileSpec=II^{OpaqueCMProfileRef}}]}'/>
+<arg function_pointer='true' type='^?'>
+<arg type='l' type64='i'/>
+<arg type='^v'/>
+<retval type='B'/>
+</arg>
+<arg type='^v'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMM_GetProperty'>
+<arg type='^{OpaqueCMWorldRef=}'/>
+<arg type='^{__CFString=}'/>
+<retval type='@'/>
+</function>
+<function name='CMM_MatchBitmap'>
+<arg type='^{OpaqueCMWorldRef=}'/>
+<arg type='^{CMBitmap=*IIIIIII}' type64='^{CMBitmap=*QQQQIII}'/>
+<arg function_pointer='true' type='^?'>
+<arg type='l' type64='i'/>
+<arg type='^v'/>
+<retval type='B'/>
+</arg>
+<arg type='^v'/>
+<arg type='^{CMBitmap=*IIIIIII}' type64='^{CMBitmap=*QQQQIII}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMM_MatchColors'>
+<arg type='^{OpaqueCMWorldRef=}'/>
+<arg type='^(CMColor={CMRGBColor=SSS}{CMHSVColor=SSS}{CMHLSColor=SSS}{CMXYZColor=SSS}{CMLabColor=SSS}{CMLuvColor=SSS}{CMYxyColor=SSS}{CMCMYKColor=SSSS}{CMCMYColor=SSS}{CMGrayColor=S}{CMMultichannel5Color=[5C]}{CMMultichannel6Color=[6C]}{CMMultichannel7Color=[7C]}{CMMultichannel8Color=[8C]}{CMNamedColor=I})'/>
+<arg type='L' type64='I'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMM_MatchFloatBitmap'>
+<arg type='^{OpaqueCMWorldRef=}'/>
+<arg type='^{CMFloatBitmap=L[16^f]IIiiIi}' type64='^{CMFloatBitmap=Q[16^f]QQqqIi}'/>
+<arg type='^{CMFloatBitmap=L[16^f]IIiiIi}' type64='^{CMFloatBitmap=Q[16^f]QQqqIi}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMM_ValidateProfile'>
+<arg type='^{OpaqueCMProfileRef=}'/>
+<arg type='^B'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMMakeProfile'>
+<arg type='^{OpaqueCMProfileRef=}'/>
+<arg type='^{__CFDictionary=}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMMatchFloatBitmap'>
+<arg type='^{OpaqueCMWorldRef=}'/>
+<arg type='^{CMFloatBitmap=L[16^f]IIiiIi}' type64='^{CMFloatBitmap=Q[16^f]QQqqIi}'/>
+<arg type='^{CMFloatBitmap=L[16^f]IIiiIi}' type64='^{CMFloatBitmap=Q[16^f]QQqqIi}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMNewProfile'>
+<arg type='^^{OpaqueCMProfileRef}'/>
+<arg type='^{CMProfileLocation=s(CMProfLoc={CMFileLocation={FSSpec=si[64C]}}{CMHandleLocation=^*}{CMPtrLocation=*}{CMProcedureLocation=^?^v}{CMPathLocation=[256c]}{CMBufferLocation=^vI})}' type64='^{CMProfileLocation=s(CMProfLoc={CMHandleLocation=^*}{CMPathLocation=[1024c]}{CMBufferLocation=^vI})}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMOpenProfile'>
+<arg type='^^{OpaqueCMProfileRef}'/>
+<arg type='^{CMProfileLocation=s(CMProfLoc={CMFileLocation={FSSpec=si[64C]}}{CMHandleLocation=^*}{CMPtrLocation=*}{CMProcedureLocation=^?^v}{CMPathLocation=[256c]}{CMBufferLocation=^vI})}' type64='^{CMProfileLocation=s(CMProfLoc={CMHandleLocation=^*}{CMPathLocation=[1024c]}{CMBufferLocation=^vI})}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMProfileCopyICCData'>
+<arg type='^{__CFAllocator=}'/>
+<arg type='^{OpaqueCMProfileRef=}'/>
+<retval type='^{__CFData=}' already_retained='true'/>
+</function>
+<function name='CMProfileElementExists'>
+<arg type='^{OpaqueCMProfileRef=}'/>
+<arg type='L' type64='I'/>
+<arg type='^B'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMProfileModified'>
+<arg type='^{OpaqueCMProfileRef=}'/>
+<arg type='^B'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMRegisterColorDevice'>
+<arg type='L' type64='I'/>
+<arg type='L' type64='I'/>
+<arg type='^{__CFDictionary=}'/>
+<arg type='^{CMDeviceScope=^{__CFString}^{__CFString}}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMRemoveProfileElement'>
+<arg type='^{OpaqueCMProfileRef=}'/>
+<arg type='L' type64='I'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMSetDefaultDevice'>
+<arg type='L' type64='I'/>
+<arg type='L' type64='I'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMSetDeviceDefaultProfileID'>
+<arg type='L' type64='I'/>
+<arg type='L' type64='I'/>
+<arg type='L' type64='I'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMSetDeviceFactoryProfiles'>
+<arg type='L' type64='I'/>
+<arg type='L' type64='I'/>
+<arg type='L' type64='I'/>
+<arg type='^{CMDeviceProfileArray=I[1{CMDeviceProfileInfo=II{CMProfileLocation=s(CMProfLoc={CMFileLocation={FSSpec=si[64C]}}{CMHandleLocation=^*}{CMPtrLocation=*}{CMProcedureLocation=^?^v}{CMPathLocation=[256c]}{CMBufferLocation=^vI})}^{__CFDictionary}I}]}' type64='^{CMDeviceProfileArray=I[1{CMDeviceProfileInfo=II{CMProfileLocation=s(CMProfLoc={CMHandleLocation=^*}{CMPathLocation=[1024c]}{CMBufferLocation=^vI})}^{__CFDictionary}I}]}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMSetDeviceProfile'>
+<arg type='L' type64='I'/>
+<arg type='L' type64='I'/>
+<arg type='^{CMDeviceScope=^{__CFString}^{__CFString}}'/>
+<arg type='L' type64='I'/>
+<arg type='^{CMProfileLocation=s(CMProfLoc={CMFileLocation={FSSpec=si[64C]}}{CMHandleLocation=^*}{CMPtrLocation=*}{CMProcedureLocation=^?^v}{CMPathLocation=[256c]}{CMBufferLocation=^vI})}' type64='^{CMProfileLocation=s(CMProfLoc={CMHandleLocation=^*}{CMPathLocation=[1024c]}{CMBufferLocation=^vI})}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMSetDeviceState'>
+<arg type='L' type64='I'/>
+<arg type='L' type64='I'/>
+<arg type='L' type64='I'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMSetGammaByAVID'>
+<arg type='L' type64='I'/>
+<arg type='^{CMVideoCardGamma=I(?={CMVideoCardGammaTable=SSS[1c]}{CMVideoCardGammaFormula=iiiiiiiii})}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMSetPartialProfileElement'>
+<arg type='^{OpaqueCMProfileRef=}'/>
+<arg type='L' type64='I'/>
+<arg type='L' type64='I'/>
+<arg type='L' type64='I'/>
+<arg type='^v'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMSetProfileByAVID'>
+<arg type='L' type64='I'/>
+<arg type='^{OpaqueCMProfileRef=}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMSetProfileDescriptions'>
+<arg type='^{OpaqueCMProfileRef=}'/>
+<arg type='*'/>
+<arg type='L' type64='I'/>
+<arg type='*'/>
+<arg type='s'/>
+<arg type='^S'/>
+<arg type='L' type64='Q'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMSetProfileElement'>
+<arg type='^{OpaqueCMProfileRef=}'/>
+<arg type='L' type64='I'/>
+<arg type='L' type64='I'/>
+<arg type='^v'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMSetProfileElementReference'>
+<arg type='^{OpaqueCMProfileRef=}'/>
+<arg type='L' type64='I'/>
+<arg type='L' type64='I'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMSetProfileElementSize'>
+<arg type='^{OpaqueCMProfileRef=}'/>
+<arg type='L' type64='I'/>
+<arg type='L' type64='I'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMSetProfileHeader'>
+<arg type='^{OpaqueCMProfileRef=}'/>
+<arg type='^(CMAppleProfileHeader={CMHeader=IIIIIII[2L]IIII{CMXYZColor=SSS}{CMXYZColor=SSS}}{CM2Header=IIIIII{CMDateTime=SSSSSS}IIIII[2L]I{CMFixedXYZColor=iii}I[44c]}{CM4Header=IIIIII{CMDateTime=SSSSSS}IIIII[2L]I{CMFixedXYZColor=iii}I[16C][28c]})' type64='^(CMAppleProfileHeader={CM2Header=IIIIII{CMDateTime=SSSSSS}IIIII[2I]I{CMFixedXYZColor=iii}I[44c]}{CM4Header=IIIIII{CMDateTime=SSSSSS}IIIII[2I]I{CMFixedXYZColor=iii}I[16C][28c]})'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMSetProfileLocalizedStringDictionary'>
+<arg type='^{OpaqueCMProfileRef=}'/>
+<arg type='L' type64='I'/>
+<arg type='^{__CFDictionary=}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMUnregisterColorDevice'>
+<arg type='L' type64='I'/>
+<arg type='L' type64='I'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMUpdateProfile'>
+<arg type='^{OpaqueCMProfileRef=}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CMValidateProfile'>
+<arg type='^{OpaqueCMProfileRef=}'/>
+<arg type='^B'/>
+<arg type='^B'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CWCheckBitmap'>
+<arg type='^{OpaqueCMWorldRef=}'/>
+<arg type='^{CMBitmap=*IIIIIII}' type64='^{CMBitmap=*QQQQIII}'/>
+<arg function_pointer='true' type='^?'>
+<arg type='l' type64='i'/>
+<arg type='^v'/>
+<retval type='B'/>
+</arg>
+<arg type='^v'/>
+<arg type='^{CMBitmap=*IIIIIII}' type64='^{CMBitmap=*QQQQIII}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CWCheckColors'>
+<arg type='^{OpaqueCMWorldRef=}'/>
+<arg type='^(CMColor={CMRGBColor=SSS}{CMHSVColor=SSS}{CMHLSColor=SSS}{CMXYZColor=SSS}{CMLabColor=SSS}{CMLuvColor=SSS}{CMYxyColor=SSS}{CMCMYKColor=SSSS}{CMCMYColor=SSS}{CMGrayColor=S}{CMMultichannel5Color=[5C]}{CMMultichannel6Color=[6C]}{CMMultichannel7Color=[7C]}{CMMultichannel8Color=[8C]}{CMNamedColor=I})'/>
+<arg type='L' type64='Q'/>
+<arg type='*'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CWColorWorldGetProperty'>
+<arg type='^{OpaqueCMWorldRef=}'/>
+<arg type='^{__CFString=}'/>
+<retval type='^v'/>
+</function>
+<function name='CWColorWorldSetProperty'>
+<arg type='^{OpaqueCMWorldRef=}'/>
+<arg type='^{__CFString=}'/>
+<arg type='@'/>
+</function>
+<function name='CWDisposeColorWorld'>
+<arg type='^{OpaqueCMWorldRef=}'/>
+</function>
+<function name='CWFillLookupTexture'>
+<arg type='^{OpaqueCMWorldRef=}'/>
+<arg type='L' type64='I'/>
+<arg type='L' type64='I'/>
+<arg type='L' type64='I'/>
+<arg type='^v'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CWGetCMMSignature'>
+<arg type='^{OpaqueCMWorldRef=}'/>
+<retval type='L' type64='I'/>
+</function>
+<function name='CWMatchBitmap'>
+<arg type='^{OpaqueCMWorldRef=}'/>
+<arg type='^{CMBitmap=*IIIIIII}' type64='^{CMBitmap=*QQQQIII}'/>
+<arg function_pointer='true' type='^?'>
+<arg type='l' type64='i'/>
+<arg type='^v'/>
+<retval type='B'/>
+</arg>
+<arg type='^v'/>
+<arg type='^{CMBitmap=*IIIIIII}' type64='^{CMBitmap=*QQQQIII}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='CWMatchColors'>
+<arg type='^{OpaqueCMWorldRef=}'/>
+<arg type='^(CMColor={CMRGBColor=SSS}{CMHSVColor=SSS}{CMHLSColor=SSS}{CMXYZColor=SSS}{CMLabColor=SSS}{CMLuvColor=SSS}{CMYxyColor=SSS}{CMCMYKColor=SSSS}{CMCMYColor=SSS}{CMGrayColor=S}{CMMultichannel5Color=[5C]}{CMMultichannel6Color=[6C]}{CMMultichannel7Color=[7C]}{CMMultichannel8Color=[8C]}{CMNamedColor=I})'/>
+<arg type='L' type64='Q'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='ColorSyncCMMCopyCMMIdentifier'>
+<arg type='^{ColorSyncCMM=}'/>
+<retval type='^{__CFString=}' already_retained='true'/>
+</function>
+<function name='ColorSyncCMMCopyLocalizedName'>
+<arg type='^{ColorSyncCMM=}'/>
+<retval type='^{__CFString=}' already_retained='true'/>
+</function>
+<function name='ColorSyncCMMCreate'>
+<arg type='^{__CFBundle=}'/>
+<retval type='^{ColorSyncCMM=}' already_retained='true'/>
+</function>
+<function name='ColorSyncCMMGetBundle'>
+<arg type='^{ColorSyncCMM=}'/>
+<retval type='^{__CFBundle=}'/>
+</function>
+<function name='ColorSyncCMMGetTypeID'>
+<retval type='L' type64='Q'/>
+</function>
+<function name='ColorSyncDeviceCopyDeviceInfo'>
+<arg type='^{__CFString=}'/>
+<arg type='^{__CFUUID=}'/>
+<retval type='^{__CFDictionary=}' already_retained='true'/>
+</function>
+<function name='ColorSyncDeviceSetCustomProfiles'>
+<arg type='^{__CFString=}'/>
+<arg type='^{__CFUUID=}'/>
+<arg type='^{__CFDictionary=}'/>
+<retval type='B'/>
+</function>
+<function name='ColorSyncIterateDeviceProfiles'>
+<arg function_pointer='true' type='^?'>
+<arg type='^{__CFDictionary=}'/>
+<arg type='^v'/>
+<retval type='B'/>
+</arg>
+<arg type='^v'/>
+</function>
+<function name='ColorSyncIterateInstalledCMMs'>
+<arg function_pointer='true' type='^?'>
+<arg type='^{ColorSyncCMM=}'/>
+<arg type='^v'/>
+<retval type='B'/>
+</arg>
+<arg type='^v'/>
+</function>
+<function name='ColorSyncIterateInstalledProfiles'>
+<arg function_pointer='true' type='^?'>
+<arg type='^{__CFDictionary=}'/>
+<arg type='^v'/>
+<retval type='B'/>
+</arg>
+<arg type='^I'/>
+<arg type='^v'/>
+<arg type='^^{__CFError}'/>
+</function>
+<function name='ColorSyncProfileContainsTag'>
+<arg type='^{ColorSyncProfile=}'/>
+<arg type='^{__CFString=}'/>
+<retval type='B'/>
+</function>
+<function name='ColorSyncProfileCopyData'>
+<arg type='^{ColorSyncProfile=}'/>
+<arg type='^^{__CFError}'/>
+<retval type='^{__CFData=}' already_retained='true'/>
+</function>
+<function name='ColorSyncProfileCopyDescriptionString'>
+<arg type='^{ColorSyncProfile=}'/>
+<retval type='^{__CFString=}' already_retained='true'/>
+</function>
+<function name='ColorSyncProfileCopyHeader'>
+<arg type='^{ColorSyncProfile=}'/>
+<retval type='^{__CFData=}' already_retained='true'/>
+</function>
+<function name='ColorSyncProfileCopyTag'>
+<arg type='^{ColorSyncProfile=}'/>
+<arg type='^{__CFString=}'/>
+<retval type='^{__CFData=}' already_retained='true'/>
+</function>
+<function name='ColorSyncProfileCopyTagSignatures'>
+<arg type='^{ColorSyncProfile=}'/>
+<retval type='^{__CFArray=}' already_retained='true'/>
+</function>
+<function name='ColorSyncProfileCreate'>
+<arg type='^{__CFData=}'/>
+<arg type='^^{__CFError}'/>
+<retval type='^{ColorSyncProfile=}' already_retained='true'/>
+</function>
+<function name='ColorSyncProfileCreateDeviceProfile'>
+<arg type='^{__CFString=}'/>
+<arg type='^{__CFUUID=}'/>
+<arg type='@'/>
+<retval type='^{ColorSyncProfile=}' already_retained='true'/>
+</function>
+<function name='ColorSyncProfileCreateDisplayTransferTablesFromVCGT'>
+<arg type='^{ColorSyncProfile=}'/>
+<arg type='^I' type64='^Q'/>
+<retval type='^{__CFData=}' already_retained='true'/>
+</function>
+<function name='ColorSyncProfileCreateLink'>
+<arg type='^{__CFArray=}'/>
+<arg type='^{__CFDictionary=}'/>
+<retval type='^{ColorSyncProfile=}' already_retained='true'/>
+</function>
+<function name='ColorSyncProfileCreateMutable'>
+<retval type='^{ColorSyncProfile=}' already_retained='true'/>
+</function>
+<function name='ColorSyncProfileCreateMutableCopy'>
+<arg type='^{ColorSyncProfile=}'/>
+<retval type='^{ColorSyncProfile=}' already_retained='true'/>
+</function>
+<function name='ColorSyncProfileCreateWithDisplayID'>
+<arg type='I'/>
+<retval type='^{ColorSyncProfile=}' already_retained='true'/>
+</function>
+<function name='ColorSyncProfileCreateWithName'>
+<arg type='^{__CFString=}'/>
+<retval type='^{ColorSyncProfile=}' already_retained='true'/>
+</function>
+<function name='ColorSyncProfileCreateWithURL'>
+<arg type='^{__CFURL=}'/>
+<arg type='^^{__CFError}'/>
+<retval type='^{ColorSyncProfile=}' already_retained='true'/>
+</function>
+<function name='ColorSyncProfileEstimateGamma'>
+<arg type='^{ColorSyncProfile=}'/>
+<arg type='^^{__CFError}'/>
+<retval type='f'/>
+</function>
+<function name='ColorSyncProfileEstimateGammaWithDisplayID'>
+<arg type='i'/>
+<arg type='^^{__CFError}'/>
+<retval type='f'/>
+</function>
+<function name='ColorSyncProfileGetDisplayTransferFormulaFromVCGT'>
+<arg type='^{ColorSyncProfile=}'/>
+<arg type='^f'/>
+<arg type='^f'/>
+<arg type='^f'/>
+<arg type='^f'/>
+<arg type='^f'/>
+<arg type='^f'/>
+<arg type='^f'/>
+<arg type='^f'/>
+<arg type='^f'/>
+<retval type='B'/>
+</function>
+<function name='ColorSyncProfileGetMD5'>
+<arg type='^{ColorSyncProfile=}'/>
+<retval type='{_ColorSyncMD5=[16C]}'/>
+</function>
+<function name='ColorSyncProfileGetTypeID'>
+<retval type='L' type64='Q'/>
+</function>
+<function name='ColorSyncProfileGetURL'>
+<arg type='^{ColorSyncProfile=}'/>
+<arg type='^^{__CFError}'/>
+<retval type='^{__CFURL=}'/>
+</function>
+<function name='ColorSyncProfileRemoveTag'>
+<arg type='^{ColorSyncProfile=}'/>
+<arg type='^{__CFString=}'/>
+</function>
+<function name='ColorSyncProfileSetHeader'>
+<arg type='^{ColorSyncProfile=}'/>
+<arg type='^{__CFData=}'/>
+</function>
+<function name='ColorSyncProfileSetTag'>
+<arg type='^{ColorSyncProfile=}'/>
+<arg type='^{__CFString=}'/>
+<arg type='^{__CFData=}'/>
+</function>
+<function name='ColorSyncProfileVerify'>
+<arg type='^{ColorSyncProfile=}'/>
+<arg type='^^{__CFError}'/>
+<arg type='^^{__CFError}'/>
+<retval type='B'/>
+</function>
+<function name='ColorSyncRegisterDevice'>
+<arg type='^{__CFString=}'/>
+<arg type='^{__CFUUID=}'/>
+<arg type='^{__CFDictionary=}'/>
+<retval type='B'/>
+</function>
+<function name='ColorSyncTransformConvert'>
+<arg type='^{ColorSyncTransform=}'/>
+<arg type='L' type64='Q'/>
+<arg type='L' type64='Q'/>
+<arg type='^v'/>
+<arg type='i'/>
+<arg type='I'/>
+<arg type='L' type64='Q'/>
+<arg type='^v'/>
+<arg type='i'/>
+<arg type='I'/>
+<arg type='L' type64='Q'/>
+<arg type='^{__CFDictionary=}'/>
+<retval type='B'/>
+</function>
+<function name='ColorSyncTransformCopyProperty'>
+<arg type='^{ColorSyncTransform=}'/>
+<arg type='@'/>
+<arg type='^{__CFDictionary=}'/>
+<retval type='@' already_retained='true'/>
+</function>
+<function name='ColorSyncTransformCreate'>
+<arg type='^{__CFArray=}'/>
+<arg type='^{__CFDictionary=}'/>
+<retval type='^{ColorSyncTransform=}' already_retained='true'/>
+</function>
+<function name='ColorSyncTransformGetTypeID'>
+<retval type='L' type64='Q'/>
+</function>
+<function name='ColorSyncTransformSetProperty'>
+<arg type='^{ColorSyncTransform=}'/>
+<arg type='@'/>
+<arg type='@'/>
+</function>
+<function name='ColorSyncUnregisterDevice'>
+<arg type='^{__CFString=}'/>
+<arg type='^{__CFUUID=}'/>
+<retval type='B'/>
+</function>
+<function inline='true' name='DisposeCMBitmapCallBackUPP'>
+<arg function_pointer='true' type='^?'>
+<arg type='l' type64='i'/>
+<arg type='^v'/>
+<retval type='B'/>
+</arg>
+</function>
+<function inline='true' name='DisposeCMConcatCallBackUPP'>
+<arg function_pointer='true' type='^?'>
+<arg type='l' type64='i'/>
+<arg type='^v'/>
+<retval type='B'/>
+</arg>
+</function>
+<function inline='true' name='DisposeCMFlattenUPP'>
+<arg function_pointer='true' type='^?'>
+<arg type='l' type64='i'/>
+<arg type='^l' type64='^q'/>
+<arg type='^v'/>
+<arg type='^v'/>
+<retval type='s'/>
+</arg>
+</function>
+<function inline='true' name='DisposeCMMIterateUPP'>
+<arg function_pointer='true' type='^?'>
+<arg type='^{CMMInfo=IIII[32C][256C]I[32S]I[256S]}' type64='^{CMMInfo=QIII[32C][256C]Q[32S]Q[256S]}'/>
+<arg type='^v'/>
+<retval type='s'/>
+</arg>
+</function>
+<function inline='true' name='DisposeCMProfileIterateUPP'>
+<arg function_pointer='true' type='^?'>
+<arg type='^{CMProfileIterateData=I{CM2Header=IIIIII{CMDateTime=SSSSSS}IIIII[2L]I{CMFixedXYZColor=iii}I[44c]}s[256C]{CMProfileLocation=s(CMProfLoc={CMFileLocation={FSSpec=si[64C]}}{CMHandleLocation=^*}{CMPtrLocation=*}{CMProcedureLocation=^?^v}{CMPathLocation=[256c]}{CMBufferLocation=^vI})}I^S*^{CMMakeAndModel}^[16C]}' type64='^{CMProfileIterateData=I{CM2Header=IIIIII{CMDateTime=SSSSSS}IIIII[2I]I{CMFixedXYZColor=iii}I[44c]}s[256C]{CMProfileLocation=s(CMProfLoc={CMHandleLocation=^*}{CMPathLocation=[1024c]}{CMBufferLocation=^vI})}Q^S*^{CMMakeAndModel}^[16C]}'/>
+<arg type='^v'/>
+<retval type='s'/>
+</arg>
+</function>
+<function inline='true' name='InvokeCMBitmapCallBackUPP'>
+<arg type='l' type64='i'/>
+<arg type='^v'/>
+<arg function_pointer='true' type='^?'>
+<arg type='l' type64='i'/>
+<arg type='^v'/>
+<retval type='B'/>
+</arg>
+<retval type='B'/>
+</function>
+<function inline='true' name='InvokeCMConcatCallBackUPP'>
+<arg type='l' type64='i'/>
+<arg type='^v'/>
+<arg function_pointer='true' type='^?'>
+<arg type='l' type64='i'/>
+<arg type='^v'/>
+<retval type='B'/>
+</arg>
+<retval type='B'/>
+</function>
+<function inline='true' name='InvokeCMFlattenUPP'>
+<arg type='l' type64='i'/>
+<arg type='^l' type64='^q'/>
+<arg type='^v'/>
+<arg type='^v'/>
+<arg function_pointer='true' type='^?'>
+<arg type='l' type64='i'/>
+<arg type='^l' type64='^q'/>
+<arg type='^v'/>
+<arg type='^v'/>
+<retval type='s'/>
+</arg>
+<retval type='s'/>
+</function>
+<function inline='true' name='InvokeCMMIterateUPP'>
+<arg type='^{CMMInfo=IIII[32C][256C]I[32S]I[256S]}' type64='^{CMMInfo=QIII[32C][256C]Q[32S]Q[256S]}'/>
+<arg type='^v'/>
+<arg function_pointer='true' type='^?'>
+<arg type='^{CMMInfo=IIII[32C][256C]I[32S]I[256S]}' type64='^{CMMInfo=QIII[32C][256C]Q[32S]Q[256S]}'/>
+<arg type='^v'/>
+<retval type='s'/>
+</arg>
+<retval type='s'/>
+</function>
+<function inline='true' name='InvokeCMProfileIterateUPP'>
+<arg type='^{CMProfileIterateData=I{CM2Header=IIIIII{CMDateTime=SSSSSS}IIIII[2L]I{CMFixedXYZColor=iii}I[44c]}s[256C]{CMProfileLocation=s(CMProfLoc={CMFileLocation={FSSpec=si[64C]}}{CMHandleLocation=^*}{CMPtrLocation=*}{CMProcedureLocation=^?^v}{CMPathLocation=[256c]}{CMBufferLocation=^vI})}I^S*^{CMMakeAndModel}^[16C]}' type64='^{CMProfileIterateData=I{CM2Header=IIIIII{CMDateTime=SSSSSS}IIIII[2I]I{CMFixedXYZColor=iii}I[44c]}s[256C]{CMProfileLocation=s(CMProfLoc={CMHandleLocation=^*}{CMPathLocation=[1024c]}{CMBufferLocation=^vI})}Q^S*^{CMMakeAndModel}^[16C]}'/>
+<arg type='^v'/>
+<arg function_pointer='true' type='^?'>
+<arg type='^{CMProfileIterateData=I{CM2Header=IIIIII{CMDateTime=SSSSSS}IIIII[2L]I{CMFixedXYZColor=iii}I[44c]}s[256C]{CMProfileLocation=s(CMProfLoc={CMFileLocation={FSSpec=si[64C]}}{CMHandleLocation=^*}{CMPtrLocation=*}{CMProcedureLocation=^?^v}{CMPathLocation=[256c]}{CMBufferLocation=^vI})}I^S*^{CMMakeAndModel}^[16C]}' type64='^{CMProfileIterateData=I{CM2Header=IIIIII{CMDateTime=SSSSSS}IIIII[2I]I{CMFixedXYZColor=iii}I[44c]}s[256C]{CMProfileLocation=s(CMProfLoc={CMHandleLocation=^*}{CMPathLocation=[1024c]}{CMBufferLocation=^vI})}Q^S*^{CMMakeAndModel}^[16C]}'/>
+<arg type='^v'/>
+<retval type='s'/>
+</arg>
+<retval type='s'/>
+</function>
+<function name='NCMGetProfileLocation'>
+<arg type='^{OpaqueCMProfileRef=}'/>
+<arg type='^{CMProfileLocation=s(CMProfLoc={CMFileLocation={FSSpec=si[64C]}}{CMHandleLocation=^*}{CMPtrLocation=*}{CMProcedureLocation=^?^v}{CMPathLocation=[256c]}{CMBufferLocation=^vI})}' type64='^{CMProfileLocation=s(CMProfLoc={CMHandleLocation=^*}{CMPathLocation=[1024c]}{CMBufferLocation=^vI})}'/>
+<arg type='^I'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='NCWConcatColorWorld'>
+<arg type='^^{OpaqueCMWorldRef}'/>
+<arg type='^{NCMConcatProfileSet=IIII[1{NCMConcatProfileSpec=II^{OpaqueCMProfileRef}}]}'/>
+<arg function_pointer='true' type='^?'>
+<arg type='l' type64='i'/>
+<arg type='^v'/>
+<retval type='B'/>
+</arg>
+<arg type='^v'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='NCWNewColorWorld'>
+<arg type='^^{OpaqueCMWorldRef}'/>
+<arg type='^{OpaqueCMProfileRef=}'/>
+<arg type='^{OpaqueCMProfileRef=}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='NCWNewLinkProfile'>
+<arg type='^^{OpaqueCMProfileRef}'/>
+<arg type='^{CMProfileLocation=s(CMProfLoc={CMFileLocation={FSSpec=si[64C]}}{CMHandleLocation=^*}{CMPtrLocation=*}{CMProcedureLocation=^?^v}{CMPathLocation=[256c]}{CMBufferLocation=^vI})}' type64='^{CMProfileLocation=s(CMProfLoc={CMHandleLocation=^*}{CMPathLocation=[1024c]}{CMBufferLocation=^vI})}'/>
+<arg type='^{NCMConcatProfileSet=IIII[1{NCMConcatProfileSpec=II^{OpaqueCMProfileRef}}]}'/>
+<arg function_pointer='true' type='^?'>
+<arg type='l' type64='i'/>
+<arg type='^v'/>
+<retval type='B'/>
+</arg>
+<arg type='^v'/>
+<retval type='l' type64='i'/>
+</function>
+<function inline='true' name='NewCMBitmapCallBackUPP'>
+<arg function_pointer='true' type='^?'>
+<arg type='l' type64='i'/>
+<arg type='^v'/>
+<retval type='B'/>
+</arg>
+<retval function_pointer='true' type='^?'>
+<arg type='l' type64='i'/>
+<arg type='^v'/>
+<retval type='B'/>
+</retval>
+</function>
+<function inline='true' name='NewCMConcatCallBackUPP'>
+<arg function_pointer='true' type='^?'>
+<arg type='l' type64='i'/>
+<arg type='^v'/>
+<retval type='B'/>
+</arg>
+<retval function_pointer='true' type='^?'>
+<arg type='l' type64='i'/>
+<arg type='^v'/>
+<retval type='B'/>
+</retval>
+</function>
+<function inline='true' name='NewCMFlattenUPP'>
+<arg function_pointer='true' type='^?'>
+<arg type='l' type64='i'/>
+<arg type='^l' type64='^q'/>
+<arg type='^v'/>
+<arg type='^v'/>
+<retval type='s'/>
+</arg>
+<retval function_pointer='true' type='^?'>
+<arg type='l' type64='i'/>
+<arg type='^l' type64='^q'/>
+<arg type='^v'/>
+<arg type='^v'/>
+<retval type='s'/>
+</retval>
+</function>
+<function inline='true' name='NewCMMIterateUPP'>
+<arg function_pointer='true' type='^?'>
+<arg type='^{CMMInfo=IIII[32C][256C]I[32S]I[256S]}' type64='^{CMMInfo=QIII[32C][256C]Q[32S]Q[256S]}'/>
+<arg type='^v'/>
+<retval type='s'/>
+</arg>
+<retval function_pointer='true' type='^?'>
+<arg type='^{CMMInfo=IIII[32C][256C]I[32S]I[256S]}' type64='^{CMMInfo=QIII[32C][256C]Q[32S]Q[256S]}'/>
+<arg type='^v'/>
+<retval type='s'/>
+</retval>
+</function>
+<function inline='true' name='NewCMProfileIterateUPP'>
+<arg function_pointer='true' type='^?'>
+<arg type='^{CMProfileIterateData=I{CM2Header=IIIIII{CMDateTime=SSSSSS}IIIII[2L]I{CMFixedXYZColor=iii}I[44c]}s[256C]{CMProfileLocation=s(CMProfLoc={CMFileLocation={FSSpec=si[64C]}}{CMHandleLocation=^*}{CMPtrLocation=*}{CMProcedureLocation=^?^v}{CMPathLocation=[256c]}{CMBufferLocation=^vI})}I^S*^{CMMakeAndModel}^[16C]}' type64='^{CMProfileIterateData=I{CM2Header=IIIIII{CMDateTime=SSSSSS}IIIII[2I]I{CMFixedXYZColor=iii}I[44c]}s[256C]{CMProfileLocation=s(CMProfLoc={CMHandleLocation=^*}{CMPathLocation=[1024c]}{CMBufferLocation=^vI})}Q^S*^{CMMakeAndModel}^[16C]}'/>
+<arg type='^v'/>
+<retval type='s'/>
+</arg>
+<retval function_pointer='true' type='^?'>
+<arg type='^{CMProfileIterateData=I{CM2Header=IIIIII{CMDateTime=SSSSSS}IIIII[2L]I{CMFixedXYZColor=iii}I[44c]}s[256C]{CMProfileLocation=s(CMProfLoc={CMFileLocation={FSSpec=si[64C]}}{CMHandleLocation=^*}{CMPtrLocation=*}{CMProcedureLocation=^?^v}{CMPathLocation=[256c]}{CMBufferLocation=^vI})}I^S*^{CMMakeAndModel}^[16C]}' type64='^{CMProfileIterateData=I{CM2Header=IIIIII{CMDateTime=SSSSSS}IIIII[2I]I{CMFixedXYZColor=iii}I[44c]}s[256C]{CMProfileLocation=s(CMProfLoc={CMHandleLocation=^*}{CMPathLocation=[1024c]}{CMBufferLocation=^vI})}Q^S*^{CMMakeAndModel}^[16C]}'/>
+<arg type='^v'/>
+<retval type='s'/>
+</retval>
+</function>
+</signatures>

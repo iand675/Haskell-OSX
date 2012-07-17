@@ -1,0 +1,81 @@
+<?xml version='1.0'?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version='1.0'>
+<depends_on path='/System/Library/Frameworks/SystemConfiguration.framework'/>
+<depends_on path='/System/Library/Frameworks/CoreFoundation.framework'/>
+<depends_on path='/System/Library/Frameworks/DiskArbitration.framework'/>
+<struct name='NetFSInterface' type='{_NetFSInterface=&quot;_interface&quot;^v&quot;_factoryID&quot;^{__CFUUID}&quot;_refCount&quot;I}'/>
+<struct name='NetFSMountInterface_V1' type='{NetFSMountInterface_V1=&quot;_reserved&quot;^v&quot;QueryInterface&quot;^?&quot;AddRef&quot;^?&quot;Release&quot;^?&quot;CreateSessionRef&quot;^?&quot;GetServerInfo&quot;^?&quot;ParseURL&quot;^?&quot;CreateURL&quot;^?&quot;OpenSession&quot;^?&quot;EnumerateShares&quot;^?&quot;Mount&quot;^?&quot;Cancel&quot;^?&quot;CloseSession&quot;^?&quot;GetMountInfo&quot;^?}'/>
+<string_constant name='kNetFSAccessRightsKey' value='AccessRights' nsstring='true'/>
+<string_constant name='kNetFSAllowLoopbackKey' value='AllowLoopback' nsstring='true'/>
+<string_constant name='kNetFSAllowSubMountsKey' value='AllowSubMounts' nsstring='true'/>
+<string_constant name='kNetFSAlreadyMountedKey' value='AlreadyMounted' nsstring='true'/>
+<string_constant name='kNetFSAlternatePortKey' value='AlternatePort' nsstring='true'/>
+<string_constant name='kNetFSAuthenticationInfoKey' value='AuthenticationInfo' nsstring='true'/>
+<string_constant name='kNetFSAuthorityParamsKey' value='AuthorityParams' nsstring='true'/>
+<string_constant name='kNetFSChangePasswordKey' value='ChangePassword' nsstring='true'/>
+<string_constant name='kNetFSConnectedAsGuestKey' value='MountedByGuest' nsstring='true'/>
+<string_constant name='kNetFSConnectedAsUserKey' value='MountedByUser' nsstring='true'/>
+<string_constant name='kNetFSConnectedMultiUserKey' value='ConnectedMultiUser' nsstring='true'/>
+<string_constant name='kNetFSConnectedWithAuthenticationInfoKey' value='ConnectedWithAuthenticationInfo' nsstring='true'/>
+<string_constant name='kNetFSDisplayNameKey' value='DisplayName' nsstring='true'/>
+<string_constant name='kNetFSForceNewSessionKey' value='ForceNewSession' nsstring='true'/>
+<string_constant name='kNetFSGetAccessRightsKey' value='GetAccessRights' nsstring='true'/>
+<string_constant name='kNetFSGuestOnlyKey' value='GuestOnly' nsstring='true'/>
+<string_constant name='kNetFSHasPasswordKey' value='HasPassword' nsstring='true'/>
+<string_constant name='kNetFSHostKey' value='Host' nsstring='true'/>
+<string_constant name='kNetFSIsHiddenKey' value='IsHidden' nsstring='true'/>
+<string_constant name='kNetFSMechTypesSupportedKey' value='MechTypesSupported' nsstring='true'/>
+<string_constant name='kNetFSMountFlagsKey' value='MountFlags' nsstring='true'/>
+<string_constant name='kNetFSMountPathKey' value='MountPath' nsstring='true'/>
+<string_constant name='kNetFSMountedByGuestKey' value='MountedByGuest' nsstring='true'/>
+<string_constant name='kNetFSMountedByKerberosKey' value='MountedByKerberos' nsstring='true'/>
+<string_constant name='kNetFSMountedByUserKey' value='MountedByUser' nsstring='true'/>
+<string_constant name='kNetFSMountedMultiUserKey' value='MountedMultiUser' nsstring='true'/>
+<string_constant name='kNetFSMountedURLKey' value='MountedURL' nsstring='true'/>
+<string_constant name='kNetFSMountedWithAuthenticationInfoKey' value='MountedWithAuthenticationInfo' nsstring='true'/>
+<string_constant name='kNetFSNoMountAuthenticationKey' value='NoMountAuthentication' nsstring='true'/>
+<string_constant name='kNetFSNoUserPreferencesKey' value='NoUserPreferences' nsstring='true'/>
+<string_constant name='kNetFSPasswordKey' value='Password' nsstring='true'/>
+<string_constant name='kNetFSPathKey' value='Path' nsstring='true'/>
+<string_constant name='kNetFSPrinterShareKey' value='PrinterShare' nsstring='true'/>
+<string_constant name='kNetFSSchemeKey' value='Scheme' nsstring='true'/>
+<string_constant name='kNetFSServerDisplayNameKey' value='ServerDisplayName' nsstring='true'/>
+<string_constant name='kNetFSSoftMountKey' value='SoftMount' nsstring='true'/>
+<string_constant name='kNetFSSupportsChangePasswordKey' value='SupportsChangePassword' nsstring='true'/>
+<string_constant name='kNetFSSupportsGuestKey' value='SupportsGuest' nsstring='true'/>
+<string_constant name='kNetFSSupportsKerberosKey' value='SupportsKerberos' nsstring='true'/>
+<string_constant name='kNetFSUseAuthenticationInfoKey' value='UseAuthenticationInfo' nsstring='true'/>
+<string_constant name='kNetFSUseGuestKey' value='Guest' nsstring='true'/>
+<string_constant name='kNetFSUseKerberosKey' value='Kerberos' nsstring='true'/>
+<string_constant name='kNetFSUserNameKey' value='UserName' nsstring='true'/>
+<enum name='ENETFSACCOUNTRESTRICTED' value='-5999'/>
+<enum name='ENETFSNOAUTHMECHSUPP' value='-5997'/>
+<enum name='ENETFSNOPROTOVERSSUPP' value='-5996'/>
+<enum name='ENETFSNOSHARESAVAIL' value='-5998'/>
+<enum name='ENETFSPWDNEEDSCHANGE' value='-5045'/>
+<enum name='ENETFSPWDPOLICY' value='-5046'/>
+<function name='NetFSCFStringtoCString'>
+<arg type='^{__CFString=}'/>
+<retval type='*'/>
+</function>
+<function name='NetFSInterface_AddRef'>
+<arg type='^v'/>
+<retval type64='I' type='L'/>
+</function>
+<function name='NetFSInterface_Release'>
+<arg type='^v'/>
+<retval type64='I' type='L'/>
+</function>
+<function name='NetFSQueryInterface'>
+<arg type='^v'/>
+<arg type='{_REFIID=CCCCCCCCCCCCCCCC}'/>
+<arg type='^^v'/>
+<retval type64='i' type='l'/>
+</function>
+<function name='NetFS_CreateInterface'>
+<arg type='^{__CFUUID=}'/>
+<arg type='^v'/>
+<retval type='^{_NetFSInterface=^v^{__CFUUID}I}'/>
+</function>
+</signatures>

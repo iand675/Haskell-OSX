@@ -1,0 +1,1945 @@
+<?xml version='1.0'?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version='1.0'>
+<depends_on path='/System/Library/Frameworks/Carbon.framework'/>
+<depends_on path='/System/Library/Frameworks/Cocoa.framework'/>
+<depends_on path='/System/Library/Frameworks/IOKit.framework'/>
+<depends_on path='/System/Library/Frameworks/JavaScriptCore.framework'/>
+<depends_on path='/System/Library/Frameworks/OpenGL.framework'/>
+<depends_on path='/System/Library/Frameworks/QuartzCore.framework'/>
+<depends_on path='/System/Library/Frameworks/Security.framework'/>
+<depends_on path='/System/Library/Frameworks/WebKit.framework/Versions/A/Frameworks/WebCore.framework'/>
+<depends_on path='/System/Library/Frameworks/CoreServices.framework'/>
+<depends_on path='/System/Library/Frameworks/CoreFoundation.framework'/>
+<depends_on path='/System/Library/Frameworks/ApplicationServices.framework'/>
+<depends_on path='/System/Library/Frameworks/Foundation.framework'/>
+<depends_on path='/System/Library/Frameworks/AppKit.framework'/>
+<struct type='{_NPByteRange=&quot;offset&quot;i&quot;length&quot;I&quot;next&quot;^{_NPByteRange}}' name='NPByteRange'/>
+<struct type='{NPClass=&quot;structVersion&quot;I&quot;allocate&quot;^?&quot;deallocate&quot;^?&quot;invalidate&quot;^?&quot;hasMethod&quot;^?&quot;invoke&quot;^?&quot;invokeDefault&quot;^?&quot;hasProperty&quot;^?&quot;getProperty&quot;^?&quot;setProperty&quot;^?&quot;removeProperty&quot;^?&quot;enumerate&quot;^?&quot;construct&quot;^?}' name='NPClass'/>
+<struct type='{_NPCocoaEvent=&quot;type&quot;i&quot;version&quot;I&quot;data&quot;(?=&quot;mouse&quot;{?=&quot;modifierFlags&quot;I&quot;pluginX&quot;d&quot;pluginY&quot;d&quot;buttonNumber&quot;i&quot;clickCount&quot;i&quot;deltaX&quot;d&quot;deltaY&quot;d&quot;deltaZ&quot;d}&quot;key&quot;{?=&quot;modifierFlags&quot;I&quot;characters&quot;^{_NPNSString}&quot;charactersIgnoringModifiers&quot;^{_NPNSString}&quot;isARepeat&quot;C&quot;keyCode&quot;S}&quot;draw&quot;{?=&quot;context&quot;^{CGContext}&quot;x&quot;d&quot;y&quot;d&quot;width&quot;d&quot;height&quot;d}&quot;focus&quot;{?=&quot;hasFocus&quot;C}&quot;text&quot;{?=&quot;text&quot;^{_NPNSString}})}' name='NPCocoaEvent'/>
+<struct type='{_NPEmbedPrint=&quot;window&quot;{_NPWindow=&quot;window&quot;^v&quot;x&quot;i&quot;y&quot;i&quot;width&quot;I&quot;height&quot;I&quot;clipRect&quot;{_NPRect=&quot;top&quot;S&quot;left&quot;S&quot;bottom&quot;S&quot;right&quot;S}&quot;type&quot;i}&quot;platformPrint&quot;^v}' name='NPEmbedPrint'/>
+<struct type='{_NPFullPrint=&quot;pluginPrinted&quot;C&quot;printOne&quot;C&quot;platformPrint&quot;^v}' name='NPFullPrint'/>
+<struct type='{_NPImageExpose=&quot;data&quot;*&quot;stride&quot;i&quot;depth&quot;i&quot;x&quot;i&quot;y&quot;i&quot;width&quot;I&quot;height&quot;I&quot;dataSize&quot;{_NPSize=&quot;width&quot;i&quot;height&quot;i}&quot;translateX&quot;f&quot;translateY&quot;f&quot;scaleX&quot;f&quot;scaleY&quot;f}' name='NPImageExpose'/>
+<struct type='{_NPNetscapeFuncs=&quot;size&quot;S&quot;version&quot;S&quot;geturl&quot;^?&quot;posturl&quot;^?&quot;requestread&quot;^?&quot;newstream&quot;^?&quot;write&quot;^?&quot;destroystream&quot;^?&quot;status&quot;^?&quot;uagent&quot;^?&quot;memalloc&quot;^?&quot;memfree&quot;^?&quot;memflush&quot;^?&quot;reloadplugins&quot;^?&quot;getJavaEnv&quot;^?&quot;getJavaPeer&quot;^?&quot;geturlnotify&quot;^?&quot;posturlnotify&quot;^?&quot;getvalue&quot;^?&quot;setvalue&quot;^?&quot;invalidaterect&quot;^?&quot;invalidateregion&quot;^?&quot;forceredraw&quot;^?&quot;getstringidentifier&quot;^?&quot;getstringidentifiers&quot;^?&quot;getintidentifier&quot;^?&quot;identifierisstring&quot;^?&quot;utf8fromidentifier&quot;^?&quot;intfromidentifier&quot;^?&quot;createobject&quot;^?&quot;retainobject&quot;^?&quot;releaseobject&quot;^?&quot;invoke&quot;^?&quot;invokeDefault&quot;^?&quot;evaluate&quot;^?&quot;getproperty&quot;^?&quot;setproperty&quot;^?&quot;removeproperty&quot;^?&quot;hasproperty&quot;^?&quot;hasmethod&quot;^?&quot;releasevariantvalue&quot;^?&quot;setexception&quot;^?&quot;pushpopupsenabledstate&quot;^?&quot;poppopupsenabledstate&quot;^?&quot;enumerate&quot;^?&quot;pluginthreadasynccall&quot;^?&quot;construct&quot;^?&quot;getvalueforurl&quot;^?&quot;setvalueforurl&quot;^?&quot;getauthenticationinfo&quot;^?&quot;scheduletimer&quot;^?&quot;unscheduletimer&quot;^?&quot;popupcontextmenu&quot;^?&quot;convertpoint&quot;^?}' name='NPNetscapeFuncs'/>
+<struct type='{NPObject=&quot;_class&quot;^{NPClass}&quot;referenceCount&quot;I}' name='NPObject'/>
+<struct type='{_NPP=&quot;pdata&quot;^v&quot;ndata&quot;^v}' name='NPP_t'/>
+<struct type='{_NPPluginFuncs=&quot;size&quot;S&quot;version&quot;S&quot;newp&quot;^?&quot;destroy&quot;^?&quot;setwindow&quot;^?&quot;newstream&quot;^?&quot;destroystream&quot;^?&quot;asfile&quot;^?&quot;writeready&quot;^?&quot;write&quot;^?&quot;print&quot;^?&quot;event&quot;^?&quot;urlnotify&quot;^?&quot;javaClass&quot;^v&quot;getvalue&quot;^?&quot;setvalue&quot;^?&quot;gotfocus&quot;^?&quot;lostfocus&quot;^?&quot;urlredirectnotify&quot;^?&quot;clearsitedata&quot;^?&quot;getsiteswithdata&quot;^?}' name='NPPluginFuncs'/>
+<struct type='{_NPPrint=&quot;mode&quot;S&quot;print&quot;(?=&quot;fullPrint&quot;{_NPFullPrint=&quot;pluginPrinted&quot;C&quot;printOne&quot;C&quot;platformPrint&quot;^v}&quot;embedPrint&quot;{_NPEmbedPrint=&quot;window&quot;{_NPWindow=&quot;window&quot;^v&quot;x&quot;i&quot;y&quot;i&quot;width&quot;I&quot;height&quot;I&quot;clipRect&quot;{_NPRect=&quot;top&quot;S&quot;left&quot;S&quot;bottom&quot;S&quot;right&quot;S}&quot;type&quot;i}&quot;platformPrint&quot;^v})}' name='NPPrint'/>
+<struct type='{_NPRect=&quot;top&quot;S&quot;left&quot;S&quot;bottom&quot;S&quot;right&quot;S}' name='NPRect'/>
+<struct type='{_NPSavedData=&quot;len&quot;i&quot;buf&quot;^v}' name='NPSavedData'/>
+<struct type='{_NPSize=&quot;width&quot;i&quot;height&quot;i}' name='NPSize'/>
+<struct type='{_NPStream=&quot;pdata&quot;^v&quot;ndata&quot;^v&quot;url&quot;*&quot;end&quot;I&quot;lastmodified&quot;I&quot;notifyData&quot;^v&quot;headers&quot;*}' name='NPStream'/>
+<struct type='{_NPString=&quot;UTF8Characters&quot;*&quot;UTF8Length&quot;I}' name='NPString'/>
+<struct type='{_NPVariant=&quot;type&quot;i&quot;value&quot;(?=&quot;boolValue&quot;B&quot;intValue&quot;i&quot;doubleValue&quot;d&quot;stringValue&quot;{_NPString=&quot;UTF8Characters&quot;*&quot;UTF8Length&quot;I}&quot;objectValue&quot;^{NPObject})}' name='NPVariant'/>
+<struct type='{_NPWindow=&quot;window&quot;^v&quot;x&quot;i&quot;y&quot;i&quot;width&quot;I&quot;height&quot;I&quot;clipRect&quot;{_NPRect=&quot;top&quot;S&quot;left&quot;S&quot;bottom&quot;S&quot;right&quot;S}&quot;type&quot;i}' name='NPWindow'/>
+<struct type64='{NP_CGContext=&quot;context&quot;^{CGContext}&quot;window&quot;^{_NPNSWindow}}' type='{NP_CGContext=&quot;context&quot;^{CGContext}&quot;window&quot;^v}' name='NP_CGContext'/>
+<struct type64='{NP_GLContext=&quot;context&quot;^{_CGLContextObject}&quot;window&quot;^{_NPNSWindow}}' type='{NP_GLContext=&quot;context&quot;^{_CGLContextObject}&quot;window&quot;^v}' name='NP_GLContext'/>
+<cftype type='^v' name='JRIGlobalRef'/>
+<opaque type='^{DOMObjectInternal=}' name='DOMObjectInternal'/>
+<opaque type='^{_NPNSMenu=}' name='NPMenu'/>
+<opaque type='^{_NPNSMenu=}' name='NPNSMenu'/>
+<opaque type='^{_NPNSString=}' name='NPNSString'/>
+<opaque type='^{_NPNSWindow=}' name='NPNSWindow'/>
+<constant type='@' name='DOMEventException'/>
+<constant type='@' name='DOMException'/>
+<constant type='@' name='DOMRangeException'/>
+<constant type='@' name='DOMXPathException'/>
+<constant type='@' name='WebActionButtonKey'/>
+<constant type='@' name='WebActionElementKey'/>
+<constant type='@' name='WebActionModifierFlagsKey'/>
+<constant type='@' name='WebActionNavigationTypeKey'/>
+<constant type='@' name='WebActionOriginalURLKey'/>
+<constant type='@' name='WebArchivePboardType'/>
+<constant type='@' name='WebElementDOMNodeKey'/>
+<constant type='@' name='WebElementFrameKey'/>
+<constant type='@' name='WebElementImageAltStringKey'/>
+<constant type='@' name='WebElementImageKey'/>
+<constant type='@' name='WebElementImageRectKey'/>
+<constant type='@' name='WebElementImageURLKey'/>
+<constant type='@' name='WebElementIsSelectedKey'/>
+<constant type='@' name='WebElementLinkLabelKey'/>
+<constant type='@' name='WebElementLinkTargetFrameKey'/>
+<constant type='@' name='WebElementLinkTitleKey'/>
+<constant type='@' name='WebElementLinkURLKey'/>
+<constant type='@' name='WebHistoryAllItemsRemovedNotification'/>
+<constant type='@' name='WebHistoryItemChangedNotification'/>
+<constant type='@' name='WebHistoryItemsAddedNotification'/>
+<constant type='@' name='WebHistoryItemsKey'/>
+<constant type='@' name='WebHistoryItemsRemovedNotification'/>
+<constant type='@' name='WebHistoryLoadedNotification'/>
+<constant type='@' name='WebHistorySavedNotification'/>
+<constant type='@' name='WebKitErrorDomain'/>
+<constant type='@' name='WebKitErrorMIMETypeKey'/>
+<constant type='@' name='WebKitErrorPlugInNameKey'/>
+<constant type='@' name='WebKitErrorPlugInPageURLStringKey'/>
+<constant type='@' name='WebPlugInAttributesKey'/>
+<constant type='@' name='WebPlugInBaseURLKey'/>
+<constant type='@' name='WebPlugInContainerKey'/>
+<constant type='@' name='WebPlugInContainingElementKey'/>
+<constant type='@' name='WebPlugInShouldLoadMainResourceKey'/>
+<constant type='@' name='WebPreferencesChangedNotification'/>
+<constant type='@' name='WebViewDidBeginEditingNotification'/>
+<constant type='@' name='WebViewDidChangeNotification'/>
+<constant type='@' name='WebViewDidChangeSelectionNotification'/>
+<constant type='@' name='WebViewDidChangeTypingStyleNotification'/>
+<constant type='@' name='WebViewDidEndEditingNotification'/>
+<constant type='@' name='WebViewProgressEstimateChangedNotification'/>
+<constant type='@' name='WebViewProgressFinishedNotification'/>
+<constant type='@' name='WebViewProgressStartedNotification'/>
+<enum value='2' name='DOM_ADDITION'/>
+<enum value='1' name='DOM_ALLOW_KEYBOARD_INPUT'/>
+<enum value='0' name='DOM_ANY_TYPE'/>
+<enum value='8' name='DOM_ANY_UNORDERED_NODE_TYPE'/>
+<enum value='2' name='DOM_ATTRIBUTE_NODE'/>
+<enum value='2' name='DOM_AT_TARGET'/>
+<enum value='1' name='DOM_BAD_BOUNDARYPOINTS_ERR'/>
+<enum value='3' name='DOM_BOOLEAN_TYPE'/>
+<enum value='2' name='DOM_BOTH'/>
+<enum value='3' name='DOM_BUBBLING_PHASE'/>
+<enum value='1' name='DOM_CAPTURING_PHASE'/>
+<enum value='4' name='DOM_CDATA_SECTION_NODE'/>
+<enum value='2' name='DOM_CHARSET_RULE'/>
+<enum value='8' name='DOM_COMMENT_NODE'/>
+<enum value='22' name='DOM_CSS_ATTR'/>
+<enum value='6' name='DOM_CSS_CM'/>
+<enum value='23' name='DOM_CSS_COUNTER'/>
+<enum value='3' name='DOM_CSS_CUSTOM'/>
+<enum value='11' name='DOM_CSS_DEG'/>
+<enum value='18' name='DOM_CSS_DIMENSION'/>
+<enum value='3' name='DOM_CSS_EMS'/>
+<enum value='4' name='DOM_CSS_EXS'/>
+<enum value='13' name='DOM_CSS_GRAD'/>
+<enum value='16' name='DOM_CSS_HZ'/>
+<enum value='21' name='DOM_CSS_IDENT'/>
+<enum value='8' name='DOM_CSS_IN'/>
+<enum value='0' name='DOM_CSS_INHERIT'/>
+<enum value='17' name='DOM_CSS_KHZ'/>
+<enum value='7' name='DOM_CSS_MM'/>
+<enum value='14' name='DOM_CSS_MS'/>
+<enum value='1' name='DOM_CSS_NUMBER'/>
+<enum value='10' name='DOM_CSS_PC'/>
+<enum value='2' name='DOM_CSS_PERCENTAGE'/>
+<enum value='1' name='DOM_CSS_PRIMITIVE_VALUE'/>
+<enum value='9' name='DOM_CSS_PT'/>
+<enum value='5' name='DOM_CSS_PX'/>
+<enum value='12' name='DOM_CSS_RAD'/>
+<enum value='24' name='DOM_CSS_RECT'/>
+<enum value='25' name='DOM_CSS_RGBCOLOR'/>
+<enum value='15' name='DOM_CSS_S'/>
+<enum value='19' name='DOM_CSS_STRING'/>
+<enum value='0' name='DOM_CSS_UNKNOWN'/>
+<enum value='20' name='DOM_CSS_URI'/>
+<enum value='2' name='DOM_CSS_VALUE_LIST'/>
+<enum value='11' name='DOM_DOCUMENT_FRAGMENT_NODE'/>
+<enum value='9' name='DOM_DOCUMENT_NODE'/>
+<enum value='16' name='DOM_DOCUMENT_POSITION_CONTAINED_BY'/>
+<enum value='8' name='DOM_DOCUMENT_POSITION_CONTAINS'/>
+<enum value='1' name='DOM_DOCUMENT_POSITION_DISCONNECTED'/>
+<enum value='4' name='DOM_DOCUMENT_POSITION_FOLLOWING'/>
+<enum value='32' name='DOM_DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC'/>
+<enum value='2' name='DOM_DOCUMENT_POSITION_PRECEDING'/>
+<enum value='10' name='DOM_DOCUMENT_TYPE_NODE'/>
+<enum value='2' name='DOM_DOMSTRING_SIZE_ERR'/>
+<enum value='1' name='DOM_ELEMENT_NODE'/>
+<enum value='2' name='DOM_END_TO_END'/>
+<enum value='3' name='DOM_END_TO_START'/>
+<enum value='6' name='DOM_ENTITY_NODE'/>
+<enum value='5' name='DOM_ENTITY_REFERENCE_NODE'/>
+<enum value='1' name='DOM_FILTER_ACCEPT'/>
+<enum value='2' name='DOM_FILTER_REJECT'/>
+<enum value='3' name='DOM_FILTER_SKIP'/>
+<enum value='9' name='DOM_FIRST_ORDERED_NODE_TYPE'/>
+<enum value='5' name='DOM_FONT_FACE_RULE'/>
+<enum value='3' name='DOM_HIERARCHY_REQUEST_ERR'/>
+<enum value='0' name='DOM_HORIZONTAL'/>
+<enum value='3' name='DOM_IMPORT_RULE'/>
+<enum value='1' name='DOM_INDEX_SIZE_ERR'/>
+<enum value='10' name='DOM_INUSE_ATTRIBUTE_ERR'/>
+<enum value='15' name='DOM_INVALID_ACCESS_ERR'/>
+<enum value='5' name='DOM_INVALID_CHARACTER_ERR'/>
+<enum value='51' name='DOM_INVALID_EXPRESSION_ERR'/>
+<enum value='13' name='DOM_INVALID_MODIFICATION_ERR'/>
+<enum value='2' name='DOM_INVALID_NODE_TYPE_ERR'/>
+<enum value='11' name='DOM_INVALID_STATE_ERR'/>
+<enum value='1' name='DOM_KEY_LOCATION_LEFT'/>
+<enum value='3' name='DOM_KEY_LOCATION_NUMPAD'/>
+<enum value='2' name='DOM_KEY_LOCATION_RIGHT'/>
+<enum value='0' name='DOM_KEY_LOCATION_STANDARD'/>
+<enum value='4' name='DOM_MEDIA_RULE'/>
+<enum value='1' name='DOM_MODIFICATION'/>
+<enum value='14' name='DOM_NAMESPACE_ERR'/>
+<enum value='1' name='DOM_NODE_AFTER'/>
+<enum value='0' name='DOM_NODE_BEFORE'/>
+<enum value='2' name='DOM_NODE_BEFORE_AND_AFTER'/>
+<enum value='3' name='DOM_NODE_INSIDE'/>
+<enum value='12' name='DOM_NOTATION_NODE'/>
+<enum value='8' name='DOM_NOT_FOUND_ERR'/>
+<enum value='9' name='DOM_NOT_SUPPORTED_ERR'/>
+<enum value='6' name='DOM_NO_DATA_ALLOWED_ERR'/>
+<enum value='7' name='DOM_NO_MODIFICATION_ALLOWED_ERR'/>
+<enum value='1' name='DOM_NUMBER_TYPE'/>
+<enum value='5' name='DOM_ORDERED_NODE_ITERATOR_TYPE'/>
+<enum value='7' name='DOM_ORDERED_NODE_SNAPSHOT_TYPE'/>
+<enum value='6' name='DOM_PAGE_RULE'/>
+<enum value='7' name='DOM_PROCESSING_INSTRUCTION_NODE'/>
+<enum value='3' name='DOM_REMOVAL'/>
+<enum value='4294967295' name='DOM_SHOW_ALL'/>
+<enum value='2' name='DOM_SHOW_ATTRIBUTE'/>
+<enum value='8' name='DOM_SHOW_CDATA_SECTION'/>
+<enum value='128' name='DOM_SHOW_COMMENT'/>
+<enum value='256' name='DOM_SHOW_DOCUMENT'/>
+<enum value='1024' name='DOM_SHOW_DOCUMENT_FRAGMENT'/>
+<enum value='512' name='DOM_SHOW_DOCUMENT_TYPE'/>
+<enum value='1' name='DOM_SHOW_ELEMENT'/>
+<enum value='32' name='DOM_SHOW_ENTITY'/>
+<enum value='16' name='DOM_SHOW_ENTITY_REFERENCE'/>
+<enum value='2048' name='DOM_SHOW_NOTATION'/>
+<enum value='64' name='DOM_SHOW_PROCESSING_INSTRUCTION'/>
+<enum value='4' name='DOM_SHOW_TEXT'/>
+<enum value='1' name='DOM_START_TO_END'/>
+<enum value='0' name='DOM_START_TO_START'/>
+<enum value='2' name='DOM_STRING_TYPE'/>
+<enum value='1' name='DOM_STYLE_RULE'/>
+<enum value='12' name='DOM_SYNTAX_ERR'/>
+<enum value='3' name='DOM_TEXT_NODE'/>
+<enum value='52' name='DOM_TYPE_ERR'/>
+<enum value='0' name='DOM_UNKNOWN_RULE'/>
+<enum value='4' name='DOM_UNORDERED_NODE_ITERATOR_TYPE'/>
+<enum value='6' name='DOM_UNORDERED_NODE_SNAPSHOT_TYPE'/>
+<enum value='0' name='DOM_UNSPECIFIED_EVENT_TYPE_ERR'/>
+<enum value='1' name='DOM_VERTICAL'/>
+<enum value='8' name='DOM_WEBKIT_KEYFRAMES_RULE'/>
+<enum value='9' name='DOM_WEBKIT_KEYFRAME_RULE'/>
+<enum value='4' name='DOM_WRONG_DOCUMENT_ERR'/>
+<enum value='1' name='NPCocoaEventDrawRect'/>
+<enum value='10' name='NPCocoaEventFlagsChanged'/>
+<enum value='11' name='NPCocoaEventFocusChanged'/>
+<enum value='8' name='NPCocoaEventKeyDown'/>
+<enum value='9' name='NPCocoaEventKeyUp'/>
+<enum value='2' name='NPCocoaEventMouseDown'/>
+<enum value='7' name='NPCocoaEventMouseDragged'/>
+<enum value='5' name='NPCocoaEventMouseEntered'/>
+<enum value='6' name='NPCocoaEventMouseExited'/>
+<enum value='4' name='NPCocoaEventMouseMoved'/>
+<enum value='3' name='NPCocoaEventMouseUp'/>
+<enum value='13' name='NPCocoaEventScrollWheel'/>
+<enum value='14' name='NPCocoaEventTextInput'/>
+<enum value='12' name='NPCocoaEventWindowFocusChanged'/>
+<enum value='5' name='NPCoordinateSpaceFlippedScreen'/>
+<enum value='3' name='NPCoordinateSpaceFlippedWindow'/>
+<enum value='1' name='NPCoordinateSpacePlugin'/>
+<enum value='4' name='NPCoordinateSpaceScreen'/>
+<enum value='2' name='NPCoordinateSpaceWindow'/>
+<enum value='3' name='NPDrawingModelCoreAnimation'/>
+<enum value='1' name='NPDrawingModelCoreGraphics'/>
+<enum value='2' name='NPDrawingModelOpenGL'/>
+<enum value='0' name='NPERR_BASE'/>
+<enum value='11' name='NPERR_FILE_NOT_FOUND'/>
+<enum value='1' name='NPERR_GENERIC_ERROR'/>
+<enum value='8' name='NPERR_INCOMPATIBLE_VERSION_ERROR'/>
+<enum value='3' name='NPERR_INVALID_FUNCTABLE_ERROR'/>
+<enum value='2' name='NPERR_INVALID_INSTANCE_ERROR'/>
+<enum value='9' name='NPERR_INVALID_PARAM'/>
+<enum value='7' name='NPERR_INVALID_PLUGIN_DIR_ERROR'/>
+<enum value='6' name='NPERR_INVALID_PLUGIN_ERROR'/>
+<enum value='10' name='NPERR_INVALID_URL'/>
+<enum value='4' name='NPERR_MODULE_LOAD_FAILED_ERROR'/>
+<enum value='12' name='NPERR_NO_DATA'/>
+<enum value='0' name='NPERR_NO_ERROR'/>
+<enum value='5' name='NPERR_OUT_OF_MEMORY_ERROR'/>
+<enum value='13' name='NPERR_STREAM_NOT_SEEKABLE'/>
+<enum value='1' name='NPEventModelCocoa'/>
+<enum value='0' name='NPFocusNext'/>
+<enum value='1' name='NPFocusPrevious'/>
+<enum value='501' name='NPNURLVCookie'/>
+<enum value='502' name='NPNURLVProxy'/>
+<enum value='16777227' name='NPNVDOMElement'/>
+<enum value='16777228' name='NPNVDOMWindow'/>
+<enum value='1' name='NPNVGtk12'/>
+<enum value='2' name='NPNVGtk2'/>
+<enum value='16' name='NPNVPluginElementNPObject'/>
+<enum value='17' name='NPNVSupportsWindowless'/>
+<enum value='14' name='NPNVSupportsXEmbedBool'/>
+<enum value='16777229' name='NPNVToolkit'/>
+<enum value='15' name='NPNVWindowNPObject'/>
+<enum value='5' name='NPNVasdEnabledBool'/>
+<enum value='1001' name='NPNVcontentsScaleFactor'/>
+<enum value='6' name='NPNVisOfflineBool'/>
+<enum value='4' name='NPNVjavascriptEnabledBool'/>
+<enum value='3' name='NPNVnetscapeWindow'/>
+<enum value='1000' name='NPNVpluginDrawingModel'/>
+<enum value='18' name='NPNVprivateModeBool'/>
+<enum value='16777226' name='NPNVserviceManager'/>
+<enum value='3001' name='NPNVsupportsCocoaBool'/>
+<enum value='74656' name='NPNVsupportsCompositingCoreAnimationPluginsBool'/>
+<enum value='2003' name='NPNVsupportsCoreAnimationBool'/>
+<enum value='2001' name='NPNVsupportsCoreGraphicsBool'/>
+<enum value='2002' name='NPNVsupportsOpenGLBool'/>
+<enum value='3002' name='NPNVsupportsUpdatedCocoaTextInputBool'/>
+<enum value='1' name='NPNVxDisplay'/>
+<enum value='2' name='NPNVxtAppContext'/>
+<enum value='16' name='NPPVformValue'/>
+<enum value='5' name='NPPVjavaClass'/>
+<enum value='12' name='NPPVjavascriptPushCallerBool'/>
+<enum value='20' name='NPPVpluginCancelSrcStream'/>
+<enum value='1003' name='NPPVpluginCoreAnimationLayer'/>
+<enum value='2' name='NPPVpluginDescriptionString'/>
+<enum value='1000' name='NPPVpluginDrawingModel'/>
+<enum value='1001' name='NPPVpluginEventModel'/>
+<enum value='13' name='NPPVpluginKeepLibraryInMemory'/>
+<enum value='1' name='NPPVpluginNameString'/>
+<enum value='19' name='NPPVpluginNativeAccessibleAtkPlugId'/>
+<enum value='14' name='NPPVpluginNeedsXEmbed'/>
+<enum value='11' name='NPPVpluginScriptableIID'/>
+<enum value='16777226' name='NPPVpluginScriptableInstance'/>
+<enum value='15' name='NPPVpluginScriptableNPObject'/>
+<enum value='7' name='NPPVpluginTimerInterval'/>
+<enum value='4' name='NPPVpluginTransparentBool'/>
+<enum value='17' name='NPPVpluginUrlRequestsDisplayedBool'/>
+<enum value='18' name='NPPVpluginWantsAllNetworkStreams'/>
+<enum value='3' name='NPPVpluginWindowBool'/>
+<enum value='6' name='NPPVpluginWindowSize'/>
+<enum value='0' name='NPRES_BASE'/>
+<enum value='0' name='NPRES_DONE'/>
+<enum value='1' name='NPRES_NETWORK_ERR'/>
+<enum value='2' name='NPRES_USER_BREAK'/>
+<enum value='11' name='NPVERS_68K_HAS_LIVECONNECT'/>
+<enum value='25' name='NPVERS_HAS_ADVANCED_KEY_HANDLING'/>
+<enum value='20' name='NPVERS_HAS_ALL_NETWORK_STREAMS'/>
+<enum value='24' name='NPVERS_HAS_CANCEL_SRC_STREAM'/>
+<enum value='27' name='NPVERS_HAS_CLEAR_SITE_DATA'/>
+<enum value='15' name='NPVERS_HAS_FORM_VALUES'/>
+<enum value='9' name='NPVERS_HAS_LIVECONNECT'/>
+<enum value='9' name='NPVERS_HAS_NOTIFICATION'/>
+<enum value='18' name='NPVERS_HAS_NPOBJECT_ENUM'/>
+<enum value='14' name='NPVERS_HAS_NPRUNTIME_SCRIPTING'/>
+<enum value='19' name='NPVERS_HAS_PLUGIN_THREAD_ASYNC_CALL'/>
+<enum value='16' name='NPVERS_HAS_POPUPS_ENABLED_STATE'/>
+<enum value='22' name='NPVERS_HAS_PRIVATE_MODE'/>
+<enum value='17' name='NPVERS_HAS_RESPONSE_HEADERS'/>
+<enum value='8' name='NPVERS_HAS_STREAMOUTPUT'/>
+<enum value='21' name='NPVERS_HAS_URL_AND_AUTH_INFO'/>
+<enum value='26' name='NPVERS_HAS_URL_REDIRECT_HANDLING'/>
+<enum value='11' name='NPVERS_HAS_WINDOWLESS'/>
+<enum value='13' name='NPVERS_HAS_XPCONNECT_SCRIPTING'/>
+<enum value='23' name='NPVERS_MACOSX_HAS_EVENT_MODELS'/>
+<enum value='9' name='NPVERS_WIN16_HAS_LIVECONNECT'/>
+<enum value='2' name='NPVariantType_Bool'/>
+<enum value='4' name='NPVariantType_Double'/>
+<enum value='3' name='NPVariantType_Int32'/>
+<enum value='1' name='NPVariantType_Null'/>
+<enum value='6' name='NPVariantType_Object'/>
+<enum value='5' name='NPVariantType_String'/>
+<enum value='0' name='NPVariantType_Void'/>
+<enum value='2' name='NPWindowTypeDrawable'/>
+<enum value='1' name='NPWindowTypeWindow'/>
+<enum value='268435456' name='NP_ABI_GCC3_MASK'/>
+<enum value='16777216' name='NP_ABI_MACHO_MASK'/>
+<enum value='16777216' name='NP_ABI_MASK'/>
+<enum value='3' name='NP_ASFILE'/>
+<enum value='4' name='NP_ASFILEONLY'/>
+<enum value='3' name='NP_CLASS_STRUCT_VERSION'/>
+<enum value='3' name='NP_CLASS_STRUCT_VERSION_CTOR'/>
+<enum value='2' name='NP_CLASS_STRUCT_VERSION_ENUM'/>
+<enum value='0' name='NP_CLEAR_ALL'/>
+<enum value='1' name='NP_CLEAR_CACHE'/>
+<enum value='1' name='NP_EMBED'/>
+<enum value='2' name='NP_FULL'/>
+<enum value='7' name='NP_INFO_CompanyName'/>
+<enum value='5' name='NP_INFO_FileDescription'/>
+<enum value='4' name='NP_INFO_FileExtents'/>
+<enum value='3' name='NP_INFO_FileOpenName'/>
+<enum value='8' name='NP_INFO_FileVersion'/>
+<enum value='9' name='NP_INFO_InternalName'/>
+<enum value='10' name='NP_INFO_LegalCopyright'/>
+<enum value='2' name='NP_INFO_MIMEType'/>
+<enum value='11' name='NP_INFO_OriginalFilename'/>
+<enum value='6' name='NP_INFO_ProductName'/>
+<enum value='1' name='NP_INFO_ProductVersion'/>
+<enum value='2147483647' name='NP_MAXREADY'/>
+<enum value='1' name='NP_NORMAL'/>
+<enum value='2' name='NP_SEEK'/>
+<enum value='0' name='NP_VERSION_MAJOR'/>
+<enum value='24' name='NP_VERSION_MINOR'/>
+<enum value='1' name='WebCacheModelDocumentBrowser'/>
+<enum value='0' name='WebCacheModelDocumentViewer'/>
+<enum value='2' name='WebCacheModelPrimaryWebBrowser'/>
+<enum value='4294967295' name='WebDragDestinationActionAny'/>
+<enum value='1' name='WebDragDestinationActionDHTML'/>
+<enum value='2' name='WebDragDestinationActionEdit'/>
+<enum value='4' name='WebDragDestinationActionLoad'/>
+<enum value='0' name='WebDragDestinationActionNone'/>
+<enum value='4294967295' name='WebDragSourceActionAny'/>
+<enum value='1' name='WebDragSourceActionDHTML'/>
+<enum value='2' name='WebDragSourceActionImage'/>
+<enum value='4' name='WebDragSourceActionLink'/>
+<enum value='0' name='WebDragSourceActionNone'/>
+<enum value='8' name='WebDragSourceActionSelection'/>
+<enum value='3' name='WebJNIReturnTypeBoolean'/>
+<enum value='4' name='WebJNIReturnTypeByte'/>
+<enum value='5' name='WebJNIReturnTypeChar'/>
+<enum value='10' name='WebJNIReturnTypeDouble'/>
+<enum value='9' name='WebJNIReturnTypeFloat'/>
+<enum value='7' name='WebJNIReturnTypeInt'/>
+<enum value='0' name='WebJNIReturnTypeInvalid'/>
+<enum value='8' name='WebJNIReturnTypeLong'/>
+<enum value='2' name='WebJNIReturnTypeObject'/>
+<enum value='6' name='WebJNIReturnTypeShort'/>
+<enum value='1' name='WebJNIReturnTypeVoid'/>
+<enum value='200' name='WebKitErrorCannotFindPlugIn'/>
+<enum value='201' name='WebKitErrorCannotLoadPlugIn'/>
+<enum value='100' name='WebKitErrorCannotShowMIMEType'/>
+<enum value='101' name='WebKitErrorCannotShowURL'/>
+<enum value='102' name='WebKitErrorFrameLoadInterruptedByPolicyChange'/>
+<enum value='202' name='WebKitErrorJavaUnavailable'/>
+<enum value='24' name='WebMenuItemPDFActualSize'/>
+<enum value='27' name='WebMenuItemPDFAutoSize'/>
+<enum value='30' name='WebMenuItemPDFContinuous'/>
+<enum value='29' name='WebMenuItemPDFFacingPages'/>
+<enum value='31' name='WebMenuItemPDFNextPage'/>
+<enum value='32' name='WebMenuItemPDFPreviousPage'/>
+<enum value='28' name='WebMenuItemPDFSinglePage'/>
+<enum value='25' name='WebMenuItemPDFZoomIn'/>
+<enum value='26' name='WebMenuItemPDFZoomOut'/>
+<enum value='8' name='WebMenuItemTagCopy'/>
+<enum value='6' name='WebMenuItemTagCopyImageToClipboard'/>
+<enum value='3' name='WebMenuItemTagCopyLinkToClipboard'/>
+<enum value='13' name='WebMenuItemTagCut'/>
+<enum value='5' name='WebMenuItemTagDownloadImageToDisk'/>
+<enum value='2' name='WebMenuItemTagDownloadLinkToDisk'/>
+<enum value='9' name='WebMenuItemTagGoBack'/>
+<enum value='10' name='WebMenuItemTagGoForward'/>
+<enum value='17' name='WebMenuItemTagIgnoreSpelling'/>
+<enum value='18' name='WebMenuItemTagLearnSpelling'/>
+<enum value='22' name='WebMenuItemTagLookUpInDictionary'/>
+<enum value='16' name='WebMenuItemTagNoGuessesFound'/>
+<enum value='7' name='WebMenuItemTagOpenFrameInNewWindow'/>
+<enum value='4' name='WebMenuItemTagOpenImageInNewWindow'/>
+<enum value='1' name='WebMenuItemTagOpenLinkInNewWindow'/>
+<enum value='23' name='WebMenuItemTagOpenWithDefaultApplication'/>
+<enum value='19' name='WebMenuItemTagOther'/>
+<enum value='14' name='WebMenuItemTagPaste'/>
+<enum value='12' name='WebMenuItemTagReload'/>
+<enum value='20' name='WebMenuItemTagSearchInSpotlight'/>
+<enum value='21' name='WebMenuItemTagSearchWeb'/>
+<enum value='15' name='WebMenuItemTagSpellingGuess'/>
+<enum value='11' name='WebMenuItemTagStop'/>
+<enum value='2' name='WebNavigationTypeBackForward'/>
+<enum value='4' name='WebNavigationTypeFormResubmitted'/>
+<enum value='1' name='WebNavigationTypeFormSubmitted'/>
+<enum value='0' name='WebNavigationTypeLinkClicked'/>
+<enum value='5' name='WebNavigationTypeOther'/>
+<enum value='3' name='WebNavigationTypeReload'/>
+<enum value='2' name='WebViewInsertActionDropped'/>
+<enum value='1' name='WebViewInsertActionPasted'/>
+<enum value='0' name='WebViewInsertActionTyped'/>
+<enum value='1' name='XP_MACOSX'/>
+<enum value='1' name='kNPEventHandled'/>
+<enum value='0' name='kNPEventNotHandled'/>
+<enum value='2' name='kNPEventStartIME'/>
+<function name='NPN_Construct'>
+<arg type='^{_NPP=^v^v}'/>
+<arg type='^{NPObject=^{NPClass}I}'/>
+<arg type='^{_NPVariant=i(?=Bid{_NPString=*I}^{NPObject})}'/>
+<arg type='I'/>
+<arg type='^{_NPVariant=i(?=Bid{_NPString=*I}^{NPObject})}'/>
+<retval type='B'/>
+</function>
+<function name='NPN_ConvertPoint'>
+<arg type='^{_NPP=^v^v}'/>
+<arg type='d'/>
+<arg type='d'/>
+<arg type='i'/>
+<arg type='^d'/>
+<arg type='^d'/>
+<arg type='i'/>
+<retval type='C'/>
+</function>
+<function name='NPN_CreateObject'>
+<arg type='^{_NPP=^v^v}'/>
+<arg type='^{NPClass=I^?^?^?^?^?^?^?^?^?^?^?^?}'/>
+<retval type='^{NPObject=^{NPClass}I}'/>
+</function>
+<function name='NPN_DestroyStream'>
+<arg type='^{_NPP=^v^v}'/>
+<arg type='^{_NPStream=^v^v*II^v*}'/>
+<arg type='s'/>
+<retval type='s'/>
+</function>
+<function name='NPN_Enumerate'>
+<arg type='^{_NPP=^v^v}'/>
+<arg type='^{NPObject=^{NPClass}I}'/>
+<arg type='^^^v'/>
+<arg type='^I'/>
+<retval type='B'/>
+</function>
+<function name='NPN_Evaluate'>
+<arg type='^{_NPP=^v^v}'/>
+<arg type='^{NPObject=^{NPClass}I}'/>
+<arg type='^{_NPString=*I}'/>
+<arg type='^{_NPVariant=i(?=Bid{_NPString=*I}^{NPObject})}'/>
+<retval type='B'/>
+</function>
+<function name='NPN_ForceRedraw'>
+<arg type='^{_NPP=^v^v}'/>
+</function>
+<function name='NPN_GetAuthenticationInfo'>
+<arg type='^{_NPP=^v^v}'/>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='i'/>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='^*'/>
+<arg type='^I'/>
+<arg type='^*'/>
+<arg type='^I'/>
+<retval type='s'/>
+</function>
+<function name='NPN_GetIntIdentifier'>
+<arg type='i'/>
+<retval type='^v'/>
+</function>
+<function name='NPN_GetJavaEnv'>
+<retval type='^v'/>
+</function>
+<function name='NPN_GetJavaPeer'>
+<arg type='^{_NPP=^v^v}'/>
+<retval type='^v'/>
+</function>
+<function name='NPN_GetProperty'>
+<arg type='^{_NPP=^v^v}'/>
+<arg type='^{NPObject=^{NPClass}I}'/>
+<arg type='^v'/>
+<arg type='^{_NPVariant=i(?=Bid{_NPString=*I}^{NPObject})}'/>
+<retval type='B'/>
+</function>
+<function name='NPN_GetStringIdentifier'>
+<arg type='*'/>
+<retval type='^v'/>
+</function>
+<function name='NPN_GetStringIdentifiers'>
+<arg type='^*'/>
+<arg type='i'/>
+<arg type='^^v'/>
+</function>
+<function name='NPN_GetURL'>
+<arg type='^{_NPP=^v^v}'/>
+<arg type='*'/>
+<arg type='*'/>
+<retval type='s'/>
+</function>
+<function name='NPN_GetURLNotify'>
+<arg type='^{_NPP=^v^v}'/>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='^v'/>
+<retval type='s'/>
+</function>
+<function name='NPN_GetValue'>
+<arg type='^{_NPP=^v^v}'/>
+<arg type='i'/>
+<arg type='^v'/>
+<retval type='s'/>
+</function>
+<function name='NPN_GetValueForURL'>
+<arg type='^{_NPP=^v^v}'/>
+<arg type='i'/>
+<arg type='*'/>
+<arg type='^*'/>
+<arg type='^I'/>
+<retval type='s'/>
+</function>
+<function name='NPN_HasMethod'>
+<arg type='^{_NPP=^v^v}'/>
+<arg type='^{NPObject=^{NPClass}I}'/>
+<arg type='^v'/>
+<retval type='B'/>
+</function>
+<function name='NPN_HasProperty'>
+<arg type='^{_NPP=^v^v}'/>
+<arg type='^{NPObject=^{NPClass}I}'/>
+<arg type='^v'/>
+<retval type='B'/>
+</function>
+<function name='NPN_IdentifierIsString'>
+<arg type='^v'/>
+<retval type='B'/>
+</function>
+<function name='NPN_IntFromIdentifier'>
+<arg type='^v'/>
+<retval type='i'/>
+</function>
+<function name='NPN_InvalidateRect'>
+<arg type='^{_NPP=^v^v}'/>
+<arg type='^{_NPRect=SSSS}'/>
+</function>
+<function name='NPN_InvalidateRegion'>
+<arg type='^{_NPP=^v^v}'/>
+<arg type='^v'/>
+</function>
+<function name='NPN_Invoke'>
+<arg type='^{_NPP=^v^v}'/>
+<arg type='^{NPObject=^{NPClass}I}'/>
+<arg type='^v'/>
+<arg type='^{_NPVariant=i(?=Bid{_NPString=*I}^{NPObject})}'/>
+<arg type='I'/>
+<arg type='^{_NPVariant=i(?=Bid{_NPString=*I}^{NPObject})}'/>
+<retval type='B'/>
+</function>
+<function name='NPN_InvokeDefault'>
+<arg type='^{_NPP=^v^v}'/>
+<arg type='^{NPObject=^{NPClass}I}'/>
+<arg type='^{_NPVariant=i(?=Bid{_NPString=*I}^{NPObject})}'/>
+<arg type='I'/>
+<arg type='^{_NPVariant=i(?=Bid{_NPString=*I}^{NPObject})}'/>
+<retval type='B'/>
+</function>
+<function name='NPN_MemAlloc'>
+<arg type='I'/>
+<retval type='^v'/>
+</function>
+<function name='NPN_MemFlush'>
+<arg type='I'/>
+<retval type='I'/>
+</function>
+<function name='NPN_MemFree'>
+<arg type='^v'/>
+</function>
+<function name='NPN_NewStream'>
+<arg type='^{_NPP=^v^v}'/>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='^^{_NPStream}'/>
+<retval type='s'/>
+</function>
+<function name='NPN_PluginThreadAsyncCall'>
+<arg type='^{_NPP=^v^v}'/>
+<arg function_pointer='true' type='^?'>
+<arg type='^v'/>
+<retval type='v'/>
+</arg>
+<arg type='^v'/>
+</function>
+<function name='NPN_PopPopupsEnabledState'>
+<arg type='^{_NPP=^v^v}'/>
+</function>
+<function name='NPN_PopUpContextMenu'>
+<arg type='^{_NPP=^v^v}'/>
+<arg type='^{_NPNSMenu=}'/>
+<retval type='s'/>
+</function>
+<function name='NPN_PostURL'>
+<arg type='^{_NPP=^v^v}'/>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='I'/>
+<arg type='*'/>
+<arg type='C'/>
+<retval type='s'/>
+</function>
+<function name='NPN_PostURLNotify'>
+<arg type='^{_NPP=^v^v}'/>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='I'/>
+<arg type='*'/>
+<arg type='C'/>
+<arg type='^v'/>
+<retval type='s'/>
+</function>
+<function name='NPN_PushPopupsEnabledState'>
+<arg type='^{_NPP=^v^v}'/>
+<arg type='C'/>
+</function>
+<function name='NPN_ReleaseObject'>
+<arg type='^{NPObject=^{NPClass}I}'/>
+</function>
+<function name='NPN_ReleaseVariantValue'>
+<arg type='^{_NPVariant=i(?=Bid{_NPString=*I}^{NPObject})}'/>
+</function>
+<function name='NPN_ReloadPlugins'>
+<arg type='C'/>
+</function>
+<function name='NPN_RemoveProperty'>
+<arg type='^{_NPP=^v^v}'/>
+<arg type='^{NPObject=^{NPClass}I}'/>
+<arg type='^v'/>
+<retval type='B'/>
+</function>
+<function name='NPN_RequestRead'>
+<arg type='^{_NPStream=^v^v*II^v*}'/>
+<arg type='^{_NPByteRange=iI^{_NPByteRange}}'/>
+<retval type='s'/>
+</function>
+<function name='NPN_RetainObject'>
+<arg type='^{NPObject=^{NPClass}I}'/>
+<retval type='^{NPObject=^{NPClass}I}'/>
+</function>
+<function name='NPN_ScheduleTimer'>
+<arg type='^{_NPP=^v^v}'/>
+<arg type='I'/>
+<arg type='C'/>
+<arg function_pointer='true' type='^?'>
+<arg type='^{_NPP=^v^v}'/>
+<arg type='I'/>
+<retval type='v'/>
+</arg>
+<retval type='I'/>
+</function>
+<function name='NPN_SetException'>
+<arg type='^{NPObject=^{NPClass}I}'/>
+<arg type='*'/>
+</function>
+<function name='NPN_SetProperty'>
+<arg type='^{_NPP=^v^v}'/>
+<arg type='^{NPObject=^{NPClass}I}'/>
+<arg type='^v'/>
+<arg type='^{_NPVariant=i(?=Bid{_NPString=*I}^{NPObject})}'/>
+<retval type='B'/>
+</function>
+<function name='NPN_SetValue'>
+<arg type='^{_NPP=^v^v}'/>
+<arg type='i'/>
+<arg type='^v'/>
+<retval type='s'/>
+</function>
+<function name='NPN_SetValueForURL'>
+<arg type='^{_NPP=^v^v}'/>
+<arg type='i'/>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='I'/>
+<retval type='s'/>
+</function>
+<function name='NPN_Status'>
+<arg type='^{_NPP=^v^v}'/>
+<arg type='*'/>
+</function>
+<function name='NPN_UTF8FromIdentifier'>
+<arg type='^v'/>
+<retval type='*'/>
+</function>
+<function name='NPN_UnscheduleTimer'>
+<arg type='^{_NPP=^v^v}'/>
+<arg type='I'/>
+</function>
+<function name='NPN_UserAgent'>
+<arg type='^{_NPP=^v^v}'/>
+<retval type='*'/>
+</function>
+<function name='NPN_Version'>
+<arg type='^i'/>
+<arg type='^i'/>
+<arg type='^i'/>
+<arg type='^i'/>
+</function>
+<function name='NPN_Write'>
+<arg type='^{_NPP=^v^v}'/>
+<arg type='^{_NPStream=^v^v*II^v*}'/>
+<arg type='i'/>
+<arg type='^v'/>
+<retval type='i'/>
+</function>
+<function name='NPP_ClearSiteData'>
+<arg type='*'/>
+<arg type='Q'/>
+<arg type='Q'/>
+<retval type='s'/>
+</function>
+<function name='NPP_Destroy'>
+<arg type='^{_NPP=^v^v}'/>
+<arg type='^^{_NPSavedData}'/>
+<retval type='s'/>
+</function>
+<function name='NPP_DestroyStream'>
+<arg type='^{_NPP=^v^v}'/>
+<arg type='^{_NPStream=^v^v*II^v*}'/>
+<arg type='s'/>
+<retval type='s'/>
+</function>
+<function name='NPP_GetJavaClass'>
+<retval type='^v'/>
+</function>
+<function name='NPP_GetSitesWithData'>
+<retval type='^*'/>
+</function>
+<function name='NPP_GetValue'>
+<arg type='^{_NPP=^v^v}'/>
+<arg type='i'/>
+<arg type='^v'/>
+<retval type='s'/>
+</function>
+<function name='NPP_GotFocus'>
+<arg type='^{_NPP=^v^v}'/>
+<arg type='i'/>
+<retval type='C'/>
+</function>
+<function name='NPP_HandleEvent'>
+<arg type='^{_NPP=^v^v}'/>
+<arg type='^v'/>
+<retval type='s'/>
+</function>
+<function name='NPP_Initialize'>
+<retval type='s'/>
+</function>
+<function name='NPP_LostFocus'>
+<arg type='^{_NPP=^v^v}'/>
+</function>
+<function name='NPP_New'>
+<arg type='*'/>
+<arg type='^{_NPP=^v^v}'/>
+<arg type='S'/>
+<arg type='s'/>
+<arg type='^*'/>
+<arg type='^*'/>
+<arg type='^{_NPSavedData=i^v}'/>
+<retval type='s'/>
+</function>
+<function name='NPP_NewStream'>
+<arg type='^{_NPP=^v^v}'/>
+<arg type='*'/>
+<arg type='^{_NPStream=^v^v*II^v*}'/>
+<arg type='C'/>
+<arg type='^S'/>
+<retval type='s'/>
+</function>
+<function name='NPP_Print'>
+<arg type='^{_NPP=^v^v}'/>
+<arg type='^{_NPPrint=S(?={_NPFullPrint=CC^v}{_NPEmbedPrint={_NPWindow=^viiII{_NPRect=SSSS}i}^v})}'/>
+</function>
+<function name='NPP_SetValue'>
+<arg type='^{_NPP=^v^v}'/>
+<arg type='i'/>
+<arg type='^v'/>
+<retval type='s'/>
+</function>
+<function name='NPP_SetWindow'>
+<arg type='^{_NPP=^v^v}'/>
+<arg type='^{_NPWindow=^viiII{_NPRect=SSSS}i}'/>
+<retval type='s'/>
+</function>
+<function name='NPP_Shutdown'/>
+<function name='NPP_StreamAsFile'>
+<arg type='^{_NPP=^v^v}'/>
+<arg type='^{_NPStream=^v^v*II^v*}'/>
+<arg type='*'/>
+</function>
+<function name='NPP_URLNotify'>
+<arg type='^{_NPP=^v^v}'/>
+<arg type='*'/>
+<arg type='s'/>
+<arg type='^v'/>
+</function>
+<function name='NPP_URLRedirectNotify'>
+<arg type='^{_NPP=^v^v}'/>
+<arg type='*'/>
+<arg type='i'/>
+<arg type='^v'/>
+</function>
+<function name='NPP_Write'>
+<arg type='^{_NPP=^v^v}'/>
+<arg type='^{_NPStream=^v^v*II^v*}'/>
+<arg type='i'/>
+<arg type='i'/>
+<arg type='^v'/>
+<retval type='i'/>
+</function>
+<function name='NPP_WriteReady'>
+<arg type='^{_NPP=^v^v}'/>
+<arg type='^{_NPStream=^v^v*II^v*}'/>
+<retval type='i'/>
+</function>
+<class name='DOMAttr'>
+<method selector='specified'>
+<retval type='B'/>
+</method>
+</class>
+<class name='DOMCSSStyleDeclaration'>
+<method selector='isPropertyImplicit:'>
+<retval type='B'/>
+</method>
+</class>
+<class name='DOMDocument'>
+<method selector='createNodeIterator::::'>
+<arg type='B' index='3'/>
+</method>
+<method selector='createNodeIterator:whatToShow:filter:expandEntityReferences:'>
+<arg type='B' index='3'/>
+</method>
+<method selector='createTreeWalker::::'>
+<arg type='B' index='3'/>
+</method>
+<method selector='createTreeWalker:whatToShow:filter:expandEntityReferences:'>
+<arg type='B' index='3'/>
+</method>
+<method selector='execCommand:'>
+<retval type='B'/>
+</method>
+<method selector='execCommand:userInterface:'>
+<arg type='B' index='1'/>
+<retval type='B'/>
+</method>
+<method selector='execCommand:userInterface:value:'>
+<arg type='B' index='1'/>
+<retval type='B'/>
+</method>
+<method selector='getMatchedCSSRules:pseudoElement:authorOnly:'>
+<arg type='B' index='2'/>
+</method>
+<method selector='importNode::'>
+<arg type='B' index='1'/>
+</method>
+<method selector='importNode:deep:'>
+<arg type='B' index='1'/>
+</method>
+<method selector='queryCommandEnabled:'>
+<retval type='B'/>
+</method>
+<method selector='queryCommandIndeterm:'>
+<retval type='B'/>
+</method>
+<method selector='queryCommandState:'>
+<retval type='B'/>
+</method>
+<method selector='queryCommandSupported:'>
+<retval type='B'/>
+</method>
+<method selector='setXmlStandalone:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='xmlStandalone'>
+<retval type='B'/>
+</method>
+</class>
+<class name='DOMElement'>
+<method selector='contains:'>
+<retval type='B'/>
+</method>
+<method selector='hasAttribute:'>
+<retval type='B'/>
+</method>
+<method selector='hasAttributeNS::'>
+<retval type='B'/>
+</method>
+<method selector='hasAttributeNS:localName:'>
+<retval type='B'/>
+</method>
+<method selector='scrollIntoView:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='scrollIntoViewIfNeeded:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='DOMEvent'>
+<method selector='bubbles'>
+<retval type='B'/>
+</method>
+<method selector='cancelBubble'>
+<retval type='B'/>
+</method>
+<method selector='cancelable'>
+<retval type='B'/>
+</method>
+<method selector='initEvent:::'>
+<arg type='B' index='1'/>
+<arg type='B' index='2'/>
+</method>
+<method selector='initEvent:canBubbleArg:cancelableArg:'>
+<arg type='B' index='1'/>
+<arg type='B' index='2'/>
+</method>
+<method selector='returnValue'>
+<retval type='B'/>
+</method>
+<method selector='setCancelBubble:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setReturnValue:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='DOMHTMLAreaElement'>
+<method selector='noHref'>
+<retval type='B'/>
+</method>
+<method selector='setNoHref:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='DOMHTMLButtonElement'>
+<method selector='autofocus'>
+<retval type='B'/>
+</method>
+<method selector='disabled'>
+<retval type='B'/>
+</method>
+<method selector='setAutofocus:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setDisabled:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='willValidate'>
+<retval type='B'/>
+</method>
+</class>
+<class name='DOMHTMLDListElement'>
+<method selector='compact'>
+<retval type='B'/>
+</method>
+<method selector='setCompact:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='DOMHTMLDirectoryElement'>
+<method selector='compact'>
+<retval type='B'/>
+</method>
+<method selector='setCompact:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='DOMHTMLDocument'>
+<method selector='hasFocus'>
+<retval type='B'/>
+</method>
+</class>
+<class name='DOMHTMLElement'>
+<method selector='isContentEditable'>
+<retval type='B'/>
+</method>
+</class>
+<class name='DOMHTMLFrameElement'>
+<method selector='noResize'>
+<retval type='B'/>
+</method>
+<method selector='setNoResize:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='DOMHTMLHRElement'>
+<method selector='noShade'>
+<retval type='B'/>
+</method>
+<method selector='setNoShade:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='DOMHTMLImageElement'>
+<method selector='complete'>
+<retval type='B'/>
+</method>
+<method selector='isMap'>
+<retval type='B'/>
+</method>
+<method selector='setIsMap:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='DOMHTMLInputElement'>
+<method selector='autofocus'>
+<retval type='B'/>
+</method>
+<method selector='checked'>
+<retval type='B'/>
+</method>
+<method selector='defaultChecked'>
+<retval type='B'/>
+</method>
+<method selector='disabled'>
+<retval type='B'/>
+</method>
+<method selector='indeterminate'>
+<retval type='B'/>
+</method>
+<method selector='multiple'>
+<retval type='B'/>
+</method>
+<method selector='readOnly'>
+<retval type='B'/>
+</method>
+<method selector='setAutofocus:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setChecked:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setDefaultChecked:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setDisabled:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setIndeterminate:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setMultiple:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setReadOnly:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='willValidate'>
+<retval type='B'/>
+</method>
+</class>
+<class name='DOMHTMLLinkElement'>
+<method selector='disabled'>
+<retval type='B'/>
+</method>
+<method selector='setDisabled:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='DOMHTMLMenuElement'>
+<method selector='compact'>
+<retval type='B'/>
+</method>
+<method selector='setCompact:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='DOMHTMLOListElement'>
+<method selector='compact'>
+<retval type='B'/>
+</method>
+<method selector='setCompact:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='DOMHTMLObjectElement'>
+<method selector='declare'>
+<retval type='B'/>
+</method>
+<method selector='setDeclare:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='DOMHTMLOptGroupElement'>
+<method selector='disabled'>
+<retval type='B'/>
+</method>
+<method selector='setDisabled:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='DOMHTMLOptionElement'>
+<method selector='defaultSelected'>
+<retval type='B'/>
+</method>
+<method selector='disabled'>
+<retval type='B'/>
+</method>
+<method selector='selected'>
+<retval type='B'/>
+</method>
+<method selector='setDefaultSelected:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setDisabled:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setSelected:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='DOMHTMLPreElement'>
+<method selector='setWrap:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='wrap'>
+<retval type='B'/>
+</method>
+</class>
+<class name='DOMHTMLScriptElement'>
+<method selector='defer'>
+<retval type='B'/>
+</method>
+<method selector='setDefer:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='DOMHTMLSelectElement'>
+<method selector='autofocus'>
+<retval type='B'/>
+</method>
+<method selector='disabled'>
+<retval type='B'/>
+</method>
+<method selector='multiple'>
+<retval type='B'/>
+</method>
+<method selector='setAutofocus:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setDisabled:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setMultiple:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='willValidate'>
+<retval type='B'/>
+</method>
+</class>
+<class name='DOMHTMLStyleElement'>
+<method selector='disabled'>
+<retval type='B'/>
+</method>
+<method selector='setDisabled:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='DOMHTMLTableCellElement'>
+<method selector='noWrap'>
+<retval type='B'/>
+</method>
+<method selector='setNoWrap:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='DOMHTMLTextAreaElement'>
+<method selector='autofocus'>
+<retval type='B'/>
+</method>
+<method selector='disabled'>
+<retval type='B'/>
+</method>
+<method selector='readOnly'>
+<retval type='B'/>
+</method>
+<method selector='setAutofocus:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setDisabled:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setReadOnly:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='willValidate'>
+<retval type='B'/>
+</method>
+</class>
+<class name='DOMHTMLUListElement'>
+<method selector='compact'>
+<retval type='B'/>
+</method>
+<method selector='setCompact:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='DOMImplementation'>
+<method selector='hasFeature::'>
+<retval type='B'/>
+</method>
+<method selector='hasFeature:version:'>
+<retval type='B'/>
+</method>
+</class>
+<class name='DOMKeyboardEvent'>
+<method selector='altGraphKey'>
+<retval type='B'/>
+</method>
+<method selector='altKey'>
+<retval type='B'/>
+</method>
+<method selector='ctrlKey'>
+<retval type='B'/>
+</method>
+<method selector='getModifierState:'>
+<retval type='B'/>
+</method>
+<method selector='initKeyboardEvent:canBubble:cancelable:view:keyIdentifier:keyLocation:ctrlKey:altKey:shiftKey:metaKey:'>
+<arg type='B' index='1'/>
+<arg type='B' index='2'/>
+<arg type='B' index='6'/>
+<arg type='B' index='7'/>
+<arg type='B' index='8'/>
+<arg type='B' index='9'/>
+</method>
+<method selector='initKeyboardEvent:canBubble:cancelable:view:keyIdentifier:keyLocation:ctrlKey:altKey:shiftKey:metaKey:altGraphKey:'>
+<arg type='B' index='1'/>
+<arg type='B' index='2'/>
+<arg type='B' index='6'/>
+<arg type='B' index='7'/>
+<arg type='B' index='8'/>
+<arg type='B' index='9'/>
+<arg type='B' index='10'/>
+</method>
+<method selector='metaKey'>
+<retval type='B'/>
+</method>
+<method selector='shiftKey'>
+<retval type='B'/>
+</method>
+</class>
+<class name='DOMMouseEvent'>
+<method selector='altKey'>
+<retval type='B'/>
+</method>
+<method selector='ctrlKey'>
+<retval type='B'/>
+</method>
+<method selector='initMouseEvent:::::::::::::::'>
+<arg type='B' index='1'/>
+<arg type='B' index='2'/>
+<arg type='B' index='9'/>
+<arg type='B' index='10'/>
+<arg type='B' index='11'/>
+<arg type='B' index='12'/>
+</method>
+<method selector='initMouseEvent:canBubble:cancelable:view:detail:screenX:screenY:clientX:clientY:ctrlKey:altKey:shiftKey:metaKey:button:relatedTarget:'>
+<arg type='B' index='1'/>
+<arg type='B' index='2'/>
+<arg type='B' index='9'/>
+<arg type='B' index='10'/>
+<arg type='B' index='11'/>
+<arg type='B' index='12'/>
+</method>
+<method selector='metaKey'>
+<retval type='B'/>
+</method>
+<method selector='shiftKey'>
+<retval type='B'/>
+</method>
+</class>
+<class name='DOMMutationEvent'>
+<method selector='initMutationEvent::::::::'>
+<arg type='B' index='1'/>
+<arg type='B' index='2'/>
+</method>
+<method selector='initMutationEvent:canBubble:cancelable:relatedNode:prevValue:newValue:attrName:attrChange:'>
+<arg type='B' index='1'/>
+<arg type='B' index='2'/>
+</method>
+</class>
+<class name='DOMNode'>
+<method selector='cloneNode:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='hasAttributes'>
+<retval type='B'/>
+</method>
+<method selector='hasChildNodes'>
+<retval type='B'/>
+</method>
+<method selector='isContentEditable'>
+<retval type='B'/>
+</method>
+<method selector='isDefaultNamespace:'>
+<retval type='B'/>
+</method>
+<method selector='isEqualNode:'>
+<retval type='B'/>
+</method>
+<method selector='isSameNode:'>
+<retval type='B'/>
+</method>
+<method selector='isSupported::'>
+<retval type='B'/>
+</method>
+<method selector='isSupported:version:'>
+<retval type='B'/>
+</method>
+</class>
+<class name='DOMNodeIterator'>
+<method selector='expandEntityReferences'>
+<retval type='B'/>
+</method>
+<method selector='pointerBeforeReferenceNode'>
+<retval type='B'/>
+</method>
+</class>
+<class name='DOMOverflowEvent'>
+<method selector='horizontalOverflow'>
+<retval type='B'/>
+</method>
+<method selector='initOverflowEvent:horizontalOverflow:verticalOverflow:'>
+<arg type='B' index='1'/>
+<arg type='B' index='2'/>
+</method>
+<method selector='verticalOverflow'>
+<retval type='B'/>
+</method>
+</class>
+<class name='DOMProgressEvent'>
+<method selector='initProgressEvent:canBubbleArg:cancelableArg:lengthComputableArg:loadedArg:totalArg:'>
+<arg type='B' index='1'/>
+<arg type='B' index='2'/>
+<arg type='B' index='3'/>
+</method>
+<method selector='lengthComputable'>
+<retval type='B'/>
+</method>
+</class>
+<class name='DOMRange'>
+<method selector='collapse:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='collapsed'>
+<retval type='B'/>
+</method>
+<method selector='intersectsNode:'>
+<retval type='B'/>
+</method>
+<method selector='isPointInRange:offset:'>
+<retval type='B'/>
+</method>
+</class>
+<class name='DOMStyleSheet'>
+<method selector='disabled'>
+<retval type='B'/>
+</method>
+<method selector='setDisabled:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='DOMTreeWalker'>
+<method selector='expandEntityReferences'>
+<retval type='B'/>
+</method>
+</class>
+<class name='DOMUIEvent'>
+<method selector='initUIEvent:::::'>
+<arg type='B' index='1'/>
+<arg type='B' index='2'/>
+</method>
+<method selector='initUIEvent:canBubble:cancelable:view:detail:'>
+<arg type='B' index='1'/>
+<arg type='B' index='2'/>
+</method>
+</class>
+<class name='DOMWheelEvent'>
+<method selector='altKey'>
+<retval type='B'/>
+</method>
+<method selector='ctrlKey'>
+<retval type='B'/>
+</method>
+<method selector='initWheelEvent:wheelDeltaY:view:screenX:screenY:clientX:clientY:ctrlKey:altKey:shiftKey:metaKey:'>
+<arg type='B' index='7'/>
+<arg type='B' index='8'/>
+<arg type='B' index='9'/>
+<arg type='B' index='10'/>
+</method>
+<method selector='isHorizontal'>
+<retval type='B'/>
+</method>
+<method selector='metaKey'>
+<retval type='B'/>
+</method>
+<method selector='shiftKey'>
+<retval type='B'/>
+</method>
+</class>
+<class name='DOMXPathResult'>
+<method selector='booleanValue'>
+<retval type='B'/>
+</method>
+<method selector='invalidIteratorState'>
+<retval type='B'/>
+</method>
+</class>
+<class name='NSObject'>
+<method selector='addEventListener:::'>
+<arg type='B' index='2'/>
+</method>
+<method selector='addEventListener:listener:useCapture:'>
+<arg type='B' index='2'/>
+</method>
+<method selector='canProvideDocumentSource'>
+<retval type='B'/>
+</method>
+<method selector='dispatchEvent:'>
+<retval type='B'/>
+</method>
+<method class_method='true' selector='isKeyExcludedFromWebScript:'>
+<retval type='B'/>
+</method>
+<method class_method='true' selector='isSelectorExcludedFromWebScript:'>
+<retval type='B'/>
+</method>
+<method selector='removeEventListener:::'>
+<arg type='B' index='2'/>
+</method>
+<method selector='removeEventListener:listener:useCapture:'>
+<arg type='B' index='2'/>
+</method>
+<method selector='searchFor:direction:caseSensitive:wrap:'>
+<arg type='B' index='1'/>
+<arg type='B' index='2'/>
+<arg type='B' index='3'/>
+<retval type='B'/>
+</method>
+<method selector='setNeedsLayout:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='supportsTextEncoding'>
+<retval type='B'/>
+</method>
+<method selector='webPlugInCallJava:isStatic:returnType:method:arguments:callingURL:exceptionDescription:'>
+<arg type='B' index='1'/>
+</method>
+<method selector='webPlugInSetIsSelected:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='webView:doCommandBySelector:'>
+<retval type='B'/>
+</method>
+<method selector='webView:runBeforeUnloadConfirmPanelWithMessage:initiatedByFrame:'>
+<retval type='B'/>
+</method>
+<method selector='webView:runJavaScriptConfirmPanelWithMessage:'>
+<retval type='B'/>
+</method>
+<method selector='webView:runJavaScriptConfirmPanelWithMessage:initiatedByFrame:'>
+<retval type='B'/>
+</method>
+<method selector='webView:runOpenPanelForFileButtonWithResultListener:allowMultipleFiles:'>
+<arg type='B' index='2'/>
+</method>
+<method selector='webView:setResizable:'>
+<arg type='B' index='1'/>
+</method>
+<method selector='webView:setStatusBarVisible:'>
+<arg type='B' index='1'/>
+</method>
+<method selector='webView:setToolbarsVisible:'>
+<arg type='B' index='1'/>
+</method>
+<method selector='webView:shouldApplyStyle:toElementsInDOMRange:'>
+<retval type='B'/>
+</method>
+<method selector='webView:shouldBeginEditingInDOMRange:'>
+<retval type='B'/>
+</method>
+<method selector='webView:shouldChangeSelectedDOMRange:toDOMRange:affinity:stillSelecting:'>
+<arg type='B' index='4'/>
+<retval type='B'/>
+</method>
+<method selector='webView:shouldChangeTypingStyle:toStyle:'>
+<retval type='B'/>
+</method>
+<method selector='webView:shouldDeleteDOMRange:'>
+<retval type='B'/>
+</method>
+<method selector='webView:shouldEndEditingInDOMRange:'>
+<retval type='B'/>
+</method>
+<method selector='webView:shouldInsertNode:replacingDOMRange:givenAction:'>
+<retval type='B'/>
+</method>
+<method selector='webView:shouldInsertText:replacingDOMRange:givenAction:'>
+<retval type='B'/>
+</method>
+<method selector='webView:shouldPerformAction:fromSender:'>
+<retval type='B'/>
+</method>
+<method selector='webView:validateUserInterfaceItem:defaultValidation:'>
+<arg type='B' index='2'/>
+<retval type='B'/>
+</method>
+<method selector='webViewAreToolbarsVisible:'>
+<retval type='B'/>
+</method>
+<method selector='webViewIsResizable:'>
+<retval type='B'/>
+</method>
+<method selector='webViewIsStatusBarVisible:'>
+<retval type='B'/>
+</method>
+</class>
+<class name='WebBackForwardList'>
+<method selector='containsItem:'>
+<retval type='B'/>
+</method>
+</class>
+<class name='WebDataSource'>
+<method selector='isLoading'>
+<retval type='B'/>
+</method>
+</class>
+<class name='WebFrameView'>
+<method selector='allowsScrolling'>
+<retval type='B'/>
+</method>
+<method selector='canPrintHeadersAndFooters'>
+<retval type='B'/>
+</method>
+<method selector='documentViewShouldHandlePrint'>
+<retval type='B'/>
+</method>
+<method selector='setAllowsScrolling:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='WebHistory'>
+<method selector='loadFromURL:error:'>
+<retval type='B'/>
+</method>
+<method selector='saveToURL:error:'>
+<retval type='B'/>
+</method>
+</class>
+<class name='WebPreferences'>
+<method selector='allowsAnimatedImageLooping'>
+<retval type='B'/>
+</method>
+<method selector='allowsAnimatedImages'>
+<retval type='B'/>
+</method>
+<method selector='arePlugInsEnabled'>
+<retval type='B'/>
+</method>
+<method selector='autosaves'>
+<retval type='B'/>
+</method>
+<method selector='isJavaEnabled'>
+<retval type='B'/>
+</method>
+<method selector='isJavaScriptEnabled'>
+<retval type='B'/>
+</method>
+<method selector='javaScriptCanOpenWindowsAutomatically'>
+<retval type='B'/>
+</method>
+<method selector='loadsImagesAutomatically'>
+<retval type='B'/>
+</method>
+<method selector='privateBrowsingEnabled'>
+<retval type='B'/>
+</method>
+<method selector='setAllowsAnimatedImageLooping:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setAllowsAnimatedImages:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setAutosaves:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setJavaEnabled:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setJavaScriptCanOpenWindowsAutomatically:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setJavaScriptEnabled:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setLoadsImagesAutomatically:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setPlugInsEnabled:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setPrivateBrowsingEnabled:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setShouldPrintBackgrounds:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setTabsToLinks:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setUserStyleSheetEnabled:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setUsesPageCache:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='shouldPrintBackgrounds'>
+<retval type='B'/>
+</method>
+<method selector='tabsToLinks'>
+<retval type='B'/>
+</method>
+<method selector='userStyleSheetEnabled'>
+<retval type='B'/>
+</method>
+<method selector='usesPageCache'>
+<retval type='B'/>
+</method>
+</class>
+<class name='WebScriptObject'>
+<method class_method='true' selector='throwException:'>
+<retval type='B'/>
+</method>
+</class>
+<class name='WebView'>
+<method selector='canGoBack'>
+<retval type='B'/>
+</method>
+<method selector='canGoForward'>
+<retval type='B'/>
+</method>
+<method selector='canMakeTextLarger'>
+<retval type='B'/>
+</method>
+<method selector='canMakeTextSmaller'>
+<retval type='B'/>
+</method>
+<method selector='canMakeTextStandardSize'>
+<retval type='B'/>
+</method>
+<method class_method='true' selector='canShowMIMEType:'>
+<retval type='B'/>
+</method>
+<method class_method='true' selector='canShowMIMETypeAsHTML:'>
+<retval type='B'/>
+</method>
+<method selector='drawsBackground'>
+<retval type='B'/>
+</method>
+<method selector='goBack'>
+<retval type='B'/>
+</method>
+<method selector='goForward'>
+<retval type='B'/>
+</method>
+<method selector='goToBackForwardItem:'>
+<retval type='B'/>
+</method>
+<method selector='isContinuousSpellCheckingEnabled'>
+<retval type='B'/>
+</method>
+<method selector='isEditable'>
+<retval type='B'/>
+</method>
+<method selector='isLoading'>
+<retval type='B'/>
+</method>
+<method selector='maintainsInactiveSelection'>
+<retval type='B'/>
+</method>
+<method selector='searchFor:direction:caseSensitive:wrap:'>
+<arg type='B' index='1'/>
+<arg type='B' index='2'/>
+<arg type='B' index='3'/>
+<retval type='B'/>
+</method>
+<method selector='setContinuousSpellCheckingEnabled:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setDrawsBackground:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setEditable:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setMaintainsBackForwardList:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setShouldCloseWithWindow:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setShouldUpdateWhileOffscreen:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setSmartInsertDeleteEnabled:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='shouldCloseWithWindow'>
+<retval type='B'/>
+</method>
+<method selector='shouldUpdateWhileOffscreen'>
+<retval type='B'/>
+</method>
+<method selector='smartInsertDeleteEnabled'>
+<retval type='B'/>
+</method>
+<method selector='supportsTextEncoding'>
+<retval type='B'/>
+</method>
+</class>
+<informal_protocol name='DOMEventListener'>
+<method type64='v24@0:8@16' type='v12@0:4@8' selector='handleEvent:'/>
+</informal_protocol>
+<informal_protocol name='DOMEventTarget'>
+<method type64='v36@0:8@16@24B32' type='v20@0:4@8@12B16' selector='addEventListener:::'/>
+<method type64='v36@0:8@16@24B32' type='v20@0:4@8@12B16' selector='addEventListener:listener:useCapture:'/>
+<method type64='B24@0:8@16' type='B12@0:4@8' selector='dispatchEvent:'/>
+<method type64='v36@0:8@16@24B32' type='v20@0:4@8@12B16' selector='removeEventListener:::'/>
+<method type64='v36@0:8@16@24B32' type='v20@0:4@8@12B16' selector='removeEventListener:listener:useCapture:'/>
+</informal_protocol>
+<informal_protocol name='DOMNodeFilter'>
+<method type64='s24@0:8@16' type='s12@0:4@8' selector='acceptNode:'/>
+</informal_protocol>
+<informal_protocol name='DOMXPathNSResolver'>
+<method type64='@24@0:8@16' type='@12@0:4@8' selector='lookupNamespaceURI:'/>
+</informal_protocol>
+<informal_protocol name='WebDocumentRepresentation'>
+<method type64='B16@0:8' type='B8@0:4' selector='canProvideDocumentSource'/>
+<method type64='@16@0:8' type='@8@0:4' selector='documentSource'/>
+<method type64='v24@0:8@16' type='v12@0:4@8' selector='finishedLoadingWithDataSource:'/>
+<method type64='v32@0:8@16@24' type='v16@0:4@8@12' selector='receivedData:withDataSource:'/>
+<method type64='v32@0:8@16@24' type='v16@0:4@8@12' selector='receivedError:withDataSource:'/>
+<method type64='v24@0:8@16' type='v12@0:4@8' selector='setDataSource:'/>
+<method type64='@16@0:8' type='@8@0:4' selector='title'/>
+</informal_protocol>
+<informal_protocol name='WebDocumentSearching'>
+<method type64='B36@0:8@16B24B28B32' type='B24@0:4@8B12B16B20' selector='searchFor:direction:caseSensitive:wrap:'/>
+</informal_protocol>
+<informal_protocol name='WebDocumentText'>
+<method type64='@16@0:8' type='@8@0:4' selector='attributedString'/>
+<method type64='v16@0:8' type='v8@0:4' selector='deselectAll'/>
+<method type64='v16@0:8' type='v8@0:4' selector='selectAll'/>
+<method type64='@16@0:8' type='@8@0:4' selector='selectedAttributedString'/>
+<method type64='@16@0:8' type='@8@0:4' selector='selectedString'/>
+<method type64='@16@0:8' type='@8@0:4' selector='string'/>
+<method type64='B16@0:8' type='B8@0:4' selector='supportsTextEncoding'/>
+</informal_protocol>
+<informal_protocol name='WebDocumentView'>
+<method type64='v24@0:8@16' type='v12@0:4@8' selector='dataSourceUpdated:'/>
+<method type64='v16@0:8' type='v8@0:4' selector='layout'/>
+<method type64='v24@0:8@16' type='v12@0:4@8' selector='setDataSource:'/>
+<method type64='v20@0:8B16' type='v12@0:4B8' selector='setNeedsLayout:'/>
+<method type64='v16@0:8' type='v8@0:4' selector='viewDidMoveToHostWindow'/>
+<method type64='v24@0:8@16' type='v12@0:4@8' selector='viewWillMoveToHostWindow:'/>
+</informal_protocol>
+<informal_protocol name='WebDownloadDelegate'>
+<method type64='@24@0:8@16' type='@12@0:4@8' selector='downloadWindowForAuthenticationSheet:'/>
+</informal_protocol>
+<informal_protocol name='WebFrameLoadDelegate'>
+<method type64='v32@0:8@16@24' type='v16@0:4@8@12' selector='webView:didCancelClientRedirectForFrame:'/>
+<method type64='v32@0:8@16@24' type='v16@0:4@8@12' selector='webView:didChangeLocationWithinPageForFrame:'/>
+<method type64='v40@0:8@16@24@32' type='v20@0:4@8@12@16' selector='webView:didClearWindowObject:forFrame:'/>
+<method type64='v32@0:8@16@24' type='v16@0:4@8@12' selector='webView:didCommitLoadForFrame:'/>
+<method type64='v40@0:8@16@24@32' type='v20@0:4@8@12@16' selector='webView:didFailLoadWithError:forFrame:'/>
+<method type64='v40@0:8@16@24@32' type='v20@0:4@8@12@16' selector='webView:didFailProvisionalLoadWithError:forFrame:'/>
+<method type64='v32@0:8@16@24' type='v16@0:4@8@12' selector='webView:didFinishLoadForFrame:'/>
+<method type64='v40@0:8@16@24@32' type='v20@0:4@8@12@16' selector='webView:didReceiveIcon:forFrame:'/>
+<method type64='v32@0:8@16@24' type='v16@0:4@8@12' selector='webView:didReceiveServerRedirectForProvisionalLoadForFrame:'/>
+<method type64='v40@0:8@16@24@32' type='v20@0:4@8@12@16' selector='webView:didReceiveTitle:forFrame:'/>
+<method type64='v32@0:8@16@24' type='v16@0:4@8@12' selector='webView:didStartProvisionalLoadForFrame:'/>
+<method type64='v32@0:8@16@24' type='v16@0:4@8@12' selector='webView:willCloseFrame:'/>
+<method type64='v56@0:8@16@24d32@40@48' type='v32@0:4@8@12d16@24@28' selector='webView:willPerformClientRedirectToURL:delay:fireDate:forFrame:'/>
+<method type64='v32@0:8@16@24' type='v16@0:4@8@12' selector='webView:windowScriptObjectAvailable:'/>
+</informal_protocol>
+<informal_protocol name='WebJavaPlugIn'>
+<method type64='(jvalue=CcSsiqfd^{_jobject})64@0:8^{_jobject=}16B24i28^{_jmethodID=}32^(jvalue=CcSsiqfd^{_jobject})40@48^@56' type='(jvalue=CcSsiqfd^{_jobject})36@0:4^{_jobject=}8B12i16^{_jmethodID=}20^(jvalue=CcSsiqfd^{_jobject})24@28^@32' selector='webPlugInCallJava:isStatic:returnType:method:arguments:callingURL:exceptionDescription:'/>
+<method type64='^{_jobject=}16@0:8' type='^{_jobject=}8@0:4' selector='webPlugInGetApplet'/>
+</informal_protocol>
+<informal_protocol name='WebOpenPanelResultListener'>
+<method type64='v16@0:8' type='v8@0:4' selector='cancel'/>
+<method type64='v24@0:8@16' type='v12@0:4@8' selector='chooseFilename:'/>
+<method type64='v24@0:8@16' type='v12@0:4@8' selector='chooseFilenames:'/>
+</informal_protocol>
+<informal_protocol name='WebPlugIn'>
+<method type64='@16@0:8' type='@8@0:4' selector='objectForWebScript'/>
+<method type64='v16@0:8' type='v8@0:4' selector='webPlugInDestroy'/>
+<method type64='v16@0:8' type='v8@0:4' selector='webPlugInInitialize'/>
+<method type64='v24@0:8@16' type='v12@0:4@8' selector='webPlugInMainResourceDidFailWithError:'/>
+<method type64='v16@0:8' type='v8@0:4' selector='webPlugInMainResourceDidFinishLoading'/>
+<method type64='v24@0:8@16' type='v12@0:4@8' selector='webPlugInMainResourceDidReceiveData:'/>
+<method type64='v24@0:8@16' type='v12@0:4@8' selector='webPlugInMainResourceDidReceiveResponse:'/>
+<method type64='v20@0:8B16' type='v12@0:4B8' selector='webPlugInSetIsSelected:'/>
+<method type64='v16@0:8' type='v8@0:4' selector='webPlugInStart'/>
+<method type64='v16@0:8' type='v8@0:4' selector='webPlugInStop'/>
+</informal_protocol>
+<informal_protocol name='WebPlugInContainer'>
+<method type64='@16@0:8' type='@8@0:4' selector='webFrame'/>
+<method type64='v32@0:8@16@24' type='v16@0:4@8@12' selector='webPlugInContainerLoadRequest:inFrame:'/>
+<method type64='@16@0:8' type='@8@0:4' selector='webPlugInContainerSelectionColor'/>
+<method type64='v24@0:8@16' type='v12@0:4@8' selector='webPlugInContainerShowStatus:'/>
+</informal_protocol>
+<informal_protocol name='WebPlugInViewFactory'>
+<method type64='@24@0:8@16' type='@12@0:4@8' class_method='true' selector='plugInViewWithArguments:'/>
+</informal_protocol>
+<informal_protocol name='WebPolicyDecisionListener'>
+<method type64='v16@0:8' type='v8@0:4' selector='download'/>
+<method type64='v16@0:8' type='v8@0:4' selector='ignore'/>
+<method type64='v16@0:8' type='v8@0:4' selector='use'/>
+</informal_protocol>
+<informal_protocol name='WebPolicyDelegate'>
+<method type64='v56@0:8@16@24@32@40@48' type='v28@0:4@8@12@16@20@24' selector='webView:decidePolicyForMIMEType:request:frame:decisionListener:'/>
+<method type64='v56@0:8@16@24@32@40@48' type='v28@0:4@8@12@16@20@24' selector='webView:decidePolicyForNavigationAction:request:frame:decisionListener:'/>
+<method type64='v56@0:8@16@24@32@40@48' type='v28@0:4@8@12@16@20@24' selector='webView:decidePolicyForNewWindowAction:request:newFrameName:decisionListener:'/>
+<method type64='v40@0:8@16@24@32' type='v20@0:4@8@12@16' selector='webView:unableToImplementPolicyWithError:frame:'/>
+</informal_protocol>
+<informal_protocol name='WebResourceLoadDelegate'>
+<method type64='@40@0:8@16@24@32' type='@20@0:4@8@12@16' selector='webView:identifierForInitialRequest:fromDataSource:'/>
+<method type64='v40@0:8@16@24@32' type='v20@0:4@8@12@16' selector='webView:plugInFailedWithError:dataSource:'/>
+<method type64='v48@0:8@16@24@32@40' type='v24@0:4@8@12@16@20' selector='webView:resource:didCancelAuthenticationChallenge:fromDataSource:'/>
+<method type64='v48@0:8@16@24@32@40' type='v24@0:4@8@12@16@20' selector='webView:resource:didFailLoadingWithError:fromDataSource:'/>
+<method type64='v40@0:8@16@24@32' type='v20@0:4@8@12@16' selector='webView:resource:didFinishLoadingFromDataSource:'/>
+<method type64='v48@0:8@16@24@32@40' type='v24@0:4@8@12@16@20' selector='webView:resource:didReceiveAuthenticationChallenge:fromDataSource:'/>
+<method type64='v48@0:8@16@24q32@40' type='v24@0:4@8@12i16@20' selector='webView:resource:didReceiveContentLength:fromDataSource:'/>
+<method type64='v48@0:8@16@24@32@40' type='v24@0:4@8@12@16@20' selector='webView:resource:didReceiveResponse:fromDataSource:'/>
+<method type64='@56@0:8@16@24@32@40@48' type='@28@0:4@8@12@16@20@24' selector='webView:resource:willSendRequest:redirectResponse:fromDataSource:'/>
+</informal_protocol>
+<informal_protocol name='WebScripting'>
+<method type64='v16@0:8' type='v8@0:4' selector='finalizeForWebScript'/>
+<method type64='@24@0:8@16' type='@12@0:4@8' selector='invokeDefaultMethodWithArguments:'/>
+<method type64='@32@0:8@16@24' type='@16@0:4@8@12' selector='invokeUndefinedMethodFromWebScript:withArguments:'/>
+<method type64='B24@0:8r*16' type='B12@0:4r*8' class_method='true' selector='isKeyExcludedFromWebScript:'/>
+<method type64='B24@0:8:16' type='B12@0:4:8' class_method='true' selector='isSelectorExcludedFromWebScript:'/>
+<method type64='@24@0:8r*16' type='@12@0:4r*8' class_method='true' selector='webScriptNameForKey:'/>
+<method type64='@24@0:8:16' type='@12@0:4:8' class_method='true' selector='webScriptNameForSelector:'/>
+</informal_protocol>
+<informal_protocol name='WebUIDelegate'>
+<method type64='@40@0:8@16@24@32' type='@20@0:4@8@12@16' selector='webView:contextMenuItemsForElement:defaultMenuItems:'/>
+<method type64='@32@0:8@16@24' type='@16@0:4@8@12' selector='webView:createWebViewModalDialogWithRequest:'/>
+<method type64='@32@0:8@16@24' type='@16@0:4@8@12' selector='webView:createWebViewWithRequest:'/>
+<method type64='Q32@0:8@16@24' type='I16@0:4@8@12' selector='webView:dragDestinationActionMaskForDraggingInfo:'/>
+<method type64='Q40@0:8@16{CGPoint=dd}24' type='I20@0:4@8{_NSPoint=ff}12' selector='webView:dragSourceActionMaskForPoint:'/>
+<method type64='v56@0:8@16{CGRect={CGPoint=dd}{CGSize=dd}}24' type='v28@0:4@8{_NSRect={_NSPoint=ff}{_NSSize=ff}}12' selector='webView:drawFooterInRect:'/>
+<method type64='v56@0:8@16{CGRect={CGPoint=dd}{CGSize=dd}}24' type='v28@0:4@8{_NSRect={_NSPoint=ff}{_NSSize=ff}}12' selector='webView:drawHeaderInRect:'/>
+<method type64='v32@0:8@16@24' type='v16@0:4@8@12' selector='webView:makeFirstResponder:'/>
+<method type64='v40@0:8@16@24Q32' type='v20@0:4@8@12I16' selector='webView:mouseDidMoveOverElement:modifierFlags:'/>
+<method type64='v32@0:8@16@24' type='v16@0:4@8@12' selector='webView:printFrameView:'/>
+<method type64='B40@0:8@16@24@32' type='B20@0:4@8@12@16' selector='webView:runBeforeUnloadConfirmPanelWithMessage:initiatedByFrame:'/>
+<method type64='v32@0:8@16@24' type='v16@0:4@8@12' selector='webView:runJavaScriptAlertPanelWithMessage:'/>
+<method type64='v40@0:8@16@24@32' type='v20@0:4@8@12@16' selector='webView:runJavaScriptAlertPanelWithMessage:initiatedByFrame:'/>
+<method type64='B32@0:8@16@24' type='B16@0:4@8@12' selector='webView:runJavaScriptConfirmPanelWithMessage:'/>
+<method type64='B40@0:8@16@24@32' type='B20@0:4@8@12@16' selector='webView:runJavaScriptConfirmPanelWithMessage:initiatedByFrame:'/>
+<method type64='@40@0:8@16@24@32' type='@20@0:4@8@12@16' selector='webView:runJavaScriptTextInputPanelWithPrompt:defaultText:'/>
+<method type64='@48@0:8@16@24@32@40' type='@24@0:4@8@12@16@20' selector='webView:runJavaScriptTextInputPanelWithPrompt:defaultText:initiatedByFrame:'/>
+<method type64='v32@0:8@16@24' type='v16@0:4@8@12' selector='webView:runOpenPanelForFileButtonWithResultListener:'/>
+<method type64='v36@0:8@16@24B32' type='v20@0:4@8@12B16' selector='webView:runOpenPanelForFileButtonWithResultListener:allowMultipleFiles:'/>
+<method type64='v56@0:8@16{CGRect={CGPoint=dd}{CGSize=dd}}24' type='v28@0:4@8{_NSRect={_NSPoint=ff}{_NSSize=ff}}12' selector='webView:setContentRect:'/>
+<method type64='v56@0:8@16{CGRect={CGPoint=dd}{CGSize=dd}}24' type='v28@0:4@8{_NSRect={_NSPoint=ff}{_NSSize=ff}}12' selector='webView:setFrame:'/>
+<method type64='v28@0:8@16B24' type='v16@0:4@8B12' selector='webView:setResizable:'/>
+<method type64='v28@0:8@16B24' type='v16@0:4@8B12' selector='webView:setStatusBarVisible:'/>
+<method type64='v32@0:8@16@24' type='v16@0:4@8@12' selector='webView:setStatusText:'/>
+<method type64='v28@0:8@16B24' type='v16@0:4@8B12' selector='webView:setToolbarsVisible:'/>
+<method type64='B40@0:8@16:24@32' type='B20@0:4@8:12@16' selector='webView:shouldPerformAction:fromSender:'/>
+<method type64='B36@0:8@16@24B32' type='B20@0:4@8@12B16' selector='webView:validateUserInterfaceItem:defaultValidation:'/>
+<method type64='v36@0:8@16i24@28' type='v20@0:4@8i12@16' selector='webView:willPerformDragDestinationAction:forDraggingInfo:'/>
+<method type64='v52@0:8@16i24{CGPoint=dd}28@44' type='v28@0:4@8i12{_NSPoint=ff}16@24' selector='webView:willPerformDragSourceAction:fromPoint:withPasteboard:'/>
+<method type64='B24@0:8@16' type='B12@0:4@8' selector='webViewAreToolbarsVisible:'/>
+<method type64='v24@0:8@16' type='v12@0:4@8' selector='webViewClose:'/>
+<method type64='{CGRect={CGPoint=dd}{CGSize=dd}}24@0:8@16' type='{_NSRect={_NSPoint=ff}{_NSSize=ff}}12@0:4@8' selector='webViewContentRect:'/>
+<method type64='@24@0:8@16' type='@12@0:4@8' selector='webViewFirstResponder:'/>
+<method type64='v24@0:8@16' type='v12@0:4@8' selector='webViewFocus:'/>
+<method type64='f24@0:8@16' type='f12@0:4@8' selector='webViewFooterHeight:'/>
+<method type64='{CGRect={CGPoint=dd}{CGSize=dd}}24@0:8@16' type='{_NSRect={_NSPoint=ff}{_NSSize=ff}}12@0:4@8' selector='webViewFrame:'/>
+<method type64='f24@0:8@16' type='f12@0:4@8' selector='webViewHeaderHeight:'/>
+<method type64='B24@0:8@16' type='B12@0:4@8' selector='webViewIsResizable:'/>
+<method type64='B24@0:8@16' type='B12@0:4@8' selector='webViewIsStatusBarVisible:'/>
+<method type64='v24@0:8@16' type='v12@0:4@8' selector='webViewRunModal:'/>
+<method type64='v24@0:8@16' type='v12@0:4@8' selector='webViewShow:'/>
+<method type64='@24@0:8@16' type='@12@0:4@8' selector='webViewStatusText:'/>
+<method type64='v24@0:8@16' type='v12@0:4@8' selector='webViewUnfocus:'/>
+</informal_protocol>
+<informal_protocol name='WebViewEditingDelegate'>
+<method type64='@24@0:8@16' type='@12@0:4@8' selector='undoManagerForWebView:'/>
+<method type64='B32@0:8@16:24' type='B16@0:4@8:12' selector='webView:doCommandBySelector:'/>
+<method type64='B40@0:8@16@24@32' type='B20@0:4@8@12@16' selector='webView:shouldApplyStyle:toElementsInDOMRange:'/>
+<method type64='B32@0:8@16@24' type='B16@0:4@8@12' selector='webView:shouldBeginEditingInDOMRange:'/>
+<method type64='B52@0:8@16@24@32Q40B48' type='B28@0:4@8@12@16I20B24' selector='webView:shouldChangeSelectedDOMRange:toDOMRange:affinity:stillSelecting:'/>
+<method type64='B40@0:8@16@24@32' type='B20@0:4@8@12@16' selector='webView:shouldChangeTypingStyle:toStyle:'/>
+<method type64='B32@0:8@16@24' type='B16@0:4@8@12' selector='webView:shouldDeleteDOMRange:'/>
+<method type64='B32@0:8@16@24' type='B16@0:4@8@12' selector='webView:shouldEndEditingInDOMRange:'/>
+<method type64='B44@0:8@16@24@32i40' type='B24@0:4@8@12@16i20' selector='webView:shouldInsertNode:replacingDOMRange:givenAction:'/>
+<method type64='B44@0:8@16@24@32i40' type='B24@0:4@8@12@16i20' selector='webView:shouldInsertText:replacingDOMRange:givenAction:'/>
+<method type64='v24@0:8@16' type='v12@0:4@8' selector='webViewDidBeginEditing:'/>
+<method type64='v24@0:8@16' type='v12@0:4@8' selector='webViewDidChange:'/>
+<method type64='v24@0:8@16' type='v12@0:4@8' selector='webViewDidChangeSelection:'/>
+<method type64='v24@0:8@16' type='v12@0:4@8' selector='webViewDidChangeTypingStyle:'/>
+<method type64='v24@0:8@16' type='v12@0:4@8' selector='webViewDidEndEditing:'/>
+</informal_protocol>
+</signatures>

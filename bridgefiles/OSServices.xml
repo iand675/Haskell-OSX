@@ -1,0 +1,2197 @@
+<?xml version='1.0'?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version='1.0'>
+<depends_on path='/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/CarbonCore.framework'/>
+<depends_on path='/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/CFNetwork.framework'/>
+<depends_on path='/System/Library/Frameworks/OpenDirectory.framework/Versions/A/Frameworks/CFOpenDirectory.framework'/>
+<depends_on path='/System/Library/Frameworks/CoreFoundation.framework'/>
+<depends_on path='/System/Library/Frameworks/DiskArbitration.framework'/>
+<depends_on path='/System/Library/Frameworks/IOKit.framework'/>
+<depends_on path='/System/Library/Frameworks/NetFS.framework'/>
+<depends_on path='/System/Library/Frameworks/Security.framework'/>
+<depends_on path='/System/Library/Frameworks/SystemConfiguration.framework'/>
+<struct type='{AppleTalkInfo=&quot;fOurAddress&quot;{DDPAddress=&quot;fAddressType&quot;S&quot;fNetwork&quot;S&quot;fNodeID&quot;C&quot;fSocket&quot;C&quot;fDDPType&quot;C&quot;fPad&quot;C}&quot;fRouterAddress&quot;{DDPAddress=&quot;fAddressType&quot;S&quot;fNetwork&quot;S&quot;fNodeID&quot;C&quot;fSocket&quot;C&quot;fDDPType&quot;C&quot;fPad&quot;C}&quot;fCableRange&quot;[2S]&quot;fFlags&quot;S}' name='AppleTalkInfo'/>
+<struct type='{CCMiscInfo=&quot;connectionStatus&quot;I&quot;connectionTimeElapsed&quot;I&quot;connectionTimeRemaining&quot;I&quot;bytesTransmitted&quot;I&quot;bytesReceived&quot;I&quot;reserved&quot;I}' name='CCMiscInfo'/>
+<struct type='{CSIdentityClientContext=&quot;version&quot;i&quot;info&quot;^v&quot;retain&quot;^?&quot;release&quot;^?&quot;copyDescription&quot;^?&quot;statusUpdated&quot;^?}' type64='{CSIdentityClientContext=&quot;version&quot;q&quot;info&quot;^v&quot;retain&quot;^?&quot;release&quot;^?&quot;copyDescription&quot;^?&quot;statusUpdated&quot;^?}' name='CSIdentityClientContext'/>
+<struct type='{CSIdentityQueryClientContext=&quot;version&quot;i&quot;info&quot;^v&quot;retainInfo&quot;^?&quot;releaseInfo&quot;^?&quot;copyInfoDescription&quot;^?&quot;receiveEvent&quot;^?}' type64='{CSIdentityQueryClientContext=&quot;version&quot;q&quot;info&quot;^v&quot;retainInfo&quot;^?&quot;releaseInfo&quot;^?&quot;copyInfoDescription&quot;^?&quot;receiveEvent&quot;^?}' name='CSIdentityQueryClientContext'/>
+<struct type='{DDPAddress=&quot;fAddressType&quot;S&quot;fNetwork&quot;S&quot;fNodeID&quot;C&quot;fSocket&quot;C&quot;fDDPType&quot;C&quot;fPad&quot;C}' name='DDPAddress'/>
+<struct type='{DDPNBPAddress=&quot;fAddressType&quot;S&quot;fNetwork&quot;S&quot;fNodeID&quot;C&quot;fSocket&quot;C&quot;fDDPType&quot;C&quot;fPad&quot;C&quot;fNBPNameBuffer&quot;[105C]}' name='DDPNBPAddress'/>
+<struct type='{DNSAddress=&quot;fAddressType&quot;S&quot;fName&quot;[256c]}' name='DNSAddress'/>
+<struct type='{DNSQueryInfo=&quot;qType&quot;S&quot;qClass&quot;S&quot;ttl&quot;I&quot;name&quot;[256c]&quot;responseType&quot;S&quot;resourceLen&quot;S&quot;resourceData&quot;[4c]}' name='DNSQueryInfo'/>
+<struct type='{EnetPacketHeader=&quot;fDestAddr&quot;[6C]&quot;fSourceAddr&quot;[6C]&quot;fProto&quot;S}' name='EnetPacketHeader'/>
+<struct type='{IconFamilyElement=&quot;elementType&quot;I&quot;elementSize&quot;i&quot;elementData&quot;[1C]}' name='IconFamilyElement'/>
+<struct type='{IconFamilyResource=&quot;resourceType&quot;I&quot;resourceSize&quot;i&quot;elements&quot;[1{IconFamilyElement=&quot;elementType&quot;I&quot;elementSize&quot;i&quot;elementData&quot;[1C]}]}' name='IconFamilyResource'/>
+<struct type='{InetAddress=&quot;fAddressType&quot;S&quot;fPort&quot;S&quot;fHost&quot;I&quot;fUnused&quot;[8C]}' name='InetAddress'/>
+<struct type='{InetDHCPOption=&quot;fOptionTag&quot;C&quot;fOptionLen&quot;C&quot;fOptionValue&quot;C}' name='InetDHCPOption'/>
+<struct type='{InetHostInfo=&quot;name&quot;[256c]&quot;addrs&quot;[10L]}' type64='{InetHostInfo=&quot;name&quot;[256c]&quot;addrs&quot;[10I]}' name='InetHostInfo'/>
+<struct type='{InetInterfaceInfo=&quot;fAddress&quot;I&quot;fNetmask&quot;I&quot;fBroadcastAddr&quot;I&quot;fDefaultGatewayAddr&quot;I&quot;fDNSAddr&quot;I&quot;fVersion&quot;S&quot;fHWAddrLen&quot;S&quot;fHWAddr&quot;*&quot;fIfMTU&quot;I&quot;fReservedPtrs&quot;[2*]&quot;fDomainName&quot;[256c]&quot;fIPSecondaryCount&quot;I&quot;fReserved&quot;[252C]}' name='InetInterfaceInfo'/>
+<struct type='{InetMailExchange=&quot;preference&quot;S&quot;exchange&quot;[256c]}' name='InetMailExchange'/>
+<struct type='{InetSysInfo=&quot;cpuType&quot;[32c]&quot;osType&quot;[32c]}' name='InetSysInfo'/>
+<struct type='{SecKeychainAttribute=&quot;tag&quot;I&quot;length&quot;I&quot;data&quot;^v}' name='KCAttribute'/>
+<struct type='{SecKeychainAttributeList=&quot;count&quot;I&quot;attr&quot;^{SecKeychainAttribute}}' name='KCAttributeList'/>
+<struct type='{KCCallbackInfo=&quot;version&quot;I&quot;item&quot;^{OpaqueSecKeychainItemRef}&quot;processID&quot;[2l]&quot;event&quot;[4l]&quot;keychain&quot;^{OpaqueSecKeychainRef}}' type64='{KCCallbackInfo=&quot;version&quot;I&quot;item&quot;^{OpaqueSecKeychainItemRef}&quot;processID&quot;[2i]&quot;event&quot;[4i]&quot;keychain&quot;^{OpaqueSecKeychainRef}}' name='KCCallbackInfo'/>
+<struct type='{LCPEcho=&quot;retryCount&quot;I&quot;retryPeriod&quot;I}' name='LCPEcho'/>
+<struct type='{NBPAddress=&quot;fAddressType&quot;S&quot;fNBPNameBuffer&quot;[105C]}' name='NBPAddress'/>
+<struct type='{NBPEntity=&quot;fEntity&quot;[99C]}' name='NBPEntity'/>
+<struct type='{OTAddress=&quot;fAddressType&quot;S&quot;fAddress&quot;[1C]}' name='OTAddress'/>
+<struct type='{OTBuffer=&quot;fLink&quot;^v&quot;fLink2&quot;^v&quot;fNext&quot;^{OTBuffer}&quot;fData&quot;*&quot;fLen&quot;I&quot;fSave&quot;^v&quot;fBand&quot;C&quot;fType&quot;C&quot;fPad1&quot;C&quot;fFlags&quot;C}' type64='{OTBuffer=&quot;fLink&quot;^v&quot;fLink2&quot;^v&quot;fNext&quot;^{OTBuffer}&quot;fData&quot;*&quot;fLen&quot;Q&quot;fSave&quot;^v&quot;fBand&quot;C&quot;fType&quot;C&quot;fPad1&quot;C&quot;fFlags&quot;C}' name='OTBuffer'/>
+<struct type='{OTBufferInfo=&quot;fBuffer&quot;^{OTBuffer}&quot;fOffset&quot;I&quot;fPad&quot;C}' type64='{OTBufferInfo=&quot;fBuffer&quot;^{OTBuffer}&quot;fOffset&quot;Q&quot;fPad&quot;C}' name='OTBufferInfo'/>
+<struct type='{OTClientList=&quot;fNumClients&quot;I&quot;fBuffer&quot;[4C]}' type64='{OTClientList=&quot;fNumClients&quot;Q&quot;fBuffer&quot;[4C]}' name='OTClientList'/>
+<struct type='{OTData=&quot;fNext&quot;^v&quot;fData&quot;^v&quot;fLen&quot;I}' type64='{OTData=&quot;fNext&quot;^v&quot;fData&quot;^v&quot;fLen&quot;Q}' name='OTData'/>
+<struct type='{OTGate=&quot;fLIFO&quot;{OTLIFO=&quot;fHead&quot;^{OTLink}}&quot;fList&quot;{OTList=&quot;fHead&quot;^{OTLink}}&quot;fProc&quot;^?&quot;fNumQueued&quot;i&quot;fInside&quot;i}' name='OTGate'/>
+<struct type='{OTHashList=&quot;fHashProc&quot;^?&quot;fHashTableSize&quot;I&quot;fHashBuckets&quot;^^{OTLink}}' type64='{OTHashList=&quot;fHashProc&quot;^?&quot;fHashTableSize&quot;Q&quot;fHashBuckets&quot;^^{OTLink}}' name='OTHashList'/>
+<struct type='{OTISDNAddress=&quot;fAddressType&quot;S&quot;fPhoneLength&quot;S&quot;fPhoneNumber&quot;[37c]}' name='OTISDNAddress'/>
+<struct type='{OTLIFO=&quot;fHead&quot;^{OTLink}}' name='OTLIFO'/>
+<struct type='{OTLink=&quot;fNext&quot;^{OTLink}}' name='OTLink'/>
+<struct type='{OTList=&quot;fHead&quot;^{OTLink}}' name='OTList'/>
+<struct type='{OTPortCloseStruct=&quot;fPortRef&quot;I&quot;fTheProvider&quot;^v&quot;fDenyReason&quot;i}' name='OTPortCloseStruct'/>
+<struct type='{OTPortRecord=&quot;fRef&quot;I&quot;fPortFlags&quot;I&quot;fInfoFlags&quot;I&quot;fCapabilities&quot;I&quot;fNumChildPorts&quot;I&quot;fChildPorts&quot;^I&quot;fPortName&quot;[36c]&quot;fModuleName&quot;[32c]&quot;fSlotID&quot;[8c]&quot;fResourceInfo&quot;[32c]&quot;fReserved&quot;[164c]}' type64='{OTPortRecord=&quot;fRef&quot;I&quot;fPortFlags&quot;I&quot;fInfoFlags&quot;I&quot;fCapabilities&quot;I&quot;fNumChildPorts&quot;Q&quot;fChildPorts&quot;^I&quot;fPortName&quot;[36c]&quot;fModuleName&quot;[32c]&quot;fSlotID&quot;[8c]&quot;fResourceInfo&quot;[32c]&quot;fReserved&quot;[164c]}' name='OTPortRecord'/>
+<struct type='{OTScriptInfo=&quot;fScriptType&quot;I&quot;fTheScript&quot;^v&quot;fScriptLength&quot;I}' name='OTScriptInfo'/>
+<struct type='{UnsignedWide=&quot;lo&quot;I&quot;hi&quot;I}' name='OTTimeStamp'/>
+<struct type='{PPPMRULimits=&quot;mruSize&quot;I&quot;upperMRULimit&quot;I&quot;lowerMRULimit&quot;I}' name='PPPMRULimits'/>
+<struct type='{SleepQRec=&quot;sleepQLink&quot;^{SleepQRec}&quot;sleepQType&quot;s&quot;sleepQProc&quot;^?&quot;sleepQFlags&quot;s}' name='SleepQRec'/>
+<struct type='{T8022Address=&quot;fAddrFamily&quot;S&quot;fHWAddr&quot;[6C]&quot;fSAP&quot;S&quot;fSNAP&quot;[5C]}' name='T8022Address'/>
+<struct type='{T8022FullPacketHeader=&quot;fEnetPart&quot;{EnetPacketHeader=&quot;fDestAddr&quot;[6C]&quot;fSourceAddr&quot;[6C]&quot;fProto&quot;S}&quot;f8022Part&quot;{T8022SNAPHeader=&quot;fDSAP&quot;C&quot;fSSAP&quot;C&quot;fCtrl&quot;C&quot;fSNAP&quot;[5C]}}' name='T8022FullPacketHeader'/>
+<struct type='{T8022Header=&quot;fDSAP&quot;C&quot;fSSAP&quot;C&quot;fCtrl&quot;C}' name='T8022Header'/>
+<struct type='{T8022SNAPHeader=&quot;fDSAP&quot;C&quot;fSSAP&quot;C&quot;fCtrl&quot;C&quot;fSNAP&quot;[5C]}' name='T8022SNAPHeader'/>
+<struct type='{TBind=&quot;addr&quot;{TNetbuf=&quot;maxlen&quot;I&quot;len&quot;I&quot;buf&quot;*}&quot;qlen&quot;I}' type64='{TBind=&quot;addr&quot;{TNetbuf=&quot;maxlen&quot;Q&quot;len&quot;Q&quot;buf&quot;*}&quot;qlen&quot;I}' name='TBind'/>
+<struct type='{TCall=&quot;addr&quot;{TNetbuf=&quot;maxlen&quot;I&quot;len&quot;I&quot;buf&quot;*}&quot;opt&quot;{TNetbuf=&quot;maxlen&quot;I&quot;len&quot;I&quot;buf&quot;*}&quot;udata&quot;{TNetbuf=&quot;maxlen&quot;I&quot;len&quot;I&quot;buf&quot;*}&quot;sequence&quot;i}' type64='{TCall=&quot;addr&quot;{TNetbuf=&quot;maxlen&quot;Q&quot;len&quot;Q&quot;buf&quot;*}&quot;opt&quot;{TNetbuf=&quot;maxlen&quot;Q&quot;len&quot;Q&quot;buf&quot;*}&quot;udata&quot;{TNetbuf=&quot;maxlen&quot;Q&quot;len&quot;Q&quot;buf&quot;*}&quot;sequence&quot;i}' name='TCall'/>
+<struct type='{TDiscon=&quot;udata&quot;{TNetbuf=&quot;maxlen&quot;I&quot;len&quot;I&quot;buf&quot;*}&quot;reason&quot;i&quot;sequence&quot;i}' type64='{TDiscon=&quot;udata&quot;{TNetbuf=&quot;maxlen&quot;Q&quot;len&quot;Q&quot;buf&quot;*}&quot;reason&quot;i&quot;sequence&quot;i}' name='TDiscon'/>
+<struct type='{TEndpointInfo=&quot;addr&quot;i&quot;options&quot;i&quot;tsdu&quot;i&quot;etsdu&quot;i&quot;connect&quot;i&quot;discon&quot;i&quot;servtype&quot;I&quot;flags&quot;I}' name='TEndpointInfo'/>
+<struct type='{TIPAddMulticast=&quot;multicastGroupAddress&quot;I&quot;interfaceAddress&quot;I}' name='TIPAddMulticast'/>
+<struct type='{TLookupBuffer=&quot;fAddressLength&quot;S&quot;fNameLength&quot;S&quot;fAddressBuffer&quot;[1C]}' name='TLookupBuffer'/>
+<struct type='{TLookupReply=&quot;names&quot;{TNetbuf=&quot;maxlen&quot;I&quot;len&quot;I&quot;buf&quot;*}&quot;rspcount&quot;I}' type64='{TLookupReply=&quot;names&quot;{TNetbuf=&quot;maxlen&quot;Q&quot;len&quot;Q&quot;buf&quot;*}&quot;rspcount&quot;I}' name='TLookupReply'/>
+<struct type='{TLookupRequest=&quot;name&quot;{TNetbuf=&quot;maxlen&quot;I&quot;len&quot;I&quot;buf&quot;*}&quot;addr&quot;{TNetbuf=&quot;maxlen&quot;I&quot;len&quot;I&quot;buf&quot;*}&quot;maxcnt&quot;I&quot;timeout&quot;I&quot;flags&quot;I}' type64='{TLookupRequest=&quot;name&quot;{TNetbuf=&quot;maxlen&quot;Q&quot;len&quot;Q&quot;buf&quot;*}&quot;addr&quot;{TNetbuf=&quot;maxlen&quot;Q&quot;len&quot;Q&quot;buf&quot;*}&quot;maxcnt&quot;I&quot;timeout&quot;I&quot;flags&quot;I}' name='TLookupRequest'/>
+<struct type='{TNetbuf=&quot;maxlen&quot;I&quot;len&quot;I&quot;buf&quot;*}' type64='{TNetbuf=&quot;maxlen&quot;Q&quot;len&quot;Q&quot;buf&quot;*}' name='TNetbuf'/>
+<struct type='{TOptMgmt=&quot;opt&quot;{TNetbuf=&quot;maxlen&quot;I&quot;len&quot;I&quot;buf&quot;*}&quot;flags&quot;I}' type64='{TOptMgmt=&quot;opt&quot;{TNetbuf=&quot;maxlen&quot;Q&quot;len&quot;Q&quot;buf&quot;*}&quot;flags&quot;I}' name='TOptMgmt'/>
+<struct type='{TOption=&quot;len&quot;I&quot;level&quot;I&quot;name&quot;I&quot;status&quot;I&quot;value&quot;[1L]}' type64='{TOption=&quot;len&quot;Q&quot;level&quot;I&quot;name&quot;I&quot;status&quot;I&quot;value&quot;[1I]}' name='TOption'/>
+<struct type='{TOptionHeader=&quot;len&quot;I&quot;level&quot;I&quot;name&quot;I&quot;status&quot;I}' type64='{TOptionHeader=&quot;len&quot;Q&quot;level&quot;I&quot;name&quot;I&quot;status&quot;I}' name='TOptionHeader'/>
+<struct type='{TRegisterReply=&quot;addr&quot;{TNetbuf=&quot;maxlen&quot;I&quot;len&quot;I&quot;buf&quot;*}&quot;nameid&quot;i}' type64='{TRegisterReply=&quot;addr&quot;{TNetbuf=&quot;maxlen&quot;Q&quot;len&quot;Q&quot;buf&quot;*}&quot;nameid&quot;i}' name='TRegisterReply'/>
+<struct type='{TRegisterRequest=&quot;name&quot;{TNetbuf=&quot;maxlen&quot;I&quot;len&quot;I&quot;buf&quot;*}&quot;addr&quot;{TNetbuf=&quot;maxlen&quot;I&quot;len&quot;I&quot;buf&quot;*}&quot;flags&quot;I}' type64='{TRegisterRequest=&quot;name&quot;{TNetbuf=&quot;maxlen&quot;Q&quot;len&quot;Q&quot;buf&quot;*}&quot;addr&quot;{TNetbuf=&quot;maxlen&quot;Q&quot;len&quot;Q&quot;buf&quot;*}&quot;flags&quot;I}' name='TRegisterRequest'/>
+<struct type='{TReply=&quot;data&quot;{TNetbuf=&quot;maxlen&quot;I&quot;len&quot;I&quot;buf&quot;*}&quot;opt&quot;{TNetbuf=&quot;maxlen&quot;I&quot;len&quot;I&quot;buf&quot;*}&quot;sequence&quot;i}' type64='{TReply=&quot;data&quot;{TNetbuf=&quot;maxlen&quot;Q&quot;len&quot;Q&quot;buf&quot;*}&quot;opt&quot;{TNetbuf=&quot;maxlen&quot;Q&quot;len&quot;Q&quot;buf&quot;*}&quot;sequence&quot;i}' name='TReply'/>
+<struct type='{TRequest=&quot;data&quot;{TNetbuf=&quot;maxlen&quot;I&quot;len&quot;I&quot;buf&quot;*}&quot;opt&quot;{TNetbuf=&quot;maxlen&quot;I&quot;len&quot;I&quot;buf&quot;*}&quot;sequence&quot;i}' type64='{TRequest=&quot;data&quot;{TNetbuf=&quot;maxlen&quot;Q&quot;len&quot;Q&quot;buf&quot;*}&quot;opt&quot;{TNetbuf=&quot;maxlen&quot;Q&quot;len&quot;Q&quot;buf&quot;*}&quot;sequence&quot;i}' name='TRequest'/>
+<struct type='{TUDErr=&quot;addr&quot;{TNetbuf=&quot;maxlen&quot;I&quot;len&quot;I&quot;buf&quot;*}&quot;opt&quot;{TNetbuf=&quot;maxlen&quot;I&quot;len&quot;I&quot;buf&quot;*}&quot;error&quot;i}' type64='{TUDErr=&quot;addr&quot;{TNetbuf=&quot;maxlen&quot;Q&quot;len&quot;Q&quot;buf&quot;*}&quot;opt&quot;{TNetbuf=&quot;maxlen&quot;Q&quot;len&quot;Q&quot;buf&quot;*}&quot;error&quot;i}' name='TUDErr'/>
+<struct type='{TUnitData=&quot;addr&quot;{TNetbuf=&quot;maxlen&quot;I&quot;len&quot;I&quot;buf&quot;*}&quot;opt&quot;{TNetbuf=&quot;maxlen&quot;I&quot;len&quot;I&quot;buf&quot;*}&quot;udata&quot;{TNetbuf=&quot;maxlen&quot;I&quot;len&quot;I&quot;buf&quot;*}}' type64='{TUnitData=&quot;addr&quot;{TNetbuf=&quot;maxlen&quot;Q&quot;len&quot;Q&quot;buf&quot;*}&quot;opt&quot;{TNetbuf=&quot;maxlen&quot;Q&quot;len&quot;Q&quot;buf&quot;*}&quot;udata&quot;{TNetbuf=&quot;maxlen&quot;Q&quot;len&quot;Q&quot;buf&quot;*}}' name='TUnitData'/>
+<struct type='{TUnitReply=&quot;opt&quot;{TNetbuf=&quot;maxlen&quot;I&quot;len&quot;I&quot;buf&quot;*}&quot;udata&quot;{TNetbuf=&quot;maxlen&quot;I&quot;len&quot;I&quot;buf&quot;*}&quot;sequence&quot;i}' type64='{TUnitReply=&quot;opt&quot;{TNetbuf=&quot;maxlen&quot;Q&quot;len&quot;Q&quot;buf&quot;*}&quot;udata&quot;{TNetbuf=&quot;maxlen&quot;Q&quot;len&quot;Q&quot;buf&quot;*}&quot;sequence&quot;i}' name='TUnitReply'/>
+<struct type='{TUnitRequest=&quot;addr&quot;{TNetbuf=&quot;maxlen&quot;I&quot;len&quot;I&quot;buf&quot;*}&quot;opt&quot;{TNetbuf=&quot;maxlen&quot;I&quot;len&quot;I&quot;buf&quot;*}&quot;udata&quot;{TNetbuf=&quot;maxlen&quot;I&quot;len&quot;I&quot;buf&quot;*}&quot;sequence&quot;i}' type64='{TUnitRequest=&quot;addr&quot;{TNetbuf=&quot;maxlen&quot;Q&quot;len&quot;Q&quot;buf&quot;*}&quot;opt&quot;{TNetbuf=&quot;maxlen&quot;Q&quot;len&quot;Q&quot;buf&quot;*}&quot;udata&quot;{TNetbuf=&quot;maxlen&quot;Q&quot;len&quot;Q&quot;buf&quot;*}&quot;sequence&quot;i}' name='TUnitRequest'/>
+<struct type='{WSClientContext=&quot;version&quot;i&quot;info&quot;^v&quot;retain&quot;^?&quot;release&quot;^?&quot;copyDescription&quot;^?}' type64='{WSClientContext=&quot;version&quot;q&quot;info&quot;^v&quot;retain&quot;^?&quot;release&quot;^?&quot;copyDescription&quot;^?}' name='WSClientContext'/>
+<struct type='{bandinfo=&quot;bi_pri&quot;C&quot;pad1&quot;c&quot;bi_flag&quot;i}' name='bandinfo'/>
+<struct type='{log_ctl=&quot;mid&quot;s&quot;sid&quot;s&quot;level&quot;c&quot;pad1&quot;c&quot;flags&quot;s&quot;ltime&quot;l&quot;ttime&quot;l&quot;seq_no&quot;i}' type64='{log_ctl=&quot;mid&quot;s&quot;sid&quot;s&quot;level&quot;c&quot;pad1&quot;c&quot;flags&quot;s&quot;ltime&quot;q&quot;ttime&quot;q&quot;seq_no&quot;i}' name='log_ctl'/>
+<struct type='{str_list=&quot;sl_nmods&quot;i&quot;sl_modlist&quot;^{str_mlist}}' name='str_list'/>
+<struct type='{str_mlist=&quot;l_name&quot;[32c]}' name='str_mlist'/>
+<struct type='{strbuf=&quot;maxlen&quot;i&quot;len&quot;i&quot;buf&quot;*}' name='strbuf'/>
+<struct type='{strfdinsert=&quot;ctlbuf&quot;{strbuf=&quot;maxlen&quot;i&quot;len&quot;i&quot;buf&quot;*}&quot;databuf&quot;{strbuf=&quot;maxlen&quot;i&quot;len&quot;i&quot;buf&quot;*}&quot;flags&quot;l&quot;fildes&quot;l&quot;offset&quot;i}' type64='{strfdinsert=&quot;ctlbuf&quot;{strbuf=&quot;maxlen&quot;i&quot;len&quot;i&quot;buf&quot;*}&quot;databuf&quot;{strbuf=&quot;maxlen&quot;i&quot;len&quot;i&quot;buf&quot;*}&quot;flags&quot;q&quot;fildes&quot;q&quot;offset&quot;i}' name='strfdinsert'/>
+<struct type='{strioctl=&quot;ic_cmd&quot;i&quot;ic_timout&quot;i&quot;ic_len&quot;i&quot;ic_dp&quot;*}' name='strioctl'/>
+<struct type='{strpeek=&quot;ctlbuf&quot;{strbuf=&quot;maxlen&quot;i&quot;len&quot;i&quot;buf&quot;*}&quot;databuf&quot;{strbuf=&quot;maxlen&quot;i&quot;len&quot;i&quot;buf&quot;*}&quot;flags&quot;l}' type64='{strpeek=&quot;ctlbuf&quot;{strbuf=&quot;maxlen&quot;i&quot;len&quot;i&quot;buf&quot;*}&quot;databuf&quot;{strbuf=&quot;maxlen&quot;i&quot;len&quot;i&quot;buf&quot;*}&quot;flags&quot;q}' name='strpeek'/>
+<struct type='{strpmsg=&quot;ctlbuf&quot;{strbuf=&quot;maxlen&quot;i&quot;len&quot;i&quot;buf&quot;*}&quot;databuf&quot;{strbuf=&quot;maxlen&quot;i&quot;len&quot;i&quot;buf&quot;*}&quot;band&quot;i&quot;flags&quot;l}' type64='{strpmsg=&quot;ctlbuf&quot;{strbuf=&quot;maxlen&quot;i&quot;len&quot;i&quot;buf&quot;*}&quot;databuf&quot;{strbuf=&quot;maxlen&quot;i&quot;len&quot;i&quot;buf&quot;*}&quot;band&quot;i&quot;flags&quot;q}' name='strpmsg'/>
+<struct type='{strrecvfd=&quot;fd&quot;l&quot;uid&quot;S&quot;gid&quot;S&quot;fill&quot;[8c]}' type64='{strrecvfd=&quot;fd&quot;q&quot;uid&quot;S&quot;gid&quot;S&quot;fill&quot;[8c]}' name='strrecvfd'/>
+<struct type='{t_kpalive=&quot;kp_onoff&quot;i&quot;kp_timeout&quot;i}' name='t_kpalive'/>
+<struct type='{t_linger=&quot;l_onoff&quot;i&quot;l_linger&quot;i}' name='t_linger'/>
+<struct type='{trace_ids=&quot;ti_mid&quot;s&quot;ti_sid&quot;s&quot;ti_level&quot;c}' name='trace_ids'/>
+<cftype type='^v' name='ATSvcRef'/>
+<cftype tollfree='__NSCFType' type='^{__CSIdentityAuthority=}' gettypeid_func='CSIdentityAuthorityGetTypeID' name='CSIdentityAuthorityRef'/>
+<cftype tollfree='__NSCFType' type='^{__CSIdentityQuery=}' gettypeid_func='CSIdentityQueryGetTypeID' name='CSIdentityQueryRef'/>
+<cftype tollfree='__NSCFType' type='^{__CSIdentity=}' gettypeid_func='CSIdentityGetTypeID' name='CSIdentityRef'/>
+<cftype type='^v' name='EndpointRef'/>
+<cftype type='^v' name='InetSvcRef'/>
+<cftype type='^v' name='MapperRef'/>
+<cftype type='^{OTConfiguration=}' name='OTConfigurationRef'/>
+<cftype type='^v' name='ProviderRef'/>
+<cftype tollfree='__NSCFType' type='^{OpaqueWSMethodInvocationRef=}' gettypeid_func='WSMethodInvocationGetTypeID' name='WSMethodInvocationRef'/>
+<cftype tollfree='__NSCFType' type='^{OpaqueWSProtocolHandlerRef=}' gettypeid_func='WSProtocolHandlerGetTypeID' name='WSProtocolHandlerRef'/>
+<opaque type64='^{HDQueueElement=}' name='HDQueueElement'/>
+<opaque type='^{OpaqueOTClientContextPtr=}' name='OTClientContextPtr'/>
+<opaque type64='^{PMgrQueueElement=}' name='PMgrQueueElement'/>
+<constant type='^{__CFString=}' name='kCSIdentityErrorDomain'/>
+<constant type='^{__CFString=}' name='kCSIdentityGeneratePosixName'/>
+<constant type='^{__CFString=}' name='kWSDebugIncomingBody'/>
+<constant type='^{__CFString=}' name='kWSDebugIncomingHeaders'/>
+<constant type='^{__CFString=}' name='kWSDebugOutgoingBody'/>
+<constant type='^{__CFString=}' name='kWSDebugOutgoingHeaders'/>
+<constant type='^{__CFString=}' name='kWSFaultCode'/>
+<constant type='^{__CFString=}' name='kWSFaultExtra'/>
+<constant type='^{__CFString=}' name='kWSFaultString'/>
+<constant type='^{__CFString=}' name='kWSHTTPExtraHeaders'/>
+<constant type='^{__CFString=}' name='kWSHTTPFollowsRedirects'/>
+<constant type='^{__CFString=}' name='kWSHTTPMessage'/>
+<constant type='^{__CFString=}' name='kWSHTTPProxy'/>
+<constant type='^{__CFString=}' name='kWSHTTPResponseMessage'/>
+<constant type='^{__CFString=}' name='kWSHTTPVersion'/>
+<constant type='^{__CFString=}' name='kWSMethodInvocationResult'/>
+<constant type='^{__CFString=}' name='kWSMethodInvocationResultParameterName'/>
+<constant type='^{__CFString=}' name='kWSMethodInvocationTimeoutValue'/>
+<constant type='^{__CFString=}' name='kWSNetworkStreamFaultString'/>
+<constant type='^{__CFString=}' name='kWSRecordNamespaceURI'/>
+<constant type='^{__CFString=}' name='kWSRecordParameterOrder'/>
+<constant type='^{__CFString=}' name='kWSRecordType'/>
+<constant type='^{__CFString=}' name='kWSSOAP1999Protocol'/>
+<constant type='^{__CFString=}' name='kWSSOAP2001Protocol'/>
+<constant type='^{__CFString=}' name='kWSSOAPBodyEncodingStyle'/>
+<constant type='^{__CFString=}' name='kWSSOAPMessageHeaders'/>
+<constant type='^{__CFString=}' name='kWSSOAPMethodNamespaceURI'/>
+<constant type='^{__CFString=}' name='kWSSOAPStyleDoc'/>
+<constant type='^{__CFString=}' name='kWSSOAPStyleRPC'/>
+<constant type='^{__CFString=}' name='kWSStreamErrorDomain'/>
+<constant type='^{__CFString=}' name='kWSStreamErrorError'/>
+<constant type='^{__CFString=}' name='kWSStreamErrorMessage'/>
+<constant type='^{__CFString=}' name='kWSXMLRPCProtocol'/>
+<string_constant value='adsp' name='kADSPName'/>
+<string_constant value='asp' name='kASPName'/>
+<string_constant value='ot:atbd$' name='kATBinderID'/>
+<string_constant value='atm' name='kATMName'/>
+<string_constant value='atmsnap' name='kATMSNAPName'/>
+<string_constant value='atp' name='kATPName'/>
+<string_constant value='ot:atlk$' name='kATalkPrefix'/>
+<string_constant value='1.1' name='kATalkVersion'/>
+<string_constant value='ddp' name='kDDPName'/>
+<string_constant value='dnr' name='kDNRName'/>
+<string_constant value='enet8022x' name='kEnet8022Name'/>
+<string_constant value='enet' name='kEnetName'/>
+<string_constant value='fddi' name='kFDDIName'/>
+<string_constant value='fenet' name='kFastEnetName'/>
+<string_constant value='fibre' name='kFibreChannelName'/>
+<string_constant value='firewire' name='kFireWireName'/>
+<string_constant value='irtlk' name='kIRTalkName'/>
+<string_constant value='isdn' name='kISDNName'/>
+<string_constant value='ot:inet$' name='kInetPrefix'/>
+<string_constant value='3.1.1' name='kInetVersion'/>
+<string_constant value='ltlkA' name='kLTalkAName'/>
+<string_constant value='ltlkB' name='kLTalkBName'/>
+<string_constant value='ltlk' name='kLTalkName'/>
+<string_constant value='nbp' name='kNBPName'/>
+<string_constant value='OTClnt$' name='kOTClientPrefix'/>
+<string_constant value='FX ' name='kOTExtFatalErr'/>
+<string_constant value='NX ' name='kOTExtNonfatalErr'/>
+<string_constant value='FB ' name='kOTFatalErr'/>
+<string_constant value='IN ' name='kOTInfoBreak'/>
+<string_constant value='IE ' name='kOTInfoErr'/>
+<string_constant value='OTKrnl$' name='kOTKernelPrefix'/>
+<string_constant value='OTLib$' name='kOTLibraryPrefix'/>
+<string_constant value='1.1' name='kOTLibraryVersion'/>
+<string_constant value='OTModl$' name='kOTModulePrefix'/>
+<string_constant value='NB ' name='kOTNonfatalErr'/>
+<string_constant value='UE ' name='kOTUserErr'/>
+<string_constant value='UF ' name='kOTUserFatalErr'/>
+<string_constant value='UE ' name='kOTUserNonfatalErr'/>
+<string_constant value='pap' name='kPAPName'/>
+<string_constant value='ppp' name='kPPPControlName'/>
+<string_constant value='rawip' name='kRawIPName'/>
+<string_constant value='smds' name='kSMDSName'/>
+<string_constant value='serialAB' name='kSerialABName'/>
+<string_constant value='1.1.1' name='kSerialABVersion'/>
+<string_constant value='serial' name='kSerialName'/>
+<string_constant value='serialA' name='kSerialPortAName'/>
+<string_constant value='serialB' name='kSerialPortBName'/>
+<string_constant value='tpi8022x' name='kT8022Name'/>
+<string_constant value='tcp' name='kTCPName'/>
+<string_constant value='tokn' name='kTokenRingName'/>
+<string_constant value='udp' name='kUDPName'/>
+<string_constant value='/WSMethodName' nsstring='true' name='kWSMethodName'/>
+<string_constant value='/WSMethodParameterOrder' nsstring='true' name='kWSMethodParameterOrder'/>
+<string_constant value='/WSMethodParameters' nsstring='true' name='kWSMethodParameters'/>
+<string_constant value='zip' name='kZIPName'/>
+<enum value='21564' name='ADSP_IOC_FORWARDRESET'/>
+<enum value='8200' name='AF_8022'/>
+<enum value='256' name='AF_ATALK_DDP'/>
+<enum value='257' name='AF_ATALK_DDPNBP'/>
+<enum value='256' name='AF_ATALK_FAMILY'/>
+<enum value='259' name='AF_ATALK_MNODE'/>
+<enum value='258' name='AF_ATALK_NBP'/>
+<enum value='42' name='AF_DNS'/>
+<enum value='2' name='AF_INET'/>
+<enum value='1' name='ANYMARK'/>
+<enum value='21551' name='ATALK_IOC_FULLSELFSEND'/>
+<enum value='1094799952' name='ATK_AARP'/>
+<enum value='1094996816' name='ATK_ADSP'/>
+<enum value='1095979040' name='ATK_ASP'/>
+<enum value='1096044576' name='ATK_ATP'/>
+<enum value='1145327648' name='ATK_DDP'/>
+<enum value='1312968736' name='ATK_NBP'/>
+<enum value='1346457632' name='ATK_PAP'/>
+<enum value='1514754080' name='ATK_ZIP'/>
+<enum value='8465' name='ATP_OPT_DATALEN'/>
+<enum value='8466' name='ATP_OPT_RELTIMER'/>
+<enum value='8464' name='ATP_OPT_REPLYCNT'/>
+<enum value='8467' name='ATP_OPT_TRANID'/>
+<enum value='0' name='BuildingOTForKernel'/>
+<enum value='28692' name='CC_OPT_CALLINFO'/>
+<enum value='28691' name='CC_OPT_DTEADDRESS'/>
+<enum value='28690' name='CC_OPT_DTEADDRESSTYPE'/>
+<enum value='28693' name='CC_OPT_GETMISCINFO'/>
+<enum value='28689' name='CC_OPT_IPIDLETIMER'/>
+<enum value='28688' name='CC_OPT_REMINDERTIMER'/>
+<enum value='29184' name='CC_OPT_SERIALPORTNAME'/>
+<enum value='1230193742' name='COM_ISDN'/>
+<enum value='1347440707' name='COM_PPP'/>
+<enum value='1397051980' name='COM_SERIAL'/>
+<enum value='1536' name='DDP_OPT_CHECKSUM'/>
+<enum value='8448' name='DDP_OPT_HOPCOUNT'/>
+<enum value='8449' name='DDP_OPT_SRCADDR'/>
+<enum value='0' name='DL_PROMISC_OFF'/>
+<enum value='104' name='DVMRP_ADD_LGRP'/>
+<enum value='106' name='DVMRP_ADD_MRT'/>
+<enum value='102' name='DVMRP_ADD_VIF'/>
+<enum value='105' name='DVMRP_DEL_LGRP'/>
+<enum value='107' name='DVMRP_DEL_MRT'/>
+<enum value='103' name='DVMRP_DEL_VIF'/>
+<enum value='101' name='DVMRP_DONE'/>
+<enum value='100' name='DVMRP_INIT'/>
+<enum value='64' name='FLUSHBAND'/>
+<enum value='1' name='FLUSHR'/>
+<enum value='3' name='FLUSHRW'/>
+<enum value='2' name='FLUSHW'/>
+<enum value='31' name='FMNAMESZ'/>
+<enum value='3' name='HDActivity'/>
+<enum value='0' name='INET_IP'/>
+<enum value='6' name='INET_TCP'/>
+<enum value='17' name='INET_UDP'/>
+<enum value='4294967295' name='INFTIM'/>
+<enum value='28673' name='IPCP_OPT_GETLOCALPROTOADDR'/>
+<enum value='28672' name='IPCP_OPT_GETREMOTEPROTOADDR'/>
+<enum value='28674' name='IPCP_OPT_TCPHDRCOMPRESSION'/>
+<enum value='1' name='IP_OPTIONS'/>
+<enum value='514' name='ISDN_OPT_56KADAPTATION'/>
+<enum value='512' name='ISDN_OPT_COMMTYPE'/>
+<enum value='513' name='ISDN_OPT_FRAMINGTYPE'/>
+<enum value='16663' name='I_ATMARK'/>
+<enum value='16688' name='I_AUTOPUSH'/>
+<enum value='16666' name='I_CANPUT'/>
+<enum value='16664' name='I_CKBAND'/>
+<enum value='25090' name='I_ERRLOG'/>
+<enum value='16656' name='I_FDINSERT'/>
+<enum value='16691' name='I_FIFO'/>
+<enum value='16651' name='I_FIND'/>
+<enum value='16645' name='I_FLUSH'/>
+<enum value='16659' name='I_FLUSHBAND'/>
+<enum value='16665' name='I_GETBAND'/>
+<enum value='16668' name='I_GETCLTIME'/>
+<enum value='16684' name='I_GETDELAY'/>
+<enum value='16680' name='I_GETMSG'/>
+<enum value='16686' name='I_GETPMSG'/>
+<enum value='16650' name='I_GETSIG'/>
+<enum value='16647' name='I_GRDOPT'/>
+<enum value='16661' name='I_GWROPT'/>
+<enum value='16690' name='I_HEAP_REPORT'/>
+<enum value='16652' name='I_LINK'/>
+<enum value='16662' name='I_LIST'/>
+<enum value='16644' name='I_LOOK'/>
+<enum value='16641' name='I_NREAD'/>
+<enum value='20228' name='I_OTConnect'/>
+<enum value='20229' name='I_OTDisconnect'/>
+<enum value='20225' name='I_OTGetMiscellaneousEvents'/>
+<enum value='21860' name='I_OTISDNAlerting'/>
+<enum value='21867' name='I_OTISDNFaciltity'/>
+<enum value='21864' name='I_OTISDNResume'/>
+<enum value='21865' name='I_OTISDNResumeAcknowledge'/>
+<enum value='21866' name='I_OTISDNResumeReject'/>
+<enum value='21861' name='I_OTISDNSuspend'/>
+<enum value='21862' name='I_OTISDNSuspendAcknowledge'/>
+<enum value='21863' name='I_OTISDNSuspendReject'/>
+<enum value='20230' name='I_OTScript'/>
+<enum value='20226' name='I_OTSetFramingType'/>
+<enum value='20227' name='I_OTSetRawMode'/>
+<enum value='16655' name='I_PEEK'/>
+<enum value='16689' name='I_PIPE'/>
+<enum value='16669' name='I_PLINK'/>
+<enum value='16682' name='I_POLL'/>
+<enum value='16643' name='I_POP'/>
+<enum value='16670' name='I_PUNLINK'/>
+<enum value='16642' name='I_PUSH'/>
+<enum value='16681' name='I_PUTMSG'/>
+<enum value='16687' name='I_PUTPMSG'/>
+<enum value='16658' name='I_RECVFD'/>
+<enum value='16685' name='I_RUN_QUEUES'/>
+<enum value='16657' name='I_SENDFD'/>
+<enum value='16667' name='I_SETCLTIME'/>
+<enum value='16683' name='I_SETDELAY'/>
+<enum value='16649' name='I_SETSIG'/>
+<enum value='16646' name='I_SRDOPT'/>
+<enum value='16648' name='I_STR'/>
+<enum value='16660' name='I_SWROPT'/>
+<enum value='21761' name='I_SetSerialBreak'/>
+<enum value='21760' name='I_SetSerialDTR'/>
+<enum value='21764' name='I_SetSerialXOff'/>
+<enum value='21762' name='I_SetSerialXOffState'/>
+<enum value='21763' name='I_SetSerialXOn'/>
+<enum value='25089' name='I_TRCLOG'/>
+<enum value='16653' name='I_UNLINK'/>
+<enum value='4' name='IdleActivity'/>
+<enum value='2' name='LASTMARK'/>
+<enum value='28695' name='LCP_OPT_ECHO'/>
+<enum value='28676' name='LCP_OPT_MRU'/>
+<enum value='28675' name='LCP_OPT_PPPCOMPRESSION'/>
+<enum value='28677' name='LCP_OPT_RCACCMAP'/>
+<enum value='28678' name='LCP_OPT_TXACCMAP'/>
+<enum value='1162757460' name='LNK_ENET'/>
+<enum value='1178879049' name='LNK_FDDI'/>
+<enum value='1414482766' name='LNK_TOKN'/>
+<enum value='1280593993' name='LNK_TPI'/>
+<enum value='128' name='LOGMSGSZ'/>
+<enum value='104' name='MIOC_ARP'/>
+<enum value='84' name='MIOC_ATALK'/>
+<enum value='122' name='MIOC_CFIG'/>
+<enum value='108' name='MIOC_DLPI'/>
+<enum value='100' name='MIOC_ECHO'/>
+<enum value='72' name='MIOC_HAVOC'/>
+<enum value='111' name='MIOC_IPX'/>
+<enum value='85' name='MIOC_ISDN'/>
+<enum value='99' name='MIOC_ND'/>
+<enum value='79' name='MIOC_OT'/>
+<enum value='102' name='MIOC_RESERVEDf'/>
+<enum value='105' name='MIOC_RESERVEDi'/>
+<enum value='112' name='MIOC_RESERVEDp'/>
+<enum value='114' name='MIOC_RESERVEDr'/>
+<enum value='115' name='MIOC_RESERVEDs'/>
+<enum value='103' name='MIOC_SAD'/>
+<enum value='106' name='MIOC_SIOC'/>
+<enum value='109' name='MIOC_SOCKETS'/>
+<enum value='85' name='MIOC_SRL'/>
+<enum value='65' name='MIOC_STREAMIO'/>
+<enum value='98' name='MIOC_STRLOG'/>
+<enum value='107' name='MIOC_TCP'/>
+<enum value='101' name='MIOC_TLI'/>
+<enum value='97' name='MIOC_TMOD'/>
+<enum value='1' name='MORECTL'/>
+<enum value='2' name='MOREDATA'/>
+<enum value='4' name='MSG_ANY'/>
+<enum value='2' name='MSG_BAND'/>
+<enum value='1' name='MSG_HIPRI'/>
+<enum value='-1' name='MUXID_ALL'/>
+<enum value='2' name='NetActivity'/>
+<enum value='4096' name='OPT_ADDMCAST'/>
+<enum value='1542' name='OPT_ALERTENABLE'/>
+<enum value='1536' name='OPT_CHECKSUM'/>
+<enum value='4097' name='OPT_DELMCAST'/>
+<enum value='1539' name='OPT_ENABLEEOM'/>
+<enum value='1538' name='OPT_INTERVAL'/>
+<enum value='8' name='OPT_KEEPALIVE'/>
+<enum value='4099' name='OPT_RCVDESTADDR'/>
+<enum value='4098' name='OPT_RCVPACKETTYPE'/>
+<enum value='1537' name='OPT_RETRYCNT'/>
+<enum value='1540' name='OPT_SELFSEND'/>
+<enum value='1541' name='OPT_SERVERSTATUS'/>
+<enum value='4101' name='OPT_SETPROMISCUOUS'/>
+<enum value='4100' name='OPT_SETRAWMODE'/>
+<enum value='0' name='OTCARBONAPPLICATION'/>
+<enum value='0' name='OTDEBUG'/>
+<enum value='0' name='OTKERNEL'/>
+<enum value='0' name='OTUNIXERRORS'/>
+<enum value='0' name='OverallAct'/>
+<enum value='8480' name='PAP_OPT_OPENRETRY'/>
+<enum value='28694' name='PPP_OPT_GETCURRENTSTATE'/>
+<enum value='8' name='RFILL'/>
+<enum value='2' name='RMSGD'/>
+<enum value='4' name='RMSGN'/>
+<enum value='1' name='RNORM'/>
+<enum value='64' name='RPROTDAT'/>
+<enum value='32' name='RPROTDIS'/>
+<enum value='16' name='RPROTNORM'/>
+<enum value='1' name='RS_HIPRI'/>
+<enum value='28680' name='SEC_OPT_ID'/>
+<enum value='28679' name='SEC_OPT_OUTAUTHENTICATION'/>
+<enum value='28681' name='SEC_OPT_PASSWORD'/>
+<enum value='256' name='SERIAL_OPT_BAUDRATE'/>
+<enum value='265' name='SERIAL_OPT_BURSTMODE'/>
+<enum value='257' name='SERIAL_OPT_DATABITS'/>
+<enum value='266' name='SERIAL_OPT_DUMMY'/>
+<enum value='263' name='SERIAL_OPT_ERRORCHARACTER'/>
+<enum value='264' name='SERIAL_OPT_EXTCLOCK'/>
+<enum value='261' name='SERIAL_OPT_HANDSHAKE'/>
+<enum value='259' name='SERIAL_OPT_PARITY'/>
+<enum value='262' name='SERIAL_OPT_RCVTIMEOUT'/>
+<enum value='260' name='SERIAL_OPT_STATUS'/>
+<enum value='258' name='SERIAL_OPT_STOPBITS'/>
+<enum value='1' name='SIGHUP'/>
+<enum value='16' name='SIGURG'/>
+<enum value='0' name='SL_CONSOLE'/>
+<enum value='4' name='SL_ERROR'/>
+<enum value='1' name='SL_FATAL'/>
+<enum value='64' name='SL_NOTE'/>
+<enum value='2' name='SL_NOTIFY'/>
+<enum value='8' name='SL_TRACE'/>
+<enum value='32' name='SL_WARN'/>
+<enum value='1' name='SNDZERO'/>
+<enum value='1024' name='S_BANDURG'/>
+<enum value='256' name='S_ERROR'/>
+<enum value='512' name='S_HANGUP'/>
+<enum value='2' name='S_HIPRI'/>
+<enum value='1' name='S_INPUT'/>
+<enum value='8' name='S_MSG'/>
+<enum value='4' name='S_OUTPUT'/>
+<enum value='32' name='S_RDBAND'/>
+<enum value='16' name='S_RDNORM'/>
+<enum value='128' name='S_WRBAND'/>
+<enum value='64' name='S_WRNORM'/>
+<enum value='3' name='TACCES'/>
+<enum value='23' name='TADDRBUSY'/>
+<enum value='1' name='TBADADDR'/>
+<enum value='10' name='TBADDATA'/>
+<enum value='4' name='TBADF'/>
+<enum value='16' name='TBADFLAG'/>
+<enum value='21' name='TBADNAME'/>
+<enum value='2' name='TBADOPT'/>
+<enum value='22' name='TBADQLEN'/>
+<enum value='7' name='TBADSEQ'/>
+<enum value='30' name='TBADSYNC'/>
+<enum value='11' name='TBUFOVFLW'/>
+<enum value='31' name='TCANCELED'/>
+<enum value='17' name='TCP_ABORT_THRESHOLD'/>
+<enum value='19' name='TCP_CONN_ABORT_THRESHOLD'/>
+<enum value='18' name='TCP_CONN_NOTIFY_THRESHOLD'/>
+<enum value='8' name='TCP_KEEPALIVE'/>
+<enum value='2' name='TCP_MAXSEG'/>
+<enum value='1' name='TCP_NODELAY'/>
+<enum value='16' name='TCP_NOTIFY_THRESHOLD'/>
+<enum value='20' name='TCP_OOBINLINE'/>
+<enum value='21' name='TCP_URGENT_PTR_TYPE'/>
+<enum value='12' name='TFLOW'/>
+<enum value='24' name='TINDOUT'/>
+<enum value='31' name='TLASTXTIERROR'/>
+<enum value='9' name='TLOOK'/>
+<enum value='5' name='TNOADDR'/>
+<enum value='13' name='TNODATA'/>
+<enum value='14' name='TNODIS'/>
+<enum value='17' name='TNOREL'/>
+<enum value='20' name='TNOSTRUCTYPE'/>
+<enum value='18' name='TNOTSUPPORT'/>
+<enum value='15' name='TNOUDERR'/>
+<enum value='6' name='TOUTSTATE'/>
+<enum value='29' name='TPROTO'/>
+<enum value='25' name='TPROVMISMATCH'/>
+<enum value='28' name='TQFULL'/>
+<enum value='27' name='TRESADDR'/>
+<enum value='26' name='TRESQLEN'/>
+<enum value='19' name='TSTATECHNG'/>
+<enum value='0' name='TSUCCESS'/>
+<enum value='8' name='TSYSERR'/>
+<enum value='32768' name='T_ABSREQ'/>
+<enum value='536870915' name='T_ACCEPTCOMPLETE'/>
+<enum value='4' name='T_ACKNOWLEDGED'/>
+<enum value='1' name='T_ADDR'/>
+<enum value='65535' name='T_ALL'/>
+<enum value='587268167' name='T_ALLNODESTAKENEVENT'/>
+<enum value='0' name='T_ALLOPT'/>
+<enum value='587268166' name='T_ATALKBADROUTEREVENT'/>
+<enum value='587268152' name='T_ATALKCABLERANGECHANGEDEVENT'/>
+<enum value='587268150' name='T_ATALKCONNECTIVITYCHANGEDEVENT'/>
+<enum value='587268151' name='T_ATALKINTERNETAVAILABLEEVENT'/>
+<enum value='587268147' name='T_ATALKROUTERDOWNEVENT'/>
+<enum value='587268148' name='T_ATALKROUTERUPEVENT'/>
+<enum value='587268149' name='T_ATALKZONENAMECHANGEDEVENT'/>
+<enum value='1' name='T_BIND'/>
+<enum value='536870913' name='T_BINDCOMPLETE'/>
+<enum value='3' name='T_CALL'/>
+<enum value='1073741824' name='T_CAN_RESOLVE_ADDR'/>
+<enum value='536870912' name='T_CAN_SUPPLY_MIB'/>
+<enum value='268435456' name='T_CAN_SUPPORT_MDATA'/>
+<enum value='8' name='T_CHECK'/>
+<enum value='3' name='T_CLTS'/>
+<enum value='2' name='T_CONNECT'/>
+<enum value='1' name='T_COTS'/>
+<enum value='2' name='T_COTS_ORD'/>
+<enum value='5' name='T_CRITIC_ECP'/>
+<enum value='128' name='T_CURRENT'/>
+<enum value='4' name='T_DATA'/>
+<enum value='5' name='T_DATAXFER'/>
+<enum value='16' name='T_DEFAULT'/>
+<enum value='536870926' name='T_DELNAMECOMPLETE'/>
+<enum value='4' name='T_DIS'/>
+<enum value='16' name='T_DISCONNECT'/>
+<enum value='536870917' name='T_DISCONNECTCOMPLETE'/>
+<enum value='268435458' name='T_DNRADDRTONAMECOMPLETE'/>
+<enum value='268435460' name='T_DNRMAILEXCHANGECOMPLETE'/>
+<enum value='268435461' name='T_DNRQUERYCOMPLETE'/>
+<enum value='268435457' name='T_DNRSTRINGTOADDRCOMPLETE'/>
+<enum value='268435459' name='T_DNRSYSINFOCOMPLETE'/>
+<enum value='32' name='T_ERROR'/>
+<enum value='8' name='T_EXDATA'/>
+<enum value='2' name='T_EXPEDITED'/>
+<enum value='64' name='T_FAILURE'/>
+<enum value='587268170' name='T_FIXEDNODEBADEVENT'/>
+<enum value='587268168' name='T_FIXEDNODETAKENEVENT'/>
+<enum value='3' name='T_FLASH'/>
+<enum value='2' name='T_GARBAGE'/>
+<enum value='587268100' name='T_GETATALKINFOCOMPLETE'/>
+<enum value='536870922' name='T_GETINFOCOMPLETE'/>
+<enum value='587268098' name='T_GETLOCALZONESCOMPLETE'/>
+<enum value='587268097' name='T_GETMYZONECOMPLETE'/>
+<enum value='536870920' name='T_GETPROTADDRCOMPLETE'/>
+<enum value='587268099' name='T_GETZONELISTCOMPLETE'/>
+<enum value='256' name='T_GODATA'/>
+<enum value='512' name='T_GOEXDATA'/>
+<enum value='4' name='T_HIREL'/>
+<enum value='8' name='T_HITHRPT'/>
+<enum value='2' name='T_IDLE'/>
+<enum value='2' name='T_IMMEDIATE'/>
+<enum value='4' name='T_INCON'/>
+<enum value='6' name='T_INETCONTROL'/>
+<enum value='-1' name='T_INFINITE'/>
+<enum value='7' name='T_INFO'/>
+<enum value='7' name='T_INREL'/>
+<enum value='-2' name='T_INVALID'/>
+<enum value='16' name='T_LDELAY'/>
+<enum value='1' name='T_LISTEN'/>
+<enum value='536870927' name='T_LKUPNAMECOMPLETE'/>
+<enum value='536870928' name='T_LKUPNAMERESULT'/>
+<enum value='536870924' name='T_MEMORYRELEASED'/>
+<enum value='1' name='T_MORE'/>
+<enum value='587268169' name='T_MPPCOMPATCFIGEVENT'/>
+<enum value='4' name='T_NEGOTIATE'/>
+<enum value='7' name='T_NETCONTROL'/>
+<enum value='0' name='T_NO'/>
+<enum value='16' name='T_NORECEIPT'/>
+<enum value='0' name='T_NOTOS'/>
+<enum value='1024' name='T_NOTSUPPORT'/>
+<enum value='536870919' name='T_OPENCOMPLETE'/>
+<enum value='2' name='T_OPT'/>
+<enum value='2' name='T_OPTMGMT'/>
+<enum value='536870918' name='T_OPTMGMTCOMPLETE'/>
+<enum value='128' name='T_ORDREL'/>
+<enum value='3' name='T_OUTCON'/>
+<enum value='6' name='T_OUTREL'/>
+<enum value='4' name='T_OVERRIDEFLASH'/>
+<enum value='8' name='T_PARTIALDATA'/>
+<enum value='256' name='T_PARTSUCCESS'/>
+<enum value='4096' name='T_PASSCON'/>
+<enum value='1' name='T_PRIORITY'/>
+<enum value='512' name='T_READONLY'/>
+<enum value='536870925' name='T_REGNAMECOMPLETE'/>
+<enum value='2048' name='T_REPLY'/>
+<enum value='536870916' name='T_REPLYCOMPLETE'/>
+<enum value='8' name='T_REPLYDATA'/>
+<enum value='1024' name='T_REQUEST'/>
+<enum value='9' name='T_REQUESTDATA'/>
+<enum value='8192' name='T_RESET'/>
+<enum value='536870921' name='T_RESOLVEADDRCOMPLETE'/>
+<enum value='0' name='T_ROUTINE'/>
+<enum value='1' name='T_SENDZERO'/>
+<enum value='32' name='T_SUCCESS'/>
+<enum value='536870923' name='T_SYNCCOMPLETE'/>
+<enum value='32' name='T_TIMEDOUT'/>
+<enum value='5' name='T_TRANS'/>
+<enum value='7' name='T_TRANS_CLTS'/>
+<enum value='6' name='T_TRANS_ORD'/>
+<enum value='4' name='T_UDATA'/>
+<enum value='64' name='T_UDERR'/>
+<enum value='6' name='T_UDERROR'/>
+<enum value='536870914' name='T_UNBINDCOMPLETE'/>
+<enum value='1' name='T_UNBND'/>
+<enum value='0' name='T_UNINIT'/>
+<enum value='5' name='T_UNITDATA'/>
+<enum value='11' name='T_UNITREPLY'/>
+<enum value='10' name='T_UNITREQUEST'/>
+<enum value='4294967295' name='T_UNUSED'/>
+<enum value='2' name='T_XPG4_1'/>
+<enum value='1' name='T_YES'/>
+<enum value='1536' name='UDP_CHECKSUM'/>
+<enum value='2' name='UDP_RX_ICMP'/>
+<enum value='1' name='UsrActivity'/>
+<enum value='1' name='XTI_DEBUG'/>
+<enum value='65535' name='XTI_GENERIC'/>
+<enum value='128' name='XTI_LINGER'/>
+<enum value='4101' name='XTI_PROTOTYPE'/>
+<enum value='4098' name='XTI_RCVBUF'/>
+<enum value='4100' name='XTI_RCVLOWAT'/>
+<enum value='4097' name='XTI_SNDBUF'/>
+<enum value='4099' name='XTI_SNDLOWAT'/>
+<enum value='8' name='eWSArrayType'/>
+<enum value='2' name='eWSBooleanType'/>
+<enum value='7' name='eWSDataType'/>
+<enum value='6' name='eWSDateType'/>
+<enum value='9' name='eWSDictionaryType'/>
+<enum value='4' name='eWSDoubleType'/>
+<enum value='3' name='eWSIntegerType'/>
+<enum value='1' name='eWSNullType'/>
+<enum value='5' name='eWSStringType'/>
+<enum value='0' name='eWSUnknownType'/>
+<enum value='-65793' name='errWSInternalError'/>
+<enum value='-65795' name='errWSParseError'/>
+<enum value='-65796' name='errWSTimeoutError'/>
+<enum value='-65794' name='errWSTransportError'/>
+<enum value='6' name='k48BitAddrLength'/>
+<enum value='10' name='k8022BasicAddressLength'/>
+<enum value='3' name='k8022BasicHeaderLength'/>
+<enum value='2' name='k8022DLSAPLength'/>
+<enum value='255' name='k8022GlobalSAP'/>
+<enum value='1' name='k8022SAPLength'/>
+<enum value='15' name='k8022SNAPAddressLength'/>
+<enum value='8' name='k8022SNAPHeaderLength'/>
+<enum value='5' name='k8022SNAPLength'/>
+<enum value='8192' name='kAF_ISDN'/>
+<enum value='-2' name='kARARouterDisconnected'/>
+<enum value='-1' name='kARARouterOnline'/>
+<enum value='2' name='kATalkInfoHasRouter'/>
+<enum value='1' name='kATalkInfoIsExtended'/>
+<enum value='4' name='kATalkInfoOneZone'/>
+<enum value='0' name='kATalkRouterOnline'/>
+<enum value='1633903476' name='kAccountKCItemAttr'/>
+<enum value='3' name='kAddKCEvent'/>
+<enum value='8' name='kAddKCEventMask'/>
+<enum value='1633969266' name='kAddressKCItemAttr'/>
+<enum value='0' name='kAllATalkRoutersDown'/>
+<enum value='-1' name='kAllDHCPOptions'/>
+<enum value='0' name='kAnyAuthType'/>
+<enum value='0' name='kAnyPort'/>
+<enum value='0' name='kAnyProtocol'/>
+<enum value='1634953328' name='kAppleSharePasswordKCItemClass'/>
+<enum value='113' name='kAppleTalkAddressLength'/>
+<enum value='587268096' name='kAppleTalkEvent'/>
+<enum value='1635023216' name='kAuthTypeKCItemAttr'/>
+<enum value='553648137' name='kBackgroundStreamEvent'/>
+<enum value='0' name='kCCIPIdleTimerDisabled'/>
+<enum value='0' name='kCCReminderTimerDisabled'/>
+<enum value='536870912' name='kCOMPLETEEVENT'/>
+<enum value='-2' name='kCSIdentityAuthorityNotAccessibleErr'/>
+<enum value='2' name='kCSIdentityClassGroup'/>
+<enum value='1' name='kCSIdentityClassUser'/>
+<enum value='1' name='kCSIdentityCommitCompleted'/>
+<enum value='-4' name='kCSIdentityDeletedErr'/>
+<enum value='-6' name='kCSIdentityDuplicateFullNameErr'/>
+<enum value='-8' name='kCSIdentityDuplicatePosixNameErr'/>
+<enum value='1' name='kCSIdentityFlagHidden'/>
+<enum value='0' name='kCSIdentityFlagNone'/>
+<enum value='-5' name='kCSIdentityInvalidFullNameErr'/>
+<enum value='-7' name='kCSIdentityInvalidPosixNameErr'/>
+<enum value='-3' name='kCSIdentityPermissionErr'/>
+<enum value='5' name='kCSIdentityQueryEventErrorOccurred'/>
+<enum value='2' name='kCSIdentityQueryEventResultsAdded'/>
+<enum value='3' name='kCSIdentityQueryEventResultsChanged'/>
+<enum value='4' name='kCSIdentityQueryEventResultsRemoved'/>
+<enum value='1' name='kCSIdentityQueryEventSearchPhaseFinished'/>
+<enum value='1' name='kCSIdentityQueryGenerateUpdateEvents'/>
+<enum value='2' name='kCSIdentityQueryIncludeHiddenIdentities'/>
+<enum value='2' name='kCSIdentityQueryStringBeginsWith'/>
+<enum value='1' name='kCSIdentityQueryStringEquals'/>
+<enum value='-9' name='kCSIdentityUnknownAccountErr'/>
+<enum value='-1' name='kCSIdentityUnknownAuthorityErr'/>
+<enum value='0' name='kCertSearchAny'/>
+<enum value='64' name='kCertSearchDecryptAllowed'/>
+<enum value='128' name='kCertSearchDecryptDisallowed'/>
+<enum value='0' name='kCertSearchDecryptIgnored'/>
+<enum value='192' name='kCertSearchDecryptMask'/>
+<enum value='16' name='kCertSearchEncryptAllowed'/>
+<enum value='32' name='kCertSearchEncryptDisallowed'/>
+<enum value='0' name='kCertSearchEncryptIgnored'/>
+<enum value='48' name='kCertSearchEncryptMask'/>
+<enum value='4096' name='kCertSearchPrivKeyRequired'/>
+<enum value='0' name='kCertSearchShift'/>
+<enum value='1' name='kCertSearchSigningAllowed'/>
+<enum value='2' name='kCertSearchSigningDisallowed'/>
+<enum value='0' name='kCertSearchSigningIgnored'/>
+<enum value='3' name='kCertSearchSigningMask'/>
+<enum value='1024' name='kCertSearchUnwrapAllowed'/>
+<enum value='2048' name='kCertSearchUnwrapDisallowed'/>
+<enum value='0' name='kCertSearchUnwrapIgnored'/>
+<enum value='3072' name='kCertSearchUnwrapMask'/>
+<enum value='4' name='kCertSearchVerifyAllowed'/>
+<enum value='8' name='kCertSearchVerifyDisallowed'/>
+<enum value='0' name='kCertSearchVerifyIgnored'/>
+<enum value='12' name='kCertSearchVerifyMask'/>
+<enum value='256' name='kCertSearchWrapAllowed'/>
+<enum value='512' name='kCertSearchWrapDisallowed'/>
+<enum value='0' name='kCertSearchWrapIgnored'/>
+<enum value='768' name='kCertSearchWrapMask'/>
+<enum value='2147483392' name='kCertUsageAllAdd'/>
+<enum value='16384' name='kCertUsageDecryptAdd'/>
+<enum value='32768' name='kCertUsageDecryptAskAndAdd'/>
+<enum value='4096' name='kCertUsageEncryptAdd'/>
+<enum value='8192' name='kCertUsageEncryptAskAndAdd'/>
+<enum value='65536' name='kCertUsageKeyExchAdd'/>
+<enum value='131072' name='kCertUsageKeyExchAskAndAdd'/>
+<enum value='262144' name='kCertUsageRootAdd'/>
+<enum value='524288' name='kCertUsageRootAskAndAdd'/>
+<enum value='1048576' name='kCertUsageSSLAdd'/>
+<enum value='2097152' name='kCertUsageSSLAskAndAdd'/>
+<enum value='8' name='kCertUsageShift'/>
+<enum value='256' name='kCertUsageSigningAdd'/>
+<enum value='512' name='kCertUsageSigningAskAndAdd'/>
+<enum value='1024' name='kCertUsageVerifyAdd'/>
+<enum value='2048' name='kCertUsageVerifyAskAndAdd'/>
+<enum value='1667592820' name='kCertificateKCItemClass'/>
+<enum value='1668047219' name='kClassKCItemAttr'/>
+<enum value='1768123764' name='kCommentKCItemAttr'/>
+<enum value='1668161568' name='kCommonNameKCItemAttr'/>
+<enum value='2' name='kCompoundPhoneAddress'/>
+<enum value='1667522932' name='kCreationDateKCItemAttr'/>
+<enum value='1668445298' name='kCreatorKCItemAttr'/>
+<enum value='1668641641' name='kCustomIconKCItemAttr'/>
+<enum value='8' name='kDDPAddressLength'/>
+<enum value='126' name='kDHCPLongOption'/>
+<enum value='127' name='kDHCPLongOptionReq'/>
+<enum value='10' name='kDataAccessKCEvent'/>
+<enum value='1024' name='kDataAccessKCEventMask'/>
+<enum value='1684366194' name='kDecryptKCItemAttr'/>
+<enum value='9' name='kDefaultChangedKCEvent'/>
+<enum value='512' name='kDefaultChangedKCEventMask'/>
+<enum value='-1' name='kDefaultInetInterface'/>
+<enum value='4' name='kDeleteKCEvent'/>
+<enum value='16' name='kDeleteKCEventMask'/>
+<enum value='1684370275' name='kDescriptionKCItemAttr'/>
+<enum value='18' name='kDeviceInitiatedWake'/>
+<enum value='7' name='kDozeDemand'/>
+<enum value='9' name='kDozeRequest'/>
+<enum value='20' name='kDozeToFullWakeUp'/>
+<enum value='8' name='kDozeWakeUp'/>
+<enum value='1685221232' name='kDropIconVariant'/>
+<enum value='1' name='kE164Address'/>
+<enum value='585' name='kECHO_TSDU'/>
+<enum value='1835100524' name='kEMailKCItemAttr'/>
+<enum value='2147483648' name='kETRawPacketBit'/>
+<enum value='1073741824' name='kETTimeStampBit'/>
+<enum value='2' name='kETypeBroadcast'/>
+<enum value='1' name='kETypeMulticast'/>
+<enum value='0' name='kETypeStandard'/>
+<enum value='1701733234' name='kEncryptKCItemAttr'/>
+<enum value='1701077364' name='kEndDateKCItemAttr'/>
+<enum value='8' name='kEnetAddressLength'/>
+<enum value='7101' name='kEnetModuleID'/>
+<enum value='14' name='kEnetPacketHeaderLength'/>
+<enum value='1514' name='kEnetTSDU'/>
+<enum value='24' name='kEnterIdle'/>
+<enum value='11' name='kEnterRun'/>
+<enum value='10' name='kEnterStandby'/>
+<enum value='65535' name='kEveryKCEventMask'/>
+<enum value='26' name='kExitIdle'/>
+<enum value='7103' name='kFDDIModuleID'/>
+<enum value='4458' name='kFDDITSDU'/>
+<enum value='3' name='kFirstFailKCStopOn'/>
+<enum value='2' name='kFirstPassKCStopOn'/>
+<enum value='1734700641' name='kGenericKCItemAttr'/>
+<enum value='1734700656' name='kGenericPasswordKCItemClass'/>
+<enum value='21' name='kGetPowerInfo'/>
+<enum value='16' name='kGetPowerLevel'/>
+<enum value='22' name='kGetWakeOnNetInfo'/>
+<enum value='553648130' name='kGetmsgEvent'/>
+<enum value='1768122403' name='kHuge1BitMask'/>
+<enum value='1768436530' name='kHuge32BitData'/>
+<enum value='1768122420' name='kHuge4BitData'/>
+<enum value='1768122424' name='kHuge8BitData'/>
+<enum value='1748528491' name='kHuge8BitMask'/>
+<enum value='0' name='kIPCPTCPHdrCompressionDisabled'/>
+<enum value='1' name='kIPCPTCPHdrCompressionEnabled'/>
+<enum value='255' name='kIPXSAP'/>
+<enum value='4115' name='kIP_ADD_MEMBERSHIP'/>
+<enum value='32' name='kIP_BROADCAST'/>
+<enum value='4117' name='kIP_BROADCAST_IFNAME'/>
+<enum value='16' name='kIP_DONTROUTE'/>
+<enum value='4116' name='kIP_DROP_MEMBERSHIP'/>
+<enum value='4098' name='kIP_HDRINCL'/>
+<enum value='4112' name='kIP_MULTICAST_IF'/>
+<enum value='4114' name='kIP_MULTICAST_LOOP'/>
+<enum value='4113' name='kIP_MULTICAST_TTL'/>
+<enum value='1' name='kIP_OPTIONS'/>
+<enum value='4103' name='kIP_RCVDSTADDR'/>
+<enum value='4118' name='kIP_RCVIFADDR'/>
+<enum value='4101' name='kIP_RCVOPTS'/>
+<enum value='4' name='kIP_REUSEADDR'/>
+<enum value='512' name='kIP_REUSEPORT'/>
+<enum value='2' name='kIP_TOS'/>
+<enum value='3' name='kIP_TTL'/>
+<enum value='7300' name='kISDNModuleID'/>
+<enum value='1768124019' name='kIconFamilyType'/>
+<enum value='1768108336' name='kIconServices1024PixelDataARGB'/>
+<enum value='1768108087' name='kIconServices128PixelDataARGB'/>
+<enum value='1768108084' name='kIconServices16PixelDataARGB'/>
+<enum value='1768108088' name='kIconServices256PixelDataARGB'/>
+<enum value='1768108085' name='kIconServices32PixelDataARGB'/>
+<enum value='1768108086' name='kIconServices48PixelDataARGB'/>
+<enum value='1768108089' name='kIconServices512PixelDataARGB'/>
+<enum value='0' name='kIdleKCEvent'/>
+<enum value='1' name='kIdleKCEventMask'/>
+<enum value='3' name='kInetInterfaceInfoVersion'/>
+<enum value='1' name='kInitOTForApplicationMask'/>
+<enum value='2' name='kInitOTForExtensionMask'/>
+<enum value='1768842612' name='kInternetPasswordKCItemClass'/>
+<enum value='1768846953' name='kInvisibleKCItemAttr'/>
+<enum value='553648138' name='kIoctlRecvFdEvent'/>
+<enum value='1769173877' name='kIssuerKCItemAttr'/>
+<enum value='1769304684' name='kIssuerURLKCItemAttr'/>
+<enum value='1685086561' name='kKCAuthTypeDPA'/>
+<enum value='1684434036' name='kKCAuthTypeDefault'/>
+<enum value='1752462436' name='kKCAuthTypeHTTPDigest'/>
+<enum value='1836281441' name='kKCAuthTypeMSN'/>
+<enum value='1853123693' name='kKCAuthTypeNTLM'/>
+<enum value='1919967585' name='kKCAuthTypeRPA'/>
+<enum value='1634103328' name='kKCProtocolTypeAFP'/>
+<enum value='1635019883' name='kKCProtocolTypeAppleTalk'/>
+<enum value='1718906912' name='kKCProtocolTypeFTP'/>
+<enum value='1718906977' name='kKCProtocolTypeFTPAccount'/>
+<enum value='1752462448' name='kKCProtocolTypeHTTP'/>
+<enum value='1768776048' name='kKCProtocolTypeIMAP'/>
+<enum value='1769104160' name='kKCProtocolTypeIRC'/>
+<enum value='1818517872' name='kKCProtocolTypeLDAP'/>
+<enum value='1852732528' name='kKCProtocolTypeNNTP'/>
+<enum value='1886351411' name='kKCProtocolTypePOP3'/>
+<enum value='1936553072' name='kKCProtocolTypeSMTP'/>
+<enum value='1936685088' name='kKCProtocolTypeSOCKS'/>
+<enum value='1952803950' name='kKCProtocolTypeTelnet'/>
+<enum value='11' name='kKeychainListChangedKCEvent'/>
+<enum value='1818321516' name='kLabelKCItemAttr'/>
+<enum value='1229147683' name='kLarge1BitMask'/>
+<enum value='1768698674' name='kLarge32BitData'/>
+<enum value='1768123444' name='kLarge4BitData'/>
+<enum value='1768123448' name='kLarge8BitData'/>
+<enum value='1815637355' name='kLarge8BitMask'/>
+<enum value='-2' name='kLocalATalkRouterOnline'/>
+<enum value='-1' name='kLocalATalkRoutersDown'/>
+<enum value='1' name='kLockKCEvent'/>
+<enum value='2' name='kLockKCEventMask'/>
+<enum value='254' name='kMax8022SAP'/>
+<enum value='65535' name='kMaxDIXSAP'/>
+<enum value='10' name='kMaxHostAddrs'/>
+<enum value='255' name='kMaxHostNameLen'/>
+<enum value='31' name='kMaxModuleNameLength'/>
+<enum value='32' name='kMaxModuleNameSize'/>
+<enum value='35' name='kMaxPortNameLength'/>
+<enum value='36' name='kMaxPortNameSize'/>
+<enum value='35' name='kMaxProviderNameLength'/>
+<enum value='36' name='kMaxProviderNameSize'/>
+<enum value='31' name='kMaxResourceInfoLength'/>
+<enum value='32' name='kMaxResourceInfoSize'/>
+<enum value='7' name='kMaxSlotIDLength'/>
+<enum value='8' name='kMaxSlotIDSize'/>
+<enum value='32' name='kMaxSysStringLen'/>
+<enum value='1501' name='kMinDIXSAP'/>
+<enum value='1768123683' name='kMini1BitMask'/>
+<enum value='1768123700' name='kMini4BitData'/>
+<enum value='1768123704' name='kMini8BitData'/>
+<enum value='1835295092' name='kModDateKCItemAttr'/>
+<enum value='6' name='kMulticastLength'/>
+<enum value='105' name='kNBPAddressLength'/>
+<enum value='42' name='kNBPDefaultZone'/>
+<enum value='105' name='kNBPEntityBufferSize'/>
+<enum value='197' name='kNBPImbeddedWildCard'/>
+<enum value='99' name='kNBPMaxEntityLength'/>
+<enum value='32' name='kNBPMaxNameLength'/>
+<enum value='32' name='kNBPMaxTypeLength'/>
+<enum value='32' name='kNBPMaxZoneLength'/>
+<enum value='9' name='kNBPSlushLength'/>
+<enum value='61' name='kNBPWildCard'/>
+<enum value='1852139361' name='kNegativeKCItemAttr'/>
+<enum value='4294967294' name='kNetbufDataIsOTData'/>
+<enum value='1' name='kNoneKCStopOn'/>
+<enum value='1' name='kOTADEVDevice'/>
+<enum value='7' name='kOTATMDevice'/>
+<enum value='17' name='kOTATMSNAPDevice'/>
+<enum value='0' name='kOTAnyInetAddress'/>
+<enum value='4' name='kOTBooleanOptionDataSize'/>
+<enum value='20' value64='24' name='kOTBooleanOptionSize'/>
+<enum value='1869898094' name='kOTCFMClass'/>
+<enum value='620756997' name='kOTClosePortRequest'/>
+<enum value='637534209' name='kOTConfigurationChanged'/>
+<enum value='553648129' name='kOTDisablePortEvent'/>
+<enum value='553648141' name='kOTEnablePortEvent'/>
+<enum value='10' name='kOTEthernetDevice'/>
+<enum value='15' name='kOTFDDIDevice'/>
+<enum value='14' name='kOTFastEthernetDevice'/>
+<enum value='18' name='kOTFibreChannelDevice'/>
+<enum value='6' name='kOTFireWireBus'/>
+<enum value='19' name='kOTFireWireDevice'/>
+<enum value='20' value64='24' name='kOTFourByteOptionSize'/>
+<enum value='8' name='kOTFraming8022'/>
+<enum value='4' name='kOTFraming8023'/>
+<enum value='1' name='kOTFramingEthernet'/>
+<enum value='2' name='kOTFramingEthernetIPX'/>
+<enum value='0' name='kOTGenericName'/>
+<enum value='4' name='kOTGeoPort'/>
+<enum value='4294967295' name='kOTGetFramingValue'/>
+<enum value='4' name='kOTIRTalkDevice'/>
+<enum value='1' name='kOTISDN56KAdaptation'/>
+<enum value='43' name='kOTISDNAccessInformationDiscarded'/>
+<enum value='57' name='kOTISDNBearerCapabilityNotAuthorized'/>
+<enum value='65' name='kOTISDNBearerCapabilityNotImplemented'/>
+<enum value='58' name='kOTISDNBearerCapabilityNotPresentlyAvailable'/>
+<enum value='86' name='kOTISDNCallIdentityCleared'/>
+<enum value='84' name='kOTISDNCallIdentityInUse'/>
+<enum value='83' name='kOTISDNCallIdentityNotUsed'/>
+<enum value='21' name='kOTISDNCallRejected'/>
+<enum value='59' name='kOTISDNCallRestricted'/>
+<enum value='6' name='kOTISDNChannelUnacceptable'/>
+<enum value='0' name='kOTISDNDefault56KAdaptation'/>
+<enum value='13' name='kOTISDNDefaultCommType'/>
+<enum value='32' name='kOTISDNDefaultFramingType'/>
+<enum value='27' name='kOTISDNDestinationOutOfOrder'/>
+<enum value='6' name='kOTISDNDevice'/>
+<enum value='37' name='kOTISDNDigital56k'/>
+<enum value='13' name='kOTISDNDigital64k'/>
+<enum value='29' name='kOTISDNFacilityRejected'/>
+<enum value='32' name='kOTISDNFramingHDLC'/>
+<enum value='32' name='kOTISDNFramingHDLCSupported'/>
+<enum value='16' name='kOTISDNFramingTransparent'/>
+<enum value='16' name='kOTISDNFramingTransparentSupported'/>
+<enum value='64' name='kOTISDNFramingV110'/>
+<enum value='64' name='kOTISDNFramingV110Supported'/>
+<enum value='128' name='kOTISDNFramingV14E'/>
+<enum value='128' name='kOTISDNFramingV14ESupported'/>
+<enum value='88' name='kOTISDNIncompatibleDestination'/>
+<enum value='127' name='kOTISDNInterworkingUnspecified'/>
+<enum value='95' name='kOTISDNInvalidMessageUnspecified'/>
+<enum value='28' name='kOTISDNInvalidNumberFormat'/>
+<enum value='91' name='kOTISDNInvalidTransitNetworkSelection'/>
+<enum value='96' name='kOTISDNMandatoryInformationElementIsMissing'/>
+<enum value='32' name='kOTISDNMaxPhoneSize'/>
+<enum value='4' name='kOTISDNMaxSubSize'/>
+<enum value='32' name='kOTISDNMaxUserDataSize'/>
+<enum value='97' name='kOTISDNMessageTypeNonExistentOrNotImplemented'/>
+<enum value='41' name='kOTISDNNetworkOutOfOrder'/>
+<enum value='19' name='kOTISDNNoAnswerFromUser'/>
+<enum value='85' name='kOTISDNNoCallSuspended'/>
+<enum value='34' name='kOTISDNNoCircuitChannelAvailable'/>
+<enum value='3' name='kOTISDNNoRouteToDestination'/>
+<enum value='2' name='kOTISDNNoRouteToSpecifiedTransitNetwork'/>
+<enum value='18' name='kOTISDNNoUserResponding'/>
+<enum value='26' name='kOTISDNNonSelectedUserClearing'/>
+<enum value='16' name='kOTISDNNormal'/>
+<enum value='31' name='kOTISDNNormalUnspecified'/>
+<enum value='0' name='kOTISDNNot56KAdaptation'/>
+<enum value='22' name='kOTISDNNumberChanged'/>
+<enum value='70' name='kOTISDNOnlyRestrictedDigitalBearer'/>
+<enum value='49' name='kOTISDNQualityOfServiceUnvailable'/>
+<enum value='44' name='kOTISDNRequestedCircuitChannelNotAvailable'/>
+<enum value='69' name='kOTISDNRequestedFacilityNotImplemented'/>
+<enum value='50' name='kOTISDNRequestedFacilityNotSubscribed'/>
+<enum value='45' name='kOTISDNResourceUnavailableUnspecified'/>
+<enum value='63' name='kOTISDNServiceOrOptionNotAvilableUnspecified'/>
+<enum value='79' name='kOTISDNServiceOrOptionNotImplementedUnspecified'/>
+<enum value='42' name='kOTISDNSwitchingEquipmentCongestion'/>
+<enum value='1' name='kOTISDNTelephoneALaw'/>
+<enum value='26' name='kOTISDNTelephoneMuLaw'/>
+<enum value='1' name='kOTISDNUnallocatedNumber'/>
+<enum value='17' name='kOTISDNUserBusy'/>
+<enum value='42' name='kOTISDNVideo56k'/>
+<enum value='41' name='kOTISDNVideo64k'/>
+<enum value='0' name='kOTInvalidPortRef'/>
+<enum value='0' name='kOTInvalidRef'/>
+<enum value='16' name='kOTIrDADevice'/>
+<enum value='15' name='kOTLastBusIndex'/>
+<enum value='1022' name='kOTLastDeviceIndex'/>
+<enum value='255' name='kOTLastOtherNumber'/>
+<enum value='255' name='kOTLastSlotNumber'/>
+<enum value='3' name='kOTLocalTalkDevice'/>
+<enum value='2' name='kOTMDEVDevice'/>
+<enum value='13' name='kOTModemDevice'/>
+<enum value='1' name='kOTMotherboardBus'/>
+<enum value='4294967293' name='kOTNetbufDataIsOTBufferStar'/>
+<enum value='4294967295' name='kOTNetbufIsRawMode'/>
+<enum value='620756998' name='kOTNewPortRegistered'/>
+<enum value='553648142' name='kOTNewPortRegisteredEvent'/>
+<enum value='0' name='kOTNoDeviceType'/>
+<enum value='2' name='kOTNuBus'/>
+<enum value='17' value64='21' name='kOTOneByteOptionSize'/>
+<enum value='16' value64='20' name='kOTOptionHeaderSize'/>
+<enum value='5' name='kOTPCCardBus'/>
+<enum value='3' name='kOTPCIBus'/>
+<enum value='12' name='kOTPPPDevice'/>
+<enum value='32' name='kOTPortAutoConnects'/>
+<enum value='8' name='kOTPortCanArbitrate'/>
+<enum value='4' name='kOTPortCanYield'/>
+<enum value='620756993' name='kOTPortDisabled'/>
+<enum value='620756994' name='kOTPortEnabled'/>
+<enum value='1' name='kOTPortIsActive'/>
+<enum value='2147483648' name='kOTPortIsAlias'/>
+<enum value='1' name='kOTPortIsDLPI'/>
+<enum value='2' name='kOTPortIsDisabled'/>
+<enum value='8' name='kOTPortIsOffline'/>
+<enum value='32768' name='kOTPortIsPrivate'/>
+<enum value='16384' name='kOTPortIsSystemRegistered'/>
+<enum value='2' name='kOTPortIsTPI'/>
+<enum value='16' name='kOTPortIsTransitory'/>
+<enum value='4' name='kOTPortIsUnavailable'/>
+<enum value='620756999' name='kOTPortNetworkChange'/>
+<enum value='553648145' name='kOTPortNetworkChangeEvent'/>
+<enum value='620756995' name='kOTPortOffline'/>
+<enum value='553648143' name='kOTPortOfflineEvent'/>
+<enum value='620756996' name='kOTPortOnline'/>
+<enum value='553648144' name='kOTPortOnlineEvent'/>
+<enum value='603979778' name='kOTProviderIsClosed'/>
+<enum value='587202561' name='kOTProviderIsDisconnected'/>
+<enum value='587202562' name='kOTProviderIsReconnected'/>
+<enum value='603979777' name='kOTProviderWillClose'/>
+<enum value='1023' name='kOTPseudoDevice'/>
+<enum value='1' name='kOTRawRcvOff'/>
+<enum value='0' name='kOTRawRcvOn'/>
+<enum value='2' name='kOTRawRcvOnWithTimeStamp'/>
+<enum value='553648129' name='kOTReservedEvent1'/>
+<enum value='553648134' name='kOTReservedEvent2'/>
+<enum value='553648137' name='kOTReservedEvent3'/>
+<enum value='553648138' name='kOTReservedEvent4'/>
+<enum value='553648139' name='kOTReservedEvent5'/>
+<enum value='553648140' name='kOTReservedEvent6'/>
+<enum value='553648141' name='kOTReservedEvent7'/>
+<enum value='553648142' name='kOTReservedEvent8'/>
+<enum value='11' name='kOTSLIPDevice'/>
+<enum value='8' name='kOTSMDSDevice'/>
+<enum value='553648140' name='kOTScheduleTerminationEvent'/>
+<enum value='2' name='kOTSendErrorPacket'/>
+<enum value='8' name='kOTSerialBreakOn'/>
+<enum value='262144' name='kOTSerialCTLHold'/>
+<enum value='4' name='kOTSerialCTSInputHandshake'/>
+<enum value='131072' name='kOTSerialDTRNegated'/>
+<enum value='8' name='kOTSerialDTROutputHandshake'/>
+<enum value='19200' name='kOTSerialDefaultBaudRate'/>
+<enum value='8' name='kOTSerialDefaultDataBits'/>
+<enum value='0' name='kOTSerialDefaultHandshake'/>
+<enum value='19' name='kOTSerialDefaultOffChar'/>
+<enum value='17' name='kOTSerialDefaultOnChar'/>
+<enum value='0' name='kOTSerialDefaultParity'/>
+<enum value='1024' name='kOTSerialDefaultRcvBufSize'/>
+<enum value='1' name='kOTSerialDefaultRcvLoWat'/>
+<enum value='10' name='kOTSerialDefaultRcvTimeout'/>
+<enum value='1024' name='kOTSerialDefaultSndBufSize'/>
+<enum value='96' name='kOTSerialDefaultSndLoWat'/>
+<enum value='10' name='kOTSerialDefaultStopBits'/>
+<enum value='9' name='kOTSerialDevice'/>
+<enum value='2' name='kOTSerialEvenParity'/>
+<enum value='0' name='kOTSerialForceXOffFalse'/>
+<enum value='1' name='kOTSerialForceXOffTrue'/>
+<enum value='1' name='kOTSerialFramingAsync'/>
+<enum value='8' name='kOTSerialFramingAsyncPackets'/>
+<enum value='64' name='kOTSerialFramingErr'/>
+<enum value='2' name='kOTSerialFramingHDLC'/>
+<enum value='16' name='kOTSerialFramingPPP'/>
+<enum value='4' name='kOTSerialFramingSDLC'/>
+<enum value='0' name='kOTSerialNoParity'/>
+<enum value='1' name='kOTSerialOddParity'/>
+<enum value='16777216' name='kOTSerialOutputBreakOn'/>
+<enum value='32' name='kOTSerialOverrunErr'/>
+<enum value='16' name='kOTSerialParityErr'/>
+<enum value='1' name='kOTSerialSendXOffAlways'/>
+<enum value='0' name='kOTSerialSendXOffIfXOnTrue'/>
+<enum value='1' name='kOTSerialSendXOnAlways'/>
+<enum value='0' name='kOTSerialSendXOnIfXOffTrue'/>
+<enum value='0' name='kOTSerialSetBreakOff'/>
+<enum value='4294967295' name='kOTSerialSetBreakOn'/>
+<enum value='0' name='kOTSerialSetDTROff'/>
+<enum value='1' name='kOTSerialSetDTROn'/>
+<enum value='1' name='kOTSerialSwOverRunErr'/>
+<enum value='524288' name='kOTSerialXOffHold'/>
+<enum value='65536' name='kOTSerialXOffSent'/>
+<enum value='1' name='kOTSerialXOnOffInputHandshake'/>
+<enum value='2' name='kOTSerialXOnOffOutputHandshake'/>
+<enum value='1' name='kOTSetRecvMode'/>
+<enum value='654311425' name='kOTStackIsLoading'/>
+<enum value='654311427' name='kOTStackIsUnloading'/>
+<enum value='654311426' name='kOTStackWasLoaded'/>
+<enum value='536870929' name='kOTSyncIdleEvent'/>
+<enum value='637534212' name='kOTSystemAwaken'/>
+<enum value='637534216' name='kOTSystemAwakenPrep'/>
+<enum value='637534213' name='kOTSystemIdle'/>
+<enum value='637534211' name='kOTSystemShutdown'/>
+<enum value='637534215' name='kOTSystemShutdownPrep'/>
+<enum value='637534210' name='kOTSystemSleep'/>
+<enum value='637534214' name='kOTSystemSleepPrep'/>
+<enum value='5' name='kOTTokenRingDevice'/>
+<enum value='553648139' name='kOTTryShutdownEvent'/>
+<enum value='18' value64='22' name='kOTTwoByteOptionSize'/>
+<enum value='0' name='kOTUnknownBusPort'/>
+<enum value='620756997' name='kOTYieldPortRequest'/>
+<enum value='1' name='kO_ASYNC'/>
+<enum value='4' name='kO_NDELAY'/>
+<enum value='4' name='kO_NONBLOCK'/>
+<enum value='1868853872' name='kOpenDropIconVariant'/>
+<enum value='1869636974' name='kOpenIconVariant'/>
+<enum value='2' name='kPPPAddrCompression'/>
+<enum value='0' name='kPPPAllAlertsDisabledFlag'/>
+<enum value='15' name='kPPPAllAlertsEnabledFlag'/>
+<enum value='4294967295' name='kPPPAsyncMapCharsAll'/>
+<enum value='0' name='kPPPAsyncMapCharsNone'/>
+<enum value='655360' name='kPPPAsyncMapCharsXOnXOff'/>
+<enum value='588185612' name='kPPPAuthenticationFinishedEvent'/>
+<enum value='588185611' name='kPPPAuthenticationStartedEvent'/>
+<enum value='1' name='kPPPCHAPOrPAPOutAuthentication'/>
+<enum value='0' name='kPPPCompressionDisabled'/>
+<enum value='588185601' name='kPPPConnectCompleteEvent'/>
+<enum value='4' name='kPPPConnectionFlashingIconFlag'/>
+<enum value='2' name='kPPPConnectionRemindersFlag'/>
+<enum value='3' name='kPPPConnectionStatusConnected'/>
+<enum value='2' name='kPPPConnectionStatusConnecting'/>
+<enum value='1' name='kPPPConnectionStatusDialogsFlag'/>
+<enum value='4' name='kPPPConnectionStatusDisconnecting'/>
+<enum value='1' name='kPPPConnectionStatusIdle'/>
+<enum value='588185616' name='kPPPDCECallFinishedEvent'/>
+<enum value='588185615' name='kPPPDCECallStartedEvent'/>
+<enum value='588185614' name='kPPPDCEInitFinishedEvent'/>
+<enum value='588185613' name='kPPPDCEInitStartedEvent'/>
+<enum value='588185603' name='kPPPDisconnectCompleteEvent'/>
+<enum value='588185604' name='kPPPDisconnectEvent'/>
+<enum value='588185600' name='kPPPEvent'/>
+<enum value='588185606' name='kPPPIPCPDownEvent'/>
+<enum value='588185605' name='kPPPIPCPUpEvent'/>
+<enum value='588185608' name='kPPPLCPDownEvent'/>
+<enum value='588185607' name='kPPPLCPUpEvent'/>
+<enum value='588185610' name='kPPPLowerLayerDownEvent'/>
+<enum value='588185609' name='kPPPLowerLayerUpEvent'/>
+<enum value='255' name='kPPPMaxCallInfoLength'/>
+<enum value='127' name='kPPPMaxDTEAddressLength'/>
+<enum value='255' name='kPPPMaxIDLength'/>
+<enum value='4500' name='kPPPMaxMRU'/>
+<enum value='255' name='kPPPMaxPasswordLength'/>
+<enum value='32000' name='kPPPMaxScriptSize'/>
+<enum value='0' name='kPPPMinMRU'/>
+<enum value='0' name='kPPPNoOutAuthentication'/>
+<enum value='8' name='kPPPOutPasswordDialogsFlag'/>
+<enum value='1' name='kPPPProtoCompression'/>
+<enum value='2' name='kPPPScriptTypeConnect'/>
+<enum value='1' name='kPPPScriptTypeModem'/>
+<enum value='588185602' name='kPPPSetScriptCompleteEvent'/>
+<enum value='2' name='kPPPStateClosed'/>
+<enum value='3' name='kPPPStateClosing'/>
+<enum value='1' name='kPPPStateInitial'/>
+<enum value='5' name='kPPPStateOpened'/>
+<enum value='4' name='kPPPStateOpening'/>
+<enum value='268435456' name='kPRIVATEEVENT'/>
+<enum value='587202560' name='kPROTOCOLEVENT'/>
+<enum value='6' name='kPasswordChangedKCEvent'/>
+<enum value='64' name='kPasswordChangedKCEventMask'/>
+<enum value='1885434984' name='kPathKCItemAttr'/>
+<enum value='1' name='kPhoneAddress'/>
+<enum value='0' name='kPolicyKCStopOn'/>
+<enum value='553648136' name='kPollEvent'/>
+<enum value='1886351988' name='kPortKCItemAttr'/>
+<enum value='1886675820' name='kProtocolKCItemAttr'/>
+<enum value='1752198009' name='kPublicKeyHashKCItemAttr'/>
+<enum value='2' name='kRAProductClientOnly'/>
+<enum value='4' name='kRAProductManyPortServer'/>
+<enum value='3' name='kRAProductOnePortServer'/>
+<enum value='2' name='kRdPermKCStatus'/>
+<enum value='1870030194' name='kRolloverIconVariant'/>
+<enum value='1' name='kSIGHUP'/>
+<enum value='570425344' name='kSIGNALEVENT'/>
+<enum value='30' name='kSIGPOLL'/>
+<enum value='16' name='kSIGURG'/>
+<enum value='170' name='kSNAPSAP'/>
+<enum value='553648128' name='kSTREAMEVENT'/>
+<enum value='1935897200' name='kScriptCodeKCItemAttr'/>
+<enum value='255' name='kSecOptionReserved'/>
+<enum value='1935961454' name='kSecurityDomainKCItemAttr'/>
+<enum value='7200' name='kSerialABModuleID'/>
+<enum value='1936614002' name='kSerialNumberKCItemAttr'/>
+<enum value='1936881266' name='kServerKCItemAttr'/>
+<enum value='1937138533' name='kServiceKCItemAttr'/>
+<enum value='17' name='kSetPowerLevel'/>
+<enum value='1936287598' name='kSignKCItemAttr'/>
+<enum value='1936943463' name='kSignatureKCItemAttr'/>
+<enum value='2' name='kSleepDemand'/>
+<enum value='5' name='kSleepDeny'/>
+<enum value='6' name='kSleepNow'/>
+<enum value='1' name='kSleepRequest'/>
+<enum value='4' name='kSleepRevoke'/>
+<enum value='4' name='kSleepUnlock'/>
+<enum value='3' name='kSleepWakeUp'/>
+<enum value='1768125219' name='kSmall1BitMask'/>
+<enum value='1769157426' name='kSmall32BitData'/>
+<enum value='1768125236' name='kSmall4BitData'/>
+<enum value='1768125240' name='kSmall8BitData'/>
+<enum value='1933077867' name='kSmall8BitMask'/>
+<enum value='1935958388' name='kStartDateKCItemAttr'/>
+<enum value='25' name='kStillIdle'/>
+<enum value='553648134' name='kStreamCloseEvent'/>
+<enum value='553648133' name='kStreamIoctlEvent'/>
+<enum value='553648135' name='kStreamOpenEvent'/>
+<enum value='553648131' name='kStreamReadEvent'/>
+<enum value='553648132' name='kStreamWriteEvent'/>
+<enum value='1937072746' name='kSubjectKCItemAttr'/>
+<enum value='13' name='kSuspendDemand'/>
+<enum value='12' name='kSuspendRequest'/>
+<enum value='14' name='kSuspendRevoke'/>
+<enum value='23' name='kSuspendWakeToDoze'/>
+<enum value='15' name='kSuspendWakeUp'/>
+<enum value='256' name='kSystemEventKCEventMask'/>
+<enum value='8' name='kSystemKCEvent'/>
+<enum value='-1501' name='kSystemSoundClientTimedOutError'/>
+<enum value='0' name='kSystemSoundNoError'/>
+<enum value='-1500' name='kSystemSoundUnspecifiedError'/>
+<enum value='22' name='kT8022FullPacketHeaderLength'/>
+<enum value='3' name='kT8022HeaderLength'/>
+<enum value='7100' name='kT8022ModuleID'/>
+<enum value='8' name='kT8022SNAPHeaderLength'/>
+<enum value='0' name='kT_NULL'/>
+<enum value='4294967293' name='kT_UNSPEC'/>
+<enum value='1769222962' name='kThumbnail32BitData'/>
+<enum value='1949855083' name='kThumbnail8BitMask'/>
+<enum value='1953066085' name='kTileIconVariant'/>
+<enum value='7102' name='kTokenRingModuleID'/>
+<enum value='4458' name='kTokenRingTSDU'/>
+<enum value='1954115685' name='kTypeKCItemAttr'/>
+<enum value='2' name='kUnlockKCEvent'/>
+<enum value='4' name='kUnlockKCEventMask'/>
+<enum value='1' name='kUnlockStateKCStatus'/>
+<enum value='1970173810' name='kUnwrapKCItemAttr'/>
+<enum value='5' name='kUpdateKCEvent'/>
+<enum value='32' name='kUpdateKCEventMask'/>
+<enum value='1986359913' name='kVerifyKCItemAttr'/>
+<enum value='1986817381' name='kVolumeKCItemAttr'/>
+<enum value='19' name='kWakeToDoze'/>
+<enum value='4' name='kWrPermKCStatus'/>
+<enum value='2003984752' name='kWrapKCItemAttr'/>
+<enum value='3' name='kX121Address'/>
+<enum value='32' name='kZIPMaxZoneLength'/>
+<enum value='3' name='keaBadAddress'/>
+<enum value='2' name='keaBroadcast'/>
+<enum value='1' name='keaMulticast'/>
+<enum value='2147483648' name='keaRawPacketBit'/>
+<enum value='0' name='keaStandardAddress'/>
+<enum value='1073741824' name='keaTimeStampBit'/>
+<enum value='1229147683' name='large1BitMask'/>
+<enum value='1768123444' name='large4BitData'/>
+<enum value='1768123448' name='large8BitData'/>
+<enum value='1768123683' name='mini1BitMask'/>
+<enum value='1768123700' name='mini4BitData'/>
+<enum value='1768123704' name='mini8BitData'/>
+<enum value='1' name='noCalls'/>
+<enum value='2' name='noRequest'/>
+<enum value='16' name='sleepQType'/>
+<enum value='16' name='slpQType'/>
+<enum value='1768125219' name='small1BitMask'/>
+<enum value='1768125236' name='small4BitData'/>
+<enum value='1768125240' name='small8BitData'/>
+<function name='AlertSoundPlay'/>
+<function name='AlertSoundPlayCustomSound'>
+<arg type='L' type64='I'/>
+</function>
+<function name='BatteryCount'>
+<retval type='s'/>
+</function>
+<function name='CSGetDefaultIdentityAuthority'>
+<retval type='^{__CSIdentityAuthority=}'/>
+</function>
+<function name='CSGetLocalIdentityAuthority'>
+<retval type='^{__CSIdentityAuthority=}'/>
+</function>
+<function name='CSGetManagedIdentityAuthority'>
+<retval type='^{__CSIdentityAuthority=}'/>
+</function>
+<function name='CSIdentityAddAlias'>
+<arg type='^{__CSIdentity=}'/>
+<arg type='^{__CFString=}'/>
+</function>
+<function name='CSIdentityAddMember'>
+<arg type='^{__CSIdentity=}'/>
+<arg type='^{__CSIdentity=}'/>
+</function>
+<function name='CSIdentityAuthenticateUsingPassword'>
+<arg type='^{__CSIdentity=}'/>
+<arg type='^{__CFString=}'/>
+<retval type='B'/>
+</function>
+<function name='CSIdentityAuthorityCopyLocalizedName'>
+<arg type='^{__CSIdentityAuthority=}'/>
+<retval type='^{__CFString=}' already_retained='true'/>
+</function>
+<function name='CSIdentityAuthorityGetTypeID'>
+<retval type='L' type64='Q'/>
+</function>
+<function name='CSIdentityCommit'>
+<arg type='^{__CSIdentity=}'/>
+<arg type='^{AuthorizationOpaqueRef=}'/>
+<arg type='^^{__CFError}'/>
+<retval type='B'/>
+</function>
+<function name='CSIdentityCommitAsynchronously'>
+<arg type='^{__CSIdentity=}'/>
+<arg type='^{CSIdentityClientContext=i^v^?^?^?^?}' type64='^{CSIdentityClientContext=q^v^?^?^?^?}'/>
+<arg type='^{__CFRunLoop=}'/>
+<arg type='^{__CFString=}'/>
+<arg type='^{AuthorizationOpaqueRef=}'/>
+<retval type='B'/>
+</function>
+<function name='CSIdentityCreate'>
+<arg type='^{__CFAllocator=}'/>
+<arg type='l' type64='q'/>
+<arg type='^{__CFString=}'/>
+<arg type='^{__CFString=}'/>
+<arg type='L' type64='Q'/>
+<arg type='^{__CSIdentityAuthority=}'/>
+<retval type='^{__CSIdentity=}' already_retained='true'/>
+</function>
+<function name='CSIdentityCreateCopy'>
+<arg type='^{__CFAllocator=}'/>
+<arg type='^{__CSIdentity=}'/>
+<retval type='^{__CSIdentity=}' already_retained='true'/>
+</function>
+<function name='CSIdentityCreateGroupMembershipQuery'>
+<arg type='^{__CFAllocator=}'/>
+<arg type='^{__CSIdentity=}'/>
+<retval type='^{__CSIdentityQuery=}' already_retained='true'/>
+</function>
+<function name='CSIdentityCreatePersistentReference'>
+<arg type='^{__CFAllocator=}'/>
+<arg type='^{__CSIdentity=}'/>
+<retval type='^{__CFData=}' already_retained='true'/>
+</function>
+<function name='CSIdentityDelete'>
+<arg type='^{__CSIdentity=}'/>
+</function>
+<function name='CSIdentityGetAliases'>
+<arg type='^{__CSIdentity=}'/>
+<retval type='^{__CFArray=}'/>
+</function>
+<function name='CSIdentityGetAuthority'>
+<arg type='^{__CSIdentity=}'/>
+<retval type='^{__CSIdentityAuthority=}'/>
+</function>
+<function name='CSIdentityGetCertificate'>
+<arg type='^{__CSIdentity=}'/>
+<retval type='^{OpaqueSecCertificateRef=}'/>
+</function>
+<function name='CSIdentityGetClass'>
+<arg type='^{__CSIdentity=}'/>
+<retval type='l' type64='q'/>
+</function>
+<function name='CSIdentityGetEmailAddress'>
+<arg type='^{__CSIdentity=}'/>
+<retval type='^{__CFString=}'/>
+</function>
+<function name='CSIdentityGetFullName'>
+<arg type='^{__CSIdentity=}'/>
+<retval type='^{__CFString=}'/>
+</function>
+<function name='CSIdentityGetImageData'>
+<arg type='^{__CSIdentity=}'/>
+<retval type='^{__CFData=}'/>
+</function>
+<function name='CSIdentityGetImageDataType'>
+<arg type='^{__CSIdentity=}'/>
+<retval type='^{__CFString=}'/>
+</function>
+<function name='CSIdentityGetImageURL'>
+<arg type='^{__CSIdentity=}'/>
+<retval type='^{__CFURL=}'/>
+</function>
+<function name='CSIdentityGetPosixID'>
+<arg type='^{__CSIdentity=}'/>
+<retval type='I'/>
+</function>
+<function name='CSIdentityGetPosixName'>
+<arg type='^{__CSIdentity=}'/>
+<retval type='^{__CFString=}'/>
+</function>
+<function name='CSIdentityGetTypeID'>
+<retval type='L' type64='Q'/>
+</function>
+<function name='CSIdentityGetUUID'>
+<arg type='^{__CSIdentity=}'/>
+<retval type='^{__CFUUID=}'/>
+</function>
+<function name='CSIdentityIsCommitting'>
+<arg type='^{__CSIdentity=}'/>
+<retval type='B'/>
+</function>
+<function name='CSIdentityIsEnabled'>
+<arg type='^{__CSIdentity=}'/>
+<retval type='B'/>
+</function>
+<function name='CSIdentityIsHidden'>
+<arg type='^{__CSIdentity=}'/>
+<retval type='B'/>
+</function>
+<function name='CSIdentityIsMemberOfGroup'>
+<arg type='^{__CSIdentity=}'/>
+<arg type='^{__CSIdentity=}'/>
+<retval type='B'/>
+</function>
+<function name='CSIdentityQueryCopyResults'>
+<arg type='^{__CSIdentityQuery=}'/>
+<retval type='^{__CFArray=}' already_retained='true'/>
+</function>
+<function name='CSIdentityQueryCreate'>
+<arg type='^{__CFAllocator=}'/>
+<arg type='l' type64='q'/>
+<arg type='^{__CSIdentityAuthority=}'/>
+<retval type='^{__CSIdentityQuery=}' already_retained='true'/>
+</function>
+<function name='CSIdentityQueryCreateForCurrentUser'>
+<arg type='^{__CFAllocator=}'/>
+<retval type='^{__CSIdentityQuery=}' already_retained='true'/>
+</function>
+<function name='CSIdentityQueryCreateForName'>
+<arg type='^{__CFAllocator=}'/>
+<arg type='^{__CFString=}'/>
+<arg type='l' type64='q'/>
+<arg type='l' type64='q'/>
+<arg type='^{__CSIdentityAuthority=}'/>
+<retval type='^{__CSIdentityQuery=}' already_retained='true'/>
+</function>
+<function name='CSIdentityQueryCreateForPersistentReference'>
+<arg type='^{__CFAllocator=}'/>
+<arg type='^{__CFData=}'/>
+<retval type='^{__CSIdentityQuery=}' already_retained='true'/>
+</function>
+<function name='CSIdentityQueryCreateForPosixID'>
+<arg type='^{__CFAllocator=}'/>
+<arg type='I'/>
+<arg type='l' type64='q'/>
+<arg type='^{__CSIdentityAuthority=}'/>
+<retval type='^{__CSIdentityQuery=}' already_retained='true'/>
+</function>
+<function name='CSIdentityQueryCreateForUUID'>
+<arg type='^{__CFAllocator=}'/>
+<arg type='^{__CFUUID=}'/>
+<arg type='^{__CSIdentityAuthority=}'/>
+<retval type='^{__CSIdentityQuery=}' already_retained='true'/>
+</function>
+<function name='CSIdentityQueryExecute'>
+<arg type='^{__CSIdentityQuery=}'/>
+<arg type='L' type64='Q'/>
+<arg type='^^{__CFError}'/>
+<retval type='B'/>
+</function>
+<function name='CSIdentityQueryExecuteAsynchronously'>
+<arg type='^{__CSIdentityQuery=}'/>
+<arg type='L' type64='Q'/>
+<arg type='^{CSIdentityQueryClientContext=i^v^?^?^?^?}' type64='^{CSIdentityQueryClientContext=q^v^?^?^?^?}'/>
+<arg type='^{__CFRunLoop=}'/>
+<arg type='^{__CFString=}'/>
+<retval type='B'/>
+</function>
+<function name='CSIdentityQueryGetTypeID'>
+<retval type='L' type64='Q'/>
+</function>
+<function name='CSIdentityQueryStop'>
+<arg type='^{__CSIdentityQuery=}'/>
+</function>
+<function name='CSIdentityRemoveAlias'>
+<arg type='^{__CSIdentity=}'/>
+<arg type='^{__CFString=}'/>
+</function>
+<function name='CSIdentityRemoveClient'>
+<arg type='^{__CSIdentity=}'/>
+</function>
+<function name='CSIdentityRemoveMember'>
+<arg type='^{__CSIdentity=}'/>
+<arg type='^{__CSIdentity=}'/>
+</function>
+<function name='CSIdentitySetCertificate'>
+<arg type='^{__CSIdentity=}'/>
+<arg type='^{OpaqueSecCertificateRef=}'/>
+</function>
+<function name='CSIdentitySetEmailAddress'>
+<arg type='^{__CSIdentity=}'/>
+<arg type='^{__CFString=}'/>
+</function>
+<function name='CSIdentitySetFullName'>
+<arg type='^{__CSIdentity=}'/>
+<arg type='^{__CFString=}'/>
+</function>
+<function name='CSIdentitySetImageData'>
+<arg type='^{__CSIdentity=}'/>
+<arg type='^{__CFData=}'/>
+<arg type='^{__CFString=}'/>
+</function>
+<function name='CSIdentitySetImageURL'>
+<arg type='^{__CSIdentity=}'/>
+<arg type='^{__CFURL=}'/>
+</function>
+<function name='CSIdentitySetIsEnabled'>
+<arg type='^{__CSIdentity=}'/>
+<arg type='B'/>
+</function>
+<function name='CSIdentitySetPassword'>
+<arg type='^{__CSIdentity=}'/>
+<arg type='^{__CFString=}'/>
+</function>
+<function name='CurrentProcessorSpeed'>
+<retval type='s'/>
+</function>
+<function name='DisposeHDSpindownUPP'>
+<arg type='^?' function_pointer='true'>
+<arg type='^{HDQueueElement=^{HDQueueElement}ss^?l}' type64='^{HDQueueElement=}'/>
+<retval type='v'/>
+</arg>
+</function>
+<function name='DisposeKCCallbackUPP'>
+<arg type='^?' function_pointer='true'>
+<arg type='S'/>
+<arg type='^{KCCallbackInfo=I^{OpaqueSecKeychainItemRef}[2l][4l]^{OpaqueSecKeychainRef}}' type64='^{KCCallbackInfo=I^{OpaqueSecKeychainItemRef}[2i][4i]^{OpaqueSecKeychainRef}}'/>
+<arg type='^v'/>
+<retval type='l' type64='i'/>
+</arg>
+</function>
+<function name='DisposeOTListSearchUPP'>
+<arg type='^?' function_pointer='true'>
+<arg type='^v'/>
+<arg type='^{OTLink=^{OTLink}}'/>
+<retval type='B'/>
+</arg>
+</function>
+<function name='DisposeOTNotifyUPP'>
+<arg type='^?' function_pointer='true'>
+<arg type='^v'/>
+<arg type='L' type64='I'/>
+<arg type='l' type64='i'/>
+<arg type='^v'/>
+<retval type='v'/>
+</arg>
+</function>
+<function name='DisposeOTProcessUPP'>
+<arg type='^?' function_pointer='true'>
+<arg type='^v'/>
+<retval type='v'/>
+</arg>
+</function>
+<function name='DisposePMgrStateChangeUPP'>
+<arg type='^?' function_pointer='true'>
+<arg type='^{PMgrQueueElement=^{PMgrQueueElement}ssl^?l}' type64='^{PMgrQueueElement=}'/>
+<arg type='l' type64='q'/>
+<retval type='v'/>
+</arg>
+</function>
+<function name='DisposeSleepQUPP'>
+<arg type='^?' function_pointer='true'>
+<arg type='l' type64='q'/>
+<arg type='^{SleepQRec=^{SleepQRec}s^?s}'/>
+<retval type='l' type64='q'/>
+</arg>
+</function>
+<function name='DisposeSystemSoundCompletionUPP'>
+<arg type='^?' function_pointer='true'>
+<arg type='L' type64='I'/>
+<arg type='^v'/>
+<retval type='l' type64='i'/>
+</arg>
+</function>
+<function name='GetCPUSpeed'>
+<retval type='l' type64='q'/>
+</function>
+<function name='InvokeHDSpindownUPP'>
+<arg type='^{HDQueueElement=^{HDQueueElement}ss^?l}' type64='^{HDQueueElement=}'/>
+<arg type='^?' function_pointer='true'>
+<arg type='^{HDQueueElement=^{HDQueueElement}ss^?l}' type64='^{HDQueueElement=}'/>
+<retval type='v'/>
+</arg>
+</function>
+<function name='InvokeKCCallbackUPP'>
+<arg type='S'/>
+<arg type='^{KCCallbackInfo=I^{OpaqueSecKeychainItemRef}[2l][4l]^{OpaqueSecKeychainRef}}' type64='^{KCCallbackInfo=I^{OpaqueSecKeychainItemRef}[2i][4i]^{OpaqueSecKeychainRef}}'/>
+<arg type='^v'/>
+<arg type='^?' function_pointer='true'>
+<arg type='S'/>
+<arg type='^{KCCallbackInfo=I^{OpaqueSecKeychainItemRef}[2l][4l]^{OpaqueSecKeychainRef}}' type64='^{KCCallbackInfo=I^{OpaqueSecKeychainItemRef}[2i][4i]^{OpaqueSecKeychainRef}}'/>
+<arg type='^v'/>
+<retval type='l' type64='i'/>
+</arg>
+<retval type='l' type64='i'/>
+</function>
+<function name='InvokeOTListSearchUPP'>
+<arg type='^v'/>
+<arg type='^{OTLink=^{OTLink}}'/>
+<arg type='^?' function_pointer='true'>
+<arg type='^v'/>
+<arg type='^{OTLink=^{OTLink}}'/>
+<retval type='B'/>
+</arg>
+<retval type='B'/>
+</function>
+<function name='InvokeOTNotifyUPP'>
+<arg type='^v'/>
+<arg type='L' type64='I'/>
+<arg type='l' type64='i'/>
+<arg type='^v'/>
+<arg type='^?' function_pointer='true'>
+<arg type='^v'/>
+<arg type='L' type64='I'/>
+<arg type='l' type64='i'/>
+<arg type='^v'/>
+<retval type='v'/>
+</arg>
+</function>
+<function name='InvokeOTProcessUPP'>
+<arg type='^v'/>
+<arg type='^?' function_pointer='true'>
+<arg type='^v'/>
+<retval type='v'/>
+</arg>
+</function>
+<function name='InvokePMgrStateChangeUPP'>
+<arg type='^{PMgrQueueElement=^{PMgrQueueElement}ssl^?l}' type64='^{PMgrQueueElement=}'/>
+<arg type='l' type64='q'/>
+<arg type='^?' function_pointer='true'>
+<arg type='^{PMgrQueueElement=^{PMgrQueueElement}ssl^?l}' type64='^{PMgrQueueElement=}'/>
+<arg type='l' type64='q'/>
+<retval type='v'/>
+</arg>
+</function>
+<function name='InvokeSleepQUPP'>
+<arg type='l' type64='q'/>
+<arg type='^{SleepQRec=^{SleepQRec}s^?s}'/>
+<arg type='^?' function_pointer='true'>
+<arg type='l' type64='q'/>
+<arg type='^{SleepQRec=^{SleepQRec}s^?s}'/>
+<retval type='l' type64='q'/>
+</arg>
+<retval type='l' type64='q'/>
+</function>
+<function name='InvokeSystemSoundCompletionUPP'>
+<arg type='L' type64='I'/>
+<arg type='^v'/>
+<arg type='^?' function_pointer='true'>
+<arg type='L' type64='I'/>
+<arg type='^v'/>
+<retval type='l' type64='i'/>
+</arg>
+<retval type='l' type64='i'/>
+</function>
+<function name='KCAddCallback'>
+<arg type='^?' function_pointer='true'>
+<arg type='S'/>
+<arg type='^{KCCallbackInfo=I^{OpaqueSecKeychainItemRef}[2l][4l]^{OpaqueSecKeychainRef}}' type64='^{KCCallbackInfo=I^{OpaqueSecKeychainItemRef}[2i][4i]^{OpaqueSecKeychainRef}}'/>
+<arg type='^v'/>
+<retval type='l' type64='i'/>
+</arg>
+<arg type='S'/>
+<arg type='^v'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='KCCopyItem'>
+<arg type='^{OpaqueSecKeychainItemRef=}'/>
+<arg type='^{OpaqueSecKeychainRef=}'/>
+<arg type='^^{OpaqueSecKeychainItemRef}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='KCCountKeychains'>
+<retval type='S'/>
+</function>
+<function name='KCDeleteItem'>
+<arg type='^{OpaqueSecKeychainItemRef=}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='KCFindAppleSharePassword'>
+<arg type='^[16C]'/>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='L' type64='I'/>
+<arg type='^v'/>
+<arg type='^I'/>
+<arg type='^^{OpaqueSecKeychainItemRef}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='KCFindFirstItem'>
+<arg type='^{OpaqueSecKeychainRef=}'/>
+<arg type='^{SecKeychainAttributeList=I^{SecKeychainAttribute}}'/>
+<arg type='^^{OpaqueSecKeychainSearchRef}'/>
+<arg type='^^{OpaqueSecKeychainItemRef}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='KCFindGenericPassword'>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='L' type64='I'/>
+<arg type='^v'/>
+<arg type='^I'/>
+<arg type='^^{OpaqueSecKeychainItemRef}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='KCFindInternetPassword'>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='S'/>
+<arg type='L' type64='I'/>
+<arg type='L' type64='I'/>
+<arg type='L' type64='I'/>
+<arg type='^v'/>
+<arg type='^I'/>
+<arg type='^^{OpaqueSecKeychainItemRef}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='KCFindInternetPasswordWithPath'>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='S'/>
+<arg type='L' type64='I'/>
+<arg type='L' type64='I'/>
+<arg type='L' type64='I'/>
+<arg type='^v'/>
+<arg type='^I'/>
+<arg type='^^{OpaqueSecKeychainItemRef}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='KCFindNextItem'>
+<arg type='^{OpaqueSecKeychainSearchRef=}'/>
+<arg type='^^{OpaqueSecKeychainItemRef}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='KCGetAttribute'>
+<arg type='^{OpaqueSecKeychainItemRef=}'/>
+<arg type='^{SecKeychainAttribute=II^v}'/>
+<arg type='^I'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='KCGetData'>
+<arg type='^{OpaqueSecKeychainItemRef=}'/>
+<arg type='L' type64='I'/>
+<arg type='^v'/>
+<arg type='^I'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='KCGetDefaultKeychain'>
+<arg type='^^{OpaqueSecKeychainRef}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='KCGetIndKeychain'>
+<arg type='S'/>
+<arg type='^^{OpaqueSecKeychainRef}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='KCGetKeychain'>
+<arg type='^{OpaqueSecKeychainItemRef=}'/>
+<arg type='^^{OpaqueSecKeychainRef}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='KCGetKeychainManagerVersion'>
+<arg type='^I'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='KCGetKeychainName'>
+<arg type='^{OpaqueSecKeychainRef=}'/>
+<arg type='*'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='KCGetStatus'>
+<arg type='^{OpaqueSecKeychainRef=}'/>
+<arg type='^I'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='KCIsInteractionAllowed'>
+<retval type='B'/>
+</function>
+<function name='KCLock'>
+<arg type='^{OpaqueSecKeychainRef=}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='KCMakeAliasFromKCRef'>
+<arg type='^{OpaqueSecKeychainRef=}'/>
+<arg type='^^^{AliasRecord}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='KCMakeKCRefFromAlias'>
+<arg type='^^{AliasRecord}'/>
+<arg type='^^{OpaqueSecKeychainRef}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='KCMakeKCRefFromFSRef'>
+<arg type='^{FSRef=[80C]}'/>
+<arg type='^^{OpaqueSecKeychainRef}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='KCNewItem'>
+<arg type='L' type64='I'/>
+<arg type='L' type64='I'/>
+<arg type='L' type64='I'/>
+<arg type='^v'/>
+<arg type='^^{OpaqueSecKeychainItemRef}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='KCReleaseItem'>
+<arg type='^^{OpaqueSecKeychainItemRef}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='KCReleaseKeychain'>
+<arg type='^^{OpaqueSecKeychainRef}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='KCReleaseSearch'>
+<arg type='^^{OpaqueSecKeychainSearchRef}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='KCRemoveCallback'>
+<arg type='^?' function_pointer='true'>
+<arg type='S'/>
+<arg type='^{KCCallbackInfo=I^{OpaqueSecKeychainItemRef}[2l][4l]^{OpaqueSecKeychainRef}}' type64='^{KCCallbackInfo=I^{OpaqueSecKeychainItemRef}[2i][4i]^{OpaqueSecKeychainRef}}'/>
+<arg type='^v'/>
+<retval type='l' type64='i'/>
+</arg>
+<retval type='l' type64='i'/>
+</function>
+<function name='KCSetAttribute'>
+<arg type='^{OpaqueSecKeychainItemRef=}'/>
+<arg type='^{SecKeychainAttribute=II^v}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='KCSetData'>
+<arg type='^{OpaqueSecKeychainItemRef=}'/>
+<arg type='L' type64='I'/>
+<arg type='^v'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='KCSetDefaultKeychain'>
+<arg type='^{OpaqueSecKeychainRef=}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='KCSetInteractionAllowed'>
+<arg type='B'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='KCUpdateItem'>
+<arg type='^{OpaqueSecKeychainItemRef=}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='MaximumProcessorSpeed'>
+<retval type='s'/>
+</function>
+<function name='MinimumProcessorSpeed'>
+<retval type='s'/>
+</function>
+<function name='NewHDSpindownUPP'>
+<arg type='^?' function_pointer='true'>
+<arg type='^{HDQueueElement=^{HDQueueElement}ss^?l}' type64='^{HDQueueElement=}'/>
+<retval type='v'/>
+</arg>
+<retval type='^?' function_pointer='true'>
+<arg type='^{HDQueueElement=^{HDQueueElement}ss^?l}' type64='^{HDQueueElement=}'/>
+<retval type='v'/>
+</retval>
+</function>
+<function name='NewKCCallbackUPP'>
+<arg type='^?' function_pointer='true'>
+<arg type='S'/>
+<arg type='^{KCCallbackInfo=I^{OpaqueSecKeychainItemRef}[2l][4l]^{OpaqueSecKeychainRef}}' type64='^{KCCallbackInfo=I^{OpaqueSecKeychainItemRef}[2i][4i]^{OpaqueSecKeychainRef}}'/>
+<arg type='^v'/>
+<retval type='l' type64='i'/>
+</arg>
+<retval type='^?' function_pointer='true'>
+<arg type='S'/>
+<arg type='^{KCCallbackInfo=I^{OpaqueSecKeychainItemRef}[2l][4l]^{OpaqueSecKeychainRef}}' type64='^{KCCallbackInfo=I^{OpaqueSecKeychainItemRef}[2i][4i]^{OpaqueSecKeychainRef}}'/>
+<arg type='^v'/>
+<retval type='l' type64='i'/>
+</retval>
+</function>
+<function name='NewOTListSearchUPP'>
+<arg type='^?' function_pointer='true'>
+<arg type='^v'/>
+<arg type='^{OTLink=^{OTLink}}'/>
+<retval type='B'/>
+</arg>
+<retval type='^?' function_pointer='true'>
+<arg type='^v'/>
+<arg type='^{OTLink=^{OTLink}}'/>
+<retval type='B'/>
+</retval>
+</function>
+<function name='NewOTNotifyUPP'>
+<arg type='^?' function_pointer='true'>
+<arg type='^v'/>
+<arg type='L' type64='I'/>
+<arg type='l' type64='i'/>
+<arg type='^v'/>
+<retval type='v'/>
+</arg>
+<retval type='^?' function_pointer='true'>
+<arg type='^v'/>
+<arg type='L' type64='I'/>
+<arg type='l' type64='i'/>
+<arg type='^v'/>
+<retval type='v'/>
+</retval>
+</function>
+<function name='NewOTProcessUPP'>
+<arg type='^?' function_pointer='true'>
+<arg type='^v'/>
+<retval type='v'/>
+</arg>
+<retval type='^?' function_pointer='true'>
+<arg type='^v'/>
+<retval type='v'/>
+</retval>
+</function>
+<function name='NewPMgrStateChangeUPP'>
+<arg type='^?' function_pointer='true'>
+<arg type='^{PMgrQueueElement=^{PMgrQueueElement}ssl^?l}' type64='^{PMgrQueueElement=}'/>
+<arg type='l' type64='q'/>
+<retval type='v'/>
+</arg>
+<retval type='^?' function_pointer='true'>
+<arg type='^{PMgrQueueElement=^{PMgrQueueElement}ssl^?l}' type64='^{PMgrQueueElement=}'/>
+<arg type='l' type64='q'/>
+<retval type='v'/>
+</retval>
+</function>
+<function name='NewSleepQUPP'>
+<arg type='^?' function_pointer='true'>
+<arg type='l' type64='q'/>
+<arg type='^{SleepQRec=^{SleepQRec}s^?s}'/>
+<retval type='l' type64='q'/>
+</arg>
+<retval type='^?' function_pointer='true'>
+<arg type='l' type64='q'/>
+<arg type='^{SleepQRec=^{SleepQRec}s^?s}'/>
+<retval type='l' type64='q'/>
+</retval>
+</function>
+<function name='NewSystemSoundCompletionUPP'>
+<arg type='^?' function_pointer='true'>
+<arg type='L' type64='I'/>
+<arg type='^v'/>
+<retval type='l' type64='i'/>
+</arg>
+<retval type='^?' function_pointer='true'>
+<arg type='L' type64='I'/>
+<arg type='^v'/>
+<retval type='l' type64='i'/>
+</retval>
+</function>
+<function name='SleepQInstall'>
+<arg type='^{SleepQRec=^{SleepQRec}s^?s}'/>
+</function>
+<function name='SleepQRemove'>
+<arg type='^{SleepQRec=^{SleepQRec}s^?s}'/>
+</function>
+<function name='SystemSoundGetActionID'>
+<arg type='^{FSRef=[80C]}'/>
+<arg type='^I'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='SystemSoundPlay'>
+<arg type='L' type64='I'/>
+</function>
+<function name='SystemSoundRemoveActionID'>
+<arg type='L' type64='I'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='SystemSoundRemoveCompletionRoutine'>
+<arg type='L' type64='I'/>
+</function>
+<function name='SystemSoundSetCompletionRoutine'>
+<arg type='L' type64='I'/>
+<arg type='^{__CFRunLoop=}'/>
+<arg type='^{__CFString=}'/>
+<arg type='^?' function_pointer='true'>
+<arg type='L' type64='I'/>
+<arg type='^v'/>
+<retval type='l' type64='i'/>
+</arg>
+<arg type='^v'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='UpdateSystemActivity'>
+<arg type='C'/>
+<retval type='s'/>
+</function>
+<function name='WSGetCFTypeIDFromWSTypeID'>
+<arg type='i'/>
+<retval type='L' type64='Q'/>
+</function>
+<function name='WSGetWSTypeIDFromCFType'>
+<arg type='@'/>
+<retval type='i'/>
+</function>
+<function name='WSMethodInvocationAddDeserializationOverride'>
+<arg type='^{OpaqueWSMethodInvocationRef=}'/>
+<arg type='^{__CFString=}'/>
+<arg type='^{__CFString=}'/>
+<arg type='^?' function_pointer='true'>
+<arg type='^{OpaqueWSMethodInvocationRef=}'/>
+<arg type='^{__CFTree=}'/>
+<arg type='^{__CFTree=}'/>
+<arg type='^v'/>
+<retval type='@'/>
+</arg>
+<arg type='^{WSClientContext=i^v^?^?^?}' type64='^{WSClientContext=q^v^?^?^?}'/>
+</function>
+<function name='WSMethodInvocationAddSerializationOverride'>
+<arg type='^{OpaqueWSMethodInvocationRef=}'/>
+<arg type='L' type64='Q'/>
+<arg type='^?' function_pointer='true'>
+<arg type='^{OpaqueWSMethodInvocationRef=}'/>
+<arg type='@'/>
+<arg type='^v'/>
+<retval type='^{__CFString=}'/>
+</arg>
+<arg type='^{WSClientContext=i^v^?^?^?}' type64='^{WSClientContext=q^v^?^?^?}'/>
+</function>
+<function name='WSMethodInvocationCopyParameters'>
+<arg type='^{OpaqueWSMethodInvocationRef=}'/>
+<arg type='^^{__CFArray}'/>
+<retval type='^{__CFDictionary=}' already_retained='true'/>
+</function>
+<function name='WSMethodInvocationCopyProperty'>
+<arg type='^{OpaqueWSMethodInvocationRef=}'/>
+<arg type='^{__CFString=}'/>
+<retval type='@' already_retained='true'/>
+</function>
+<function name='WSMethodInvocationCopySerialization'>
+<arg type='^{OpaqueWSMethodInvocationRef=}'/>
+<retval type='^{__CFData=}' already_retained='true'/>
+</function>
+<function name='WSMethodInvocationCreate'>
+<arg type='^{__CFURL=}'/>
+<arg type='^{__CFString=}'/>
+<arg type='^{__CFString=}'/>
+<retval type='^{OpaqueWSMethodInvocationRef=}' already_retained='true'/>
+</function>
+<function name='WSMethodInvocationCreateFromSerialization'>
+<arg type='^{__CFData=}'/>
+<retval type='^{OpaqueWSMethodInvocationRef=}' already_retained='true'/>
+</function>
+<function name='WSMethodInvocationGetTypeID'>
+<retval type='L' type64='Q'/>
+</function>
+<function name='WSMethodInvocationInvoke'>
+<arg type='^{OpaqueWSMethodInvocationRef=}'/>
+<retval type='^{__CFDictionary=}'/>
+</function>
+<function name='WSMethodInvocationScheduleWithRunLoop'>
+<arg type='^{OpaqueWSMethodInvocationRef=}'/>
+<arg type='^{__CFRunLoop=}'/>
+<arg type='^{__CFString=}'/>
+</function>
+<function name='WSMethodInvocationSetCallBack'>
+<arg type='^{OpaqueWSMethodInvocationRef=}'/>
+<arg type='^?' function_pointer='true'>
+<arg type='^{OpaqueWSMethodInvocationRef=}'/>
+<arg type='^v'/>
+<arg type='^{__CFDictionary=}'/>
+<retval type='v'/>
+</arg>
+<arg type='^{WSClientContext=i^v^?^?^?}' type64='^{WSClientContext=q^v^?^?^?}'/>
+</function>
+<function name='WSMethodInvocationSetParameters'>
+<arg type='^{OpaqueWSMethodInvocationRef=}'/>
+<arg type='^{__CFDictionary=}'/>
+<arg type='^{__CFArray=}'/>
+</function>
+<function name='WSMethodInvocationSetProperty'>
+<arg type='^{OpaqueWSMethodInvocationRef=}'/>
+<arg type='^{__CFString=}'/>
+<arg type='@'/>
+</function>
+<function name='WSMethodInvocationUnscheduleFromRunLoop'>
+<arg type='^{OpaqueWSMethodInvocationRef=}'/>
+<arg type='^{__CFRunLoop=}'/>
+<arg type='^{__CFString=}'/>
+</function>
+<function name='WSMethodResultIsFault'>
+<arg type='^{__CFDictionary=}'/>
+<retval type='B'/>
+</function>
+<function name='WSProtocolHandlerCopyFaultDocument'>
+<arg type='^{OpaqueWSProtocolHandlerRef=}'/>
+<arg type='^{__CFDictionary=}'/>
+<arg type='^{__CFDictionary=}'/>
+<retval type='^{__CFData=}' already_retained='true'/>
+</function>
+<function name='WSProtocolHandlerCopyProperty'>
+<arg type='^{OpaqueWSProtocolHandlerRef=}'/>
+<arg type='^{__CFString=}'/>
+<retval type='@' already_retained='true'/>
+</function>
+<function name='WSProtocolHandlerCopyReplyDictionary'>
+<arg type='^{OpaqueWSProtocolHandlerRef=}'/>
+<arg type='^{__CFString=}'/>
+<arg type='^{__CFData=}'/>
+<retval type='^{__CFDictionary=}' already_retained='true'/>
+</function>
+<function name='WSProtocolHandlerCopyReplyDocument'>
+<arg type='^{OpaqueWSProtocolHandlerRef=}'/>
+<arg type='^{__CFDictionary=}'/>
+<arg type='@'/>
+<retval type='^{__CFData=}' already_retained='true'/>
+</function>
+<function name='WSProtocolHandlerCopyRequestDictionary'>
+<arg type='^{OpaqueWSProtocolHandlerRef=}'/>
+<arg type='^{__CFData=}'/>
+<retval type='^{__CFDictionary=}' already_retained='true'/>
+</function>
+<function name='WSProtocolHandlerCopyRequestDocument'>
+<arg type='^{OpaqueWSProtocolHandlerRef=}'/>
+<arg type='^{__CFString=}'/>
+<arg type='^{__CFDictionary=}'/>
+<arg type='^{__CFArray=}'/>
+<arg type='^{__CFDictionary=}'/>
+<retval type='^{__CFData=}' already_retained='true'/>
+</function>
+<function name='WSProtocolHandlerCreate'>
+<arg type='^{__CFAllocator=}'/>
+<arg type='^{__CFString=}'/>
+<retval type='^{OpaqueWSProtocolHandlerRef=}' already_retained='true'/>
+</function>
+<function name='WSProtocolHandlerGetTypeID'>
+<retval type='L' type64='Q'/>
+</function>
+<function name='WSProtocolHandlerSetDeserializationOverride'>
+<arg type='^{OpaqueWSProtocolHandlerRef=}'/>
+<arg type='^{__CFString=}'/>
+<arg type='^{__CFString=}'/>
+<arg type='^?' function_pointer='true'>
+<arg type='^{OpaqueWSProtocolHandlerRef=}'/>
+<arg type='^{__CFTree=}'/>
+<arg type='^{__CFTree=}'/>
+<arg type='^v'/>
+<retval type='@'/>
+</arg>
+<arg type='^{WSClientContext=i^v^?^?^?}' type64='^{WSClientContext=q^v^?^?^?}'/>
+</function>
+<function name='WSProtocolHandlerSetProperty'>
+<arg type='^{OpaqueWSProtocolHandlerRef=}'/>
+<arg type='^{__CFString=}'/>
+<arg type='@'/>
+</function>
+<function name='WSProtocolHandlerSetSerializationOverride'>
+<arg type='^{OpaqueWSProtocolHandlerRef=}'/>
+<arg type='L' type64='Q'/>
+<arg type='^?' function_pointer='true'>
+<arg type='^{OpaqueWSProtocolHandlerRef=}'/>
+<arg type='@'/>
+<arg type='^v'/>
+<retval type='^{__CFString=}'/>
+</arg>
+<arg type='^{WSClientContext=i^v^?^?^?}' type64='^{WSClientContext=q^v^?^?^?}'/>
+</function>
+<function name='kcfindapplesharepassword'>
+<arg type='^[16C]'/>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='L' type64='I'/>
+<arg type='^v'/>
+<arg type='^I'/>
+<arg type='^^{OpaqueSecKeychainItemRef}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='kcfindgenericpassword'>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='L' type64='I'/>
+<arg type='^v'/>
+<arg type='^I'/>
+<arg type='^^{OpaqueSecKeychainItemRef}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='kcfindinternetpassword'>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='S'/>
+<arg type='L' type64='I'/>
+<arg type='L' type64='I'/>
+<arg type='L' type64='I'/>
+<arg type='^v'/>
+<arg type='^I'/>
+<arg type='^^{OpaqueSecKeychainItemRef}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='kcfindinternetpasswordwithpath'>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='*'/>
+<arg type='S'/>
+<arg type='L' type64='I'/>
+<arg type='L' type64='I'/>
+<arg type='L' type64='I'/>
+<arg type='^v'/>
+<arg type='^I'/>
+<arg type='^^{OpaqueSecKeychainItemRef}'/>
+<retval type='l' type64='i'/>
+</function>
+<function name='kcgetkeychainname'>
+<arg type='^{OpaqueSecKeychainRef=}'/>
+<arg type='*'/>
+<retval type='l' type64='i'/>
+</function>
+</signatures>

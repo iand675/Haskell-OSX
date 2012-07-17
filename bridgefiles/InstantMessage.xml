@@ -1,0 +1,87 @@
+<?xml version='1.0'?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version='1.0'>
+<depends_on path='/System/Library/Frameworks/Foundation.framework'/>
+<depends_on path='/System/Library/Frameworks/AddressBook.framework'/>
+<depends_on path='/System/Library/Frameworks/CoreVideo.framework'/>
+<depends_on path='/System/Library/Frameworks/OpenGL.framework'/>
+<depends_on path='/System/Library/Frameworks/AppKit.framework'/>
+<depends_on path='/System/Library/Frameworks/Quartz.framework/Versions/A/Frameworks/QuartzComposer.framework'/>
+<depends_on path='/System/Library/Frameworks/QTKit.framework'/>
+<depends_on path='/System/Library/Frameworks/QuartzCore.framework'/>
+<depends_on path='/System/Library/Frameworks/CoreFoundation.framework'/>
+<depends_on path='/System/Library/Frameworks/ApplicationServices.framework'/>
+<constant name='IMAVManagerStateChangedNotification' type='@'/>
+<constant name='IMAVManagerURLToShareChangedNotification' type='@'/>
+<constant name='IMCapabilityAudioConference' type='@'/>
+<constant name='IMCapabilityDirectIM' type='@'/>
+<constant name='IMCapabilityFileSharing' type='@'/>
+<constant name='IMCapabilityFileTransfer' type='@'/>
+<constant name='IMCapabilityText' type='@'/>
+<constant name='IMCapabilityVideoConference' type='@'/>
+<constant name='IMMyStatusChangedNotification' type='@'/>
+<constant name='IMPersonAVBusyKey' type='@'/>
+<constant name='IMPersonCapabilitiesKey' type='@'/>
+<constant name='IMPersonEmailKey' type='@'/>
+<constant name='IMPersonFirstNameKey' type='@'/>
+<constant name='IMPersonIdleSinceKey' type='@'/>
+<constant name='IMPersonInfoChangedNotification' type='@'/>
+<constant name='IMPersonLastNameKey' type='@'/>
+<constant name='IMPersonPictureDataKey' type='@'/>
+<constant name='IMPersonScreenNameKey' type='@'/>
+<constant name='IMPersonServiceNameKey' type='@'/>
+<constant name='IMPersonStatusChangedNotification' type='@'/>
+<constant name='IMPersonStatusKey' type='@'/>
+<constant name='IMPersonStatusMessageKey' type='@'/>
+<constant name='IMServiceStatusChangedNotification' type='@'/>
+<constant name='IMStatusImagesChangedAppearanceNotification' type='@'/>
+<enum value='0' name='IMAVInactive'/>
+<enum value='4' name='IMAVPending'/>
+<enum value='1' name='IMAVRequested'/>
+<enum value='5' name='IMAVRunning'/>
+<enum value='2' name='IMAVShuttingDown'/>
+<enum value='3' name='IMAVStartingUp'/>
+<enum value='4' name='IMPersonStatusAvailable'/>
+<enum value='3' name='IMPersonStatusAway'/>
+<enum value='2' name='IMPersonStatusIdle'/>
+<enum value='5' name='IMPersonStatusNoStatus'/>
+<enum value='1' name='IMPersonStatusOffline'/>
+<enum value='0' name='IMPersonStatusUnknown'/>
+<enum value='1' name='IMServiceStatusDisconnected'/>
+<enum value='4' name='IMServiceStatusLoggedIn'/>
+<enum value='0' name='IMServiceStatusLoggedOut'/>
+<enum value='3' name='IMServiceStatusLoggingIn'/>
+<enum value='2' name='IMServiceStatusLoggingOut'/>
+<enum value='0' name='IMVideoOptimizationDefault'/>
+<enum value='2' name='IMVideoOptimizationReplacement'/>
+<enum value='1' name='IMVideoOptimizationStills'/>
+<function name='IMComparePersonStatus'>
+<arg type='I' type64='Q'/>
+<arg type='I' type64='Q'/>
+<retval type='i' type64='q'/>
+</function>
+<class name='IMAVControl'>
+<method selector='isEnabled'>
+<retval type='B'/>
+</method>
+<method selector='setEnabled:'>
+<arg index='0' type='B'/>
+</method>
+</class>
+<class name='NSObject'>
+<method selector='renderIntoOpenGLBuffer:onScreen:forTime:'>
+<arg index='2' type='^{_CVTimeStamp=IiqQdq{CVSMPTETime=ssIIIssss}QQ}'/>
+<retval type='B'/>
+</method>
+<method selector='renderIntoPixelBuffer:forTime:'>
+<arg index='1' type='^{_CVTimeStamp=IiqQdq{CVSMPTETime=ssIIIssss}QQ}'/>
+<retval type='B'/>
+</method>
+</class>
+<informal_protocol name='IMVideoDataSource'>
+<method type='v16@0:4^^{_CGLContextObject}8^^{_CGLPixelFormatObject}12' selector='getOpenGLBufferContext:pixelFormat:' type64='v32@0:8^^{_CGLContextObject}16^^{_CGLPixelFormatObject}24'/>
+<method type='v12@0:4^I8' selector='getPixelBufferPixelFormat:' type64='v24@0:8^I16'/>
+<method type='B20@0:4^{__CVBuffer=}8^i12^{?=IiqQdq{CVSMPTETime=ssIIIssss}QQ}16' selector='renderIntoOpenGLBuffer:onScreen:forTime:' type64='B40@0:8^{__CVBuffer=}16^i24^{?=IiqQdq{CVSMPTETime=ssIIIssss}QQ}32'/>
+<method type='B16@0:4^{__CVBuffer=}8^{?=IiqQdq{CVSMPTETime=ssIIIssss}QQ}12' selector='renderIntoPixelBuffer:forTime:' type64='B32@0:8^{__CVBuffer=}16^{?=IiqQdq{CVSMPTETime=ssIIIssss}QQ}24'/>
+</informal_protocol>
+</signatures>

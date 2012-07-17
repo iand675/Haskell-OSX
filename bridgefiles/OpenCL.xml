@@ -1,0 +1,1403 @@
+<?xml version='1.0'?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version='1.0'>
+<depends_on path='/System/Library/Frameworks/OpenGL.framework'/>
+<depends_on path='/System/Library/Frameworks/CoreFoundation.framework'/>
+<depends_on path='/System/Library/Frameworks/IOKit.framework'/>
+<depends_on path='/System/Library/Frameworks/ApplicationServices.framework'/>
+<depends_on path='/System/Library/Frameworks/IOSurface.framework'/>
+<struct type64='{block_kernel_map=&quot;program&quot;^{_cl_program}&quot;num_kernels&quot;Q&quot;initBlocks&quot;^?&quot;map&quot;^{_block_kernel_pair=&quot;block_ptr&quot;^v&quot;kernel&quot;^{_cl_kernel}}}' type='{block_kernel_map=&quot;program&quot;^{_cl_program}&quot;num_kernels&quot;I&quot;initBlocks&quot;^?&quot;map&quot;^{_block_kernel_pair=&quot;block_ptr&quot;^v&quot;kernel&quot;^{_cl_kernel}}}' name='block_kernel_map'/>
+<struct type64='{block_kernel_map_table=&quot;table&quot;^^{block_kernel_map}&quot;size&quot;Q&quot;capacity&quot;Q}' type='{block_kernel_map_table=&quot;table&quot;^^{block_kernel_map}&quot;size&quot;I&quot;capacity&quot;I}' name='block_kernel_map_table'/>
+<struct type='{_block_kernel_pair=&quot;block_ptr&quot;^v&quot;kernel&quot;^{_cl_kernel}}' name='block_kernel_pair'/>
+<struct type64='{_cl_buffer_region=&quot;origin&quot;Q&quot;size&quot;Q}' type='{_cl_buffer_region=&quot;origin&quot;I&quot;size&quot;I}' name='cl_buffer_region'/>
+<struct type='{_cl_image_format=&quot;image_channel_order&quot;I&quot;image_channel_data_type&quot;I}' name='cl_image_format'/>
+<struct type64='{_cl_ndrange=&quot;work_dim&quot;Q&quot;global_work_offset&quot;[3Q]&quot;global_work_size&quot;[3Q]&quot;local_work_size&quot;[3Q]}' type='{_cl_ndrange=&quot;work_dim&quot;I&quot;global_work_offset&quot;[3L]&quot;global_work_size&quot;[3L]&quot;local_work_size&quot;[3L]}' name='cl_ndrange'/>
+<struct type64='{kargs_struct=&quot;arg_flags&quot;^Q&quot;arg_sizes&quot;^Q&quot;arg_values&quot;^^v}' type='{kargs_struct=&quot;arg_flags&quot;^Q&quot;arg_sizes&quot;^I&quot;arg_values&quot;^^v}' name='kargs_struct'/>
+<cftype type='^{__IOSurface=}' name='IOSurfaceRef'/>
+<opaque type='^{__GLsync=}' name='cl_GLsync'/>
+<opaque type='^{_cl_command_queue=}' name='cl_command_queue'/>
+<opaque type='^{_cl_context=}' name='cl_context'/>
+<opaque type='^{_cl_device_id=}' name='cl_device_id'/>
+<opaque type='^{_cl_event=}' name='cl_event'/>
+<opaque type='^{_cl_kernel=}' name='cl_kernel'/>
+<opaque type='^{_cl_mem=}' name='cl_mem'/>
+<opaque type='^{_cl_platform_id=}' name='cl_platform_id'/>
+<opaque type='^{_cl_program=}' name='cl_program'/>
+<opaque type='^{_cl_sampler=}' name='cl_sampler'/>
+<string_constant value64='#line 623 &quot;&quot; 
+
+' value='#line 395 &quot;&quot; 
+
+' name='CL_PROGRAM_STRING_DEBUG_INFO'/>
+<enum value='1' name='CLK_ADDRESS_CLAMP'/>
+<enum value='2' name='CLK_ADDRESS_CLAMP_TO_EDGE'/>
+<enum value='4' name='CLK_ADDRESS_MIRRORED_REPEAT'/>
+<enum value='0' name='CLK_ADDRESS_NONE'/>
+<enum value='3' name='CLK_ADDRESS_REPEAT'/>
+<enum value='16' name='CLK_FILTER_LINEAR'/>
+<enum value='0' name='CLK_FILTER_NEAREST'/>
+<enum value='0' name='CLK_NORMALIZED_COORDS_FALSE'/>
+<enum value='8' name='CLK_NORMALIZED_COORDS_TRUE'/>
+<enum value='268435462' name='CL_1RGB_APPLE'/>
+<enum value='4273' name='CL_A'/>
+<enum value='4402' name='CL_ADDRESS_CLAMP'/>
+<enum value='4401' name='CL_ADDRESS_CLAMP_TO_EDGE'/>
+<enum value='4404' name='CL_ADDRESS_MIRRORED_REPEAT'/>
+<enum value='4400' name='CL_ADDRESS_NONE'/>
+<enum value='4403' name='CL_ADDRESS_REPEAT'/>
+<enum value='4279' name='CL_ARGB'/>
+<enum value='268435463' name='CL_BGR1_APPLE'/>
+<enum value='4278' name='CL_BGRA'/>
+<enum value='1' name='CL_BLOCKING'/>
+<enum value='4640' name='CL_BUFFER_CREATE_TYPE_REGION'/>
+<enum value='-2' name='CL_BUILD_ERROR'/>
+<enum value='-3' name='CL_BUILD_IN_PROGRESS'/>
+<enum value='-1' name='CL_BUILD_NONE'/>
+<enum value='-11' name='CL_BUILD_PROGRAM_FAILURE'/>
+<enum value='0' name='CL_BUILD_SUCCESS'/>
+<enum value='268435459' name='CL_CGL_DEVICES_FOR_SUPPORTED_VIRTUAL_SCREENS_APPLE'/>
+<enum value='268435458' name='CL_CGL_DEVICE_FOR_CURRENT_VIRTUAL_SCREEN_APPLE'/>
+<enum value='8' name='CL_CHAR_BIT'/>
+<enum value='127' name='CL_CHAR_MAX'/>
+<enum value='-128' name='CL_CHAR_MIN'/>
+<enum value='4607' name='CL_COMMAND_ACQUIRE_GL_OBJECTS'/>
+<enum value='4597' name='CL_COMMAND_COPY_BUFFER'/>
+<enum value='4611' name='CL_COMMAND_COPY_BUFFER_RECT'/>
+<enum value='4602' name='CL_COMMAND_COPY_BUFFER_TO_IMAGE'/>
+<enum value='4600' name='CL_COMMAND_COPY_IMAGE'/>
+<enum value='4601' name='CL_COMMAND_COPY_IMAGE_TO_BUFFER'/>
+<enum value='8205' name='CL_COMMAND_GL_FENCE_SYNC_OBJECT_KHR'/>
+<enum value='4603' name='CL_COMMAND_MAP_BUFFER'/>
+<enum value='4604' name='CL_COMMAND_MAP_IMAGE'/>
+<enum value='4606' name='CL_COMMAND_MARKER'/>
+<enum value='4594' name='CL_COMMAND_NATIVE_KERNEL'/>
+<enum value='4592' name='CL_COMMAND_NDRANGE_KERNEL'/>
+<enum value='4595' name='CL_COMMAND_READ_BUFFER'/>
+<enum value='4609' name='CL_COMMAND_READ_BUFFER_RECT'/>
+<enum value='4598' name='CL_COMMAND_READ_IMAGE'/>
+<enum value='4608' name='CL_COMMAND_RELEASE_GL_OBJECTS'/>
+<enum value='4593' name='CL_COMMAND_TASK'/>
+<enum value='4605' name='CL_COMMAND_UNMAP_MEM_OBJECT'/>
+<enum value='4612' name='CL_COMMAND_USER'/>
+<enum value='4596' name='CL_COMMAND_WRITE_BUFFER'/>
+<enum value='4610' name='CL_COMMAND_WRITE_BUFFER_RECT'/>
+<enum value='4599' name='CL_COMMAND_WRITE_IMAGE'/>
+<enum value='-3' name='CL_COMPILER_NOT_AVAILABLE'/>
+<enum value='0' name='CL_COMPLETE'/>
+<enum value='4225' name='CL_CONTEXT_DEVICES'/>
+<enum value='4227' name='CL_CONTEXT_NUM_DEVICES'/>
+<enum value='4228' name='CL_CONTEXT_PLATFORM'/>
+<enum value='4226' name='CL_CONTEXT_PROPERTIES'/>
+<enum value='268435456' name='CL_CONTEXT_PROPERTY_USE_CGL_SHAREGROUP_APPLE'/>
+<enum value='4224' name='CL_CONTEXT_REFERENCE_COUNT'/>
+<enum value='268435473' name='CL_CbYCrY_APPLE'/>
+<enum value='15' name='CL_DBL_DIG'/>
+<enum value='0x1.0p-52' name='CL_DBL_EPSILON'/>
+<enum value='53' name='CL_DBL_MANT_DIG'/>
+<enum value='0x1.fffffffffffffp1023' name='CL_DBL_MAX'/>
+<enum value='308' name='CL_DBL_MAX_10_EXP'/>
+<enum value='1024' name='CL_DBL_MAX_EXP'/>
+<enum value='0x1.0p-1022' name='CL_DBL_MIN'/>
+<enum value='-307' name='CL_DBL_MIN_10_EXP'/>
+<enum value='-1021' name='CL_DBL_MIN_EXP'/>
+<enum value='2' name='CL_DBL_RADIX'/>
+<enum value='4109' name='CL_DEVICE_ADDRESS_BITS'/>
+<enum value='4135' name='CL_DEVICE_AVAILABLE'/>
+<enum value='4136' name='CL_DEVICE_COMPILER_AVAILABLE'/>
+<enum value='4146' name='CL_DEVICE_DOUBLE_FP_CONFIG'/>
+<enum value='4134' name='CL_DEVICE_ENDIAN_LITTLE'/>
+<enum value='4132' name='CL_DEVICE_ERROR_CORRECTION_SUPPORT'/>
+<enum value='4137' name='CL_DEVICE_EXECUTION_CAPABILITIES'/>
+<enum value='4144' name='CL_DEVICE_EXTENSIONS'/>
+<enum value='4125' name='CL_DEVICE_GLOBAL_MEM_CACHELINE_SIZE'/>
+<enum value='4126' name='CL_DEVICE_GLOBAL_MEM_CACHE_SIZE'/>
+<enum value='4124' name='CL_DEVICE_GLOBAL_MEM_CACHE_TYPE'/>
+<enum value='4127' name='CL_DEVICE_GLOBAL_MEM_SIZE'/>
+<enum value='4147' name='CL_DEVICE_HALF_FP_CONFIG'/>
+<enum value='4149' name='CL_DEVICE_HOST_UNIFIED_MEMORY'/>
+<enum value='4114' name='CL_DEVICE_IMAGE2D_MAX_HEIGHT'/>
+<enum value='4113' name='CL_DEVICE_IMAGE2D_MAX_WIDTH'/>
+<enum value='4117' name='CL_DEVICE_IMAGE3D_MAX_DEPTH'/>
+<enum value='4116' name='CL_DEVICE_IMAGE3D_MAX_HEIGHT'/>
+<enum value='4115' name='CL_DEVICE_IMAGE3D_MAX_WIDTH'/>
+<enum value='4118' name='CL_DEVICE_IMAGE_SUPPORT'/>
+<enum value='4131' name='CL_DEVICE_LOCAL_MEM_SIZE'/>
+<enum value='4130' name='CL_DEVICE_LOCAL_MEM_TYPE'/>
+<enum value='4108' name='CL_DEVICE_MAX_CLOCK_FREQUENCY'/>
+<enum value='4098' name='CL_DEVICE_MAX_COMPUTE_UNITS'/>
+<enum value='4129' name='CL_DEVICE_MAX_CONSTANT_ARGS'/>
+<enum value='4128' name='CL_DEVICE_MAX_CONSTANT_BUFFER_SIZE'/>
+<enum value='4112' name='CL_DEVICE_MAX_MEM_ALLOC_SIZE'/>
+<enum value='4119' name='CL_DEVICE_MAX_PARAMETER_SIZE'/>
+<enum value='4110' name='CL_DEVICE_MAX_READ_IMAGE_ARGS'/>
+<enum value='4120' name='CL_DEVICE_MAX_SAMPLERS'/>
+<enum value='4100' name='CL_DEVICE_MAX_WORK_GROUP_SIZE'/>
+<enum value='4099' name='CL_DEVICE_MAX_WORK_ITEM_DIMENSIONS'/>
+<enum value='4101' name='CL_DEVICE_MAX_WORK_ITEM_SIZES'/>
+<enum value='4111' name='CL_DEVICE_MAX_WRITE_IMAGE_ARGS'/>
+<enum value='4121' name='CL_DEVICE_MEM_BASE_ADDR_ALIGN'/>
+<enum value='4122' name='CL_DEVICE_MIN_DATA_TYPE_ALIGN_SIZE'/>
+<enum value='4139' name='CL_DEVICE_NAME'/>
+<enum value='4150' name='CL_DEVICE_NATIVE_VECTOR_WIDTH_CHAR'/>
+<enum value='4155' name='CL_DEVICE_NATIVE_VECTOR_WIDTH_DOUBLE'/>
+<enum value='4154' name='CL_DEVICE_NATIVE_VECTOR_WIDTH_FLOAT'/>
+<enum value='4156' name='CL_DEVICE_NATIVE_VECTOR_WIDTH_HALF'/>
+<enum value='4152' name='CL_DEVICE_NATIVE_VECTOR_WIDTH_INT'/>
+<enum value='4153' name='CL_DEVICE_NATIVE_VECTOR_WIDTH_LONG'/>
+<enum value='4151' name='CL_DEVICE_NATIVE_VECTOR_WIDTH_SHORT'/>
+<enum value='-2' name='CL_DEVICE_NOT_AVAILABLE'/>
+<enum value='-1' name='CL_DEVICE_NOT_FOUND'/>
+<enum value='4157' name='CL_DEVICE_OPENCL_C_VERSION'/>
+<enum value='4145' name='CL_DEVICE_PLATFORM'/>
+<enum value='4102' name='CL_DEVICE_PREFERRED_VECTOR_WIDTH_CHAR'/>
+<enum value='4107' name='CL_DEVICE_PREFERRED_VECTOR_WIDTH_DOUBLE'/>
+<enum value='4106' name='CL_DEVICE_PREFERRED_VECTOR_WIDTH_FLOAT'/>
+<enum value='4148' name='CL_DEVICE_PREFERRED_VECTOR_WIDTH_HALF'/>
+<enum value='4104' name='CL_DEVICE_PREFERRED_VECTOR_WIDTH_INT'/>
+<enum value='4105' name='CL_DEVICE_PREFERRED_VECTOR_WIDTH_LONG'/>
+<enum value='4103' name='CL_DEVICE_PREFERRED_VECTOR_WIDTH_SHORT'/>
+<enum value='4142' name='CL_DEVICE_PROFILE'/>
+<enum value='4133' name='CL_DEVICE_PROFILING_TIMER_RESOLUTION'/>
+<enum value='4138' name='CL_DEVICE_QUEUE_PROPERTIES'/>
+<enum value='4123' name='CL_DEVICE_SINGLE_FP_CONFIG'/>
+<enum value='4096' name='CL_DEVICE_TYPE'/>
+<enum value='8' name='CL_DEVICE_TYPE_ACCELERATOR'/>
+<enum value='4294967295' name='CL_DEVICE_TYPE_ALL'/>
+<enum value='2' name='CL_DEVICE_TYPE_CPU'/>
+<enum value='1' name='CL_DEVICE_TYPE_DEFAULT'/>
+<enum value='4' name='CL_DEVICE_TYPE_GPU'/>
+<enum value='2305843009213693952' name='CL_DEVICE_TYPE_USE_ID'/>
+<enum value='4140' name='CL_DEVICE_VENDOR'/>
+<enum value='4097' name='CL_DEVICE_VENDOR_ID'/>
+<enum value='4143' name='CL_DEVICE_VERSION'/>
+<enum value='0' name='CL_DISPATCH_QUEUE_PRIORITY_DEFAULT'/>
+<enum value='4611686018427387904' name='CL_DISPATCH_QUEUE_PRIORITY_HIGH'/>
+<enum value='9223372036854775808' name='CL_DISPATCH_QUEUE_PRIORITY_LOW'/>
+<enum value='4141' name='CL_DRIVER_VERSION'/>
+<enum value='4563' name='CL_EVENT_COMMAND_EXECUTION_STATUS'/>
+<enum value='4560' name='CL_EVENT_COMMAND_QUEUE'/>
+<enum value='4561' name='CL_EVENT_COMMAND_TYPE'/>
+<enum value='4564' name='CL_EVENT_CONTEXT'/>
+<enum value='4562' name='CL_EVENT_REFERENCE_COUNT'/>
+<enum value='1' name='CL_EXEC_KERNEL'/>
+<enum value='2' name='CL_EXEC_NATIVE_KERNEL'/>
+<enum value='-14' name='CL_EXEC_STATUS_ERROR_FOR_EVENTS_IN_WAIT_LIST'/>
+<enum value='0' name='CL_FALSE'/>
+<enum value='4417' name='CL_FILTER_LINEAR'/>
+<enum value='4416' name='CL_FILTER_NEAREST'/>
+<enum value='4318' name='CL_FLOAT'/>
+<enum value='6' name='CL_FLT_DIG'/>
+<enum value='0x1.0p-23f' name='CL_FLT_EPSILON'/>
+<enum value='24' name='CL_FLT_MANT_DIG'/>
+<enum value='0x1.fffffep127f' name='CL_FLT_MAX'/>
+<enum value='38' name='CL_FLT_MAX_10_EXP'/>
+<enum value='128' name='CL_FLT_MAX_EXP'/>
+<enum value='0x1.0p-126f' name='CL_FLT_MIN'/>
+<enum value='-37' name='CL_FLT_MIN_10_EXP'/>
+<enum value='-125' name='CL_FLT_MIN_EXP'/>
+<enum value='2' name='CL_FLT_RADIX'/>
+<enum value='1' name='CL_FP_DENORM'/>
+<enum value='32' name='CL_FP_FMA'/>
+<enum value='2' name='CL_FP_INF_NAN'/>
+<enum value='16' name='CL_FP_ROUND_TO_INF'/>
+<enum value='4' name='CL_FP_ROUND_TO_NEAREST'/>
+<enum value='8' name='CL_FP_ROUND_TO_ZERO'/>
+<enum value='64' name='CL_FP_SOFT_FLOAT'/>
+<enum value='2' name='CL_GLOBAL'/>
+<enum value='8197' name='CL_GL_MIPMAP_LEVEL'/>
+<enum value='8192' name='CL_GL_OBJECT_BUFFER'/>
+<enum value='8195' name='CL_GL_OBJECT_RENDERBUFFER'/>
+<enum value='8193' name='CL_GL_OBJECT_TEXTURE2D'/>
+<enum value='8194' name='CL_GL_OBJECT_TEXTURE3D'/>
+<enum value='8196' name='CL_GL_TEXTURE_TARGET'/>
+<enum value='4317' name='CL_HALF_FLOAT'/>
+<enum value='1' name='CL_HAS_HI_LO_VECTOR_FIELDS'/>
+<enum value='1' name='CL_HAS_NAMED_VECTOR_FIELDS'/>
+<enum value='+Inf' name='CL_HUGE_VAL'/>
+<enum value='+Inf' name='CL_HUGE_VALF'/>
+<enum value='4337' name='CL_IMAGE_2D'/>
+<enum value='4338' name='CL_IMAGE_3D'/>
+<enum value='4374' name='CL_IMAGE_DEPTH'/>
+<enum value='4369' name='CL_IMAGE_ELEMENT_SIZE'/>
+<enum value='4368' name='CL_IMAGE_FORMAT'/>
+<enum value='-9' name='CL_IMAGE_FORMAT_MISMATCH'/>
+<enum value='-10' name='CL_IMAGE_FORMAT_NOT_SUPPORTED'/>
+<enum value='4373' name='CL_IMAGE_HEIGHT'/>
+<enum value='4370' name='CL_IMAGE_ROW_PITCH'/>
+<enum value='4371' name='CL_IMAGE_SLICE_PITCH'/>
+<enum value='4372' name='CL_IMAGE_WIDTH'/>
+<enum value='+Inf' name='CL_INFINITY'/>
+<enum value='4280' name='CL_INTENSITY'/>
+<enum value='2147483647' name='CL_INT_MAX'/>
+<enum value='-2147483648' name='CL_INT_MIN'/>
+<enum value='-49' name='CL_INVALID_ARG_INDEX'/>
+<enum value='-1060' name='CL_INVALID_ARG_NAME_APPLE'/>
+<enum value='-51' name='CL_INVALID_ARG_SIZE'/>
+<enum value='-50' name='CL_INVALID_ARG_VALUE'/>
+<enum value='-42' name='CL_INVALID_BINARY'/>
+<enum value='-61' name='CL_INVALID_BUFFER_SIZE'/>
+<enum value='-43' name='CL_INVALID_BUILD_OPTIONS'/>
+<enum value='-36' name='CL_INVALID_COMMAND_QUEUE'/>
+<enum value='-34' name='CL_INVALID_CONTEXT'/>
+<enum value='-33' name='CL_INVALID_DEVICE'/>
+<enum value='-31' name='CL_INVALID_DEVICE_TYPE'/>
+<enum value='-58' name='CL_INVALID_EVENT'/>
+<enum value='-57' name='CL_INVALID_EVENT_WAIT_LIST'/>
+<enum value='-56' name='CL_INVALID_GLOBAL_OFFSET'/>
+<enum value='-63' name='CL_INVALID_GLOBAL_WORK_SIZE'/>
+<enum value='-1000' name='CL_INVALID_GL_CONTEXT_APPLE'/>
+<enum value='-60' name='CL_INVALID_GL_OBJECT'/>
+<enum value='-37' name='CL_INVALID_HOST_PTR'/>
+<enum value='-39' name='CL_INVALID_IMAGE_FORMAT_DESCRIPTOR'/>
+<enum value='-40' name='CL_INVALID_IMAGE_SIZE'/>
+<enum value='-48' name='CL_INVALID_KERNEL'/>
+<enum value='-52' name='CL_INVALID_KERNEL_ARGS'/>
+<enum value='-47' name='CL_INVALID_KERNEL_DEFINITION'/>
+<enum value='-46' name='CL_INVALID_KERNEL_NAME'/>
+<enum value='-38' name='CL_INVALID_MEM_OBJECT'/>
+<enum value='-62' name='CL_INVALID_MIP_LEVEL'/>
+<enum value='-59' name='CL_INVALID_OPERATION'/>
+<enum value='-32' name='CL_INVALID_PLATFORM'/>
+<enum value='-44' name='CL_INVALID_PROGRAM'/>
+<enum value='-45' name='CL_INVALID_PROGRAM_EXECUTABLE'/>
+<enum value='-64' name='CL_INVALID_PROPERTY'/>
+<enum value='-35' name='CL_INVALID_QUEUE_PROPERTIES'/>
+<enum value='-41' name='CL_INVALID_SAMPLER'/>
+<enum value='-30' name='CL_INVALID_VALUE'/>
+<enum value='-53' name='CL_INVALID_WORK_DIMENSION'/>
+<enum value='-54' name='CL_INVALID_WORK_GROUP_SIZE'/>
+<enum value='-55' name='CL_INVALID_WORK_ITEM_SIZE'/>
+<enum value='4529' name='CL_KERNEL_COMPILE_WORK_GROUP_SIZE'/>
+<enum value='4499' name='CL_KERNEL_CONTEXT'/>
+<enum value='4496' name='CL_KERNEL_FUNCTION_NAME'/>
+<enum value='4530' name='CL_KERNEL_LOCAL_MEM_SIZE'/>
+<enum value='4497' name='CL_KERNEL_NUM_ARGS'/>
+<enum value='4531' name='CL_KERNEL_PREFERRED_WORK_GROUP_SIZE_MULTIPLE'/>
+<enum value='4532' name='CL_KERNEL_PRIVATE_MEM_SIZE'/>
+<enum value='4500' name='CL_KERNEL_PROGRAM'/>
+<enum value='4498' name='CL_KERNEL_REFERENCE_COUNT'/>
+<enum value='4528' name='CL_KERNEL_WORK_GROUP_SIZE'/>
+<enum value='1' name='CL_LOCAL'/>
+<enum value='9223372036854775807' name='CL_LONG_MAX'/>
+<enum value='-9223372036854775808' name='CL_LONG_MIN'/>
+<enum value='4281' name='CL_LUMINANCE'/>
+<enum value='-12' name='CL_MAP_FAILURE'/>
+<enum value='1' name='CL_MAP_READ'/>
+<enum value='2' name='CL_MAP_WRITE'/>
+<enum value='3.4028235E+38' name='CL_MAXFLOAT'/>
+<enum value='16' name='CL_MEM_ALLOC_HOST_PTR'/>
+<enum value='4359' name='CL_MEM_ASSOCIATED_MEMOBJECT'/>
+<enum value='4358' name='CL_MEM_CONTEXT'/>
+<enum value='32' name='CL_MEM_COPY_HOST_PTR'/>
+<enum value='-8' name='CL_MEM_COPY_OVERLAP'/>
+<enum value='4353' name='CL_MEM_FLAGS'/>
+<enum value='4355' name='CL_MEM_HOST_PTR'/>
+<enum value='4356' name='CL_MEM_MAP_COUNT'/>
+<enum value='-4' name='CL_MEM_OBJECT_ALLOCATION_FAILURE'/>
+<enum value='4336' name='CL_MEM_OBJECT_BUFFER'/>
+<enum value='4337' name='CL_MEM_OBJECT_IMAGE2D'/>
+<enum value='4338' name='CL_MEM_OBJECT_IMAGE3D'/>
+<enum value='4360' name='CL_MEM_OFFSET'/>
+<enum value='4' name='CL_MEM_READ_ONLY'/>
+<enum value='1' name='CL_MEM_READ_WRITE'/>
+<enum value='4357' name='CL_MEM_REFERENCE_COUNT'/>
+<enum value='4354' name='CL_MEM_SIZE'/>
+<enum value='4352' name='CL_MEM_TYPE'/>
+<enum value='8' name='CL_MEM_USE_HOST_PTR'/>
+<enum value='2' name='CL_MEM_WRITE_ONLY'/>
+<enum value='-13' name='CL_MISALIGNED_SUB_BUFFER_OFFSET'/>
+<enum value='0.318309886183790691216' name='CL_M_1_PI'/>
+<enum value='0.31830987334251f' name='CL_M_1_PI_F'/>
+<enum value='0.636619772367581382433' name='CL_M_2_PI'/>
+<enum value='0.63661974668503f' name='CL_M_2_PI_F'/>
+<enum value='1.128379167095512558561' name='CL_M_2_SQRTPI'/>
+<enum value='1.12837922573090f' name='CL_M_2_SQRTPI_F'/>
+<enum value='2.718281828459045090796' name='CL_M_E'/>
+<enum value='2.71828174591064f' name='CL_M_E_F'/>
+<enum value='2.302585092994045901094' name='CL_M_LN10'/>
+<enum value='2.30258512496948f' name='CL_M_LN10_F'/>
+<enum value='0.693147180559945286227' name='CL_M_LN2'/>
+<enum value='0.69314718246460f' name='CL_M_LN2_F'/>
+<enum value='0.434294481903251816668' name='CL_M_LOG10E'/>
+<enum value='0.43429449200630f' name='CL_M_LOG10E_F'/>
+<enum value='1.442695040888963387005' name='CL_M_LOG2E'/>
+<enum value='1.44269502162933f' name='CL_M_LOG2E_F'/>
+<enum value='3.141592653589793115998' name='CL_M_PI'/>
+<enum value='1.570796326794896557999' name='CL_M_PI_2'/>
+<enum value='1.57079637050629f' name='CL_M_PI_2_F'/>
+<enum value='0.785398163397448278999' name='CL_M_PI_4'/>
+<enum value='0.78539818525314f' name='CL_M_PI_4_F'/>
+<enum value='3.14159274101257f' name='CL_M_PI_F'/>
+<enum value='0.707106781186547572737' name='CL_M_SQRT1_2'/>
+<enum value='0.70710676908493f' name='CL_M_SQRT1_2_F'/>
+<enum value='1.414213562373095145475' name='CL_M_SQRT2'/>
+<enum value='1.41421353816986f' name='CL_M_SQRT2_F'/>
+<enum value='NaN' name='CL_NAN'/>
+<enum value='0' name='CL_NONE'/>
+<enum value='0' name='CL_NON_BLOCKING'/>
+<enum value='-6' name='CL_OUT_OF_HOST_MEMORY'/>
+<enum value='-5' name='CL_OUT_OF_RESOURCES'/>
+<enum value='2308' name='CL_PLATFORM_EXTENSIONS'/>
+<enum value='2306' name='CL_PLATFORM_NAME'/>
+<enum value='2304' name='CL_PLATFORM_PROFILE'/>
+<enum value='2307' name='CL_PLATFORM_VENDOR'/>
+<enum value='2305' name='CL_PLATFORM_VERSION'/>
+<enum value='4739' name='CL_PROFILING_COMMAND_END'/>
+<enum value='4736' name='CL_PROFILING_COMMAND_QUEUED'/>
+<enum value='4738' name='CL_PROFILING_COMMAND_START'/>
+<enum value='4737' name='CL_PROFILING_COMMAND_SUBMIT'/>
+<enum value='-7' name='CL_PROFILING_INFO_NOT_AVAILABLE'/>
+<enum value='4454' name='CL_PROGRAM_BINARIES'/>
+<enum value='4453' name='CL_PROGRAM_BINARY_SIZES'/>
+<enum value='4483' name='CL_PROGRAM_BUILD_LOG'/>
+<enum value='4482' name='CL_PROGRAM_BUILD_OPTIONS'/>
+<enum value='4481' name='CL_PROGRAM_BUILD_STATUS'/>
+<enum value='4449' name='CL_PROGRAM_CONTEXT'/>
+<enum value='4451' name='CL_PROGRAM_DEVICES'/>
+<enum value='268435461' name='CL_PROGRAM_KERNEL_NAMES_APPLE'/>
+<enum value='4450' name='CL_PROGRAM_NUM_DEVICES'/>
+<enum value='268435460' name='CL_PROGRAM_NUM_KERNELS_APPLE'/>
+<enum value='4448' name='CL_PROGRAM_REFERENCE_COUNT'/>
+<enum value='4452' name='CL_PROGRAM_SOURCE'/>
+<enum value='3' name='CL_QUEUED'/>
+<enum value='4240' name='CL_QUEUE_CONTEXT'/>
+<enum value='4241' name='CL_QUEUE_DEVICE'/>
+<enum value='1' name='CL_QUEUE_OUT_OF_ORDER_EXEC_MODE_ENABLE'/>
+<enum value='2' name='CL_QUEUE_PROFILING_ENABLE'/>
+<enum value='4243' name='CL_QUEUE_PROPERTIES'/>
+<enum value='4242' name='CL_QUEUE_REFERENCE_COUNT'/>
+<enum value='4272' name='CL_R'/>
+<enum value='4275' name='CL_RA'/>
+<enum value='1' name='CL_READ_ONLY_CACHE'/>
+<enum value='2' name='CL_READ_WRITE_CACHE'/>
+<enum value='4274' name='CL_RG'/>
+<enum value='4276' name='CL_RGB'/>
+<enum value='4277' name='CL_RGBA'/>
+<enum value='4284' name='CL_RGBx'/>
+<enum value='4283' name='CL_RGx'/>
+<enum value='1' name='CL_RUNNING'/>
+<enum value='4282' name='CL_Rx'/>
+<enum value='4435' name='CL_SAMPLER_ADDRESSING_MODE'/>
+<enum value='4433' name='CL_SAMPLER_CONTEXT'/>
+<enum value='4436' name='CL_SAMPLER_FILTER_MODE'/>
+<enum value='4434' name='CL_SAMPLER_NORMALIZED_COORDS'/>
+<enum value='4432' name='CL_SAMPLER_REFERENCE_COUNT'/>
+<enum value='127' name='CL_SCHAR_MAX'/>
+<enum value='-128' name='CL_SCHAR_MIN'/>
+<enum value='268435464' name='CL_SFIXED14_APPLE'/>
+<enum value='32767' name='CL_SHRT_MAX'/>
+<enum value='-32768' name='CL_SHRT_MIN'/>
+<enum value='4312' name='CL_SIGNED_INT16'/>
+<enum value='4313' name='CL_SIGNED_INT32'/>
+<enum value='4311' name='CL_SIGNED_INT8'/>
+<enum value='4305' name='CL_SNORM_INT16'/>
+<enum value='4304' name='CL_SNORM_INT8'/>
+<enum value='2' name='CL_SUBMITTED'/>
+<enum value='0' name='CL_SUCCESS'/>
+<enum value='1' name='CL_TRUE'/>
+<enum value='255' name='CL_UCHAR_MAX'/>
+<enum value='4294967295' name='CL_UINT_MAX'/>
+<enum value='18446744073709551615' name='CL_ULONG_MAX'/>
+<enum value='4307' name='CL_UNORM_INT16'/>
+<enum value='4306' name='CL_UNORM_INT8'/>
+<enum value='4310' name='CL_UNORM_INT_101010'/>
+<enum value='4309' name='CL_UNORM_SHORT_555'/>
+<enum value='4308' name='CL_UNORM_SHORT_565'/>
+<enum value='4315' name='CL_UNSIGNED_INT16'/>
+<enum value='4316' name='CL_UNSIGNED_INT32'/>
+<enum value='4314' name='CL_UNSIGNED_INT8'/>
+<enum value='65535' name='CL_USHRT_MAX'/>
+<enum value='1' name='CL_VERSION_1_0'/>
+<enum value='1' name='CL_VERSION_1_1'/>
+<enum value='268435472' name='CL_YCbYCr_APPLE'/>
+<function name='clBuildProgram'>
+<arg type='^{_cl_program=}'/>
+<arg type='I'/>
+<arg type='^^{_cl_device_id}'/>
+<arg type='*'/>
+<arg type='^?' function_pointer='true'>
+<arg type='^{_cl_program=}'/>
+<arg type='^v'/>
+<retval type='v'/>
+</arg>
+<arg type='^v'/>
+<retval type='i'/>
+</function>
+<function name='clCreateBuffer'>
+<arg type='^{_cl_context=}'/>
+<arg type='Q'/>
+<arg type64='Q' type='L'/>
+<arg type='^v'/>
+<arg type='^i'/>
+<retval type='^{_cl_mem=}'/>
+</function>
+<function name='clCreateCommandQueue'>
+<arg type='^{_cl_context=}'/>
+<arg type='^{_cl_device_id=}'/>
+<arg type='Q'/>
+<arg type='^i'/>
+<retval type='^{_cl_command_queue=}'/>
+</function>
+<function name='clCreateContext'>
+<arg type64='^q' type='^i'/>
+<arg type='I'/>
+<arg type='^^{_cl_device_id}'/>
+<arg type='^?' function_pointer='true'>
+<arg type='*'/>
+<arg type='^v'/>
+<arg type64='Q' type='L'/>
+<arg type='^v'/>
+<retval type='v'/>
+</arg>
+<arg type='^v'/>
+<arg type='^i'/>
+<retval type='^{_cl_context=}'/>
+</function>
+<function name='clCreateContextAndCommandQueueAPPLE'>
+<arg type64='^q' type='^i'/>
+<arg type='I'/>
+<arg type='^^{_cl_device_id}'/>
+<arg type='^?' function_pointer='true'>
+<arg type='*'/>
+<arg type='^v'/>
+<arg type64='Q' type='L'/>
+<arg type='^v'/>
+<retval type='v'/>
+</arg>
+<arg type='^v'/>
+<arg type='Q'/>
+<arg type='^^{_cl_context}'/>
+<arg type='^^{_cl_command_queue}'/>
+<retval type='i'/>
+</function>
+<function name='clCreateContextFromType'>
+<arg type64='^q' type='^i'/>
+<arg type='Q'/>
+<arg type='^?' function_pointer='true'>
+<arg type='*'/>
+<arg type='^v'/>
+<arg type64='Q' type='L'/>
+<arg type='^v'/>
+<retval type='v'/>
+</arg>
+<arg type='^v'/>
+<arg type='^i'/>
+<retval type='^{_cl_context=}'/>
+</function>
+<function name='clCreateEventFromGLsyncKHR'>
+<arg type='^{_cl_context=}'/>
+<arg type='^{__GLsync=}'/>
+<arg type='^i'/>
+<retval type='^{_cl_event=}'/>
+</function>
+<function name='clCreateFromGLBuffer'>
+<arg type='^{_cl_context=}'/>
+<arg type='Q'/>
+<arg type='I'/>
+<arg type='^i'/>
+<retval type='^{_cl_mem=}'/>
+</function>
+<function name='clCreateFromGLRenderbuffer'>
+<arg type='^{_cl_context=}'/>
+<arg type='Q'/>
+<arg type='I'/>
+<arg type='^i'/>
+<retval type='^{_cl_mem=}'/>
+</function>
+<function name='clCreateFromGLTexture2D'>
+<arg type='^{_cl_context=}'/>
+<arg type='Q'/>
+<arg type='I'/>
+<arg type='i'/>
+<arg type='I'/>
+<arg type='^i'/>
+<retval type='^{_cl_mem=}'/>
+</function>
+<function name='clCreateFromGLTexture3D'>
+<arg type='^{_cl_context=}'/>
+<arg type='Q'/>
+<arg type='I'/>
+<arg type='i'/>
+<arg type='I'/>
+<arg type='^i'/>
+<retval type='^{_cl_mem=}'/>
+</function>
+<function name='clCreateImage2D'>
+<arg type='^{_cl_context=}'/>
+<arg type='Q'/>
+<arg type='^{_cl_image_format=II}'/>
+<arg type64='Q' type='L'/>
+<arg type64='Q' type='L'/>
+<arg type64='Q' type='L'/>
+<arg type='^v'/>
+<arg type='^i'/>
+<retval type='^{_cl_mem=}'/>
+</function>
+<function name='clCreateImage3D'>
+<arg type='^{_cl_context=}'/>
+<arg type='Q'/>
+<arg type='^{_cl_image_format=II}'/>
+<arg type64='Q' type='L'/>
+<arg type64='Q' type='L'/>
+<arg type64='Q' type='L'/>
+<arg type64='Q' type='L'/>
+<arg type64='Q' type='L'/>
+<arg type='^v'/>
+<arg type='^i'/>
+<retval type='^{_cl_mem=}'/>
+</function>
+<function name='clCreateImageFromIOSurface2DAPPLE'>
+<arg type='^{_cl_context=}'/>
+<arg type='Q'/>
+<arg type='^{_cl_image_format=II}'/>
+<arg type64='Q' type='L'/>
+<arg type64='Q' type='L'/>
+<arg type='^{__IOSurface=}'/>
+<arg type='^i'/>
+<retval type='^{_cl_mem=}'/>
+</function>
+<function name='clCreateKernel'>
+<arg type='^{_cl_program=}'/>
+<arg type='*'/>
+<arg type='^i'/>
+<retval type='^{_cl_kernel=}'/>
+</function>
+<function name='clCreateKernelsInProgram'>
+<arg type='^{_cl_program=}'/>
+<arg type='I'/>
+<arg type='^^{_cl_kernel}'/>
+<arg type='^I'/>
+<retval type='i'/>
+</function>
+<function name='clCreateProgramAndKernelsWithSourceAPPLE'>
+<arg type='^{_cl_context=}'/>
+<arg type='I'/>
+<arg type='^*'/>
+<arg type64='^Q' type='^I'/>
+<arg type='I'/>
+<arg type='^^{_cl_device_id}'/>
+<arg type='*'/>
+<arg type='I'/>
+<arg type='^*'/>
+<arg type='^^{_cl_program}'/>
+<arg type='^^{_cl_kernel}'/>
+<retval type='i'/>
+</function>
+<function name='clCreateProgramWithBinary'>
+<arg type='^{_cl_context=}'/>
+<arg type='I'/>
+<arg type='^^{_cl_device_id}'/>
+<arg type64='^Q' type='^I'/>
+<arg type='^*'/>
+<arg type='^i'/>
+<arg type='^i'/>
+<retval type='^{_cl_program=}'/>
+</function>
+<function name='clCreateProgramWithSource'>
+<arg type='^{_cl_context=}'/>
+<arg type='I'/>
+<arg type='^*'/>
+<arg type64='^Q' type='^I'/>
+<arg type='^i'/>
+<retval type='^{_cl_program=}'/>
+</function>
+<function name='clCreateSampler'>
+<arg type='^{_cl_context=}'/>
+<arg type='I'/>
+<arg type='I'/>
+<arg type='I'/>
+<arg type='^i'/>
+<retval type='^{_cl_sampler=}'/>
+</function>
+<function name='clCreateSubBuffer'>
+<arg type='^{_cl_mem=}'/>
+<arg type='Q'/>
+<arg type='I'/>
+<arg type='^v'/>
+<arg type='^i'/>
+<retval type='^{_cl_mem=}'/>
+</function>
+<function name='clCreateUserEvent'>
+<arg type='^{_cl_context=}'/>
+<arg type='^i'/>
+<retval type='^{_cl_event=}'/>
+</function>
+<function name='clEnqueueAcquireGLObjects'>
+<arg type='^{_cl_command_queue=}'/>
+<arg type='I'/>
+<arg type='^^{_cl_mem}'/>
+<arg type='I'/>
+<arg type='^^{_cl_event}'/>
+<arg type='^^{_cl_event}'/>
+<retval type='i'/>
+</function>
+<function name='clEnqueueBarrier'>
+<arg type='^{_cl_command_queue=}'/>
+<retval type='i'/>
+</function>
+<function name='clEnqueueCopyBuffer'>
+<arg type='^{_cl_command_queue=}'/>
+<arg type='^{_cl_mem=}'/>
+<arg type='^{_cl_mem=}'/>
+<arg type64='Q' type='L'/>
+<arg type64='Q' type='L'/>
+<arg type64='Q' type='L'/>
+<arg type='I'/>
+<arg type='^^{_cl_event}'/>
+<arg type='^^{_cl_event}'/>
+<retval type='i'/>
+</function>
+<function name='clEnqueueCopyBufferRect'>
+<arg type='^{_cl_command_queue=}'/>
+<arg type='^{_cl_mem=}'/>
+<arg type='^{_cl_mem=}'/>
+<arg type64='^Q' type='^I'/>
+<arg type64='^Q' type='^I'/>
+<arg type64='^Q' type='^I'/>
+<arg type64='Q' type='L'/>
+<arg type64='Q' type='L'/>
+<arg type64='Q' type='L'/>
+<arg type64='Q' type='L'/>
+<arg type='I'/>
+<arg type='^^{_cl_event}'/>
+<arg type='^^{_cl_event}'/>
+<retval type='i'/>
+</function>
+<function name='clEnqueueCopyBufferToImage'>
+<arg type='^{_cl_command_queue=}'/>
+<arg type='^{_cl_mem=}'/>
+<arg type='^{_cl_mem=}'/>
+<arg type64='Q' type='L'/>
+<arg type64='^Q' type='^I'/>
+<arg type64='^Q' type='^I'/>
+<arg type='I'/>
+<arg type='^^{_cl_event}'/>
+<arg type='^^{_cl_event}'/>
+<retval type='i'/>
+</function>
+<function name='clEnqueueCopyImage'>
+<arg type='^{_cl_command_queue=}'/>
+<arg type='^{_cl_mem=}'/>
+<arg type='^{_cl_mem=}'/>
+<arg type64='^Q' type='^I'/>
+<arg type64='^Q' type='^I'/>
+<arg type64='^Q' type='^I'/>
+<arg type='I'/>
+<arg type='^^{_cl_event}'/>
+<arg type='^^{_cl_event}'/>
+<retval type='i'/>
+</function>
+<function name='clEnqueueCopyImageToBuffer'>
+<arg type='^{_cl_command_queue=}'/>
+<arg type='^{_cl_mem=}'/>
+<arg type='^{_cl_mem=}'/>
+<arg type64='^Q' type='^I'/>
+<arg type64='^Q' type='^I'/>
+<arg type64='Q' type='L'/>
+<arg type='I'/>
+<arg type='^^{_cl_event}'/>
+<arg type='^^{_cl_event}'/>
+<retval type='i'/>
+</function>
+<function name='clEnqueueMapBuffer'>
+<arg type='^{_cl_command_queue=}'/>
+<arg type='^{_cl_mem=}'/>
+<arg type='I'/>
+<arg type='Q'/>
+<arg type64='Q' type='L'/>
+<arg type64='Q' type='L'/>
+<arg type='I'/>
+<arg type='^^{_cl_event}'/>
+<arg type='^^{_cl_event}'/>
+<arg type='^i'/>
+<retval type='^v'/>
+</function>
+<function name='clEnqueueMapImage'>
+<arg type='^{_cl_command_queue=}'/>
+<arg type='^{_cl_mem=}'/>
+<arg type='I'/>
+<arg type='Q'/>
+<arg type64='^Q' type='^I'/>
+<arg type64='^Q' type='^I'/>
+<arg type64='^Q' type='^I'/>
+<arg type64='^Q' type='^I'/>
+<arg type='I'/>
+<arg type='^^{_cl_event}'/>
+<arg type='^^{_cl_event}'/>
+<arg type='^i'/>
+<retval type='^v'/>
+</function>
+<function name='clEnqueueMarker'>
+<arg type='^{_cl_command_queue=}'/>
+<arg type='^^{_cl_event}'/>
+<retval type='i'/>
+</function>
+<function name='clEnqueueNDRangeKernel'>
+<arg type='^{_cl_command_queue=}'/>
+<arg type='^{_cl_kernel=}'/>
+<arg type='I'/>
+<arg type64='^Q' type='^I'/>
+<arg type64='^Q' type='^I'/>
+<arg type64='^Q' type='^I'/>
+<arg type='I'/>
+<arg type='^^{_cl_event}'/>
+<arg type='^^{_cl_event}'/>
+<retval type='i'/>
+</function>
+<function name='clEnqueueNativeKernel'>
+<arg type='^{_cl_command_queue=}'/>
+<arg type='^?' function_pointer='true'>
+<arg type='^v'/>
+<retval type='v'/>
+</arg>
+<arg type='^v'/>
+<arg type64='Q' type='L'/>
+<arg type='I'/>
+<arg type='^^{_cl_mem}'/>
+<arg type='^^v'/>
+<arg type='I'/>
+<arg type='^^{_cl_event}'/>
+<arg type='^^{_cl_event}'/>
+<retval type='i'/>
+</function>
+<function name='clEnqueueReadBuffer'>
+<arg type='^{_cl_command_queue=}'/>
+<arg type='^{_cl_mem=}'/>
+<arg type='I'/>
+<arg type64='Q' type='L'/>
+<arg type64='Q' type='L'/>
+<arg type='^v'/>
+<arg type='I'/>
+<arg type='^^{_cl_event}'/>
+<arg type='^^{_cl_event}'/>
+<retval type='i'/>
+</function>
+<function name='clEnqueueReadBufferRect'>
+<arg type='^{_cl_command_queue=}'/>
+<arg type='^{_cl_mem=}'/>
+<arg type='I'/>
+<arg type64='^Q' type='^I'/>
+<arg type64='^Q' type='^I'/>
+<arg type64='^Q' type='^I'/>
+<arg type64='Q' type='L'/>
+<arg type64='Q' type='L'/>
+<arg type64='Q' type='L'/>
+<arg type64='Q' type='L'/>
+<arg type='^v'/>
+<arg type='I'/>
+<arg type='^^{_cl_event}'/>
+<arg type='^^{_cl_event}'/>
+<retval type='i'/>
+</function>
+<function name='clEnqueueReadImage'>
+<arg type='^{_cl_command_queue=}'/>
+<arg type='^{_cl_mem=}'/>
+<arg type='I'/>
+<arg type64='^Q' type='^I'/>
+<arg type64='^Q' type='^I'/>
+<arg type64='Q' type='L'/>
+<arg type64='Q' type='L'/>
+<arg type='^v'/>
+<arg type='I'/>
+<arg type='^^{_cl_event}'/>
+<arg type='^^{_cl_event}'/>
+<retval type='i'/>
+</function>
+<function name='clEnqueueReleaseGLObjects'>
+<arg type='^{_cl_command_queue=}'/>
+<arg type='I'/>
+<arg type='^^{_cl_mem}'/>
+<arg type='I'/>
+<arg type='^^{_cl_event}'/>
+<arg type='^^{_cl_event}'/>
+<retval type='i'/>
+</function>
+<function name='clEnqueueTask'>
+<arg type='^{_cl_command_queue=}'/>
+<arg type='^{_cl_kernel=}'/>
+<arg type='I'/>
+<arg type='^^{_cl_event}'/>
+<arg type='^^{_cl_event}'/>
+<retval type='i'/>
+</function>
+<function name='clEnqueueUnmapMemObject'>
+<arg type='^{_cl_command_queue=}'/>
+<arg type='^{_cl_mem=}'/>
+<arg type='^v'/>
+<arg type='I'/>
+<arg type='^^{_cl_event}'/>
+<arg type='^^{_cl_event}'/>
+<retval type='i'/>
+</function>
+<function name='clEnqueueWaitForEvents'>
+<arg type='^{_cl_command_queue=}'/>
+<arg type='I'/>
+<arg type='^^{_cl_event}'/>
+<retval type='i'/>
+</function>
+<function name='clEnqueueWriteBuffer'>
+<arg type='^{_cl_command_queue=}'/>
+<arg type='^{_cl_mem=}'/>
+<arg type='I'/>
+<arg type64='Q' type='L'/>
+<arg type64='Q' type='L'/>
+<arg type='^v'/>
+<arg type='I'/>
+<arg type='^^{_cl_event}'/>
+<arg type='^^{_cl_event}'/>
+<retval type='i'/>
+</function>
+<function name='clEnqueueWriteBufferRect'>
+<arg type='^{_cl_command_queue=}'/>
+<arg type='^{_cl_mem=}'/>
+<arg type='I'/>
+<arg type64='^Q' type='^I'/>
+<arg type64='^Q' type='^I'/>
+<arg type64='^Q' type='^I'/>
+<arg type64='Q' type='L'/>
+<arg type64='Q' type='L'/>
+<arg type64='Q' type='L'/>
+<arg type64='Q' type='L'/>
+<arg type='^v'/>
+<arg type='I'/>
+<arg type='^^{_cl_event}'/>
+<arg type='^^{_cl_event}'/>
+<retval type='i'/>
+</function>
+<function name='clEnqueueWriteImage'>
+<arg type='^{_cl_command_queue=}'/>
+<arg type='^{_cl_mem=}'/>
+<arg type='I'/>
+<arg type64='^Q' type='^I'/>
+<arg type64='^Q' type='^I'/>
+<arg type64='Q' type='L'/>
+<arg type64='Q' type='L'/>
+<arg type='^v'/>
+<arg type='I'/>
+<arg type='^^{_cl_event}'/>
+<arg type='^^{_cl_event}'/>
+<retval type='i'/>
+</function>
+<function name='clFinish'>
+<arg type='^{_cl_command_queue=}'/>
+<retval type='i'/>
+</function>
+<function name='clFlush'>
+<arg type='^{_cl_command_queue=}'/>
+<retval type='i'/>
+</function>
+<function name='clGetCommandQueueInfo'>
+<arg type='^{_cl_command_queue=}'/>
+<arg type='I'/>
+<arg type64='Q' type='L'/>
+<arg type='^v'/>
+<arg type64='^Q' type='^I'/>
+<retval type='i'/>
+</function>
+<function name='clGetContextInfo'>
+<arg type='^{_cl_context=}'/>
+<arg type='I'/>
+<arg type64='Q' type='L'/>
+<arg type='^v'/>
+<arg type64='^Q' type='^I'/>
+<retval type='i'/>
+</function>
+<function name='clGetDeviceIDs'>
+<arg type='^{_cl_platform_id=}'/>
+<arg type='Q'/>
+<arg type='I'/>
+<arg type='^^{_cl_device_id}'/>
+<arg type='^I'/>
+<retval type='i'/>
+</function>
+<function name='clGetDeviceInfo'>
+<arg type='^{_cl_device_id=}'/>
+<arg type='I'/>
+<arg type64='Q' type='L'/>
+<arg type='^v'/>
+<arg type64='^Q' type='^I'/>
+<retval type='i'/>
+</function>
+<function name='clGetEventInfo'>
+<arg type='^{_cl_event=}'/>
+<arg type='I'/>
+<arg type64='Q' type='L'/>
+<arg type='^v'/>
+<arg type64='^Q' type='^I'/>
+<retval type='i'/>
+</function>
+<function name='clGetEventProfilingInfo'>
+<arg type='^{_cl_event=}'/>
+<arg type='I'/>
+<arg type64='Q' type='L'/>
+<arg type='^v'/>
+<arg type64='^Q' type='^I'/>
+<retval type='i'/>
+</function>
+<function name='clGetExtensionFunctionAddress'>
+<arg type='*'/>
+<retval type='^v'/>
+</function>
+<function name='clGetGLContextInfoAPPLE'>
+<arg type='^{_cl_context=}'/>
+<arg type='^v'/>
+<arg type='I'/>
+<arg type64='Q' type='L'/>
+<arg type='^v'/>
+<arg type64='^Q' type='^I'/>
+<retval type='i'/>
+</function>
+<function name='clGetGLObjectInfo'>
+<arg type='^{_cl_mem=}'/>
+<arg type='^I'/>
+<arg type='^I'/>
+<retval type='i'/>
+</function>
+<function name='clGetGLTextureInfo'>
+<arg type='^{_cl_mem=}'/>
+<arg type='I'/>
+<arg type64='Q' type='L'/>
+<arg type='^v'/>
+<arg type64='^Q' type='^I'/>
+<retval type='i'/>
+</function>
+<function name='clGetImageInfo'>
+<arg type='^{_cl_mem=}'/>
+<arg type='I'/>
+<arg type64='Q' type='L'/>
+<arg type='^v'/>
+<arg type64='^Q' type='^I'/>
+<retval type='i'/>
+</function>
+<function name='clGetKernelInfo'>
+<arg type='^{_cl_kernel=}'/>
+<arg type='I'/>
+<arg type64='Q' type='L'/>
+<arg type='^v'/>
+<arg type64='^Q' type='^I'/>
+<retval type='i'/>
+</function>
+<function name='clGetKernelWorkGroupInfo'>
+<arg type='^{_cl_kernel=}'/>
+<arg type='^{_cl_device_id=}'/>
+<arg type='I'/>
+<arg type64='Q' type='L'/>
+<arg type='^v'/>
+<arg type64='^Q' type='^I'/>
+<retval type='i'/>
+</function>
+<function name='clGetMemObjectInfo'>
+<arg type='^{_cl_mem=}'/>
+<arg type='I'/>
+<arg type64='Q' type='L'/>
+<arg type='^v'/>
+<arg type64='^Q' type='^I'/>
+<retval type='i'/>
+</function>
+<function name='clGetPlatformIDs'>
+<arg type='I'/>
+<arg type='^^{_cl_platform_id}'/>
+<arg type='^I'/>
+<retval type='i'/>
+</function>
+<function name='clGetPlatformInfo'>
+<arg type='^{_cl_platform_id=}'/>
+<arg type='I'/>
+<arg type64='Q' type='L'/>
+<arg type='^v'/>
+<arg type64='^Q' type='^I'/>
+<retval type='i'/>
+</function>
+<function name='clGetProgramBuildInfo'>
+<arg type='^{_cl_program=}'/>
+<arg type='^{_cl_device_id=}'/>
+<arg type='I'/>
+<arg type64='Q' type='L'/>
+<arg type='^v'/>
+<arg type64='^Q' type='^I'/>
+<retval type='i'/>
+</function>
+<function name='clGetProgramInfo'>
+<arg type='^{_cl_program=}'/>
+<arg type='I'/>
+<arg type64='Q' type='L'/>
+<arg type='^v'/>
+<arg type64='^Q' type='^I'/>
+<retval type='i'/>
+</function>
+<function name='clGetSamplerInfo'>
+<arg type='^{_cl_sampler=}'/>
+<arg type='I'/>
+<arg type64='Q' type='L'/>
+<arg type='^v'/>
+<arg type64='^Q' type='^I'/>
+<retval type='i'/>
+</function>
+<function name='clGetSupportedImageFormats'>
+<arg type='^{_cl_context=}'/>
+<arg type='Q'/>
+<arg type='I'/>
+<arg type='I'/>
+<arg type='^{_cl_image_format=II}'/>
+<arg type='^I'/>
+<retval type='i'/>
+</function>
+<function name='clLogMessagesToStderrAPPLE'>
+<arg type='*'/>
+<arg type='^v'/>
+<arg type64='Q' type='L'/>
+<arg type='^v'/>
+</function>
+<function name='clLogMessagesToStdoutAPPLE'>
+<arg type='*'/>
+<arg type='^v'/>
+<arg type64='Q' type='L'/>
+<arg type='^v'/>
+</function>
+<function name='clLogMessagesToSystemLogAPPLE'>
+<arg type='*'/>
+<arg type='^v'/>
+<arg type64='Q' type='L'/>
+<arg type='^v'/>
+</function>
+<function name='clReleaseCommandQueue'>
+<arg type='^{_cl_command_queue=}'/>
+<retval type='i'/>
+</function>
+<function name='clReleaseContext'>
+<arg type='^{_cl_context=}'/>
+<retval type='i'/>
+</function>
+<function name='clReleaseEvent'>
+<arg type='^{_cl_event=}'/>
+<retval type='i'/>
+</function>
+<function name='clReleaseKernel'>
+<arg type='^{_cl_kernel=}'/>
+<retval type='i'/>
+</function>
+<function name='clReleaseMemObject'>
+<arg type='^{_cl_mem=}'/>
+<retval type='i'/>
+</function>
+<function name='clReleaseProgram'>
+<arg type='^{_cl_program=}'/>
+<retval type='i'/>
+</function>
+<function name='clReleaseSampler'>
+<arg type='^{_cl_sampler=}'/>
+<retval type='i'/>
+</function>
+<function name='clRetainCommandQueue'>
+<arg type='^{_cl_command_queue=}'/>
+<retval type='i'/>
+</function>
+<function name='clRetainContext'>
+<arg type='^{_cl_context=}'/>
+<retval type='i'/>
+</function>
+<function name='clRetainEvent'>
+<arg type='^{_cl_event=}'/>
+<retval type='i'/>
+</function>
+<function name='clRetainKernel'>
+<arg type='^{_cl_kernel=}'/>
+<retval type='i'/>
+</function>
+<function name='clRetainMemObject'>
+<arg type='^{_cl_mem=}'/>
+<retval type='i'/>
+</function>
+<function name='clRetainProgram'>
+<arg type='^{_cl_program=}'/>
+<retval type='i'/>
+</function>
+<function name='clRetainSampler'>
+<arg type='^{_cl_sampler=}'/>
+<retval type='i'/>
+</function>
+<function name='clSetEventCallback'>
+<arg type='^{_cl_event=}'/>
+<arg type='i'/>
+<arg type='^?' function_pointer='true'>
+<arg type='^{_cl_event=}'/>
+<arg type='i'/>
+<arg type='^v'/>
+<retval type='v'/>
+</arg>
+<arg type='^v'/>
+<retval type='i'/>
+</function>
+<function name='clSetKernelArg'>
+<arg type='^{_cl_kernel=}'/>
+<arg type='I'/>
+<arg type64='Q' type='L'/>
+<arg type='^v'/>
+<retval type='i'/>
+</function>
+<function name='clSetKernelArgByNameAPPLE'>
+<arg type='^{_cl_kernel=}'/>
+<arg type='*'/>
+<arg type64='Q' type='L'/>
+<arg type='^v'/>
+<retval type='i'/>
+</function>
+<function variadic='true' name='clSetKernelArgsListAPPLE'>
+<arg type='^{_cl_kernel=}'/>
+<arg type='I'/>
+<retval type='i'/>
+</function>
+<function name='clSetKernelArgsVaListAPPLE'>
+<arg type='^{_cl_kernel=}'/>
+<arg type='I'/>
+<arg type64='^{__va_list_tag=II^v^v}' type='*'/>
+<retval type='i'/>
+</function>
+<function name='clSetMemObjectDestructorAPPLE'>
+<arg type='^{_cl_mem=}'/>
+<arg type='^?' function_pointer='true'>
+<arg type='^{_cl_mem=}'/>
+<arg type='^v'/>
+<retval type='v'/>
+</arg>
+<arg type='^v'/>
+<retval type='i'/>
+</function>
+<function name='clSetMemObjectDestructorCallback'>
+<arg type='^{_cl_mem=}'/>
+<arg type='^?' function_pointer='true'>
+<arg type='^{_cl_mem=}'/>
+<arg type='^v'/>
+<retval type='v'/>
+</arg>
+<arg type='^v'/>
+<retval type='i'/>
+</function>
+<function name='clSetUserEventStatus'>
+<arg type='^{_cl_event=}'/>
+<arg type='i'/>
+<retval type='i'/>
+</function>
+<function name='clUnloadCompiler'>
+<retval type='i'/>
+</function>
+<function name='clWaitForEvents'>
+<arg type='I'/>
+<arg type='^^{_cl_event}'/>
+<retval type='i'/>
+</function>
+<function name='gclBuildProgramAPPLE'>
+<arg type='*'/>
+<arg type64='^{block_kernel_map=^{_cl_program}Q^?^{_block_kernel_pair=^v^{_cl_kernel}}}' type='^{block_kernel_map=^{_cl_program}I^?^{_block_kernel_pair=^v^{_cl_kernel}}}'/>
+<retval type='i'/>
+</function>
+<function name='gclBuildProgramBinaryAPPLE'>
+<arg type='*'/>
+<arg type='*'/>
+<arg type64='^{block_kernel_map=^{_cl_program}Q^?^{_block_kernel_pair=^v^{_cl_kernel}}}' type='^{block_kernel_map=^{_cl_program}I^?^{_block_kernel_pair=^v^{_cl_kernel}}}'/>
+<arg type='*'/>
+<retval type='i'/>
+</function>
+<function name='gclCreateArgsAPPLE'>
+<arg type='^{_cl_kernel=}'/>
+<arg type64='^{kargs_struct=^Q^Q^^v}' type='^{kargs_struct=^Q^I^^v}'/>
+</function>
+<function name='gclDeleteArgsAPPLE'>
+<arg type='^{_cl_kernel=}'/>
+<arg type64='^{kargs_struct=^Q^Q^^v}' type='^{kargs_struct=^Q^I^^v}'/>
+</function>
+<function name='gclExecKernelAPPLE'>
+<arg type='^{_cl_kernel=}'/>
+<arg type64='^{_cl_ndrange=Q[3Q][3Q][3Q]}' type='^{_cl_ndrange=I[3L][3L][3L]}'/>
+<arg type64='^{kargs_struct=^Q^Q^^v}' type='^{kargs_struct=^Q^I^^v}'/>
+<retval type='i'/>
+</function>
+<function name='gclRegisterBlockKernelMap'>
+<arg type64='^{block_kernel_map=^{_cl_program}Q^?^{_block_kernel_pair=^v^{_cl_kernel}}}' type='^{block_kernel_map=^{_cl_program}I^?^{_block_kernel_pair=^v^{_cl_kernel}}}'/>
+</function>
+<function name='gclReleaseSampler'>
+<arg type='^{_cl_sampler=}'/>
+<retval type='i'/>
+</function>
+<function name='gclSetKernelArgAPPLE'>
+<arg type='^{_cl_kernel=}'/>
+<arg type='I'/>
+<arg type64='Q' type='L'/>
+<arg type='^v'/>
+<arg type64='^{kargs_struct=^Q^Q^^v}' type='^{kargs_struct=^Q^I^^v}'/>
+<retval type='i'/>
+</function>
+<function name='gclSetKernelArgMemAPPLE'>
+<arg type='^{_cl_kernel=}'/>
+<arg type='I'/>
+<arg type='^v'/>
+<arg type64='^{kargs_struct=^Q^Q^^v}' type='^{kargs_struct=^Q^I^^v}'/>
+<retval type='i'/>
+</function>
+<function name='gclSetKernelArgSamplerAPPLE'>
+<arg type='^{_cl_kernel=}'/>
+<arg type='I'/>
+<arg type='^v'/>
+<arg type64='^{kargs_struct=^Q^Q^^v}' type='^{kargs_struct=^Q^I^^v}'/>
+<arg type='^^{_cl_sampler}'/>
+<retval type='i'/>
+</function>
+<function name='gcl_copy_image'>
+<arg type='^{_cl_mem=}'/>
+<arg type='^{_cl_mem=}'/>
+<arg type64='^Q' type='^I'/>
+<arg type64='^Q' type='^I'/>
+<arg type64='^Q' type='^I'/>
+</function>
+<function name='gcl_copy_image_to_ptr'>
+<arg type='^v'/>
+<arg type='^{_cl_mem=}'/>
+<arg type64='^Q' type='^I'/>
+<arg type64='^Q' type='^I'/>
+</function>
+<function name='gcl_copy_ptr_to_image'>
+<arg type='^{_cl_mem=}'/>
+<arg type='^v'/>
+<arg type64='^Q' type='^I'/>
+<arg type64='^Q' type='^I'/>
+</function>
+<function name='gcl_create_buffer_from_ptr'>
+<arg type='^v'/>
+<retval type='^{_cl_mem=}'/>
+</function>
+<function name='gcl_create_dispatch_queue'>
+<arg type='Q'/>
+<arg type='^{_cl_device_id=}'/>
+<retval type='^{dispatch_queue_s=}'/>
+</function>
+<function name='gcl_create_image'>
+<arg type='^{_cl_image_format=II}'/>
+<arg type64='Q' type='L'/>
+<arg type64='Q' type='L'/>
+<arg type64='Q' type='L'/>
+<arg type='^{__IOSurface=}'/>
+<retval type='^{_cl_mem=}'/>
+</function>
+<function name='gcl_create_kernel_from_block'>
+<arg type='^v'/>
+<retval type='^{_cl_kernel=}'/>
+</function>
+<function name='gcl_free'>
+<arg type='^v'/>
+</function>
+<function name='gcl_get_context'>
+<retval type='^{_cl_context=}'/>
+</function>
+<function name='gcl_get_device_id_with_dispatch_queue'>
+<arg type='^{dispatch_queue_s=}'/>
+<retval type='^{_cl_device_id=}'/>
+</function>
+<function name='gcl_get_kernel_block_workgroup_info'>
+<arg type='^v'/>
+<arg type='I'/>
+<arg type64='Q' type='L'/>
+<arg type='^v'/>
+<arg type64='^Q' type='^I'/>
+</function>
+<function name='gcl_get_supported_image_formats'>
+<arg type='^{_cl_device_id=}'/>
+<arg type='I'/>
+<arg type='I'/>
+<arg type='^{_cl_image_format=II}'/>
+<arg type='^I'/>
+</function>
+<function name='gcl_gl_create_image_from_renderbuffer'>
+<arg type='I'/>
+<retval type='^{_cl_mem=}'/>
+</function>
+<function name='gcl_gl_create_image_from_texture'>
+<arg type='I'/>
+<arg type='i'/>
+<arg type='I'/>
+<retval type='^{_cl_mem=}'/>
+</function>
+<function name='gcl_gl_create_ptr_from_buffer'>
+<arg type='I'/>
+<retval type='^v'/>
+</function>
+<function name='gcl_gl_set_sharegroup'>
+<arg type='^v'/>
+</function>
+<function variadic='true' name='gcl_log_cl_error'>
+<arg type='i'/>
+<arg type='*'/>
+</function>
+<function variadic='true' name='gcl_log_cl_fatal'>
+<arg type='i'/>
+<arg type='*'/>
+</function>
+<function variadic='true' name='gcl_log_error'>
+<arg type='*'/>
+</function>
+<function variadic='true' name='gcl_log_fatal'>
+<arg type='*'/>
+</function>
+<function variadic='true' name='gcl_log_warning'>
+<arg type='*'/>
+</function>
+<function name='gcl_malloc'>
+<arg type64='Q' type='L'/>
+<arg type='^v'/>
+<arg type='Q'/>
+<retval type='^v'/>
+</function>
+<function name='gcl_map_image'>
+<arg type='^{_cl_mem=}'/>
+<arg type='Q'/>
+<arg type64='^Q' type='^I'/>
+<arg type64='^Q' type='^I'/>
+<retval type='^v'/>
+</function>
+<function name='gcl_map_ptr'>
+<arg type='^v'/>
+<arg type='Q'/>
+<arg type64='Q' type='L'/>
+<retval type='^v'/>
+</function>
+<function name='gcl_memcpy'>
+<arg type='^v'/>
+<arg type='^v'/>
+<arg type64='Q' type='L'/>
+</function>
+<function name='gcl_memcpy_rect'>
+<arg type='^v'/>
+<arg type='^v'/>
+<arg type64='^Q' type='^I'/>
+<arg type64='^Q' type='^I'/>
+<arg type64='^Q' type='^I'/>
+<arg type64='Q' type='L'/>
+<arg type64='Q' type='L'/>
+<arg type64='Q' type='L'/>
+<arg type64='Q' type='L'/>
+</function>
+<function name='gcl_release_image'>
+<arg type='^{_cl_mem=}'/>
+</function>
+<function name='gcl_retain_image'>
+<arg type='^{_cl_mem=}'/>
+</function>
+<function name='gcl_set_finalizer'>
+<arg type='^v'/>
+<arg type='^?' function_pointer='true'>
+<arg type='^v'/>
+<arg type='^v'/>
+<retval type='v'/>
+</arg>
+<arg type='^v'/>
+</function>
+<function name='gcl_start_timer'>
+<retval type='Q'/>
+</function>
+<function name='gcl_stop_timer'>
+<arg type='Q'/>
+<retval type='d'/>
+</function>
+<function name='gcl_unmap'>
+<arg type='^v'/>
+</function>
+</signatures>

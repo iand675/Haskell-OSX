@@ -1,0 +1,97 @@
+<?xml version='1.0'?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version='1.0'>
+<depends_on path='/System/Library/Frameworks/Cocoa.framework'/>
+<depends_on path='/System/Library/Frameworks/Carbon.framework'/>
+<depends_on path='/System/Library/Frameworks/ApplicationServices.framework'/>
+<depends_on path='/System/Library/Frameworks/CoreServices.framework'/>
+<depends_on path='/System/Library/Frameworks/CoreFoundation.framework'/>
+<depends_on path='/System/Library/Frameworks/Foundation.framework'/>
+<depends_on path='/System/Library/Frameworks/AppKit.framework'/>
+<constant type='@' name='OSAScriptErrorAppAddressKey'/>
+<constant type='@' name='OSAScriptErrorAppName'/>
+<constant type='@' name='OSAScriptErrorAppNameKey'/>
+<constant type='@' name='OSAScriptErrorBriefMessage'/>
+<constant type='@' name='OSAScriptErrorBriefMessageKey'/>
+<constant type='@' name='OSAScriptErrorExpectedTypeKey'/>
+<constant type='@' name='OSAScriptErrorMessage'/>
+<constant type='@' name='OSAScriptErrorMessageKey'/>
+<constant type='@' name='OSAScriptErrorNumber'/>
+<constant type='@' name='OSAScriptErrorNumberKey'/>
+<constant type='@' name='OSAScriptErrorOffendingObjectKey'/>
+<constant type='@' name='OSAScriptErrorPartialResultKey'/>
+<constant type='@' name='OSAScriptErrorRange'/>
+<constant type='@' name='OSAScriptErrorRangeKey'/>
+<constant type='@' name='OSAStorageApplicationBundleType'/>
+<constant type='@' name='OSAStorageApplicationType'/>
+<constant type='@' name='OSAStorageScriptBundleType'/>
+<constant type='@' name='OSAStorageScriptType'/>
+<constant type='@' name='OSAStorageTextType'/>
+<enum value='2' name='OSACompileIntoContext'/>
+<enum value='16777216' name='OSADontSetScriptLocation'/>
+<enum value='0' name='OSANull'/>
+<enum value='1' name='OSAPreventGetSource'/>
+<enum value='2' name='OSAScriptRecording'/>
+<enum value='1' name='OSAScriptRunning'/>
+<enum value='0' name='OSAScriptStopped'/>
+<enum value='536870912' name='OSAShowStartupScreen'/>
+<enum value='268435456' name='OSAStayOpenApplet'/>
+<enum value='8' name='OSASupportsAECoercion'/>
+<enum value='16' name='OSASupportsAESending'/>
+<enum value='2' name='OSASupportsCompiling'/>
+<enum value='64' name='OSASupportsConvenience'/>
+<enum value='128' name='OSASupportsDialects'/>
+<enum value='256' name='OSASupportsEventHandling'/>
+<enum value='4' name='OSASupportsGetSource'/>
+<enum value='32' name='OSASupportsRecording'/>
+<class name='OSALanguage'>
+<method selector='isThreadSafe'>
+<retval type='B'/>
+</method>
+</class>
+<class name='OSAScript'>
+<method selector='compileAndReturnError:'>
+<retval type='B'/>
+</method>
+<method selector='isCompiled'>
+<retval type='B'/>
+</method>
+<method selector='writeToURL:ofType:error:'>
+<retval type='B'/>
+</method>
+<method selector='writeToURL:ofType:usingStorageOptions:error:'>
+<retval type='B'/>
+</method>
+</class>
+<class name='OSAScriptController'>
+<method selector='isCompiling'>
+<retval type='B'/>
+</method>
+</class>
+<class name='OSAScriptView'>
+<method selector='indentsWrappedLines'>
+<retval type='B'/>
+</method>
+<method selector='setIndentsWrappedLines:'>
+<arg index='0' type='B'/>
+</method>
+<method selector='setUsesScriptAssistant:'>
+<arg index='0' type='B'/>
+</method>
+<method selector='setUsesTabs:'>
+<arg index='0' type='B'/>
+</method>
+<method selector='setWrapsLines:'>
+<arg index='0' type='B'/>
+</method>
+<method selector='usesScriptAssistant'>
+<retval type='B'/>
+</method>
+<method selector='usesTabs'>
+<retval type='B'/>
+</method>
+<method selector='wrapsLines'>
+<retval type='B'/>
+</method>
+</class>
+</signatures>
